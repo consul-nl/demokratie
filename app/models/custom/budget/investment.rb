@@ -24,8 +24,7 @@ class Budget
     def self.sort_by_ballot_line_weight
       left_joins(:budget_ballot_lines)
         .group("budget_investments.id")
-        .select("budget_investments.*, COALESCE(SUM(budget_ballot_lines.line_weight), 0) AS total_ballot_line_weight")
-        .order("total_ballot_line_weight DESC")
+        .order(Arel.sql("COALESCE(SUM(budget_ballot_lines.line_weight), 0) DESC"))
     end
 
     def register_selection(user, vote_weight = 1)
