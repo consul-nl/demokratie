@@ -335,4 +335,12 @@
       border-radius: 5px;
     }
   }
+
+  .content-blocks-container {
+    .projekt-content-block:first-child  {
+      h1:first-child, h2:first-child, h3:first-child {
+        margin-top: 0;
+      }
+    }
+  }
 }
