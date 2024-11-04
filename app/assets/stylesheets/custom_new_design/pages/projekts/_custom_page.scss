@@ -284,6 +284,14 @@
   .projekt-footer {
     .key-dates {
       margin: 0;
+      width: 100%;
+      max-width: 500px;
+
+      @media(min-width: $small-tablet-viewport-start) {
+        li::after {
+          content: '';
+        }
+      }
     }
 
     .row {
