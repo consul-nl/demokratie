@@ -1,6 +1,17 @@
-.ck-editor__editable_inline {
+.ck-editor__editable_inline,
+.ck-source-editing-area {
   min-height: 300px;	
   margin-bottom: 1em;
+}
+
+.ck-sticky-panel__content:not(.ck-sticky-panel__content_sticky),
+.ck-sticky-panel__content:not(.ck-sticky-panel__content_sticky) .ck-toolbar {
+  border-radius: 10px 10px 0 0 !important;
+}
+
+.ck-editor__editable_inline,
+.ck-source-editing-area,
+.ck-source-editing-area textarea {
   border-radius: 0 0 10px 10px !important;
 }
 
