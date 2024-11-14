@@ -158,12 +158,4 @@ module EmbeddedAuth
 
       current_frame_csrf_token && current_frame_csrf_token == params[:frame_csrf_token]
     end
-
-    # def frame_temp_token_valid?
-    #   return false if params[:temp_token].blank?
-    #
-    #   user = User.find_by(temporary_auth_token: params[:temp_token])
-    #
-    #   user.present? && user.temporary_auth_token_valid?
-    # end
 end

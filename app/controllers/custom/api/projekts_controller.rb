@@ -8,7 +8,6 @@ class Api::ProjektsController < Api::BaseController
   before_action :process_tags, only: [:update]
 
   skip_authorization_check
-  skip_forgery_protection
 
   # def index
   #   projekts = Projekt.current_for_import.regular
