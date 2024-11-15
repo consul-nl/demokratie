@@ -6,7 +6,7 @@
     tempDiv.innerHTML = html;
 
     // Remove <p> tags wrapping only <a> elements
-    tempDiv.querySelectorAll('p').forEach(p => {
+    tempDiv.querySelectorAll('ul.accordion p').forEach(p => {
       if (p.childNodes.length === 1 && p.firstChild.tagName === 'A') {
         p.replaceWith(p.firstChild); // Replace <p> with the <a> itself
       }
@@ -28,10 +28,6 @@
           toolbar: {
             items: this.toolbarFor(textarea).toolbarControls,
             shouldNotGroupWhenFull: true
-          },
-
-          schema: {
-            allow: '$text a', // Allows `<a>` as an inline element
           },
 
           image: {
@@ -96,16 +92,6 @@
             ]
           },
 
-          ckfinder: {
-            // Upload the images to the server using the CKFinder QuickUpload command.
-            uploadUrl: 'https://example.com/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images&responseType=json',
-
-            // Define the CKFinder configuration (if necessary).
-            options: {
-              resourceType: 'Images'
-            }
-          },
-
           simpleUpload: {
             uploadUrl: '/ckeditor/pictures',
             withCredentials: true,
@@ -155,74 +141,9 @@
                 return data
               };
             },
-            function ( editor ) {
-              // Allow <iframe> elements in the model.
-              editor.model.schema.register( 'iframe', {
-                allowWhere: '$text',
-                allowContentOf: '$block'
-              } );
-              // Allow <iframe> elements in the model to have all attributes.
-              editor.model.schema.addAttributeCheck( context => {
-                if ( context.endsWith( 'iframe' ) ) {
-                  return true;
-                }
-              } );
-              // View-to-model converter converting a view <iframe> with all its attributes to the model.
-              editor.conversion.for( 'upcast' ).elementToElement( {
-                view: 'iframe',
-                model: ( viewElement, modelWriter ) => {
-                  return modelWriter.writer.createElement( 'iframe', viewElement.getAttributes() );
-                }
-              } );
-              // Model-to-view converter for the <iframe> element (attributes are converted separately).
-              editor.conversion.for( 'downcast' ).elementToElement( {
-                model: 'iframe',
-                view: 'iframe'
-              } );
-              // Model-to-view converter for <iframe> attributes.
-              // Note that a lower-level, event-based API is used here.
-              editor.conversion.for( 'downcast' ).add( dispatcher => {
-                dispatcher.on( 'attribute', ( evt, data, conversionApi ) => {
-                  // Convert <iframe> attributes only.
-                  if ( data.item.name != 'iframe' ) {
-                    return;
-                  }
-                  const viewWriter = conversionApi.writer;
-                  const viewIframe = conversionApi.mapper.toViewElement( data.item );
-                  // In the model-to-view conversion we convert changes.
-                  // An attribute can be added or removed or changed.
-                  // The below code handles all 3 cases.
-                  if ( data.attributeNewValue ) {
-                    viewWriter.setAttribute( data.attributeKey, data.attributeNewValue, viewIframe );
-                  } else {
-                    viewWriter.removeAttribute( data.attributeKey, viewIframe );
-                  }
-                });
-              });
-            },
           ],
-        }).then(function(editor) {
-              // editor.conversion.for('upcast').elementToElement({
-              //   model: 'a',
-              //   view: 'a',
-              //   converterPriority: 'high'
-              // });
-              //
-              // editor.conversion.for('downcast').elementToElement({
-              //   model: 'a',
-              //   view: 'a',
-              //   converterPriority: 'high'
-              // });
-            console.log(editor.model.schema.getDefinitions())
         })
       });
-
-      CKFinder.basePath = "http://localhost:3000/ckfinder/";
-
-      // CKFinder.widget( 'ckfinder-widget', {
-      //     configPath: '',
-      //     language: 'de'
-      // } );
     },
 
     toolbarFor: function(element) {
@@ -241,8 +162,6 @@
         ImageUpload,
         SimpleUploadAdapter,
         ClassicEditor,
-        CKFinder,
-        CKFinderUploadAdapter,
         Essentials,
         Font,
         Paragraph,
@@ -291,7 +210,6 @@
 
         plugins = [
           Essentials, Font, Paragraph, Heading,
-          CKFinder, CKFinderUploadAdapter,
           List, Indent, IndentBlock, BlockQuote, Alignment,
           ImageBlock, ImageCaption, ImageInline, ImageInsert, ImageResize, ImageStyle, ImageTextAlternative, ImageToolbar, ImageUpload, SimpleUploadAdapter,
           Link, Bold, Italic, Underline, Strikethrough, Subscript, Superscript, RemoveFormat,
@@ -303,7 +221,6 @@
         toolbarControls = [
           "bulletedList", "numberedList", "|", "indent", "outdent", "|", "blockQuote", "|", "alignment:left", "alignment:center", "alignment:right", "alignment:justify", "|",
           "insertImage", "|",
-          "ckfinder", "|",
           "heading", "|", "link", "|", "bold", "italic", "underline", "strikethrough", "subscript", "superscript", "|", "removeFormat", "|",
           "fontColor", "fontBackgroundColor", "|",
           "insertTable", "horizontalLine", "specialCharacters", "|",
