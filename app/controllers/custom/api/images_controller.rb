@@ -1,7 +1,5 @@
 
 class Api::ImagesController < Api::BaseController
-  skip_forgery_protection
-
   def create
     pictures = params[:images].map do |image|
       Ckeditor::Picture.new(data: image)
