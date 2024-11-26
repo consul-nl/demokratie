@@ -44,72 +44,8 @@
       </div>
     </div>
   <% end %>
-  <div class="custom-page--banner-wrapper">
-    <div class="custom-page--banner">
-      <div class="custom-page--banner-text-section-wrapper">
-        <div class="custom-page--banner-text-section">
-          <div class="custom-page--banner-title-wrapper">
-            <% if embedded_and_frame_access_code_valid?(@projekt) %>
-              <%= render Admin::Frame::FieldEditComponent.new(field_name: 'site_customization_page[title]') do %>
-                <h1 class="custom-page--banner-title">
-                  <%= @custom_page.title %>
-                </h1>
-              <% end %>
-            <% else %>
-              <h1 class="custom-page--banner-title">
-                <%= @custom_page.title %>
-              </h1>
-            <% end %>
-          </div>
 
-          <% if @custom_page.subtitle.present? %>
-            <% if embedded_and_frame_access_code_valid?(@projekt) %>
-              <%= render Admin::Frame::FieldEditComponent.new(field_name: 'site_customization_page[subtitle]') do %>
-                <div class="custom-page--banner-description">
-                  <%= @custom_page.subtitle %>
-                </div>
-              <% end %>
-            <% else %>
-              <div class="custom-page--banner-description">
-                <%= @custom_page.subtitle %>
-              </div>
-            <% end %>
-          <% end %>
-        </div>
-
-        <% if @custom_page.projekt.present? %>
-          <div class="custom-page--banner-breadcrumbs">
-            <%= breadcrumbs_links(@custom_page.projekt) %>
-          </div>
-        <% end %>
-      </div>
-
-      <% if @custom_page.image.present? %>
-        <%#= image_tag(url_for(@custom_page.image.attachment), class: "custom-page--banner-image" )  %>
-        <% big_projekt_image_url =
-        polymorphic_path(@custom_page.image.attachment.variant(
-          resize_to_limit: [1750, 900],
-          saver: { quality: 80 },
-          strip: true,
-          format: "jpeg"
-        ))
-      %>
-
-    <%= link_to big_projekt_image_url, target: "_blank", class: "glightbox custom-page--banner-image" do %>
-      <span class="image-maximize-button">
-        <i class="fas fa-magnifying-glass-plus"></i>
-      </span>
-      <%= render(
-              Shared::ResourceImageComponent.new(
-                image_url: @custom_page.image&.attachment.variant(coalesce: true, gravity: "center", resize_to_fill: [620, 390] ),
-                image_placeholder_icon_class: "fa-comments",
-                resource: @custom_page
-              )
-            ) %>
-        <% end %>
-      <% end %>
-    </div>
-  </div>
+  <%= render Projekts::BannerComponent.new(custom_page: @custom_page) %>
 
   <% if @custom_page.projekt.present? %>
     <div class="flex-layout">

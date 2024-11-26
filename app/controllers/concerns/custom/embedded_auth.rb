@@ -26,7 +26,7 @@ module EmbeddedAuth
     def frame_access_code_valid?(projekt)
       return false if params[:frame_code].blank?
 
-      params[:frame_code] = projekt.frame_access_code
+      params[:frame_code] == projekt.frame_access_code
     end
 
     def embedded_and_frame_access_code_valid?(projekt)
