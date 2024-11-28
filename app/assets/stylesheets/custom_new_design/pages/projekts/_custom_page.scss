@@ -168,6 +168,8 @@
     bottom: -50px;
     height: 390px !important;
     cursor: zoom-in;
+    overflow: hidden;
+    border-radius: 10px;
 
     .image-maximize-button {
       visibility: hidden;
