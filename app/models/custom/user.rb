@@ -117,6 +117,7 @@ class User < ApplicationRecord
     take_votes_from_erased_user
     update!(
       verified_at: Time.current,
+      geozone_id: geozone_with_plz&.id,
       unique_stamp: prepare_unique_stamp
     )
 
@@ -127,6 +128,7 @@ class User < ApplicationRecord
   def unverify!
     update!(
       verified_at: nil,
+      geozone_id: nil,
       unique_stamp: nil
     )
   end
