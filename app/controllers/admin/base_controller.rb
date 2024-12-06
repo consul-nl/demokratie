@@ -55,6 +55,10 @@ class Admin::BaseController < ApplicationController
       controller_name == "projekt_phases" && action_name == "toggle_active_status"
     end
 
+    def phase_selector_action
+      controller_name == "projekt_phases" && action_name == "frame_new_phase_selector"
+    end
+
     def page_update_action
       controller_name == "pages" && action_name == "update"
     end
