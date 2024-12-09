@@ -7,6 +7,9 @@ de:
       deficiency_report_manager:
         one: Mängelmelder Admin
         other: Mängelmelder Admins
+      deficiency_report/officer_group:
+        one: Sachbearbeitergruppe
+        other: Sachbearbeitergruppen
       map_layer:
         one: Kartenebene
         other: Kartenebenen

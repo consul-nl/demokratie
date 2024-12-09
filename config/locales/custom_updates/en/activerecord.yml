@@ -7,6 +7,9 @@ en:
       deficiency_report_manager:
         one: Deficiency reporting admin
         other: Deficiency reporting admins
+      deficiency_report/officer_group:
+        one: Deficiency report officer group
+        other: Deficiency report officer groups
       map_layer:
         one: Map Layer
         other: Map Layers

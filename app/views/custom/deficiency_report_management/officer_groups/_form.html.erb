@@ -1,0 +1,11 @@
+<%= form_for officer_group, url: form_path do |f| %>
+  <%= render "shared/errors", resource: officer_group %>
+
+  <div class="small-12 medium-6 large-4 column">
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="small-12 column">
+    <%= f.submit class: "button success" %>
+  </div>
+<% end %>

@@ -116,6 +116,18 @@ de:
             title: Vorlage bearbeiten
           form:
             submit_button: Speichern
+        officer_groups:
+          officer_group:
+            name: Name
+          destroy:
+            destroyed_successfully: Die Sachbearbeitergruppe wurde erfolgreich gelöscht.
+          edit:
+            editing: Sachbearbeitergruppe bearbeiten
+          index:
+            create: Sachbearbeitergruppe erstellen
+            title: Sachbearbeitergruppen
+          new:
+            creating: Neue Sachbearbeitergruppe erstellen
         deficiency_report:
           category: Kategorie
           officer: Sachbearbeiter*in
