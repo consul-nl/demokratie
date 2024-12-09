@@ -557,6 +557,10 @@ ActiveRecord::Schema.define(version: 2024_12_06_155206) do
     t.integer "height"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "title", default: ""
+    t.string "description", default: ""
+    t.tsvector "tsv"
+    t.string "alt_text", default: ""
     t.index ["type"], name: "index_ckeditor_assets_on_type"
   end
 
