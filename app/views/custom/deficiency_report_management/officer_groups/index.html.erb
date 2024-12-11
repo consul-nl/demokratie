@@ -11,6 +11,7 @@
   <thead>
     <tr>
       <th><%= t("custom.admin.deficiency_reports.officer_groups.officer_group.name") %></th>
+      <th><%= t("custom.admin.deficiency_reports.officer_groups.officer_group.officers") %></th>
       <th><%= t("admin.actions.actions") %></th>
     </tr>
   </thead>
@@ -19,6 +20,7 @@
     <% @officer_groups.each do |officer_group| %>
       <tr>
         <td><%= officer_group.name %></td>
+        <td><%= officer_group.officers.map(&:name).join(", ") %></td>
         <td>
           <%= render Admin::TableActionsComponent.new(officer_group,
                                                       actions: [:edit, :destroy],

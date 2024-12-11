@@ -119,6 +119,7 @@ de:
         officer_groups:
           officer_group:
             name: Name
+            officers: Sachbearbeiter*innen
           destroy:
             destroyed_successfully: Die Sachbearbeitergruppe wurde erfolgreich gelöscht.
           edit:
@@ -237,6 +238,7 @@ de:
           statuses: Status definieren
           official_answer_templates: Antwortvorlagen
           areas: Gebiete
+          officer_groups: Sachbearbeitergruppen
         deficiency_reports_title: Mängelmelder
         projekts: Projekte
         projekt_managers: Projektmanager*innen
