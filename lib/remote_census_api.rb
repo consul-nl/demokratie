@@ -42,7 +42,7 @@ class RemoteCensusApi
       last_name_particle = @body.xpath("//ns2:ergebnis/ns2:ergebnis //ns2:familienname/ns2:namensbestandteil", "ns2" => "http://www.osci.de/xmeld34").text
       last_name = @body.xpath("//ns2:ergebnis/ns2:ergebnis //ns2:familienname/ns2:nachname", "ns2" => "http://www.osci.de/xmeld34").text
 
-      "#{last_name_particle} #{last_name}".downcase ==
+      [last_name_particle, last_name].join(" ").strip.downcase ==
         @body.xpath("//ns2:datenZurAnfrage //ns2:nachname/name", "ns2" => "http://www.osci.de/xmeld34").text.downcase
     end
 
