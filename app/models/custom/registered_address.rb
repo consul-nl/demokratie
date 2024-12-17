@@ -3,6 +3,8 @@ class RegisteredAddress < ApplicationRecord
 
   belongs_to :registered_address_city, class_name: "RegisteredAddress::City"
   belongs_to :registered_address_street, class_name: "RegisteredAddress::Street"
+  belongs_to :district, class_name: "RegisteredAddress::District",
+    foreign_key: :registered_address_district_id, optional: true, inverse_of: :registered_addresses
   has_many :users, dependent: :nullify
 
   def self.import(file_path)
@@ -26,7 +28,9 @@ class RegisteredAddress < ApplicationRecord
 
       grouping_attributes_hash = row.to_hash.slice(*grouping_keys)
 
-      RegisteredAddress.find_or_create_by!(fixed_attributes_hash).update!(groupings: grouping_attributes_hash)
+      district = RegisteredAddress::District.find_or_create_by!(name: row["district"])
+
+      RegisteredAddress.find_or_create_by!(fixed_attributes_hash).update!(groupings: grouping_attributes_hash, registered_address_district_id: district.id)
     rescue ActiveRecord::RecordInvalid
       next
     end

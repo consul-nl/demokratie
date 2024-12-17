@@ -1,0 +1,25 @@
+<% provide(:title) do %>
+  <%= t("admin.header.title") %> - <%= t("custom.admin.deficiency_reports.areas.index.title") %>
+<% end %>
+
+<h2 class="inline-block"><%= t("custom.admin.deficiency_reports.areas.index.title") %></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t("custom.admin.deficiency_reports.areas.area.name") %></th>
+      <th><%= t("admin.actions.actions") %></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @districts.each do |district| %>
+      <tr data-answer-id="<%= district.id %>">
+        <td><%= district.name %></td>
+        <td>
+          Actions
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

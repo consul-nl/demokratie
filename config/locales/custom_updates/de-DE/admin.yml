@@ -237,7 +237,8 @@ de:
           settings: Funktionen
           statuses: Status definieren
           official_answer_templates: Antwortvorlagen
-          areas: Gebiete
+          areas: Alte Gebiete
+          districts: Neue Gebiete
           officer_groups: Sachbearbeitergruppen
         deficiency_reports_title: Mängelmelder
         projekts: Projekte
