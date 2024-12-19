@@ -16,7 +16,7 @@ class MapLocation < ApplicationRecord
   #   self.fa_icon_class = get_fa_icon_class
   # end
 
-	reverse_geocoded_by :latitude, :longitude
+  reverse_geocoded_by :latitude, :longitude
 
   audited associated_with: :deficiency_report,
     only: %i[shape latitude longitude],
@@ -71,6 +71,25 @@ class MapLocation < ApplicationRecord
     ].compact.join(" ")
 
     "#{street_address}, #{geocoder_data["address"]["postcode"]} #{locality}"
+  end
+
+  def get_district
+    return unless latitude.present? && longitude.present?
+    geo_data = Geocoder.search([latitude, longitude]).first&.data
+
+    matching_address = RegisteredAddress.joins(:registered_address_street, :registered_address_city).find_by(
+      street_number: geo_data["address"]["house_number"],
+      street_number_extension: nil,
+      registered_address_street: {
+        name: geo_data["address"]["road"],
+        plz: geo_data["address"]["postcode"]
+      },
+      registered_address_city: {
+        name: geo_data["address"]["city"]
+      }
+    )
+
+    matching_address&.district
   end
 
   private
