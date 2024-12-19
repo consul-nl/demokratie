@@ -94,7 +94,7 @@ class DeficiencyReportsController < ApplicationController
 
     if @deficiency_report.save
       NotificationServices::NewDeficiencyReportNotifier.new(@deficiency_report.id).call
-      DeficiencyReportMailer.notify_officer(@deficiency_report).deliver_later
+      notify_responsible(@deficiency_report)
       redirect_to deficiency_report_path(@deficiency_report)
     else
       render :new
@@ -202,5 +202,17 @@ class DeficiencyReportsController < ApplicationController
 
   def resource_model
     DeficiencyReport
+  end
+
+  def notify_responsible(dr)
+    return if dr.responsible.blank?
+
+    if dr.responsible.is_a?(DeficiencyReport::Officer)
+      DeficiencyReportMailer.notify_officer(dr, dr.responsible).deliver_later
+    elsif dr.responsible.is_a?(DeficiencyReport::OfficerGroup)
+      dr.responsible.officers.each do |officer|
+        DeficiencyReportMailer.notify_officer(dr, officer).deliver_later
+      end
+    end
   end
 end
