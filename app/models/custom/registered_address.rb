@@ -19,6 +19,9 @@ class RegisteredAddress < ApplicationRecord
 
     CSV.foreach(file_path, headers: true) do |row|
       fixed_attributes_hash = row.to_hash.slice(*fixed_attribute_keys)
+      if fixed_attributes_hash["street_number_extension"].present?
+        fixed_attributes_hash["street_number_extension"] = fixed_attributes_hash["street_number_extension"].downcase
+      end
 
       street_id = find_or_create_registered_address_street(row["street_name"], row["plz"]).id
       fixed_attributes_hash[:registered_address_street_id] = street_id
