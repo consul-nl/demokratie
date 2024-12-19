@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_12_16_150938) do
+ActiveRecord::Schema.define(version: 2024_12_18_142040) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_trgm"
@@ -2158,6 +2158,9 @@ ActiveRecord::Schema.define(version: 2024_12_16_150938) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "default_deficiency_report_responsible_type"
+    t.bigint "default_deficiency_report_responsible_id"
+    t.index ["default_deficiency_report_responsible_type", "default_deficiency_report_responsible_id"], name: "index_registered_address_districts_on_default_dr_responsible", unique: true
   end
 
   create_table "registered_address_groupings", force: :cascade do |t|
