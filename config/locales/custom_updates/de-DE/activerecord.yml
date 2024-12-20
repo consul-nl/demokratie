@@ -227,6 +227,7 @@ de:
           soft: schwache Gruppe
       individual_group_value:
         name: Name
+        email_pattern: E-Mail-Muster
       sentiment:
         color: Farbe des Sentiments
       sentiment/translation:

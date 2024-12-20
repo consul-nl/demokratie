@@ -141,6 +141,7 @@ en:
           soft: soft
       individual_group_value:
         name: Name
+        email_pattern: E-mail pattern
       projekt_label:
         icon: Icon
         color: Color
