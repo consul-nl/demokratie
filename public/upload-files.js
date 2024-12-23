@@ -48,7 +48,7 @@ class UploadFilesPlugin extends Plugin {
             const buttonView = new ButtonView(locale);
 
             buttonView.set({
-                label:   'Upload Files',
+                label:   'Dateien hochladen',
                 icon:    icons.browseFiles,
                 tooltip: true
             });
@@ -135,7 +135,16 @@ class UploadFilesPlugin extends Plugin {
                             }
                         }
                     ],
-                    onHide() {
+                    onHide: () => {
+                        this.state = {
+                            type:        'picture',
+                            page:        1,
+                            search:      '',
+                            total_pages: 0,
+                            items:       [],
+                            chosen:      {},
+                            isLoading:   false
+                        }
                         buttonView.isOn = false;
                     }
                 });
@@ -203,44 +212,36 @@ class UploadFilesPlugin extends Plugin {
             // Sidebar for the chosen item
             const chosenItem = this.state.chosen;
 
-            // Display chosen item details
-            const fileName = new View(this.editor.locale);
-            fileName.setTemplate({
-                tag: 'p',
+            const titleLabel = new View(this.editor.locale);
+            titleLabel.setTemplate({
+                tag: 'label',
                 attributes: {
                     class: 'upldFls__details'
                 },
-                children: [`Dateiname: ${chosenItem.data_file_name}`]
+                children: ['Title']
             });
 
-            const uploadDate = new View(this.editor.locale);
-            uploadDate.setTemplate({
-                tag: 'p',
+            const titleInput = new InputTextView(this.editor.locale);
+            titleInput.set({
+                value: chosenItem.title,
+                placeholder: 'Title',
+                multiline: true
+            });
+            titleInput.bind('value').to(() => {
+                return chosenItem.title;
+            });
+            titleInput.on('input', (event) => {
+                this.state.chosen.title = event.source.element.value;
+            });
+
+            const descriptionLabel = new View(this.editor.locale);
+            descriptionLabel.setTemplate({
+                tag: 'label',
                 attributes: {
                     class: 'upldFls__details'
                 },
-                children: [`Upload-Datum: ${chosenItem.created_at}`]
+                children: ['Description']
             });
-
-            const fileSize = new View(this.editor.locale);
-            fileSize.setTemplate({
-                tag: 'p',
-                attributes: {
-                    class: 'upldFls__details'
-                },
-                children: [`Dateigröße: ${parseInt(chosenItem.data_file_size/1024)}kb`]
-            });
-
-            const fileDimensions = new View(this.editor.locale);
-            if (chosenItem.width && chosenItem.height) {
-                fileDimensions.setTemplate({
-                    tag: 'p',
-                    attributes: {
-                        class: 'upldFls__details'
-                    },
-                    children: [`Bildabmessungen: ${chosenItem.width} x ${chosenItem.height}`]
-                });
-            }
 
             const descriptionInput = new InputTextView(this.editor.locale);
             descriptionInput.set({
@@ -257,17 +258,24 @@ class UploadFilesPlugin extends Plugin {
                 this.state.chosen.description = event.source.element.value;
             });
 
+            const altTextLabel = new View(this.editor.locale);
+            altTextLabel.setTemplate({
+                tag: 'label',
+                attributes: {
+                    class: 'upldFls__details'
+                },
+                children: ['Alt Text']
+            });
+
             const altTextInput = new InputTextView(this.editor.locale);
             altTextInput.set({
                 value: chosenItem.alt_text,
                 placeholder: 'Alt Text',
                 multiline: true
             });
-
             altTextInput.bind('value').to(() => {
                 return chosenItem.alt_text;
             });
-
             altTextInput.on('input', (event) => {
                 this.state.chosen.alt_text = event.source.element.value;
             });
@@ -281,6 +289,49 @@ class UploadFilesPlugin extends Plugin {
             this.listenTo(editButton, 'execute', () => {
                 this._editFile();
             });
+
+            //*********
+
+            // Display chosen item details
+            const fileName = new View(this.editor.locale);
+            fileName.setTemplate({
+                tag: 'p',
+                attributes: {
+                    class: 'upldFls__details'
+                },
+                children: [`Name: ${chosenItem.data_file_name}`]
+            });
+
+            const uploadDate = new View(this.editor.locale);
+            uploadDate.setTemplate({
+                tag: 'p',
+                attributes: {
+                    class: 'upldFls__details'
+                },
+                children: [`Upload Date: ${chosenItem.created_at}`]
+            });
+
+            const fileSize = new View(this.editor.locale);
+            fileSize.setTemplate({
+                tag: 'p',
+                attributes: {
+                    class: 'upldFls__details'
+                },
+                children: [`File Size: ${parseInt(chosenItem.data_file_size/1024)}kb`]
+            });
+
+            const fileDimensions = new View(this.editor.locale);
+            if (chosenItem.width && chosenItem.height) {
+                fileDimensions.setTemplate({
+                    tag: 'p',
+                    attributes: {
+                        class: 'upldFls__details'
+                    },
+                    children: [`Dimensions: ${chosenItem.width} x ${chosenItem.height}`]
+                });
+            }
+
+            // *******
 
             const deleteButton = new ButtonView(this.editor.locale);
             deleteButton.set({
@@ -301,6 +352,13 @@ class UploadFilesPlugin extends Plugin {
                     {
                         tag: 'div',
                         attributes: {
+                            class: 'upldFls__editForm'
+                        },
+                        children: [titleLabel, titleInput, descriptionLabel, descriptionInput, altTextLabel, altTextInput, editButton]
+                    },
+                    {
+                        tag: 'div',
+                        attributes: {
                             class: 'upldFls__metaData'
                         },
                         children: [
@@ -313,9 +371,9 @@ class UploadFilesPlugin extends Plugin {
                     {
                         tag: 'div',
                         attributes: {
-                            class: 'upldFls__search'
+                            class: 'upldFls__editForm'
                         },
-                        children: [descriptionInput, altTextInput, editButton, deleteButton]
+                        children: [deleteButton]
                     }
                 ]
             });
@@ -323,7 +381,6 @@ class UploadFilesPlugin extends Plugin {
             const imageButton = new ButtonView(this.editor.locale);
             imageButton.set({
                 label: 'Bilder',
-                icon: icons.image,
                 tooltip: true,
                 withText: true,
                 class:    `upldFls__btn ${this.state.type === 'picture' ? 'active' : ''}`
@@ -338,7 +395,6 @@ class UploadFilesPlugin extends Plugin {
             const documentsButton = new ButtonView(this.editor.locale);
             documentsButton.set({
                 label: 'Dokumente',
-                icon: icons.file,
                 tooltip: true,
                 withText: true,
                 class:    `upldFls__btn ${this.state.type === 'document' ? 'active' : ''}`
@@ -665,7 +721,7 @@ class UploadFilesPlugin extends Plugin {
 
     _editFile() {
         const formData = new FormData();
-        formData.append('picture[title]', this.state.chosen.data_file_name);
+        formData.append('picture[title]', this.state.chosen.title);
         formData.append('picture[description]', this.state.chosen.description);
         formData.append('picture[alt_text]', this.state.chosen.alt_text);
         formData.append('editor_id', this.state.editor_id);
