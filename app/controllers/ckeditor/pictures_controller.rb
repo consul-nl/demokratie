@@ -9,7 +9,8 @@ class Ckeditor::PicturesController < ApplicationController
     if picture.save
       render json: picture.attributes.symbolize_keys.slice(*allowed_attributes).merge(
         url: picture.url_content(editor_id: params[:editor_id]),
-        thumb_url: picture.url_thumb
+        thumb_url: picture.url_thumb(editor_id: params[:editor_id]),
+        created_at: picture.created_at.strftime("%d.%m.%Y")
       )
     else
       render json: { error: { message: picture.errors.messages.values.flatten.join(", ") }}
@@ -22,7 +23,8 @@ class Ckeditor::PicturesController < ApplicationController
     picture.update!(picture_params)
     render json: picture.attributes.symbolize_keys.slice(*allowed_attributes).merge(
       url: picture.url_content(editor_id: params[:editor_id]),
-      thumb_url: picture.url_thumb
+      thumb_url: picture.url_thumb(editor_id: params[:editor_id]),
+      created_at: picture.created_at.strftime("%d.%m.%Y")
     )
   end
 
@@ -40,6 +42,6 @@ class Ckeditor::PicturesController < ApplicationController
     end
 
     def allowed_attributes
-      %i[id data_file_name data_content_type data_file_size width height created_at title description alt_text url thumb_url]
+      %i[id data_file_name data_content_type data_file_size width height title description alt_text url thumb_url]
     end
 end

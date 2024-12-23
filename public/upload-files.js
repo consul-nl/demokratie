@@ -20,7 +20,7 @@ class UploadFilesPlugin extends Plugin {
             ? document.querySelector('meta[name="csrf-token"]').content
             : 'test';
         this.state = {
-            editor_id:   'newsletter_body',
+            editor_id:   editor.sourceElement.id,
             type:        'picture',
             page:        1,
             search:      '',
@@ -68,11 +68,11 @@ class UploadFilesPlugin extends Plugin {
 
                 // Show the dialog with the generated content
                 dialog.show({
-                    title:         'Media files manager',
+                    title:         'CkEditor-Dateien',
                     content:       this.dialogView,
                     actionButtons: [
                         {
-                            label:     'Choose',
+                            label:     'Wählen',
                             class:     'ck-button-action',
                             withText:  true,
                             onExecute: () => {
@@ -210,7 +210,7 @@ class UploadFilesPlugin extends Plugin {
                 attributes: {
                     class: 'upldFls__details'
                 },
-                children: [`Name: ${chosenItem.data_file_name}`]
+                children: [`Dateiname: ${chosenItem.data_file_name}`]
             });
 
             const uploadDate = new View(this.editor.locale);
@@ -219,7 +219,7 @@ class UploadFilesPlugin extends Plugin {
                 attributes: {
                     class: 'upldFls__details'
                 },
-                children: [`Upload Date: ${chosenItem.created_at}`]
+                children: [`Upload-Datum: ${chosenItem.created_at}`]
             });
 
             const fileSize = new View(this.editor.locale);
@@ -228,7 +228,7 @@ class UploadFilesPlugin extends Plugin {
                 attributes: {
                     class: 'upldFls__details'
                 },
-                children: [`File Size: ${parseInt(chosenItem.data_file_size/1024)}kb`]
+                children: [`Dateigröße: ${parseInt(chosenItem.data_file_size/1024)}kb`]
             });
 
             const fileDimensions = new View(this.editor.locale);
@@ -238,14 +238,14 @@ class UploadFilesPlugin extends Plugin {
                     attributes: {
                         class: 'upldFls__details'
                     },
-                    children: [`Dimensions: ${chosenItem.width} x ${chosenItem.height}`]
+                    children: [`Bildabmessungen: ${chosenItem.width} x ${chosenItem.height}`]
                 });
             }
 
             const descriptionInput = new InputTextView(this.editor.locale);
             descriptionInput.set({
                 value: chosenItem.description,
-                placeholder: 'Description',
+                placeholder: 'Beschreibung',
                 multiline: true
             });
 
@@ -274,7 +274,7 @@ class UploadFilesPlugin extends Plugin {
 
             const editButton = new ButtonView(this.editor.locale);
             editButton.set({
-                label: 'Edit',
+                label: 'Aktualisieren',
                 withText: true,
                 class: 'upldFls__btnEdit'
             });
@@ -284,7 +284,7 @@ class UploadFilesPlugin extends Plugin {
 
             const deleteButton = new ButtonView(this.editor.locale);
             deleteButton.set({
-                label: 'Delete',
+                label: 'Löschen',
                 withText: true,
                 class: 'upldFls__btnDelete'
             });
@@ -322,7 +322,7 @@ class UploadFilesPlugin extends Plugin {
         } else {
             const imageButton = new ButtonView(this.editor.locale);
             imageButton.set({
-                label: 'Images',
+                label: 'Bilder',
                 icon: icons.image,
                 tooltip: true,
                 withText: true,
@@ -337,7 +337,7 @@ class UploadFilesPlugin extends Plugin {
             // Create the documents button
             const documentsButton = new ButtonView(this.editor.locale);
             documentsButton.set({
-                label: 'Documents',
+                label: 'Dokumente',
                 icon: icons.file,
                 tooltip: true,
                 withText: true,
@@ -369,7 +369,7 @@ class UploadFilesPlugin extends Plugin {
             const searchInput = new InputTextView(this.editor.locale);
             searchInput.set({
                 value: this.state.search,
-                placeholder: 'Search...'
+                placeholder: 'Suchen...'
             });
 
             searchInput.bind('value').to(() => {
@@ -383,7 +383,7 @@ class UploadFilesPlugin extends Plugin {
             // Create the search button
             const searchButton = new ButtonView(this.editor.locale);
             searchButton.set({
-                label: 'Search',
+                label: 'Suchen',
                 icon: icons.search,
                 tooltip: true,
                 withText: true,
@@ -496,7 +496,7 @@ class UploadFilesPlugin extends Plugin {
                         attributes: {
                             class: ''
                         },
-                        children:   ['Loading...']
+                        children:   ['Wird geladen...']
                     }
                 ]
             });
@@ -620,7 +620,7 @@ class UploadFilesPlugin extends Plugin {
             method:  'POST',
             headers: {
                 'Content-Type': 'application/json',
-                //'X-CSRF-TOKEN': this.csrf_token
+                'X-CSRF-TOKEN': this.csrf_token
             },
             body:    JSON.stringify({
                 ...params,
@@ -646,7 +646,7 @@ class UploadFilesPlugin extends Plugin {
         fetch(this.apiUpload[this.state.type], {
             method:  'POST',
             headers: {
-                //'X-CSRF-TOKEN': this.csrf_token
+                'X-CSRF-TOKEN': this.csrf_token
             },
             body: data
         })
@@ -673,7 +673,7 @@ class UploadFilesPlugin extends Plugin {
         fetch(this.apiPut(this.state.chosen.id), {
             method:  'PATCH',
             headers: {
-                //'X-CSRF-TOKEN': this.csrf_token
+                'X-CSRF-TOKEN': this.csrf_token
             },
             body: formData
         })
@@ -701,7 +701,7 @@ class UploadFilesPlugin extends Plugin {
         fetch(this.apiPut(chosenId), {
             method:  'DELETE',
             headers: {
-                //'X-CSRF-TOKEN': this.csrf_token
+                'X-CSRF-TOKEN': this.csrf_token
             }
         })
             .then((response) => response.json())

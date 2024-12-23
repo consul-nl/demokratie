@@ -5,7 +5,7 @@ class Ckeditor::Document < Ckeditor::Asset
     absolute_path?(editor_id) ? rails_blob_url(storage_data, host: Setting["url"]) : rails_blob_path(storage_data, only_path: true)
   end
 
-  def url_thumb
+  def url_thumb(editor_id: nil)
     ""
   end
 
