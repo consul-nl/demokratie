@@ -69,9 +69,10 @@ class DebatesController < ApplicationController
       end
 
       format.csv do
-        formated_time = Time.current.strftime("%d-%m-%Y-%H-%M-%S")
-        send_data Debates::CsvExporter.new(@debates.limit(nil)).to_csv,
-          filename: "debates-#{formated_time}.csv"
+        redirect_to debates_path and return unless current_user&.administrator?
+
+        send_data CsvServices::DebatesExporter.call(@resources.limit(nil)),
+          filename: "debates-#{Time.current.strftime("%d-%m-%Y-%H-%M-%S")}.csv"
       end
     end
   end
