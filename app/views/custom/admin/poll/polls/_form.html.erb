@@ -25,11 +25,13 @@
 
       <div class="small-12 column">
         <%= translations_form.text_area :summary,
+            value: AdminWYSIWYGSanitizer.new.sanitize(@poll.summary),
             class: "html-area #{ck_editor_class(current_user)}" %>
       </div>
 
       <div class="small-12 column">
         <%= translations_form.text_area :closing_note,
+            value: AdminWYSIWYGSanitizer.new.sanitize(@poll.closing_note),
             class: "html-area #{ck_editor_class(current_user)}" %>
       </div>
     <% end %>
