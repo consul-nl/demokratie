@@ -179,21 +179,6 @@ de:
             icon: Icon
             title: Name
             notice_text: E-Mail-Benachrichtigungstext
-        areas:
-          destroy:
-            cannot_be_destroyed: Sie können dieses Gebiet nicht löschen, da er mindestens einem Mangel zugewiesen ist.
-            destroyed_successfully: Der Gebiet wurde erfolgreich gelöscht.
-          edit:
-            editing: Gebiet bearbeiten
-          form:
-            submit_button: Speichern
-          index:
-            create: Gebiet erstellen
-            title: Gebiet
-          new:
-            creating: Neues Gebiet erstellen
-          area:
-            name: Name
         districts:
           index:
             title: Gebiete
