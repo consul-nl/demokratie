@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_12_20_164634) do
+ActiveRecord::Schema.define(version: 2025_01_07_123218) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_trgm"
@@ -1394,12 +1394,14 @@ ActiveRecord::Schema.define(version: 2024_12_20_164634) do
     t.bigint "deficiency_report_area_id"
     t.jsonb "geocoder_data", default: {}
     t.string "approximated_address"
+    t.bigint "registered_address_district_id"
     t.index ["deficiency_report_area_id"], name: "index_map_locations_on_deficiency_report_area_id"
     t.index ["deficiency_report_id"], name: "index_map_locations_on_deficiency_report_id"
     t.index ["investment_id"], name: "index_map_locations_on_investment_id"
     t.index ["projekt_id"], name: "index_map_locations_on_projekt_id"
     t.index ["projekt_phase_id"], name: "index_map_locations_on_projekt_phase_id"
     t.index ["proposal_id"], name: "index_map_locations_on_proposal_id"
+    t.index ["registered_address_district_id"], name: "index_map_locations_on_registered_address_district_id"
     t.index ["shape"], name: "index_map_locations_on_shape", using: :gin
   end
 
@@ -2837,6 +2839,7 @@ ActiveRecord::Schema.define(version: 2024_12_20_164634) do
   add_foreign_key "map_locations", "deficiency_reports"
   add_foreign_key "map_locations", "projekt_phases"
   add_foreign_key "map_locations", "projekts"
+  add_foreign_key "map_locations", "registered_address_districts"
   add_foreign_key "memos", "users"
   add_foreign_key "moderators", "users"
   add_foreign_key "notifications", "users"
