@@ -212,6 +212,7 @@ de:
           street_name: Straße
           street_number: Hausnummer
           street_number_extension: Hausnummerergänzung
+          district: Gebiet
           groupings: Gruppierungen
       registered_address_groupings:
         index:
@@ -224,6 +225,14 @@ de:
           key: Spaltenname
           name: Name
           options: Optionen
+      registered_address_districts:
+        index:
+          title: Gebiete
+        update:
+          success: Gebiet erfolgreich aktualisiert
+        attributes:
+          name: Name
+          coordinates: Koordinaten
       registered_address_streets:
         index:
           title: Registrierte Adressen
@@ -255,6 +264,8 @@ de:
           list: Registrierte Adressen
         registered_address_groupings:
           list: Registrierte Adressgruppen
+        registered_address_districts:
+          list: Gebiete
         registered_address_streets:
           list: Registrierte Straßen
         individual_groups: Individuelle Gruppen
