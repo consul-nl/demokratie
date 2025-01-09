@@ -4,8 +4,6 @@ class MapLocation < ApplicationRecord
   belongs_to :projekt, touch: true
   belongs_to :deficiency_report, touch: true
   belongs_to :projekt_phase, touch: true
-  belongs_to :deficiency_report_area, class_name: "DeficiencyReport::Area",
-    foreign_key: :deficiency_report_area_id, touch: true, inverse_of: :map_location
   belongs_to :registered_address_district, class_name: "RegisteredAddress::District",
     foreign_key: :registered_address_district_id, touch: true, inverse_of: :map_location
 
