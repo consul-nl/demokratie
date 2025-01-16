@@ -47,6 +47,8 @@ class Projekts::ListItemComponent < ApplicationComponent
   end
 
   def image_url
-    projekt.image&.attachment&.variant(resize_to_limit: [298, 180], saver: { quality: 85 }, format: 'jpeg')
+    polymorphic_path(resource.image.attachment.variant(
+      projekt.image&.attachment&.variant(resize_to_limit: [298, 180], saver: { quality: 85 }, format: 'jpeg')
+    )
   end
 end
