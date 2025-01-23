@@ -534,6 +534,7 @@ de:
           poll_booth_assignments: Wahlkabinen
           poll_officer_assignments: Wahlhelfer
           poll_recounts: Auszählung
+          poll_managers: Abstimmungshelfer
           poll_results: Ergebnisse
           budget_edit: Editieren
           budget_investments: Vorschläge

@@ -309,6 +309,20 @@ module ProjektPhaseAdminActions
     render "custom/admin/projekt_phases/poll_recounts"
   end
 
+  def poll_managers
+    authorize!(:poll_managers, @projekt_phase)
+    @poll = @projekt_phase.poll
+    @poll_managers = PollManager.all
+  end
+
+  def update_poll_manager_assignments
+    authorize!(:poll_managers, @projekt_phase)
+    @poll = @projekt_phase.poll
+    @poll.update!(poll_manager_ids: params["poll"]["poll_manager_ids"])
+
+    redirect_to polymorphic_path([@namespace, @projekt_phase], action: :poll_managers)
+  end
+
   def poll_results
     authorize!(:poll_results, @projekt_phase)
     @poll = @projekt_phase.poll
