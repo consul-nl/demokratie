@@ -27,6 +27,7 @@ namespace :projekt_management do
       get :poll_booth_assignments
       get :poll_officer_assignments
       get :poll_recounts
+      get :poll_managers
       get :poll_results
       get :budget_edit
       get :budget_investments

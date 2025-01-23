@@ -242,6 +242,7 @@ de:
         projekts: Projekte
         projekt_managers: Projektmanager*innen
         deficiency_report_managers: Admin Mängelmelder
+        poll_managers: Abstimmungshelfer*innen
         legislation: Textbearbeitung
         age_ranges: Altersgruppen
         modal_notification: Popup Benachrichtigung
@@ -423,6 +424,13 @@ de:
           no_deficiency_report_managers: Keine Mängelmelder Admins vorhanden.
         search:
           title: "Mangelmeldungmanager*innen: Benutzer*innensuche"
+      poll_managers:
+        index:
+          title: Abstimmungshelfer*innen
+          no_projekt_managers: Keine Abstimmungshelfer*innen vorhanden.
+        search:
+          title: "Abstimmungshelfer*innen: Benutzer*innensuche"
+      deficiency_report_managers:
       settings:
         index:
           extended_features:
