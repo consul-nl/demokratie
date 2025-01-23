@@ -63,7 +63,6 @@ class Officing::OfflinePollVotersController < Officing::BaseController
     @responding_user = User.find(params[:responding_user_id])
     @poll = Poll.find(params[:poll_id])
     @questions = @poll.questions.for_render.root_questions.sort_for_list
-
   end
 
   def record_answer

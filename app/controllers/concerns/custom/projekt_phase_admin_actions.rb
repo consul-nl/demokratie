@@ -318,7 +318,9 @@ module ProjektPhaseAdminActions
   def update_poll_manager_assignments
     authorize!(:poll_managers, @projekt_phase)
     @poll = @projekt_phase.poll
-    @poll.update!(poll_manager_ids: params["poll"]["poll_manager_ids"])
+    poll_params = params.require(:poll).permit(:lock_on, poll_manager_ids: [])
+
+    @poll.update!(poll_params)
 
     redirect_to polymorphic_path([@namespace, @projekt_phase], action: :poll_managers)
   end
