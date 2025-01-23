@@ -323,6 +323,15 @@ module ProjektPhaseAdminActions
     redirect_to polymorphic_path([@namespace, @projekt_phase], action: :poll_managers)
   end
 
+  def poll_manager_audits
+    poll = @projekt_phase.poll
+    poll_voters = Poll::Voter.where(poll_id: poll.id)
+                             .where.not(poll_manager_id: nil)
+
+    @audits = Audit.where(auditable: poll_voters)
+                   .page(params[:page]).per(50)
+  end
+
   def poll_results
     authorize!(:poll_results, @projekt_phase)
     @poll = @projekt_phase.poll

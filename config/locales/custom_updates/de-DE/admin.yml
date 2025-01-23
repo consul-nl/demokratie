@@ -535,6 +535,7 @@ de:
           poll_officer_assignments: Wahlhelfer
           poll_recounts: Auszählung
           poll_managers: Abstimmungshelfer
+          poll_manager_audits: Abstimmungshelfer Logs
           poll_results: Ergebnisse
           budget_edit: Editieren
           budget_investments: Vorschläge
