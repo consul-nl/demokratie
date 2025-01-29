@@ -1,6 +1,12 @@
 <% email_brand_color = Setting["brand_color"] %>
 <div style="width: 100%;max-width: 1280px">
   <style>
+    table {
+      width: auto;
+    }
+    td {
+      padding-bottom: 0 !important;
+    }
     a, a:hover, a:focus {
       color: inherit;
     }
@@ -50,29 +56,48 @@
   <% else %>
     <% header_background_style = "background: #{email_brand_color}" %>
   <% end %>
-  <div style="max-height: 420px;min-height: 420px; background-size: 100% auto; background-repeat: no-repeat;margin:auto;padding:0;<%= header_background_style %> ;">
-    <div style="width: 100%;max-width:590px; margin: auto;margin-bottom: 50px;padding-top: 50px;color:white;vertical-align:top; padding:120px 0 0 0">
-      <h1 style="font-size: 32px;margin:0;color:white">
-        <%= @newsletter.title %>
-      </h1>
-      <div style="display:block; max-width:204px; width: 100%; height:0; margin-top:4px; margin-bottom:18px; padding-top:0.5em; border-style:solid; border-width:6px 6px 6px 0; border-color:transparent transparent #0ab4ff transparent">
-      </div>
-      <div style="font-size:19px; margin-top:0; margin-bottom:8px; color:white">
-        <%= @newsletter.subtitle %>
-      </div>
-    </div>
-    <table align="center" width="670" border="0" style="max-width: 670px;margin-bottom: 0;" cellpadding="0" cellspacing="0" class="x_wrapper">
-      <tbody>
-        <tr>
-          <td style="background:#ffffff; padding:34px 40px 0 40px" align="left">
-            <h3 style="font-size:22px;font-weight: normal; color:#000000;margin-bottom:0; margin-top:0">
-              <%= @newsletter.greeting %>
-            </h3>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+
+  <table height="420" align="center" width="100%" style="width: 100%;max-height: 420px;min-height: 420px; background-position: top center; background-repeat: no-repeat;margin:auto;padding:0;<%= header_background_style %> ;">
+    <tbody>
+
+      <tr>
+        <td>
+          <table width="590" align="center">
+            <tbody>
+              <tr>
+                <td>
+                  <h1 style="font-size: 32px;margin:0;color:white">
+                    <%= @newsletter.title %>
+                  </h1>
+                  <div style="display:block; max-width:204px; width: 100%; height:0; margin-top:4px; margin-bottom:18px; padding-top:0.5em; border-style:solid; border-width:6px 6px 6px 0; border-color:transparent transparent #0ab4ff transparent">
+                  </div>
+                  <div style="font-size:19px; margin-top:0; margin-bottom:8px; color:white">
+                    <%= @newsletter.subtitle %>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="vertical-align: bottom;">
+          <table align="center" width="670" border="0" style="width: 100%;max-width: 670px;margin-bottom: 0;" cellpadding="0" cellspacing="0" class="x_wrapper">
+            <tbody>
+              <tr>
+                <td style="vertical-align: bottom;background:#ffffff; padding:34px 40px 0 40px" align="left">
+                  <h3 style="font-size:22px;font-weight: normal; color:#000000;margin-bottom:0; margin-top:0">
+                    <%= @newsletter.greeting %>
+                  </h3>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   <table class="newsletter-template-content" cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif; font-size: 15px; margin: 0; background: #fff; margin: 0 auto; max-width: 670px; width: 100%;margin-bottom: 40px;background:#ffffff; ">
     <tbody>
       <tr>
