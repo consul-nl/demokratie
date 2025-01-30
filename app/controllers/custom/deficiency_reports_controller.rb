@@ -203,9 +203,13 @@ class DeficiencyReportsController < ApplicationController
 
     if dr.responsible.is_a?(DeficiencyReport::Officer)
       DeficiencyReportMailer.notify_officer(dr, dr.responsible).deliver_later
+      Notification.add(dr.responsible.user, dr)
+      Activity.log(dr.responsible.user, "email", dr)
     elsif dr.responsible.is_a?(DeficiencyReport::OfficerGroup)
       dr.responsible.officers.each do |officer|
         DeficiencyReportMailer.notify_officer(dr, officer).deliver_later
+        Notification.add(officer.user, dr)
+        Activity.log(officer.user, "email", dr)
       end
     end
   end
