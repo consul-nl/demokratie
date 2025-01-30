@@ -39,10 +39,10 @@
       </div>
 
       <div>
-        <%= label_tag :officer, t("custom.admin.deficiency_reports.index.officer_name") %>
-        <%= select_tag :officer,
+        <%= label_tag :responsible, t("custom.admin.deficiency_reports.index.responsible_name") %>
+        <%= select_tag :responsible,
           options_for_select(
-            DeficiencyReport::Officer.all.map { |dro| [dro.name, dro.id] }, params[:officer]
+            (DeficiencyReport::Officer.all + DeficiencyReport::OfficerGroup.all).map { |r| [r.name, "#{r.class.name}_#{r.id}"] }, params[:responsible]
           ),
           prompt: t("custom.shared.select") %>
       </div>

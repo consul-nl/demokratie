@@ -10,6 +10,12 @@ class DeficiencyReportManagement::DeficiencyReportsController < DeficiencyReport
   def index
     filter_assigned_reports_only
     @deficiency_reports = apply_filters(@deficiency_reports)
+
+    if params[:responsible].present?
+      klass, id = params[:responsible].split("_")
+      @deficiency_reports = @deficiency_reports.where(responsible_type: klass, responsible_id: id)
+    end
+
     @deficiency_reports = @deficiency_reports.order(id: :desc)
 
     unless params[:format] == "csv"

@@ -9,7 +9,6 @@ module CustomSearch
 
     apply_search
     apply_address_search
-    apply_location_filter
     apply_date_filters
     apply_regular_filters
 
@@ -26,14 +25,6 @@ module CustomSearch
     return unless @filtered_params[:address_search].present?
 
     @filtered_resources = @filtered_resources.address_search(@filtered_params[:address_search])
-  end
-
-  def apply_location_filter
-    return unless @filtered_params[:coordinates].present?
-    return unless @filtered_resources.class_name.in? %w[DeficiencyReport]
-
-    coordinates = @filtered_params[:coordinates].split(",").map(&:to_f)
-    @filtered_resources = @filtered_resources.joins(:map_location).where(map_locations: { id: MapLocation.near(coordinates, 1).to_a.pluck(:id) })
   end
 
   def apply_date_filters
@@ -70,7 +61,6 @@ module CustomSearch
       [
         [:deficiency_report_status_id, :status],
         [:deficiency_report_category_id, :category],
-        [:deficiency_report_officer_id, :officer],
         [:admin_accepted, :admin_accepted]
       ]
     end
