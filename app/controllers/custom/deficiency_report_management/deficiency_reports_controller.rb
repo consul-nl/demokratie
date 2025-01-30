@@ -72,8 +72,6 @@ class DeficiencyReportManagement::DeficiencyReportsController < DeficiencyReport
   def destroy
     @deficiency_report = DeficiencyReport.find(params[:id])
     @deficiency_report.destroy!
-
-    redirect_to deficiency_report_management_deficiency_reports_path, notice: t("custom.admin.deficiency_reports.destroy.success_notice")
   end
 
   def audits
