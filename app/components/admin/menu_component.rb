@@ -254,6 +254,7 @@ class Admin::MenuComponent < ApplicationComponent
       link_to(t("admin.menu.title_site_customization"), "#", class: "site-customization-link") +
         link_list(
           homepage_link,
+          landing_pages_link,
           pages_link,
           banners_link,
           modal_notifications_link,
@@ -269,6 +270,14 @@ class Admin::MenuComponent < ApplicationComponent
         t("admin.menu.site_customization.homepage"),
         admin_homepage_path,
         homepage?
+      ]
+    end
+
+    def landing_pages_link
+      [
+        t("admin.menu.site_customization.lading_pages"),
+        admin_site_customization_landing_pages_path,
+        pages? || controller_name == "landing_pages"
       ]
     end
 

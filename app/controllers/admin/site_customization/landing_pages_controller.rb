@@ -1,12 +1,14 @@
-class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::BaseController
+class Admin::SiteCustomization::LandingPagesController < Admin::SiteCustomization::BaseController
   include Translatable
-  load_and_authorize_resource :page, class: "SiteCustomization::Page"
+  load_and_authorize_resource :page, class: "SiteCustomization::Page", except: [:new]
 
   def new
+    @page = ::SiteCustomization::Page.new(type: :landing)
+    authorize! :new, @page
   end
 
   def index
-    @pages = SiteCustomization::Page.regular.order("slug").page(params[:page])
+    @pages = SiteCustomization::Page.landing.order("slug").page(params[:page])
   end
 
   def create
@@ -48,6 +50,6 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
     end
 
     def resource
-      SiteCustomization::Page.regular.find(params[:id])
+      SiteCustomization::Page.landing.find(params[:id])
     end
 end

@@ -421,6 +421,8 @@ namespace :admin do
   resources :geozones, only: [:index, :new, :create, :edit, :update, :destroy]
 
   namespace :site_customization do
+    resources :landing_pages, except: [:show] do
+    end
     resources :pages, except: [:show] do
       resources :cards, except: [:show], as: :widget_cards
     end
