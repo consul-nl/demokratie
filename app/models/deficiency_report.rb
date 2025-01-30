@@ -172,4 +172,15 @@ class DeficiencyReport < ApplicationRecord
     map_location&.get_district&.default_deficiency_report_responsible ||
       category&.default_responsible
   end
+
+  def responsible_officers
+    case responsible
+    when DeficiencyReport::Officer
+      [responsible]
+    when DeficiencyReport::OfficerGroup
+      responsible.officers
+    else
+      []
+    end
+  end
 end
