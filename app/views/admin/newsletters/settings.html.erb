@@ -58,7 +58,7 @@
 <h2>Brand color</h2>
 <div class="config-block">
   <%= form_with(url: update_color_admin_newsletters_path, method: :patch, html: { id: "edit_brand_color_newsletter" }) do |f| %>
-    <div class="margin-bottom">
+    <div style="width:150px;" class="margin-bottom">
       <%= f.color_field :newsletter_brand_color, value: Setting['newsletter_brand_color'], label: false %>
     </div>
 
