@@ -69,11 +69,20 @@
 </div>
 
 <h2>Fußzeileninhalt</h2>
-<div class="config-block">
+<% content_block_key = 'newsletter_email_footer_block_1' %>
+<% block = SiteCustomization::ContentBlock.custom_block_for(content_block_key, current_user&.locale) %>
+<% return_path = settings_admin_newsletters_path %>
 
-  <% content_block_key = 'newsletter_email_footer_block_1' %>
-  <% block = SiteCustomization::ContentBlock.custom_block_for(content_block_key, current_user&.locale) %>
-  <% return_path = settings_admin_newsletters_path %>
-  <% path = edit_admin_site_customization_content_block_path(block.id, return_to: return_path) %>
-  <%= link_to "E-Mail-Fußzeile bearbeiten", path %>
-</div>
+<%= form_for [:admin, block], html: { class: "edit_page" } do |f| %>
+  <%= render "shared/errors", resource: block %>
+
+  <%= hidden_field_tag :return_to, settings_admin_newsletters_path  %>
+  <%= f.hidden_field :locale%>
+  <%= f.hidden_field :name%>
+
+  <%= f.text_area :body, rows: 10, value: AdminWYSIWYGSanitizer.new.sanitize(block.body), label: false, class: block.custom? ? "html-area #{ck_editor_class(current_user)}" : "" %>
+  <div class="small-12 medium-12 large-12">
+    <%= f.submit class: "button success" %>
+  </div>
+<% end %>
+
