@@ -785,6 +785,10 @@ de:
       common:
         download_current_selection: Aktuelle Auswahl herunterladen
       newsletters:
+        settings:
+          email_logo: Logo im E-Mail Header
+          brand_color: Farbe des E-Mail Header & Footers
+          footer: Fußzeileninhalt
         index:
           tabs:
             list: Newsletter

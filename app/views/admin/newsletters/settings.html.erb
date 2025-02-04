@@ -16,8 +16,8 @@
   </li>
 </ul>
 
-<h2>Email logo</h2>
-<div class="config-block">
+<h3><%= t("custom.admin.newsletters.settings.email_logo") %></h2>
+<div class="compact-config-block">
   <% image = @image || SiteCustomization::Image.find_or_create_by(name: "logo_newsletter_email") %>
 
   <%= form_with(url: update_logo_admin_newsletters_path, method: :patch, html: { id: "edit_#{dom_id(image)}" }) do |f| %>
@@ -55,8 +55,8 @@
   <% end %>
 </div>
 
-<h2>Brand color</h2>
-<div class="config-block">
+<h3><%= t("custom.admin.newsletters.settings.brand_color") %></h2>
+<div class="compact-config-block">
   <%= form_with(url: update_color_admin_newsletters_path, method: :patch, html: { id: "edit_brand_color_newsletter" }) do |f| %>
     <div style="width:150px;" class="margin-bottom">
       <%= f.color_field :newsletter_brand_color, value: Setting['newsletter_brand_color'], label: false %>
@@ -68,7 +68,7 @@
   <% end %>
 </div>
 
-<h2>Fußzeileninhalt</h2>
+<h3><%= t("custom.admin.newsletters.settings.footer") %></h2>
 <% content_block_key = 'newsletter_email_footer_block_1' %>
 <% block = SiteCustomization::ContentBlock.custom_block_for(content_block_key, current_user&.locale) %>
 <% return_path = settings_admin_newsletters_path %>
