@@ -1,4 +1,4 @@
-<% email_brand_color = Setting["brand_color"] %>
+<% email_brand_color = Setting["newsletter_brand_color"] %>
 
 <% if @newsletter.image&.attachment&.attached? %>
   <% background_image_url = url_for(@newsletter.image.attachment) %>
