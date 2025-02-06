@@ -25,5 +25,24 @@ namespace :officing do
     delete ":poll_question_id/answer/:poll_answer_id/remove_answer",      action: :remove_answer,       as: :remove_answer
   end
 
+
+  resources :budgets, only: [] do
+    member do
+      get :verify_user
+      post :find_or_create_user
+      get :officing_desk
+    end
+  end
+
+  resources :proposal_phases, only: [] do
+    member do
+      get :verify_user
+      post :find_or_create_user
+      get :officing_desk
+      get :bulk_votes
+      post :update_bulk_votes
+    end
+  end
+
   root to: "dashboard#index"
 end
