@@ -17,7 +17,7 @@
     <% if current_user.officing_manager? %>
       <% current_user.officing_manager.officing_polls.each do |poll| %>
         <li>
-          <%= link_to poll.name, officing_offline_poll_voters_verify_user_path(poll), class: "users-link" %>
+          <%= link_to poll.name, verify_user_officing_poll_path(poll), class: "users-link" %>
         </li>
       <% end %>
 
