@@ -2149,7 +2149,7 @@ ActiveRecord::Schema.define(version: 2025_01_30_135023) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "default_deficiency_report_responsible_type"
     t.bigint "default_deficiency_report_responsible_id"
-    t.index ["default_deficiency_report_responsible_type", "default_deficiency_report_responsible_id"], name: "index_registered_address_districts_on_default_dr_responsible", unique: true
+    t.index ["default_deficiency_report_responsible_type", "default_deficiency_report_responsible_id"], name: "index_registered_address_districts_on_default_dr_responsible"
   end
 
   create_table "registered_address_groupings", force: :cascade do |t|
