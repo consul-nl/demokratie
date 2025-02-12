@@ -2,7 +2,7 @@
   <%= t("admin.header.title") %> - <%= t("admin.menu.site_customization.pages") %>
 <% end %>
 
-<%= link_to t("admin.site_customization.pages.index.create"), new_admin_site_customization_landing_page_path, class: "button float-right" %>
+<%= link_to t("admin.site_customization.pages.index.create"), new_admin_site_customization_page_path(type: :landing), class: "button float-right" %>
 <h2 class="inline-block"><%= t("admin.site_customization.pages.index.title") %></h2>
 
 <% if @pages.any? %>
@@ -32,7 +32,7 @@
             <a
               class="admin-action edit-link"
               aria-label="<%= page.title %>"
-              href="<%= edit_admin_site_customization_landing_page_path(page) %>"
+              href="<%= edit_admin_site_customization_page_path(page) %>"
               >
               Edit
             </a>

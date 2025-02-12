@@ -3,6 +3,9 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
   load_and_authorize_resource :page, class: "SiteCustomization::Page"
 
   def new
+    if params[:type] == "landing"
+      find_or_create_content_cards(@page)
+    end
   end
 
   def index
@@ -12,7 +15,14 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
   def create
     if @page.save
       notice = t("admin.site_customization.pages.create.notice")
-      redirect_to admin_site_customization_pages_path, notice: notice
+
+      if @page.landing?
+        find_or_create_content_cards(@page)
+
+        redirect_to admin_site_customization_landing_pages_path, notice: notice
+      else
+        redirect_to admin_site_customization_pages_path, notice: notice
+      end
     else
       flash.now[:error] = t("admin.site_customization.pages.create.error")
       render :new
@@ -22,7 +32,12 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
   def update
     if @page.update(page_params)
       notice = t("admin.site_customization.pages.update.notice")
-      redirect_to admin_site_customization_pages_path, notice: notice
+
+      if @page.landing?
+        redirect_to admin_site_customization_landing_pages_path, notice: notice
+      else
+        redirect_to admin_site_customization_pages_path, notice: notice
+      end
     else
       flash.now[:error] = t("admin.site_customization.pages.update.error")
       render :edit
@@ -32,7 +47,12 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
   def destroy
     @page.destroy!
     notice = t("admin.site_customization.pages.destroy.notice")
-    redirect_to admin_site_customization_pages_path, notice: notice
+
+    if @page.landing?
+      redirect_to admin_site_customization_landing_pages_path, notice: notice
+    else
+      redirect_to admin_site_customization_pages_path, notice: notice
+    end
   end
 
   private
@@ -42,12 +62,20 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
     end
 
     def allowed_params
-      attributes = [:slug, :more_info_flag, :print_content_flag, :status]
+      attributes = [:slug, :more_info_flag, :print_content_flag, :status, :type]
 
       [*attributes, translation_params(SiteCustomization::Page)]
     end
 
     def resource
       SiteCustomization::Page.regular.find(params[:id])
+    end
+
+    def find_or_create_content_cards(page)
+      @content_cards =
+        SiteCustomization::ContentCard
+        .get_or_create_for_landing_page(
+          page.id
+        )
     end
 end

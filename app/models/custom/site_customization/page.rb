@@ -9,11 +9,10 @@ class SiteCustomization::Page < ApplicationRecord
   belongs_to :projekt, touch: true
 
   has_many :comments, through: :projekt
-  has_many :widget_cards, dependent: :destroy
 
   enum type: {
     regular: "regular",
-    landing: "ladning"
+    landing: "landing"
   }
 
   has_many :landing_page_resources, foreign_key: "landing_page_id", dependent: :destroy
