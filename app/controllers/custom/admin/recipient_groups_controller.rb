@@ -1,5 +1,5 @@
 class Admin::RecipientGroupsController < Admin::BaseController
-  load_and_authorize_resource
+  load_and_authorize_resource only: [:edit, :update, :destroy]
 
   def index
     @recipient_groups = RecipientGroup.order(created_at: :desc).page(params[:page])
@@ -18,6 +18,17 @@ class Admin::RecipientGroupsController < Admin::BaseController
     end
   end
 
+  def edit
+  end
+
+  def update
+    if @recipient_group.update(recipient_group_params)
+      redirect_to admin_recipient_groups_path, notice: t("custom.admin.recipient_groups.update.notice")
+    else
+      render :edit
+    end
+  end
+
   def destroy
     @recipient_group.destroy!
     redirect_to admin_recipient_groups_path, notice: t("custom.admin.recipient_groups.destroy.notice")
@@ -25,12 +36,7 @@ class Admin::RecipientGroupsController < Admin::BaseController
 
   def select_options
     set_available_options_for_kind
-
-    if @available_options_for_kind.blank?
-      @available_access_methods = set_available_access_methods
-      @origin_class_name = params[:kind].split("_").first
-      @origin_class_object_id = params[:kind].split("_").last
-    end
+    set_available_access_methods if @available_options_for_kind.blank?
   end
 
   private
@@ -44,7 +50,7 @@ class Admin::RecipientGroupsController < Admin::BaseController
 
     def set_available_options_for_kind
       @available_options_for_kind =
-        if params[:kind] == "projekt"
+        if params[:kind] == "projekts"
           @label_key = "label_for_projekt"
           Projekt.all.map { |p| [p.name, "Projekt_#{p.id}"] }
 
@@ -59,7 +65,12 @@ class Admin::RecipientGroupsController < Admin::BaseController
     def set_available_access_methods
       if params[:kind].start_with?("ProjektPhase::")
         projekt_phase = ProjektPhase.find(params[:kind].split("_").last)
-        access_methods_for_projekt_phase(projekt_phase)
+        @available_access_methods = access_methods_for_projekt_phase(projekt_phase)
+        @origin_class_name = params[:kind].split("_").first
+        @origin_class_object_id = params[:kind].split("_").last
+      elsif params[:kind] == "user_roles"
+        @available_access_methods = [["all_user_ids"], ["administrators_ids"]]
+        @origin_class_name = "User"
       end
     end
 

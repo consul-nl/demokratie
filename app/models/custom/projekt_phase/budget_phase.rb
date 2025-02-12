@@ -61,15 +61,15 @@ class ProjektPhase::BudgetPhase < ProjektPhase
     budget.investments.unfeasible.pluck(:author_id).uniq
   end
 
-  def authors_of_selected
+  def authors_of_selected_ids
     budget.investments.selected.pluck(:author_id).uniq
   end
 
-  def authors_of_not_winners
+  def authors_of_not_winners_ids
     budget.investments.selected.compatible.where(winner: true).pluck(:author_id).uniq
   end
 
-  def authors_of_winners
+  def authors_of_winners_ids
     budget.investments.winners.pluck(:author_id).uniq
   end
 

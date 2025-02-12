@@ -10,10 +10,7 @@
     <table id="recipient_groups">
       <thead>
         <tr>
-          <th class="small-2"><%= t("custom.admin.recipient_groups.index.name") %></th>
-          <th><%= t("custom.admin.recipient_groups.index.origin_class_name") %></th>
-          <th><%= t("custom.admin.recipient_groups.index.origin_class_object_id") %></th>
-          <th><%= t("custom.admin.recipient_groups.index.access_method") %></th>
+          <th class="small-2" style="width:80%;"><%= t("custom.admin.recipient_groups.index.name") %></th>
           <th><%= t("custom.admin.recipient_groups.index.actions") %></th>
         </tr>
       </thead>
@@ -24,17 +21,8 @@
               <%= recipient_group.name %>
             </td>
             <td>
-              <%= recipient_group.origin_class_name %>
-            </td>
-            <td>
-              <%= recipient_group.origin_class_object_id %>
-            </td>
-            <td>
-              <%= recipient_group.access_method %>
-            </td>
-            <td>
               <%= render Admin::TableActionsComponent.new(recipient_group,
-                                                          actions: [:show, :destroy]) %>
+                                                          actions: [:edit, :destroy]) %>
             </td>
           </tr>
         <% end %>

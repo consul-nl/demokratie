@@ -386,7 +386,7 @@ namespace :admin do
     end
   end
 
-  resources :recipient_groups do
+  resources :recipient_groups, except: :show do
     collection do
       post :select_options
     end

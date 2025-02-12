@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2025_02_10_121231) do
+ActiveRecord::Schema.define(version: 2025_02_12_111813) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_trgm"
@@ -1475,7 +1475,7 @@ ActiveRecord::Schema.define(version: 2025_02_10_121231) do
 
   create_table "newsletters", id: :serial, force: :cascade do |t|
     t.string "subject"
-    t.string "segment_recipient", null: false
+    t.string "segment_recipient"
     t.string "from"
     t.text "body"
     t.date "sent_at"
@@ -1485,6 +1485,8 @@ ActiveRecord::Schema.define(version: 2025_02_10_121231) do
     t.string "title"
     t.text "subtitle"
     t.string "greeting"
+    t.bigint "recipient_group_id"
+    t.index ["recipient_group_id"], name: "index_newsletters_on_recipient_group_id"
   end
 
   create_table "notifications", id: :serial, force: :cascade do |t|
@@ -2866,6 +2868,7 @@ ActiveRecord::Schema.define(version: 2025_02_10_121231) do
   add_foreign_key "map_locations", "registered_address_districts"
   add_foreign_key "memos", "users"
   add_foreign_key "moderators", "users"
+  add_foreign_key "newsletters", "recipient_groups"
   add_foreign_key "notifications", "users"
   add_foreign_key "officing_manager_assignments", "officing_managers"
   add_foreign_key "officing_manager_assignments", "projekt_phases"
