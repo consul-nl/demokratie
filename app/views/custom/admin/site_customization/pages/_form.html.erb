@@ -20,8 +20,10 @@
         <br>
       <% end %>
 
-      <%= f.check_box :more_info_flag, class: "small" %>
-      <%= f.check_box :print_content_flag %>
+      <% unless @page.landing? %>
+        <%= f.check_box :more_info_flag, class: "small" %>
+        <%= f.check_box :print_content_flag %>
+      <% end %>
     </div>
 
     <div class="small-12 medium-6 column">
@@ -46,9 +48,12 @@
         <div class="small-12 column">
           <%= translations_form.text_field :subtitle %>
         </div>
-        <div class="column">
-          <%= translations_form.text_area :content, value: AdminWYSIWYGSanitizer.new.sanitize(@page.content), class: "html-area #{ck_editor_class(current_user)}" %>
-        </div>
+
+        <% unless @page.landing? %>
+          <div class="column">
+            <%= translations_form.text_area :content, value: AdminWYSIWYGSanitizer.new.sanitize(@page.content), class: "html-area #{ck_editor_class(current_user)}" %>
+          </div>
+        <% end %>
       <% end %>
     </div>
   </div>
