@@ -87,7 +87,7 @@
                         <h1 style="font-size:32px; color:#ffffff; margin:0 0 0 0; line-height:1.2">
                           <div><%= @newsletter.title %></div>
                         </h1>
-                        <div style="display:block; width:204px; height:0; margin-top:4px; margin-bottom:18px; padding-top:0.5em; border-style:solid; border-width:6px 6px 6px 0; border-color:transparent transparent #0ab4ff transparent"></div>
+                        <div style="display:block; width:204px; height:0; margin-top:4px; margin-bottom:18px; padding-top:0.5em; border-style:solid; border-width:6px 6px 6px 0; border-color:transparent transparent <%= email_brand_color %> transparent"></div>
                         <div style="font-size:19px; color:#ffffff; margin-top:0; margin-bottom:8px">
                             <%= @newsletter.subtitle %>
                         </div>
@@ -102,7 +102,7 @@
                 <table align="center" width="670" style="width: 670px" border="0" cellpadding="0" cellspacing="0" class="x_wrapper">
                   <tbody>
                     <tr>
-                      <td style="background:#ffffff; padding:34px 40px 0 40px" align="left">
+                      <td style="background:#ffffff; padding:25px 40px 0 40px" align="left">
                         <span style="font-size:22px; color:#000000; margin-top:0">
                           <%= @newsletter.greeting %>,
                         </span>
@@ -125,7 +125,7 @@
           >
           <tbody>
             <tr>
-              <td style="width:670px;">
+              <td width="670px" style="width:670px;">
                 <div style="<%= css_for_mailer_text %>;font-size: 15px;">
                   <%= auto_link_already_sanitized_html wysiwyg(@newsletter.body) %>
                 </div>
