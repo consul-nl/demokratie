@@ -95,7 +95,7 @@ class User < ApplicationRecord
     end
 
     def all_user_ids
-      all.ids
+      active.where.not(confirmed_at: nil).where(guest: false, erased_at: nil)
     end
 
     def administrators_ids
