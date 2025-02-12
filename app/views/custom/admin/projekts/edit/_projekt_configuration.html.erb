@@ -6,6 +6,9 @@
   <%= render partial: "admin/projekts/edit/projekt_configuration/settings_table", locals: { features: @projekt_features_main } %>
 <% end %>
 
+<h2><%= t("custom.admin.projekts.edit.projekt_configuration_tab.landing_page_assignments") %></h2>
+<%= render partial: "admin/projekts/edit/projekt_configuration/projekt_landing_pages", projekt: projekt %>
+
 <h2><%= t("custom.admin.projekts.edit.projekt_configuration_tab.duration_block_title") %></h2>
 <%= render partial: "admin/projekts/edit/projekt_configuration/projekt_duration" %>
 

@@ -1,0 +1,51 @@
+<% content_for :body_class, "home-page" %>
+
+<% content_for :canonical do %>
+  <%= render "shared/canonical", href: root_url %>
+<% end %>
+
+<%= render Shared::BannerComponent.new("homepage") %>
+
+<% provide :social_media_meta_tags do %>
+  <%= render "shared/social_media_meta_tags",
+              social_url: root_url %>
+<% end %>
+
+<%= render "welcome/header" %>
+
+<main class="welcome-page">
+  <div class="d-flex flex-layout">
+    <div class="main-column">
+
+      <% if render_custom_content_block?("landing_page_#{@custom_page.id}_sidebar") %>
+        <div class="show-on-small-tablet standalone-sidebar-section margin-bottom">
+          <%= render Shared::SidebarCardComponent.new(title: 'Information', icon_name: "info-circle") do |c| %>
+            <%= render_custom_block "landing_page_#{@custom_page.id}_sidebar" %>
+          <% end %>
+        </div>
+      <% end %>
+
+      <%# <% @content_cards.each.with_index do |content_card, index| %1> %>
+      <%#   <%= render_custom_block "landing_page_#{@custom_page.id}_#{index}" %1> %>
+      <%#   <%= render Shared::ContentCardComponent.new(content_card, custom_page: @custom_page) %1> %>
+      <%# <% end %1> %>
+
+      <%= render_custom_block "landing_page_#{@custom_page.id}_1" %>
+      <%= render Shared::ContentCardComponent.new(@content_cards.shift, custom_page: @custom_page) %>
+      <%= render_custom_block "landing_page_#{@custom_page.id}_1a" %>
+      <%= render Shared::ContentCardComponent.new(@content_cards.shift, custom_page: @custom_page) %>
+      <%= render_custom_block "landing_page_#{@custom_page.id}_2" %>
+      <%= render Shared::ContentCardComponent.new(@content_cards.shift, custom_page: @custom_page) %>
+      <%= render_custom_block "landing_page_#{@custom_page.id}_4" %>
+      <%= render Shared::ContentCardComponent.new(@content_cards.shift, custom_page: @custom_page) %>
+      <%= render_custom_block "landing_page_#{@custom_page.id}_5" %>
+      <%= render Shared::ContentCardComponent.new(@content_cards.shift, custom_page: @custom_page) %>
+      <%= render_custom_block "landing_page_#{@custom_page.id}_6" %>
+      <%= render Shared::ContentCardComponent.new(@content_cards.shift, custom_page: @custom_page) %>
+    </div>
+
+    <%# <%= render "welcome/sidebar" %1> %>
+
+  </div>
+</main>
+

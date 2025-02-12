@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2025_01_30_135023) do
+ActiveRecord::Schema.define(version: 2025_02_11_075150) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_trgm"
@@ -1067,6 +1067,16 @@ ActiveRecord::Schema.define(version: 2025_01_30_135023) do
     t.boolean "visible", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "landing_page_resources", force: :cascade do |t|
+    t.bigint "landing_page_id", null: false
+    t.string "resource_type", null: false
+    t.bigint "resource_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["landing_page_id"], name: "index_landing_page_resources_on_landing_page_id"
+    t.index ["resource_type", "resource_id"], name: "index_landing_page_resources_on_resource"
   end
 
   create_table "legislation_annotations", id: :serial, force: :cascade do |t|
@@ -2396,6 +2406,8 @@ ActiveRecord::Schema.define(version: 2025_01_30_135023) do
     t.string "kind"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "landing_page_id"
+    t.index ["landing_page_id"], name: "index_site_customization_content_cards_on_landing_page_id"
   end
 
   create_table "site_customization_images", id: :serial, force: :cascade do |t|

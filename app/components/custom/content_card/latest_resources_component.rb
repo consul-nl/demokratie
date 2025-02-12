@@ -1,12 +1,13 @@
 class ContentCard::LatestResourcesComponent < ApplicationComponent
   delegate :current_user, :current_ability, to: :helpers
 
-  def initialize(content_card)
+  def initialize(content_card, custom_page: nil)
     @content_card = content_card
     @debates_limit = @content_card.settings["debates_limit"].to_i
     @proposals_limit = @content_card.settings["proposals_limit"].to_i
     @investments_limit = @content_card.settings["investments_limit"].to_i
     @deficiency_reports_limit = @content_card.settings["deficiency_reports_limit"].to_i
+    @custom_page = custom_page
   end
 
   def render?

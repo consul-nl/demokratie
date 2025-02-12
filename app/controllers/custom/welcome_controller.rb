@@ -10,8 +10,8 @@ class WelcomeController < ApplicationController
   end
 
   def index
-    @header = Widget::Card.header.first
-    @content_cards = SiteCustomization::ContentCard.active.to_a
+    @header = Widget::Card.header.where(title: "header_large").first
+    @content_cards = SiteCustomization::ContentCard.homepage.active.to_a
 
     if Setting.new_design_enabled?
       render :index_new

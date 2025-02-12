@@ -89,6 +89,9 @@ class Projekt < ApplicationRecord
   has_one_attached :greeting_image
   has_many_attached :images
 
+  has_many :landing_page_resources, as: :resource, class_name: "LandingPageResource", dependent: :destroy
+  has_many :landing_pages, through: :landing_page_resources, source: :landing_page
+
   delegate :image, to: :page, allow_nil: true
 
   # before_validation :set_default_color - should projekt still have a color?

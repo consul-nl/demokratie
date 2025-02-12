@@ -793,3 +793,6 @@ de:
           tabs:
             list: Newsletter
             settings: Einstellungen
+      landing_page:
+        edit:
+          header_image_title: Header image

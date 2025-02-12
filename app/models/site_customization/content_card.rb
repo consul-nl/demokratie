@@ -12,12 +12,22 @@ class SiteCustomization::ContentCard < ApplicationRecord
   include Globalizable
 
   scope :active, -> { where(active: true) }
+  scope :homepage, -> { where(landing_page_id: nil) }
+  scope :for_landing_page, -> (landing_page_id) { where(landing_page_id: landing_page_id) }
 
   default_scope { order(:given_order) }
 
-  def self.for_homepage
+  def self.get_or_create_for_homepage
+    get_or_create_for(landing_page_id: nil)
+  end
+
+  def self.get_or_create_for_landing_page(landing_page_id)
+    get_or_create_for(landing_page_id)
+  end
+
+  def self.get_or_create_for(landing_page_id)
     KINDS.map do |kind|
-      find_or_create_by!(kind: kind) do |card|
+      find_or_create_by!(kind: kind, landing_page_id: landing_page_id) do |card|
         card.title = default_titles[kind]
         card.settings = default_settings[kind] || {}
         card.given_order = KINDS.index(kind) + 1

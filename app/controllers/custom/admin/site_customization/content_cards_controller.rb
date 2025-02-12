@@ -24,7 +24,7 @@ class Admin::SiteCustomization::ContentCardsController < Admin::SiteCustomizatio
   end
 
   def order_content_cards
-    SiteCustomization::ContentCard.order_content_cards(params[:ordered_list])
+    ::SiteCustomization::ContentCard.order_content_cards(params[:ordered_list])
     head :ok
   end
 

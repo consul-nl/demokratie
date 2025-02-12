@@ -216,3 +216,19 @@
     }
   }
 }
+
+.reorder-button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  color: $standard-accent-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e3e3e3;
+  }
+}

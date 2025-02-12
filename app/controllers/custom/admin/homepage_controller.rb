@@ -13,7 +13,7 @@ class Admin::HomepageController < Admin::BaseController
   private
 
     def load_content_cards
-      @content_cards = SiteCustomization::ContentCard.for_homepage
+      @content_cards = ::SiteCustomization::ContentCard.get_or_create_for_homepage
     end
 
     def load_cards

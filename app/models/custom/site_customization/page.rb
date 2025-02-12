@@ -9,11 +9,17 @@ class SiteCustomization::Page < ApplicationRecord
   belongs_to :projekt, touch: true
 
   has_many :comments, through: :projekt
+  has_many :widget_cards, dependent: :destroy
 
   enum type: {
     regular: "regular",
     landing: "ladning"
   }
+
+  has_many :landing_page_resources, foreign_key: "landing_page_id", dependent: :destroy
+  has_many :landing_projekts, through: :landing_page_resources, source: :resource, source_type: "Projekt"
+  has_many :landing_events, through: :landing_page_resources, source: :resource, source_type: "ProjektEvent"
+  has_many :landing_polls, through: :landing_page_resources, source: :resource, source_type: "Poll"
 
   def draft?
     status == 'draft'
