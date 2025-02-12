@@ -116,20 +116,28 @@
         </table>
 
         <%# Content %>
-        <table
-          class="newsletter-template-content"
-          cellpadding="0"
-          cellspacing="0"
-          border="0"
-          style="font-family:Arial,sans-serif; font-size: 15px; margin: 0; background: #fff; margin: 0 auto; max-width: 670px; width: 670px;background:#ffffff; "
-          width="670"
-          >
+        <table>
           <tbody>
             <tr>
-              <td width="670" style="width:670px;padding-left:0;padding-right:0;">
-                <div style="<%= css_for_mailer_text %>;font-size: 15px;">
-                  <%= auto_link_already_sanitized_html wysiwyg(@newsletter.body) %>
-                </div>
+              <td>
+                  <table
+                    class="newsletter-template-content"
+                    cellpadding="0"
+                    cellspacing="0"
+                    border="0"
+                    style="font-family:Arial,sans-serif; font-size: 15px; margin: 0; background: #fff; margin: 0 auto; max-width: 670px; width: 670px;background:#ffffff; "
+                    width="670"
+                    >
+                    <tbody>
+                      <tr>
+                        <td width="670" style="padding-top: 0;width:670px;padding-left:0;padding-right:0;">
+                          <div style="<%= css_for_mailer_text %>;font-size: 15px;">
+                            <%= auto_link_already_sanitized_html wysiwyg(@newsletter.body) %>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
               </td>
             </tr>
           </tbody>
