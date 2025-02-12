@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2025_02_06_150637) do
+ActiveRecord::Schema.define(version: 2025_02_12_111813) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_trgm"
@@ -1475,7 +1475,7 @@ ActiveRecord::Schema.define(version: 2025_02_06_150637) do
 
   create_table "newsletters", id: :serial, force: :cascade do |t|
     t.string "subject"
-    t.string "segment_recipient", null: false
+    t.string "segment_recipient"
     t.string "from"
     t.text "body"
     t.date "sent_at"
@@ -1485,6 +1485,8 @@ ActiveRecord::Schema.define(version: 2025_02_06_150637) do
     t.string "title"
     t.text "subtitle"
     t.string "greeting"
+    t.bigint "recipient_group_id"
+    t.index ["recipient_group_id"], name: "index_newsletters_on_recipient_group_id"
   end
 
   create_table "notifications", id: :serial, force: :cascade do |t|
@@ -2165,6 +2167,15 @@ ActiveRecord::Schema.define(version: 2025_02_06_150637) do
     t.index ["selected"], name: "index_proposals_on_selected"
     t.index ["sentiment_id"], name: "index_proposals_on_sentiment_id"
     t.index ["tsv"], name: "index_proposals_on_tsv", using: :gin
+  end
+
+  create_table "recipient_groups", force: :cascade do |t|
+    t.string "name"
+    t.string "origin_class_name"
+    t.string "origin_class_object_id"
+    t.string "access_method"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "registered_address_cities", force: :cascade do |t|
@@ -2857,6 +2868,7 @@ ActiveRecord::Schema.define(version: 2025_02_06_150637) do
   add_foreign_key "map_locations", "registered_address_districts"
   add_foreign_key "memos", "users"
   add_foreign_key "moderators", "users"
+  add_foreign_key "newsletters", "recipient_groups"
   add_foreign_key "notifications", "users"
   add_foreign_key "officing_manager_assignments", "officing_managers"
   add_foreign_key "officing_manager_assignments", "projekt_phases"
