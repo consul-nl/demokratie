@@ -1,6 +1,7 @@
 <%= render "shared/globalize_locales", resource: @page %>
 
 <%= translatable_form_for [:admin, @page], html: { class: "edit_page" } do |f| %>
+  <% binding.pry %>
   <% if params[:type] == "landing" %>
     <%= f.hidden_field :type, value: "landing" %>
   <% end %>
