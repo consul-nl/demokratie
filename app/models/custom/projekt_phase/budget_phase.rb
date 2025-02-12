@@ -53,6 +53,26 @@ class ProjektPhase::BudgetPhase < ProjektPhase
     budget.nil?
   end
 
+  def authors_of_feasible_ids
+    budget.investments.feasible.pluck(:author_id).uniq
+  end
+
+  def authors_of_unfeasible_ids
+    budget.investments.unfeasible.pluck(:author_id).uniq
+  end
+
+  def authors_of_selected
+    budget.investments.selected.pluck(:author_id).uniq
+  end
+
+  def authors_of_not_winners
+    budget.investments.selected.compatible.where(winner: true).pluck(:author_id).uniq
+  end
+
+  def authors_of_winners
+    budget.investments.winners.pluck(:author_id).uniq
+  end
+
   private
 
     def phase_specific_permission_problems(user, location)
