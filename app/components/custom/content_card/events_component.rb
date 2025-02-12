@@ -7,7 +7,13 @@ class ContentCard::EventsComponent < ApplicationComponent
 
     @original_events =
       if custom_page.present?
-        custom_page.landing_events
+
+        ProjektEvent
+          .joins(:projekt_phase)
+          .where(projekt_phases: {
+            active: true,
+            projekt_id: custom_page.landing_projekts.activated.ids
+          })
       else
         ProjektEvent.with_active_projekt
       end
@@ -22,7 +28,6 @@ class ContentCard::EventsComponent < ApplicationComponent
     def events
       @events ||=
         @original_events
-          .with_active_projekt
           .sort_by_incoming
           .first(@limit)
     end

@@ -6,7 +6,11 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
   def update
     if @page.update(page_params)
       notice = t("admin.site_customization.pages.update.notice")
-      redirect_to redirect_path, notice: notice
+      if @page.landing?
+        redirect_to admin_site_customization_landing_pages_path, notice: notice
+      else
+        redirect_to redirect_path, notice: notice
+      end
     else
       flash.now[:error] = t("admin.site_customization.pages.update.error")
       render :edit
@@ -27,7 +31,7 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
   private
 
     def page_params
-      attributes = [:slug, :more_info_flag, :print_content_flag, :status,
+      attributes = [:slug, :type, :more_info_flag, :print_content_flag, :status,
                     image_attributes: image_attributes]
 
       params.require(:site_customization_page).permit(*attributes,

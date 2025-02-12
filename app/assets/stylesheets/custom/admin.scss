@@ -232,3 +232,10 @@
     background-color: #e3e3e3;
   }
 }
+
+.admin-checkboxes-list {
+  input[type="checkbox"] {
+    display: block;
+    margin-bottom: 0;
+  }
+}

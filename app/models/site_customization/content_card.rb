@@ -26,7 +26,13 @@ class SiteCustomization::ContentCard < ApplicationRecord
   end
 
   def self.get_or_create_for(landing_page_id)
-    KINDS.map do |kind|
+    kinds = KINDS
+
+    if landing_page_id.present?
+      kinds = kinds.excluding("latest_user_activity")
+    end
+
+    kinds.map do |kind|
       find_or_create_by!(kind: kind, landing_page_id: landing_page_id) do |card|
         card.title = default_titles[kind]
         card.settings = default_settings[kind] || {}

@@ -4,8 +4,12 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
 
   def new
     if params[:type] == "landing"
-      find_or_create_content_cards(@page)
+      @page.type = "landing"
     end
+  end
+
+  def edit
+    find_or_create_content_cards(@page)
   end
 
   def index
@@ -62,13 +66,13 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
     end
 
     def allowed_params
-      attributes = [:slug, :more_info_flag, :print_content_flag, :status, :type]
+      attributes = [:slug, :type, :more_info_flag, :print_content_flag, :status]
 
       [*attributes, translation_params(SiteCustomization::Page)]
     end
 
     def resource
-      SiteCustomization::Page.regular.find(params[:id])
+      SiteCustomization::Page.find(params[:id])
     end
 
     def find_or_create_content_cards(page)

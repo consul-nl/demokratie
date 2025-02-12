@@ -3,7 +3,7 @@
 <%= translatable_form_for [:admin, @page], html: { class: "edit_page" } do |f| %>
   <%= render "shared/errors", resource: @page %>
 
-  <% if params[:type] == "landing" %>
+  <% if @page.landing? %>
     <%= f.hidden_field :type, value: "landing" %>
   <% end %>
 
@@ -53,7 +53,16 @@
     </div>
   </div>
 
-  <% if params[:type] == "landing" %>
+  <%= hidden_field_tag :origin, params[:origin] %>
+
+  <div class="row">
+    <div class="small-12 medium-6 large-3 margin-top column">
+      <%= f.submit class: "button success expanded" %>
+    </div>
+  </div>
+<% end %>
+
+  <% if @page.landing? && @page.persisted? %>
     <hr/>
 
     <div class="row">
@@ -105,12 +114,3 @@
       </div>
     </div>
   <% end %>
-
-  <%= hidden_field_tag :origin, params[:origin] %>
-
-  <div class="row">
-    <div class="small-12 medium-6 large-3 margin-top column">
-      <%= f.submit class: "button success expanded" %>
-    </div>
-  </div>
-<% end %>
