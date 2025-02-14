@@ -20,6 +20,12 @@
         <br>
       <% end %>
 
+      <% if @page.landing? %>
+        <%= f.check_box :landing_show_in_top_nav %>
+        <%= f.check_box :landing_hide_all_top_nav_links %>
+        <%= f.check_box :landing_hide_title_and_subtitle %>
+      <% end %>
+
       <% unless @page.landing? %>
         <%= f.check_box :more_info_flag, class: "small" %>
         <%= f.check_box :print_content_flag %>

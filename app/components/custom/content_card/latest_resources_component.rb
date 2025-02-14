@@ -21,7 +21,8 @@ class ContentCard::LatestResourcesComponent < ApplicationComponent
     end
 
     def latest_resources
-      @latest_resources = (latest_debates + latest_proposals + latest_investment_proposals + latest_deficiency_reports)
+      @latest_resources =
+        (latest_debates + latest_proposals + latest_investment_proposals + latest_deficiency_reports)
         .sort_by(&:created_at).reverse
     end
 

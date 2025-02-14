@@ -195,6 +195,10 @@
   transition: 100ms background-color ease;
   box-shadow: 2px 2px 7px 1px #00000026;
 
+  img {
+    min-height: 179px;
+  }
+
   h4 {
     font-size: 18px;
     font-weight: 400;

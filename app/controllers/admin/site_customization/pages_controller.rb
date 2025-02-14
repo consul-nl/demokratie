@@ -62,7 +62,7 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
   private
 
     def page_params
-      params.require(:site_customization_page).permit(allowed_params)
+      params.require(:site_customization_page).permit(:slug, :type, :more_info_flag, :print_content_flag, :status, :hide_topbar_links, translation_params(SiteCustomization::Page))
     end
 
     def allowed_params

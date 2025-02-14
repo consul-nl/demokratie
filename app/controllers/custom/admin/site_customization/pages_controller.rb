@@ -12,6 +12,8 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
         redirect_to redirect_path, notice: notice
       end
     else
+      find_or_create_content_cards(@page)
+
       flash.now[:error] = t("admin.site_customization.pages.update.error")
       render :edit
     end
@@ -31,8 +33,14 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
   private
 
     def page_params
-      attributes = [:slug, :type, :more_info_flag, :print_content_flag, :status,
-                    image_attributes: image_attributes]
+      attributes = [
+        :slug, :type, :more_info_flag,
+        :print_content_flag, :status,
+        :landing_show_in_top_nav,
+        :landing_hide_all_top_nav_links,
+        :landing_hide_title_and_subtitle,
+        image_attributes: image_attributes
+      ]
 
       params.require(:site_customization_page).permit(*attributes,
         translation_params(SiteCustomization::Page)
@@ -52,5 +60,13 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
       else
         admin_site_customization_pages_path
       end
+    end
+
+    def find_or_create_content_cards(page)
+      @content_cards =
+        SiteCustomization::ContentCard
+        .get_or_create_for_landing_page(
+          page.id
+        )
     end
 end

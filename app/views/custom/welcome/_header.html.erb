@@ -24,7 +24,15 @@
 
 <div class="homepage-image-header not-print">
   <div class="homepage-image-header--title-wrapper">
-    <% if Setting["extended_option.general.title"].present? %>
+    <% show_title_and_subtitle =
+      if @custom_page.landing?
+        !@custom_page.landing_hide_title_and_subtitle
+      else
+        Setting["extended_option.general.title"].present?
+      end
+    %>
+
+    <% if show_title_and_subtitle %>
       <div class="homepage-image-header--title">
         <div>
           <% if @custom_page&.landing? %>
