@@ -31,17 +31,13 @@ class Valuation::BudgetInvestmentsController < Valuation::BaseController
       if valuation_params[:feasibility].present? && @investment.valuation_finished?
         if @investment.unfeasible_email_pending?
           @investment.send_unfeasible_email
-          Activity.log(@investment.author, :marked_unfeasible, @investment)
         elsif @investment.feasible?
           Mailer.budget_investment_feasible(@investment).deliver_later
-          Activity.log(@investment.author, :marked_feasible, @investment)
         end
       elsif valuation_params[:selected] == "true" && @investment.selected?
         Mailer.budget_investment_selected(@investment).deliver_later
-        Activity.log(@investment.author, :marked_selected, @investment)
       elsif valuation_params[:selected] == "false" && !@investment.selected?
         Mailer.budget_investment_unselected(@investment).deliver_later
-        Activity.log(@investment.author, :marked_unselected, @investment)
       end
 
       Activity.log(current_user, :valuate, @investment)
