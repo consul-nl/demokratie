@@ -234,6 +234,16 @@ class Mailer < ApplicationMailer
     end
   end
 
+  def resource_hidden(resource)
+    @resource = resource
+    @author = resource.author
+    @email_to = @author.email
+
+    with_user(@author) do
+      mail(to: @email_to, subject: t("mailers.resource_hidden.subject"))
+    end
+  end
+
   private
 
     def with_user(user, &block)
