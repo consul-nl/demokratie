@@ -49,6 +49,10 @@ class ProjektPhase::BudgetPhase < ProjektPhase
     ]
   end
 
+  def embedded_admin_nav_bar_items
+    admin_nav_bar_items.excluding(%w[ officing_managers officing_manager_audits])
+  end
+
   def safe_to_destroy?
     budget.nil?
   end
