@@ -92,21 +92,23 @@ class Mailer < ApplicationMailer
 
   def budget_investment_unfeasible(investment)
     @investment = investment
+    @projekt = investment.projekt
     @author = investment.author
     @email_to = @author.email
 
     with_user(@author) do
-      mail(to: @email_to, subject: t("mailers.budget_investment_unfeasible.subject", title: @investment.title))
+      mail(to: @email_to, subject: t("mailers.budget_investment_unfeasible.subject"))
     end
   end
 
   def budget_investment_feasible(investment)
     @investment = investment
+    @projekt = investment.projekt
     @author = investment.author
     @email_to = @author.email
 
     with_user(@author) do
-      mail(to: @email_to, subject: t("mailers.budget_investment_feasible.subject", title: @investment.title))
+      mail(to: @email_to, subject: t("mailers.budget_investment_feasible.subject"))
     end
   end
 

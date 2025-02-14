@@ -1,10 +1,15 @@
 de:
   mailers:
     budget_investment_unfeasible:
-      subject: "Ihr Ausgabenvorschlag '%{title}' wurde als undurchführbar markiert"
-      hi: "Liebe*r Benutzer*in,"
-      rejected: "vielen Dank für die Einreichung Ihres Vorschlags \"%{title}\". Leider wurde Ihr Vorschlag mit folgender Begründung abgelehnt:"
-      thank_you: Vielen Dank für Ihre Beteiligung!
+      subject: "Ihr Vorschlag entspricht leider nicht den Kriterien."
+      title: "Ihr Vorschlag entspricht leider nicht den Kriterien."
+      hi: "Hallo %{username},"
+      text1: "wir haben Ihren %{proposal_link} geprüft: Leider entspricht dieser nicht den Kriterien."
+      text2: "Er wird somit nicht zur nächsten Phase des %{projekt_link} zugelassen."
+      reason: "Begründung:"
+      text3: "Sollten Sie dazu Fragen haben, kontaktieren Sie uns gerne. Sie sind herzlich eingeladen, einen neuen Vorschlag einzureichen."
+      proposal_link_text: Vorschlag
+      projekt_link_text: Projekts
       sincerely: Mit freundlichen Grüßen
     manual_verification_confirmation:
       subject: Ihr Konto wurde soeben verifiziert.
@@ -16,10 +21,13 @@ de:
     formular_follow_up_letter:
       button_text: Zum Formular
     budget_investment_feasible:
-      subject: "Ihr Ausgabenvorschlag '%{title}' wurde als durchführbar markiert"
-      hi: "Liebe*r Benutzer*in,"
-      accepted: "vielen Dank für die Einreichung Ihres Vorschlags \"%{title}\". Ihr Vorschlag wurde als durchführbar klassifiziert."
-      thank_you: Vielen Dank für Ihre Beteiligung!
+      subject: "Herzlichen Glückwunsch, Ihr Vorschlag entspricht den Kriterien."
+      title: "Herzlichen Glückwunsch, Ihr Vorschlag entspricht den Kriterien."
+      hi: "Hallo %{username},"
+      proposal_link_text: Vorschlag
+      projekt_link_1_text: Kriterien
+      projekt_link_2_text: Projekts
+      text: "wir haben Ihren %{proposal_link} geprüft: Ihr Vorschlag entspricht den %{projekt_link_1}. Damit wird er zur nächsten Phase des %{projekt_link_2} zugelassen."
       sincerely: Mit freundlichen Grüßen
     newsletter_subscription_for_existing_user:
       subject: Anmeldung zum Newsletter
