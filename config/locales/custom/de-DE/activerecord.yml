@@ -460,9 +460,11 @@ de:
         title: Externes Video Titel
         url: Externes Video URL
       newsletter:
+        recipient_group_id: Adressatengruppe
         segment_recipient: Empfänger*innen
         subject: Betreff
-        from: "Von"
+        from: "Absender-Email-Adresse (muss auf @domain.de enden)"
+        greeting: Ansprache
         body: Inhalt der E-Mail
       admin_notification:
         segment_recipient: Empfänger*innen
