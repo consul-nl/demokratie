@@ -20,6 +20,7 @@ class Mailer < ApplicationMailer
   end
 
   def reply(reply)
+    @reply = reply
     @email = ReplyEmail.new(reply)
     @email_to = @email.to
     manage_subscriptions_token(@email.recipient)
