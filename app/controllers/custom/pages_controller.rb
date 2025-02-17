@@ -237,7 +237,6 @@ class PagesController < ApplicationController
     end
     # con-1036
 
-    @investments = @budget.investments
     if params[:section] == "results" && can?(:read_results, @budget)
       @investments = Budget::Result.new(@budget, @budget.heading).investments
     elsif params[:section] == "stats" && can?(:read_stats, @budget)
@@ -251,8 +250,13 @@ class PagesController < ApplicationController
       query = Budget::Ballot.where(user: current_user, budget: @budget)
       @ballot = @budget.balloting? ? query.first_or_create!(conditional: ballot_conditional?) : query.first_or_initialize(conditional: ballot_conditional?)
 
-      @investments = @budget.investments.send(@current_filter)
-      @investment_ids = @budget.investments.ids
+      @resources = @budget.investments
+      take_by_projekt_labels
+      take_by_sentiment
+      @investments = @resources
+
+      @investments = @investments.send(@current_filter)
+      @investment_ids = @investments.ids
     end
 
     if @budget.current_phase.kind == "finished"
