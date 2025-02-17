@@ -3,13 +3,13 @@ de:
     terms:
       older_than_14:
         title: Mindestalter
-        label: Ich bestätige, dass ich älter als 14 Jahre bin.
-      data_storage:
-        title: Datenverarbeitung
-        label: Mit der Registrierung akzeptieren Sie, dass wir die hier erhobenen Daten zur Verarbeitung speichern.
+        label: Mit der Registrierung bestätigen Sie, dass Sie mindestens 14 Jahre alt sind. Personen unter 14 Jahren können gemäß der Allgemeinen Nutzungsbedingungen keine eigene Registrierung vornehmen.
       newsletter:
         title: Newsletter
         label: Ich möchte den Newsletter erhalten.
+      data_storage:
+        title: Datenverarbeitung
+        label: Mit der Registrierung akzeptieren Sie, dass wir die hier erhobenen Daten zur Verarbeitung speichern.
       data_protection:
         title: Datenschutzvereinbarung
         label: Mit der Registrierung akzeptieren Sie die %{privacy_link}
