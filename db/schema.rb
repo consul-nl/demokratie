@@ -2586,7 +2586,7 @@ ActiveRecord::Schema.define(version: 2025_02_17_133539) do
     t.string "erase_reason"
     t.datetime "erased_at"
     t.boolean "public_activity", default: true
-    t.boolean "newsletter", default: true
+    t.boolean "newsletter", default: false
     t.integer "notifications_count", default: 0
     t.boolean "registering_with_oauth", default: false
     t.string "locale"
