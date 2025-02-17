@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2025_02_12_171022) do
+ActiveRecord::Schema.define(version: 2025_02_17_133539) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_trgm"
@@ -2455,13 +2455,13 @@ ActiveRecord::Schema.define(version: 2025_02_12_171022) do
     t.datetime "updated_at", null: false
     t.string "locale"
     t.bigint "projekt_id"
-    t.string "type"
     t.boolean "landing_show_in_top_nav", default: false
     t.boolean "landing_hide_all_top_nav_links", default: false
     t.boolean "landing_hide_title_and_subtitle", default: false
+    t.boolean "landing", default: false
+    t.integer "landing_nav_position"
     t.index ["landing_show_in_top_nav"], name: "pages_landing_show_in_top_nav"
     t.index ["projekt_id"], name: "index_site_customization_pages_on_projekt_id"
-    t.index ["type"], name: "index_site_customization_pages_on_type"
   end
 
   create_table "stats_versions", id: :serial, force: :cascade do |t|

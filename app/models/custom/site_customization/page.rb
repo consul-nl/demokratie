@@ -10,13 +10,16 @@ class SiteCustomization::Page < ApplicationRecord
 
   has_many :comments, through: :projekt
 
-  enum type: {
-    regular: "regular",
-    landing: "landing"
-  }
-
   has_many :landing_page_resources, foreign_key: "landing_page_id", dependent: :destroy
   has_many :landing_projekts, through: :landing_page_resources, source: :resource, source_type: "Projekt"
+
+  scope :regular, -> {
+    where(landing: false)
+  }
+
+  scope :landing, -> {
+    where(landing: true)
+  }
 
   scope :landing_show_in_top_nav, -> {
     where(landing_show_in_top_nav: true)
@@ -40,5 +43,11 @@ class SiteCustomization::Page < ApplicationRecord
 
   def safe_to_destroy?
     projekt.blank?
+  end
+
+  def self.order_landing_pages(ordered_array)
+    ordered_array.each_with_index do |page_id, position|
+      find(page_id).update_column(:landing_nav_position, (position + 1))
+    end
   end
 end

@@ -32,8 +32,11 @@
       <% end %>
     </div>
 
-    <%# <%= render "welcome/sidebar" %1> %>
-
+    <aside class="sidebar">
+      <%= render Shared::SidebarCardComponent.new(title: t("custom.welcome.sidebar.information.title"), icon_name: "info-circle") do |c| %>
+        <%= render_custom_block "landing_page_sidebar_#{@custom_page.id}" %>
+      <% end %>
+    </aside>
   </div>
 </main>
 

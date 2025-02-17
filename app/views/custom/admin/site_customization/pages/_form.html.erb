@@ -1,10 +1,22 @@
 <%= render "shared/globalize_locales", resource: @page %>
 
-<%= translatable_form_for [:admin, @page], html: { class: "edit_page" } do |f| %>
+<% form_url =
+  if @page.landing?
+    if @page.persisted?
+      admin_site_customization_landing_page_path(@page)
+    else
+      admin_site_customization_landing_pages_path
+    end
+  else
+    nil
+  end
+%>
+
+<%= translatable_form_for [:admin, @page], url: form_url, html: { class: "edit_page" } do |f| %>
   <%= render "shared/errors", resource: @page %>
 
   <% if @page.landing? %>
-    <%= f.hidden_field :type, value: "landing" %>
+    <%= f.hidden_field :landing, value: true %>
   <% end %>
 
   <div class="row">
@@ -13,12 +25,14 @@
     </div>
 
     <div class="small-12 medium-4 column">
-      <h3><%= t("admin.site_customization.pages.form.options") %></h3>
-      <%= f.label :status %>
-      <% ::SiteCustomization::Page::VALID_STATUSES.each do |status| %>
-        <%= f.radio_button :status, status %>
-        <br>
-      <% end %>
+      <div class="margin-bottom">
+        <h3><%= t("admin.site_customization.pages.form.options") %></h3>
+        <%= f.label :status %>
+        <% ::SiteCustomization::Page::VALID_STATUSES.each do |status| %>
+          <%= f.radio_button :status, status %>
+          <br>
+        <% end %>
+      </div>
 
       <% if @page.landing? %>
         <%= f.check_box :landing_show_in_top_nav %>
@@ -73,55 +87,3 @@
   </div>
 <% end %>
 
-  <% if @page.landing? && @page.persisted? %>
-    <hr/>
-
-    <div class="row">
-      <div class="column">
-        <div id="content-cards">
-          <h3 class="inline-block">Inhaltskarten</h3>
-
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th><%= t("custom.admin.deficiency_reports.statuses.status.id") %></th>
-                <th><%= t("custom.admin.deficiency_reports.statuses.status.title") %></th>
-                <th><%= t("admin.actions.actions") %></th>
-              </tr>
-            </thead>
-
-            <tbody class="js-new-sortable" data-handle=".js-content-cards-reorder-handle" data-sort-url=<%= order_content_cards_admin_site_customization_content_cards_path %>>
-              <% @content_cards.each do |card| %>
-                <tr id="<%= dom_id(card) %>" data-record-id="<%= card.id %>">
-                  <td style="text-align:center;">
-                    <div type="button" class="reorder-button js-content-cards-reorder-handle" >
-                      <i class="fa fa-solid fa-up-down-left-right"></i>
-                    </div>
-                  </td>
-                  <td><%= card.id %></td>
-                  <td><%= card.title %></td>
-                  <td>
-                    <%= render Admin::LivesubmitCheckbox::Component.new(
-                      url: toggle_active_admin_site_customization_content_cards_path(card),
-                      resource_name: "site_customization_content_card",
-                      attribute_name: "active",
-                      record_id: card.id,
-                      current_value: card.active
-                    ) %>
-                  </td>
-
-                  <td>
-                    <%= render Admin::TableActionsComponent.new(card,
-                                                                actions: [:edit]
-                                                              ) %>
-                  </td>
-                </tr>
-              <% end %>
-            </tbody>
-          </table>
-        </div>
-        <hr>
-      </div>
-    </div>
-  <% end %>

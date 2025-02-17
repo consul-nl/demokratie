@@ -6,14 +6,9 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
   def update
     if @page.update(page_params)
       notice = t("admin.site_customization.pages.update.notice")
-      if @page.landing?
-        redirect_to admin_site_customization_landing_pages_path, notice: notice
-      else
-        redirect_to redirect_path, notice: notice
-      end
-    else
-      find_or_create_content_cards(@page)
 
+      redirect_to redirect_path, notice: notice
+    else
       flash.now[:error] = t("admin.site_customization.pages.update.error")
       render :edit
     end
@@ -34,11 +29,8 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
 
     def page_params
       attributes = [
-        :slug, :type, :more_info_flag,
+        :slug, :more_info_flag,
         :print_content_flag, :status,
-        :landing_show_in_top_nav,
-        :landing_hide_all_top_nav_links,
-        :landing_hide_title_and_subtitle,
         image_attributes: image_attributes
       ]
 
@@ -48,7 +40,7 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
     end
 
     def resource
-      SiteCustomization::Page.find(params[:id])
+      SiteCustomization::Page.regular.find(params[:id])
     end
 
     def redirect_path

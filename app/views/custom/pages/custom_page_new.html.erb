@@ -1,5 +1,5 @@
 <% if @custom_page.landing? %>
-  <% provide(:hide_navigation_menu, true) %>
+  <% provide(:hide_navigation_menu, @custom_page.landing_hide_all_top_nav_links) %>
   <%= render "pages/landing_page_content" %>
 <% else %>
   <%= content_for :body_class, "custom-page" %>
@@ -21,13 +21,13 @@
   <% end %>
 
   <style>
-<% if @custom_page.image&.attached? %>
-  .custom-page-banner {
-    background-image: url("<%= url_for(@custom_page.image.attachment) %>");
-    background-size: cover;
-    background-position: center center;
-  }
-<% end %>
+    <% if @custom_page.image&.attached? %>
+      .custom-page-banner {
+        background-image: url("<%= url_for(@custom_page.image.attachment) %>");
+        background-size: cover;
+        background-position: center center;
+      }
+    <% end %>
   </style>
 
   <main class="projekt-page js-projekt-page" data-projekt-id="<%= @custom_page.projekt&.id %>">

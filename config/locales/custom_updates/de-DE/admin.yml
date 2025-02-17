@@ -255,6 +255,8 @@ de:
         destroy:
           notice: Adressatengruppe wurde erfolgreich gelöscht
       menu:
+        site_customization:
+          landing_pages: Zielseiten
         deficiency_reports:
           categories: Kategorien festlegen
           list: Liste der Mängelmeldungen
@@ -480,6 +482,14 @@ de:
               disabled: Projekt deaktiviert
               enabled: Projekt aktiviert
       site_customization:
+        landing_pages:
+          index:
+            create: Neue Landingpage erstellen
+            title: Zielseiten
+          edit:
+            header_image_title: Header image
+          edit_content_cards:
+            title: Landing-Content-Karten bearbeiten
         pages:
           destroy:
             cannot_notice: Diese Seite kann nicht gelöscht werden. Bitte löschen Sie das zugehörige Projekt zuvor.
@@ -491,7 +501,6 @@ de:
           index:
             landing_title: Zielseiten
           new:
-            landing_title: Neue Landingpage erstellen
         content_cards:
           setting:
             label:
@@ -826,6 +835,3 @@ de:
           tabs:
             list: Newsletter
             settings: Einstellungen
-      landing_page:
-        edit:
-          header_image_title: Header image
