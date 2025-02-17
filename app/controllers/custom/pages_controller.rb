@@ -223,7 +223,7 @@ class PagesController < ApplicationController
     params[:filter] ||= "winners" if @budget.current_phase.kind == "finished"
     @current_filter = @valid_filters.include?(params[:filter]) ? params[:filter] : "all"
 
-    @valid_orders = %w[random supports ballots ballot_line_weight newest]
+    @valid_orders = %w[random supports ballots ballot_line_weight newest comments_count]
     @valid_orders.delete("supports")
     @valid_orders.delete("ballots")
     @valid_orders.delete("ballot_line_weight") unless @budget.current_phase.kind == "balloting"
