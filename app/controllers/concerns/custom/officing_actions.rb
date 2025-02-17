@@ -16,6 +16,7 @@ module OfficingActions
         erased_at:                Time.current,
         email:                    nil,
         skip_password_validation: true,
+        terms_older_than_14:      "1",
         terms_data_storage:       "1",
         terms_data_protection:    "1",
         terms_general:            "1"
@@ -53,6 +54,7 @@ module OfficingActions
           offline_user.verified_at = Time.current
           offline_user.erased_at = Time.current
           offline_user.password = "Aa1" + (0...17).map { ("a".."z").to_a[rand(26)] }.join
+          offline_user.terms_older_than_14 = "1"
           offline_user.terms_data_storage = "1"
           offline_user.terms_data_protection = "1"
           offline_user.terms_general = "1"

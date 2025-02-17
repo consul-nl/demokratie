@@ -16,6 +16,11 @@
 
           <%= f.invisible_captcha :address %>
 
+          <%= f.check_box :terms_older_than_14,
+            title: t("custom.terms.older_than_14.title"),
+            label: t("custom.terms.older_than_14.label"),
+            class: "checkbox-label--aligned" %>
+
           <%#= f.check_box :terms_data_storage,
             title: t("custom.terms.data_storage.title"),
             label: t("custom.terms.data_storage.label"),

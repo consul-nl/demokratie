@@ -74,7 +74,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
                                    :gender, :date_of_birth,
                                    :document_type, :document_last_digits,
                                    :password, :password_confirmation,
-                                   :terms_of_service, :terms_data_storage, :terms_data_protection, :terms_general,
+                                   :terms_older_than_14, :newsletter, :terms_of_service, :terms_data_storage, :terms_data_protection, :terms_general,
                                    :locale,
                                    :redeemable_code,
                                    individual_group_value_ids: [])

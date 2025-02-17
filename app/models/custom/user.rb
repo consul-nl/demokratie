@@ -74,6 +74,7 @@ class User < ApplicationRecord
   validates :terms_data_storage, acceptance: { allow_nil: false }, on: :create, unless: :guest?
   validates :terms_data_protection, acceptance: { allow_nil: false }, on: :create
   validates :terms_general, acceptance: { allow_nil: false }, on: :create
+  validates :terms_older_than_14, acceptance: { allow_nil: false }, on: :create
 
   class << self
     def order_filter(params)

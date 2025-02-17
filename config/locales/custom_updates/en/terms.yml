@@ -1,6 +1,12 @@
 en:
   custom:
     terms:
+      older_than_14:
+        title: Older than 14 years
+        label: By registering, you confirm that you are at least 14 years old.
+      newsletter:
+        title: Newsletter
+        label: By registering, you agree to receive our newsletter.
       data_storage:
         title: Data processing
         label: By registering, you accept that we store the data collected here for processing.

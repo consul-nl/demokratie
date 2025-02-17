@@ -13,6 +13,7 @@ class Management::UsersController < Management::BaseController
     end
 
     # @user.terms_of_service = "1" #custom
+    @user.terms_older_than_14 = "1" #custom
     @user.terms_data_storage = "1" #custom
     @user.terms_data_protection = "1" #custom
     @user.terms_general = "1" #custom

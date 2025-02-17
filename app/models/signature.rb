@@ -52,6 +52,7 @@ class Signature < ApplicationRecord
       erased_at: Time.current,
       password: random_password,
       # terms_of_service: "1", #custom
+      terms_older_than_14: "1", #custom
       terms_data_storage: "1", #custom
       terms_data_protection: "1", #custom
       terms_general: "1", #custom

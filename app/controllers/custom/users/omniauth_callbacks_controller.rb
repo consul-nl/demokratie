@@ -51,6 +51,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
           email: email,
           username: username,
           oauth_email: email,
+          terms_older_than_14: true,
           terms_data_storage: true,
           terms_data_protection: true,
           terms_general: true,
