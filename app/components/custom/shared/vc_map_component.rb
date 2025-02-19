@@ -1,7 +1,6 @@
 class Shared::VCMapComponent < ApplicationComponent
   attr_reader :mappable, :map_location, :parent_class, :editable,
-              :process_coordinates, :projekt, :show_admin_shape, :map_style,
-              :take_screenshot
+              :process_coordinates, :projekt, :show_admin_shape, :map_style
   delegate :map_location_latitude, :map_location_longitude, :map_location_zoom,
            :map_location_input_id, :projekt_feature?, to: :helpers
 
@@ -13,8 +12,7 @@ class Shared::VCMapComponent < ApplicationComponent
     process_coordinates: nil,
     projekt: nil,
     projekt_phase: nil,
-    show_admin_shape: false,
-    take_screenshot: false
+    show_admin_shape: false
   )
     @mappable = mappable
     @map_location = map_location || MapLocation.new
@@ -24,7 +22,6 @@ class Shared::VCMapComponent < ApplicationComponent
     @projekt = projekt
     @projekt_phase = projekt_phase
     @show_admin_shape = show_admin_shape
-    @take_screenshot = take_screenshot
   end
 
   def map_div
@@ -66,9 +63,7 @@ class Shared::VCMapComponent < ApplicationComponent
         shape_input_selector: "##{map_location_input_id(parent_class, "shape")}",
         default_color: "#00ff00",
 
-        editable: editable,
-
-        update_screenshot: take_screenshot
+        editable: editable
       }
 
 

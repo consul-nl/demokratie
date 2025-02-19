@@ -52,22 +52,7 @@
         });
     },
 
-    takeScreenshotDebounced: function(event) {
-      var mapContainerId = $(event.target).attr("id");
-
-      if (!mapContainerId || !mapContainerId.startsWith("map_location")) { return; }
-
-      var debouncedFn = App.Shared.debounce(function() {
-        console.log("screenshot_" + mapContainerId);
-        App.MapScreenshot.takeScreenshot(mapContainerId);
-      }, 1000);
-
-      debouncedFn();
-    },
-
     initialize: function() {
-      $("body").on("mouseleave", "[data-update-screenshot='true']", this.takeScreenshotDebounced);
-
       $("body").on("click", ".js-update-screenshot", function(event) {
         event.preventDefault();
         var mapContainerId = $(event.target).data("mapContainerId");

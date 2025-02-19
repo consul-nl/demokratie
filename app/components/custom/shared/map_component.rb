@@ -1,7 +1,6 @@
 class Shared::MapComponent < ApplicationComponent
   attr_reader :mappable, :map_location, :parent_class, :editable,
-              :process_coordinates, :projekt, :projekt_phase, :show_admin_shape, :map_style,
-              :take_screenshot
+              :process_coordinates, :projekt, :projekt_phase, :show_admin_shape, :map_style
   delegate :map_location_latitude, :map_location_longitude, :map_location_zoom,
            :map_location_input_id, :projekt_feature?, :projekt_phase_feature?, to: :helpers
 
@@ -14,8 +13,7 @@ class Shared::MapComponent < ApplicationComponent
     process_coordinates: nil,
     projekt: nil,
     projekt_phase: nil,
-    show_admin_shape: false,
-    take_screenshot: false
+    show_admin_shape: false
   )
     @map_style = map_style
     @mappable = mappable
@@ -26,7 +24,6 @@ class Shared::MapComponent < ApplicationComponent
     @projekt = projekt
     @projekt_phase = projekt_phase
     @show_admin_shape = show_admin_shape
-    @take_screenshot = take_screenshot
   end
 
   def map_div
@@ -60,9 +57,7 @@ class Shared::MapComponent < ApplicationComponent
         shape_input_selector: "##{map_location_input_id(parent_class, "shape")}",
 
         editable: editable,
-        enable_geoman_controls: enable_geoman_controls?,
-
-        update_screenshot: take_screenshot
+        enable_geoman_controls: enable_geoman_controls?
       }
 
       options[:map_layers] = map_layers if map_layers.present?
