@@ -67,7 +67,8 @@
                      help:     t("proposals.form.map_location_instructions"),
                      remove_marker_label: t("proposals.form.map_remove_marker"),
                      parent_class: "proposal",
-                     i18n_namespace: "proposals" %>
+                     i18n_namespace: "proposals",
+                     take_screenshot: true %>
         </div>
 
         <div>
@@ -76,7 +77,7 @@
       </fieldset>
 
       <div class="actions">
-        <%= f.submit(class: "button", value: t("custom.deficiency_reports.form.#{action_name}.submit_button")) %>
+        <%= f.submit t("custom.deficiency_reports.form.#{action_name}.submit_button"), class: "button" %>
       </div>
 
     <% end %>

@@ -12,6 +12,7 @@
     map_location: map_location,
     parent_class: parent_class,
     editable: true,
+    take_screenshot: local_assigns[:take_screenshot].present?,
     projekt_phase: projekt_phase,
     show_admin_shape: projekt_phase&.map_location&.show_admin_shape?
   ) %>
@@ -21,6 +22,7 @@
     map_location: map_location,
     parent_class: parent_class,
     editable: true,
+    take_screenshot: local_assigns[:take_screenshot].present?,
     projekt_phase: projekt_phase,
     show_admin_shape: projekt_phase&.map_location&.show_admin_shape?
   ) %>
