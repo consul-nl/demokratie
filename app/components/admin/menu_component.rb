@@ -276,9 +276,9 @@ class Admin::MenuComponent < ApplicationComponent
 
     def landing_pages_link
       [
-        t("admin.menu.site_customization.lading_pages"),
+        t("admin.menu.site_customization.landing_pages"),
         admin_site_customization_landing_pages_path,
-        pages? || controller_name == "landing_pages"
+        controller_name == "landing_pages"
       ]
     end
 
