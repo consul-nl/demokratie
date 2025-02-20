@@ -33,10 +33,10 @@ class Admin::SiteCustomization::LandingPagesController < Admin::SiteCustomizatio
 
       find_or_create_content_cards(@page)
 
-      redirect_to admin_site_customization_landing_pages_path, notice: notice
+      redirect_to edit_content_cards_admin_site_customization_landing_page_path(@page), notice: notice
     else
       flash.now[:error] = t("admin.site_customization.pages.create.error")
-      render :new
+      render "admin/site_customization/pages/new"
     end
   end
 

@@ -70,13 +70,13 @@
                                  text: t('admin.actions.edit'),
                                  path: edit_admin_site_customization_landing_page_path(page)) %>
               <%= actions.action(:cards,
-                                 text: t('custom.admin.site_customization.landing_pages.edit_content_cards'),
+                                 text: t('custom.admin.site_customization.landing_pages.edit_content_cards.link'),
                                  path: edit_content_cards_admin_site_customization_landing_page_path(page)) %>
             <% end %>
 
             <% unless page.landing? %>
               <%= actions.action(:cards,
-                                 text: t("admin.site_customization.pages.page.see_cards"),
+                                 text: t("admin.site_customization.pages.page.see_cards.title"),
                                  path: admin_site_customization_page_widget_cards_path(page)) %>
             <% end %>
 

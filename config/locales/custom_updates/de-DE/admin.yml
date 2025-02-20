@@ -483,13 +483,16 @@ de:
               enabled: Projekt aktiviert
       site_customization:
         landing_pages:
+          new:
+            title: "Themen/Gebietsseite"
           index:
-            create: Neue Landingpage erstellen
-            title: Zielseiten
+            create: "Neue Themen/Gebietsseite erstellen"
+            title: "Themen/Gebietsseiten"
           edit:
             header_image_title: Header image
           edit_content_cards:
-            title: Landing-Content-Karten bearbeiten
+            title: Landing-Content-Karten bearbeiten für %{page_title}
+            link: Landing-Content-Karten bearbeiten
         pages:
           destroy:
             cannot_notice: Diese Seite kann nicht gelöscht werden. Bitte löschen Sie das zugehörige Projekt zuvor.
@@ -498,9 +501,6 @@ de:
               add_new_image: Banner hinzufügen
               note: "Der Banner sollte mindestens 200 Pixel hoch und 1920 Pixel breit sein. Sie können ein Bild des folgenden Formats hochladen: %{accepted_content_types}, bis zu %{max_file_size} MB."
               title: Seitenbanner
-          index:
-            landing_title: Zielseiten
-          new:
         content_cards:
           setting:
             label:
