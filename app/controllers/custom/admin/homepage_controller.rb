@@ -23,4 +23,10 @@ class Admin::HomepageController < Admin::BaseController
     def load_settings
       @settings = Setting.all.group_by(&:type)["welcomepage"]
     end
+
+    def load_header
+      @headers = [::Widget::Card.where(
+        title: ["header_large", "header_large_mobile"], header: true)
+      ]
+    end
 end

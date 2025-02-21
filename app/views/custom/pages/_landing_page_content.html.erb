@@ -11,7 +11,7 @@
               social_url: root_url %>
 <% end %>
 
-<%= render "welcome/header" %>
+<%= render "welcome/header", header_image_attachment: @custom_page.image.attachment %>
 
 <main class="welcome-page">
   <div class="d-flex flex-layout">

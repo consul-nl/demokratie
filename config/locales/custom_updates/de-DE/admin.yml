@@ -350,6 +350,7 @@ de:
             duration_block_title: Laufzeit
             geo_affiliation_block_title: Gebietszuordnung
             individual_groups_block_title: Sichtbarkeitsbeschränkung auf starke Gruppen
+            landing_page_assignments: Zuordnung zu Themen/Gebietsseiten
           projekt_page_tab:
             name: Projektseite
             main_block_title: Projektseite
@@ -491,8 +492,8 @@ de:
           edit:
             header_image_title: Header image
           edit_content_cards:
-            title: Landing-Content-Karten bearbeiten für %{page_title}
-            link: Landing-Content-Karten bearbeiten
+            title: Inhaltskarten für %{page_title}
+            link: Inhaltskarten
         pages:
           destroy:
             cannot_notice: Diese Seite kann nicht gelöscht werden. Bitte löschen Sie das zugehörige Projekt zuvor.

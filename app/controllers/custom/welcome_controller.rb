@@ -11,6 +11,7 @@ class WelcomeController < ApplicationController
 
   def index
     @header = Widget::Card.header.where(title: "header_large").first
+    @mobile_header = Widget::Card.header.where(title: "header_large_mobile").first
     @content_cards = SiteCustomization::ContentCard.homepage.active.to_a
 
     if Setting.new_design_enabled?
