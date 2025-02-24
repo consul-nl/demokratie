@@ -1,4 +1,9 @@
-<% if investment.unfeasible? %>
+<% if investment.feasible? %>
+  <div class="callout success">
+    <%= t("custom.budgets.investments.investment.feasible_html") %>
+  </div>
+
+<% elsif investment.unfeasible? %>
   <div class="callout alert">
     <%= t("custom.budgets.investments.investment.unfeasible_html") %>
   </div>

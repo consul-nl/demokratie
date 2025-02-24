@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2025_02_17_122908) do
+ActiveRecord::Schema.define(version: 2025_02_24_143007) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_trgm"
@@ -2657,6 +2657,7 @@ ActiveRecord::Schema.define(version: 2025_02_17_122908) do
     t.string "frame_sign_in_token"
     t.datetime "frame_sign_in_token_valid_until"
     t.boolean "on_dt", default: false
+    t.boolean "adm_email_on_new_budget_investment", default: false
     t.index ["bam_street_id"], name: "index_users_on_bam_street_id"
     t.index ["city_street_id"], name: "index_users_on_city_street_id"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
