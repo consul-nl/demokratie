@@ -239,8 +239,8 @@ de:
           under_valuation: Unter Bewertung
           valuation_finished: Bewertung beendet
           feasible: Entspricht den Kriterien
-          selected: Ausgewählt
-          undecided: Offen
+          selected: Zulassung zur Abstimmung
+          undecided: Nicht bewertet
           unfeasible: Entspricht nicht den Kriterien
           min_total_supports: Minimum Unterstützer*innen
           max_total_supports: Maximum Unterstützer*innen
@@ -259,25 +259,29 @@ de:
         feasibility:
           feasible: Entspricht den Kriterien
           unfeasible: Entspricht nicht den Kriterien
-          undecided: "Offen"
+          undecided: Nicht bewertet
         selected: "Ausgewählt"
         select: "Auswählen"
         list:
           id: ID
           title: Titel
+          created_at: Eingereicht
           supports: Unterstützung
           admin: Administrator
           valuator: Gutachter*in
           valuation_group: Bewertungsgruppe
           geozone: Bezug der Vorschläge
-          feasibility: Kriterienerfüllung
+          feasibility: Kriterien
           valuation_finished: Bewertung fertig?
-          selected: Status
+          selected: Zulassung zur Abstimmung
           visible_to_valuators: Gutachter*innen zeigen
           author_username: Benutzer*innenname des/der Verfasser*in
           incompatible: Inkompatibel
           price: Preis
           author: Autor
+          balloters: Anzahl Wähler
+          total_ballot_votes: Anzahl Stimmen
+          winner: Gewinner
         cannot_calculate_winners: "In der 7. Phase (Abstimmung über Investitionsvorschläge) kann von den Admins eine Vorschau auf das Ergebnis kalkuliert werden. Um die finalen Gewinnervorschläge berechnen zu können, muss die 8. Phase \"Abstimmung überprüfen\" ausgewählt werden."
         see_results: "Ergebnisse anzeigen"
         milestone_tags_filter_all: "Status aller Investitionsvorschläge"
