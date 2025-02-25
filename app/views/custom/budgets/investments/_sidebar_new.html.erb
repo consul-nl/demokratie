@@ -31,5 +31,9 @@
     <%= render Shared::SidebarCardComponent.new(title: "Filter", icon_name: "filter") do |c| %>
       <%= render Budgets::PhaseStats::FiltersComponent.new %>
     <% end %>
+
+    <%= render Sidebar::ExportListComponent.new(
+      path: read_stats_budget_path(@budget, **request.query_parameters, stats_section: params["stats_section"], format: :csv)
+    ) %>
   <% end %>
 </aside>
