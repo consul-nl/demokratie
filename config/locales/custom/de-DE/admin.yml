@@ -244,7 +244,7 @@ de:
           unfeasible: Entspricht nicht den Kriterien
           min_total_supports: Minimum Unterstützer*innen
           max_total_supports: Maximum Unterstützer*innen
-          winners: Bestbewertete Vorschläge
+          winners: Gewinner
           one_filter: "Verwendete Filter: <b><em>%{filter}</em></b>"
           two_filters: "Verwendete Filter: <b><em>%{filter},%{advanced_filters}</em></b>"
         buttons:
@@ -272,7 +272,7 @@ de:
           valuation_group: Bewertungsgruppe
           geozone: Bezug der Vorschläge
           feasibility: Kriterien
-          valuation_finished: Bewertung fertig?
+          valuation_finished: Bewertung beendet
           selected: Zulassung zur Abstimmung
           visible_to_valuators: Gutachter*innen zeigen
           author_username: Benutzer*innenname des/der Verfasser*in
