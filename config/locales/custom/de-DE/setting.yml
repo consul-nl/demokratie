@@ -138,7 +138,7 @@ de:
       extra_fields:
         registration:
           extended: Erweiterte Registrierung
-          extended_description: Bei der Registrierung werden zusätzlich "Vorname", "Nachname", "Straße", "Hausnummer", "PLZ", "Stadt" und "Geburtsdatum" abgefragt
+          extended_description: Bei der Registrierung werden zusätzlich "Vorname", "Nachname", "Geschlecht", "Straße", "Hausnummer", "PLZ", "Stadt" und "Geburtsdatum" abgefragt
           check_documents: Dokumentenabfrage
           check_documents_description: Aktiviert die zusätzliche Dokumentenabfrage "Personalausweis" oder "Reisepass" während der Registrierung
         verification:

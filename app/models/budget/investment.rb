@@ -1,6 +1,6 @@
 class Budget
   class Investment < ApplicationRecord
-    SORTING_OPTIONS = { id: "id", supports: "cached_votes_up" }.freeze
+    SORTING_OPTIONS = { id: "id", supports: "cached_votes_up", balloters: "ballot_lines_count" }.freeze
 
     include Measurable
     include Sanitizable
@@ -179,6 +179,8 @@ class Budget
         order("#{allowed_sort_option} #{direction}")
       elsif sorting_key == :title
         direction == "asc" ? sort_by_title : sort_by_title.reverse
+      elsif sorting_key == :total_ballot_votes
+        direction == "asc" ? sort_by_ballot_line_weight : sort_by_ballot_line_weight.reverse
       else
         order(cached_votes_up: :desc).order(id: :desc)
       end
