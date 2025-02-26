@@ -60,6 +60,7 @@ class Budget
 
     def comments_allowed?(user)
       return false if unfeasible? && valuation_finished?
+      return false unless budget.current_phase.in? %w[informing accepting]
 
       permission_problem(user).nil?
     end
