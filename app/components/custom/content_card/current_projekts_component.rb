@@ -1,4 +1,4 @@
-class ContentCard::ActiveProjektsComponent < ApplicationComponent
+class ContentCard::CurrentProjektsComponent < ApplicationComponent
   delegate :current_user, to: :helpers
 
   def initialize(content_card, custom_page: nil)
@@ -22,7 +22,7 @@ class ContentCard::ActiveProjektsComponent < ApplicationComponent
       @active_projekts =
         @projekts
           .sort_by_order_number
-          .activated
+          .index_order_underway
           .select { |p| p.visible_for?(current_user) }
           .first(@limit)
     end

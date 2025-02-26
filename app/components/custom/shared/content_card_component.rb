@@ -14,6 +14,8 @@ class Shared::ContentCardComponent < ApplicationComponent
       case @content_card.kind
       when "active_projekts"
         render ContentCard::ActiveProjektsComponent.new(@content_card, custom_page: @custom_page)
+      when "current_projekts"
+        render ContentCard::CurrentProjektsComponent.new(@content_card, custom_page: @custom_page)
       when "latest_user_activity"
         render ContentCard::LatestUserActivityComponent.new(@content_card, custom_page: @custom_page)
       when "current_polls"

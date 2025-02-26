@@ -35,14 +35,9 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
   end
 
   def destroy
-    @page.destroy!
     notice = t("admin.site_customization.pages.destroy.notice")
 
-    if @page.landing?
-      redirect_to admin_site_customization_landing_pages_path, notice: notice
-    else
-      redirect_to admin_site_customization_pages_path, notice: notice
-    end
+    redirect_to admin_site_customization_pages_path, notice: notice
   end
 
   private
