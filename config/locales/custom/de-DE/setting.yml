@@ -144,6 +144,8 @@ de:
         verification:
           check_documents: Dokumentenprüfung
           check_documents_description: Aktiviert die zusätzliche Dokumentenprüfung "Personalausweis" oder "Reisepass"
+          show_verification_status: Zeige Verifizierungsstatus im Konto an
+          show_verification_status_description: Zeigt den Verifizierungsstatus unterhalb des Nutzerbildes an
 
       projekt_feature:
         main:
