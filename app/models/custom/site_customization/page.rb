@@ -13,6 +13,8 @@ class SiteCustomization::Page < ApplicationRecord
   has_many :landing_page_resources, foreign_key: "landing_page_id", dependent: :destroy
   has_many :landing_projekts, through: :landing_page_resources, source: :resource, source_type: "Projekt"
 
+  has_one_attached :landing_mobile_header_image
+
   scope :regular, -> {
     where(landing: false)
   }

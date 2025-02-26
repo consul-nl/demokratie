@@ -71,10 +71,23 @@
       <hr>
 
       <div class="images small-12 column margin-bottom">
-
         <%= hidden_field_tag "site_customization_page[image_attributes][cached_attachment]" %>
         <%= render "images/nested_image", f: f %>
       </div>
+
+      <% if @page.landing? %>
+        <div class="margin-bottom  small-12 column ">
+          <div class="margin-bottom">
+            <%= f.file_field :landing_mobile_header_image %>
+          </div>
+
+          <% if @page.landing_mobile_header_image.attached? %>
+            <div style="justify-content: center" class="d-flex">
+              <%= image_tag @page.landing_mobile_header_image, width: 640 %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
 
       <% unless @page.landing? %>
         <%= f.translatable_fields do |translations_form| %>
