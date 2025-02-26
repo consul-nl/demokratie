@@ -264,7 +264,9 @@ class Setting < ApplicationRecord
 
         "extra_fields.registration.extended": false,
         "extra_fields.registration.check_documents": false,
-        "extra_fields.verification.check_documents": false
+
+        "extra_fields.verification.check_documents": false,
+        "extra_fields.verification.show_verification_status": true
       }
     end
 
