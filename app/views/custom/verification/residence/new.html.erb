@@ -92,6 +92,11 @@
             label: t("custom.terms.data_storage.label"),
             class: "checkbox-label--aligned" %>
 
+          <%= f.check_box :terms_older_than_14,
+            title: t("custom.terms.older_than_14.title"),
+            label: t("custom.terms.older_than_14.label"),
+            class: "checkbox-label--aligned" %>
+
           <%= f.check_box :terms_data_protection,
             title: t("custom.terms.data_protection.title"),
             label: t("custom.terms.data_protection.label",

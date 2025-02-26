@@ -27,6 +27,7 @@ class Verification::Residence
   validates :terms_data_storage, acceptance: { allow_nil: false } #custom
   validates :terms_data_protection, acceptance: { allow_nil: false } #custom
   validates :terms_general, acceptance: { allow_nil: false } #custom
+  validates :terms_older_than_14, acceptance: { allow_nil: false } #custom
 
   def save
     return false unless valid?
