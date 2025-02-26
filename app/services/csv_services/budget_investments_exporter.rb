@@ -42,7 +42,7 @@ module CsvServices
           investment.id,
           sanitize_for_csv(investment.title),
           sanitize_for_csv(strip_tags(investment.description)),
-          "admin.budget_investments.index.feasibility.#{investment.feasibility}",
+          I18n.t("admin.budget_investments.index.feasibility.#{investment.feasibility}"),
           investment.formatted_price,
           investment.price_first_year,
           investment.duration,

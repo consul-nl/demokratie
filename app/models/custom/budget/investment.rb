@@ -8,6 +8,7 @@ class Budget
     include Memoable
 
     delegate :projekt, :projekt_phase, :find_or_create_stats_version, :show_percentage_values_only?, to: :budget
+    delegate :approximated_address, to: :map_location, allow_nil: true
 
     has_many :budget_ballot_lines, class_name: "Budget::Ballot::Line"
 
