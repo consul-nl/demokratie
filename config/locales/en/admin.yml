@@ -287,6 +287,7 @@ en:
           balloters: Balloters
           total_ballot_votes: Balloters votes
           winner: Winner
+          pdf_link: PDF
         cannot_calculate_winners: The budget has to stay on phase "%{phase}" in order to calculate winners projects
         see_results: "See results"
         milestone_tags_filter_all: "All milestone tags"

@@ -65,3 +65,7 @@
   <% no_valuators_assigned = t("admin.budget_investments.index.no_valuators_assigned") %>
   <%= valuators.present? ? valuators.join(", ") : no_valuators_assigned %>
 </td>
+
+<td data-field="pdf_link">
+  <%= link_to t("custom.shared.download_pdf"), polymorphic_path([@namespace, @budget, investment], format: :pdf) %>
+</td>
