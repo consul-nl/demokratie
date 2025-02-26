@@ -17,7 +17,7 @@ class Valuation::BudgetInvestmentsController < Valuation::BaseController
   def index
     @heading_filters = heading_filters
     @investments = if current_user.valuator? && @budget.present?
-                     @budget.investments.visible_to_valuators.scoped_filter(params_for_current_valuator, @current_filter)
+                     @budget.investments.scoped_filter(params_for_current_valuator, @current_filter)
                             .order(cached_votes_up: :desc)
                             .page(params[:page])
                    else
@@ -45,7 +45,7 @@ class Valuation::BudgetInvestmentsController < Valuation::BaseController
       if params[:namespace].present?
         redirect_to polymorphic_path([params[:namespace].to_sym, @budget, @investment]), notice: notice
       else
-        redirect_to valuation_budget_budget_investment_path(@budget, @investment), notice: notice
+        redirect_to edit_valuation_budget_budget_investment_path(@budget, @investment), notice: notice
       end
     else
       @show_state_form_by_default = true

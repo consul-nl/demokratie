@@ -24,7 +24,7 @@ module ProjektPhaseAdminActions
     @projekt_phase.save!
 
     if embedded? && frame_session_from_authorized_source?
-      redirect_to polymorphic_path([@namespace, @projekt_phase], action: :duration)
+      redirect_to polymorphic_path([@namespace, @projekt_phase], action: (@projekt_phase.admin_nav_bar_items.first.presence || :naming))
     else
       redirect_to polymorphic_path([@namespace, @projekt], action: :edit, anchor: "tab-projekt-phases"),
         notice: t("custom.admin.projekt_phases.notice.created")
@@ -341,6 +341,16 @@ module ProjektPhaseAdminActions
   def budget_investments
     authorize!(:budget_investments, @projekt_phase)
     @budget = @projekt_phase.budget
+
+    if params[:valuator_or_group_id]
+      model, id = params[:valuator_or_group_id].split("_")
+
+      if model == "group"
+        params[:valuator_group_id] = id
+      else
+        params[:valuator_id] = id
+      end
+    end
 
     @investments = @budget.investments
                           .scoped_filter(params.merge(budget_id: @budget.id), "all")
