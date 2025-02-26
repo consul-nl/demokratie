@@ -343,11 +343,11 @@ class Budget
     end
 
     def should_show_price?
-      selected? && price.present? && budget.show_money? && feasible?
+      selected? && price.present? && budget.show_money? && feasible? && budget.publishing_prices_or_later?
     end
 
     def should_show_price_explanation?
-      should_show_price? && valuator_explanation.present?
+      should_show_price? && valuator_explanation.present? && budget.publishing_prices_or_later?
     end
 
     def should_show_unfeasibility_explanation?
