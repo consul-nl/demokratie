@@ -58,12 +58,4 @@ class Admin::SiteCustomization::PagesController < Admin::SiteCustomization::Base
         admin_site_customization_pages_path
       end
     end
-
-    def find_or_create_content_cards(page)
-      @content_cards =
-        SiteCustomization::ContentCard
-        .get_or_create_for_landing_page(
-          page.id
-        )
-    end
 end

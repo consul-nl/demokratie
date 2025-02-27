@@ -19,14 +19,14 @@ class SiteCustomization::ContentCard < ApplicationRecord
   default_scope { order(:given_order) }
 
   def self.get_or_create_for_homepage
-    get_or_create_for(landing_page_id: nil)
+    get_or_create
   end
 
   def self.get_or_create_for_landing_page(landing_page_id)
-    get_or_create_for(landing_page_id)
+    get_or_create(landing_page_id: landing_page_id)
   end
 
-  def self.get_or_create_for(landing_page_id)
+  def self.get_or_create(landing_page_id: nil)
     kinds = KINDS
 
     if landing_page_id.present?
@@ -34,7 +34,12 @@ class SiteCustomization::ContentCard < ApplicationRecord
     end
 
     kinds.map do |kind|
-      find_or_create_by!(kind: kind, landing_page_id: landing_page_id) do |card|
+      find_or_create_by_params = {
+        kind: kind,
+        landing_page_id: (landing_page_id.presence || nil)
+      }
+
+      find_or_create_by!(find_or_create_by_params) do |card|
         card.title = default_titles[kind]
         card.settings = default_settings[kind] || {}
         card.given_order = KINDS.index(kind) + 1
