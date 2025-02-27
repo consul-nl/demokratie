@@ -245,6 +245,14 @@ class Budget
       unfeasible_email_sent_at.blank? && unfeasible? && valuation_finished?
     end
 
+    def email_on_feasibility_pending?
+      email_on_feasibility_sent_at.blank?
+    end
+
+    def email_on_selected_pending?
+      email_on_selected_sent_at.blank?
+    end
+
     def total_votes
       cached_votes_up + physical_votes
     end

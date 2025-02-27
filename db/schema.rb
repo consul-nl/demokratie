@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2025_02_24_143007) do
+ActiveRecord::Schema.define(version: 2025_02_27_094310) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_trgm"
@@ -415,6 +415,8 @@ ActiveRecord::Schema.define(version: 2025_02_24_143007) do
     t.string "video_url"
     t.bigint "sentiment_id"
     t.text "valuator_explanation"
+    t.time "email_on_feasibility_sent_at"
+    t.time "email_on_selected_sent_at"
     t.index ["administrator_id"], name: "index_budget_investments_on_administrator_id"
     t.index ["author_id"], name: "index_budget_investments_on_author_id"
     t.index ["budget_id"], name: "index_budget_investments_on_budget_id"
