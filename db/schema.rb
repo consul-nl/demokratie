@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2025_02_24_143007) do
+ActiveRecord::Schema.define(version: 2025_02_27_140453) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_trgm"
@@ -1069,14 +1069,13 @@ ActiveRecord::Schema.define(version: 2025_02_24_143007) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "landing_page_resources", force: :cascade do |t|
-    t.bigint "landing_page_id", null: false
-    t.string "resource_type", null: false
-    t.bigint "resource_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["landing_page_id"], name: "index_landing_page_resources_on_landing_page_id"
-    t.index ["resource_type", "resource_id"], name: "index_landing_page_resources_on_resource"
+  create_table "landing_pages_projekts", force: :cascade do |t|
+    t.bigint "site_customization_page_id", null: false
+    t.bigint "projekt_id", null: false
+    t.index ["projekt_id", "site_customization_page_id"], name: "index_projekts_scp"
+    t.index ["projekt_id"], name: "index_landing_pages_projekts_on_projekt_id"
+    t.index ["site_customization_page_id", "projekt_id"], name: "index_scp_projekts", unique: true
+    t.index ["site_customization_page_id"], name: "index_landing_pages_projekts_on_site_customization_page_id"
   end
 
   create_table "legislation_annotations", id: :serial, force: :cascade do |t|
@@ -2638,11 +2637,7 @@ ActiveRecord::Schema.define(version: 2025_02_24_143007) do
     t.text "keycloak_id_token", default: ""
     t.boolean "reverify", default: true
     t.boolean "on_dt", default: false
-<<<<<<< HEAD
-=======
     t.boolean "adm_email_on_new_budget_investment", default: false
-    t.index ["bam_street_id"], name: "index_users_on_bam_street_id"
->>>>>>> new-connection
     t.index ["city_street_id"], name: "index_users_on_city_street_id"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["date_of_birth"], name: "index_users_on_date_of_birth"

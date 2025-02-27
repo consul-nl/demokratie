@@ -10,8 +10,11 @@ class SiteCustomization::Page < ApplicationRecord
 
   has_many :comments, through: :projekt
 
-  has_many :landing_page_resources, foreign_key: "landing_page_id", dependent: :destroy
-  has_many :landing_projekts, through: :landing_page_resources, source: :resource, source_type: "Projekt"
+  has_and_belongs_to_many :landing_projekts,
+    join_table: 'landing_pages_projekts',
+    foreign_key: 'site_customization_page_id',
+    association_foreign_key: 'projekt_id',
+    class_name: "Projekt"
 
   has_one_attached :landing_mobile_header_image
 

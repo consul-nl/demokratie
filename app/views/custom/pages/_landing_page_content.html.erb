@@ -28,7 +28,7 @@
         </div>
       <% end %>
 
-      <% 1.upto(7) do |index| %>
+      <% 0.upto(6) do |index| %>
         <% content_card = @content_cards[index] %>
         <%= render_custom_block "landing_page_#{@custom_page.id}_#{index}" %>
         <%= render Shared::ContentCardComponent.new(content_card, custom_page: @custom_page) %>

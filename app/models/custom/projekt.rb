@@ -89,8 +89,11 @@ class Projekt < ApplicationRecord
   has_one_attached :greeting_image
   has_many_attached :images
 
-  has_many :landing_page_resources, as: :resource, class_name: "LandingPageResource", dependent: :destroy
-  has_many :landing_pages, through: :landing_page_resources, source: :landing_page
+  has_and_belongs_to_many :landing_pages,
+    class_name: 'SiteCustomization::Page',
+    join_table: 'landing_pages_projekts',
+    foreign_key: 'projekt_id',
+    association_foreign_key: 'site_customization_page_id'
 
   delegate :image, to: :page, allow_nil: true
 

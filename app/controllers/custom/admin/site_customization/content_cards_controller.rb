@@ -17,7 +17,7 @@ class Admin::SiteCustomization::ContentCardsController < Admin::SiteCustomizatio
 
   def toggle_active
     enabled = ["1", "true"].include?(params[:site_customization_content_card][:active])
-    @content_card = SiteCustomization::ContentCard.find(params[:site_customization_content_card][:id])
+    @content_card = ::SiteCustomization::ContentCard.find(params[:site_customization_content_card][:id])
 
     @content_card.update!(active: enabled)
     head :ok
