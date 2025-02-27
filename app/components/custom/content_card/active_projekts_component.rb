@@ -23,7 +23,17 @@ class ContentCard::ActiveProjektsComponent < ApplicationComponent
         @projekts
           .sort_by_order_number
           .activated
+          .where.not(id: current_projekts_ids)
           .select { |p| p.visible_for?(current_user) }
           .first(@limit)
+    end
+
+    def current_projekts_ids
+      @current_projekts_ids =
+        @projekts
+          .sort_by_order_number
+          .index_order_underway
+          .select { |p| p.visible_for?(current_user) }
+          .map(&:id)
     end
 end

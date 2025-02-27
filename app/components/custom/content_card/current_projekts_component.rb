@@ -13,13 +13,13 @@ class ContentCard::CurrentProjektsComponent < ApplicationComponent
   end
 
   def render?
-    active_projekts.any?
+    current_projekts.any?
   end
 
   private
 
-    def active_projekts
-      @active_projekts =
+    def current_projekts
+      @current_projekts =
         @projekts
           .sort_by_order_number
           .index_order_underway
