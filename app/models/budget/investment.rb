@@ -179,8 +179,10 @@ class Budget
         order("#{allowed_sort_option} #{direction}")
       elsif sorting_key == :title
         direction == "asc" ? sort_by_title : sort_by_title.reverse
+      elsif sorting_key == :total_votes
+        direction == "desc" ? sort_by_total_votes : sort_by_total_votes.reverse
       elsif sorting_key == :total_ballot_votes
-        direction == "asc" ? sort_by_ballot_line_weight : sort_by_ballot_line_weight.reverse
+        direction == "desc" ? sort_by_ballot_line_weight : sort_by_ballot_line_weight.reverse
       else
         order(cached_votes_up: :desc).order(id: :desc)
       end
