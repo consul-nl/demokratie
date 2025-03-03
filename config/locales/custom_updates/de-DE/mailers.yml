@@ -72,3 +72,21 @@ de:
         hi: "Hallo %{username},"
         text: Ihr Kommentar wurde beantwortet. Schauen Sie sich die Antwort %{comment_link} an.
         comment_link_text: hier
+    budget_investment_preselected:
+      subject: Herzlichen Glückwunsch, Ihr Vorschlag geht in die nächste Runde!
+      title: Herzlichen Glückwunsch, Ihr Vorschlag geht in die nächste Runde!
+      hi: "Hallo %{username},"
+      text1: Ihr %{proposal_link} hat ausreichend Stimmen erhalten und wird nun fachlich geprüft.
+      text2: Das Ergebnis der Prüfung wird zu Beginn der nächsten Phase des %{projekt_link} veröffentlicht.
+      proposal_link_text: Vorschlag
+      projekt_link_text: Projekts
+      sincerely: Mit freundlichen Grüßen
+    budget_investment_not_preselected:
+      subject: Schade, Ihr Vorschlag hat es leider nicht in die nächste Runde geschafft.
+      title: Schade, Ihr Vorschlag hat es leider nicht in die nächste Runde geschafft.
+      hi: "Hallo %{username},"
+      text1: Ihr %{proposal_link} hat leider nicht genügend Stimmen erhalten.
+      text2: Er wird daher nicht zur nächsten Phase des %{projekt_link} zugelassen.
+      proposal_link_text: Vorschlag
+      projekt_link_text: Projekts
+      sincerely: Mit freundlichen Grüßen

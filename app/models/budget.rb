@@ -263,10 +263,17 @@ class Budget < ApplicationRecord
   def update_preselected_investments
     investments.update_all(preselected: false)
 
-    preselected_investments = investments.sort_by_total_votes.limit(max_preselected)
+    preselected_investments_ids = investments.sort_by_total_votes.limit(max_preselected).ids
+    preselected_investments = investments.where(id: preselected_investments_ids)
+
     preselected_investments.update_all(preselected: true)
-    preselected_investments.each do |investment|
-      Mailer.budget_investment_preselected(investment).deliver_later
+
+    investments.each do |investment|
+      if investment.preselected?
+        Mailer.budget_investment_preselected(investment).deliver_later
+      else
+        Mailer.budget_investment_not_preselected(investment).deliver_later
+      end
     end
   end
 
