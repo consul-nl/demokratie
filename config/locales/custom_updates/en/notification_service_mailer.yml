@@ -28,6 +28,7 @@ en:
         p1: New Debate has just been added to Consul.
       new_comment:
         subject: New Comment added to Consul
+        title: New Comment added to Consul
         hi: Hi %{username},
         p1: New comment has just been added to Consul.
       new_deficiency_report:
