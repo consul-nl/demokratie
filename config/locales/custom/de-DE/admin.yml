@@ -195,6 +195,7 @@ de:
         success_notice: "Rubrik erfolgreich gelöscht"
         unable_notice: "Eine Rubrik mit zugehörigen Investitionsvorschlägen kann nicht gelöscht werden"
       form:
+        max_preselected_info: Wie viele Vorschläge sollen in die Prüfungsphase gehen
         max_ballot_lines_info: 'Maximum number of projects a user can vote on this heading during the "Voting projects" phase. Only for budgets using approval voting.'
         population_info: "Dieses Feld wird nur für statistische Zwecke verwendet, mit dem Ziel, den Prozentsatz der Stimmen in jeder Rubrik anzuzeigen. Dieses Feld ist optional; Sie können es daher leer lassen, wenn es nicht zutrifft."
         coordinates_info: "Wenn Längen- und Breitengrad angegeben sind, enthält die Seite des Vorschlags für diese Rubrik eine Karte. Diese Karte wird mit diesen Koordinaten berechnet."
@@ -267,6 +268,7 @@ de:
           title: Titel
           created_at: Eingereicht
           supports: Unterstützung
+          total_votes: Unterstützung
           admin: Administrator
           valuator: Gutachter*in
           valuation_group: Bewertungsgruppe

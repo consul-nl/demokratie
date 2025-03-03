@@ -23,6 +23,12 @@ class Budget
     validates :resource_terms, acceptance: { allow_nil: false }, on: :create #custom
     validate :description_sanitized #custom
 
+    def self.sort_by_total_votes
+      left_joins(:votes_for)
+        .group("budget_investments.id")
+        .order(Arel.sql("COALESCE(SUM(votes.vote_weight), 0) + budget_investments.physical_votes DESC"))
+    end
+
     def self.sort_by_ballot_line_weight
       left_joins(budget_ballot_lines: :ballot)
         .group("budget_investments.id")
@@ -38,11 +44,7 @@ class Budget
     end
 
     def total_votes
-      if budget.distributed_voting?
-        votes_for.sum(:vote_weight) + physical_votes
-      else
-        cached_votes_up + physical_votes
-      end
+      votes_for.sum(:vote_weight) + physical_votes
     end
 
     def total_ballot_votes
