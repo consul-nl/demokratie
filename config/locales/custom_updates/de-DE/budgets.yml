@@ -121,7 +121,7 @@ de:
         statuses:
           phases:
             accepting: Der Vorschlag wurde erfolgreich eingereicht.
-            reviewing: Der Vorschlag wird zur Zeit intern auf seine Durchführbarkeit überprüft.
+            reviewing: Der Vorschlag wird geprüft.
             reviewing_ballots: Das Ergebniss der Abstimmung wird kalkuliert.
             valuating: Der Vorschlag wird fachlich geprüft.
       results:
