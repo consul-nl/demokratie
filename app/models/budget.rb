@@ -53,6 +53,7 @@ class Budget < ApplicationRecord
   scope :reviewing, -> { select(&:reviewing?) }
   scope :selecting, -> { select(&:selecting?) }
   scope :valuating, -> { select(&:valuating?) }
+  scope :accepting_or_later, -> { select(&:accepting_or_later?) }
   scope :valuating_or_later, -> { select(&:valuating_or_later?) }
   scope :publishing_prices, -> { select(&:publishing_prices?) }
   scope :balloting, -> { select(&:balloting?) }
@@ -166,6 +167,14 @@ class Budget < ApplicationRecord
 
   def published_prices?
     Budget::Phase::PUBLISHED_PRICES_PHASES.include?(phase)
+  end
+
+  def accepting_or_later?
+    current_phase&.accepting_or_later?
+  end
+
+  def selecting_or_later?
+    current_phase&.selecting_or_later?
   end
 
   def valuating_or_later?
