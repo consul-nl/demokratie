@@ -1,10 +1,8 @@
 de:
   mailers:
-    sincerely: Kind regards
-    signature: Your Consul Team
     shared:
       sincerely: Mit freundlichen Grüßen
-      signature: Ihr Beteiligungs-Team
+      signature: Ihr unser.muenchen-Team
     budget_investment_unfeasible:
       subject: "Ihr Vorschlag entspricht leider nicht den Kriterien."
       title: "Ihr Vorschlag entspricht leider nicht den Kriterien."
