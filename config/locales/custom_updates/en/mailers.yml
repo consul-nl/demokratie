@@ -47,29 +47,19 @@ en:
       text4: If you have any questions, please contact ustext. You are cordially invited to create a new post that complies with the netiquette.
       sincerely: Kind regards
     comment:
-      subject: Someone has commented on your proposal
-      title: New comment
-      hi: Hello
-      new_comment_by: There is a new comment from <strong>%{commenter}</strong>
+      subject: Your	proposal  has been  commented on.
+      title: Your proposal has been commented on.
+      hi: "Hello %{username},"
+      text: Your proposal has been commented on. Check out the comment %{comment_link}.
+      comment_link_text: here
       sincerely: Kind regards
-      budget/investment:
-        subject: Your proposal has been commented on.
-        title: Your proposal has been commented on.
-        hi: "Hi %{username},"
-        text: Your proposal has been commented on. Check out the comment %{comment_link}.
-        comment_link_text: here
     reply:
-      subject: New reply to your comment
-      title: New reply to your comment
-      hi: Hello
-      new_reply_by: There is a new reply from <strong>%{commenter}</strong> to your comment
+      subject: A reply has been made to your comment.
+      title: A reply has been made to your comment.
+      hi: Hello %{username},
+      text: "Another user has replied to your comment. Check out the reply here: %{comment_link}"
+      comment_link_text: here
       sincerely: Kind regards
-      budget/investment:
-        subject: Your comment has been answered.
-        title: Your comment has been answered.
-        hi: "Hello %{username},"
-        text: Your comment has been answered. Check out the answer %{comment_link}.
-        comment_link_text: here
     budget_investment_preselected:
       subject: Congratulations, your proposal is going to the next round!
       title: Congratulations, your proposal is going to the next round!

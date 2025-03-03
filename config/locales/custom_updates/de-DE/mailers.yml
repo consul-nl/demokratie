@@ -49,29 +49,19 @@ de:
       text4: Sollten Sie dazu Fragen haben, kontaktieren Sie uns gerne. Sie sind herzlich eingeladen, einen neuen Beitrag zu erstellen, der die Netiquette einhält.
       sincerely: Mit freundlichen Grüßen
     comment:
-      subject: Jemand hat Ihren Beitrag kommentiert.
-      title: Neuer Kommentar
-      hi: Hallo
-      new_comment_by: Es gibt einen neuen Kommentar von <strong>%{commenter}</strong>
+      subject: Ihr Vorschlag wurde kommentiert.
+      title: Ihr Vorschlag wurde kommentiert.
+      hi: "Hallo %{username},"
+      text: Ihr Vorschlag wurde kommentiert. Schauen Sie sich den Kommentar %{comment_link} an. 
+      comment_link_text: hier
       sincerely: Mit freundlichen Grüßen
-      budget/investment:
-        subject: Ihr Vorschlag wurde kommentiert.
-        title: Ihr Vorschlag wurde kommentiert.
-        hi: "Hallo %{username},"
-        text: Ihr Vorschlag wurde kommentiert. Schauen Sie sich den Kommentar %{comment_link} an. 
-        comment_link_text: hier
     reply:
-      subject: Jemand hat auf Ihren Kommentar geantwortet
-      title: Neue Antwort auf Ihren Kommentar
-      hi: Hallo
-      new_reply_by: Es gibt eine neue Antwort von <strong>%{commenter}</strong> auf Ihren Kommentar
+      subject: Es wurde auf Ihren Kommentar geantwortet.
+      title: Es wurde auf Ihren Kommentar geantwortet.
+      hi: Hallo %{username},
+      text: "Ein anderer Nutzer hat auf Ihren Kommentar geantwortet. Sehen Sie sich die Antwort hier an: %{comment_link}"
+      comment_link_text: hier
       sincerely: Mit freundlichen Grüßen
-      budget/investment:
-        subject: Ihr Kommentar wurde beantwortet.
-        title: Ihr Kommentar wurde beantwortet.
-        hi: "Hallo %{username},"
-        text: Ihr Kommentar wurde beantwortet. Schauen Sie sich die Antwort %{comment_link} an.
-        comment_link_text: hier
     budget_investment_preselected:
       subject: Herzlichen Glückwunsch, Ihr Vorschlag geht in die nächste Runde!
       title: Herzlichen Glückwunsch, Ihr Vorschlag geht in die nächste Runde!
