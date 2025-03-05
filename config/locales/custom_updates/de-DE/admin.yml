@@ -176,6 +176,7 @@ de:
             color: Farbe
             icon: Icon
             title: Name
+            archive_reports: Archivieren
             notice_text: E-Mail-Benachrichtigungstext
         districts:
           index:
