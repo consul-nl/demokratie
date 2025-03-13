@@ -31,7 +31,7 @@
 
 <% unless embedded? %>
   <% unless Rails.env.development? %>
-    <% if Rails.application.secrets.matomo_site_id.present? && false %>
+    <% if Rails.application.secrets.matomo_site_id.present? %>
       <%= render "layouts/matomo" %>
     <% end %>
   <% end %>
