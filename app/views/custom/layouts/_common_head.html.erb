@@ -31,8 +31,6 @@
 
 <% unless embedded? %>
   <% unless Rails.env.development? %>
-    <%= javascript_include_tag "cli/matomo.js", defer: true %>
-
     <% if Rails.application.secrets.matomo_site_id.present? && false %>
       <%= render "layouts/matomo" %>
     <% end %>

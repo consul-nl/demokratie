@@ -327,24 +327,6 @@ var klaroConfig = {
             purposes: ['system'],
             optOut: false,
             required: true
-        },
-        {
-            name: 'matomo',
-            title: 'Statistik-Cookie',
-            default: true,
-            purposes: ['analytics'],
-            cookies: [
-              [/^_pk_.*$/]
-            ],
-            callback: function(consent, service) {
-              if (consent) {
-                console.log('User consent for service ' + service.name + ': consent=' + consent);
-                _paq.push(['rememberConsentGiven']);
-              } else {
-                console.log('User consent for service ' + service.name + ': consent=' + consent);
-                _paq.push(['forgetConsentGiven']);
-              }
-            }
         }
     ],
 };
