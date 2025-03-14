@@ -74,3 +74,6 @@ en:
       text2: It will therefore not be admitted to the next phase of the %{project_link}.
       projekt_link_text: Project
       sincerely: Kind regards
+    proposal_created:
+      hi: "Hello %{username},"
+      text1: "Your proposal has been successfully submitted: %{proposal_link}"
