@@ -1,5 +1,8 @@
 en:
   mailers:
+    shared:
+      sincerely: Kind	regards
+      signature: Your Consul Team
     budget_investment_unfeasible:
       subject: "Unfortunately, your proposal does not meet the criteria."
       title: "Unfortunately, your proposal does not meet the criteria."
