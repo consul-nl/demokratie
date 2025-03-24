@@ -4,7 +4,6 @@ class DeficiencyReportManagement::DeficiencyReportsController < DeficiencyReport
   include ImageAttributes
   include DocumentAttributes
   include CustomSearch
-  helper DeficiencyReportsHelper
 
   load_and_authorize_resource
 
