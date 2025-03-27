@@ -9,7 +9,27 @@ class ProjektsController < ApplicationController
   include ProjektControllerHelper
 
   def index
-    @projekts = Projekt.regular
+    if params[:landing_page_id].present?
+      site_customization_page =
+        SiteCustomization::Page
+          .published
+          .landing
+          .where(landing_show_projekts_overview: true)
+          .find_by(slug: params[:landing_page_id])
+
+      if site_customization_page.nil?
+        raise ActionController::RoutingError.new('Not Found')
+      end
+    end
+
+    base_projekts =
+      if site_customization_page.present?
+        site_customization_page.landing_projekts
+      else
+        Projekt
+      end
+
+    @projekts = base_projekts.regular
     @projekts = @projekts.search(@search_terms) if @search_terms.present?
 
     @all_projekts = @projekts.index_order_all

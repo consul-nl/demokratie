@@ -94,4 +94,6 @@ namespace :api do
   end
 end
 
+get "/:landing_page_id/projekts", to: "projekts#index"
+
 post "iframe_sessions", to: "iframe_sessions#create"
