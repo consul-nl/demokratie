@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2025_03_27_100637) do
+ActiveRecord::Schema.define(version: 2025_03_27_103950) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_trgm"
@@ -1007,6 +1007,14 @@ ActiveRecord::Schema.define(version: 2025_03_27_100637) do
     t.bigint "geozone_id", null: false
     t.bigint "projekt_id", null: false
     t.index ["projekt_id", "geozone_id"], name: "index_geozones_projekts_on_projekt_id_and_geozone_id", unique: true
+  end
+
+  create_table "graphql_users", force: :cascade do |t|
+    t.string "auth_token"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_graphql_users_on_user_id"
   end
 
   create_table "i18n_content_translations", id: :serial, force: :cascade do |t|
@@ -2836,6 +2844,7 @@ ActiveRecord::Schema.define(version: 2025_03_27_100637) do
   add_foreign_key "formulars", "projekt_phases"
   add_foreign_key "geozones_polls", "geozones"
   add_foreign_key "geozones_polls", "polls"
+  add_foreign_key "graphql_users", "users"
   add_foreign_key "identities", "users"
   add_foreign_key "images", "users"
   add_foreign_key "individual_group_values", "individual_groups"
