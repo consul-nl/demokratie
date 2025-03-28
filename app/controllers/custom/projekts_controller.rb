@@ -9,13 +9,13 @@ class ProjektsController < ApplicationController
   include ProjektControllerHelper
 
   def index
-    if params[:landing_page_id].present?
+    if params[:landing_page_slug].present?
       site_customization_page =
         SiteCustomization::Page
           .published
           .landing
           .where(landing_show_projekts_overview: true)
-          .find_by(slug: params[:landing_page_id])
+          .find_by(slug: params[:landing_page_slug])
 
       if site_customization_page.nil?
         raise ActionController::RoutingError.new('Not Found')
