@@ -34,6 +34,7 @@ class PagesController < ApplicationController
       @custom_page&.projekt&.visible_for?(current_user)
 
     if @custom_page&.landing?
+      @ui_show_projekts_overview = @custom_page.landing_show_projekts_overview
       @ui_hide_topbar_links = @custom_page.landing_hide_all_top_nav_links
       @ui_site_logo_not_clickable = @custom_page.landing_site_logo_not_clickable
     end

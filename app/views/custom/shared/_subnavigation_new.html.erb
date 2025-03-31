@@ -1,10 +1,8 @@
 <ul class="main-menu">
   <div class="content-items">
 
-    <% if @ui_hide_topbar_links %>
-      <% if @custom_page.present? && @custom_page.landing_show_projekts_overview? %>
-        <%= render partial: 'shared/subnavigation_projekts_overview', locals: { placement: placement } %>
-      <% end %>
+    <% if @ui_hide_topbar_links && @ui_show_projekts_overview %>
+      <%= render partial: 'shared/subnavigation_projekts_overview', locals: { placement: placement } %>
     <% end %>
 
     <% unless @ui_hide_topbar_links %>
