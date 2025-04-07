@@ -21,7 +21,7 @@
       <div class="main-column">
 
         <% if (@investment.feasible? || @investment.unfeasible?) && @investment.valuation_finished? %>
-          <div class="callout <%= "#{ @investment.feasible? ? 'success' : 'alert'}" %>" style="color:initial;">
+          <div class="callout <%= "#{ @investment.feasible? ? 'success' : 'alert'}" %>" style="color:initial;padding:30px 30px;">
             <h3><%= t("custom.budgets.investments.investment.#{@investment.feasibility}_html") %></h3>
 
             <% if @investment.should_show_price? %>
