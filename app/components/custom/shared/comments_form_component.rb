@@ -56,7 +56,8 @@ class Shared::CommentsFormComponent < ApplicationComponent
 
     def exception_for_investment?
       return true if record.is_a?(Budget::Investment) && record.unfeasible? && record.valuation_finished?
+      return true if record.is_a?(Budget::Investment) && !record.budget.current_phase.kind.in?(%w[informing accepting])
 
-      !record.budget.current_phase.kind.in?(%w[informing accepting])
+      false
     end
 end
