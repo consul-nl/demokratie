@@ -46,7 +46,7 @@
     @media screen and (max-width: $small-tablet-viewport-start) {
       padding: 0 20px;
       position: sticky;
-      top: 109px !important;
+      top: 109px;
       z-index: 1000;
       margin-top: 10px;
       border: 1px solid #CFCECE;
