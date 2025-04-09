@@ -2476,12 +2476,8 @@ ActiveRecord::Schema.define(version: 2025_04_09_073120) do
     t.boolean "landing", default: false
     t.integer "landing_nav_position"
     t.boolean "landing_show_projekts_overview", default: true
-<<<<<<< HEAD
-    t.boolean "landing_site_logo_not_clickable", default: false
     t.string "landing_navigation_link_color", default: "#000000"
-=======
     t.boolean "landing_site_logo_follow_to_landing_page", default: false
->>>>>>> a050ed10c4 (con-2470)
     t.index ["landing_show_in_top_nav"], name: "pages_landing_show_in_top_nav"
     t.index ["projekt_id"], name: "index_site_customization_pages_on_projekt_id"
   end
