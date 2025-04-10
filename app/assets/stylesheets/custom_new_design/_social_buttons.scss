@@ -1,30 +1,65 @@
+.button.button-bund-id,
 .button.button-twitter,
 .button.button-facebook,
 .button.button-google,
 .button.button-wordpress {
   color: $text;
-  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  &::before {
-    font-size: rem-calc(24);
-    margin-right: $font-icon-margin;
+.button.button-bund-id {
+  background: #ebeef4;
+
+  &:hover {
+    background: #d1d8e7;
   }
 }
 
 .button.button-twitter {
-  //background: #ecf7fc;
-  background-color: black !important;
-  color: white;
+  background-color: #222 !important;
+  color: #fff;
 
   &:hover {
-    color: white !important;
+    color: #fff !important;
     background-color: #000 !important;
   }
 
   &::before {
-    color: white;
+    color: #fff;
   }
 }
+
+.button.button-facebook {
+  background: #ebeef4;
+  border-left: 3px solid #3b5998;
+
+  &::before {
+    color: #3b5998;
+  }
+}
+
+.button.button-google {
+  background: #fcedea;
+  border-left: 3px solid #de4c34;
+
+  &::before {
+    color: #de4c34;
+  }
+}
+
+.button.button-wordpress {
+  background: #dcdde3;
+  border-left: 3px solid #2f2f33;
+
+  &::before {
+    color: #2f2f33;
+  }
+}
+
+
+// Social Share Buttons
 
 .social-share-button {
   .button.button-twitter {
@@ -55,32 +90,6 @@
   &:hover,
   &:focus {
     /* background: #fff; */
-  }
-}
-
-.button.button-facebook {
-  background: #ebeef4;
-  border-left: 3px solid #3b5998;
-
-  &::before {
-    color: #3b5998;
-  }
-}
-.button.button-google {
-  background: #fcedea;
-  border-left: 3px solid #de4c34;
-
-  &::before {
-    color: #de4c34;
-  }
-}
-
-.button.button-wordpress {
-  background: #dcdde3;
-  border-left: 3px solid #2f2f33;
-
-  &::before {
-    color: #2f2f33;
   }
 }
 
