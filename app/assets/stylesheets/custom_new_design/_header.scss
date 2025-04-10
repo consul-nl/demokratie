@@ -553,7 +553,7 @@ body.custom-new-design .wrapper > header .locale.locale-custom {
     color: $responsive-menu-text-color;
   }
 
-  .header--responsive-menu-sign-in-button {
+  .header--responsive-menu-sign-auth-button {
     width: auto;
     background: $responsive-menu-contrast-color !important;
     color: $responsive-menu-background-color !important;
@@ -634,6 +634,10 @@ body.custom-new-design .wrapper > header .locale.locale-custom {
     }
 
     .header--responsive-menu-sign-in-section {
+      gap: 10px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
       margin-top: 20px;
       margin-bottom: 10px;
     }
