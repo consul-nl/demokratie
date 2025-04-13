@@ -104,27 +104,58 @@ module ProjektPhaseAdminActions
   def settings
     authorize!(:settings, @projekt_phase)
 
-    if params[:category].present?
-      projekt_phase_features, projekt_phase_options =
-        get_all_settings_for_phase_and_category(
-          @projekt_phase, params[:category]
-        )
-      @projekt_phase_features = { params[:category] => projekt_phase_features }
-      @projekt_phase_options = { params[:category] => projekt_phase_options }
-    else
-      projekt_phase_features, projekt_phase_options =
-        get_all_settings_for_phase_and_category(
-          @projekt_phase, :base
-        )
+    all_settings = @projekt_phase.settings.group_by(&:kind)
 
-      @projekt_phase_features = projekt_phase_features&.group_by(&:band) || []
-      @projekt_phase_options = projekt_phase_options&.group_by(&:band) || []
-    end
+    set_setting_page_variables(all_settings)
+
+    render "custom/admin/projekt_phases/settings"
+  end
+
+  def general_settings
+    authorize!(:settings, @projekt_phase)
+
+    all_settings = @projekt_phase.settings.group_by(&:kind)
+
+    set_setting_page_variables(all_settings)
+
+    @projekt_phase_features = @projekt_phase_features&.slice("general")
+    @projekt_phase_options = @projekt_phase_options&.slice("general")
+
+    render "custom/admin/projekt_phases/user_functions"
+  end
+
+  def user_functions
+    authorize!(:settings, @projekt_phase)
+
+    all_settings = @projekt_phase.settings.group_by(&:kind)
+
+    set_setting_page_variables(all_settings)
+
+    @projekt_phase_features = @projekt_phase_features&.slice("form")
+    @projekt_phase_options = @projekt_phase_options&.slice("form")
+
+    render "custom/admin/projekt_phases/user_functions"
+  end
+
+  def form_author
+    authorize!(:settings, @projekt_phase)
+
+    all_settings = @projekt_phase.settings.group_by(&:kind)
+
+    set_setting_page_variables(all_settings)
+
+    @projekt_phase_features = @projekt_phase_features&.slice("resource")
+    @projekt_phase_options = @projekt_phase_options&.slice("resource")
+
+    render "custom/admin/projekt_phases/form_author"
+  end
+
+  def set_setting_page_variables(all_settings)
+    @projekt_phase_features = (all_settings["feature"]&.group_by(&:band).presence || {})
+    @projekt_phase_options = (all_settings["option"]&.group_by(&:band).presence || {})
 
     @projekt_phase_features.each { |_, v| v.delete_if { |a| a.key.in? @projekt_phase.settings_in_tabs.keys }} if @projekt_phase_features.presence&.values&.compact.present?
     @projekt_phase_options.each { |_, v| v.delete_if { |a| a.key.in? @projekt_phase.settings_in_tabs.keys }} if @projekt_phase_options.presence&.values&.compact.present?
-
-    render "custom/admin/projekt_phases/settings"
   end
 
   def get_all_settings_for_phase_and_category(projekt_phase, category)

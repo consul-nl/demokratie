@@ -167,7 +167,7 @@ class PagesController < ApplicationController
     @valid_orders.delete("relevance")
     @current_order = if @valid_orders.include?(params[:order])
                        params[:order]
-                     elsif helpers.projekt_feature?(@projekt, "general.set_default_sorting_to_newest") && @valid_orders.include?("created_at")
+                     elsif helpers.projekt_phase_feature?(@projekt_phase, "general.set_default_sorting_to_newest")
                        @current_order = "created_at"
                      else
                        Setting["selectable_setting.proposals.default_order"]
@@ -248,7 +248,15 @@ class PagesController < ApplicationController
     @valid_orders.delete("total_votes") unless @budget.current_phase.kind == "selecting"
     @valid_orders.delete("ballots")
     @valid_orders.delete("ballot_line_weight") unless @budget.current_phase.kind == "balloting"
-    @current_order = @valid_orders.include?(params[:order]) ? params[:order] : @valid_orders.first
+
+    @current_order =
+      if @valid_orders.include?(params[:order])
+        params[:order]
+      elsif helpers.projekt_phase_feature?(@projekt_phase, "general.set_default_sorting_to_newest")
+        @current_order = "newest"
+      else
+        @valid_orders.first
+      end
 
     params[:section] ||= "results" if @budget.current_phase.kind == "finished"
 
@@ -285,7 +293,9 @@ class PagesController < ApplicationController
     end
 
     if @budget.current_phase.kind == "finished"
-      if @budget.voting_style == "distributed"
+      if helpers.projekt_phase_feature?(@projekt_phase, "general.set_default_sorting_to_newest")
+        @current_order = "created_at"
+      elsif @budget.voting_style == "distributed"
         @current_order = "ballot_line_weight"
       elsif @budget.voting_style == "approval" || @budget.voting_style == "knapsack"
         @current_order = "ballots"
