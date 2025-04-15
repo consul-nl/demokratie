@@ -349,8 +349,9 @@ span.icon-account {
 
     li.nav-element:hover > ul.nav-flyout-block {
       display: block !important;
+      overflow-y: hidden;
+      max-height: calc(100vh - 200px);
     }
-
 
     li.nav-element:focus {
       outline: $outline-focus;
