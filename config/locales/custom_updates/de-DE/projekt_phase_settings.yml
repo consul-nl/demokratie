@@ -146,6 +146,12 @@ de:
           general:
             default_order: Standardsortierung
             default_order_description: Definieren Sie wie die Inhalte standardmäßig sortiert werden sollen
+            default_order_options:
+              random: Zufällig
+              ballot_line_weight: Aktuelle Stimmenverteilung
+              total_votes: Aktuelles Ranking
+              newest: Neueste zuerst
+              comments_count: Meist kommentiert
       projekt_questions:
         feature:
           general:

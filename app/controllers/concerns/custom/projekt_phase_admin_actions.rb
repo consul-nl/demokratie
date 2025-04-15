@@ -141,8 +141,8 @@ module ProjektPhaseAdminActions
 
     set_setting_page_variables(@projekt_phase)
 
-    @projekt_phase_features = @projekt_phase_features&.slice("form")
-    @projekt_phase_options = @projekt_phase_options&.slice("form")
+    @projekt_phase_features = @projekt_phase_features&.slice("resource")
+    @projekt_phase_options = @projekt_phase_options&.slice("resource")
 
     render "custom/admin/projekt_phases/user_functions"
   end
@@ -152,8 +152,8 @@ module ProjektPhaseAdminActions
 
     set_setting_page_variables(@projekt_phase)
 
-    @projekt_phase_features = @projekt_phase_features&.slice("resource")
-    @projekt_phase_options = @projekt_phase_options&.slice("resource")
+    @projekt_phase_features = @projekt_phase_features&.slice("form")
+    @projekt_phase_options = @projekt_phase_options&.slice("form")
 
     render "custom/admin/projekt_phases/form_author"
   end

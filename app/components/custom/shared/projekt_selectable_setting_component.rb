@@ -11,4 +11,8 @@ class Shared::ProjektSelectableSettingComponent < ApplicationComponent
     def render?
       @selectable_setting.present?
     end
+
+    def translated_options
+      @options.map { |o| [I18n.t("#{@i18n_key}_options.#{o}"), o] }
+    end
 end
