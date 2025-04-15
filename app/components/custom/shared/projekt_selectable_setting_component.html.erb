@@ -12,7 +12,7 @@
         <%= form_for([:admin, @selectable_setting]) do |f| %>
           <%= f.hidden_field :tab, value: @tab if @tab.present? %>
           <div class="small-12 medium-6 large-8 column">
-            <%= f.select :value, @options, label: false %>
+            <%= f.select :value, translated_options, label: false %>
           </div>
           <div class="small-12 medium-6 large-4 column">
             <%= f.submit(t("admin.settings.index.update_setting"), class: "button hollow expanded") %>

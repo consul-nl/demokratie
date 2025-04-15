@@ -8,7 +8,7 @@ class Budget
     include Memoable
 
     DEFAULT_ORDERS = %w(
-      random total_votes ballots ballot_line_weight newest comments_count
+      random total_votes ballot_line_weight newest comments_count
     ).freeze
 
     delegate :projekt, :projekt_phase, :find_or_create_stats_version, :show_percentage_values_only?, to: :budget
