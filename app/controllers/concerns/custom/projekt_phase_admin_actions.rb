@@ -104,9 +104,8 @@ module ProjektPhaseAdminActions
   def settings
     authorize!(:settings, @projekt_phase)
 
-    all_settings = @projekt_phase.settings.group_by(&:kind)
 
-    set_setting_page_variables(all_settings)
+    set_setting_page_variables(@projekt_phase)
 
     render "custom/admin/projekt_phases/settings"
   end
@@ -114,9 +113,7 @@ module ProjektPhaseAdminActions
   def general_settings
     authorize!(:settings, @projekt_phase)
 
-    all_settings = @projekt_phase.settings.group_by(&:kind)
-
-    set_setting_page_variables(all_settings)
+    set_setting_page_variables(@projekt_phase)
 
     @projekt_phase_features = @projekt_phase_features&.slice("general")
     @projekt_phase_options = @projekt_phase_options&.slice("general")
@@ -142,9 +139,7 @@ module ProjektPhaseAdminActions
   def user_functions
     authorize!(:settings, @projekt_phase)
 
-    all_settings = @projekt_phase.settings.group_by(&:kind)
-
-    set_setting_page_variables(all_settings)
+    set_setting_page_variables(@projekt_phase)
 
     @projekt_phase_features = @projekt_phase_features&.slice("form")
     @projekt_phase_options = @projekt_phase_options&.slice("form")
@@ -155,9 +150,7 @@ module ProjektPhaseAdminActions
   def form_author
     authorize!(:settings, @projekt_phase)
 
-    all_settings = @projekt_phase.settings.group_by(&:kind)
-
-    set_setting_page_variables(all_settings)
+    set_setting_page_variables(@projekt_phase)
 
     @projekt_phase_features = @projekt_phase_features&.slice("resource")
     @projekt_phase_options = @projekt_phase_options&.slice("resource")
@@ -165,16 +158,8 @@ module ProjektPhaseAdminActions
     render "custom/admin/projekt_phases/form_author"
   end
 
-  def set_setting_page_variables(all_settings)
-    @projekt_phase_features = (all_settings["feature"]&.group_by(&:band).presence || {})
-    @projekt_phase_options = (all_settings["option"]&.group_by(&:band).presence || {})
-
-    @projekt_phase_features.each { |_, v| v.delete_if { |a| a.key.in? @projekt_phase.settings_in_tabs.keys }} if @projekt_phase_features.presence&.values&.compact.present?
-    @projekt_phase_options.each { |_, v| v.delete_if { |a| a.key.in? @projekt_phase.settings_in_tabs.keys }} if @projekt_phase_options.presence&.values&.compact.present?
-  end
-
-  def get_all_settings_for_phase_and_category(projekt_phase, category)
-    proposal_setting_key_ordered = ProjektPhaseSetting.defaults[projekt_phase.class.name][category.to_sym].keys
+  def set_setting_page_variables(projekt_phase)
+    proposal_setting_key_ordered = ProjektPhaseSetting.defaults[projekt_phase.class.name].keys
 
     projekt_phase_settings_by_key = projekt_phase.settings.each_with_object({}) do |item, result|
       result[item.key] = item
@@ -188,10 +173,11 @@ module ProjektPhaseAdminActions
 
     all_settings = setting_ordered.group_by(&:kind)
 
-    projekt_phase_features = all_settings["feature"]
-    projekt_phase_options = all_settings["option"]
+    @projekt_phase_features = (all_settings["feature"]&.group_by(&:band).presence || {})
+    @projekt_phase_options = (all_settings["option"]&.group_by(&:band).presence || {})
 
-    [projekt_phase_features, projekt_phase_options]
+    @projekt_phase_features.each { |_, v| v.delete_if { |a| a.key.in? @projekt_phase.settings_in_tabs.keys }} if @projekt_phase_features.presence&.values&.compact.present?
+    @projekt_phase_options.each { |_, v| v.delete_if { |a| a.key.in? @projekt_phase.settings_in_tabs.keys }} if @projekt_phase_options.presence&.values&.compact.present?
   end
 
   def projekt_labels
