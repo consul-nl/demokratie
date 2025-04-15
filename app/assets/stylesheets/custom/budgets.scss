@@ -58,6 +58,14 @@
       margin-left: -20px;
       margin-right: -20px;
 
+      #phase-name {
+        display: none;
+      }
+
+      #progress_bar #total_amount {
+        display: none;
+      }
+
       &:after {
         border-bottom: none;
       }

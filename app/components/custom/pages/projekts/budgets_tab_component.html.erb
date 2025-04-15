@@ -20,19 +20,19 @@
 <div class="no-margin-top margin-bottom expanded jumbo-budget budget-heading">
   <div class="row progress-votes">
     <div class="small-12 column">
-      <h2 class="margin-top">
+      <h2 id="phase-name" class="margin-top">
         <%= budget.current_phase.name %>
       </h2>
       <% if budget.show_money? %>
-        <h3>
-          <span class="tagline"><%= t("budgets.investments.header.price") %></span>
+        <h3 style="margin-top: 15px;">
           <%= budget.formatted_heading_price(heading) %>
+          <%= t("budgets.investments.header.price") %>
         </h3>
       <% end %>
 
       <% if can? :show, ballot %>
         <% if ballot.valid_heading?(heading) %>
-          <div class="progress-bar-nav">
+          <div class="progress-bar-nav" style="margin-bottom: 1rem">
             <div id="progress_bar">
               <%= render "budgets/ballot/progress_bar", ballot: ballot, heading: heading %>
             </div>
