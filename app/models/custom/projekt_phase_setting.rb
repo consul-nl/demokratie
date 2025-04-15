@@ -107,7 +107,6 @@ class ProjektPhaseSetting < ApplicationRecord
           "feature.form.show_implementation_option_fields": "",
           "feature.form.show_user_cost_estimate": "",
 
-          "feature.resource.show_video_as_link": "",
           "feature.resource.users_can_create_investment_proposals": "active",
           "feature.resource.show_report_button_in_sidebar": "active",
           "feature.resource.show_follow_button_in_sidebar": "",
@@ -115,8 +114,7 @@ class ProjektPhaseSetting < ApplicationRecord
           "feature.resource.show_related_content": "",
           "feature.resource.show_comments": "active",
           "feature.resource.conditional_balloting": "",
-
-          "feature.general.only_admins_create_investment_proposals": "",
+          "feature.resource.show_video_as_link": "",
 
           "selectable_setting.general.default_order": "created_at",
         },
