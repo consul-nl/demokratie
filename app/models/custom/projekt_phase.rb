@@ -250,8 +250,8 @@ class ProjektPhase < ApplicationRecord
     end
   end
 
-  def settings_categories
-    []
+  def setting(key)
+    setting = settings.find { |s| s.key == key }
   end
 
   def admin_nav_bar_items
@@ -362,13 +362,7 @@ class ProjektPhase < ApplicationRecord
     end
 
     def add_default_settings
-      phase_setting_categories = ProjektPhaseSetting.defaults[self.class.name]
-
-      return if phase_setting_categories.nil?
-
-      phase_settings = phase_setting_categories.values.reduce(:merge) || {}
-
-      phase_settings.each do |key, value|
+      ProjektPhaseSetting.defaults[self.class.name].each do |key, value|
         settings.create!(key: key, value: value)
       end
     end

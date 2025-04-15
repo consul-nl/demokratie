@@ -33,16 +33,12 @@ class ProjektPhase::BudgetPhase < ProjektPhase
     !selectable_by_users?
   end
 
-  def settings_categories
-    %w[form_author user_functions]
-  end
-
   def admin_nav_bar_items
     %w[
       budget_phases
       naming restrictions
       budget_edit budget_investments
-      form_author user_functions
+      general_settings form_author user_functions
       map age_ranges_for_stats
       projekt_labels sentiments
       officing_managers
