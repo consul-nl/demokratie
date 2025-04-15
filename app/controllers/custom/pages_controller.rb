@@ -276,12 +276,18 @@ class PagesController < ApplicationController
       @ballot = @budget.balloting? ? query.first_or_create!(conditional: ballot_conditional?) : query.first_or_initialize(conditional: ballot_conditional?)
 
       @resources = @budget.investments
-      take_by_projekt_labels
-      take_by_sentiment
-      @investments = @resources
 
-      @investments = @investments.send(@current_filter)
+      if params[:search].present?
+        @resources = @resources.search(params[:search])
+      else
+        take_by_projekt_labels
+        take_by_sentiment
+      end
+
+      @investments = @resources.send(@current_filter)
       @investment_ids = @investments.ids
+      @investment_coordinates = MapLocation.where(investment_id: @investments).map(&:json_data)
+      @investments = @investments.perform_sort_by(@current_order, session[:random_seed]).page(params[:page]).per(24)
     end
 
     if @budget.current_phase.kind == "finished"
@@ -291,8 +297,6 @@ class PagesController < ApplicationController
         @current_order = "ballots"
       end
     end
-
-    @investment_coordinates = MapLocation.where(investment_id: @investments).map(&:json_data)
 
     unless params[:section] == "results" && can?(:read_results, @budget)
       @investments = @investments.perform_sort_by(@current_order, session[:random_seed]).page(params[:page]).per(18)
