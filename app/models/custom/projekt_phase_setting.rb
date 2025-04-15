@@ -79,8 +79,6 @@ class ProjektPhaseSetting < ApplicationRecord
           "feature.resource.show_comments": "active",
           "option.resource.votes_for_proposal_success": 100,
 
-          "feature.general.only_admins_create_proposals": "",
-
           "selectable_setting.general.default_order": "created_at",
         },
 
