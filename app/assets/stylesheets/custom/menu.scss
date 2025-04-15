@@ -370,6 +370,11 @@ span.icon-account {
       top: 100%;
     }
 
+    li.nav-element.top-level-item > ul.nav-flyout-block.nested-dropdown {
+      max-height: calc(100vh - 250px);
+      overflow-y: auto;
+    }
+
     .account-admin-items li.nav-element.top-level-item > ul.nav-flyout-block {
       left: auto;
       right: 0;
