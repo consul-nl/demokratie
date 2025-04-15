@@ -80,6 +80,12 @@ de:
           general:
             default_order: Standardsortierung
             default_order_description: Definieren Sie wie die Inhalte standardmäßig sortiert werden sollen
+            default_order_options:
+              hot_score: Aktivste
+              created_at: Neueste zuerst
+              alphabet: Alphabetisch
+              votes_up: Am meisten gewählt
+              random: Zufällig
       polls:
         feature:
           resource:
