@@ -363,13 +363,16 @@ span.icon-account {
       display: none;
       position: absolute;
       border: 1px solid $flyout-block-border-color;
-      max-height: 400px;
-      overflow-y: auto;
     }
 
     li.nav-element.top-level-item > ul.nav-flyout-block {
       left: 0;
       top: 100%;
+    }
+
+    li.nav-element.top-level-item > ul.nav-flyout-block.nested-dropdown {
+      max-height: calc(100vh - 250px);
+      overflow-y: auto;
     }
 
     .account-admin-items li.nav-element.top-level-item > ul.nav-flyout-block {
