@@ -171,7 +171,7 @@ module ProjektPhaseAdminActions
       setting_ordered.push(setting)
     end
 
-    all_settings = setting_ordered.group_by(&:kind)
+    all_settings = setting_ordered.compact.group_by(&:kind)
 
     @projekt_phase_features = (all_settings["feature"]&.group_by(&:band).presence || {})
     @projekt_phase_options = (all_settings["option"]&.group_by(&:band).presence || {})
