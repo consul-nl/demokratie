@@ -75,6 +75,11 @@ de:
           resource:
             votes_for_proposal_success: "Anzahl der notwendigen Stimmen zur Genehmigung eines Vorschlags"
             votes_for_proposal_success_description: "Wenn ein Antrag diese Anzahl von Unterstützungen erreicht, kann er nicht mehr mehr unterstützt werden und gilt als erfolgreich"
+
+        selectable_setting:
+          general:
+            default_order: Standardsortierung
+            default_order_description: Definieren Sie wie die Inhalte standardmäßig sortiert werden sollen
       polls:
         feature:
           resource:
@@ -137,6 +142,10 @@ de:
             show_video_as_link_description: Zeigt die hinzugefügten Videos als Link an, anstatt als echtes Video
             conditional_balloting: Vereinfachte Stimmabgabe
             conditional_balloting_description: Stimmen werden vor der Verifizierung aufgenommen, aber erst nach der Verifizierung gezählt
+        selectable_setting:
+          general:
+            default_order: Standardsortierung
+            default_order_description: Definieren Sie wie die Inhalte standardmäßig sortiert werden sollen
       projekt_questions:
         feature:
           general:

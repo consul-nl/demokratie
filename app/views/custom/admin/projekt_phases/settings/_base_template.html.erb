@@ -1,5 +1,6 @@
 <% projekt_phase_features = local_assigns[:projekt_phase_features] || [] %>
 <% projekt_phase_options = local_assigns[:projekt_phase_options] || [] %>
+<% projekt_phase_selectable_settings = local_assigns[:projekt_phase_selectable_settings] || [] %>
 
 <%= render "custom/admin/projekt_phases/heading" %>
 
@@ -48,6 +49,19 @@
 <% projekt_phase_options.each do |key, value| %>
   <%= render "custom/admin/projekt_phases/settings/options_table", options: value %>
 <% end %>
+
+<div class="row">
+  <div class="column">
+    <% projekt_phase_selectable_settings.each do |selectable_setting_set| %>
+      <%= render Shared::ProjektSelectableSettingComponent.new(
+        setting: selectable_setting_set.setting,
+        options: selectable_setting_set.options,
+        tab: "#tab-extended-features",
+        i18n_key: selectable_setting_set.setting.i18n_key
+      ) %>
+    <% end %>
+  </div>
+</div>
 
 <% if embedded? %>
   <% content_for :admin_frame_top_navigation do %>

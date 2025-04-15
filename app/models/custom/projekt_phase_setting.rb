@@ -1,5 +1,7 @@
 class ProjektPhaseSetting < ApplicationRecord
-  SETTING_KINDS = %w[feature option].freeze
+  SelectableSettingSet = Struct.new(:setting, :options, keyword_init: true)
+
+  SETTING_KINDS = %w[feature option selectable_setting].freeze
   SETTING_BANDS = %w[general form resource].freeze
 
   attr_accessor :form_field_disabled, :dependent_setting_ids, :dependent_setting_action
@@ -77,8 +79,9 @@ class ProjektPhaseSetting < ApplicationRecord
           "feature.resource.show_comments": "active",
           "option.resource.votes_for_proposal_success": 100,
 
-          "feature.general.set_default_sorting_to_newest": "",
-          "feature.general.only_admins_create_proposals": ""
+          "feature.general.only_admins_create_proposals": "",
+
+          "selectable_setting.general.default_order": "created_at",
         },
 
         "ProjektPhase::VotingPhase" => {
@@ -113,8 +116,9 @@ class ProjektPhaseSetting < ApplicationRecord
           "feature.resource.show_comments": "active",
           "feature.resource.conditional_balloting": "",
 
-          "feature.general.set_default_sorting_to_newest": "",
-          "feature.general.only_admins_create_investment_proposals": ""
+          "feature.general.only_admins_create_investment_proposals": "",
+
+          "selectable_setting.general.default_order": "created_at",
         },
 
         "ProjektPhase::QuestionPhase" => {
@@ -172,5 +176,9 @@ class ProjektPhaseSetting < ApplicationRecord
 
   def enabled?
     value.present?
+  end
+
+  def i18n_key
+    "custom.projekt_phase_settings.#{projekt_phase.resources_name}.#{key}"
   end
 end

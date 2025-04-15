@@ -2,10 +2,10 @@
   <tbody>
     <tr>
       <td class="small-6">
-        <strong><%= t("custom.settings.#{@selectable_setting.key}") %></strong>
+        <strong><%= t(@i18n_key) %></strong>
         <br>
         <span class="small">
-          <%= t("custom.settings.#{@selectable_setting.key}_description", default: t("admin.settings.no_description")) %>
+          <%= t("#{@i18n_key}_description", default: t("admin.settings.no_description")) %>
         </span>
       </td>
       <td class="small-6">

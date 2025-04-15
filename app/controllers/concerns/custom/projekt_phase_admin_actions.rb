@@ -121,6 +121,14 @@ module ProjektPhaseAdminActions
     @projekt_phase_features = @projekt_phase_features&.slice("general")
     @projekt_phase_options = @projekt_phase_options&.slice("general")
 
+    @projekt_phase_selectable_settings =
+      [
+        ProjektPhaseSetting::SelectableSettingSet.new(
+          setting: @projekt_phase.settings.find_by(key: "selectable_setting.general.default_order"),
+          options: Proposal.proposals_orders
+        )
+      ]
+
     render "custom/admin/projekt_phases/user_functions"
   end
 

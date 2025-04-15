@@ -165,10 +165,12 @@ class PagesController < ApplicationController
     @valid_orders = Proposal.proposals_orders(current_user)
     @valid_orders.delete("archival_date")
     @valid_orders.delete("relevance")
+    sort_option = @projekt_phase.setting("selectable_setting.general.default_order")
+
     @current_order = if @valid_orders.include?(params[:order])
                        params[:order]
-                     elsif helpers.projekt_phase_feature?(@projekt_phase, "general.set_default_sorting_to_newest")
-                       @current_order = "created_at"
+                     elsif sort_option.present?
+                       @current_order = sort_option.value
                      else
                        Setting["selectable_setting.proposals.default_order"]
                      end
@@ -249,11 +251,13 @@ class PagesController < ApplicationController
     @valid_orders.delete("ballots")
     @valid_orders.delete("ballot_line_weight") unless @budget.current_phase.kind == "balloting"
 
+    sort_option = @projekt_phase.setting("selectable_setting.general.default_order")
+
     @current_order =
       if @valid_orders.include?(params[:order])
         params[:order]
-      elsif helpers.projekt_phase_feature?(@projekt_phase, "general.set_default_sorting_to_newest")
-        @current_order = "newest"
+      elsif sort_option.present?
+        @current_order = sort_option.value
       else
         @valid_orders.first
       end

@@ -250,6 +250,10 @@ class ProjektPhase < ApplicationRecord
     end
   end
 
+  def setting(key)
+    setting = settings.find { |s| s.key == key }
+  end
+
   def admin_nav_bar_items
     []
   end
