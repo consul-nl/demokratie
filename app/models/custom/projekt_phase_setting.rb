@@ -134,7 +134,8 @@ class ProjektPhaseSetting < ApplicationRecord
         },
 
         "ProjektPhase::EventPhase" => {
-          "feature.general.reverse_order_for_incoming_events": ""
+          "feature.general.reverse_order_for_incoming_events": "",
+          "feature.general.show_on_home_page": "active"
         },
 
         "ProjektPhase::NewsfeedPhase" => {

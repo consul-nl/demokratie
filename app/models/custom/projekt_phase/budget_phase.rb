@@ -88,7 +88,7 @@ class ProjektPhase::BudgetPhase < ProjektPhase
         projekt_phase: self,
         name: [projekt.name, name_extension].compact.join(" "),
         currency_symbol: "€",
-        slug: "#{projekt.name.to_s.parameterize}-#{Budget.last.id + 1}",
+        slug: "#{projekt.name.to_s.parameterize}-#{(Budget.order(:id).last&.id || 0) + 1}",
         published: true
       )
 

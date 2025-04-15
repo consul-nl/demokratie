@@ -16,7 +16,7 @@
 
         <div class="top-bar--title">
 
-          <%= link_to (@ui_site_logo_homepage_path.presence || root_path) do %>
+          <%= link_to (@ui_site_homepage_path.presence || root_path) do %>
             <% transparent_background_logo =
                 @ui_site_logo_transparent_background.presence || image_path_for("logo_header_for_transparent.png")
             %>
@@ -80,7 +80,7 @@
           <div class="show-on-mobile">
             <div class='header--responsive-menu-sign-in-section'>
               <%= link_to t('devise_views.menu.login_items.login'), new_user_session_path, class: 'header--responsive-menu-sign-auth-button', role: 'button' %>
-              <%= link_to(t("devise_views.shared.links.signup_link"), new_user_registration_path, class: 'header--responsive-menu-sign-auth-button', role: "button") %>
+              <%= link_to(t("devise_views.shared.links.signup_link"), new_user_registration_path, class: 'header--responsive-menu-sign-auth-button', style: "background:#00AA0B !important;color:#fff !important", role: "button") %>
             </div>
           </div>
         <% end %>
