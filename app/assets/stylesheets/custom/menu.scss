@@ -363,6 +363,8 @@ span.icon-account {
       display: none;
       position: absolute;
       border: 1px solid $flyout-block-border-color;
+      max-height: 400px;
+      overflow-y: auto;
     }
 
     li.nav-element.top-level-item > ul.nav-flyout-block {
