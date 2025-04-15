@@ -42,12 +42,15 @@
     background: initial;
   }
 
-  .expanded.jumbo-budget.budget-heading.padding {
+  .expanded.jumbo-budget.budget-heading {
+    position: sticky;
+    top: 90px;
+    z-index: 1000;
+    border-top: solid 1px #c7c7c7;
+
     @media screen and (max-width: $small-tablet-viewport-start) {
       padding: 0 20px;
-      position: sticky;
       top: 109px;
-      z-index: 1000;
       margin-top: 10px;
       border: 1px solid #CFCECE;
       border-left: none;
