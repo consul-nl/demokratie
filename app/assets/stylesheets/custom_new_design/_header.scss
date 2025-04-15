@@ -496,9 +496,7 @@ body.custom-new-design .wrapper > header .locale.locale-custom {
     border-radius: 10px;
 
     .nav-element {
-      padding: 1em;
       width: 300px;
-      min-height: 45px;
       margin-right: 0 !important;
 
       &:hover {
@@ -526,6 +524,11 @@ body.custom-new-design .wrapper > header .locale.locale-custom {
       &:last-child {
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
+      }
+
+      @media screen and (min-width: $small-tablet-viewport-start) {
+        padding: 1em;
+        min-height: 45px;
       }
     }
   }
