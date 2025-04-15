@@ -246,7 +246,7 @@ class PagesController < ApplicationController
     params[:filter] ||= "winners" if @budget.current_phase.kind == "finished"
     @current_filter = @valid_filters.include?(params[:filter]) ? params[:filter] : "all"
 
-    @valid_orders = %w[random total_votes ballots ballot_line_weight newest comments_count]
+    @valid_orders = Budget::Investment::DEFAULT_ORDERS.dup
     @valid_orders.delete("total_votes") unless @budget.current_phase.kind == "selecting"
     @valid_orders.delete("ballots")
     @valid_orders.delete("ballot_line_weight") unless @budget.current_phase.kind == "balloting"
@@ -256,11 +256,19 @@ class PagesController < ApplicationController
     @current_order =
       if @valid_orders.include?(params[:order])
         params[:order]
-      elsif sort_option.present?
+      elsif sort_option.present? || @valid_orders.include?(sort_option.value)
         @current_order = sort_option.value
       else
         @valid_orders.first
       end
+
+    if @budget.current_phase.kind == "finished"
+      if @budget.voting_style == "distributed"
+        @current_order = "ballot_line_weight"
+      elsif @budget.voting_style == "approval" || @budget.voting_style == "knapsack"
+        @current_order = "ballots"
+      end
+    end
 
     params[:section] ||= "results" if @budget.current_phase.kind == "finished"
 
@@ -300,16 +308,6 @@ class PagesController < ApplicationController
       @investment_ids = @investments.ids
       @investment_coordinates = MapLocation.where(investment_id: @investments).map(&:json_data)
       @investments = @investments.perform_sort_by(@current_order, session[:random_seed]).page(params[:page]).per(24)
-    end
-
-    if @budget.current_phase.kind == "finished"
-      if helpers.projekt_phase_feature?(@projekt_phase, "general.set_default_sorting_to_newest")
-        @current_order = "created_at"
-      elsif @budget.voting_style == "distributed"
-        @current_order = "ballot_line_weight"
-      elsif @budget.voting_style == "approval" || @budget.voting_style == "knapsack"
-        @current_order = "ballots"
-      end
     end
 
     unless params[:section] == "results" && can?(:read_results, @budget)

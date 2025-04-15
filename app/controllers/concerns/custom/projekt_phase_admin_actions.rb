@@ -121,11 +121,18 @@ module ProjektPhaseAdminActions
     @projekt_phase_features = @projekt_phase_features&.slice("general")
     @projekt_phase_options = @projekt_phase_options&.slice("general")
 
+    options =
+      if @projekt_phase.resources_name == "proposals"
+        Proposal.proposals_orders
+      elsif @projekt_phase.resources_name == "budget"
+        Budget::Investment::DEFAULT_ORDERS
+      end
+
     @projekt_phase_selectable_settings =
       [
         ProjektPhaseSetting::SelectableSettingSet.new(
           setting: @projekt_phase.settings.find_by(key: "selectable_setting.general.default_order"),
-          options: Proposal.proposals_orders
+          options: options
         )
       ]
 
