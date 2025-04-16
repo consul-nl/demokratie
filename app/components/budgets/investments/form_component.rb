@@ -24,7 +24,7 @@ class Budgets::Investments::FormComponent < ApplicationComponent
     end
 
     def form_description
-      investment.projekt_phase.projekt_selector_hint.presence ||
+      investment.projekt_phase.resource_form_intro.presence ||
         render_custom_block("user_resource_form_budget_investment",
                             default_content: t("custom.budgets.investments.form.page_description"))
     end
