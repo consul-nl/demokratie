@@ -606,10 +606,11 @@ de:
           update_button: Speichern
         phase_tab_name: Name in Tab auf der Projektseite
         cta_button_name: Buttontext auf der Projektseite
+        welcome_text_in_show: Einleitungstext in der Anzeige von Vorschlägen
         resource_form_title: Überschrift des Erstellungsformulars
         labels_name: Alternativtext zu Labels
         sentiments_name: Alternativtext zu Sentimente
-        projekt_selector_hint: Hinweise zum Projekt
+        resource_form_intro: Einleitungstext im Erstellungsformular
         comment_form_title: Titel des Kommentarformulars
         comment_form_button: Kommentarformular Button
         resource_form_title_placeholder: Text des Platzhalters für den Titel im Erstellungsformular

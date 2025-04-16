@@ -30,7 +30,8 @@ class ProjektPhase < ApplicationRecord
 
   translates :phase_tab_name, touch: true
   translates :cta_button_name, touch: true
-  translates :projekt_selector_hint, touch: true
+  translates :welcome_text_in_show, touch: true
+  translates :resource_form_intro, touch: true
   translates :labels_name, touch: true
   translates :sentiments_name, touch: true
   translates :description, touch: true

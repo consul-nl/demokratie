@@ -53,7 +53,11 @@
         <% end %>
 
         <div class="common-page-description">
-          <%= render_custom_block('debate_show_welcome_text') %>
+          <% if @proposal.projekt_phase&.welcome_text_in_show.present? %>
+            <%= AdminWYSIWYGSanitizer.new.sanitize(@proposal.projekt_phase&.welcome_text_in_show) %>
+          <% else %>
+            <% render_custom_block("proposals_show_welcome_text") %>
+          <% end %>
         </div>
 
       </div>

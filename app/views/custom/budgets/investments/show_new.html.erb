@@ -10,9 +10,12 @@
         <%= resources_back_link(fallback_path: url_to_footer_tab) %>
 
         <div class="common-page-description">
-          <%= render_custom_block("budget_investment_show_welcome_text") %>
+          <% if @investment.projekt_phase&.welcome_text_in_show.present? %>
+            <%= AdminWYSIWYGSanitizer.new.sanitize(@investment.projekt_phase&.welcome_text_in_show) %>
+          <% else %>
+            <%= render_custom_block("budget_investment_show_welcome_text") %>
+          <% end %>
         </div>
-
       </div>
       <div class="sidebar-placeholder"></div>
     </div>
