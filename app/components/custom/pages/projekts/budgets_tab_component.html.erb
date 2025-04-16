@@ -17,28 +17,33 @@
   </div>
 <% end %>
 
-<div class="no-margin-top margin-bottom expanded jumbo-budget budget-heading <%= budget.current_phase.kind %>">
+<div class="no-margin-top margin-bottom expanded jumbo-budget budget-heading padding <%= budget.current_phase.kind %>">
   <div class="row progress-votes">
     <div class="small-12 column">
-      <h3 id="phase-name" class="margin-top" style="margin-bottom:10px;">
+      <h2 class="margin-top">
         <%= budget.current_phase.name %>
-      </h3>
+      </h2>
       <% if budget.show_money? %>
-        <h4 style="margin-top:10px;">
+        <h3>
+          <span class="tagline"><%= t("budgets.investments.header.price") %></span>
           <%= budget.formatted_heading_price(heading) %>
-          <%= t("budgets.investments.header.price") %>
-        </h4>
-      <% end %>
-
-      <% if can? :show, ballot %>
-        <% if ballot.valid_heading?(heading) %>
-          <div class="progress-bar-nav" style="margin-bottom: 1rem">
-            <div id="progress_bar">
-              <%= render "budgets/ballot/progress_bar", ballot: ballot, heading: heading %>
-            </div>
-          </div>
-        <% end %>
+        </h3>
       <% end %>
     </div>
   </div>
 </div>
+
+
+<% if can?(:show, ballot) && ballot.valid_heading?(heading) %>
+  <div class="no-margin-top margin-bottom sticky-ballot-progress-bar expanded jumbo-budget budget-heading padding">
+    <div class="row progress-votes">
+      <div class="small-12 column">
+        <div class="progress-bar-nav">
+          <div id="progress_bar">
+            <%= render "budgets/ballot/progress_bar", ballot: ballot, heading: heading %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

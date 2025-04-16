@@ -42,6 +42,22 @@
     background: initial;
   }
 
+  .sticky-ballot-progress-bar {
+    position: sticky;
+    top: 90px;
+    z-index: 1000;
+
+    @media screen and (max-width: $small-tablet-viewport-start) {
+      top: 109px;
+      padding: 20px !important;
+      border-top: 0 !important;
+
+      #progress_bar #total_amount {
+        display: none;
+      }
+    }
+  }
+
   .expanded.jumbo-budget.budget-heading {
     @media screen and (max-width: $small-tablet-viewport-start) {
       margin-left: -20px;
@@ -61,21 +77,12 @@
     }
 
     &.balloting {
-      position: sticky;
-      top: 90px;
-      z-index: 1000;
-      border-top: solid 1px #c7c7c7;
+      &:after {
+        border-bottom: 0;
+      }
 
       @media screen and (max-width: $small-tablet-viewport-start) {
-        top: 109px;
-
-        #phase-name {
-          display: none;
-        }
-
-        #progress_bar #total_amount {
-          display: none;
-        }
+        border-bottom: 0 !important;
       }
     }
   }
