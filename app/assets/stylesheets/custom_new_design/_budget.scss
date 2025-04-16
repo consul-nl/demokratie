@@ -59,6 +59,18 @@
     }
   }
 
+  .supports {
+    .supported {
+      &.remove {
+        form button {
+          font-weight: 400 !important;
+          background-color: #9EADBA;
+          color: #fff;
+        }
+      }
+    }
+  }
+
   .resource-item--footer-section {
     // min-height: 50px !important;
 
@@ -84,14 +96,6 @@
 
           form {
             margin-bottom: 5px;
-          }
-
-          &.remove {
-            form button {
-              font-weight: 400 !important;
-              background-color: #9EADBA;
-              color: #fff;
-            }
           }
         }
 

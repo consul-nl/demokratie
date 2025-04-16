@@ -43,36 +43,40 @@
   }
 
   .expanded.jumbo-budget.budget-heading {
-    position: sticky;
-    top: 90px;
-    z-index: 1000;
-    border-top: solid 1px #c7c7c7;
-
     @media screen and (max-width: $small-tablet-viewport-start) {
-      padding: 0 20px;
-      top: 109px;
-      margin-top: 10px;
-      border: 1px solid #CFCECE;
-      border-left: none;
-      border-right: none;
       margin-left: -20px;
       margin-right: -20px;
-
-      #phase-name {
-        display: none;
-      }
-
-      #progress_bar #total_amount {
-        display: none;
-      }
+      border: 1px solid #cfcece;
+      border-left: 0;
+      border-right: 0;
+      padding: 0 20px;
 
       &:after {
-        border-bottom: none;
+        border-bottom: 0;
       }
     }
 
     @media screen and (min-width: $small-tablet-viewport-start) and (max-width: $big-tablet-viewport-start) {
       padding-left: 25px;
+    }
+
+    &.balloting {
+      position: sticky;
+      top: 90px;
+      z-index: 1000;
+      border-top: solid 1px #c7c7c7;
+
+      @media screen and (max-width: $small-tablet-viewport-start) {
+        top: 109px;
+
+        #phase-name {
+          display: none;
+        }
+
+        #progress_bar #total_amount {
+          display: none;
+        }
+      }
     }
   }
 }
