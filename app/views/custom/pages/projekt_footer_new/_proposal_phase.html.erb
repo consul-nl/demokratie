@@ -12,27 +12,34 @@
   <% if projekt_phase_feature?(@projekt_phase, "general.proposal_quiz_list_mode") %>
     <div class="navigable-proposal-list">
       <% if @proposals.any? %>
+        <div class="margin-bottom">
+
+        </div>
         <div class="proposal-navigation--wrapper">
           <div class="proposal-navigation--title">
             Proposal navigation
           </div>
           <div class="proposal-navigation">
-            <% if @proposals.size > 1 %>
-              <% if @proposals.prev_page.present? %>
-                <%= link_to t("custom.proposals.show.back"),
-                  projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, page: @proposals.prev_page),
-                  remote: true,
-                  class: "button expanded" %>
-              <% end %>
-              <div class="proposal-navigation--current-page">
-                <%= @proposals.current_page %> / <%= @proposals.total_pages %>
+            <% if @proposals.total_count > 1 %>
+              <div class="proposal-navigation--button-wrapper">
+                <% if @proposals.prev_page.present? %>
+                  <%= link_to t("custom.proposals.show.back"),
+                    projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, page: @proposals.prev_page),
+                    remote: true,
+                    class: "button expanded" %>
+                <% end %>
               </div>
-              <% if @proposals.next_page.present? %>
-                <%= link_to t("custom.proposals.show.next"),
-                  projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, page: @proposals.next_page),
-                  remote: true,
-                  class: "button expanded" %>
-              <% end %>
+              <div class="proposal-navigation--current-page">
+                <%= @proposals.current_page %> / <%= @proposals.total_count %>
+              </div>
+              <div class="proposal-navigation--button-wrapper">
+                <% if @proposals.next_page.present? %>
+                  <%= link_to t("custom.proposals.show.next"),
+                    projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, page: @proposals.next_page),
+                    remote: true,
+                    class: "button expanded" %>
+                <% end %>
+              </div>
             <% end %>
           </div>
         </div>

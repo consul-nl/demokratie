@@ -35,6 +35,7 @@
 }
 
 .navigable-proposal-list {
+
   .current-proposal {
     margin-bottom: 2rem;
     background: $white;
@@ -65,13 +66,17 @@
     margin: auto;
 
     a {
+      width: 100%;
       display: inline-block;
-      max-width: 180px;
     }
 
     .button {
       margin: 0;
     }
+  }
+
+  .proposal-navigation--button-wrapper {
+    width: 100%;
   }
 
   .proposal-navigation--title {
@@ -88,9 +93,11 @@
   .proposal-navigation--current-page {
     display: flex;
     justify-content: center;
-    width: 100px;
+    width: 100%;
+    max-width: 120px;
     color: #4f4f4f;
     font-size: 20px;
+    padding: 0 20px;
   }
 }
 

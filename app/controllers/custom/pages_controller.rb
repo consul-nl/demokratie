@@ -193,7 +193,8 @@ class PagesController < ApplicationController
         .page(params[:page])
 
     if helpers.projekt_phase_feature?(@projekt_phase, "general.proposal_quiz_list_mode")
-      @proposal = @proposals.per(1).first
+      @proposals = @proposals.per(1)
+      @proposal = @proposals.first
 
       @comment_tree = CommentTree.new(@proposal, params[:page], "newest")
       set_comment_flags(@comment_tree.comments)
