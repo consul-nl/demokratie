@@ -34,4 +34,64 @@
   }
 }
 
+.navigable-proposal-list {
+  .current-proposal {
+    margin-bottom: 2rem;
+    background: $white;
+    border-radius: $global-radius;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+
+    .proposal-show {
+      margin: 0;
+    }
+  }
+
+  .proposal-navigation--wrapper {
+    background: white;
+    position: sticky;
+    top: $topbar-height;
+    z-index: 1000;
+    border-bottom: 1px solid $border;
+  }
+
+  .proposal-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    max-width: 500px;
+    margin: auto;
+
+    a {
+      display: inline-block;
+      max-width: 180px;
+    }
+
+    .button {
+      margin: 0;
+    }
+  }
+
+  .proposal-navigation--title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 30px;
+    margin: auto;
+    padding-left: 30px;
+    font-size: 18px;
+  }
+
+  .proposal-navigation--current-page {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    color: #4f4f4f;
+    font-size: 20px;
+  }
+}
+
 
