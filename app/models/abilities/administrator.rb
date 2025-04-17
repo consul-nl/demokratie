@@ -150,7 +150,7 @@ module Abilities
 
       can [:csv_answers_votes], Poll
       can [:order_questions, :csv_answers_streets, :csv_answers_votes, :csv_open_answers, :edit_votation_type, :update_votation_type], Poll::Question
-      can [:update, :verify, :unverify, :reverify], User
+      can [:update, :verify, :unverify, :reverify, :destroy], User
 
       can :edit_physical_votes, Budget::Investment do |investment|
         investment.budget.current_phase.kind == "selecting"
