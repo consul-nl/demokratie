@@ -1,4 +1,5 @@
 <% preview = false unless local_assigns.has_key? :preview %>
+<% hide_back_button = local_assigns[:hide_back_button] %>
 
 <main class="resource-page">
   <div class="custom-fixed-tabs margin-bottom">
@@ -19,7 +20,9 @@
   <div id="<%= dom_id(proposal) %>">
     <div class="flex-layout">
       <div class="main-column" id="proposal-content">
-        <%= resources_back_link(fallback_path: proposals_path) %>
+        <% unless hide_back_button %>
+          <%= resources_back_link(fallback_path: proposals_path) %>
+        <% end %>
 
         <% if proposal.retired? %>
           <div class="callout alert margin-top proposal-retired">
