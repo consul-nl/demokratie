@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2025_04_16_125419) do
+ActiveRecord::Schema.define(version: 2025_04_17_142439) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_trgm"
@@ -1079,6 +1079,7 @@ ActiveRecord::Schema.define(version: 2025_04_16_125419) do
     t.datetime "attachment_updated_at"
     t.integer "user_id"
     t.boolean "concealed", default: false
+    t.string "credits"
     t.index ["imageable_type", "imageable_id"], name: "index_images_on_imageable_type_and_imageable_id"
     t.index ["user_id"], name: "index_images_on_user_id"
   end
