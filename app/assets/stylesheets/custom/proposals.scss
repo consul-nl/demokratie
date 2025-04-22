@@ -39,35 +39,33 @@
 
   .current-proposal {
     margin-bottom: 2rem;
-    background: $white;
-    border-radius: $global-radius;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
 
     .proposal-show {
       margin: 0;
     }
   }
 
-  .proposal-navigation--wrapper {
+  .proposal-navigation--buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .proposal-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem 30px;
+    width: 100%;
+    margin: auto;
     background: white;
     position: sticky;
     top: $topbar-height;
     z-index: 1000;
     border-bottom: 1px solid $border;
-  }
-
-  .proposal-navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    padding: 1rem 0;
-    max-width: 500px;
-    margin: auto;
 
     a {
-      width: 100%;
       display: inline-block;
     }
 

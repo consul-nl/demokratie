@@ -15,6 +15,14 @@
     </div>
   <% end %>
 
+  <% if projekt_phase_feature?(@projekt_phase, "general.browse_mode_in_phase_footer") && params[:list_mode] == "true" %>
+    <%= link_to t("custom.proposals.show.back_to_detail_view"),
+      projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id),
+      remote: true,
+      class: "button"
+    %>
+  <% end %>
+
   <div class="flex-layout">
     <% if @budget.present? %>
       <% if params[:section] == "results" && can?(:read_results, @budget) %>
@@ -36,7 +44,7 @@
             <% end %>
           </div>
         <% else %>
-          <% if projekt_phase_feature?(@projekt_phase, "general.proposal_quiz_list_mode") %>
+          <% if projekt_phase_feature?(@projekt_phase, "general.browse_mode_in_phase_footer") && params[:list_mode] != "true" %>
             <div class="navigable-proposal-list">
               <% if @investments.any? %>
                 <div class="margin-bottom">
@@ -46,7 +54,7 @@
                   projekt_phase: @projekt_phase
                 ) %>
                 <div class="current-proposal">
-                  <%= render "budgets/investments/show_content", investment: @investment, hide_back_button: true, comment_tree: @comment_tree %>
+                  <%= render "budgets/investments/show_content", investment: @investment, in_projekt_footer: true, comment_tree: @comment_tree %>
                 </div>
               <% end %>
             </div>

@@ -1,28 +1,31 @@
-<div class="proposal-navigation--wrapper">
-  <div class="proposal-navigation--title">
-    Investment navigation
-  </div>
-  <div class="proposal-navigation">
-    <% if @resources.total_count > 1 %>
-      <div class="proposal-navigation--button-wrapper">
-        <% if @resources.prev_page.present? %>
-          <%= link_to t("custom.budgets..show.back"),
-            projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, page: @resources.prev_page),
-            remote: true,
-            class: "button expanded" %>
-        <% end %>
-      </div>
-      <div class="proposal-navigation--current-page">
-        <%= @resources.current_page %> / <%= @resources.total_count %>
-      </div>
-      <div class="proposal-navigation--button-wrapper">
-        <% if @resources.next_page.present? %>
-          <%= link_to t("custom.budgets..show.next"),
-            projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, page: @resources.next_page),
-            remote: true,
-            class: "button expanded" %>
-        <% end %>
-      </div>
+<div class="proposal-navigation">
+  <% if @resources.total_count > 1 %>
+    <%= link_to t("custom.proposals.show.back_to_overview"),
+      projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, list_mode: true),
+      remote: true,
+      class: "button"
+    %>
+
+    <div class="proposal-navigation--current-page">
+      <%= @resources.current_page %> / <%= @resources.total_count %>
+    </div>
+    <div class="proposal-navigation--buttons">
+      <% if @resources.prev_page.present? %>
+        <%= link_to t("custom.proposals.show.back"),
+          projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, page: @resources.prev_page),
+          remote: true,
+          class: "button expanded"
+        %>
+      <% end %>
+      <% if @resources.next_page.present? %>
+        <%= link_to t("custom.proposals.show.next"),
+          projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, page: @resources.next_page),
+          remote: true,
+          class: "button expanded"
+        %>
     <% end %>
-  </div>
+
+    </div>
+  <% end %>
 </div>
+

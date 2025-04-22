@@ -8,24 +8,18 @@
   </div>
 
   <% proposal_footer_url = projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id) %>
-  <% if projekt_phase_feature?(@projekt_phase, "general.proposal_quiz_list_mode") %>
+  <% if projekt_phase_feature?(@projekt_phase, "general.browse_mode_in_phase_footer") && params[:list_mode] != "true" %>
     <div class="navigable-proposal-list">
       <% if @proposals.any? %>
         <div class="margin-bottom">
-
         </div>
-        <div class="proposal-navigation--wrapper">
-          <div class="proposal-navigation--title">
-            Proposal navigation
-          </div>
-          <%= render Custom::Navigation::ProposalQuizNavigationComponent.new(
-            resources: @proposals,
-            projekt_phase: @projekt_phase
-          ) %>
-        </div>
+        <%= render Custom::Navigation::ProposalQuizNavigationComponent.new(
+          resources: @proposals,
+          projekt_phase: @projekt_phase
+        ) %>
         <% current_proposal = @proposals.first %>
         <div class="current-proposal">
-          <%= render "proposals/show_content", proposal: current_proposal, hide_back_button: true, comment_tree: @comment_tree %>
+          <%= render "proposals/show_content", proposal: current_proposal, in_projekt_footer: true, comment_tree: @comment_tree %>
         </div>
       <% else %>
         <div class="callout primary">
@@ -34,6 +28,13 @@
       <% end %>
     </div>
   <% else %>
+    <% if projekt_phase_feature?(@projekt_phase, "general.browse_mode_in_phase_footer") %>
+      <%= link_to t("custom.proposals.show.back_to_detail_view"),
+        projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id),
+        remote: true,
+        class: "button"
+      %>
+    <% end %>
     <div class="flex-layout flex-layout-reverse-on-mobile">
       <div class="main-column">
         <%= render(

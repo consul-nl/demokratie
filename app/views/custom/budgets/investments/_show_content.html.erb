@@ -1,11 +1,11 @@
 <% preview = false unless local_assigns.has_key? :preview %>
-<% hide_back_button = local_assigns[:hide_back_button] %>
+<% in_projekt_footer = local_assigns[:in_projekt_footer] %>
 
 <main class="resource-page">
   <div id="<%= dom_id(@investment) %>">
     <div class="flex-layout">
       <div class="main-column">
-        <% unless hide_back_button %>
+        <% unless in_projekt_footer %>
           <%= resources_back_link(fallback_path: url_to_footer_tab) %>
         <% end %>
 

@@ -192,7 +192,7 @@ class PagesController < ApplicationController
         .perform_sort_by(@current_order, session[:random_seed])
         .page(params[:page])
 
-    if helpers.projekt_phase_feature?(@projekt_phase, "general.proposal_quiz_list_mode")
+    if helpers.projekt_phase_feature?(@projekt_phase, "general.browse_mode_in_phase_footer")
       @proposals = @proposals.per(1)
       @proposal = @proposals.first
 
