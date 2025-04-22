@@ -1,6 +1,6 @@
 <div class="proposal-navigation">
   <% if @resources.total_count > 1 %>
-    <%= link_to t("custom.proposals.show.back_to_overview"),
+    <%= link_to t("custom.projekt_phases.proposal_navigation.back_to_overview"),
       projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, list_mode: true),
       remote: true,
       class: "button"
@@ -11,20 +11,26 @@
     </div>
     <div class="proposal-navigation--buttons">
       <% if @resources.prev_page.present? %>
-        <%= link_to t("custom.proposals.show.back"),
+        <%= link_to t("custom.projekt_phases.proposal_navigation.back"),
           projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, page: @resources.prev_page),
           remote: true,
           class: "button expanded"
         %>
       <% end %>
-      <% if @resources.next_page.present? %>
-        <%= link_to t("custom.proposals.show.next"),
+
+      <% if @resources.current_page != 1 && @resources.current_page == @resources.total_pages %>
+        <%= link_to t("custom.projekt_phases.proposal_navigation.first"),
+          projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, page: 1),
+          remote: true,
+          class: "button expanded"
+        %>
+      <% elsif @resources.next_page.present? %>
+        <%= link_to t("custom.projekt_phases.proposal_navigation.next"),
           projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, page: @resources.next_page),
           remote: true,
           class: "button expanded"
         %>
-    <% end %>
-
+      <% end %>
     </div>
   <% end %>
 </div>
