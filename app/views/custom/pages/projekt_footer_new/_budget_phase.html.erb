@@ -36,75 +36,49 @@
             <% end %>
           </div>
         <% else %>
-          <% if projekt_phase_feature?(@projekt_phase, "general.budget_investment_quiz_list_mode") %>
+          <% if projekt_phase_feature?(@projekt_phase, "general.proposal_quiz_list_mode") %>
             <div class="navigable-proposal-list">
               <% if @investments.any? %>
                 <div class="margin-bottom">
                 </div>
-                <div class="proposal-navigation--wrapper">
-                  <div class="proposal-navigation--title">
-                    Investment navigation
-                  </div>
-                  <div class="proposal-navigation">
-                    <% if @investments.total_count > 1 %>
-                      <div class="proposal-navigation--button-wrapper">
-                        <% if @investments.prev_page.present? %>
-                          <%= link_to t("custom.budgets.investments.show.back"),
-                            projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, page: @investments.prev_page),
-                            remote: true,
-                            class: "button expanded" %>
-                        <% end %>
-                      </div>
-                      <div class="proposal-navigation--current-page">
-                        <%= @investments.current_page %> / <%= @investments.total_count %>
-                      </div>
-                      <div class="proposal-navigation--button-wrapper">
-                        <% if @investments.next_page.present? %>
-                          <%= link_to t("custom.budgets.investments.show.next"),
-                            projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, page: @investments.next_page),
-                            remote: true,
-                            class: "button expanded" %>
-                        <% end %>
-                      </div>
-                    <% end %>
-                  </div>
-                </div>
+                <%= render Custom::Navigation::ProposalQuizNavigationComponent.new(
+                  resources: @investments,
+                  projekt_phase: @projekt_phase
+                ) %>
                 <div class="current-proposal">
                   <%= render "budgets/investments/show_content", investment: @investment, hide_back_button: true, comment_tree: @comment_tree %>
-                </div>
-              <% else %>
-                <div class="callout primary">
-                  <%= t("budgets.investments.index.empty_investments") %>
                 </div>
               <% end %>
             </div>
           <% else %>
             <% budget_investments_footer_url = projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id) %>
-            <%= render(
-                  Shared::ResourcesListComponent.new(
-                    resources: @investments,
-                    resource_type: Budget::Investment,
-                    remote_url: budget_investments_footer_url,
-                    map_coordinates: @investment_coordinates,
-                    current_filter: @current_order,
-                    filter_param: "order",
-                    filters: @valid_orders,
-                    text_search_enabled: true,
-                    additional_data: {
-                      ballot: @ballot
-                    },
-                    projekt_phase: @projekt_phase
-                  )) %>
-            <%= paginate @investments, remote: true, params: { controller: "pages", action: "projekt_phase_footer_tab" } %>
+            <div class="main-column">
+              <%= render(
+                Shared::ResourcesListComponent.new(
+                  resources: @investments,
+                  resource_type: Budget::Investment,
+                  remote_url: budget_investments_footer_url,
+                  map_coordinates: @investment_coordinates,
+                  current_filter: @current_order,
+                  filter_param: "order",
+                  filters: @valid_orders,
+                  text_search_enabled: true,
+                  additional_data: {
+                    ballot: @ballot
+                  },
+                  projekt_phase: @projekt_phase
+                )) %>
+              <%= paginate @investments, remote: true, params: { controller: "pages", action: "projekt_phase_footer_tab" } %>
+            </div>
+
+            <div class="sidebar" id="sidebar">
+              <%= render "budgets/investments/sidebar_new" %>
+            </div>
           <% end %>
         <% end %>
       <% end %>
     <% else %>
       <h3>Dieses Projekt Phase hat kein zugehöriges Budget</h3>
     <% end %>
-  </div>
-
-  <div class="sidebar" id="sidebar">
-    <%= render "budgets/investments/sidebar_new" %>
   </div>
 <% end %>

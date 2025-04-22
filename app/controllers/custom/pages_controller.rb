@@ -196,8 +196,10 @@ class PagesController < ApplicationController
       @proposals = @proposals.per(1)
       @proposal = @proposals.first
 
-      @comment_tree = CommentTree.new(@proposal, params[:page], "newest")
-      set_comment_flags(@comment_tree.comments)
+      if @proposal.present?
+        @comment_tree = CommentTree.new(@proposal, params[:page], "newest")
+        set_comment_flags(@comment_tree.comments)
+      end
     else
       @proposals = @proposals.per(24)
     end
@@ -331,8 +333,10 @@ class PagesController < ApplicationController
       @investments = @investments.per(1)
       @investment = @investments.first
 
-      @comment_tree = CommentTree.new(@investment, params[:page], "newest")
-      set_comment_flags(@comment_tree.comments)
+      if @investment.present?
+        @comment_tree = CommentTree.new(@investment, params[:page], "newest")
+        set_comment_flags(@comment_tree.comments)
+      end
     end
   end
 

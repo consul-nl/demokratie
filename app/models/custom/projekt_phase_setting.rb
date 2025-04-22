@@ -67,6 +67,7 @@ class ProjektPhaseSetting < ApplicationRecord
           "feature.resource.show_video_as_link": "",
           "feature.resource.enable_proposal_notifications_tab": "",
           "feature.resource.enable_proposal_milestones_tab": "",
+
           "feature.general.proposal_quiz_list_mode": "",
 
           "feature.resource.users_can_create_proposals": "active",
@@ -105,6 +106,8 @@ class ProjektPhaseSetting < ApplicationRecord
           "feature.form.enable_external_video": "",
           "feature.form.show_implementation_option_fields": "",
           "feature.form.show_user_cost_estimate": "",
+
+          "feature.general.proposal_quiz_list_mode": "",
 
           "feature.resource.users_can_create_investment_proposals": "active",
           "feature.resource.show_report_button_in_sidebar": "active",
