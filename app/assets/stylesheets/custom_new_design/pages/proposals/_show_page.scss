@@ -65,14 +65,16 @@
   }
 }
 
-.proposal-navigation-links {
+.proposal-navigation-links,
+.investment-navigation-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-.proposal-navigation-link {
+.proposal-navigation-link,
+.investment-navigation-link {
   display: flex;
   align-items: center;
   padding: 0.75rem 1rem;
@@ -117,7 +119,8 @@
   }
 }
 
-.proposal-navigation-text {
+.proposal-navigation-text,
+.investment-navigation-text {
   display: flex;
   flex-direction: column;
 }

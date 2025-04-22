@@ -326,6 +326,14 @@ class PagesController < ApplicationController
     unless params[:section] == "results" && can?(:read_results, @budget)
       @investments = @investments.perform_sort_by(@current_order, session[:random_seed]).page(params[:page]).per(18)
     end
+
+    if helpers.projekt_phase_feature?(@projekt_phase, "general.budget_investment_quiz_list_mode")
+      @investments = @investments.per(1)
+      @investment = @investments.first
+
+      @comment_tree = CommentTree.new(@investment, params[:page], "newest")
+      set_comment_flags(@comment_tree.comments)
+    end
   end
 
   def set_milestone_phase_footer_tab_variables
