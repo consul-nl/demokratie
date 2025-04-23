@@ -9,19 +9,23 @@
     <%= render Pages::Projekts::BudgetsSubnavComponent.new(@budget, @projekt_phase) %>
   <% end %>
 
-  <% if @budget.current_phase.kind == "accepting" && params[:section] != "results" && params[:section] != "stats" %>
-    <div class="new-resource-cta <%= 'hide-on-small-tablet' if projekt_feature?(@projekt_phase.projekt, 'sidebar.new_resource_button_in_sidebar') %>">
-      <%= render Shared::NewButtonComponent.new(projekt_phase: @projekt_phase) %>
+  <div class="flex justify-between items-center">
+    <div class="hide-on-small-tablet">
+      <% if @budget.current_phase.kind == "accepting" && params[:section] != "results" && params[:section] != "stats" %>
+        <div class="new-resource-cta <%= 'hide-on-small-tablet' if projekt_feature?(@projekt_phase.projekt, 'sidebar.new_resource_button_in_sidebar') %>">
+          <%= render Shared::NewButtonComponent.new(projekt_phase: @projekt_phase) %>
+        </div>
+      <% end %>
     </div>
-  <% end %>
 
-  <% if projekt_phase_feature?(@projekt_phase, "general.browse_mode_in_phase_footer") && params[:list_mode] == "true" %>
-    <%= link_to t("custom.projekt_phases.proposal_navigation.back_to_detail_view"),
-      projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id),
-      remote: true,
-      class: "button"
-    %>
-  <% end %>
+    <% unless proposal_browse_mode_in_footer_tab?(@projekt_phase) %>
+      <%= link_to t("custom.projekt_phases.proposal_navigation.back_to_detail_view"),
+        projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, proposal_view_mode: "browse"),
+        remote: true,
+        class: "button"
+      %>
+    <% end %>
+  </div>
 
   <div class="flex-layout">
     <% if @budget.present? %>
@@ -44,12 +48,12 @@
             <% end %>
           </div>
         <% else %>
-          <% if projekt_phase_feature?(@projekt_phase, "general.browse_mode_in_phase_footer") && params[:list_mode] != "true" %>
+          <% if proposal_browse_mode_in_footer_tab?(@projekt_phase) %>
             <div class="navigable-proposal-list">
               <% if @investments.any? %>
                 <div class="margin-bottom">
                 </div>
-                <%= render Custom::Navigation::ProposalQuizNavigationComponent.new(
+                <%= render Navigation::ProposalBrowseNavigationComponent.new(
                   resources: @investments,
                   projekt_phase: @projekt_phase
                 ) %>

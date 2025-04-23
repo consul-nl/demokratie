@@ -1,19 +1,29 @@
 <%= render "custom/pages/projekt_footer/partials/phase_intro", projekt_phase: @projekt_phase %>
 
 <% unless embedded? %>
-  <div class="hide-on-small-tablet">
-    <div class="new-resource-cta">
-      <%= render Shared::NewButtonComponent.new(projekt_phase: @projekt_phase) %>
+  <div class="flex justify-between items-center">
+    <div class="hide-on-small-tablet">
+      <div class="new-resource-cta">
+        <%= render Shared::NewButtonComponent.new(projekt_phase: @projekt_phase) %>
+      </div>
     </div>
+
+    <% unless proposal_browse_mode_in_footer_tab?(@projekt_phase) %>
+      <%= link_to t("custom.projekt_phases.proposal_navigation.back_to_detail_view"),
+        projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, proposal_view_mode: "browse"),
+        remote: true,
+        class: "button"
+      %>
+    <% end %>
   </div>
 
   <% proposal_footer_url = projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id) %>
-  <% if projekt_phase_feature?(@projekt_phase, "general.browse_mode_in_phase_footer") && params[:list_mode] != "true" %>
+  <% if proposal_browse_mode_in_footer_tab?(@projekt_phase) %>
     <div class="navigable-proposal-list">
       <% if @proposals.any? %>
         <div class="margin-bottom">
         </div>
-        <%= render Custom::Navigation::ProposalQuizNavigationComponent.new(
+        <%= render Navigation::ProposalBrowseNavigationComponent.new(
           resources: @proposals,
           projekt_phase: @projekt_phase
         ) %>
@@ -28,13 +38,6 @@
       <% end %>
     </div>
   <% else %>
-    <% if projekt_phase_feature?(@projekt_phase, "general.browse_mode_in_phase_footer") %>
-      <%= link_to t("custom.projekt_phases.proposal_navigation.back_to_detail_view"),
-        projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id),
-        remote: true,
-        class: "button"
-      %>
-    <% end %>
     <div class="flex-layout flex-layout-reverse-on-mobile">
       <div class="main-column">
         <%= render(
