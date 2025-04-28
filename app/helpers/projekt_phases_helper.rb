@@ -10,7 +10,7 @@ module ProjektPhasesHelper
   def link_to_footer_tab(projekt_phase)
   end
 
-  def proposal_browse_mode_in_footer_tab?(projekt_phase)
+  def shown_with_proposal_browse_mode_in_proejekt_footer_tab?(projekt_phase)
     (
       (
        projekt_phase_feature?(projekt_phase, "general.browse_mode_in_phase_footer") &&
