@@ -5,19 +5,25 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def openid_connect
     keycloak_id_token = request.env["omniauth.auth"].credentials.id_token
 
+    info = request.env["omniauth.auth"].info
     extra = request.env["omniauth.auth"].extra
 
-    info = request.env["omniauth.auth"].info
     email = info["email"]
     username = info["name"]
+
+    first_name = info.first_name
+    last_name = info.last_name
+    gender = get_gender(extra)
+    plz = extra.raw_info&.address&.postal_code
+    dob_array = extra.raw_info.birthdate.split("-").map(&:to_i)
+    dob = Date.new(dob_array[0], dob_array[1], dob_array[2])
+
     authlevel = extra.raw_info[:authlevel]
     keycloak_link = extra.raw_info["preferred_username"]
 
     if User.only_hidden.find_by(email: email)
       redirect_to new_user_registration_path(reason: "uh") and return
     end
-
-
 
     if user = User.find_by(keycloak_link: keycloak_link, username: username, registering_with_oauth: true) #keycloak user logged in in the past but didn't finish registration
       sign_in user
@@ -50,6 +56,11 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
         user = User.create!({
           email: email,
           username: username,
+          first_name: first_name,
+          last_name: last_name,
+          gender: gender,
+          plz: plz,
+          date_of_birth: dob,
           oauth_email: email,
           terms_older_than_14: true,
           terms_data_storage: true,
@@ -67,6 +78,8 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
           sign_in user
           redirect_to finish_signup_path
           return
+        else
+          user.verify! if ["STORK-QAA-Level-3", "STORK-QAA-Level-4"].include?(authlevel)
         end
       end
 
@@ -74,14 +87,6 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     end
 
     redirect_to after_sign_in_path_for(user), notice: t("cli.devise.success")
-
-    # if user.administrator? && ["STORK-QAA-Level-3", "STORK-QAA-Level-4"].include?(authlevel)
-    #   sign_in user
-    # elsif !user.administrator?
-    #   sign_in user
-    # end
-
-    #sign_in_with :openid_connect_login, :openid_connect
   end
   # ENDE Ergänzung für Keycloak-Anbindung
 
@@ -95,4 +100,13 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   alias_method :bayern_id, :openid_connect
+
+  private
+
+    def get_gender(extra)
+      return "male" if extra.raw_info[:gender] == "1"
+      return "female" if extra.raw_info[:gender] == "2"
+
+      nil
+    end
 end

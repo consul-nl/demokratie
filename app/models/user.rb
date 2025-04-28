@@ -280,6 +280,7 @@ class User < ApplicationRecord
       confirmation_token: nil,
       reset_password_token: nil,
       email_verification_token: nil,
+      keycloak_link: nil,
       confirmed_phone: nil,
       unconfirmed_phone: nil
     )

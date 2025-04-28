@@ -261,27 +261,27 @@ Devise.setup do |config|
 
   #START Ergänzung für Keycloak-Anbindung
 
-  config.omniauth :openid_connect, {
-    name: :openid_connect,
-          discovery: Rails.application.secrets.openid_connect_discovery,
-          issuer: Rails.application.secrets.openid_connect_issuer,
-          client_auth_method: 'basic',
-    scope: [:openid, :email],
-    response_type: :code,
-    uid_field: "preferred_username",
-    client_options: {
-      port: Rails.application.secrets.openid_connect_port,
-      scheme: Rails.application.secrets.openid_connect_scheme,
-      host: Rails.application.secrets.openid_connect_host,
-      identifier: Rails.application.secrets.openid_connect_key,
-      secret: Rails.application.secrets.openid_connect_secret,
-      authorization_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/auth",
-      token_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/token",
-      userinfo_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/userinfo",
-      jwks_uri: 'http://localhost:8080' + "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/certs",
-      redirect_uri: Rails.application.secrets.openid_connect_redirect_uri,
-    }
-  }
+  # config.omniauth :openid_connect, {
+  #   name: :openid_connect,
+  #         discovery: Rails.application.secrets.openid_connect_discovery,
+  #         issuer: Rails.application.secrets.openid_connect_issuer,
+  #         client_auth_method: 'basic',
+  #   scope: [:openid, :email],
+  #   response_type: :code,
+  #   uid_field: "preferred_username",
+  #   client_options: {
+  #     port: Rails.application.secrets.openid_connect_port,
+  #     scheme: Rails.application.secrets.openid_connect_scheme,
+  #     host: Rails.application.secrets.openid_connect_host,
+  #     identifier: Rails.application.secrets.openid_connect_key,
+  #     secret: Rails.application.secrets.openid_connect_secret,
+  #     authorization_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/auth",
+  #     token_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/token",
+  #     userinfo_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/userinfo",
+  #     jwks_uri: 'http://localhost:8080' + "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/certs",
+  #     redirect_uri: Rails.application.secrets.openid_connect_redirect_uri,
+  #   }
+  # }
 
   config.omniauth :bayern_id, {
     name: :bayern_id,
@@ -307,53 +307,53 @@ Devise.setup do |config|
     kc_idp_hint: Rails.application.secrets.bayern_id_kc_idp_hint
   }
 
-  config.omniauth :m_login, {
-    name: :m_login,
-    discovery: Rails.application.secrets.openid_connect_discovery,
-    issuer: Rails.application.secrets.openid_connect_issuer,
-    client_auth_method: 'basic',
-    scope: [:openid, :email],
-    response_type: :code,
-    uid_field: "preferred_username",
-    client_options: {
-      port: Rails.application.secrets.openid_connect_port,
-      scheme: Rails.application.secrets.openid_connect_scheme,
-      host: Rails.application.secrets.openid_connect_host,
-      identifier: Rails.application.secrets.openid_connect_key,
-      secret: Rails.application.secrets.openid_connect_secret,
-      authorization_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/auth",
-      token_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/token",
-      userinfo_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/userinfo",
-      jwks_uri: 'http://localhost:8080' + "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/certs",
-      redirect_uri: Rails.application.secrets.openid_connect_redirect_uri
-    },
-    strategy_class: OmniAuth::Strategies::OpenIDConnect,
-    kc_idp_hint: Rails.application.secrets.m_login_kc_idp_hint
-  }
+  # config.omniauth :m_login, {
+  #   name: :m_login,
+  #   discovery: Rails.application.secrets.openid_connect_discovery,
+  #   issuer: Rails.application.secrets.openid_connect_issuer,
+  #   client_auth_method: 'basic',
+  #   scope: [:openid, :email],
+  #   response_type: :code,
+  #   uid_field: "preferred_username",
+  #   client_options: {
+  #     port: Rails.application.secrets.openid_connect_port,
+  #     scheme: Rails.application.secrets.openid_connect_scheme,
+  #     host: Rails.application.secrets.openid_connect_host,
+  #     identifier: Rails.application.secrets.openid_connect_key,
+  #     secret: Rails.application.secrets.openid_connect_secret,
+  #     authorization_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/auth",
+  #     token_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/token",
+  #     userinfo_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/userinfo",
+  #     jwks_uri: 'http://localhost:8080' + "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/certs",
+  #     redirect_uri: Rails.application.secrets.openid_connect_redirect_uri
+  #   },
+  #   strategy_class: OmniAuth::Strategies::OpenIDConnect,
+  #   kc_idp_hint: Rails.application.secrets.m_login_kc_idp_hint
+  # }
 
-  config.omniauth :keycloak_google, {
-    name: :keycloak_google,
-    discovery: Rails.application.secrets.openid_connect_discovery,
-    issuer: Rails.application.secrets.openid_connect_issuer,
-    client_auth_method: 'basic',
-    scope: [:openid, :email],
-    response_type: :code,
-    uid_field: "preferred_username",
-    client_options: {
-      port: Rails.application.secrets.openid_connect_port,
-      scheme: Rails.application.secrets.openid_connect_scheme,
-      host: Rails.application.secrets.openid_connect_host,
-      identifier: Rails.application.secrets.openid_connect_key,
-      secret: Rails.application.secrets.openid_connect_secret,
-      authorization_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/auth",
-      token_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/token",
-      userinfo_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/userinfo",
-      jwks_uri: 'http://localhost:8080' + "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/certs",
-      redirect_uri: Rails.application.secrets.openid_connect_redirect_uri
-    },
-    strategy_class: OmniAuth::Strategies::OpenIDConnect,
-    kc_idp_hint: Rails.application.secrets.keycloak_google_kc_idp_hint
-  }
+  # config.omniauth :keycloak_google, {
+  #   name: :keycloak_google,
+  #   discovery: Rails.application.secrets.openid_connect_discovery,
+  #   issuer: Rails.application.secrets.openid_connect_issuer,
+  #   client_auth_method: 'basic',
+  #   scope: [:openid, :email],
+  #   response_type: :code,
+  #   uid_field: "preferred_username",
+  #   client_options: {
+  #     port: Rails.application.secrets.openid_connect_port,
+  #     scheme: Rails.application.secrets.openid_connect_scheme,
+  #     host: Rails.application.secrets.openid_connect_host,
+  #     identifier: Rails.application.secrets.openid_connect_key,
+  #     secret: Rails.application.secrets.openid_connect_secret,
+  #     authorization_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/auth",
+  #     token_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/token",
+  #     userinfo_endpoint: "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/userinfo",
+  #     jwks_uri: 'http://localhost:8080' + "/auth/realms/" + Rails.application.secrets.openid_connect_realm + "/protocol/openid-connect/certs",
+  #     redirect_uri: Rails.application.secrets.openid_connect_redirect_uri
+  #   },
+  #   strategy_class: OmniAuth::Strategies::OpenIDConnect,
+  #   kc_idp_hint: Rails.application.secrets.keycloak_google_kc_idp_hint
+  # }
 
   #ENDE Ergänzung für Keycloak-Anbindung
 

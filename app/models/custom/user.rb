@@ -217,6 +217,8 @@ class User < ApplicationRecord
   end
 
   def extended_registration?
+    return false if registering_with_oauth?
+
     !organization? && !erased? && !guest? && Setting["extra_fields.registration.extended"].present?
   end
 
