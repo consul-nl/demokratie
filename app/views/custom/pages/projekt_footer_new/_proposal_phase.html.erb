@@ -10,7 +10,7 @@
   </div>
 
   <% proposal_footer_url = projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id) %>
-  <% if shown_with_proposal_browse_mode_in_proejekt_footer_tab?(@projekt_phase) %>
+  <% if browse_mode_in_projekt_footer_tab?(@projekt_phase) %>
     <div class="navigable-proposal-list">
       <% if @proposals.any? %>
         <div class="margin-bottom">
@@ -51,10 +51,10 @@
         <% if render_custom_projekt_content_block?(content_block_sidebar_name, @projekt_phase.projekt) ||
             projekt_phase_feature?(@projekt_phase, "general.browse_mode_in_phase_footer")
         %>
-          <%= render Shared::SidebarCardComponent.new(title: t("custom.proposals.index.participation_information"), icon_name: "info-circle") do |c| %>
+          <%= render Shared::SidebarCardComponent.new(title: t("custom.proposals.index.participation_information"), icon_name: "info-circle", opened_on_mobile: true) do |c| %>
             <%= render_custom_block content_block_sidebar_name %>
 
-            <% if projekt_phase_feature?(@projekt_phase, "general.browse_mode_in_phase_footer") && !shown_with_proposal_browse_mode_in_proejekt_footer_tab?(@projekt_phase) %>
+            <% if projekt_phase_feature?(@projekt_phase, "general.browse_mode_in_phase_footer") && !browse_mode_in_projekt_footer_tab?(@projekt_phase) %>
               <%= link_to projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, proposal_view_mode: "browse"),
                 remote: true,
                 class: "button with-icon" do %>

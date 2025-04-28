@@ -1,5 +1,5 @@
 <div class="proposal-navigation">
-  <% if @resources.total_count > 1 %>
+  <% if @resources.total_count > 0 %>
     <%= link_to projekt_phase_footer_tab_page_path(@projekt_phase.projekt.page, @projekt_phase.id, proposal_view_mode: "overview"),
       remote: true,
       class: "button" do %>

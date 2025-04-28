@@ -40,7 +40,7 @@
             <% end %>
           </div>
         <% else %>
-          <% if shown_with_proposal_browse_mode_in_proejekt_footer_tab?(@projekt_phase) %>
+          <% if browse_mode_in_projekt_footer_tab?(@projekt_phase) %>
             <div class="navigable-proposal-list">
               <% if @investments.any? %>
                 <div class="margin-bottom">
