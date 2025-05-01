@@ -1,3 +1,10 @@
+@media screen and (max-width: $mobile-viewport-start) {
+  .top-bar--title {
+    width: 180px;
+    padding: 10px 0;
+  }
+}
+
 .tabs .tabs-title {
   margin-right: 0.5rem;
   margin-left: 1rem;
