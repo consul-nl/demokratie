@@ -163,6 +163,7 @@ class ApplicationController < ActionController::Base
     def initialize_guest_user(guest_key)
       User.new(
         username: params[:user][:username],
+        terms_older_than_14: params[:user][:terms_older_than_14],
         terms_data_protection: params[:user][:terms_data_protection],
         terms_general: params[:user][:terms_general],
         email: "#{guest_key}@example.com",
