@@ -23,7 +23,7 @@ module BudgetInvestmentsHelper
 
     link_to(
       safe_join([translation, tag.span(class: "icon-sortable #{icon}")]),
-      valuation_budget_budget_investments_path(@budget, sort_by: column, direction: direction)
+      valuation_budget_budget_investments_path(@budget, sort_by: column, direction: direction, filter: params[:filter])
     )
   end
 
