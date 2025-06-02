@@ -3,3 +3,6 @@
 _load_from File.expand_path("../defaults.rb", __FILE__)
 
 environment "staging"
+
+workers 2
+threads 3, 5
