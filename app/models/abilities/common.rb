@@ -145,8 +145,8 @@ module Abilities
       can :create, Budget::Investment do |investment|
         projekt_phase = investment.budget.projekt_phase
 
-        investment.budget.current_phase.kind == "accepting" &&
-          (projekt_phase.selectable_by_users? || user.has_pm_permission_to?("manage", projekt_phase.projekt))
+        (investment.budget.current_phase.kind == "accepting" && projekt_phase.selectable_by_users?) ||
+          (investment.budget.current_phase.kind.in?(%w[accepting reviewing]) && user.has_pm_permission_to?("manage", projekt_phase.projekt))
       end
 
       can [:create, :vote], Comment do |comment|
