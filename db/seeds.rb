@@ -2,7 +2,7 @@
 if Administrator.count == 0 && !Rails.env.test?
   admin = User.create!(username: "admin", email: "admin@consul.dev", password: "Aa12345678",
                        password_confirmation: "Aa12345678", confirmed_at: Time.current,
-                       terms_data_storage: "1", terms_data_protection: "1", terms_general: "1")
+                       terms_data_storage: "1", terms_data_protection: "1", terms_general: "1", terms_older_than_14: "1")
   admin.create_administrator
 end
 
