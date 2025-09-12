@@ -4,7 +4,7 @@ section "Commenting Investments, Debates & Proposals" do
       commentable = commentable_class.constantize.all.sample
       Comment.create!(user: User.all.sample,
                       created_at: rand(commentable.created_at..Time.current),
-                      commentable: commentable,
+                      commentable:,
                       body: Faker::Lorem.sentence)
     end
   end
@@ -18,6 +18,6 @@ section "Commenting Comments" do
                     commentable_id: parent.commentable_id,
                     commentable_type: parent.commentable_type,
                     body: Faker::Lorem.sentence,
-                    parent: parent)
+                    parent:)
   end
 end

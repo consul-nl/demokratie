@@ -28,6 +28,8 @@ class ProjektPhase < ApplicationRecord
 
   delegate :icon, :author, :author_id, to: :projekt
 
+  translates :projekt_selector_hint
+  translates :resource_form_title_hint
   translates :phase_tab_name, touch: true
   translates :cta_button_name, touch: true
   translates :welcome_text_in_show, touch: true

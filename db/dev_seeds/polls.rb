@@ -14,26 +14,26 @@ section "Creating polls" do
                slug: I18n.t("seeds.polls.current_poll").parameterize,
                starts_at: 7.days.ago,
                ends_at:   7.days.from_now,
-               projekt: Projekt.first,
+               projekt_phase: ProjektPhase.first,
                geozone_restricted: false)
 
   create_poll!(name: I18n.t("seeds.polls.current_poll_geozone_restricted"),
                slug: I18n.t("seeds.polls.current_poll_geozone_restricted").parameterize,
                starts_at: 5.days.ago,
                ends_at:   5.days.from_now,
-               projekt: Projekt.first,
+               projekt_phase: ProjektPhase.first,
                geozone_restricted: true,
                geozones: Geozone.sample(3))
 
   create_poll!(name: I18n.t("seeds.polls.recounting_poll"),
                slug: I18n.t("seeds.polls.recounting_poll").parameterize,
-               projekt: Projekt.first,
+               projekt_phase: ProjektPhase.first,
                starts_at: 15.days.ago,
                ends_at:   2.days.ago)
 
   create_poll!(name: I18n.t("seeds.polls.expired_poll_without_stats"),
                slug: I18n.t("seeds.polls.expired_poll_without_stats").parameterize,
-               projekt: Projekt.first,
+               projekt_phase: ProjektPhase.first,
                starts_at: 2.months.ago,
                ends_at:   1.month.ago)
 
@@ -41,7 +41,7 @@ section "Creating polls" do
                slug: I18n.t("seeds.polls.expired_poll_with_stats").parameterize,
                starts_at: 2.months.ago,
                ends_at:   1.month.ago,
-               projekt: Projekt.first,
+               projekt_phase: ProjektPhase.first,
                results_enabled: true,
                stats_enabled: true)
 
@@ -64,7 +64,7 @@ section "Creating Poll Questions & Answers" do
       question_title = Faker::Lorem.sentence(word_count: 3).truncate(60) + "?"
       question = Poll::Question.new(author: User.all.sample,
                                     title: question_title,
-                                    poll: poll)
+                                    poll:)
       I18n.available_locales.map do |locale|
         Globalize.with_locale(locale) do
           question.title = "#{question_title} (#{locale})"
@@ -73,9 +73,9 @@ section "Creating Poll Questions & Answers" do
       question.save!
       Faker::Lorem.words(number: (2..4).to_a.sample).each_with_index do |title, index|
         description = "<p>#{Faker::Lorem.paragraphs.join("</p><p>")}</p>"
-        answer = Poll::Question::Answer.new(question: question,
+        answer = Poll::Question::Answer.new(question:,
                                             title: title.capitalize,
-                                            description: description,
+                                            description:,
                                             given_order: index + 1)
         I18n.available_locales.map do |locale|
           Globalize.with_locale(locale) do
@@ -94,7 +94,7 @@ section "Creating Poll Votation types" do
 
   poll.questions.each do |question|
     vote_type = VotationType.vote_types.keys.sample
-    question.create_votation_type!(vote_type: vote_type, max_votes: (3 unless vote_type == "unique"))
+    question.create_votation_type!(vote_type:, max_votes: (3 unless vote_type == "unique"))
   end
 end
 
@@ -108,7 +108,7 @@ end
 
 section "Creating Poll Shifts for Poll Officers" do
   Poll.find_each do |poll|
-    Poll::BoothAssignment.where(poll: poll).each do |booth_assignment|
+    Poll::BoothAssignment.where(poll:).each do |booth_assignment|
       scrutiny = (poll.ends_at.to_datetime..poll.ends_at.to_datetime + Poll::RECOUNT_DURATION)
       Poll::Officer.find_each do |poll_officer|
         {
@@ -146,10 +146,10 @@ section "Creating Poll Voters" do
 
     Poll::Voter.create!(document_type: user.document_type,
                         document_number: user.document_number,
-                        user: user,
-                        poll: poll,
+                        user:,
+                        poll:,
                         origin: "booth",
-                        officer: officer,
+                        officer:,
                         officer_assignment: officer.officer_assignments.sample,
                         booth_assignment: poll.booth_assignments.sample)
   end
@@ -158,8 +158,8 @@ section "Creating Poll Voters" do
     randomly_answer_questions(poll, user)
     Poll::Voter.create!(document_type: user.document_type,
                         document_number: user.document_number,
-                        user: user,
-                        poll: poll,
+                        user:,
+                        poll:,
                         origin: "web")
   end
 
@@ -200,13 +200,13 @@ section "Creating Poll Recounts" do
         end
       end
 
-      Poll::Recount.create!(officer_assignment: officer_assignment,
-                            booth_assignment: booth_assignment,
-                            author: author,
+      Poll::Recount.create!(officer_assignment:,
+                            booth_assignment:,
+                            author:,
                             date: poll.ends_at,
-                            white_amount: white_amount,
-                            null_amount: null_amount,
-                            total_amount: total_amount,
+                            white_amount:,
+                            null_amount:,
+                            total_amount:,
                             origin: "booth")
     end
   end
@@ -220,12 +220,12 @@ section "Creating Poll Results" do
 
       poll.questions.each do |question|
         question.question_answers.each do |answer|
-          Poll::PartialResult.create!(officer_assignment: officer_assignment,
-                                      booth_assignment: booth_assignment,
+          Poll::PartialResult.create!(officer_assignment:,
+                                      booth_assignment:,
                                       date: Date.current,
-                                      question: question,
+                                      question:,
                                       answer: answer.title,
-                                      author: author,
+                                      author:,
                                       amount: rand(999),
                                       origin: "booth")
         end
@@ -238,7 +238,14 @@ section "Creating Poll Questions from Proposals" do
   3.times do
     proposal = Proposal.all.sample
     poll = Poll.current.first
-    question = Poll::Question.new(poll: poll)
+
+    # Skip if no current poll exists
+    if poll.nil?
+      puts "Warning: No current poll found (based on projekt_phase dates). Skipping Poll Questions from Proposals."
+      break
+    end
+
+    question = Poll::Question.new(poll:)
     question.copy_attributes_from_proposal(proposal)
     question_title = question.title
     I18n.available_locales.map do |locale|
@@ -249,9 +256,9 @@ section "Creating Poll Questions from Proposals" do
     question.save!
     Faker::Lorem.words(number: (2..4).to_a.sample).each_with_index do |title, index|
       description = "<p>#{Faker::ChuckNorris.fact}</p>"
-      answer = Poll::Question::Answer.new(question: question,
+      answer = Poll::Question::Answer.new(question:,
                                           title: title.capitalize,
-                                          description: description,
+                                          description:,
                                           given_order: index + 1)
       I18n.available_locales.map do |locale|
         Globalize.with_locale(locale) do
@@ -268,7 +275,7 @@ section "Creating Successful Proposals" do
   10.times do
     proposal = Proposal.all.sample
     poll = Poll.current.first
-    question = Poll::Question.new(poll: poll)
+    question = Poll::Question.new(poll:)
     question.copy_attributes_from_proposal(proposal)
     question_title = question.title
     I18n.available_locales.map do |locale|
@@ -279,9 +286,9 @@ section "Creating Successful Proposals" do
     question.save!
     Faker::Lorem.words(number: (2..4).to_a.sample).each_with_index do |title, index|
       description = "<p>#{Faker::ChuckNorris.fact}</p>"
-      answer = Poll::Question::Answer.new(question: question,
+      answer = Poll::Question::Answer.new(question:,
                                           title: title.capitalize,
-                                          description: description,
+                                          description:,
                                           given_order: index + 1)
       I18n.available_locales.map do |locale|
         Globalize.with_locale(locale) do

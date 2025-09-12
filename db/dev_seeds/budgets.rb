@@ -16,7 +16,7 @@ end
 def add_image_to(imageable)
   # imageable should respond to #title & #author
   imageable.image = Image.create!({
-    imageable: imageable,
+    imageable:,
     title: imageable.title,
     attachment: Rack::Test::UploadedFile.new(INVESTMENT_IMAGE_FILES.sample),
     user: imageable.author
@@ -53,14 +53,24 @@ section "Creating Budgets" do
         description: -> { I18n.t("seeds.budgets.phases.description", language: I18n.t("i18n.language.name")) }
       ))
     end
+
+    # For finished budget, enable only the finished phase with proper dates
+    if budget.phase == "finished"
+      finished_phase = budget.phases.find_by(kind: "finished")
+      finished_phase&.update_columns(
+        starts_at: 1.year.ago,
+        ends_at: Time.current - 1.day,
+        enabled: true
+      )
+    end
   end
 
-  Budget.all.each do |budget|
-    city_group = budget.groups.create!(
+  Budget.all.find_each do |budget|
+    city_group = budget.create_group(
       random_locales_attributes(name: -> { I18n.t("seeds.budgets.groups.all_city") })
     )
 
-    city_group.headings.create!(
+    city_group.create_heading(
       {
         price: 1000000,
         population: 1000000,
@@ -71,7 +81,7 @@ section "Creating Budgets" do
       )
     )
 
-    districts_group = budget.groups.create!(
+    districts_group = budget.create_group(
       random_locales_attributes(name: -> { I18n.t("seeds.budgets.groups.districts") })
     )
 
@@ -89,7 +99,7 @@ section "Creating Budgets" do
         population: 150000
       )
     ].each do |heading_params|
-      districts_group.headings.create!(heading_params.merge(
+      districts_group.create_heading(heading_params.merge(
         price: rand(5..10) * 100000,
         latitude: "40.416775",
         longitude: "-3.703790"
@@ -110,16 +120,17 @@ section "Creating Investments" do
 
     investment = Budget::Investment.create!({
       author: User.all.sample,
-      heading: heading,
-      group: heading.group,
-      budget: heading.group.budget,
+      heading:,
+      budget: heading.budget,
+      title: Faker::Lorem.sentence(word_count: 3).truncate(60),
+      description: "<p>#{Faker::Lorem.paragraphs.join("</p><p>")}</p>",
       created_at: rand((Time.current - 1.week)..Time.current),
       feasibility: %w[undecided unfeasible feasible feasible feasible feasible].sample,
-      unfeasibility_explanation: Faker::Lorem.paragraph,
+      valuator_explanation: Faker::Lorem.paragraph,
       valuation_finished: [false, true].sample,
       tag_list: tags.sample(3).join(","),
       price: rand(1..100) * 100000,
-      terms_of_service: "1"
+      resource_terms: "1"
     }.merge(translation_attributes))
 
     add_image_to(investment) if Random.rand > 0.5
@@ -144,34 +155,50 @@ section "Geolocating Investments" do
 end
 
 section "Balloting Investments" do
-  Budget.finished.first.investments.last(20).each do |investment|
+  budget = Budget.finished.first
+  first_budget = Budget.first
+
+  puts "budget #{budget}"
+  puts "first budget #{first_budget}"
+
+  # Print all budgets and their finished status
+  puts "\n=== All Budgets and Their Status ==="
+  Budget.all.each do |b|
+    current = b.current_phase
+    puts "Budget: #{b.name}"
+    puts "  ID: #{b.id}"
+    puts "  Phase attribute: #{b.phase}"
+    puts "  Current phase kind: #{current.kind if current}"
+    puts "  Current phase dates: #{current.starts_at} to #{current.ends_at}" if current
+    puts "  Finished? method: #{b.finished?}"
+    puts "  ---"
+  end
+  puts "===================================\n"
+
+  Budget.find { |budget| budget.phase == "finished" }.investments.last(20).each do |investment|
     investment.update(selected: true, feasibility: "feasible")
   end
 end
 
 section "Winner Investments" do
-  budget = Budget.finished.first
+  budget = Budget.find { |budget| budget.phase == "finished" }
   50.times do
-    heading = budget.headings.all.sample
     investment = Budget::Investment.create!(
       author: User.all.sample,
-      heading: heading,
-      group: heading.group,
-      budget: heading.group.budget,
+      heading: budget.heading,
+      budget:,
       title: Faker::Lorem.sentence(word_count: 3).truncate(60),
       description: "<p>#{Faker::Lorem.paragraphs.join("</p><p>")}</p>",
       created_at: rand((Time.current - 1.week)..Time.current),
       feasibility: "feasible",
       valuation_finished: true,
       selected: true,
-      price: rand(10000..heading.price),
-      terms_of_service: "1"
+      price: rand(10000..budget.heading.price),
+      resource_terms: "1"
     )
     add_image_to(investment) if Random.rand > 0.3
   end
-  budget.headings.each do |heading|
-    Budget::Result.new(budget, heading).calculate_winners
-  end
+  Budget::Result.new(budget, budget.heading).calculate_winners
 end
 
 section "Creating Valuation Assignments" do

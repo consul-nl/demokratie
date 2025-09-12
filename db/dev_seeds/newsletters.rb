@@ -11,10 +11,12 @@ section "Creating Newsletters" do
     " and their quest to ensure the survival of the human species."
   ]
 
+  RecipientGroup.create!(name: "Newsletter Recipient Group")
+
   5.times do |n|
     Newsletter.create!(
       subject: "Newsletter subject #{n}",
-      segment_recipient: UserSegments.segments.sample,
+      recipient_group: RecipientGroup.sample,
       from: "no-reply@consul.dev",
       body: newsletter_body.sample,
       sent_at: [Time.current, nil].sample

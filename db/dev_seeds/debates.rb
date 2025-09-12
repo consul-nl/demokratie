@@ -2,16 +2,17 @@ section "Creating Debates" do
   tags = Faker::Lorem.words(number: 25)
   30.times do
     author = User.all.sample
-    projekt = Projekt.all.sample
+    projekt_phase = ProjektPhase.all.sample
     description = "<p>#{Faker::Lorem.paragraphs.join("</p><p>")}</p>"
-    debate = Debate.create!(author: author,
-                            projekt: projekt,
+    debate = Debate.create!(author:,
+                            projekt_phase:,
                             title: Faker::Lorem.sentence(word_count: 3).truncate(60),
                             created_at: rand((Time.current - 1.week)..Time.current),
-                            description: description,
+                            description:,
                             tag_list: tags.sample(3).join(","),
                             geozone: Geozone.all.sample,
-                            terms_of_service: "1")
+                            resource_terms: "1"
+    )
     random_locales.map do |locale|
       Globalize.with_locale(locale) do
         debate.title = "Title for locale #{locale}"
@@ -24,17 +25,18 @@ section "Creating Debates" do
   tags = Tag.where(kind: "category")
   30.times do
     author = User.all.sample
-    projekt = Projekt.all.sample
+    projekt_phase = ProjektPhase.all.sample
     description = "<p>#{Faker::Lorem.paragraphs.join("</p><p>")}</p>"
 
-    debate = Debate.create!(author: author,
-                            projekt: projekt,
+    debate = Debate.create!(author:,
+                            projekt_phase:,
                             title: Faker::Lorem.sentence(word_count: 3).truncate(60),
                             created_at: rand((Time.current - 1.week)..Time.current),
-                            description: description,
+                            description:,
                             tag_list: tags.sample(3).join(","),
                             geozone: Geozone.all.sample,
-                            terms_of_service: "1")
+                            resource_terms: "1"
+    )
     random_locales.map do |locale|
       Globalize.with_locale(locale) do
         debate.title = "Title for locale #{locale}"

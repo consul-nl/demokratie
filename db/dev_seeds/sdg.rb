@@ -6,9 +6,9 @@ section "Creating Sustainable Development Goals" do
     description = "Description for default locale"
     rand(2..3).times do |n|
       local_target = SDG::LocalTarget.create!(code: "#{target.code}.#{n + 1}",
-                                              title: title,
-                                              description: description,
-                                              target: target)
+                                              title:,
+                                              description:,
+                                              target:)
       random_locales.map do |locale|
         Globalize.with_locale(locale) do
           local_target.title = "Title for locale #{locale}"

@@ -3,9 +3,9 @@ section "Creating banners" do
     title = Faker::Lorem.sentence(word_count: 3)
     description = Faker::Lorem.sentence(word_count: 12)
     target_url = Rails.application.routes.url_helpers.proposal_path(proposal)
-    banner = Banner.new(title: title,
-                        description: description,
-                        target_url: target_url,
+    banner = Banner.new(title:,
+                        description:,
+                        target_url:,
                         post_started_at: rand((Time.current - 1.week)..(Time.current - 1.day)),
                         post_ended_at:   rand((Time.current - 1.day)..(Time.current + 1.week)),
                         created_at: rand((Time.current - 1.week)..Time.current))

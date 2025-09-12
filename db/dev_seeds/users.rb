@@ -2,12 +2,15 @@ section "Creating Users" do
   def create_user(email, username)
     password = "Aa12345678"
     User.create!(
-      username:               username,
-      email:                  email,
-      password:               password,
+      username:,
+      email:,
+      password:,
       password_confirmation:  password,
       confirmed_at:           Time.current,
-      terms_of_service:       "1",
+      terms_data_storage: "1", #custom
+      terms_data_protection: "1", #custom
+      terms_general: "1", #custom
+      terms_older_than_14: "1", #custom
       gender:                 %w[male female].sample,
       date_of_birth:          rand((Time.current - 80.years)..(Time.current - 16.years)),
       public_activity:        (rand(1..100) > 30)

@@ -20,7 +20,10 @@ section "Creating Settings" do
     "twitter_hashtag": "#consul_dev",
     "url": "http://localhost:3000",
     "votes_for_proposal_success": "100",
-    "youtube_handle": "CONSUL"
+    "youtube_handle": "CONSUL",
+    "map.latitude": 50.110922,
+    "map.longitude": 8.682127,
+    "map.zoom": 13
   }.each do |name, value|
     Setting[name] = value
   end

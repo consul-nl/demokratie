@@ -9,7 +9,7 @@ module Labelable
   end
 
   def labels_available?
-    return false if projekt_phase&.nil?
+    return false unless projekt_phase
 
     projekt_phase.feature?("form.labels") && projekt_phase&.projekt_labels&.exists?
   end

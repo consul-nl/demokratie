@@ -27,7 +27,7 @@ class Poll::Question < ApplicationRecord
 
   accepts_nested_attributes_for :question_answers, reject_if: :all_blank, allow_destroy: true
 
-  scope :by_poll_id,    ->(poll_id) { where(poll_id: poll_id) }
+  scope :by_poll_id,    ->(poll_id) { where(poll_id:) }
 
   scope :sort_for_list, -> { order(Arel.sql("poll_questions.proposal_id IS NULL"), :created_at) }
   scope :for_render,    -> { includes(:author, :proposal) }
@@ -51,6 +51,7 @@ class Poll::Question < ApplicationRecord
       self.author = proposal.author
       self.author_visible_name = proposal.author.name
       self.proposal_id = proposal.id
+      self.description = proposal.description
       send(:"#{localized_attr_name_for(:title, Globalize.locale)}=", proposal.title)
     end
   end

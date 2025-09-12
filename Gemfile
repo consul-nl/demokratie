@@ -82,6 +82,7 @@ end
 group :test do
   gem "capybara", "~> 3.39.2"
   gem "capybara-webmock", "~> 0.7.0"
+  gem 'database_cleaner', "~> 2.1.0"
   gem "email_spec", "~> 2.2.2"
   gem "pdf-reader"
   gem "rspec-rails", "~> 5.1.2"
