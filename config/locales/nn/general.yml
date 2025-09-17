@@ -185,7 +185,6 @@ nn:
         current_goal: Nåværende mål
         supports:
           zero: Ingen støtte
-          zero: "Støtte"
           one: Støtte
           other: "Støtte"
     footer:
