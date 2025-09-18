@@ -95,11 +95,11 @@ fy-NL:
       administration_menu: "Menu"
       available_locales: "Beskikbere talen"
       debates: "Diskusjes"
-      locale:	"Taal"
-      help:	"Help"
+      locale: Taal
+      help: "Help"
       collaborative_legislation: "Ynspraak"
       my_account_link: "Myn profyl"
-      my_activity_link:	"Myn bydragen"
+      my_activity_link: "Myn bydragen"
       proposals: "Inisjativen"
       notification_item:
         new_notifications:
