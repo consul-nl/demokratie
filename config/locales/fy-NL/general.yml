@@ -145,22 +145,6 @@ fy-NL:
       mark_as_read: "As lêzen markearje"
       mark_as_unread: "As net lêzen markearje"
       notifiable_hidden: "Net beskikber mear  comments:"
-  comments:
-    comment:
-      author: "Auteur"
-      responses_show:
-        one: "1 reaksje (toane)"
-        other: "%{count} reaksjes (toane)"
-        zero: "Gjin reaksjes"
-      responses_collapse:
-        one: "1 reaksje (ferbergje)"
-        other: "%{count} reaksjes (ferbergje)"
-        zero: "Gjin reaksjes"
-        user_deleted: "Dielnimmer fuorthelle"
-    actions:
-      delete: "Wiskje reaksje"
-      confirm_delete: "Binne jo der wis fan? Hjirmei wiskje jo jo reaksje. Dat kin net ûngedien makke wurde."
-    select_order: "Sortearje op"
   comments_helper:
     comments_title: "Reaksjes"
   users:
