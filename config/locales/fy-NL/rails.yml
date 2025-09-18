@@ -1,34 +1,71 @@
-fy:
+fy-NL:
   date:
     abbr_month_names:
-      - 
-      - Jan
-      - Feb
-      - Mar
-      - Apr
-      - May
-      - Jun
-      - Jul
-      - Aug
-      - Sep
-      - Oct
-      - Nov
-      - Dec
+      -
+      - jan
+      - feb
+      - maa
+      - apr
+      - maaie
+      - jun
+      - jul
+      - aug
+      - sep
+      - okt
+      - nov
+      - des
     month_names:
-      - 
-      - January
-      - February
-      - March
-      - April
-      - May
-      - June
-      - July
-      - August
-      - September
-      - October
-      - November
-      - December
+      -
+      - jannewaris
+      - febrewaris
+      - maart
+      - april
+      - maaie
+      - juny
+      - july
+      - augustus
+      - septimber
+      - oktober
+      - novimber
+      - desimber
+    formats:
+      default: "%d-%m-%Y"
+      long: "%e %B %Y"
+      short: "%b %d"
+  time:
+    formats:
+      datetime: "%Y-%m-%d %H:%M:%S"
+      default: "%a %d %b %Y %H:%M:%S %Z"
+      long: "%d %B %Y %H:%M"
+      short: "%d %b %H:%M"
+      short_datetime: "%Y-%m-%d %H:%M"
+      api: "%Y-%m-%d %H"
+  datetime:
+    distance_in_words:
+      x_days:
+        one: "1 dag"
+        other: "%{count} dagen"
+      x_months:
+        one: "1 maand"
+        other: "%{count} moannen"
+      x_years:
+        one: "%{count} jier"
+        other: "%{count} jierren"
+  helpers:
+    submit:
+      create: "%{model} yntsjinje"
+  errors:
+    messages:
+      blank: "Dit fjild moat tekst befetsje"
+      empty: "Dit fjild moat tekst befetsje"
   number:
+    currency:
+      format:
+        significant: false
+        strip_insignificant_zeros: false
+    format:
+      significant: false
+      strip_insignificant_zeros: false
     human:
       format:
         significant: true

@@ -1,1 +1,10 @@
-fy:
+fy-NL:
+  community:
+    show:
+      topic:
+        comments:
+          zero: "Gjin reaksjes"
+    topic:
+      show:
+        tab:
+          comments_tab: "Reaksjes"
