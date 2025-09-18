@@ -227,7 +227,6 @@ de:
           plz: PLZ
       recipient_groups:
         index:
-          new_recipient_group: Adressatengruppe erstellen
           title: Adressatengruppen
           new_recipient_group: Neue Adressatengruppe
           name: Name

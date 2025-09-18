@@ -13,16 +13,6 @@ en:
     proposals:
       index:
         tags: Category
-    tags:
-      index:
-        scope: Subcategory
-      logic:
-        project: Project
-        category: Category
-        subcategory: Subcategory
-        custom: Custom
-        predefined: Predefined
-        cloud: Tag cloud
     menu:
       proposals_topics: Predefined tags
     tags:
@@ -38,6 +28,9 @@ en:
         project: Project
         category: Category
         subcategory: Subcategory
+        custom: Custom
+        predefined: Predefined
+        cloud: Tag cloud
         cloud_category: Tag cloud for category
         cloud_subcategory: Tag cloud for subcategory
         custom_tags: User tags

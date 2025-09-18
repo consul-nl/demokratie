@@ -181,12 +181,6 @@ en:
             main_block_title: Projekt managers
           projekt_map_tab:
             name: Ind. map configuration
-          projekt_sdg_tab:
-            name: SDGs & Tags
-            sdgs: SDGs
-            tags: Tags
-            tags_hint: Click on one or more tags to make them available to the user in this project.
-            refresh_page: If you have already activated the functions but they are not displayed here, please reload this page.
           flash:
             update_notice: Projekt was successfully updated
           description: Projekt description

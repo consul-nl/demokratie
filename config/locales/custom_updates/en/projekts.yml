@@ -69,8 +69,6 @@ en:
             title: Project information
           map:
             title: Map
-          navigator:
-            title: Project index
           phases:
             title: Phases
             participate: Open for participation!
