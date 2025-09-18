@@ -716,8 +716,6 @@ de:
           copy_from_projekt: vom Projekt übernehmen
           map_layers:
             title: Kartenebenen
-        projekt_events:
-          page_title: Veranstaltungen
         projekt_notifications:
           page_title: Möchten Sie eine Benachrichtigung senden?
           button: Nachricht senden

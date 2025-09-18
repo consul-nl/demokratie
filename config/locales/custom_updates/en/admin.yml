@@ -515,8 +515,6 @@ en:
           copy_from_projekt: copy from projekts
           map_layers:
             title: Map layers
-        projekt_events:
-          page_title: Events
         projekt_notifications:
           page_title: Projekt notifications
           button: Send notification
