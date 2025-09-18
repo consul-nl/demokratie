@@ -48,7 +48,7 @@ en:
       text4: If you have any questions, please contact ustext. You are cordially invited to create a new post that complies with the netiquette.
       sincerely: Kind regards
     comment:
-      subject: Your	proposal  has been  commented on.
+      subject: Your proposal has been commented on.
       title: Your proposal has been commented on.
       hi: "Hello %{username},"
       text: Your proposal has been commented on. Check out the comment %{comment_link}.

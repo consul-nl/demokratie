@@ -301,8 +301,7 @@ en:
             title_for_livestream: Create question for livestream
           index:
             create: Create question
-            title: Short survey
-            attached_to: Angehängt
+            attached_to: Attached to
             title: Short survey
             question_options: Question options
             answers_count: Answers count

@@ -473,7 +473,6 @@ de:
           no_officing_managers: Keine Abstimmungshelfer*innen vorhanden.
         search:
           title: "Abstimmungshelfer*innen: Benutzer*innensuche"
-      deficiency_report_managers:
       settings:
         index:
           extended_features:

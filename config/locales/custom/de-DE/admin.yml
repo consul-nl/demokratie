@@ -622,7 +622,6 @@ de:
           title: Vorschläge
           back: Zurück
           id: ID
-          title: Titel
           supports: Unterstützung
         form:
         custom_categories: Tags
