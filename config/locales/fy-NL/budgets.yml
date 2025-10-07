@@ -13,7 +13,7 @@ fy-NL:
         voted_info: "Jo stim is befêstige"
         back: "Werom"
         amount_spent:
-          knapsack:	"Utjûn <span>%{count}</span>"
+          knapsack: "Utjûn <span>%{count}</span>"
           approval:
             zero: "Stimmen útbrocht <span>%{count}</span>"
             one: "Stimmen útbrocht <span>%{count}</span>"
