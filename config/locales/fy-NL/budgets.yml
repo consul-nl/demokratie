@@ -159,7 +159,7 @@ fy-NL:
         author: "Auteur"
         project_winner: "Keazen idee"
         see_price_explanation: "Utlis fan de priis fan it idee"
-        location:	"Lokaasje: <strong>%{location}</strong>"
+        location: "Lokaasje: <strong>%{location}</strong>"
         organization_name: "Idee yntsjinne troch: <strong>%{name}</strong>"
         project_selected: "Dit idee <strong>is selektearre </strong> foar de stimfaze."
         project_not_selected: "Dit idee is net selektearre foar de stimfaze."
@@ -210,7 +210,7 @@ fy-NL:
       not_selected_investment_proyects: "List fan alle ideeën dy’t net selektearre binne foar stimming"
     executions:
       link: "Mylpeallen"
-      page_title:	"%{budget} – Mylpeallen"
+      page_title: "%{budget} – Mylpeallen"
       heading: "Mylpeallen"
       heading_selection_title: "Per gebiet"
       no_winner_investments: "Der binne gjin winnende ideeën"
