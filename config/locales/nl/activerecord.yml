@@ -157,7 +157,11 @@ nl:
         description_finished: "Omschrijving wanneer het budget is afgerond"
         phase: "Fase"
         currency_symbol: "Valuta"
+        voting_style: "Final voting style"
+        voting_style_knapsack: "Knapsack"
         voting_style_approval: "Goedkeuring"
+        hide_money: "Hide money amount for this budget"
+        max_preselected: Preselected (optional)
       budget/translation:
         main_link_text: "Linktekst"
         main_link_url: "De link verwijst naar (voeg een link toe)"
@@ -186,6 +190,7 @@ nl:
         valuation_finished: "Beoordeling voltooid"
         valuator_ids: "Groepen"
         valuation_tag_list: "Tags"
+        valuator_explanation: Valuator Explanation
       budget/investment/translation:
         title: "Title"
         description: "Beschrijving"
@@ -211,6 +216,8 @@ nl:
       progress_bar/kind:
         primary: "Primair"
         secondary: "Secundair"
+      budget/group:
+        max_votable_headings: "Maximum number of headings in which a user can select projects"
       budget/group/translation:
         name: "Groepsnaam"
       budget/heading:
@@ -307,6 +314,7 @@ nl:
       poll/question:
         poll_id: "Poll"
         title: "Vraag"
+        multiple: Multiple answers allowed
         summary: "Samenvatting"
         description: "Omschrijving"
         external_url: "Link naar aanvullende informatie"
@@ -482,22 +490,33 @@ nl:
         short_description: Korte beschrijving
         description: Beschrijving
         link: Externe link
+        request_to_administrators: Include in the resource a button to request the resource from administrators
+        day_offset: How many days after the creation of the proposal do you want it to be activated?
+        required_supports: How much supports does the proposal have to get in order to be activated?
+        order: You can enter the position where this action will be shown to the user in the list of actions
         active: Actief
         action_type: Type
+        action_type_proposed_action: "Proposed action"
+        action_type_resource: "Resource"
+        published_proposal: "For published proposals?"
       dashboard/administrator_task:
         source: Bron
+        user: Executed by
       link:
         label: Titel
         url: Link
       valuator:
         description: Beschrijving
         valuator_group_id: Beoordelaarsgroep
+        can_comment: Can create comments
+        can_edit_dossier: Can edit dossiers
       valuator_group:
         name: "Groepsnaam"
       local_census_record:
         document_type: Documentsoort
         document_number: Document nummer
         date_of_birth: Date of birth
+        postal_code: Postal code
     errors:
       models:
         user:
@@ -541,6 +560,10 @@ nl:
               invalid_date_range: dient later te zijn dan de begindatum
             allegations_end_date:
               invalid_date_range: moet op of na de begindatum zijn
+        local_census_record:
+          attributes:
+            document_type:
+              inclusion: is not included in the list, allowed values are 1 for DNI, 2 for passport and 3 for residence card.
         proposal:
           attributes:
             tag_list:
@@ -571,8 +594,18 @@ nl:
           attributes:
             valuation:
               cannot_comment_valuation: "Je kunt niet reageren op een beoordeling"
+        remote_translation:
+          attributes:
+            locale:
+              already_translated: Already translated resource
+        sdg/local_target:
+          attributes:
+            code:
+              invalid: "must start with the same code as its target followed by a dot and end with a number"
       messages:
+        translations_too_short: Is mandatory to provide one translation at least
         record_invalid: "Validatie mislukt: %{errors}"
+        another_poll_active: There is another poll active for the given period
         restrict_dependent_destroy:
           has_one: "Kan onderdeel niet verwijderen omdat een afhankelijk %{record} bestaat"
           has_many: "Kan onderdeel niet verwijderen omdat een afhankelijk %{record} bestaat"
