@@ -1,4 +1,5 @@
-fy-NL:
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+fy:
   devise:
     password_expired:
       expire_password: "Dit wachtwurd is spitigernôch ferrûn"
@@ -10,8 +11,6 @@ fy-NL:
       confirmed: "Jo akkount is aktivearre"
       send_instructions: "Jo krije fia e-mail ynstruksjes om jo akkount te aktivearjen"
       send_paranoid_instructions: "As jo e-mailadres by ús bekend is, krije jo dêrop ynstruksjes hoe’t jo jo akkount aktivearje kinne."
-      user:
-        already_confirmed: "Dyn e-mailadres is al ferifiearre. Do kinst dêr no mei ynlogge"
     failure:
       already_authenticated: "Jo binne al oanmeld"
       inactive: "Jo akkount is noch net aktivearre"
@@ -54,3 +53,14 @@ fy-NL:
       send_instructions: "Jo krije fia de e-mail ynstruksjes oer hoe’t jo jo akkount ûntskoattelje kinne. Gjin mail krige? Nim dan kontakt op mei stimfan@fryslan.frl"
       send_paranoid_instructions: "As jo e-mailadres by ús bekend is, krije jo fia de e-mail ynstruksjes oer hoe’t jo jo akkount ûntskoattelje kinne. Komme jo net fierder? Nim dan kontakt op mei stimfan@fryslan.frl "
       unlocked: "Jo akkount is mei sukses ûntskoattele. Jo kinne josels wer oanmelde!"
+  errors:
+    messages:
+      already_confirmed: "You have already been verified; please attempt to sign in."
+      confirmation_period_expired: "You need to be verified within %{period}; please make a repeat request."
+      expired: "has expired; please make a repeat request."
+      not_found: "not found."
+      not_locked: "was not locked."
+      not_saved:
+        one: "1 error prevented this %{resource} from being saved. Please check the marked fields to know how to correct them:"
+        other: "%{count} errors prevented this %{resource} from being saved. Please check the marked fields to know how to correct them:"
+      equal_to_current_password: "must be different than the current password."
