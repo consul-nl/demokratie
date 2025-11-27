@@ -4,10 +4,14 @@ de:
       title: Verwaltung
     actions:
       actions: Aktionen
+      confirm: Sind Sie sich sicher?
+      block_author: "Block author"
+      confirm_action: "Are you sure? %{action} \"%{name}\""
       confirm_delete: "Sind Sie sicher? Diese Aktion wird \"%{name}\" löschen und kann nicht rückgängig gemacht werden."
       confirm_hide: Moderation bestätigen
       delete: "Löschen"
       hide: Ausblenden
+      label: "%{action} %{name}"
       restore: Wiederherstellen
       mark_featured: Hervorgehoben
       unmark_featured: Markierung aufheben
@@ -35,6 +39,8 @@ de:
           sdg: SDG
       create:
         notice: "Banner erfolgreich erstellt"
+      destroy:
+        notice: "Banner deleted successfully"
       edit:
         editing: Banner bearbeiten
         form:
@@ -65,8 +71,17 @@ de:
         no_activity: Hier sind keine Moderator*innen aktiv.
     budgets:
       actions:
+        ballots: "Create booths"
+        confirm:
+          ballots: "Are you sure? This action is only necessary if you're going to use physical booths during the final voting phase. Citizens will still be able to vote via web with or without physical booths."
+          destroy: "Are you sure? This will delete the budget and all its associated groups and headings. This action cannot be undone."
+        descriptions:
+          ballots: "This will let you manage physical ballots. Only use this option if you're going to use physical booths to collect ballots during the final voting phase."
+          calculate_winners: 'After calculating the results, only administrators will be able to access them. They will be public when the project reaches the "%{phase}" phase <strong>if the option "Show results" is enabled</strong> when editing the budget.'
+          destroy: "This will delete the budget and all its associated groups and headings. This action cannot be undone."
         edit: "Bürgerhaushalt bearbeiten"
         preview: "Vorschau Bürgerhaushalt"
+        preview_results: "Preview results"
       index:
         title: Bürgerhaushalte
         new_link: Neuen Bürgerhaushalt erstellen
@@ -101,6 +116,7 @@ de:
         delete: Bürgerhaushalt löschen
         phase: Phase
         phases_caption: "Phasen"
+        phases_table_help_text: "The configuration of these phases is used for information purposes only. Its function is to define the phases information displayed on the public page of the participatory budget."
         duration: "Laufzeit"
         enabled: Aktiviert
         actions: Aktionen
@@ -108,30 +124,43 @@ de:
         active: Aktiv
         blank_dates: Das Datumfeld ist leer
         administrators:
-          zero: "Wähle Adminstratoren"
           one: "1 Administrator ausgewählt"
           other: "%{count} Administrator ausgewählt"
         valuators:
-          zero: "Den Begutachtern/Begutachterinnen wählen"
           one: "1 Begutacher ausgewählt"
           other: "%{count} Begutachter ausgewählt"
         empty_administrators: "Keine Administrator*innen vorhanden"
         empty_valuators: "Keine Begutachter*innen vorhanden"
         name_description: "Dies ist der Name des Bürgerhaushalts, der in der Kopfzeile und auf den Kacheln verwendet wird, wenn er aktiv ist"
+        image_description: "If an image is uploaded it will be used as the banner on top of this participatory budget, otherwise the default color for budgets will be used."
+        main_call_to_action: "Main call to action (optional)"
+        main_call_to_action_description: "This link will appear on main banner of this participatory budget and encourages your user to perform a specific action like creating a proposal, voting for existing ones, or learn more about the process."
         info:
           budget_settings: "Allgemeine Einstellungen Bürgerhaushalt"
           staff_settings: "Administratoren und Bewerter, die dem Bürgerhaushalt zugeordnet sind"
+        hide_money: "Hide money"
+        hide_money_help_text: "If this option is checked, all fields showing the amount of money will be hidden throughout the process."
       destroy:
         success_notice: Bürgerhaushalt erfolgreich gelöscht
         unable_notice: Ein Bürgerhaushalt mit zugehörigen Ausgabenvorschlägen kann nicht gelöscht werden
         unable_notice_polls: Sie können kein Budget löschen, das eine zugehörige Abstimmung hat
+      new:
+        title_multiple: New multiple headings budget
+        title_single: New single heading budget
       help:
         budgets: "Bürgerhaushalte ermöglichen es den Bürger: innen, Vorschläge einzubringen und zu entscheiden, wie ein Teil des Haushalts ausgegeben werden soll, wobei die Vorschläge von der Verwaltung kontrolliert und bewertet werden."
         groups:
           multiple: "Gruppen sind dazu gedacht, Rubriken zu organisieren. Nachdem eine Gruppe erstellt wurde und sie Rubriken enthält, kann festgelegt werden, in wie vielen Rubriken ein Benutzer pro Gruppe abstimmen kann."
+          single: "Groups are meant to organize headings, since this budget will only contain one heading, the same name can be used because it will not appear anywhere. You can just continue with the next step."
+        headings:
+          multiple: "Headings are meant to divide the money of the participatory budget. Here you can add headings for this group and assign the amount of money that will be used for each heading."
+          single: "Headings are meant to divide the money of the participatory budget. Since this budget will only contain one heading, this is the place where you stablish the money that will be spent in this participaroty budget."
         phases: "Bürgerhaushalte haben verschiedene Phasen. Hier können Sie Phasen aktivieren oder deaktivieren und auch jede einzelne Phase individuell anpassen."
       show:
+        add_group: "Add group"
         add_heading: "Rubrik hinzufügen"
+        groups_and_headings: "Heading groups"
+        headings_caption: "Headings in %{group}"
       winners:
         calculate: Bestbewertete Vorschläge ermitteln
         calculated: Die bestbewerteten Vorschläge werden ermittelt. Dies kann einen Moment dauern.
@@ -159,6 +188,7 @@ de:
       index:
         new_button: "Neue Gruppe hinzufügen"
     budget_headings:
+      no_headings: "There are no headings in the <strong>%{group}</strong> group."
       create:
         notice: "Rubrik erfolgreich erstellt!"
       update:
@@ -185,10 +215,14 @@ de:
     budget_phases:
       edit:
         title: "Phase bearbeiten"
+        dates_help_text: "For information purposes only"
         description_help_text: Dieser Text erscheint in der Kopfzeile, wenn die Phase aktiv ist
         duration: "Laufzeit dieser Phase"
         duration_description: "Der Zeitraum, in dem diese Phase aktiv sein wird."
         enabled_help_text: Diese Phase wird öffentlich in der Zeitleiste der Phasen des Bürgerhaushalts angezeigt und ist auch für andere Zwecke aktiv
+        image_description: "If an image is uploaded it will be displayed next to the description of this phase."
+        main_call_to_action: "Main call to action (optional)"
+        main_call_to_action_description: "This link will appear on main banner of this participatory budget when this phase is enabled and encourages your user to perform a specific action like creating a proposal, voting for existing ones, or learn more about the process."
         name_help_text: "Dies ist der Titel der Phase, den die Benutzer in der Kopfzeile lesen, wenn diese Phase aktiv ist."
         save_changes: Änderungen speichern
       index:
@@ -234,7 +268,9 @@ de:
         list:
           id: ID
           title: Titel
+          created_at: Created at
           supports: Unterstützung
+          total_votes: Supports
           admin: Administrator
           valuator: Begutachter/in
           valuation_group: Bewertungsgruppe
@@ -247,6 +283,11 @@ de:
           incompatible: Inkompatibel
           price: Preis
           author: Autor
+          balloters: Balloters
+          total_ballot_votes: Balloters votes
+          winner: Winner
+          pdf_link: PDF
+        cannot_calculate_winners: The budget has to stay on phase "%{phase}" in order to calculate winners projects
         see_results: "Ergebnisse anzeigen"
         milestone_tags_filter_all: "Status aller Ausgabenvorschläge"
       show:
@@ -300,7 +341,17 @@ de:
         continue: "Weiter zu Rubriken"
       headings:
         continue: "Weiter zu Phasen"
+        single:
+          back: "Go back to edit group"
       heading_mode:
+        multiple:
+          description: "Create a process with multiple groups, districts or topics. You have something like several bags of money. For example, 25,000€ for \"North District\", 30,000€ for \"Center District\", 28,000€ for \"South District\" and the whole city. Or for several themes like sport, culture or health."
+          link: "Create multiple headings budget"
+          title: "<strong>Multiple headings</strong> budget"
+        single:
+          description: "Create a process with a group, district or topic. You have something like a bag of money. For example, 25,000€ for the district, or 10,000€ for culture."
+          link: "Create single heading budget"
+          title: "<strong>Single heading</strong> budget"
         title: "Bürgerhaushaltstyp"
       phases:
         continue: "Abschließen"
@@ -402,7 +453,6 @@ de:
         back: Zurück zu %{org}
         title: Dashboard für Administratoren
         description: Willkommen auf dem Admin-Panel für %{org}.
-        additional_description: "Herzlich willkommen im Administrationsbereich von Consul! Hier finden Sie alle wichtigen Links und Ressourcen, die Sie für die Verwaltung und Optimierung Ihrer Bürgerbeteiligungsplattform benötigen."
       actions:
         index:
           description: "Wenn Benutzer Vorschläge erstellen, können sie auf ein Dashboard ihres Vorschlags zugreifen, in dem Sie Ressourcen und Empfehlungen vorschlagen können, um Unterstützung für ihre Idee zu erhalten."
@@ -717,6 +767,7 @@ de:
           proposals: "Vorschläge"
           polls: "Umfragen"
           layouts: "Layouts"
+          machine_learning: "AI / Machine Learning"
           mailers: "E-Mails"
           management: "Management"
           welcome: "Willkommen"
@@ -737,6 +788,7 @@ de:
       debates: "Debatten"
       comments: "Kommentare"
       local_census_records: Verwaltung des lokalen Registers
+      machine_learning: "AI / Machine learning"
     administrators:
       index:
         title: Administrator*innen
@@ -775,10 +827,6 @@ de:
       send_success: Newsletter erfolgreich gesendet
       delete_success: Newsletter erfolreich gelöscht
       index:
-        tabs:
-          list: Newsletter
-          settings: Einstellungen
-
         title: Newsletter
         new_newsletter: Neuer Newsletter
         subject: Betreff
@@ -788,7 +836,6 @@ de:
         draft: Entwurf
         preview: Vorschau
         empty_newsletters: Keine Newsletter zum Anzeigen vorhanden
-
       new:
         title: Neuer Newsletter
         header_footer_help_text: "Die Kopf- und Fußzeile ist für alle E-Mails gleich, Sie können sie ändern unter <code>app/views/layouts/mailer_header</code> and <code>app/views/layouts/mailer_footer</code>.<br>\nSie können das Bilder der Kopfzeile ersetzen unter %{link}."
@@ -1100,8 +1147,8 @@ de:
         add_answer: Antwort hinzufügen
         video_url: Externes Video
         multiple: Mehrfachantworten erlaubt?
-        multiple_yes: ja
-        multiple_no: nein
+        multiple_yes: yes
+        multiple_no: no
         answers:
           title: Antwort
           description: Beschreibung
@@ -1389,7 +1436,6 @@ de:
           other: "Es gibt %{count} ungültige Unterschriften"
         unverified_error: (Nicht durch das Melderegister überprüft)
         voted:
-          zero: "Es gibt keine Wahlstimmen aus den verifizierten Unterschriften."
           one: "Es gibt %{count} Wahlstimmen aus den verifizierten Unterschriften."
           other: "Es gibt %{count} Wahlstimmen aus den verifizierten Unterschriften."
         loading: "Es gibt immer noch Unterschriften, die vom Melderegister überprüft werden. Bitte aktualisieren Sie die Seite in Kürze"
@@ -1477,6 +1523,7 @@ de:
         add_tag: Neues Vorschlagsthema hinzufügen
         title: Themen der Vorschläge
         topic: Thema
+        category: Category
         help: "Wenn ein*e Benutzer*in einen Vorschlag erstellt, werden die folgenden Themen als Standard-Tags vorgeschlagen."
     users:
       columns:
@@ -1526,6 +1573,7 @@ de:
         content_block:
           body: Inhalt
           name: Name
+          key: Key
           names:
             top_links: Top Links
             footer: Fußzeile
@@ -1651,6 +1699,52 @@ de:
         local_census_records:
           no_records_found: Keine Datensätze gefunden.
     machine_learning:
+      cancel: "Cancel operation"
+      cancel_alert: "This action will cancel the current script and it will be necessary to run the script again."
+      comments_summary: "Comments summary"
+      comments_summary_description: "Displays an automatically generated comment summary on all items that can be commented on."
+      data_folder_content: "Data folder content"
+      error: "Error:"
+      execute_script: "Execute script"
+      executed_by: "Executed by:"
+      executed_script: "Executed script:"
+      feature_disabled: "This feature is disabled. To use Machine Learning you can enable it from the %{link}."
+      feature_disabled_link: "settings page"
+      help:
+        title_1: "What is AI / Machine Learning?"
+        description_1: "Traditionally, computer programs are designed by establishing precise rules about what the program should do in each situation, and how to process the available information at each moment. What is commonly known as AI/Machine Learning is a type of programs for which what is precisely established is what the task to be performed is and how it is assessed whether the task is better or worse performed. But unlike the former, the system discovers or learns what would be the most suitable method to perform the task."
+        title_2: "What does the AI / Machine Learning module in CONSUL?"
+        description_2: "This module allows any type of AI/Machine Learning programs to be implemented in CONSUL. The programs can process the information available in CONSUL and produce results that help both users and administrators to carry out more effective and intelligent citizen participation. The module has been developed to make it easy to implement and run new programs, keeping the general code of CONSUL and the code of these new programs independent from each other."
+        title_3: "How to use this module"
+        description_3: "To use it for the first time it is necessary to follow the instructions available in the CONSUL documentation to properly activate this module. Once the module is correctly activated, the programs are executed from the \"Execute scripts\" tab. Before executing it, we can see in the same tab an estimation of the execution time and other relevant information. At the end of the execution, we can activate the content that will be shown in CONSUL from the \"Settings\" tab, as well as download other generated files that may be useful to us."
+        title_4: "How to implement new AI / Machine Learning scripts"
+        description_4: "Please use previous scripts as examples."
+        description_4b: "The new scripts should be located in the folder <code>public/machine_learning/scripts</code>"
+        description_4c: "The input data to be used by the script will be created as JSON files in the folder <code>../data</code>"
+        description_4d: "Any generated output should be placed in the folder <code>../data</code>"
+        description_4e: "It is recommended to create an independent <code>.ini</code> text file with the settings of the script, with the same name of the script and readable by configparser. This file will facilitate settings change by the administrators."
+        description_4f: "It is recommended to include as the first line of the script an initial triple-quote string with some brief information about it and links to any relevant information. This string will be automatically shown in the Administration interface."
+        description_4g: "It is recommended to log the relevant information of the script in a <code>.log</code> text file, with the same name of the script."
+        title_5: "To use AI / Machine Learning scripts you need to have Python installed on your server"
+        description_5: "Here you can see the example instructions for an Ubuntu 18.04 server:"
+      help_text: "This functionality is experimental."
+      last_execution: "Last execution"
+      no_content: "No content generated yet."
+      notice:
+        success: "The last script has been executed successfully."
+        error: "An error has occurred. You can see the details below."
+        working: "The script is running. The administrator who executed it will receive an email when it is finished."
+        delete_generated_content: "Generated content has been successfully deleted."
+      output_files: "Output files:"
       related_content: "Verwandte Inhalte"
+      related_content_description: "Adds automatically generated related content to proposals and participatory budget projects."
+      script_info: "You will receive an email in %{email} when the script finishes running."
+      script_name: "Script name:"
+      select_script: "Select python script to execute"
+      started_at: "Started at:"
       tab_help: "Hilfe"
+      tab_scripts: "Execute script"
+      tab_settings: "Settings / Generated content"
       tags: "Tags"
+      tags_description: "Generates automatic tags on all items that can be tagged on."
+      title: "AI / Machine learning"
