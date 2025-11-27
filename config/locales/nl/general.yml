@@ -20,6 +20,9 @@ nl:
     close: Afsluiten
     menu: Menu
   comments:
+    actions:
+      confirm_delete: "Are you sure? This action will delete this comment. You can't undo this action."
+      delete: "Delete comment"
     comments_closed: Reacties zijn niet langer mogelijk
     verified_only: ' %{verify_account} om deel te nemen'
     comment:
@@ -27,17 +30,18 @@ nl:
       author: Author
       deleted: Deze reactie is verwijderd
       moderator: Moderator
+      projekt_manager: Projektmanager*in
       responses:
-        zero: Geen reacties
         one: 1 reactie
         other: "%{count} reacties"
       responses_show:
-        zero: Geen reacties
+        one: "1 response (show)"
+        other: "%{count} responses (show)"
       responses_collapse:
-        zero: Geen reacties
+        one: "1 response (collapse)"
+        other: "%{count} responses (collapse)"
       user_deleted: Deelnemer verwijdert
       votes:
-        zero: Geen stemmen
         one: 1 stem
         other: "%{count} stemmen"
     form:
@@ -63,11 +67,9 @@ nl:
         submit_button: Debat starten
     debate:
       comments:
-        zero: Geen reacties
         one: 1 opmerking
         other: "%{count} opmerkingen"
       votes:
-        zero: Geen stemmen
         one: 1 stem
         other: "%{count} stemmen"
     edit:
@@ -76,6 +78,8 @@ nl:
         submit_button: Bewaar wijzigingen
       show_link: Debat bekijken
     form:
+      debate_title: Debate title
+      tags_custom: "Custom user tags"
       tags_instructions: Voeg termen toe.
       tags_placeholder: "Voeg de gewenste labels toe, gescheiden door een komma (',')"
     index:
@@ -102,7 +106,7 @@ nl:
       title: Debatten
       section_header:
         icon_alt: Debatten pictogram
-        title: Debatten
+        title: "Debatten"
         help: Hulp bij debatten
       section_footer:
         title: Hulp bij debatten
@@ -122,7 +126,6 @@ nl:
     show:
       author_deleted: Gebruiker verwijderd
       comments:
-        zero: Geen reacties
         one: 1 opmerking
         other: "%{count} opmerkingen"
       comments_title: Comments
@@ -135,6 +138,7 @@ nl:
         submit_button: Bewaar wijzigingen
   errors:
     messages:
+      allowed_file_content_types: "content type must be one of %{types}"
       user_not_found: User not found
       invalid_date_range: "Ongeldige periode"
   form:
@@ -153,6 +157,7 @@ nl:
     budget/investment: Investering
     budget/group: Budgetgroep
     budget/heading: Budget onderdeel
+    geozone: geozone
     legislation/draft_version: concept
     legislation/process: proces
     legislation/question: vraag
@@ -164,7 +169,11 @@ nl:
     document: Document
     topic: Onderwerp
     image: Afbeelding
+    local_census_record: Local Census Record
+    local_census_records/import: Local Census Records Import
+    site_customization/content_block: content block
     site_customization/page: pagina
+    sdg/local_target: local target
   geozones:
     none: Hele stad
   layouts:
@@ -179,8 +188,12 @@ nl:
         draft: Concept
         retired: Teruggetrokken
       proposal_totals:
+        active_resources: Active resources
+        community: Participants in your community
+        show_proposal: Show proposal
+        preview_proposal: Preview proposal
+        current_goal: Current goal
         supports:
-          zero: Geen steunbetuigingen
           one: 1 steunbetuiging
           other: "Steunt"
     footer:
@@ -214,10 +227,10 @@ nl:
       budgets: Participatory budgeting
       notification_item:
         new_notifications:
-          zero: "U heeft geen nieuwe meldingen"
           one: U heeft een nieuwe melding
           other: U heeft %{count} nieuwe meldingen
         notifications: Notificaties
+      sdg: "SDG"
   notifications:
     index:
       empty_notifications: U heeft geen nieuwe meldingen.
@@ -236,6 +249,9 @@ nl:
         replies_to:
           one: Iemand antwoordde op uw reactie op
           other: Er zijn %{count} nieuwe antwoordde op uw reactie op
+        new_resource:
+          one: New resource added
+          other: New resource added
       mark_as_read: Markeer als gelezen
       mark_as_unread: Markeer als ongelezen
       notifiable_hidden: Deze bron is niet meer beschikbaar.
@@ -251,6 +267,7 @@ nl:
     finish_signup:
       title: "Verdere details"
       username_warning: "Door een verandering in de manier waarop we met sociale netwerken communiceren, is het mogelijk dat uw gebruikersnaam nu als 'al in gebruik' verschijnt. Kiest u dan een andere gebruikersnaam, aub."
+      submit: "Complete registration"
     google_oauth2:
       sign_in: Log in via Google
       sign_up: Registreer via Google
@@ -263,6 +280,10 @@ nl:
       sign_in: Log in via Twitter
       sign_up: Registreer via Twitter
       name: Twitter
+    openid_connect:
+      sign_in: Sign in with Keycloak
+      sign_up: Sign up with Keycloak
+      name: Keycloak
     info:
       sign_in: "Aanmelden met:"
       sign_up: "Registreren met:"
@@ -271,7 +292,15 @@ nl:
     create:
       form:
         submit_button: Voorstel indienen
+    created:
+      title: Congratulations! You have taken the first step.
+      motivation: "It is important to prepare the launch campaign for your proposal to be successful. The first few days are decisive."
+      motivation_2: "<strong>If you want recommendations to prepare the publishing leave your proposal as a draft and we will guide you.</strong>"
+      publish: No, I want to publish the proposal
+      dashboard: Yes, I want help and I'll publish later
+      preview_title: This is how your proposal will look when you publish it
     share:
+      improve_it: Improve your campaign and get more support.
       dashboard: Bekijk meer informatie
       message: "Ik heb op het voorstel %{title} in %{handle} gestemd. Stem ook!"
     edit:
@@ -321,6 +350,10 @@ nl:
           error: "Er is een fout opgetreden. Ga naar de pagina 'Uw account' om aanbevelingen voor voorstellen handmatig uit te schakelen"
       retired_proposals: Teruggetrokken voorstellen
       retired_proposals_link: "Teruggetrokken voorstellen"
+      selected_proposals: Selected proposals
+      selected_proposals_link: View selected proposals
+      archived_proposals: Archived proposals
+      proposals_lists: Proposals lists
       retired_links:
         all: All
         duplicated: Dubbele
@@ -341,7 +374,7 @@ nl:
       top_link_proposals: De meest gesteunde voorstellen per categorie
       section_header:
         icon_alt: Voorgestelde pictogrammen
-        title: Voorstellen
+        title: "Voorstellen"
         help: Hulp over voorstellen
       section_footer:
         title: Hulp over voorstellen
@@ -357,6 +390,7 @@ nl:
       start_new: Doe nieuw voorstel
     notice:
       retired: Voorstel teruggetrokken
+      published: The proposal has been published
     proposal:
       created: "Je hebt een voorstel gedaan!"
       share:
@@ -365,28 +399,27 @@ nl:
         view_proposal: Niet nu, door naar mijn voorstel
       already_supported: U steunt dit voorstel al. Deel het!
       comments:
-        zero: Geen reacties
         one: 1 opmerking
         other: "%{count} opmerkingen"
       support: Steun
+      support_label: "Support %{proposal}"
       support_title: Steun dit voorstel
       supports:
-        zero: Geen steunbetuigingen
         one: 1 steunbetuiging
         other: "%{count} steunbetuigingen"
       votes:
-        zero: Geen stemmen
         one: 1 stem
         other: "%{count} stemmen"
       supports_necessary: "%{number} steunbetuigingen nodig"
+      reason_for_supports_necessary: ""
       total_percent: 100%
       archived: "Dit voorstel is gearchiveerd en kan niet worden gesteund."
       successful: "Dit voorstel heeft de vereiste ondersteuning bereikt."
+      selected: "Selected proposal"
     show:
       author_deleted: Gebruiker verwijderd
       code: "Voorstel code:"
       comments:
-        zero: Geen reacties
         one: 1 opmerking
         other: "%{count} opmerkingen"
       comments_tab: Comments
@@ -402,43 +435,93 @@ nl:
       embed_video_title: "Video voor %{proposal}"
       title_video_url: "Externe video"
       author: Author
+      draft: Proposal in draft. Cannot yet get supports, nor does it appear in the list of proposals.
     update:
       form:
         submit_button: Bewaar wijzigingen
   dashboard:
     menu:
+      my_proposal: Edit my proposal
       progress: Voortgang
+      resources: Resources
       community: Community
       polls: Polls
       mailing: E-mail
+      poster: Poster
+      recommended_actions: Recommended actions
+      messages: Message to users
       related_content: Gerelateerde inhoud
     form:
       request: Verzoek
+    create_request:
+      success: The request has been successfully sent. We will contact you as soon as possible to inform you about it.
+      archived: This proposal is archived and can not request resources.
     progress:
+      title: Graphic
       group_by_month: Maandelijks
       group_by_week: Wekelijks
+      group_by_date: Daily
+      progress: Accumulated progress
       supports: Steunt
+      success: Ideal progress
+      new_action: New
     index:
+      title: Edition
       edit_proposal_link: Wijzig voorstel
+      publish: Publish proposal
       retire: Trek voorstel terug
     new_request:
       links: Links
+    resources:
+      available_resources: Available resources
+    resource:
+      required_days: "%{days} days required"
+      required_supports: "%{supports} supports required"
+      and: and
+      view_resource: See resource
+      resource_requested: Resource already requested
+      request_resource: Request resource
+      resource_locked: Resource locked
     recommended_actions:
+      title: Recommended actions
+      goto_proposed_actions: Go to recommended actions
+      see_proposed_actions: Check out recommended actions
+      hide_proposed_actions: Hide recommended actions
       pending_title: In afwachting
+      show_description: Show description
+      without_pending_actions: No recommended actions pending
       done_title: Is al gereed
+      without_done_actions: No recommended actions done
+    next_goal:
+      title: Goal
+      see_complete_course: Check out the complete course
+      hide_course: Hide course
     goal:
+      target_supports:
+        one: Get %{count} support for your proposal
+        other: Get %{count} supports for your proposal
       days:
         one: "%{count} dag"
         other: "%{count} dagen"
+      locked_resource: Resource locked
+      ideal_time: Ideal time
     community:
       access_community: Naar de community
+      latest_activity: "Latest activity of the community: %{at}"
       participants: deelnemers
       debates: Discussie
       comments: Comments
+      latest_comments: Latest messages
+    messages:
+      send_notification: Send notification to proposal followers
+      previous_notifications: See previous notifications
     polls:
       index:
         title: Polls
         create: Nieuwe peiling
+        count:
+          one: You have created %{count} poll.
+          other: You have created %{count} polls.
         links: Links
         additiontal_information: Aanvullende informatie
       new:
@@ -450,6 +533,12 @@ nl:
         responses:
           one: "%{count} reactie"
           other: "%{count} reacties"
+        view_results: View results
+        edit_poll: Edit survey
+        show_results_help: If you check this box the results will be public and all users will be able to see them
+        delete: Delete survey
+        alert_notice: This action will remove the survey and all its associated questions.
+        success_notice: Survey deleted successfully
         unable_notice: Je kan een vragenlijst met antwoorden niet verwijderen
       form:
         name: Vragenlijsttitel
@@ -464,7 +553,10 @@ nl:
         title: Poster preview
         poster_title: "Blijf niet kijken"
         poster_subtitle: "maar steun me! ;)"
+        intro_text: "<strong>I am participating in %{org}</strong> with my own citizen proposal and only with your support can we make the city we all want"
+        proposal_code: "Code of the proposal: %{code}"
         support: Steun mijn voorstel
+        footer: "<strong>Visit %{link} and support this proposal.</strong> The more, the better. Let's do our bit. Thank you!"
       new:
         title: Poster van je voorstel
       options:
@@ -482,8 +574,13 @@ nl:
         sent: De e-mail is verstuurd
     mailer:
       forward:
+        subtitle: "If you support me, <br>we will achieve it."
         support_button: Steun dit voorstel
+        share_in: Share in
         hi: "Hallo!"
+        introduction: I am writing to let you know that I am participating in %{org}, the platform we can decide which city we want. And for that, I created my own citizen proposal and now, I'm going to need your support! But do not worry because It is very simple.
+        support: "You just have to click on the button that you will see below 'Support this proposal' and you can inform yourself about before promoting it. Only the proposals that achieve the maximum support will be carried out by the City Council, and I thought that you, I'm sure you help me achieve it!"
+        share: "And if you also do me the great favor of sharing my proposal with your friends, family and contacts, it would be perfect!"
   polls:
     all: "All"
     no_dates: "geen datum toegewezen"
@@ -505,7 +602,7 @@ nl:
       cant_answer: "Deze stemronde is niet beschikbaar in uw regio"
       section_header:
         icon_alt: Stemmen icoon
-        title: Peilingen
+        title: "Peilingen"
         help: Hulp bij stemmen
       section_footer:
         title: Hulp bij peilingen
@@ -543,14 +640,24 @@ nl:
       results:
         title: "Vragen"
         most_voted_answer: "Antwoord met de meeste stemmen: "
+    poll_header:
+      back_to_proposal: Back to proposal
   poll_questions:
     show:
       vote_answer: "Stem %{answer}"
+      vote_unanswer: "Take back vote for %{answer}"
       voted: "U heeft %{answer} gestemd"
+      withdraw_answers_hint: "You can withdraw your vote by clicking on an answer again"
+    description:
+      unique: You can cast one vote for this question.
+      multiple: You may cast %{maximum} votes evenly among the available answers.
+      multiple_with_weight: You may cast %{maximum} votes weighted across multiple answers. Maximum %{cap} per answer.
+      rating_scale: You are allowed one vote per rating scale.
   proposal_notifications:
     new:
       title: "Stuur bericht"
       submit_button: "Stuur bericht"
+      info_about_receivers: "This notification will be sent to <strong>%{count} people</strong> and it will be visible in %{proposal_page}.<br> Notifications are not sent immediately, users will periodically receive an email with all proposal notifications."
       proposal_page: "pagina van het voorstel"
     show:
       back: "Terug naar mijn bijdragen"
@@ -573,7 +680,11 @@ nl:
       date_5: "Aangepast"
       from: "Van"
       general: "Met tekst:"
+      goal: "By SDG"
+      goal_blank: "Select a goal"
       search: "Filter"
+      target: "By target"
+      target_blank: "Select a target"
       title: "Geavanceerd zoeken"
       to: "Aan"
     author_info:
@@ -588,6 +699,17 @@ nl:
     follow: "Volg"
     following: "Volgend"
     follow_entity: "Volg %{entity}"
+    followable:
+      budget_investment:
+        create:
+          notice: "You are now following this investment project! <br> We will notify you of changes as they occur so that you are up-to-date."
+        destroy:
+          notice: "You have stopped following this investment project! <br> You will no longer receive notifications related to this project."
+      proposal:
+          create:
+            notice: "Now you are following this citizen proposal! <br> We will notify you of changes as they occur so that you are up-to-date."
+          destroy:
+            notice: "You have stopped following this citizen proposal! <br> You will no longer receive notifications related to this proposal."
     print:
       print_button: Print this info
     search: Search
@@ -616,6 +738,7 @@ nl:
       districts: "Regio's"
       districts_list: "Regio lijst"
       categories: "Categorieen"
+      labels: Labels
     target_blank: " (opent een nieuw venster)"
     you_are_in: "U bent in"
     unflag: Hef markering op
@@ -633,12 +756,18 @@ nl:
       cards: Kaarten
       list: Lijst
     recommended_index:
-      title: Aanbevelingen
-      see_more: Meer aanbevelingen bekijken
-      hide: Verborgen aanbevelingen
+        title: Aanbevelingen
+        see_more: Meer aanbevelingen bekijken
+        hide: Verborgen aanbevelingen
     translations:
+      select_language_prompt: Choose language
       remove_language: Verwijder taal
       add_language: Taal toevoegen
+      languages_in_use:
+        one: "1 language in use"
+        other: "%{count} languages in use"
+    optional: "Optional fields"
+    required: "Required fields"
   social:
     facebook: "%{org} Facebook"
     twitter: "%{org} Twitter"
@@ -713,10 +842,13 @@ nl:
       published: Gepubliceerd
       see: "Bekijk voorstel"
       actions: Activiteiten
+      retired_help_text: Dashboard not available for withdrawn proposals
   votes:
     agree: Ik ben het eens
+    agree_label: "I agree with %{title}"
     anonymous: Er zijn al te veel anonieme stemmen; %{verify_account}.
     disagree: Ik ben het oneens
+    disagree_label: "I don't agree with %{title}"
     organizations: Organisaties kunnen niet stemmen
     supports: Steunt
     verified_only: Alleen geverifieerde deelnemers kunnen stemmen op voorstellen; %{verify_account}.
@@ -724,6 +856,9 @@ nl:
       not_verified: Alleen geverifieerde gebruikers mogen stemmen op begrotingsvoorstellen; %{verify_account}.
       unfeasible: Onhaalbare voorstellen kunnen niet gesteund worden.
       not_voting_allowed: Stemronde is gesloten.
+      different_heading_assigned:
+        one: "You can only support investment projects in %{count} district. You have already supported investments in %{supported_headings}."
+        other: "You can only support investment projects in %{count} districts. You have already supported investments in %{supported_headings}."
   welcome:
     feed:
       most_active:
@@ -734,6 +869,10 @@ nl:
         debates: Alle debatten
         proposals: Alle voorstellen
         processes: Alle plannen
+      no_items:
+        debates: There are no debates right now
+        proposals: There are no proposals right now
+        processes: There are no open processes right now
       process_label: Proces
       see_process: Zie proces
     cards:
@@ -768,6 +907,7 @@ nl:
     help: "Je kunt links toevoegen van %{models} in %{org}."
     submit: "Voeg toe"
     error: "Link niet geldig. Begin met %{url}."
+    error_duplicate: "The related content you are adding already exists."
     error_itself: "De link is niet geldig. Je kunt niet relateren aan dezelfde inhoud."
     success: "Je hebt nieuwe gerelateerde inhoud toegevoegd"
     is_related: "Is het gerelateerde inhoud?"
@@ -791,8 +931,28 @@ nl:
       cancel_button: Cancel
     nested_links:
       title: Links
+      note: Add the links that are of interest
+      add_new_link: Add new link
   communities:
+    show:
+      surveys: Surveys
+      complete_survey: Complete the survey
     subnav:
       surveys: Enquetes
+    poll:
+      take_part: Take part from %{from} to %{to}
   remote_translations:
+    text: The content of this page is not available in your language
+    all_remote_translations_enqueued_text: In a short period of time refreshing the page you will be able to see all the content in your language.
+    create:
+      enqueue_remote_translation: Translations have been correctly requested.
     button: Vertaal pagina
+  tags:
+    list:
+      filter:
+        more:
+          one: "One more tag"
+          other: "%{count} more tags"
+  machine_learning:
+    comments_summary: "Comments summary"
+    info_text: "Content generated by AI / Machine Learning"
