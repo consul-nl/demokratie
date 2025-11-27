@@ -4,9 +4,14 @@ nl:
       title: Administration
     actions:
       actions: Actions
+      confirm: Sind Sie sich sicher?
+      block_author: "Block author"
+      confirm_action: "Are you sure? %{action} \"%{name}\""
+      confirm_delete: "Are you sure? This action will delete \"%{name}\" and can't be undone."
       confirm_hide: Bevestig
       delete: "Delete"
       hide: Hide
+      label: "%{action} %{name}"
       restore: Restore
       mark_featured: Featured
       unmark_featured: Unmark featured
@@ -31,12 +36,19 @@ nl:
           proposals: Voorstellen
           budgets: Burgerbegrotingen
           help_page: Help-pagina
+          sdg: SDG
+      create:
+        notice: "Banner created successfully"
+      destroy:
+        notice: "Banner deleted successfully"
       edit:
         editing: Bewerk banier
         form:
           submit_button: Bewaar wijzigingen
       new:
         creating: Maak banier
+      update:
+        notice: "Banner updated successfully"
     activity:
       show:
         action: Action
@@ -59,8 +71,17 @@ nl:
         no_activity: Er is geen moderator activiteit.
     budgets:
       actions:
+        ballots: "Create booths"
+        confirm:
+          ballots: "Are you sure? This action is only necessary if you're going to use physical booths during the final voting phase. Citizens will still be able to vote via web with or without physical booths."
+          destroy: "Are you sure? This will delete the budget and all its associated groups and headings. This action cannot be undone."
+        descriptions:
+          ballots: "This will let you manage physical ballots. Only use this option if you're going to use physical booths to collect ballots during the final voting phase."
+          calculate_winners: 'After calculating the results, only administrators will be able to access them. They will be public when the project reaches the "%{phase}" phase <strong>if the option "Show results" is enabled</strong> when editing the budget.'
+          destroy: "This will delete the budget and all its associated groups and headings. This action cannot be undone."
         edit: "Edit budget"
         preview: "Preview"
+        preview_results: "Preview results"
       index:
         title: Participatory budgets
         new_link: Create new budget
@@ -71,28 +92,75 @@ nl:
           finished: Finished
         budget_investments: Zie begrotingsvoorstellen
         table_budget_type: "Type"
+        table_completed: Completed
         table_draft: "Concept"
+        table_duration: "Duration"
         table_name: Name
         table_phase: Phase
+        table_phase_progress: "(%{current_phase_number}/%{total_phases})"
+        type_multiple: "Multiple headings"
+        type_pending: "Pending: No headings yet"
+        type_single: "Single heading"
         admin_ballots: Stembiljetten
         no_budgets: "Er zijn geen budgetten."
       create:
         notice: New participatory budget created successfully!
       update:
         notice: Participatory budget updated successfully
+      publish:
+        notice: "Participatory budget published successfully"
       edit:
         title: Edit Participatory budget
+        drafting: "This participatory budget is in draft mode, only administrators can see it in the public site. Once it's published it cannot be changed to draft mode again."
+        publish: "Publish budget"
         delete: Verwijder begroting
         phase: Phase
+        phases_caption: "Phases"
+        phases_table_help_text: "The configuration of these phases is used for information purposes only. Its function is to define the phases information displayed on the public page of the participatory budget."
+        duration: "Duration"
         enabled: Actief
         actions: Activiteiten
+        enable_phase: "Enable %{phase} phase"
         active: Actieve
         blank_dates: Datums zijn leeg
+        administrators:
+          one: "1 administrator selected"
+          other: "%{count} administrators selected"
+        valuators:
+          one: "1 valuator selected"
+          other: "%{count} valuators selected"
+        empty_administrators: "There are no administrators"
+        empty_valuators: "There are no valuators"
+        name_description: "This is the name of the participatory budget used on the header and cards whenever it is active"
+        image_description: "If an image is uploaded it will be used as the banner on top of this participatory budget, otherwise the default color for budgets will be used."
+        main_call_to_action: "Main call to action (optional)"
+        main_call_to_action_description: "This link will appear on main banner of this participatory budget and encourages your user to perform a specific action like creating a proposal, voting for existing ones, or learn more about the process."
+        info:
+          budget_settings: "General participatory budget settings"
+          staff_settings: "Administrators and Valuators assigned to the budget"
+        hide_money: "Hide money"
+        hide_money_help_text: "If this option is checked, all fields showing the amount of money will be hidden throughout the process."
       destroy:
         success_notice: Begroting verwijderd
         unable_notice: U kunt een begroting met voorstellen niet verwijderen
+        unable_notice_polls: You cannot delete a budget that has an associated poll
+      new:
+        title_multiple: New multiple headings budget
+        title_single: New single heading budget
+      help:
+        budgets: "Participatory budgets allow citizens to propose and decide directly how to spend part of the budget, with monitoring and rigorous evaluation of proposals by the institution."
+        groups:
+          multiple: "Groups are meant to organize headings. After a group is created and it contains headings, it's possible to determine in how many headings a user can vote per group."
+          single: "Groups are meant to organize headings, since this budget will only contain one heading, the same name can be used because it will not appear anywhere. You can just continue with the next step."
+        headings:
+          multiple: "Headings are meant to divide the money of the participatory budget. Here you can add headings for this group and assign the amount of money that will be used for each heading."
+          single: "Headings are meant to divide the money of the participatory budget. Since this budget will only contain one heading, this is the place where you stablish the money that will be spent in this participaroty budget."
+        phases: "Participatory budgets have different phases. Here you can enable or disable phases and also customize each individual phase. The configuration of these phases is used for information purposes only and will be displayed on the public page of the participatory budget."
       show:
+        add_group: "Add group"
         add_heading: "Voeg kop toe"
+        groups_and_headings: "Heading groups"
+        headings_caption: "Headings in %{group}"
       winners:
         calculate: Bereken gewonnen bestemmingen
         calculated: Bestemmingen worden berekend, kan even duren.
@@ -115,10 +183,12 @@ nl:
       form:
         create: "Nieuwe groep"
         edit: "Bewerk groep"
+        max_votable_headings_info: "Only applies to the selecting projects phase. During the voting projects phase users can only vote in one heading per group."
         submit: "Sla op"
       index:
         new_button: "Nieuwe groep toevoegen"
     budget_headings:
+      no_headings: "There are no headings in the <strong>%{group}</strong> group."
       create:
         notice: "Rubriek aangemaakt"
       update:
@@ -127,20 +197,36 @@ nl:
         success_notice: "Rubriek verwijderd"
         unable_notice: "Een rubriek met investeringen kan niet worden verwijderd"
       form:
+        max_ballot_lines_info: 'Maximum number of projects a user can vote on this heading during the "Voting projects" phase. Only for budgets using approval voting.'
         population_info: "Het veld rubriek wordt gebruikt voor statistische doeleinden. Na afloop van de begroting kan voor elke rubriek en per gebied worden weergegeven door welk percentage is gestemd. Het veld is optioneel, dus u kunt het leeg laten als het niet van toepassing is."
         coordinates_info: "Als lengte- en breedtegraad zijn ingevuld, zal voor deze rubriek een kaart worden getoond. Deze kaart wordt gecentreerd met behulp van de opgegeven coördinaten."
         content_blocks_info: "Als inhoudsblokken zijn toegestaan kan aangepaste inhoud gerelateerd aan deze rubriek worden geplaatst via de sectie Instellingen > aangepaste inhoud. De aangepaste inhoud wordt weergegeven op de pagina voor de rubriek."
         create: "Nieuwe rubriek aanmaken"
         edit: "Rubriek bewerken"
         submit: "Bewaar kop"
+      group_switcher:
+        currently_showing: "Showing headings from the <strong>%{group}</strong> group."
+        different_group: "Manage headings from a different group"
+        the_other_group: "Manage headings from the %{group} group."
       index:
         back: "Terug naar groepen"
+        new_button: "Add new heading"
+        title: "%{budget} / %{group} headings"
     budget_phases:
       edit:
         title: "Bewerk fase"
+        dates_help_text: "For information purposes only"
         description_help_text: Deze tekst verschijnt in de kop wanneer de fase actief is
+        duration: "Phase's duration"
+        duration_description: "These fields are used for information purposes only and <strong>do not trigger an automatic update of the active phase.</strong> In order to update it, edit the budget and select the active phase."
         enabled_help_text: Deze fase is openbaar in de tijdlijn van de budgetfasen, maar ook actief voor andere doeleinden
+        image_description: "If an image is uploaded it will be displayed next to the description of this phase."
+        main_call_to_action: "Main call to action (optional)"
+        main_call_to_action_description: "This link will appear on main banner of this participatory budget when this phase is enabled and encourages your user to perform a specific action like creating a proposal, voting for existing ones, or learn more about the process."
+        name_help_text: "This is the title of the phase users will read on the header whenever this phase is active."
         save_changes: Bewaar wijzigingen
+      index:
+        title: "%{budget} phases"
     budget_investments:
       index:
         heading_filter_all: Alle koppen
@@ -169,6 +255,7 @@ nl:
         download_current_selection: "Download huidige selectie"
         no_budget_investments: "Er zijn geen investeringsprojecten."
         title: Investment projects
+        columns: Columns
         assigned_admin: Assigned administrator
         no_admin_assigned: No admin assigned
         no_valuators_assigned: No valuators assigned
@@ -181,7 +268,9 @@ nl:
         list:
           id: ID
           title: Title
+          created_at: Created at
           supports: Steunt
+          total_votes: Supports
           admin: Beheerder
           valuator: beoordelaar
           valuation_group: Beoordelingsgroep
@@ -194,7 +283,13 @@ nl:
           incompatible: Onverenigbaar
           price: Bedrag
           author: Author
+          balloters: Balloters
+          total_ballot_votes: Balloters votes
+          winner: Winner
+          pdf_link: PDF
+        cannot_calculate_winners: The budget has to stay on phase "%{phase}" in order to calculate winners projects
         see_results: "Bekijk resultaten"
+        milestone_tags_filter_all: "All milestone tags"
       show:
         assigned_admin: Toegewezen beheerder
         assigned_valuators: Assigned valuators
@@ -221,6 +316,7 @@ nl:
           "true": "Ja"
           "false": "Nee"
         valuator_groups: "Beoordelingsgroepen"
+        preview: Investment preview
       edit:
         classification: Clasificatie
         compatibility: Compatibiliteit
@@ -237,6 +333,32 @@ nl:
         budget: Budget
         groups: Groepen
         headings: Rubrieken
+        phases: Phases
+      budgets:
+        continue: "Continue to groups"
+      groups:
+        back: "Go back to edit budget"
+        continue: "Continue to headings"
+      headings:
+        continue: "Continue to phases"
+        single:
+          back: "Go back to edit group"
+      heading_mode:
+        multiple:
+          description: "Create a process with multiple groups, districts or topics. You have something like several bags of money. For example, 25,000€ for \"North District\", 30,000€ for \"Center District\", 28,000€ for \"South District\" and the whole city. Or for several themes like sport, culture or health."
+          link: "Create multiple headings budget"
+          title: "<strong>Multiple headings</strong> budget"
+        single:
+          description: "Create a process with a group, district or topic. You have something like a bag of money. For example, 25,000€ for the district, or 10,000€ for culture."
+          link: "Create single heading budget"
+          title: "<strong>Single heading</strong> budget"
+        title: "Participatory budget type"
+      phases:
+        continue: "Finish"
+        multiple:
+          back: "Go back to headings"
+        single:
+          back: "Go back to edit heading"
     milestones:
       index:
         table_id: "ID"
@@ -251,6 +373,7 @@ nl:
         documents: "Documenten"
         milestone: Mijlpaal
         new_milestone: Nieuwe mijlpaal
+        milestone_tags: Milestone Tags
       form:
         admin_statuses: Beheerderstatussen
         no_statuses_defined: Er zijn nog geen gedefinieerde investeringsstatussen
@@ -312,6 +435,7 @@ nl:
         author: "Author"
         commentable_type: "Type"
         title: Comments
+        no_comments: There are no comments.
         table_link: "Link"
     hidden_comments:
       index:
@@ -323,6 +447,7 @@ nl:
         hidden_debate: Verborgen debat
         hidden_proposal: Verborgen voorstel
         title: Verborgen commentaar
+        no_hidden_comments: There are no hidden comments.
     dashboard:
       index:
         back: Terug naar %{org}
@@ -330,30 +455,63 @@ nl:
         description: Welkom op de %{org} beheers pagina.
       actions:
         index:
+          description: "When users create proposals they can access a dashboard of their proposal, where you can propose resources and recommendations to get support for their idea."
+          create: Create resource or action
           active: 'Ja'
           inactive: 'Nee'
+          title: Resources and actions
           action_title: Title
           action_type: Type
+          required_supports: Required supports
+          day_offset: Required days
           action_active: Actieve
           order: order
+          published_proposal: Published proposal
           default:
             email: E-mail
             polls: Polls
+            poster: Poster
+        new:
+          creating: New action for the proposals dashboard
+          back: Back to list
+        create:
+          notice: Action created successfully
+        edit:
+          editing: Edit action for the proposals dashboard
+          back: Back to list
+        delete:
+          success: Action successfully deleted
         form:
           submit_button: Save
+          help_text: Enter 0 so that this value is not taken into account
+          published_proposal_help_text: Mark this checkbox to create the action only for published proposals
       administrator_tasks:
         index:
+          description: "Resources published in the dashboard of proposals may include a button to be requested to administrators. User requests are shown below."
+          title: Resources requested
+          solve: Solve
+          no_records: There are no resources requested
           source: Bron
+          resource: Requested resource
           filter: Filter
           filters:
             pending: In afwachting
+            done: Solved
+        edit:
+          back: Back to pending tasks list
+          solving: Solve pending task
         form:
+          solve: Mark as solved
           proposal: Proposal
+          request: Requested resource
+        update:
+          success: The task has been marked as solved.
     debates:
       index:
         id: ID
         author: Author
         title: Discussie
+        no_debates: There are no debates.
     hidden_debates:
       index:
         filter: Filter
@@ -362,6 +520,7 @@ nl:
           with_confirmed_hide: Bevestigd
           without_confirmed_hide: In afwachting
         title: Verborgen debatten
+        no_hidden_debates: There are no hidden debates.
     documents:
       new:
         title: "Bestand uploaden"
@@ -483,6 +642,7 @@ nl:
           back: Terug
           submit_button: Bewaar wijzigingen
           warning: U hebt de tekst bewerkt, vergeet niet op 'Opslaan' te klikken om de wijzigingen permanent op te slaan.
+          markdown_changes_message: "You've edited the text without saving it. Do you confirm to leave the page?"
         form:
           title: 'Aanpassen van <span class="strong">%{draft_version_title}</span> van het proces <span class="strong">%{process_title}</span>'
           launch_text_editor: Open tekst editor
@@ -575,6 +735,7 @@ nl:
       hidden_users: Hidden users
       administrators: Admins
       managers: Beheerders
+      sdg_managers: SDG Managers
       moderators: Moderators
       messaging_users: Berichten naar gebruikers
       newsletters: Nieuwsbrieven
@@ -600,11 +761,13 @@ nl:
         content_blocks: Custom content blocks
         information_texts: Aangepaste informatie teksten
         information_texts_menu:
+          basic: "Basic customization"
           debates: "Discussie"
           community: "Community"
           proposals: "Voorstellen"
           polls: "Polls"
           layouts: "Lay-outs"
+          machine_learning: "AI / Machine Learning"
           mailers: "Emails"
           management: "Beheer"
           welcome: "Welkom"
@@ -619,8 +782,13 @@ nl:
       title_booths: Stemhokjes
       legislation: Plannen
       users: Deelnemer
+      dashboard: Proposals dashboard
+      administrator_tasks: Resources requested
+      dashboard_actions: Resources and actions
       debates: "Discussie"
       comments: "Comments"
+      local_census_records: Manage local census
+      machine_learning: "AI / Machine learning"
     administrators:
       index:
         title: Admins
@@ -631,6 +799,9 @@ nl:
         restricted_removal: "Sorry, u kunt uzelf niet uit de beheerders verwijderen"
       search:
         title: "Beheerders: zoek deelnemers"
+      form:
+        edit_title: "Edit administrator"
+        updated: "Administrator updated successfully"
     moderators:
       index:
         title: Moderators
@@ -642,6 +813,7 @@ nl:
     segment_recipient:
       all_users: Alle deelnemers
       administrators: Admins
+      all_proposal_authors: Proposal authors (including archived and withdrawn)
       proposal_authors: Voorstel schrijvers
       investment_authors: Voorstel schrijvers in de huidige burgerbegroting
       feasible_and_undecided_investment_authors: "Auteurs van sommige investeringen in het huidige budget die niet voldoen: [beoordeling afgerond onhaalbaar]"
@@ -666,6 +838,8 @@ nl:
         empty_newsletters: Er zijn geen nieuwsbrieven om te tonen
       new:
         title: Nieuwe nieuwsbrief
+        header_footer_help_text: "The heading and footer are the same for all emails, you can modify them on <code>app/views/layouts/mailer_header</code> and <code>app/views/layouts/mailer_footer</code>.<br>You can replace header image on %{link}."
+        image_link: "custom images"
       edit:
         title: Bewerk nieuwsbrief
       show:
@@ -759,6 +933,9 @@ nl:
       user_invite:
         title: "Uitnodiging"
         description: "Verzonden naar de persoon die is uitgenodigd om zich te registreren."
+      evaluation_comment:
+        title: "New evaluation comment"
+        description: "Sent to administrators and evaluators related to commented investment"
       edit_info: "Je kunt deze email bewerken in"
       message_title: "Berichttitel"
       message_body: "Dit is een voorbeeld van de inhoud van een bericht."
@@ -766,6 +943,7 @@ nl:
         no_investments: "Er zijn geen budget investeringen aangemaakt. Er kan geen voorbeeld email worden getoond."
         no_comments: "Er zijn nog geen reacties. Er kan geen voorbeeld email worden getoond."
         no_replies: "Er zijn nog geen antwoorden. Er kan geen voorbeeld email worden getoond."
+        no_evaluation_comments: "There aren't any evaluation comments created. Some example data is needed in order to preview the email."
     emails_download:
       index:
         title: E-mails download
@@ -783,6 +961,9 @@ nl:
         valuator_groups: "Beoordelingsgroepen"
         group: "Groep"
         no_group: "Geen groep"
+        abilities: "Abilities"
+        can_comment: "Can comment"
+        can_edit_dossier: "Can edit dossier"
       valuator:
         add: Add to valuators
       search:
@@ -794,8 +975,10 @@ nl:
         description: "Beschrijving"
         email: "E-mail"
         group: "Groep"
+        abilities: "Abilities"
         no_description: "Geen beschrijving"
         no_group: "Geen groep"
+        no_abilities: "Without abilities"
     valuator_groups:
       index:
         title: "Evaluatiegroepen"
@@ -821,6 +1004,7 @@ nl:
       search:
         email_placeholder: Search user by email
         user_not_found: Gebruiker niet gevonden
+        help: "To add or remove Poll officers use the search form below."
     poll_officer_assignments:
       index:
         officers_title: "List of officers"
@@ -926,9 +1110,14 @@ nl:
       flash:
         question_added: "Question added to this poll"
         error_on_question_added: "Question could not be assigned to this poll"
+      destroy:
+        alert: "This action will remove the poll and all its associated questions."
+        success_notice: "Poll deleted successfully"
+        unable_notice: "You cannot delete a poll that has votes"
     questions:
       index:
         title: "Vragen"
+        multiple: Multiple answers allowed
         create: "Stel een vraag"
         no_questions: "There are no questions."
         filter_poll: Filter by Poll
@@ -957,6 +1146,9 @@ nl:
         valid_answers: Valid answers
         add_answer: Voeg antwoord toe
         video_url: Externe video
+        multiple: Multiple answers allowed?
+        multiple_yes: yes
+        multiple_no: no
         answers:
           title: Antwoord
           description: Beschrijving
@@ -1093,6 +1285,10 @@ nl:
         no_proposals: Er zijn geen voorstellen.
       show:
         create_question: Voeg dit voorstel toe aan de peiling om te kunnen stemmen
+      form:
+        update: Update proposal
+      update:
+        notice: Proposal updated successfully
     hidden_proposals:
       index:
         filter: Filter
@@ -1131,17 +1327,41 @@ nl:
           form:
             submit: Update
           how_to_enable: 'Om de kaart te tonen aan gebruikers moet "Voorstellen en begroting investeringen geolocation" zijn ingeschakeld op tabblad "Voorzieningen".'
+        dashboard:
+          title: Proposals dashboard
+        remote_census:
+          title: Remote Census configuration
+          how_to_enable: 'To configure remote census (SOAP) you must enable "Configure connection to remote census (SOAP)" on "Features" tab.'
+        sdg:
+          title: SDG configuration
+          how_to_enable: 'To show the configuration options from Sustainable Development Goals you must enable "SDG" on "Features" tab.'
+      remote_census_general_name: General Information
+      remote_census_request_name: Request Data
+      remote_census_response_name: Response Data
       setting: Functie
       setting_name: Instelling
       setting_value: Waarde
       no_description: "Geen beschrijving"
     shared:
       search:
+        advanced_filters:
+          sdg_goals:
+            all: "All goals"
+            label: "By goal"
+          sdg_targets:
+            all: "All targets"
+            label: "By target"
         label:
           booths: "Search booth by name"
+          budget_investments: "Search investments by title, description or heading"
+          debates: "Search debates by title or description"
+          legislation_processes: "Search processes by title or description"
+          legislation_proposals: "Search proposals by title or description"
+          local_census_records: "Search by document number"
           organizations: "Name, email or phone number"
           poll_officers: "Search poll officers"
           poll_questions: "Search poll questions"
+          polls: "Search polls by name or description"
           proposals: "Zoek voorstellen op titel, code, omschrijving of vraag"
           users: "Search user by name or email'"
         search: "Search"
@@ -1160,6 +1380,9 @@ nl:
       created_at: Created at
       color_help: Hexadecimale notatie
       show_results_and_stats: "Toon resultaten en statistieken"
+      results_and_stats_reminder: "Marking these checkboxes the results and/or stats will be publicly available and every user will see them."
+      close_modal: Close modal
+      example_url: "For example, https://consulproject.org or /help"
     geozones:
       index:
         title: Geozone
@@ -1194,10 +1417,17 @@ nl:
         title: Niewe handtekeninglijst
         document_numbers_note: "Voeg nummers toe, gescheiden door komma's (,)"
         submit: Create signature sheet
+        text_help:
+          required_fields_note: "To verify a user, your application needs: Document number"
+          date_of_birth_note: ", Day of birth (dd/mm/yyyy)"
+          postal_code_note: " and Postal Code"
+          required_fields_structure_note: "Required fields for each user must be separated by commas and each user must be separated by semicolons."
+          example_text: "Example: "
       show:
         created_at: Aangemaakt
         author: Author
         users: Deelnemer
+        signature_count: "Number of signatures:"
         verified:
           one: "There is %{count} valid signature"
           other: "There are %{count} valid signatures"
@@ -1205,6 +1435,9 @@ nl:
           one: "There is %{count} invalid signature"
           other: "There are %{count} invalid signatures"
         unverified_error: (Not verified by Census)
+        voted:
+          one: "There is %{count} vote created from the verified signatures."
+          other: "There is %{count} votes created from verified signatures."
         loading: "There are still signatures that are being verified by the Census, please refresh the page in a few moments"
     stats:
       show:
@@ -1232,14 +1465,25 @@ nl:
         proposal_notifications: Proposal notifications
         incomplete_verifications: Incomplete verifications
         polls: Polls
+        sdg: SDG
       graph:
         debate_created: Discussie
         visit: Visits
+        level_2_user: Level 2 users
         proposal_created: Voorstellen
+      budgets:
+        no_data_before_balloting_phase: "There isn't any data to show before the balloting phase."
+        title: "Participatory Budgets - Participation stats"
+        supporting_phase: Supporting phase
+        balloting_phase: Final voting
       budget_balloting:
+        title: "Final voting stats"
         vote_count: Votes
         participant_count: deelnemers
+        votes_per_heading: Votes per heading
+        participants_per_district: Participants per district
       budget_supporting:
+        title: "Supporting phase stats"
         headings: Rubrieken
         users: Deelnemer
         vote_count: Votes
@@ -1265,19 +1509,26 @@ nl:
           origin_web: Web deelnemers
           origin_total: Aantal deelnemers
       sdg:
+        budget_investments:
+          amount: "Approved amount"
+          winners: "Winner investment projects"
+          sent: "Investment projects sent"
         debates: "Discussie"
         polls: "Polls"
         proposals: "Proposals"
+        title: "Sustainable Development Goals - Stats"
     tags:
       create: Creeer onderwerp
       index:
         add_tag: Add a new proposal topic
         title: Proposal topics
         topic: Onderwerp
+        category: Category
         help: "Wanneer een gebruiker een voorstel maakt, worden de volgende onderwerpen voorgesteld als standaard tags."
     users:
       columns:
         id: ID
+        erase_reason: Erase reason
         name: Name
         email: E-mail
         document_number: Document nummer
@@ -1289,6 +1540,7 @@ nl:
         filter: Filter
         filters:
           active: Actieve
+          erased: Erased
       search:
         placeholder: Zoek deelnemer per e-mail, naam of documentnummer
     verifications:
@@ -1321,6 +1573,7 @@ nl:
         content_block:
           body: Platte tekst
           name: Name
+          key: Key
           names:
             top_links: Top links
             footer: Voettekst
@@ -1358,6 +1611,7 @@ nl:
           see_page: See page
         new:
           title: Create new custom page
+          slug_help: "Text to identify this page on URL, for example <code>https://consulproject.org/page-slug</code>"
         page:
           created_at: Aanmaakdatum
           status: Status
@@ -1400,14 +1654,97 @@ nl:
         card_title: Kaart bewerken
         submit_card: Kaart opslaan
     audits:
+      title: "Change Log"
+      changes: "List of changes"
       id: "ID"
+      field: "Field"
+      new_value: "New Value"
+      old_value: "Old Value"
+      edited_at: "Edited at"
+      edited_by: "Edited by"
       actions: "Activiteiten"
+      empty: "There are no changes logged"
     local_census_records:
       index:
+        title: Manage local census
+        create: Create new local census record
+        no_local_census_records: There are no local census records.
         document_type: Documentsoort
         document_number: Document nummer
         date_of_birth: Date of birth
+        postal_code: Postal code
+        import: Import CSV
+      new:
+        creating: Creating new local census record
+      create:
+        notice: New local census record created successfully!
+      edit:
+        editing: Editing local census record
+      update:
+        notice: Local census record updated successfully!
+      destroy:
+        notice: Local census record removed successfully!
+      imports:
+        new:
+          title: Local census records
+          subtitle: Import CSV file
+        create:
+          notice: Local census records import process executed successfully!
+        show:
+          title: Manage local census
+          subtitle: Import process results
+          import: Import again
+          errored: Errored rows
+          created: Created records
+        local_census_records:
+          no_records_found: No records found.
     machine_learning:
+      cancel: "Cancel operation"
+      cancel_alert: "This action will cancel the current script and it will be necessary to run the script again."
+      comments_summary: "Comments summary"
+      comments_summary_description: "Displays an automatically generated comment summary on all items that can be commented on."
+      data_folder_content: "Data folder content"
+      error: "Error:"
+      execute_script: "Execute script"
+      executed_by: "Executed by:"
+      executed_script: "Executed script:"
+      feature_disabled: "This feature is disabled. To use Machine Learning you can enable it from the %{link}."
+      feature_disabled_link: "settings page"
+      help:
+        title_1: "What is AI / Machine Learning?"
+        description_1: "Traditionally, computer programs are designed by establishing precise rules about what the program should do in each situation, and how to process the available information at each moment. What is commonly known as AI/Machine Learning is a type of programs for which what is precisely established is what the task to be performed is and how it is assessed whether the task is better or worse performed. But unlike the former, the system discovers or learns what would be the most suitable method to perform the task."
+        title_2: "What does the AI / Machine Learning module in CONSUL?"
+        description_2: "This module allows any type of AI/Machine Learning programs to be implemented in CONSUL. The programs can process the information available in CONSUL and produce results that help both users and administrators to carry out more effective and intelligent citizen participation. The module has been developed to make it easy to implement and run new programs, keeping the general code of CONSUL and the code of these new programs independent from each other."
+        title_3: "How to use this module"
+        description_3: "To use it for the first time it is necessary to follow the instructions available in the CONSUL documentation to properly activate this module. Once the module is correctly activated, the programs are executed from the \"Execute scripts\" tab. Before executing it, we can see in the same tab an estimation of the execution time and other relevant information. At the end of the execution, we can activate the content that will be shown in CONSUL from the \"Settings\" tab, as well as download other generated files that may be useful to us."
+        title_4: "How to implement new AI / Machine Learning scripts"
+        description_4: "Please use previous scripts as examples."
+        description_4b: "The new scripts should be located in the folder <code>public/machine_learning/scripts</code>"
+        description_4c: "The input data to be used by the script will be created as JSON files in the folder <code>../data</code>"
+        description_4d: "Any generated output should be placed in the folder <code>../data</code>"
+        description_4e: "It is recommended to create an independent <code>.ini</code> text file with the settings of the script, with the same name of the script and readable by configparser. This file will facilitate settings change by the administrators."
+        description_4f: "It is recommended to include as the first line of the script an initial triple-quote string with some brief information about it and links to any relevant information. This string will be automatically shown in the Administration interface."
+        description_4g: "It is recommended to log the relevant information of the script in a <code>.log</code> text file, with the same name of the script."
+        title_5: "To use AI / Machine Learning scripts you need to have Python installed on your server"
+        description_5: "Here you can see the example instructions for an Ubuntu 18.04 server:"
+      help_text: "This functionality is experimental."
+      last_execution: "Last execution"
+      no_content: "No content generated yet."
+      notice:
+        success: "The last script has been executed successfully."
+        error: "An error has occurred. You can see the details below."
+        working: "The script is running. The administrator who executed it will receive an email when it is finished."
+        delete_generated_content: "Generated content has been successfully deleted."
+      output_files: "Output files:"
       related_content: "Gerelateerde inhoud"
+      related_content_description: "Adds automatically generated related content to proposals and participatory budget projects."
+      script_info: "You will receive an email in %{email} when the script finishes running."
+      script_name: "Script name:"
+      select_script: "Select python script to execute"
+      started_at: "Started at:"
       tab_help: "Help"
+      tab_scripts: "Execute script"
+      tab_settings: "Settings / Generated content"
       tags: "Tags"
+      tags_description: "Generates automatic tags on all items that can be tagged on."
+      title: "AI / Machine learning"
