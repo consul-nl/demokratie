@@ -1,7 +1,24 @@
-fy-NL:
+fy:
   documents:
-    title: "Dokuminten"
+    title: Dokuminten
+    max_documents_allowed_reached: You have reached the maximum number of documents allowed! <strong>You have to delete one before you can upload another.</strong>
+    additional: Additional documentation
     form:
-      title: "Dokuminten"
+      title: Dokuminten
+      title_placeholder: Add a descriptive title for the document
+      delete_button: Remove document
+      cancel_button: Cancel
       note: "Jo kinne maksimaal (%{max_documents_allowed} %{accepted_content_types}) dokuminten tafoegje mei in maksimale grutte fan elk %{max_file_size} MB."
-      add_new_document: "Dokumint tafoegje"
+      add_new_document: Dokumint tafoegje
+    actions:
+      destroy:
+        notice: Document was deleted successfully.
+        alert: Cannot delete document.
+        confirm: Are you sure you want to delete the document? This action cannot be undone!
+    buttons:
+      download_document: Download file
+      destroy_document: Delete document
+    errors:
+      messages:
+        in_between: must be in between %{min} and %{max}
+        wrong_content_type: content type %{content_type} does not match any of accepted content types %{accepted_content_types}
