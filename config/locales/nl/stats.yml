@@ -1,30 +1,45 @@
 nl:
   stats:
     title: "Data over deelname"
+    hint: The statistics will be recreated after the participation has expired. Therefore, there may be shifts in individual cases. #custom
     advanced: "Geavanceerde statistieken"
     total_participants: "deelnemers"
     by_gender: "Deelnemers per geslacht"
     by_age: "Deelnemers bij leeftijd"
+    by_individual_group: "Individual group" #custom
     by_geozone: "Deelnemers per regio"
     men_percentage: "%{percentage} Man"
     women_percentage: "%{percentage} Vrouw"
+    other_gen_percentage: "%{percentage} Other" #custom
     age: "Leeftijd"
     age_more_than: "%{start} jaar oud of ouder"
     age_range: "%{start} - %{finish} jaar oud"
     total: "Totaal"
     geozone: "Regio's"
+    individual_group_value_count: Total #custom
+    no_demographic_data:
+      one: "* There is no demographic data for 1 participant."
+      other: "* There is no demographic data for %{count} participants."
     budgets:
       link: "Statistieken"
       page_title: "%{budget} - deelname statistieken"
+      total_investments_title: "Investments"
       total_investments: "Totaal investeringsprojecten"
       total_selected_investments: "Projecten in laatste stemronde"
+      total_feasible_investments: "Feasible investments"
       total_unfeasible_investments: "Onhaalbare voorstellen"
       by_phase: "Deelnemers per fase"
       by_heading: "Deelnemers per fase en rubriek"
       total: "Totaal"
       heading: "Partida"
       investments_sent: "Verzonden investeringsvoorstellen"
+      participants_support_phase: "Participants support phase"
+      participants_vote_phase: "Participants voting phase"
       participants_every_phase: "Aantal deelnemers"
+      percent_total_participants: "% Total participants"
+      percent_heading_census: "% Heading census"
+      participatory_disclaimer: "** The numbers of total participants refer to persons that created, supported or voted investment proposals."
+      heading_disclaimer: "*** Data about headings refer to the heading where each user voted, not necessarily the one that person is registered on."
     polls:
       by_channel: "Deelnemers per kanaal"
       vote_by_channel: "Stem type per kanaal"
