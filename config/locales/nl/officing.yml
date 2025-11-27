@@ -81,6 +81,7 @@ nl:
         not_to_vote: De persoon heeft besloten niet te stemmen op dit moment
       show:
         can_vote: Can vote
+        cannot_vote: The person cannot vote because they are not registered in the district(s) where the voting takes place.
         error_already_voted: Has already participated in this poll
         submit: Confirm vote
         success: "Vote introduced!"
