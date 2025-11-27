@@ -60,22 +60,43 @@ nl:
     meta_keywords_description: 'Sleutelwoorden <meta name = "keywords">, gebruikt om SEO te verbeteren'
     min_age_to_participate: Minimum age needed to participate
     min_age_to_participate_description: "Gebruikers van deze leeftijd kunnen deelnemen aan alle processen"
+    postal_codes: "Postal Codes"
+    postal_codes_description: "A comma-separated list of valid postal codes; you can also introduce ranges separated with a colon. Example: 00001:00010,00024,AB3 45FG,00031:00035 will allow postal codes between 00001 and 00010, the postal code 00024, the postal code AB3 45FG, and postal codes between 00031 and 00035. If you leave it blank, all postal codes will be valid."
     proposals:
+      successful_proposal_id: Successful proposal
+      successful_proposal_id_description: This proposal is used as a reference for a successful proposal in supports number and will be displayed in the dashboard graph.
       poll_short_title: Polls
+      poll_short_title_description: Short description of the survey feature. Allows users to create surveys on a proposal
       poll_description: Omschrijving van de peiling
+      poll_description_description: Detailed description of the survey feature
+      poll_link: Additional information link
+      poll_link_description: Adds an additional information link to survey feature
       email_short_title: E-mail
+      email_short_title_description: 'Short description of the email feature. Allows users to send an email to promote their proposal. You can find all the content of this email in "/app/views/dashboard/mailer/forward.html.erb"'
+      email_description: Email description
+      email_description_description: Detailed description of the email feature
+      poster_short_title: Poster
+      poster_short_title_description: 'Short description of the poster feature. Allows users to download a poster on PDF format to promote their proposal. You can find all the content of this poster in "/app/views/dashboard/poster/index.pdf.erb"'
+      poster_description: Poster description
+      poster_description_description: Detailed description of the poster feature
     analytics_url: "Analytics-URL"
     proposal_notification_minimum_interval_in_days: "Het minimum aantal dagen dat dient te worden gewacht voordat notificaties van voorstellen kunnen worden verstuurd"
     proposal_notification_minimum_interval_in_days_description: "Het minimum aantal dagen dat dient te worden gewacht voordat notificaties van voorstellen kunnen worden verstuurd"
     direct_message_max_per_day: "Maximaal aantal privé berichten per dag"
     direct_message_max_per_day_description: "Maximum aantal privé berichten dat gebruikers per dag mogen versturen"
     feature:
+      enable_categories: "Categories"
+      enable_categories_description: "Enable categories for proposals, debates and polls"
+      enable_custom_tags: "Custom tags"
+      enable_custom_tags_description: "Enable custom tags for proposals, debates and polls"
       twitter_login: "Twitter login"
       twitter_login_description: "Sta gebruikers to om aan te melden met hun Twitter account"
       facebook_login: "Facebook login"
       facebook_login_description: "Sta gebruikers to om aan te melden met hun Facebook account"
       google_login: "Google login"
       google_login_description: "Sta gebruikers to om aan te melden met hun Google account"
+      wordpress_login: "Wordpress login"
+      wordpress_login_description: "Allow users to sign up with their Wordpress Account"
       featured_proposals: "Uitgelichte voorstellen"
       featured_proposals_description: "Toon de uitgelichte voorstellen op de voorstellen-pagina"
       signature_sheets: "Handtekeninglijsten"
@@ -91,6 +112,8 @@ nl:
         recommendations_on_proposals_description: "Toont aanbevelingen aan gebruikers op de pagina van de debatten op basis van de codes van de items die zijn gevolgd"
       community: "Community van voorstellen en investeringen"
       community_description: "De sectie van de gemeenschap in de voorstellen en de investeringsprojecten die de participatieve budgetten in staat stelt"
+      machine_learning: "AI / Machine learning"
+      machine_learning_description: "Enable the AI / Machine Learning section to run python scripts and enrich content automatically."
       map: "Voorstellen en inversteringen geolocatie"
       map_description: "Maakt geolocatie van voorstellen en investeringsprojecten mogelijk"
       allow_images: "Sta uploads en tonen van afbeeldingen toe"
@@ -103,6 +126,54 @@ nl:
       public_stats_description: "De openbare statistieken weergeven in het beheerderspaneel"
       help_page: "Help-pagina"
       help_page_description: 'Toont informatie over alle beschikbare functionaliteit'
+      remote_translations: "Remote translation"
+      remote_translations_description: "Displays a button that allows users to request a translation when there are not contents in their language."
+      translation_interface: "Translation interface"
+      translation_interface_description: "Displays the manual translation interface that allows users to enter their content in all application available languages. This option only affects user application forms and independently will always be active in the administration panel."
+      remote_census: "Configure connection to remote census (SOAP)"
+      remote_census_description: "Allows to configure the connection to the remote census of each institution"
+      valuation_comment_notification: "Valuation comment notification"
+      valuation_comment_notification_description: "Send an email to all associated users except valuation commenter to budget investment when a new valuation comment is created"
+      graphql_api: "GraphQL API"
+      dashboard:
+        notification_emails: "Dashboard notification emails"
+        notification_emails_description: "Enable sending dashboard notification emails to proposal's authors"
+      remove_investments_supports: "Allow removing supports on budget investments"
+      remove_investments_supports_description: "Allow users to remove supports on participatory budgets investments during the selecting projects phase."
+      sdg: SDG
+      sdg_description: Enable Sustainable Development Goals sections in the administration menu and in the Global Settings.
+    remote_census:
+      general:
+        endpoint: "Endpoint"
+        endpoint_description: "Host name where the census service is available (wsdl)"
+      request:
+        method_name: "Request method name"
+        method_name_description: "Request method name accepted by the City Census WebService."
+        structure: "Request Structure"
+        structure_description: 'Structure of the Request to send to the Census WebService of the City council. The "static" values of this request should be filled. Values related to Document Type, Document Number, Date of Birth and Postal Code should be null. Example of a valid format: { "request": { "codigo_institucion": 1, "codigo_portal": 1, "codigo_usuario": 1, "documento": null, "tipo_documento": null, "codigo_idioma": 102, "nivel": 3 } }'
+        document_type: "Path for Document Type"
+        document_type_description: "Path in the request structure that sends the Document Type. DO NOT FILL IN if the WebService does not require the Document Type to verify a user."
+        document_number: "Path for Document Number"
+        document_number_description: "Path in the request structure that sends the Document Number. DO NOT FILL IN if the WebService does not require the Document Number to verify a user."
+        date_of_birth: "Path for Date of Birth"
+        date_of_birth_description: "Path in the request structure that sends the Date of Birth. DO NOT FILL IN if the WebService does not require the Date of Birth to verify a user."
+        postal_code: "Path for Postal Code"
+        postal_code_description: "Path in the request structure that sends the Postal Code. DO NOT FILL IN if the WebService does not require the Postal Code to verify a user."
+      response:
+        date_of_birth: "Path for Date of Birth"
+        date_of_birth_description: "In what path of the response is the user's Date of Birth?"
+        postal_code: "Path for Postal Code"
+        postal_code_description: "In what path of the response is the user's Postal Code?"
+        district: "Path for District"
+        district_description: "In what path of the response is the user's District?"
+        gender: "Path for Gender"
+        gender_description: "In what path of response is the user's Gender?"
+        name: "Path for Name"
+        name_description: "In what path of the response is the user's Name?"
+        surname: "Path for the Last Name"
+        surname_description: "In what path of the response is the user's Last Name?"
+        valid: "Condition for detecting a valid response"
+        valid_description: "What response path has to come informed to be considered a valid response and user verified"
     map:
       latitude: "Breedte"
       latitude_description: "Breedtegraad om de kaartpositie te tonen"
@@ -127,8 +198,36 @@ nl:
       per_page_code_body: "Code die ingevoegd wordt op elke pagina(<body>)"
       per_page_code_body_description: "Deze code verschijnt in het <body> -label. Dit kan handig zijn voor het invoeren van aangepaste scripts en analyses."
     uploads:
+      images:
+        min_width: "Image minimum width"
+        min_width_description: "Minimum width allowed for an uploaded image (in pixels)"
+        min_height: "Image minimum height"
+        min_height_description: "Minimum height allowed for an uploaded image (in pixels)"
+        max_size: "Image maximum size"
+        max_size_description: "Maximum size allowed for an uploaded image (in Megabytes/MB)"
+        content_types: "Accepted content types for images"
+        content_types_description: "Select all the content types allowed for uploaded images"
+        title:
+          min_length: "Image title minimum length"
+          min_length_description: "Title provided by the user when uploading an image (used as alt HTML attribute)"
+          max_length: "Image title maximum length"
+          max_length_description: "Title provided by the user when uploading an image (used as alt HTML attribute)"
       documents:
         max_amount: "Maximum aantal bestanden"
         max_amount_description: "Maximum aantal bestanden die kunnen worden toegevoegd aan een voorstel, idee..."
         max_size: "Maximumgrootte bestand"
         max_size_description: "Toegestane maximumgrootte voor een geüpload bestand (in Megabytes/MB)"
+        content_types: "Accepted content types for documents"
+        content_types_description: "Select all the content types allowed for uploaded documents"
+    sdg:
+      process:
+        debates: Related SDG in debates
+        debates_description: Allow debates to be linked to Sustainable Development Goals
+        proposals: Related SDG in proposals
+        proposals_description: Allow proposals to be linked to Sustainable Development Goals
+        polls: Related SDG in polls
+        polls_description: Allow polls to be linked to Sustainable Development Goals
+        budgets: Related SDG in partipatory budgets
+        budgets_description: Allow participatory budgets to be linked to Sustainable Development Goals
+        legislation: Related SDG in collaborative legislation
+        legislation_description: Allow collaborative legislation to be linked to Sustainable Development Goals
