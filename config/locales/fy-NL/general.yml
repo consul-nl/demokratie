@@ -1,479 +1,591 @@
-fy-NL:
+fy:
   account:
     show:
-      change_credentials_link: "Ynlochgegevens oanpasse"
-      save_changes_submit: "Opslaan"
-      erase_account_link: "Wiskje myn akkount"
-      title: "Myn profyl"
-      user_permission_title: "Partisipaasje"
-      user_permission_info: "Mei dit profyl kinne jo..."
-      user_permission_debates: "Sels in diskusje begjinne"
-      user_permission_votes: "Stimme op ideeën"
-      user_permission_proposal: "In idee oanmeitsje"
-      user_permission_support_proposal: "Meidwaan oan in diskusje"
-      email_on_comment_label: "Stjoer my in e-mail as immen op myn foarstel of diskusje reagearret"
-      email_on_comment_reply_label: "Stjoer my in e-mail as immen op myn foarstel reagearret"
-      email_digest_label: "Stjoer my in gearfetting fan meldingen oangeande foarstellen"
-      email_on_direct_message_label: "Stjoer my in mail as ik in priveeberjocht krij"
-      subscription_to_website_newsletter_label: "Stjoer my in e-mail mei relevante ynformaasje oer de webside"
-      personal: "Persoanlike gegevens"
-  welcome:
-    steps:
-      title: "Doch mei yn trije stappen"
-      step_1:
-        title: "Meitsje in akkount"
-        description: "Meitsje in akkount oan. Brûk in brûkersnamme, of jo mailadres om yn te loggen."
-        link: "Meld jo binnen trije minuten oan"
-      step_2:
-        title: "Doch mei"
-        description: "Kom mei ideeën, stim of gean yn diskusje."
-        link: "Besjoch wat der op Stim fan Fryslân bart"
-      step_3:
-        title: "Diel"
-        description: "Bliuw belutsen by saken dy’t jo wichtich fine en diel se mooglik fia de social media."
-    feed:
-      most_active:
-        debates: "Aktuele diskusjes"
-        processes: "Plannen"
-        budgets: "Ideeën"
-      see_all:
-        debates: "Alle diskusjes"
-        proposals: "Alle inisjativen"
-        processes: "Alle plannen"
-      process_label: "Proses"
-      see_process: "Sjoch proses"
-      see_budget: "Besjoch ideeën"
-      description:
-        budgets: "Ynwenners fan Fryslân kinne hjir komme mei ideeën oer in ûnderwerp dat op it stuit aktueel is. Troch te stimmen op de bêste helbere ideeën, kieze Friezen sa sels hokker ideeën mei finansjele stipe fan provinsje troch de yntsjinners útfierd wurde kinne."
-      no_items:
-        debates: "Op it stuit binne der noch gjin diskusjes"
-    cards:
-      title: "Oare mooglikheden om mei te dwaan"
-    recommended:
-      title: "Oanbefellings dy’t jo mooglik ynteressant fine."
-      help: "Dizze oanbefellings wurde generearre troch de koades fan de debatten en útstellen dy’t jo folgje."
-      debates:
-        title: "Oanrekommandeare debatten"
-        btn_text_link: "Alle oanrekommandeare debatten"
-      proposals:
-        title: "Oanrekommandeare útstellen"
-        btn_text_link: "Alle oanrekommandeare útstellen"
-      budget_investments:
-        title: ""
-      slide: "Sjoch"
-    verification:
-      i_dont_have_an_account: "Ik ha noch gjin account"
-      i_have_an_account: "Ik haw al in account"
-      question: "Hawwe jo al in account by"
-      title: "Account ferifikaasje"
-    welcome:
-      go_to_index: "Gean nei útstellen en debatten"
-      start_using_consul: "Gean nei yndeks side"
-      title: "Meidwaan"
-      user_permission_debates: "Doch mei oan diskusjes"
-      user_permission_info: "Mei jo account kinne jo..."
-      user_permission_proposal: "Nije útstellen meitsje"
-      user_permission_support_proposal: "Utstel stypje"
-      user_permission_verify: "Ferifiearjen"
-      user_permission_verify_info: "Allinne foar lokale dielnimmers"
-      user_permission_verify_my_account: "Ferifiearje myn account"
-      user_permission_votes: "Meidwaan oan de lêste peilrûne"
-  layouts:
-    application:
-      ie: "Do brûkst Internet Explorer. W riede %{firefox} of %{chrome} oan foar de bêste resultaten."
-      ie_title: "Dizze site is net optimalisearre foar jo browser."
-    footer:
-      contact_us: "Foar tech support klik"
-      description: "Dizze site brûkt %{consul}; in %{open_source} tapassing."
-      participation_text: "Beslis mei oer de ynrjochting fan dyn provinsje."
-      participation_title: "Partisipaasje"
-      privacy: "Privacyferklearring"
-      contact_title: "Nim kontakt mei ús op"
-      accessibility: "Tagonklikheid"
-      conditions: "Spulregels"
-    header:
-      administration_menu: "Menu"
-      available_locales: "Beskikbere talen"
-      debates: "Diskusjes"
-      locale: Taal
-      help: "Help"
-      collaborative_legislation: "Ynspraak"
-      my_account_link: "Myn profyl"
-      my_activity_link: "Myn bydragen"
-      proposals: "Inisjativen"
-      notification_item:
-        new_notifications:
-          zero: "Jo hawwe gjin nije meldingen"
-          one: "Jo hawwe in nije melding"
-          other: "Jo hawwe %{count} nije meldingen"
-        notifications: "Notifikaasjes"
-    admin:
-      watch_form_message: "Jo hawwe net opsleine wizigingen. Ferlitte jo de side?"
-      dashboard:
-        proposal_header:
-          published: "Publisearre"
-          draft: "Konsept"
-          retired: "Werom lutsen"
-        proposal_totals:
-          active_resources: "Aktive promoasje middels"
-          community: "Dielnimmers yn mienskip"
-          preview_proposal: "Foarfertoaning"
-          show_proposal: "Besjoch inisjatyf"
-          current_goal: "Hjoeddeiske doel"
-          supports:
-            zero: "Gjin stipe"
-            one: "1 stipebetsjûging"
-            other: "%{count} stipebetsjûgingen"
-  notifications:
-    index:
-      empty_notifications: "Jo hawwe gjin nije meldingen."
-      mark_all_as_read: "Alles as lêzen markearje"
-      read: "Lêze"
-      title: "Notifikaasjes"
-      unread: "Net Lêze"
-    notification:
-      action:
-        comments_on:
-          one: "Immen hat op jo reaksje reagearre"
-          other: "Der binne %{count} nije reaksjes op"
-        proposal_notification:
-          one: "Nije melding oer"
-          other: "Der binne %{count} nije meldingen oer"
-        replies_to:
-          one: "Immen hat op jo reaksje reagearre"
-          other: "Der binne %{count} nije reaksjes op jo reaksje"
-      mark_as_read: "As lêzen markearje"
-      mark_as_unread: "As net lêzen markearje"
-      notifiable_hidden: "Net beskikber mear  comments:"
-  comments_helper:
-    comments_title: "Reaksjes"
-  users:
-    login_to_comment: "Jo moatte %{signin} of %{signup} om reagearje te kinnen."
-    login_to_continue: "Jo moatte %{signin} of %{signup} om fierder te gean."
-    signin: "ynlogge"
-    signup: "in akkount oameitsje"
+      change_credentials_link: Ynlochgegevens oanpasse
+      erase_account_link: Wiskje myn akkount
+      finish_verification: Complete verification
+      notifications: Notifications
+      personal: Persoanlike gegevens
+      public_interests_my_title_list: Tags of elements you follow
+      public_interests_user_title_list: Tags of elements this user follows
+      save_changes_submit: Opslaan
+      recommendations: Recommendations
+      title: Myn profyl
+      user_permission_info: Mei dit profyl kinne jo...
+      user_permission_title: Partisipaasje
+      user_permission_verify: To perform all the actions verify your account.
+      verified_account: Account verified
+      verify_my_account: Verify my account
+  application:
+    close: Close
+    menu: Menu
+  comments:
+    actions:
+      confirm_delete: "Binne jo der wis fan? Hjirmei wiskje jo jo reaksje. Dat kin net ûngedien makke wurde."
+      delete: "Wiskje reaksje"
+    comments_closed: Reaksjes binne net langer mooglik
+    verified_only: '%{verify_account} om fierder te gean'
+    comment:
+      admin: Beheerder
+      author: Auteur
+      deleted: Dizze reaksje is wiske
+      moderator: Moderator
+      projekt_manager: Projektmanager*in
+      responses:
+        one: 1 reaksje
+        other: "%{count} reaksjes"
+      responses_show:
+        one: "1 reaksje (toane)"
+        other: "%{count} reaksjes (toane)"
+      responses_collapse:
+        one: "1 reaksje (ferbergje)"
+        other: "%{count} reaksjes (ferbergje)"
+      user_deleted: Dielnimmer fuorthelle
+      votes:
+        one: 1 tomke
+        other: "%{count} tomkes"
+    form:
+      comment_as_admin: Reageer als admin
+      comment_as_moderator: Reageer als moderator
+      leave_comment: Lit in reaksje efter
+    orders:
+      most_voted: Measte stimmen
+      newest: Nijste boppe
+      oldest: Aldste boppe
+      most_commented: Measte reaksjes
     show:
-      proposals: "Inisjativen"
-      budget_investments: "Ideeën"
-      actions: "Aksjes"
-      filters:
-        comments:
-          one: "1 reaksje"
-          other: "%{count} reaksjes"
-        follows:
-          one: "1 folgjend"
-          other: "%{count} folgjend"
-        proposals:
-          one: "1 inisjatyf"
-          other: "%{count} inisjativen"
-        budget_investments:
-          one: "1 idee"
-          other: "%{count} ideeën"
-      delete_alert: "Binne jo der wis fan dat jo jo idee wiskje wolle? Dat kin net ûngedien makke wurde."
-      deleted_budget_investment: "It idee is wiske."
-    proposals:
-      draft: "Konsept"
-      published: "Publisearre"
-      retired: "Weromlutsen"
-      actions: "Aksjes"
-      retired_help_text: "Kampanjeside is net beskikber foar weromlutsen inisjativen"
-    direct_messages:
-      new:
-        signin: "Ynlogge"
-        authenticate: "Jo moatte %{signin} of %{signup} om fierder te gean."
-        submit_button: "Stjoer priveeberjocht"
-  form:
-    accept_terms: "Ik begryp dat ik in idee foar provinsje Fryslân yntsjinje."
-    accept_terms_title: "Ik gean akkoart mei it privacybelied en de spulregels."
-    conditions: "Spulregels"
-    debate: "Diskusje"
-    direct_message: "Priveeberjocht"
-    error: "Flater"
-    errors: "Flaters"
-    policy: "Privacyferklearring"
-    proposal: "Inisjatyf"
-    proposal_notification: "Melding"
-    budget/investment: "Idee"
-    budget/group: "Groep"
-    budget/heading: "Budzjet ûnderdiel"
-    poll/shift: "Tsjinst"
-    poll/question/answer: "Antwurd"
-    user: "Dielnimmer"
-    verification/sms: "Telefoan"
-    signature_sheet: "Hantekenside"
-    document: "Dokumint"
-    topic: "Underwerp"
-    image: "Ofbylding"
-    not_saved: "soargen derfoar dat jo %{resource} net pleatst wurde kin. <br>Besjoch de reade tekst om te sjen wat oanpast wurde moat."
+      return_to_commentable: "Gean werom"
+  comments_helper:
+    comment_button: Publish comment
+    comment_link: Comment
+    comments_title: Reaksjes
+    reply_button: Publish reply
+    reply_link: Reply
   debates:
     create:
       form:
-        submit_button: "Diskusje begjinne"
+        submit_button: Diskusje begjinne
     debate:
       comments:
-        zero: "Gjin reaksjes"
-        one: "1 reaksje"
+        one: 1 reaksje
         other: "%{count} reaksjes"
       votes:
-        zero: "Gjin tomkes"
-        one: "1 tomke"
+        one: 1 tomke
         other: "%{count} tomkes"
-      edit:
-        editing: "Diskusje bewurkje"
-        form:
-          submit_button: "Bewarje wizigings"
-        show_link: "Diskusje besjen"
+    edit:
+      editing: Edit debate
+      form:
+        submit_button: Save changes
+      show_link: View debate
     form:
-      debate_title: "Underwerp"
-      tags_instructions: "Foegje stekwurden ta"
+      debate_title: Underwerp
+      tags_custom: "Custom user tags"
+      tags_instructions: Foegje stekwurden ta
       tags_placeholder: "Foegje de winske termen ta, skaat troch in komma (,)"
-      tags_label: "Stekwurden"
     index:
-      featured_debates: "Utljochte"
+      featured_debates: Utljochte
       orders:
-        confidence_score: "Bêst beoardiele"
-        created_at: "Nijste"
-        hot_score: "Meast aktyf"
-        most_commented: "Measte reaksjes"
-        relevance: "Relevânsje"
-        recommendations: "Oanrekommandaasjes"
+        confidence_score: Bêst beoardiele
+        created_at: Nijste
+        hot_score: Meast aktyf
+        most_commented: Measte reaksjes
+        relevance: Relevânsje
+        recommendations: Oanrekommandaasjes
       recommendations:
-        without_results: "Der binne gjin diskusjes dy’t by jo ynteressen oanslute"
-        without_interests: ""
+        without_results: Der binne gjin diskusjes dy’t by jo ynteressen oanslute
+        without_interests: Follow proposals so we can give you recommendations
         disable: "Oanrekommandaasjes foar diskusjes wurde net mear werjûn as jo se negearje. Jo kinne se op de side \"Myn akkount\" wer ynskeakelje."
         actions:
           success: "Oanrekommandaasjes foar diskusjes binne foar jo akkount útskeakele."
           error: "Der hat him in flater foardien. Gean nei de side ‘Myn akkount’ om oanrekommandaasjes foar diskusjes út te setten."
       search_form:
-        button: "Sykje"
-        placeholder: "Sykje yn diskusjes..."
-        title: "Sykje"
-      select_order: "Sortearje op"
-      start_debate: "Diskusje begjinne"
-      title: "Diskusjes"
+        button: Sykje
+        placeholder: Sykje yn diskusjes...
+        title: Sykje
+      start_debate: Diskusje begjinne
+      title: Diskusjes
       section_header:
+        icon_alt: Diskusje piktogram
         title: "Diskusjes"
-        icon_alt: "Diskusje piktogram"
-        help: "Help by diskusjes"
-        description: "Begjin in diskusje en diel jo miening mei oaren oer ûnderwerpen dy’t jo yn ús provinsje wichtich fine."
+        help: Help by diskusjes
       section_footer:
-        title: "Help by diskusjes"
-        description: "Begjin in diskusje om jo miening mei oaren te dielen oer ûnderwerpen yn de provinsje dy't jo belangryk fine."
+        title: Help by diskusjes
+        description: Begjin in diskusje om jo miening mei oaren te dielen oer ûnderwerpen yn de provinsje dy't jo belangryk fine.
         help_text_1: "As jo de diskusje graach yn it Frysk dwaan wolle mar Frysk skriuwen dreech fine, sjoch <a href=\"http://www.frysker.nl\" target=\"_blank\">www.frysker.nl</a> foar it ienfaldich neisjen of oersetten fan in tekst."
-        help_text_2: "Om in diskusje te begjinnen of om mei te dwaan oan in diskusje moatte jo in akkount oanmeitsje op %{org}."
-        help_text_link: "Oanmelde"
-      search_results:
-        one: "mei de tekst <strong>'%{search_term}'</strong>"
-        other: "mei de tekst <strong>'%{search_term}'</strong>"
+        help_text_2: 'Om in diskusje te begjinnen of om mei te dwaan oan in diskusje moatte jo in akkount oanmeitsje op %{org}.'
     new:
       form:
-        submit_button: "Diskusje begjinne"
-      info: "Dit is net it goede plak foar foarstellen; gean dêrfoar nei %{info_link}"
-      info_link: "nij foarstel"
-      more_info: "mear ynformaasje"
-      recommendation_four: "Genietsje fan dizze romte en fan de stimmen dy’t ‘m folje."
-      recommendation_one: "Brûk gjin haadletters foar de titel, of foar hiele sinnen. Dat is lykweardich oan raze op it ynternet, en nimmen hâldt derfan dat der tsjin him raasd wurdt."
-      recommendation_three: "Foarse krityk is wolkom, dit is it plak dêrfoar. Mar wy riede jo wol oan fatsoenlik en yntelligint te hanneljen, dan bliuwt dizze romte leefber."
-      recommendation_two: "Alle diskusjes of reaksjes dêr't in yllegale aktiviteit yn oanmoedige wurdt, sille wiske wurde, en ek dejingen dy't it debat sabotearje. Fierder is alles tastien"
-      recommendations_title: "Advys by it begjinnen fan in diskusje"
-      start_new: "Diskusje begjinne"
+        submit_button: Diskusje begjinne
+      more_info: mear ynformaasje
+      recommendation_four: Genietsje fan dizze romte en fan de stimmen dy’t ‘m folje.
+      recommendation_one: Brûk gjin haadletters foar de titel, of foar hiele sinnen. Dat is lykweardich oan raze op it ynternet, en nimmen hâldt derfan dat der tsjin him raasd wurdt.
+      recommendation_three: Foarse krityk is wolkom, dit is it plak dêrfoar. Mar wy riede jo wol oan fatsoenlik en yntelligint te hanneljen, dan bliuwt dizze romte leefber.
+      recommendation_two: Alle diskusjes of reaksjes dêr't in yllegale aktiviteit yn oanmoedige wurdt, sille wiske wurde, en ek dejingen dy't it debat sabotearje. Fierder is alles tastien
+      recommendations_title: Advys by it begjinnen fan in diskusje
+      start_new: Diskusje begjinne
     show:
-      author_deleted: "Brûker fuorthelle"
+      author_deleted: Brûker fuorthelle
       comments:
-        zero: "Gjin reaksjes"
-        one: "1 reaksje"
+        one: 1 reaksje
         other: "%{count} reaksjes"
-      comments_title: "Reaksjes"
-      edit_debate_link: "Bewurkje"
-      flag: "Ferskate minsken fine de ynhâld ûnfoechsum"
-      share: "Diel"
-      author: "Auteur"
+      comments_title: Reaksjes
+      edit_debate_link: Bewurkje
+      flag: Ferskate minsken fine de ynhâld ûnfoechsum
+      share: Diel
+      author: Auteur
     update:
       form:
-        submit_button: "Bewarje wizigings"
+        submit_button: Bewarje wizigings
+  errors:
+    messages:
+      allowed_file_content_types: "content type must be one of %{types}"
+      user_not_found: User not found
+      invalid_date_range: "Invalid date range"
+  form:
+    accept_terms: Ik begryp dat ik in idee foar provinsje Fryslân yntsjinje.
+    accept_terms_title: Ik gean akkoart mei it privacybelied en de spulregels.
+    conditions: Spulregels
+    debate: Diskusje
+    direct_message: Priveeberjocht
+    error: Flater
+    errors: Flaters
+    not_saved: "soargen derfoar dat jo %{resource} net pleatst wurde kin. <br>Besjoch de reade tekst om te sjen wat oanpast wurde moat."
+    policy: Privacyferklearring
+    banner: banner
+    proposal: Inisjatyf
+    proposal_notification: "Melding"
+    budget/investment: Idee
+    budget/group: Groep
+    budget/heading: Budzjet ûnderdiel
+    geozone: geozone
+    legislation/draft_version: draft
+    legislation/process: process
+    legislation/question: question
+    poll/shift: Tsjinst
+    poll/question/answer: Antwurd
+    user: Dielnimmer
+    verification/sms: Telefoan
+    signature_sheet: Hantekenside
+    document: Dokumint
+    topic: Underwerp
+    image: Ofbylding
+    local_census_record: Local Census Record
+    local_census_records/import: Local Census Records Import
+    site_customization/content_block: content block
+    site_customization/page: page
+    sdg/local_target: local target
+  geozones:
+    none: All city
+  layouts:
+    application:
+      chrome: Google Chrome
+      firefox: Firefox
+      ie: Do brûkst Internet Explorer. W riede %{firefox} of %{chrome} oan foar de bêste resultaten.
+      ie_title: Dizze site is net optimalisearre foar jo browser.
+    dashboard:
+      proposal_header:
+        published: Published
+        draft: Draft
+        retired: Withdrawn
+      proposal_totals:
+        active_resources: Active resources
+        community: Participants in your community
+        show_proposal: Show proposal
+        preview_proposal: Preview proposal
+        current_goal: Current goal
+        supports:
+          one: 1 Support
+          other: "Supports"
+    footer:
+      accessibility: Tagonklikheid
+      conditions: Spulregels
+      consul: CONSUL application
+      consul_url: https://github.com/consul/consul
+      copyright: CONSUL, %{year}
+      description: Dizze site brûkt %{consul}; in %{open_source} tapassing.
+      open_source: open-source software
+      open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
+      participation_text: Beslis mei oer de ynrjochting fan dyn provinsje.
+      participation_title: Partisipaasje
+      privacy: Privacyferklearring
+    header:
+      administration_menu: Menu
+      administration: Administration
+      collaborative_legislation: Ynspraak
+      debates: Diskusjes
+      locale: "Taal"
+      management: Management
+      moderation: Moderation
+      valuation: Valuation
+      officing: Polling officers
+      help: Help
+      my_account_link: Myn profyl
+      my_activity_link: Myn bydragen
+      open_gov: Open government
+      proposals: Inisjativen
+      poll_questions: Voting
+      budgets: Participatory budgeting
+      notification_item:
+        new_notifications:
+          one: Jo hawwe in nije melding
+          other: Jo hawwe %{count} nije meldingen
+        notifications: Notifikaasjes
+      sdg: "SDG"
+  notifications:
+    index:
+      empty_notifications: Jo hawwe gjin nije meldingen.
+      mark_all_as_read: Alles as lêzen markearje
+      read: Lêze
+      title: Notifikaasjes
+      unread: Net Lêze
+    notification:
+      action:
+        comments_on:
+          one: Immen hat op jo reaksje reagearre
+          other: Der binne %{count} nije reaksjes op
+        proposal_notification:
+          one: Nije melding oer
+          other: Der binne %{count} nije meldingen oer
+        replies_to:
+          one: Immen hat op jo reaksje reagearre
+          other: Der binne %{count} nije reaksjes op jo reaksje
+        new_resource:
+          one: New resource added
+          other: New resource added
+      mark_as_read: As lêzen markearje
+      mark_as_unread: As net lêzen markearje
+      notifiable_hidden: 'Net beskikber mear  comments:'
+  map:
+    title: "Districts"
+    proposal_for_district: "Start a proposal for your district"
+    start_proposal: Create a proposal
+  omniauth:
+    facebook:
+      sign_in: Sign in with Facebook
+      sign_up: Sign up with Facebook
+      name: Facebook
+    finish_signup:
+      title: "Additional details"
+      username_warning: "Due to a change in the way we interact with social networks, it is possible that your username now appears as 'already in use'. If that is your case, please choose a different username."
+      submit: "Complete registration"
+    google_oauth2:
+      sign_in: Sign in with Google
+      sign_up: Sign up with Google
+      name: Google
+    wordpress_oauth2:
+      sign_in: Sign in with Wordpress
+      sign_up: Sign up with Wordpress
+      name: Wordpress
+    twitter:
+      sign_in: Sign in with Twitter
+      sign_up: Sign up with Twitter
+      name: Twitter
+    openid_connect:
+      sign_in: Sign in with Keycloak
+      sign_up: Sign up with Keycloak
+      name: Keycloak
+    info:
+      sign_in: "Sign in with:"
+      sign_up: "Sign up with:"
+    or_fill: "Or fill the following form:"
   proposals:
     create:
       form:
-        submit_button: "Idee yntsjinje"
+        submit_button: Idee yntsjinje
+    created:
+      title: Lokwinske! Do hast de earste stap set.
+      motivation: "Foardat jo jo inisjatyf op de webside publisearje, is it tûk om in lytse kampanje op te setten. Dat helpt jo om genôch stipe foar jo inisjatyf te krijen."
+      motivation_2: "<strong>Wannear ast net sa goed witst hoe’tst dy kampanje opsette moatst, kinne wy dy begeliede. Do kinst der no foar kieze om earst mei ús help in kampanje op te setten en it konsept fan dyn inisjatyf op te slaan. Do kinst dyn inisjatyf no ek daliks publisearje op de webside.</strong>"
+      publish: Ik wol myn inisjatyf daliks publisearje
+      dashboard: Ja, ik wol help en ik publisearje myn inisjatyf letter
+      preview_title: Dit is hoe’t jo inisjatyf derút sjocht as jo it no publisearje.
     share:
+      improve_it: Fier kampanje om mear stipe te krijen
+      dashboard: Nei kampanjeside
       message: "Ik haw op it inisjatyf %{title} yn %{handle} stimd. Stim ek!"
-      improve_it: "Fier kampanje om mear stipe te krijen"
-      dashboard: "Nei kampanjeside"
     edit:
-      editing: "Bewurkje"
+      editing: Bewurkje
       form:
-        submit_button: "Bewarje wizigings"
-      show_link: "Besjoch idee"
+        submit_button: Bewarje wizigings
+      show_link: Besjoch idee
     retire_form:
-      title: "Lûk inisjatyf werom"
+      title: Lûk inisjatyf werom
       warning: "As jo it inisjatyf weromlûke, kin it noch hieltyd stipe wurde. It inisjatyf ferdwynt út de list mei inisjativen en alle brûkers sille in berjocht sjen dêr’t yn stiet dat jo it inisjatyf weromlutsen hawwe."
-      retired_reason_blank: "Kies ien fan de mooglikheden"
-      retired_explanation_placeholder: "Lis koart út wêrom as jo tinke dat dit inisjatyf net mear stipe wurde moat."
-      submit_button: "Lûk inisjatyf werom"
+      retired_reason_blank: Kies ien fan de mooglikheden
+      retired_explanation_placeholder: Lis koart út wêrom as jo tinke dat dit inisjatyf net mear stipe wurde moat.
+      submit_button: Lûk inisjatyf werom
     retire_options:
-      duplicated: "Dûbele"
-      started: "Yn útfiering"
-      unfeasible: "Net te dwaan"
-      done: "Realisearre"
-      other: "Oars"
+      duplicated: Dûbele
+      started: Yn útfiering
+      unfeasible: Net te dwaan
+      done: Realisearre
+      other: Oars
     form:
       proposal_responsible_name_note: "(yndividueel of as fertsjintwurdiger fan in kollektyf; net publyk sichtber)"
       proposal_summary_note: "(maksimaal 200 tekens)"
-      proposal_video_url_note: "Jo kinne in link fan in YouTube of Vimeo fideo tafoegje"
+      proposal_video_url_note: Jo kinne in link fan in YouTube of Vimeo fideo tafoegje
       tag_category_label: "Untwerpen/labels"
       tags_instructions: "Jo kinne dit foarstel in label jaan. Jo kinne jo eigen kategory kieze, of ien fan de besteande."
-      tags_label: "Untwerpen/labels"
+      tags_label: Untwerpen/labels
       tags_placeholder: "Foegje de winske termen ta, skaat troch in komma (,)"
       map_location: "Lokaasje"
       map_location_instructions: "Klik op de kaart om de lokaasje oan te jaan. Jo kinne de kaart bewege."
       map_remove_marker: "Lokaasje wiskje"
-      map_skip_checkbox: "Lokaasje net bekend"
-      proposal_video_url: "Fideo tafoegje"
-      proposal_responsible_name: "Folsleine namme"
-      proposal_text: "Wiidweidige omskriuwing"
     index:
-      featured_proposals: "Utljochte"
+      featured_proposals: Utljochte
       orders:
-        confidence_score: "Bêst beoardiele"
-        created_at: "Nij"
-        hot_score: "Aktyf"
-        most_commented: "Measte reaksjes"
-        relevance: "Relevant"
-        archival_date: "Argivearre"
-        recommendations: "Oanrekommandearre"
+        confidence_score: Bêst beoardiele
+        created_at: Nij
+        hot_score: Aktyf
+        most_commented: Measte reaksjes
+        relevance: Relevant
+        archival_date: Argivearre
+        recommendations: Oanrekommandearre
       recommendations:
-        without_results: "Der binne gjin ideeën dy’t oan jo ynteressen foldogge."
-        without_interests: ""
+        without_results: Der binne gjin ideeën dy’t oan jo ynteressen foldogge.
+        without_interests: Follow proposals so we can give you recommendations
         disable: "Oanrekommandaasjes fan ideeën wurde net mear werjûn as jo se útsette. Jo kinne se wer ynskeakelje op de side \"Myn akkount\""
         actions:
           success: "Oanrekommandaasjes foar ideeën binne no foar dit akkount útskeakele."
           error: "Der hat him in flater foardien. Gean nei de side \"Myn akkount\" om oanrekommandaasjes foar útstellen mei de hân út te skeakeljen."
-      retired_proposals: "Weromlutsen inisjativen"
+      retired_proposals: Weromlutsen inisjativen
       retired_proposals_link: "Weromlutsen inisjativen"
+      selected_proposals: Selektearre inisjativen
+      selected_proposals_link: Besjoch de selektearre inisjativen
+      archived_proposals: Inisjativen argyf
+      proposals_lists: Inisjativen
       retired_links:
-        all: "Alle"
-        duplicated: "Dûbele"
-        started: "Uteinsette"
-        unfeasible: "Net te dwaan"
-        done: "Utfierd"
-        other: "Oars"
+        all: Alle
+        duplicated: Dûbele
+        started: Uteinsette
+        unfeasible: Net te dwaan
+        done: Utfierd
+        other: Oars
       search_form:
-        button: "Sykje"
-        placeholder: "Sykje ideeën..."
-        title: "Sykje"
-      select_order: "Sortearje op"
-      select_order_long: "Jo sjogge inisjativen op:"
-      start_proposal: "Nij inisjatyf yntsjinje"
-      title: "Inisjativen"
-      top: "Wyklikse top"
-      top_link_proposals: "Meast stipe inisjativen"
-      section_header:
-        title: "Inisjativen"
-        help: "Help by inisjativen"
-        description: "Stypje de inisjativen dy ‘t dy entûsjast meitsje. By genôch stipe wurdt in peiling hâlden."
-      section_footer:
-        title: "Help by inisjativen"
-        description: "Stypje lokale of regionale inisjativen. By genôch stipe wurdt in referindum hâlden."
-      proposals_lists: "Inisjativen"
-      archived_proposals: "Inisjativen argyf"
-      selected_proposals: "Selektearre inisjativen"
-      selected_proposals_link: "Besjoch de selektearre inisjativen"
+        button: Sykje
+        placeholder: Sykje ideeën...
+        title: Sykje
       search_results:
         one: "mei de tekst <strong>'%{search_term}'</strong>"
         other: "mei de tekst <strong>'%{search_term}'</strong>"
-      filter_topic:
-        one: "mei ûnderwerp '%{topic}'"
-        other: "mei ûnderwerp '%{topic}'"
+      select_order_long: "Jo sjogge inisjativen op:"
+      start_proposal: Nij inisjatyf yntsjinje
+      title: Inisjativen
+      top_link_proposals: Meast stipe inisjativen
+      section_header:
+        icon_alt: Proposals icon
+        title: "Inisjativen"
+        help: Help by inisjativen
+      section_footer:
+        title: Help by inisjativen
+        description: Stypje lokale of regionale inisjativen. By genôch stipe wurdt in referindum hâlden.
     new:
       form:
-        submit_button: "Idee yntsjinje"
-      more_info: "Hoe wurkje inisjativen?"
-      recommendation_one: "Folje alle ynformaasje yn dy’tst oer dyn idee fertelle wolst."
-      recommendation_three: "Bist al wat fierder mei dyn idee? In plan fan oanpak en in begrutting binne  wichtige stappen yn it meitsjen fan in plan. Ek in fideo, webside of in plaatsje of foto dogge it altyd goed foar de stipebetsjûgings! Besikers kinne nammentlik reagearje op dyn idee. Ek kinst likes sammelje. Tink derom: dat binne noch gjin stimmen."
-      recommendation_two: "Wêrom is dit in goed idee? Wat wolst mei dit idee? Is it foar ien kear of foar in lange perioade? Hoefolle jild is derfoar nedich? Wa docht der mei? Wa organisearret it? Wa binne fan fan it idee? Wat is it? Mei hokker regels krijst te meitsjen? Wat kin der wol en wat kin der net? Wat binne de belangen? Wat hast nedich?"
-      recommendations_title: "Advys by it yntsjinjen fan in inisjatyf"
-      start_new: "Inisjatyf yntsjinje"
+        submit_button: Idee yntsjinje
+      more_info: Hoe wurkje inisjativen?
+      recommendation_one: Folje alle ynformaasje yn dy’tst oer dyn idee fertelle wolst.
+      recommendation_three: 'Bist al wat fierder mei dyn idee? In plan fan oanpak en in begrutting binne  wichtige stappen yn it meitsjen fan in plan. Ek in fideo, webside of in plaatsje of foto dogge it altyd goed foar de stipebetsjûgings! Besikers kinne nammentlik reagearje op dyn idee. Ek kinst likes sammelje. Tink derom: dat binne noch gjin stimmen.'
+      recommendation_two: Wêrom is dit in goed idee? Wat wolst mei dit idee? Is it foar ien kear of foar in lange perioade? Hoefolle jild is derfoar nedich? Wa docht der mei? Wa organisearret it? Wa binne fan fan it idee? Wat is it? Mei hokker regels krijst te meitsjen? Wat kin der wol en wat kin der net? Wat binne de belangen? Wat hast nedich?
+      recommendations_title: Advys by it yntsjinjen fan in inisjatyf
+      start_new: Inisjatyf yntsjinje
     notice:
-      retired: "Inisjatyf weromlutsen"
-      published: "Inisjatyf publisearre"
+      retired: Inisjatyf weromlutsen
+      published: Inisjatyf publisearre
     proposal:
       created: "Betanke foar jo idee!"
       share:
         guide: "No kinne jo jo inisjatyf diele sadat minsken harren stipe jaan kinne."
         edit: "Diel it hjirûnder op social media"
-        view_proposal: "Besjoch myn idee"
-      already_supported: "Do hast al op dit inisjatyf stimd."
+        view_proposal: Besjoch myn idee
+      already_supported: Do hast al op dit inisjatyf stimd.
       comments:
-        zero: "Gjin reaksjes"
-        one: "1 reaksje"
+        one: 1 reaksje
         other: "%{count} reaksjes"
-      support: "Stipe"
-      support_title: "Stypje dit inisjatyf"
+      support: Stipe
+      support_label: "Support %{proposal}"
+      support_title: Stypje dit inisjatyf
       supports:
-        zero: "noch gjin stipe"
-        one: "1 stipebetsjûging"
+        one: 1 stipebetsjûging
         other: "%{count} stipebetsjûgings"
       votes:
-        zero: "Gjin tomkes"
-        one: "1 tomke"
+        one: 1 tomke
         other: "%{count} tomkes"
       supports_necessary: "%{number} stipebetsjûgings nedich"
+      reason_for_supports_necessary: ""
+      total_percent: 100%
       archived: "Dit inisjatyf is argivearre"
       successful: "Dit inisjatyf hat de stipebetsjûgings dy’t nedich binne"
-      retire_form:
-        retired_explanation_label: "Reden"
-        retired_explanation_placeholder: "Jou in reden wêrom’t dit inisjatyf ynlutsen wurde moat."
-        retired_reason_blank: "Kies ien fan redenen"
-        retired_reason_label: "Reden om it inisjatyf yn te lûken"
-        submit_button: "Inisjatyf ynlûke"
-        title: "Inisjatyf ynlûke"
-        warning: "As in inisjatyf ynlutsen is kin it noch wol stipe wurde, mar it wurdt net mear yn de oersichten toand."
-      retire_options:
-        duplicated: "Dûbel"
-        unfeasible: "Net te dwaan"
-      show:
-        retired: "Inisjatyf ynlutsen"
-        retired_warning: "Dit inisjatyf is ynlutsen"
-        retired_warning_link_to_explanation: "Lês wêrom."
-      improve_info: "Ferbetterje jo kampanje en krij mear stipebetsjûgings"
+      selected: "Selected proposal"
     show:
-      author_deleted: "Brûker fuorthelle"
+      author_deleted: Brûker fuorthelle
       code: "Koade:"
       comments:
-        zero: "Gjin reaksjes"
-        one: "1 reaksje"
+        one: 1 reaksje
         other: "%{count} reaksjes"
-      comments_tab: "reaksjes"
-      flag: "Dit inisjatyf is troch ferskate dielnimmers as ûnfoechsum oanmerke."
-      notifications_tab: "Notifikaasjes"
-      milestones_tab: "Mylpeallen"
+      comments_tab: reaksjes
+      dashboard_proposal_link: Kampanjeside
+      flag: Dit inisjatyf is troch ferskate dielnimmers as ûnfoechsum oanmerke.
+      notifications_tab: Notifikaasjes
+      milestones_tab: Mylpeallen
       retired_warning: "De auteur hat dit inisjatyf weromlutsen."
-      retired_warning_link_to_explanation: "Lês de útlis foardatst it inisjatyf dochs noch stipest."
-      retired: "Utstel weromlutsen troch de auteur"
-      share: "Diel"
+      retired_warning_link_to_explanation: Lês de útlis foardatst it inisjatyf dochs noch stipest.
+      retired: Utstel weromlutsen troch de auteur
+      share: Diel
       no_notifications: "Dit inisjatyf hat gjin meldingen"
       embed_video_title: "Fideo foar %{proposal}"
       title_video_url: "Eksterne fideo"
-      author: "Auteur"
-      dashboard_proposal_link: "Kampanjeside"
+      author: Auteur
+      draft: Proposal in draft. Cannot yet get supports, nor does it appear in the list of proposals.
     update:
       form:
-        submit_button: "Bewarje"
-    shared:
-      confirm_support: "Binne jo der wis fan dat jo it inisjatyf ‘%{proposal}’ stypje wolle? Dat kin net ûngedien makke wurde."
-    created:
-      title: "Lokwinske! Do hast de earste stap set."
-      motivation: "Foardat jo jo inisjatyf op de webside publisearje, is it tûk om in lytse kampanje op te setten. Dat helpt jo om genôch stipe foar jo inisjatyf te krijen."
-      motivation_2: "<strong>Wannear ast net sa goed witst hoe’tst dy kampanje opsette moatst, kinne wy dy begeliede. Do kinst der no foar kieze om earst mei ús help in kampanje op te setten en it konsept fan dyn inisjatyf op te slaan. Do kinst dyn inisjatyf no ek daliks publisearje op de webside.</strong>"
-      publish: "Ik wol myn inisjatyf daliks publisearje"
-      dashboard: "Ja, ik wol help en ik publisearje myn inisjatyf letter"
-      preview_title: "Dit is hoe’t jo inisjatyf derút sjocht as jo it no publisearje."
+        submit_button: Bewarje
+  dashboard:
+    menu:
+      my_proposal: Edit my proposal
+      progress: Progress
+      resources: Resources
+      community: Community
+      polls: Polls
+      mailing: E-mail
+      poster: Poster
+      recommended_actions: Recommended actions
+      messages: Message to users
+      related_content: Related content
+    form:
+      request: Request
+    create_request:
+      success: The request has been successfully sent. We will contact you as soon as possible to inform you about it.
+      archived: This proposal is archived and can not request resources.
+    progress:
+      title: Graphic
+      group_by_month: Monthly
+      group_by_week: Weekly
+      group_by_date: Daily
+      progress: Accumulated progress
+      supports: Supports
+      success: Ideal progress
+      new_action: New
+    index:
+      title: Edition
+      edit_proposal_link: Edit proposal
+      publish: Publish proposal
+      retire: Withdraw proposal
+    new_request:
+      links: Links
+    resources:
+      available_resources: Available resources
+    resource:
+      required_days: "%{days} days required"
+      required_supports: "%{supports} supports required"
+      and: and
+      view_resource: See resource
+      resource_requested: Resource already requested
+      request_resource: Request resource
+      resource_locked: Resource locked
+    recommended_actions:
+      title: Recommended actions
+      goto_proposed_actions: Go to recommended actions
+      see_proposed_actions: Check out recommended actions
+      hide_proposed_actions: Hide recommended actions
+      pending_title: Pending
+      show_description: Show description
+      without_pending_actions: No recommended actions pending
+      done_title: Done
+      without_done_actions: No recommended actions done
+    next_goal:
+      title: Goal
+      see_complete_course: Check out the complete course
+      hide_course: Hide course
+    goal:
+      target_supports:
+        one: Get %{count} support for your proposal
+        other: Get %{count} supports for your proposal
+      days:
+        one: "%{count} day"
+        other: "%{count} days"
+      locked_resource: Resource locked
+      ideal_time: Ideal time
+    community:
+      access_community: Access the community
+      latest_activity: "Latest activity of the community: %{at}"
+      participants: Participants
+      debates: Debates
+      comments: Comments
+      latest_comments: Latest messages
+    messages:
+      send_notification: Send notification to proposal followers
+      previous_notifications: See previous notifications
+    polls:
+      index:
+        title: Polls
+        create: Create poll
+        count:
+          one: You have created %{count} poll.
+          other: You have created %{count} polls.
+        links: Links
+        additiontal_information: Additional information
+      new:
+        title: New poll
+        submit: Create poll
+      edit:
+        submit: Update poll
+      poll:
+        responses:
+          one: "%{count} response"
+          other: "%{count} responses"
+        view_results: View results
+        edit_poll: Edit survey
+        show_results_help: If you check this box the results will be public and all users will be able to see them
+        delete: Delete survey
+        alert_notice: This action will remove the survey and all its associated questions.
+        success_notice: Survey deleted successfully
+        unable_notice: You cannot destroy a survey that has responses
+      form:
+        name: Survey title
+        add_question: Add question
+      question_fields:
+        remove_question: Remove question
+        add_answer: Add answer
+      question_answer_fields:
+        remove_answer: Remove answer
+    poster:
+      index:
+        title: Poster preview
+        poster_title: "Do not keep looking,"
+        poster_subtitle: "back me up! ;)"
+        intro_text: "<strong>I am participating in %{org}</strong> with my own citizen proposal and only with your support can we make the city we all want"
+        proposal_code: "Code of the proposal: %{code}"
+        support: Support my proposal
+        footer: "<strong>Visit %{link} and support this proposal.</strong> The more, the better. Let's do our bit. Thank you!"
+      new:
+        title: Poster of your proposal
+      options:
+        preview: Preview
+        download: Download
+    mailing:
+      index:
+        title: E-mail preview
+      new:
+        title: E-mail model to share
+      mailing_options:
+        send: Send to %{address}
+        preview: Preview
+      create:
+        sent: The email has been sent
+    mailer:
+      forward:
+        subtitle: "If you support me, <br>we will achieve it."
+        support_button: Support this proposal
+        share_in: Share in
+        hi: "Hello!"
+        introduction: I am writing to let you know that I am participating in %{org}, the platform we can decide which city we want. And for that, I created my own citizen proposal and now, I'm going to need your support! But do not worry because It is very simple.
+        support: "You just have to click on the button that you will see below 'Support this proposal' and you can inform yourself about before promoting it. Only the proposals that achieve the maximum support will be carried out by the City Council, and I thought that you, I'm sure you help me achieve it!"
+        share: "And if you also do me the great favor of sharing my proposal with your friends, family and contacts, it would be perfect!"
   polls:
     all: "Alle"
     no_dates: "Gjin datum tawiisd"
     dates: "Fan %{open_at} oant %{closed_at}"
     final_date: "Definitive oertelling/ resultaten"
-    question: "Fraach"
     index:
       filters:
         current: "Iepen"
@@ -489,26 +601,26 @@ fy-NL:
       unverified: "Jo akkount moat ferifiearre wêze om meidwaan te kinnen"
       cant_answer: "Dizze stimperioade is yn jo gebiet net beskikber"
       section_header:
+        icon_alt: Voting icon
         title: "Peilingen"
-        help: "Help by peilingen"
-        description: "Jou jo miening en foarkarren foar spesifike ûnderwerpen"
+        help: Help by peilingen
       section_footer:
-        title: "Help by peilingen"
-        description: "Jou jo miening oer spesifike ûnderwerpen"
+        title: Help by peilingen
+        description: Jou jo miening oer spesifike ûnderwerpen
       no_polls: "Gjin peilingen"
-      remaining: "Jo kinne noch <strong>%{days}</strong> meidwaan"
     show:
       already_voted_in_booth: "Jo hawwe al op in fysike stimlokaasje stimd. Jo meie net noch in kear stimme."
       already_voted_in_web: "Jo hawwe yn dizze stimperioade al meidien. As jo nochris stimme, wurdt jo eardere stimming oerskreaun."
-      back: "Werom"
+      back: Werom
       cant_answer_not_logged_in: "Jo moatte %{signin} of jo %{signup} om fierder te gean."
-      comments_tab: "Reaksjes"
+      comments_tab: Reaksjes
+      cant_answer_verify: "You must %{verify_link} in order to answer."
       verify_link: "Ferifiearje jo akkount"
       cant_answer_expired: "Dizze stimperioade is foarby."
       cant_answer_wrong_geozone: "Dizze peiling is foar jo gebiet net aktyf"
       more_info_title: "Mear ynformaasje"
-      documents: "Dokuminten"
-      zoom_plus: "Ofbylding fergrutsje"
+      documents: Dokuminten
+      zoom_plus: Ofbylding fergrutsje
       read_more: "Lês mear oer %{answer}"
       read_less: "Lês minder oer %{answer}"
       videos: "Eksterne fideo"
@@ -519,6 +631,7 @@ fy-NL:
         total_votes: "Totaal tal stimmen"
         votes: "Stimmen"
         web: "Webside "
+        mail: "MAIL"
         booth: "Stimlokaasje"
         total: "Totaal "
         valid: "Jildich"
@@ -527,72 +640,319 @@ fy-NL:
       results:
         title: "Fragen"
         most_voted_answer: "Antwurd mei de measte stimmen:"
-      more_info_options: "Mear ynformaasje oer de antwurdmooglikheid en"
-  comments:
-    actions:
-      delete: "Wiskje reaksje"
-      confirm_delete: "Binne jo der wis fan? Hjirmei wiskje jo jo reaksje. Dat kin net ûngedien makke wurde."
-    comments_closed: "Reaksjes binne net langer mooglik"
-    verified_only: "%{verify_account} om fierder te gean"
-    comment:
-      admin: "Beheerder"
-      author: "Auteur"
-      deleted: "Dizze reaksje is wiske"
-      moderator: "Moderator"
-      responses:
-        zero: "Gjin reaksjes"
-        one: "1 reaksje"
-        other: "%{count} reaksjes"
-      responses_show:
-        one: "1 reaksje (toane)"
-        other: "%{count} reaksjes (toane)"
-        zero: "Gjin reaksjes"
-      responses_collapse:
-        one: "1 reaksje (ferbergje)"
-        other: "%{count} reaksjes (ferbergje)"
-        zero: "Gjin reaksjes"
-      user_deleted: "Dielnimmer fuorthelle"
-      votes:
-        zero: "Gjin tomkes"
-        one: "1 tomke"
-        other: "%{count} tomkes"
-    form:
-      comment_as_admin: "Reageer als admin"
-      comment_as_moderator: "Reageer als moderator"
-      leave_comment: "Lit in reaksje efter"
-    orders:
-      most_voted: "Measte stimmen"
-      newest: "Nijste boppe"
-      oldest: "Aldste boppe"
-      most_commented: "Measte reaksjes"
-    select_order: "Sortearje op"
+    poll_header:
+      back_to_proposal: Back to proposal
+  poll_questions:
     show:
-      return_to_commentable: "Gean werom"
-    comments_helper:
-      comment_button: "Publisearje reaksje"
-      comment_link: "Kommentaar"
-      comments_title: "Reaksje"
-      reply_button: "Publisearje antwurd"
-      reply_link: "Reagearje"
+      vote_answer: "Vote %{answer}"
+      vote_unanswer: "Take back vote for %{answer}"
+      voted: "You have voted %{answer}"
+      withdraw_answers_hint: "You can withdraw your vote by clicking on an answer again"
+    description:
+      unique: You can cast one vote for this question.
+      multiple: You may cast %{maximum} votes evenly among the available answers.
+      multiple_with_weight: You may cast %{maximum} votes weighted across multiple answers. Maximum %{cap} per answer.
+      rating_scale: You are allowed one vote per rating scale.
+  proposal_notifications:
+    new:
+      title: "Send notification"
+      submit_button: "Send notification"
+      info_about_receivers: "This notification will be sent to <strong>%{count} people</strong> and it will be visible in %{proposal_page}.<br> Notifications are not sent immediately, users will periodically receive an email with all proposal notifications."
+      proposal_page: "the proposal's page"
+    show:
+      back: "Go back to my content"
   shared:
-    back: "Werom"
-    required_fields: "Alle fjilden markearre mei (*) binne ferplicht"
-    required: "Ferplicht"
-    optional: "Opsjoneel"
+    edit: "Edit"
+    filter: "Filter"
+    save: "Save"
+    delete: "Delete"
+    "yes": "Yes"
+    "no": "No"
+    search_results: "Search results"
     advanced_search:
-      title: "Avansearre sykje"
-      author_type: "Type"
-      author_type_blank: "Selektearje in kategory"
       date: "Tiidrek"
+      date_placeholder: "dd/mm/jjjj"
       date_range_blank: "Selektearje in tiidrek"
-      general: "Tekst"
-      general_placeholder: "Filterje op tekst"
       date_1: "Ôfrûne 24 oeren"
       date_2: "Ôfrûne wike"
       date_3: "Ôfrûne moanne"
       date_4: "Ôfrûne jier"
       date_5: "Oanpaste termyn"
-      date_placeholder: "dd/mm/jjjj"
       from: "Fan"
-      to: "Oant"
+      general: "Tekst"
+      goal: "By SDG"
+      goal_blank: "Select a goal"
       search: "Filterje"
+      target: "By target"
+      target_blank: "Select a target"
+      title: "Avansearre sykje"
+      to: "Oant"
+    author_info:
+      author_deleted: User deleted
+      email_deleted: Email deleted
+    back: Werom
+    check: Select
+    check_all: All
+    check_none: None
+    collective: Collective
+    flag: Flag as inappropriate
+    follow: "Follow"
+    following: "Following"
+    follow_entity: "Follow %{entity}"
+    followable:
+      budget_investment:
+        create:
+          notice: "You are now following this investment project! <br> We will notify you of changes as they occur so that you are up-to-date."
+        destroy:
+          notice: "You have stopped following this investment project! <br> You will no longer receive notifications related to this project."
+      proposal:
+          create:
+            notice: "Now you are following this citizen proposal! <br> We will notify you of changes as they occur so that you are up-to-date."
+          destroy:
+            notice: "You have stopped following this citizen proposal! <br> You will no longer receive notifications related to this proposal."
+    print:
+      print_button: Print this info
+    search: Search
+    show: Show
+    suggest:
+      debate:
+        found:
+          one: "There is a debate with the term '%{query}', you can participate in it instead of opening a new one."
+          other: "There are debates with the term '%{query}', you can participate in them instead of opening a new one."
+        message: "You are seeing %{limit} of %{count} debates containing the term '%{query}'"
+        see_all: "See all"
+      budget_investment:
+        found:
+          one: "There is an investment with the term '%{query}', you can participate in it instead of opening a new one."
+          other: "There are investments with the term '%{query}', you can participate in them instead of opening a new one."
+        message: "You are seeing %{limit} of %{count} investments containing the term '%{query}'"
+        see_all: "See all"
+      proposal:
+        found:
+          one: "There is a proposal with the term '%{query}', you can contribute to it instead of creating a new"
+          other: "There are proposals with the term '%{query}', you can contribute to them instead of creating a new"
+        message: "You are seeing %{limit} of %{count} proposals containing the term '%{query}'"
+        see_all: "See all"
+    tags_cloud:
+      tags: Trending
+      districts: "Districts"
+      districts_list: "Districts list"
+      categories: "Categories"
+      labels: Labels
+    target_blank: " (link opens in new window)"
+    you_are_in: "You are in"
+    unflag: Unflag
+    unfollow_entity: "Unfollow %{entity}"
+    outline:
+      searcher: Searcher
+    go_to_page: "Go to page of "
+    share: Share
+    orbit:
+      previous_slide: Previous Slide
+      next_slide: Next Slide
+    documentation: Additional documentation
+    view_mode:
+      title: View mode
+      cards: Cards
+      list: List
+    recommended_index:
+        title: Recommendations
+        see_more: See more recommendations
+        hide: Hide recommendations
+    translations:
+      select_language_prompt: Choose language
+      remove_language: Remove language
+      add_language: Add language
+      languages_in_use:
+        one: "1 language in use"
+        other: "%{count} languages in use"
+    optional: "Opsjoneel"
+    required: "Ferplicht"
+  social:
+    facebook: "%{org} Facebook"
+    twitter: "%{org} Twitter"
+    youtube: "%{org} YouTube"
+    telegram: "%{org} Telegram"
+    instagram: "%{org} Instagram"
+  stats:
+    index:
+      visits: Visits
+      debates: Debates
+      proposals: Proposals
+      comments: Comments
+      proposal_votes: Votes on proposals
+      debate_votes: Votes on debates
+      comment_votes: Votes on comments
+      votes: Total votes
+      verified_users: Verified users
+      unverified_users: Unverified users
+  unauthorized:
+    default: You do not have permission to access this page.
+    manage:
+      all: "You do not have permission to carry out the action '%{action}' on %{subject}."
+  users:
+    login_to_comment: "Jo moatte %{signin} of %{signup} om reagearje te kinnen."
+    login_to_continue: "Jo moatte %{signin} of %{signup} om fierder te gean."
+    signin: "ynlogge"
+    signup: "in akkount oameitsje"
+    verify_account: "verify your account"
+    direct_messages:
+      new:
+        direct_messages_bloqued: "This user has decided not to receive direct messages"
+        submit_button: Stjoer priveeberjocht
+        title: Send private message to %{receiver}
+        verified_only: To send a private message %{verify_account}
+      show:
+        receiver: Message sent to %{receiver}
+    show:
+      deleted: Deleted
+      deleted_debate: This debate has been deleted
+      deleted_proposal: This proposal has been deleted
+      deleted_budget_investment: It idee is wiske.
+      proposals: Inisjativen
+      proposals_status: Status
+      debates: Debates
+      budget_investments: Ideeën
+      comments: Comments
+      actions: Aksjes
+      filters:
+        comments:
+          one: 1 reaksje
+          other: "%{count} reaksjes"
+        debates:
+          one: 1 Debate
+          other: "%{count} Debates"
+        proposals:
+          one: 1 inisjatyf
+          other: "%{count} inisjativen"
+        budget_investments:
+          one: 1 idee
+          other: "%{count} ideeën"
+        follows:
+          one: 1 folgjend
+          other: "%{count} folgjend"
+      no_activity: User has no public activity
+      no_private_messages: "This user doesn't accept private messages."
+      private_activity: This user decided to keep the activity list private.
+      send_private_message: "Send private message"
+      delete_alert: "Binne jo der wis fan dat jo jo idee wiskje wolle? Dat kin net ûngedien makke wurde."
+    proposals:
+      retired: "Weromlutsen"
+      draft: Konsept
+      published: Publisearre
+      see: "See proposal"
+      actions: Aksjes
+      retired_help_text: Kampanjeside is net beskikber foar weromlutsen inisjativen
+  votes:
+    agree: I agree
+    agree_label: "I agree with %{title}"
+    anonymous: Too many anonymous votes to admit vote %{verify_account}.
+    disagree: I disagree
+    disagree_label: "I don't agree with %{title}"
+    organizations: Organizations are not permitted to vote
+    supports: Supports
+    verified_only: Only verified users can vote on proposals; %{verify_account}.
+    budget_investments:
+      not_verified: Only verified users can vote on investment projects; %{verify_account}.
+      unfeasible: Unfeasible investment projects can not be supported
+      not_voting_allowed: Voting phase is closed
+      different_heading_assigned:
+        one: "You can only support investment projects in %{count} district. You have already supported investments in %{supported_headings}."
+        other: "You can only support investment projects in %{count} districts. You have already supported investments in %{supported_headings}."
+  welcome:
+    feed:
+      most_active:
+        debates: "Aktuele diskusjes"
+        proposals: "Most active proposals"
+        processes: "Plannen"
+      see_all:
+        debates: Alle diskusjes
+        proposals: Alle inisjativen
+        processes: Alle plannen
+      no_items:
+        debates: Op it stuit binne der noch gjin diskusjes
+        proposals: There are no proposals right now
+        processes: There are no open processes right now
+      process_label: Proses
+      see_process: Sjoch proses
+    cards:
+      title: Oare mooglikheden om mei te dwaan
+    recommended:
+      title: Oanbefellings dy’t jo mooglik ynteressant fine.
+      help: "Dizze oanbefellings wurde generearre troch de koades fan de debatten en útstellen dy’t jo folgje."
+      debates:
+        title: Oanrekommandeare debatten
+        btn_text_link: Alle oanrekommandeare debatten
+      proposals:
+        title: Oanrekommandeare útstellen
+        btn_text_link: Alle oanrekommandeare útstellen
+      budget_investments:
+        title: Recommended investments
+      slide: "Sjoch"
+    welcome:
+      go_to_index: Gean nei útstellen en debatten
+      start_using_consul: Gean nei yndeks side
+      title: Meidwaan
+      user_permission_info: Mei jo account kinne jo...
+      user_permission_verify: "Ferifiearjen"
+      user_permission_verify_my_account: Ferifiearje myn account
+  invisible_captcha:
+    sentence_for_humans: "If you are human, ignore this field"
+    timestamp_error_message: "Sorry, that was too quick! Please resubmit."
+  related_content:
+    title: "Related content"
+    add: "Add related content"
+    label: "Link to related content"
+    placeholder: "%{url}"
+    help: "You can add links of %{models} inside of %{org}."
+    submit: "Add"
+    error: "Link not valid. Remember to start with %{url}."
+    error_duplicate: "The related content you are adding already exists."
+    error_itself: "Link not valid. You cannot relate a content to itself."
+    success: "You added a new related content"
+    is_related: "Is it related content?"
+    score_positive: "Yes"
+    score_negative: "No"
+    content_title:
+      proposal: "Proposal"
+      debate: "Debate"
+      budget_investment: "Budget investment"
+  admin/widget:
+    header:
+      title: Administration
+  annotator:
+    help:
+      alt: Select the text you want to comment and press the button with the pencil.
+      text: To comment this document you must %{sign_in} or %{sign_up}. Then select the text you want to comment and press the button with the pencil.
+      title: How can I comment this document?
+  links:
+    form:
+      delete_button: Delete
+      cancel_button: Cancel
+    nested_links:
+      title: Links
+      note: Add the links that are of interest
+      add_new_link: Add new link
+  communities:
+    show:
+      surveys: Surveys
+      complete_survey: Complete the survey
+    subnav:
+      surveys: Surveys
+    poll:
+      take_part: Take part from %{from} to %{to}
+  remote_translations:
+    text: The content of this page is not available in your language
+    all_remote_translations_enqueued_text: In a short period of time refreshing the page you will be able to see all the content in your language.
+    create:
+      enqueue_remote_translation: Translations have been correctly requested.
+    button: Translate page
+  tags:
+    list:
+      filter:
+        more:
+          one: "One more tag"
+          other: "%{count} more tags"
+  machine_learning:
+    comments_summary: "Comments summary"
+    info_text: "Content generated by AI / Machine Learning"
