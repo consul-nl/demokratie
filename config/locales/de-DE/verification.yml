@@ -56,6 +56,7 @@ de:
           spanish_id: Personalausweis
         error_not_allowed_age: Sie erfüllen nicht das erforderliche Alter um teilnehmenzu können
         error_not_allowed_postal_code: Für die Verifizierung müssen Sie registriert sein.
+        error_verifying_census: The Census was unable to verify your information. Please confirm that your census details are correct by calling to City Council or visit one Citizen Support Office.
         form_errors: haben die Überprüfung Ihres Wohnsitzes verhindert
         postal_code_note: Um Ihr Benutzerkonto zu verifizieren, müssen Sie registriert sein
         terms: Allgemeine Nutzungsbedingungen
