@@ -34,6 +34,7 @@ nl:
         info: Hier kunt u gebruikers beheren via alle acties die in het linkermenu zijn vermeld.
     document_verifications:
       already_verified: Dit gebruikersaccount is al geverifieerd.
+      has_no_account: In order to create an account, go to %{link} and click in <b>"Register"</b> in the upper-left part of the screen.
       link: Consul
       in_census_has_following_permissions: "Deze gebruiker kan deelnemen aan de website met de volgende permissies:"
       not_in_census: This document is not registered.
@@ -88,6 +89,7 @@ nl:
       alert:
         unverified_user: Gebruiker is niet geverifieerd
       create: Nieuw begrotingsvoorstel maken
+      edit: Edit budget investment
       filters:
         heading: Concept
         unfeasible: Unfeasible investment
@@ -97,6 +99,7 @@ nl:
         one: " bevat de term'%{search_term}'"
         other: " bevat de term'%{search_term}'"
     sessions:
+      need_managed_user: To perform this action you must select a user
       signed_out: Signed out successfully.
       signed_out_managed_user: User session signed out successfully.
     username_label: Username
