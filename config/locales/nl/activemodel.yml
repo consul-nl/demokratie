@@ -4,6 +4,9 @@ nl:
       verification:
         residence: "Adres"
         sms: "SMS"
+      local_census_records/import:
+        one: Local census record import
+        other: Local census records imports
     attributes:
       verification:
         residence:
