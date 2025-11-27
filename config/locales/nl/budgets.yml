@@ -7,13 +7,11 @@ nl:
         amount_available:
           knapsack: "Zoveel <span>%{count}</span> kan je nog besteden"
           approval:
-            zero: "Je kan nog steeds <span>%{count}</span> stemmen uitbrengen."
             one: "Je kan nog steeds <span>%{count}</span> stem uitbrengen."
             other: "Je kan nog steeds <span>%{count}</span> stemmen uitbrengen."
         amount_spent:
           knapsack: "Bestede bedrag <span>%{count}</span>"
           approval:
-            zero: "Uitgebrachte stemmen: <span>%{count}</span>"
             one: "Uitgebrachte stemmen: <span>%{count}</span>"
             other: "Uitgebrachte stemmen: <span>%{count}</span>"
         amount_limit:
@@ -23,6 +21,7 @@ nl:
             other: "Je kan op maximaal <span>%{count}</span> projecten stemmen"
         no_balloted_group_yet: "U hebt nog niet gestemd op deze groep, stem nu!"
         remove: Verwijder keuze
+        remove_label: "Remove your vote for %{investment}"
         voted:
           one: "U heeft op <span>één</span> voorstel gestemd."
           other: "U heeft op <span>%{count}</span> voorstellen gestemd."
@@ -38,6 +37,8 @@ nl:
         not_enough_available_votes: "Je hebt het maximum aantal stemmen bereikt"
         change_ballot: wijzig uw stem
         casted_offline: Je hebt al offline deelgenomen
+        only_citizens: Participation is only allowed for citizes of %{city}.
+        only_specific_geozones: "Participation is only allowed for citizes of the following areas: %{geozones}."
     groups:
       show:
         title: Kies een mogelijkheid
@@ -74,6 +75,7 @@ nl:
       form:
         title: "Nieuw begrotingsvoorstel maken"
         subtitle: "%{heading}(%{price})"
+        subtitle_without_price: "%{heading}"
         tag_category_label: "Categorieen"
         tags_instructions: "Voeg termen toe aan dit voorstel. Je kunt kiezen uit voorgestelde termen of je eigen term kiezen"
         tags_label: Tags
@@ -107,15 +109,16 @@ nl:
           change_ballot: "Als u zich bedenkt kunt uw uw stemmen in %{check_ballot} verwijderen opnieuw beginnen."
           check_ballot_link: "check mijn stemming"
           zero: U hebt op geen enkel begrotingsvoorstel gestemd.
-          verified_only: "%{verify} je account om een nieuw begrotingsvoorstel te doen."
           create: "Nieuw begrotingsvoorstel maken"
-          not_logged_in: "Om een nieuw begrotingsvoorstel te doen moet je %{sign_in} of %{sign_up}."
         filter: "Filter projecten op"
         filters:
           not_unfeasible: "Actief"
-          selected: "Geselecteerd"
-          unfeasible: "Unfeasible"
-          unselected: "Niet geselecteerd"
+          feasible: meets the criteria
+          unfeasible: Unfeasible
+          preselected: allowed for review
+          not_preselected: not allowed for review
+          selected: Geselecteerd
+          unselected: Niet geselecteerd
           winners: "Winnaars"
         orders:
           random: willekeurig
@@ -146,10 +149,10 @@ nl:
       wrong_price_format: Alleen hele cijfers
       investment:
         add: Voeg toe
+        add_label: "Vote %{investment}"
         already_added: U heeft dit voorstel al toegevoegd
         support_title: Steun dit voorstel
         supports:
-          zero: Geen steunbetuigingen
           one: 1 steunbetuiging
           other: "%{count} steunbetuigingen"
       header:
