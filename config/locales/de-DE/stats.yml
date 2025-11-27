@@ -1,26 +1,32 @@
 de:
   stats:
     title: "Teilnahmedaten"
+    hint: The statistics will be recreated after the participation has expired. Therefore, there may be shifts in individual cases. #custom
     advanced: "Erweiterte Statistiken"
     total_participants: "Teilnehmer*innen"
     by_gender: "Teilnehmer*innen nach Geschlecht"
     by_age: "Teilnehmer*innen nach Alter"
+    by_individual_group: "Individual group" #custom
     by_geozone: "Teilnehmer*innen nach Bezirk"
     men_percentage: "%{percentage} Männer"
     women_percentage: "%{percentage} Frauen"
+    other_gen_percentage: "%{percentage} Other" #custom
     age: "Alter"
     age_more_than: "%{start} Jahre alt und älter"
     age_range: "%{start} - %{finish} Jahre alt"
     total: "Gesamt"
     geozone: "Bezirk"
+    individual_group_value_count: Total #custom
     no_demographic_data:
       one: "* Keine demographischen Daten vorhanden für 1 Teilnehmer*in."
       other: "* Kein demographischen Daten vorhanden für %{count} Teilnehmer*innen."
     budgets:
       link: "Statistiken"
       page_title: "%{budget} - Partizipation Statistiken"
+      total_investments_title: "Investments"
       total_investments: "Investitionsprojekte gesamt"
       total_selected_investments: "Projekte in finaler Abstimmungsphase"
+      total_feasible_investments: "Feasible investments"
       total_unfeasible_investments: "Nicht durchführbare Projekte"
       by_phase: "Teilnehmer*innen nach Phase"
       by_heading: "Teilnehmer*innen nach Phase und Rubrik"
