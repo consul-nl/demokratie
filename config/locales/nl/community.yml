@@ -26,7 +26,6 @@ nl:
         edit: Pas onderwerp aan
         destroy: Verwijder Onderwerp
         comments:
-          zero: Geen reacties
           one: 1 opmerking
           other: "%{count} opmerkingen"
       author: Author
