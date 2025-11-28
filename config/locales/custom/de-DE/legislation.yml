@@ -94,7 +94,6 @@ de:
           leave_comment: Antwort hinterlassen
       question:
         comments:
-          zero: Keine Kommentare
           one: "%{count} Kommentar"
           other: "%{count} Kommentare"
         debate: Diskussion
@@ -121,27 +120,22 @@ de:
     summary:
       title: "Zusammenfassung"
       votes:
-        zero: "%{count} Stimmen"
         one: "%{count} Stimme"
         other: "%{count} Stimmen"
       debate_phase: "Diskussionsphase"
       proposals_phase: "Vorschlagsphase"
       allegations_phase: "Ausarbeitungsphase"
       debates:
-        zero: "Keine Diskussionen"
         one: "%{count} Diskussion"
         other: "%{count} Diskussionen"
       proposals:
-        zero: "Keine Vorschläge"
         one: "%{count} Vorschlag"
         other: "%{count} Vorschläge"
       comments:
-        zero: "Keine Kommentare"
         one: "%{count} Kommentar"
         other: "%{count} Kommentare"
       download: "Zusammenfassung herunterladen"
       top_comments:
-        zero: "Keine Kommentare"
         one: "%{count} Kommentar"
         other: "Top Kommentare"
       most_voted_comments: "Häufigst abgestimmte Kommentare"
