@@ -1,68 +1,68 @@
 fy:
   valuation:
     header:
-      title: Valuation
+      title: Bewertung
     menu:
-      title: Valuation
-      budgets: Participatory budgets
+      title: Bewertung
+      budgets: Bürgerhaushalte
     budgets:
       index:
-        title: Participatory budgets
+        title: Bürgerhaushalte
         filters:
-          current: Open
-          finished: Finished
+          current: Offen
+          finished: Abgeschlossen
         table_name: Name
         table_phase: Phase
-        table_assigned_investments_valuation_open: Investment projects assigned with valuation open
-        table_actions: Actions
-        evaluate: Evaluate
-        no_budgets: "There are no budgets"
+        table_assigned_investments_valuation_open: Zugeordnete Investmentprojekte mit offener Bewertung
+        table_actions: Aktionen
+        evaluate: Bewerten
+        no_budgets: "Kein Bürgerhaushalte vorhanden"
     budget_investments:
       index:
-        headings_filter_all: All headings
+        headings_filter_all: Alle Rubriken
         filters:
-          valuation_open: Open
-          valuating: Under valuation
-          valuation_finished: Valuation finished
-        assigned_to: "Assigned to %{valuator}"
-        title: Investment projects
-        edit: Edit dossier
+          valuation_open: Offen
+          valuating: Unter Bewertung
+          valuation_finished: Begutachtung abgeschlossen
+        assigned_to: "%{valuator} zugewiesen"
+        title: Ausgabenvorschläge
+        edit: Bericht bearbeiten
         table_id: ID
-        table_title: Title
-        table_heading_name: Heading name
-        table_actions: Actions
-        no_investments: "There are no investment projects."
+        table_title: Titel
+        table_heading_name: Name der Rubrik
+        table_actions: Aktionen
+        no_investments: "Keine Ausgabenvorschläge vorhanden."
       show:
-        back: Back
-        title: Investment project
-        info: Author info
-        by: Sent by
-        sent: Sent at
-        heading: Heading
-        dossier: Dossier
-        edit_dossier: Edit dossier
-        price: Price
-        price_first_year: Cost during the first year
+        back: Zurück
+        title: Investitionsprojekt
+        info: Autor info
+        by: Gesendet von
+        sent: Gesendet um
+        heading: Rubrik
+        dossier: Bericht
+        edit_dossier: Bericht bearbeiten
+        price: Preis
+        price_first_year: Kosten im ersten Jahr
         currency: "€"
-        feasibility: Feasibility
-        feasible: Feasible
-        unfeasible: Unfeasible
-        undefined: Undefined
-        valuation_finished: Valuation finished
-        duration: Time scope
-        responsibles: Responsibles
-        assigned_admin: Assigned admin
-        assigned_valuators: Assigned valuators
-        preview: Investment preview
+        feasibility: Kriterienerfüllung
+        feasible: Durchführbar
+        unfeasible: Undurchführbar
+        undefined: Undefiniert
+        valuation_finished: Begutachtung abgeschlossen
+        duration: Zeitrahmen
+        responsibles: Verantwortliche
+        assigned_admin: Zugewiesener Admin
+        assigned_valuators: Zugewiesene Begutachter*innen
+        preview: Investitionsvorschau
       edit:
-        dossier: Dossier
-        price: "Price (%{currency})"
-        price_first_year: "Cost during the first year (%{currency}) <small>(optional, data not public)</small>"
-        feasibility: Feasibility
-        valuation_finished_alert: "Are you sure you want to mark this report as completed? If you do it, it can no longer be modified."
-        not_feasible_alert: "An email will be sent immediately to the author of the project with the report of unfeasibility."
-        save: Save changes
+        dossier: Bericht
+        price: "Preis (%{currency})"
+        price_first_year: "Kosten im ersten Jahr (%{currency}) <small>(optional, nicht öffentliche Daten)</small>"
+        feasibility: Kriterienerfüllung
+        valuation_finished_alert: "Sind Sie sicher, dass Sie diesen Bericht als erledigt markieren möchten? Hiernach können Sie keine Änderungen mehr vornehmen."
+        not_feasible_alert: "Der Autor des Projekts erhält sofort eine E-Mail mit einem Bericht zur Undurchführbarkeit."
+        save: Änderungen speichern
       notice:
-        valuate: "Dossier updated"
-      valuation_comments: Valuation comments
-      not_in_valuating_phase: Investments can only be valuated when Budget is in valuating phase
+        valuate: "Dossier aktualisiert"
+      valuation_comments: Bewertungskommentare
+      not_in_valuating_phase: Investitionen können nur bewertet werden, wenn das Budget in der Bewertungsphase ist
