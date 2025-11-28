@@ -1,0 +1,297 @@
+en:
+  activerecord:
+    models:
+      deficiency_report:
+        one: Mangelmeldung
+        other: Mängelmeldungen
+      deficiency_report_manager:
+        one: Mängelmelder Admin
+        other: Mängelmelder Admins
+      deficiency_report/officer_group:
+        one: Sachbearbeitergruppe
+        other: Sachbearbeitergruppen
+      map_layer:
+        one: Kartenebene
+        other: Kartenebenen
+      projekt:
+        one: Projekt
+        other: Projekte
+      age_range:
+        one: Altersgruppe
+        other: Altersgruppen
+      modal_notification:
+        one: Popup Benachrichtigung
+        other: Popup Benachrichtungen
+      votation_type:
+        one: Art der Abstimmung
+        other: Arte der Abstimmung
+      individual_group:
+        one: Individuelle Gruppe
+        other: Individuelle Gruppen
+      individual_group_value:
+        one: Gruppenwert
+        other: Gruppenwerte
+      projekt_event:
+        one: Veranstaltung
+        other: Veranstaltungen
+      projekt_label:
+        one: Label
+        other: Labels
+      projekt_livestream:
+        one: Livestream
+        other: Livestream
+      projekt_notification:
+        one: Projektbenachrichtigung
+        other: Projektbenachrichtigungen
+      projekt_phase: Projektphase
+      projekt_phase/comment_phase: Kommentare
+      projekt_phase/debate_phase: Diskussionen
+      projekt_phase/proposal_phase: Vorschläge
+      projekt_phase/voting_phase: Abstimmung
+      projekt_phase/budget_phase: Budget
+      projekt_phase/event_phase: Veranstaltungen
+      projekt_phase/argument_phase: Stimmen
+      projekt_phase/milestone_phase: Meilensteine
+      projekt_phase/question_phase: Kurzumfrage
+      projekt_phase/livestream_phase: Livestreams
+      projekt_phase/projekt_notification_phase: Benachrichtigungen
+      projekt_phase/legislation_phase: Textbearbeitung
+      projekt_phase/newsfeed_phase: News-Feed
+      projekt_phase/formular_phase: Formular
+      formular_field: Formularfeld
+      officing_manager:
+        one: Abstimmungshelfer*innen
+        other: Abstimmungshelfer*innen
+      recipient_group:
+        one: Adressatengruppe
+        other: Adressatengruppen
+    errors:
+      messages:
+        file_size_is_in: 'Dateigröße muss zwischen %{min} und %{max} liegen'
+        file_size_is_less_than: 'Dateigröße muss kleiner als %{count} sein'
+        file_size_is_less_than_or_equal_to: 'Dateigröße muss kleiner oder gleich %{count} sein'
+        file_size_is_greater_than: 'Dateigröße muss größer als %{count} sein'
+        file_size_is_greater_than_or_equal_to: 'Dateigröße muss größer oder gleich %{count} sein'
+        allowed_file_content_types: 'Datei muss einer von %{types} sein'
+        excluded_file_content_types: 'Datei kann nicht %{types} sein'
+      models:
+        proposal:
+          attributes:
+            description:
+              too_long: 'ist zu lange'
+            projekt_id:
+              blank: Bitte wählen Sie ein Projekt
+            projekt_labels:
+              blank: Bitte wählen Sie mindestens ein Label
+            sentiment:
+              blank: Bitte wählen Sie ein Sentiment
+        debate:
+          attributes:
+            projekt_id:
+              blank: Bitte wählen Sie ein Projekt
+            projekt_labels:
+              blank: Bitte wählen Sie mindestens ein Label
+            sentiment:
+              blank: Bitte wählen Sie ein Sentiment
+        projekt:
+          attributes:
+            color:
+              invalid: Bitte den Farbwert als HEX-code eingeben
+        user:
+          attributes:
+            password:
+              low_complexity: "muss mindestens drei der nachfolgenden Kriterien erfüllen: Großbuchstaben, Kleinbuchstaben, Ziffern, Sonderzeichen."
+        unregistered_newsletter_subscriber:
+          attributes:
+            email:
+              invalid: Bitte geben Sie ein gültiges E-Mail-Format ein
+        budget_investment:
+          attributes:
+            projekt_labels:
+              blank: Bitte wählen Sie mindestens ein Label
+            sentiment:
+              blank: Bitte wählen Sie ein Sentiment
+    attributes:
+      map_location:
+        latitude: Breitengrad
+        longitude: Längengrad
+        zoom: Zoom
+      projekt:
+        total_duration_start: Anfangsdatum
+        total_duration_end: Enddatum
+        show_start_date_in_frontend: Im Frontend angezeigt
+        show_end_date_in_frontend: Im Frontend angezeigt
+        description: Projektbeschreibung
+      poll/answer:
+        open_answer_text: Offene Antwort
+      poll/question:
+        answer_mandatory: Antwort obligatorisch
+        min_rating_scale_label: Linkes Label
+        max_rating_scale_label: Rechtes Label
+        show_hint_callout: Diese Textbox im Frontend anzeigen
+      poll/question/answer:
+        more_info_link: Erklärungslink
+        more_info_iframe: Iframe-Link
+      poll/translation:
+        closing_note: Text der Abschlussseite
+      widget/card:
+        card_category: Kategorie
+      deficiency_report:
+        author: Autor
+        deficiency_report_category_id: Kategorie
+        deficiency_report_status_id: Status
+        video_url: Externes Video URL
+        official_answer: Offizielle Antwort
+        on_behalf_of: Meldung im Namen von jemanden erstellen
+        category: Kategorie
+        status: Status
+        notify_officer_about_new_comments: Benachrichtigung für Sachbearbeiter*in
+        official_answer_approved: Antwort freigeben
+        approximated_address: Addresse
+        responsible: Sachbearbeiter*in
+      deficiency_report/category:
+        default_deficiency_report_officer: Standardmäßig Sachbearbeiter*in
+      deficiency_report/officer_group:
+        default_email: Standard-E-Mail
+      deficiency_report/official_answer_template:
+        title: Titel
+        text: Text
+      debate:
+        on_behalf_of: Erstellen im Namen von
+      proposal:
+        official_answer: Offizielle Antwort
+        on_behalf_of: Erstellen im Namen von
+      budget:
+        show_results_after_first_vote: Ergebnisse nach Unterstützungsphase
+        show_percentage_values_only: Prozentuale Werte
+        voting_style_distributed: "Mehrere Stimmen"
+        hide_money: Geld ausblenden
+        max_number_of_winners: maximale Anzahl an Gewinnern
+      budget/heading:
+        price: Gesamtbudget
+      budget/investment:
+        implementation_performer: Umsetzung des Vorschlages
+        implementation_performers:
+          city: Umsetzung durch die Stadtverwaltung
+          user: Ich kann bei der Umsetzung unterstützen
+        implementation_contribution: Was tragen Sie zur Umsetzung bei?
+        user_cost_estimate: Preisliche Einschätzung
+        on_behalf_of: Vorschlag im Namen von jemanden erstellen
+      geozone:
+        postal_codes: Postleitzahlen
+      milestone:
+        custom_date: Benutzerdefiniertes Datum
+      map_layer:
+        name: Name der Kartenebene
+        provider: Anbieter
+        attribution: Attribution
+        base: Basisschicht der Karte
+        layer_names: Kartenebenennamen
+        opacity: Opazität
+        show_by_default: standardmäßig anzeigen
+        transparent: diese Kartenebene ist transparent
+        protocol: Kartenprotokoll
+        protocols:
+          regular: default
+          wms: WMS
+      user:
+        first_name: Vorname
+        last_name: Nachname
+        city_street_id: Straße
+        street_name: Straße
+        street_number: Hausnummer
+        street_number_extension: Hausnummerergänzung
+        plz: Postleitzahl
+        city_name: Stadt
+        gender: Geschlecht
+        date_of_birth: Geburtsdatum
+        document_type: Dokument
+        document_last_digits: Personalausweis / Passport (4 letzten Ziffern)
+      age_range:
+        min_age: Mindestalter
+        max_age: Maximalalter
+        order: Reihenfolge
+        only_for_stats: Nur für Statistiken
+      modal_notification:
+        title: Titel
+        active_from: Von
+        active_to: Bis
+        html_content: Inhalt
+      votation_type:
+        max_votes: Maximale Stimmanzahl
+        max_votes_per_answer: Maximale Stimmanzahl pro Antwort
+        vote_type: Antwortoptionen
+        show_hint_callout: Informationstext der blauen Box im Frontend anzeigen
+        min_rating_scale_label: Linkes Label
+        max_rating_scale_label: Rechtes Label
+      votation_type/vote_type:
+        unique: Einzelne Stimme
+        multiple: Mehrere Stimmen
+        multiple_with_weight: Mehrere gewichtete Stimmen
+        rating_scale: Bewertungsskala
+      individual_group:
+        name: Name
+        visible: sichtbar
+        kind: Art
+        kinds:
+          hard: starke Gruppe
+          soft: schwache Gruppe
+      individual_group_value:
+        name: Name
+        email_pattern: E-Mail-Muster
+      sentiment:
+        color: Farbe des Sentiments
+      sentiment/translation:
+        name: Name des Sentiments
+      projekt_label:
+        icon: Icon des Labels
+      projekt_label/translation:
+        name: Name des Labels
+      projekt_question:
+        show_answers_count: Anzahl der Stimmen im Frontend anzeigen
+        comments_enabled: Offene Antwort aktiviert
+      projekt_question/translation:
+        title: Frage
+      projekt_event:
+        title: Veranstaltungstitel
+        location: Veranstaltungsort
+        datetime: Datum
+        end_datetime: Endtermin
+        open_ended: Offenes Ende
+        weblink: Weblink
+      projekt_notification:
+        title: Titel
+        body: Nachricht
+      projekt_argument:
+        name: Name
+        party: Partei
+        position: Position
+        note: Stimme
+      projekt_livestream:
+        url: Livestream link
+        title: Titel
+        starts_at: Startet um
+        platform: Portal
+        description: Beschreibung
+      projekt_phase:
+        start_date: Anfangsdatum
+        end_date: Enddatum
+      formular_field:
+        name: Name
+        description: Beschreibung
+        required: Pflichtfeld
+        kind: Art
+        email_for_confirmation: Bestätigungsmail an Nutzer*in versenden
+        drop_down_options: Dropdown-Optionen
+      formular_follow_up_letter:
+        subject: Betreff
+        body: E-Mail-Text
+        show_follow_up_button: Link zu Follow-up Formular integrieren
+      formular_answer_image:
+        title: Titel
+        attachment: Anhang
+      formular_answer_document:
+        title: Titel
+        attachment: Anhang
+      registered_address/district:
+        default_deficiency_report_responsible: Standardmäßig Sachbearbeiter*in
