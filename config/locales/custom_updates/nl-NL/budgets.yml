@@ -1,114 +1,108 @@
 nl:
   budgets:
-    show:
-      amount_available:
-        distributed:
-          one: "Sie können immer noch <span>%{count}</span> Stimme abgeben."
-          other: "Sie können immer noch <span>%{count}</span> Stimmen abgeben."
-      amount_spent:
-        distributed:
-          one: "Abgegebene Stimme: <span>%{count}</span>"
-          other: "Abgegebene Stimmen: <span>%{count}</span>"
-      amount_limit:
-        distributed:
-          one: "Sie können noch <span>1</span> Stimme abgeben"
-          other: "Sie können bis zu <span>%{count}</span> Stimmen abgeben"
+    ballots:
+      show:
+        amount_available:
+          distributed:
+            one: "Sie können immer noch <span>%{count}</span> Stimme abgeben."
+            other: "Sie können immer noch <span>%{count}</span> Stimmen abgeben."
+        amount_spent:
+          distributed:
+            one: "Abgegebene Stimme: <span>%{count}</span>"
+            other: "Abgegebene Stimmen: <span>%{count}</span>"
+        amount_limit:
+          distributed:
+            one: "Sie können noch <span>1</span> Stimme abgeben"
+            other: "Sie können bis zu <span>%{count}</span> Stimmen abgeben"
     investments:
       index:
-        filters:
-          all: all Proposals
-          undecided: undecided
-          feasible: feasible
-          unfeasible: unfeasible
-          preselected: preselected
-          not_preselected: not preselected
-          selected: selected
-          unselected: unselected
-          winners: winners
         orders:
-          random: Random
-          ballot_line_weight: Most supported
-          newest: Newest
-          comments_count: Most comments
+          random: Zufällig
+          ballot_line_weight: Aktuelle Stimmenverteilung
+          newest: Neueste zuerst
         sidebar:
           voted_info:
-            distributed: You can change your vote at any time until the end of this phase. There is no need to spend all available budget.
+            distributed: Sie können jederzeit Ihre Stimme ändern bis zum Ende dieser Phase. Es besteht keine Notwendigkeit, das gesamte verfügbare Budget auszugeben.
   custom:
     budgets:
       investments:
         index:
-          title: Investments overview
-          welcome_default_text_html: In participation projects, citizens can create investment proposals and collect them on this page. Investment proposals can be filtered according to the respective budget and feasibility.
+          title: Übersicht aller Vorschläge
+          welcome_default_text_html: In Beteiligungsprojekten können Bürger*innen Vorschläge erstellen und auf dieser Seite sammeln. Vorschläge können nach dem jeweiligen Budget und der Durchführbarkeit gefiltert werden.
           search_form:
-            placeholder: Search...
+            placeholder: Suchen...
           orders:
-            random: Random
-            ballot_line_weight: Votes
-            total_votes: Current ranking
-            newest: Newest
+            random: Zufällig
+            ballot_line_weight: Aktuelle Stimmenverteilung
+            total_votes: Aktuelles Ranking
+            newest: Neueste zuerst
+            comments_count: Meist kommentiert
           filters:
             budget:
               title: Budgets
             status:
               title: Status
           sidebar:
-            user_votes: "My votes: %{count}"
-          empty_list_text: No results
+            user_votes: "Abgegebene Stimmen: %{count}"
+          empty_list_text: Keine Ergebnisse
           stat_phases:
-            accepting: Accepting proposals
-            selecting: Selecting proposals
-            balloting: Voting
-            finished: Final
+            accepting: Vorschlagsphase
+            selecting: Unterstützungsphase
+            balloting: Abstimmungsphase
+            finished: Statistik über alle Phasen
         form:
-          start_new: Create new proposal
-          page_description: The budget lives from your contributions! Tell us what you would like to have implemented - and then share your ideas with others. You can indicate whether you would like to support the implementation yourself or whether the city administration should take responsibility.<br></br> You can also make an initial price assessment for your contribution. The city administration will check your contribution for its feasibility and also provide a price estimate. Thank you for taking the time and getting involved!
-          title_placeholder: Give your contribution a catchy title, for example “Renovate the train station square” or “Build a new children's playground”.
-          description_placeholder: " Describe your contribution here. The following procedure has proven successful:\n\n Start with a general description of your idea and then show what would improve with the implementation of your suggestion.\n\n When writing, keep sentences as short as possible.\n\n Also use paragraphs to make your text more readable. (Many users read your text on mobile devices.)\n\n If possible, limit your content to a maximum of three paragraphs.\n\n If appropriate, use bullet points and bullet points for better clarity."
+          start_new: Vorschlag erstellen
+          page_description: Das Budget lebt von Ihren Beiträgen! Teilen Sie uns mit, was Sie gerne umgesetzt hätten - und tauschen Sie sich im Anschluss mit anderen zu Ihren Ideen aus. Sie können angeben, ob Sie bei der Umsetzung selbst unterstützen möchten oder ob die Stadtverwaltung die Verantwortung übernehmen soll.<br><br> Außerdem können Sie eine erste preisliche Einschätzung zu Ihrem Beitrag vornehmen. Die Stadtverwaltung wird Ihren Beitrag auf seine Durchführbarkeit prüfen und ebenfalls eine preisliche Einschätzung abgeben. Danke, dass Sie sich die Zeit nehmen und sich beteiligen!
+          title_placeholder: "Titel hinzufügen\n\nGeben Sie Ihrem Beitrag einen aussagekräftigen Titel, zum Beispiel „Trinkbrunnen am XY-Platz“ oder „Mehr Bäume in der XY-Straße“."
+          description_placeholder: " Beschreibung hinzufügen\n\n Beschreiben Sie Ihre Idee möglichst konkret: Erläutern Sie genau, was Ihr\n Vorschlag beinhaltet und wo er umgesetzt werden könnte.\n\n Nennen Sie Vorteile: Welche positiven Auswirkungen hat Ihr Vorschlag auf die\n Stadt und ihre Einwohner*innen?\n\n Geben Sie Beispiele: Gibt es ähnliche Projekte in anderen Städten, die\n erfolgreich waren?\n\n Schreiben Sie klar und verständlich: Vermeiden Sie Fachbegriffe und\n schreiben Sie in kurzen Sätzen, damit Ihr Vorschlag für alle nachvollziehbar ist."
           map:
-            hint: Where should your contribution be implemented? Place a “pin” to bring others into the picture.
+            hint: Wo soll Ihr Beitrag umgesetzt werden? Platzieren Sie einen „Pin“, um andere ins Bild zu setzen.
           implementation:
-            title: Implementation
-            description: Indicate here who should implement the investment proposal
+            title: Umsetzung
+            description: Geben Sie hier an von wem der Vorschlag umgesetzt werden soll
           user_cost_estimate:
-            title: Price assessment
-            description: Please provide a price estimate for your investment proposal here.
-            placeholder: Enter price in EUR
+            title: Preisliche Einschätzung
+            description: Bitte geben Sie hier eine preisliche Einschätzung ihres Vorschlags an.
+            placeholder: Preis in Euro angeben
           documents:
-            title: Add documents
+            title: Dokumente hinzufügen
           on_behalf_of:
-            title: On behalf of
-            description: Only admins can see this field. You can create a post on behalf of someone here.
-            placeholder: Enter name...
-          required: Your input
+            title: Veröffentlichen für
+            description: Dieses Feld sehen nur Admin. Sie können hier einen Beitrag im Namen von jemandem erstellen.
+            placeholder: Namen eingeben...
+          required: Ihr Beitrag
         investment:
           supporters:
-            one: "1 supporter"
-            other: "%{count} supporters"
+            one: "1 Unterstützer*in"
+            other: "%{count} Unterstützer*innen"
           supports:
-            one: 1 vote
-            other: "%{count} votes"
-          qualified_supports: "Total votes: %{count}"
-          line_weight_label: "Your votes"
-          unverified_note: "Your data will be checked manually. This can take 1-2 working days. After that, your votes will be released."
-          unverified_note_no_data_html: "Plaese %{verify_account}, to make sure your votes are counted."
-          unfeasible_html: "This investment proposal <strong>was marked as not feasible</strong> and will not take part in voting."
-          feasible_html: "This proposal was classified as feasible."
+            one: 1 Stimme
+            other: "%{count} Stimmen"
+          qualified_supports: "Gesamtstimmen: %{count}"
+          line_weight_label: "Deine Stimmenanzahl"
+          unverified_note: "Ihre Daten werden manuell überprüft. Dies kann 1-2 Werktage in Anspruch nehmen. Danach werden Ihre Stimmen freigegeben."
+          unverified_note_no_data_html: "Bitte %{verify_account}."
+          unfeasible_html: "Dieser Vorschlag entspricht <strong>nicht</strong> den Kriterien"
+          feasible_html: "Dieser Vorschlag entspricht den Kriterien"
         show:
           callouts:
             publishing_prices:
-              undecided: The investment proposal was not decided yet.
-              unfeasible: This investment proposal was marked as unfeasible.
+              undecided: Der Vorschlag wird nicht zur Wahl gestellt.
+              unfeasible: Dieser Vorschlag wurde als nicht durchführbar markiert
             selecting:
-              undecided: This investment proposal was not eveluated yet.
-              unfeasible: This investment proposal was marked as unfeasible.
-          price: Cost estimation by the administration
-          feasibility_explanation: Assessment of the administration
-          implementation_city_text: "Implementation: Should be implemented by the city administration"
-          implementation_user_text: "Implementation: %{author} will assist with the implementation"
-          user_cost_estimate_text: "User cost estimate: %{user_cost_estimate}"
+              undecided: Dieser Vorschlag befindet sich gerade noch in der Bewertung.
+              unfeasible: Dieser Vorschlag wurde als nicht durchführbar klassifiziert.
+          price: Preisliche Einschätzung der Verwaltung
+          welcome_default_text_html: "%{author_name} hat einen Beitrag zu diesem Projekt gemacht, der Ihre Aufmerksamkeit benötigt. Sie können den Beitrag an der rechten Seitenleiste unterstützen, indem Sie ihm Ihre Stimme geben. Außerdem können Sie dem Beitrag folgen, um auf dem Laufenden zu bleiben. Die Karte hilft Ihnen dabei, den Beitrag in der Stadt zu verorten, des Weiteren haben Sie die Möglichkeit, den Beitrag zu kommentieren."
+          feasibility_explanation: Einschätzung der Verwaltung
+          implementation_city_text: "Umsetzung: Soll von Stadtverwaltung umgesetzt werden"
+          implementation_user_text: "Umsetzung: %{author} unterstützt bei der Durchführung"
+          user_cost_estimate_text: "Preisliche Einschätzung des Nutzers: %{user_cost_estimate}"
         statuses:
           phases:
-            accepting: The investment proposal was successfully submitted.
-            reviewing: The feasibility of the investment proposal is currently evaluated.
-            reviewing_ballots: We're currently checking the votes.
-            valuating: The costs for this investment proposal are evaluated internally.
+            accepting: Der Vorschlag wurde erfolgreich eingereicht.
+            reviewing: Der Vorschlag wird geprüft.
+            reviewing_ballots: Das Ergebniss der Abstimmung wird kalkuliert.
+            valuating: Der Vorschlag wird fachlich geprüft.
+      results:
+        recalculate_winners: Gewinner neu berechnen
