@@ -4,26 +4,26 @@ nl:
       users:
         registrations:
           new:
-            message: Schnell. Einfach. Sicher
-            first_name_label: Vorname
-            last_name_label: Nachname
-            street_name_label: Straße
-            street_number_label: Hausnummer
-            street_number_extension_label: Hausnummerergänzung
-            plz_label: Postleitzahl
-            gender: Bitte wählen
-            city_name_label: Stadt
-            document_last_digits_label: Personalausweis / Passport (4 letzten Ziffern)
-            form_registered_address_label: Adresse
-            form_registered_address_city_label: Wohnort
-            form_registered_address_street_label: Straße
-            submit: Neues Konto erstellen
-            organization_signup_link: Als Organisation oder Kollektiv registrieren
+            message: Fast. Simply. Secure
+            first_name_label: First name
+            last_name_label: Last name
+            street_name_label: Street name
+            street_number_label: Street number
+            street_number_label_extension: Street number extension
+            plz_label: PLZ
+            gender: Please select
+            city_name_label: City
+            document_last_digits_label: Document (4 last digits)
+            form_registered_address_label: Address
+            form_registered_address_city_label: City/Town
+            form_registered_address_street_label: Street
+            submit: Create a new account
+            organization_signup_link: Register as an organization or collective
           sign_in_guest:
-            title: Melden Sie sich als Gast an
-            username_placeholder: Benutzer*innenname
-            username_hint: Bitte geben Sie Ihren bevorzugten Benutzer*innenname ein
-            submit: Sich als Gast anmelden
-            success: Sie haben sich erfolgreich als Gast angemeldet
+            title: Sign in as a guest
+            username_placeholder: username
+            username_hint: please enter your preferred username
+            submit: Sign in as a guest
+            success: You have successfully signed in as Guest
           sign_out_guest:
-            success: Sie haben sich erfolgreich als Gast abgemeldet
+            success: You have successfully signed out as Guest
