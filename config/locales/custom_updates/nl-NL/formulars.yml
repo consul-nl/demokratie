@@ -2,13 +2,13 @@ nl:
   custom:
     formular_answer:
       form:
-        select_prompt: für eine Auswahl hier klicken
-        submit: Abschicken
+        select_prompt: click to select
+        submit: Submit answer
       notifications:
-        success: Vielen Dank! Ihr Formular wurde erfolgreich eingereicht.
+        success: Thank you! Your answer was successfully submitted.
       errors:
-        blank: Darf nicht leer sein
+        blank: Cannot be blank
         length:
-          minimum: Mindestens %{minimum} Buchstaben
-          maximum: Nicht mehr als %{maximum} Buchstaben
-        format: Das Format ist falsch
+          minimum: Minimum %{minimum} letters
+          maximum: Maximum %{maximum} letters
+        format: Wrong format
