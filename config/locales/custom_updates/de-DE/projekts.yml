@@ -1,43 +1,46 @@
 de:
   custom:
     projekts:
+      empty_list_text: Keine Projekte für aktuellen Filter
       overview_page:
-        projekt_name: Overview page
-        projekt_name_for_proposal: New projekt proposal
-        projekt_name_for_debate: New projekt debate
-        projekt_name_for_poll: New projekt poll
-      backlink: To the project overview
+        projekt_name: Projektübersichtsseite
+        projekt_name_for_proposal: Neuer Projektvorschlag
+        projekt_name_for_debate: Neue Diskussion
+        projekt_name_for_poll: Abtimmung
+      backlink: Zur Projektübersicht
       errors:
-        presence: Please select a project
+        presence: Bitte wählen Sie ein Projekt
       index:
-        current_projekts: Current projekts
-        expired_projekts: Expired projekts
-        no_projekts: No projects
-        title: Projects
-        to_projekt: To the project
+        current_projekts: Projekte mit aktiver Beteiligungsphase
+        expired_projekts: Abgeschlossene Projekte
+        no_projekts: Keine Projekte
+        title: Projektübersicht
+        to_projekt: Zum Projekt
         social_share:
-          title: Projekt overview
-          description: Overview of all projekts
-        information_default_text: Be active and participate in our projects. Your contribution is very important!
-        count: Projects
-        welcome_default_text_html: In the project overview we list all projects that are currently being discussed. Use the filter to view all projects or display them according to recentness, activity, appointment or individually according to your preferences. The map also helps you locate the projects in the city.
+          title: Projektübersicht
+          description:  Die Übersicht aller Projekte
+        information_default_text: Werden Sie aktiv und beteiligen sich in den vorliegenden Projekten. Ihr Beitrag ist wichtig und zählt!
+        count: Projekte
+        welcome_default_text_html: In der Projektübersicht listen wir alle Projekte auf, die derzeit diskutiert werden. Nutzen Sie den Filter, um sich alle Projekte anzuschauen oder sie nach Aktualität, nach Aktivität, nach Termin oder individuell nach Ihren Vorlieben anzeigen zu lassen. Zusätzlich hilft Ihnen die Karte dabei, die Projekte in der Stadt zu verorten.
       filters:
-        index_order_all: 'All Projects'
-        index_order_all_title: 'All Projects'
-        index_order_expired: Completed
-        index_order_expired_title: 'The "Completed" tab lists participation projects that have been completed. Both the participation phase and the project itself.'
-        index_order_ongoing: Ongoing projects
-        index_order_ongoing_title: 'In the tab "Ongoing projects" are projects that are still running, but the participation is already completed.'
-        index_order_underway: Active participation
-        index_order_underway_title: 'In the tab "Active participation" are projects in which you can currently participate.'
-        index_order_upcoming: Future project plans
-        index_order_upcoming_title: 'The "Future project plans" tab lists participation projects that will only take place in the future.'
-        index_order_individual_list: "Individual list"
-        index_order_individual_list_title: "Individual list"
+        index_order_all: 'Alle Projekte'
+        index_order_all_title: 'Alle Projekte'
+        index_order_expired: Abgeschlossen
+        index_order_expired_title: 'Im Reiter "Abgeschlossen" sind Beteiligungsprojekte gelistet, die abgeschlossen sind. Sowohl die Beteiligungsphase, als auch das Projekt an sich.'
+        index_order_ongoing: Laufende Projekte
+        index_order_ongoing_title: 'Im Reiter "Laufende Projekte" sind Projekte die noch laufen, die Beteiligung aber schon abgeschlossen ist.'
+        index_order_underway: Aktive Beteiligung
+        index_order_underway_title: 'Im Reiter "Aktive Beteiligung" sind Projekte, bei denen man sich aktuell beteiligen kann.'
+        index_order_upcoming: Zukünftige Projektvorhaben
+        index_order_upcoming_title: 'Im Reiter "Zukünftige Projektvorhaben" sind Beteiligungsprojekte gelistet, die erst in der Zukunft stattfinden.'
+        index_order_individual_list: "Individuelle Liste"
+        index_order_individual_list_title: "Individuelle Liste"
         index_order_drafts: "Entwürfe"
         index_order_drafts_title: "Entwürfe"
       search_form:
-        placeholder: Search...
+        placeholder: Suchen...
+      homepage_search_form:
+        placeholder: Projekte durchsuchen...
       page:
         footer:
           sidebar:
@@ -46,114 +49,138 @@ de:
             sentiments:
               title: Sentiment
           budget:
-            investments_subtab: Proposals
+            investments_subtab: Vorschläge
         projekt_events_tab:
-          event_date: Date
-          event_location: Location
-          event_time: Time
-          event_title: Title
+          event_date: Datum
+          event_location: Veranstaltungsort
+          event_time: Zeit
+          event_title: Veranstaltungstitel
           event_weblink: Weblink
           event_projekt: Projekt
-          no_events: No events
-          title: Events
+          no_events: Keine Ereignisse
+          title: Kommende Veranstaltungen
         sidebar:
           admin_controls:
             title: Administration
-            copy_code: Copy source code
-            edit_projekt: Edit projekt
-            edit_projekt_settings: Project settings
-            edit_projekt_page: Edit projekt page
-            create_newsletter_draft: Create newsletter
+            copy_code: Quellcode kopieren
+            edit_projekt: Projekteinstellungen
+            edit_map: Karte editieren
+            edit_projekt_page: Projektseite
+            edit_projekt_phases: Projektphasen
+            edit_projekt_settings: Projektfunktionen
+            edit_projekt_managers: Projektmanager*innen
+            edit_projekt_map: Karteneinstellungen
+            edit_projekt_sdg: SDGs & Tags
+            create_newsletter_draft: Newsletter-Entwurf
           projekt_information:
-            title: Project information
+            title: Projektinformation
           map:
-            title: Map
+            title: Karte
           phases:
-            title: Phases
-            participate: Open for participation!
+            title: Phasen
+            participate: Offen für Beteiligung!
           sdgs:
             title: SDGs
           tags:
-            title: Categories
+            title: Tags
           navigator:
-            title: Composition
-          projekt_start: Projekt start
-          projekt_end: Planned completion
+            title: Aufbau
+          projekt_start: Projektstart
+          projekt_end: Gepl. Fertigstellung
           phases_subscription:
-            title: Notifications
-            description: Would you like to stay current?
+            title: Benachrichtigungen
+            description: Möchten Sie zu diesem Projekt auf dem Laufenden bleiben?
           share:
-            title: Share
+            title: Teilen
         tabs:
-          budgets: Budgets
-          comments: Comments
-          debates: Debates
-          milestones: Milestones
-          newsfeed: Newsfeed
-          polls: Polls
-          project_events: Events
-          projekt_notifications: Notifications
-          projekt_questions: Short survey
-          projekt_arguments: Arguments
-          proposals: Proposals
+          budget: Budgets
+          comments: Kommentare
+          debates: Diskussionen
+          milestones: Meilensteine
+          newsfeed: News-Feed
+          polls: Abstimmungen
+          projekt_events: Veranstaltungen
+          projekt_notifications: Benachrichtigungen
+          projekt_questions: Kurzumfrage
+          projekt_arguments: Stimmen
+          projekt_livestreams: Livestream
+          proposals: Vorschläge
           questions: Questions
-          legislation: Text editing
+          legislation: Textbearbeitung
+      link_to_phase_prefix: Direkt zu den
       phase_name:
         budget_phase: Budget
-        comment_phase: Comments
-        debate_phase: Debates
-        event_phase: Event phase
-        legislation_process_phase: Document drafting
-        milestone_phase: Milestones
+        comment_phase: Kommentare
+        debate_phase: Diskussionen
+        event_phase: Veranstaltungen
+        legislation_process_phase: Textbearbeitungsphase
+        legislation_phase: Textbearbeitung
+        milestone_phase: Meilensteine
         newsfeed_phase: Newsfeed
-        projekt_notification_phase: Notifications
-        proposal_phase: Proposals
-        question_phase: Short survey
-        voting_phase: Voting
-        argument_phase: Arguments
+        projekt_notification_phase: Benachrichtigungen
+        proposal_phase: Vorschläge
+        question_phase: Kurzumfrage
+        voting_phase: Abstimmungen
+        argument_phase: Stimmen
+        livestream_phase: Livestream
       projekt_events:
         index:
-          title: Events
-        orders:
-          all: All
-          incoming: Incoming
-          past: Past
+          title: Veranstaltungskalender
+          social_share:
+            title: Veranstaltungen
+            description: "Die Veranstaltungsübersicht von %{domain}"
+        filters:
+          all: Alle
+          incoming: Kommende
+          past: Vergangene
       projekt_questions:
-        comments_button: Publish answer
-        comments_count: "%{count} open answers"
-        comment_votes_count: "%{count} up- & downvotes"
-        comments_title: Open answers
-        new_question_notification: "New question: %{question_title}"
-        all_questions: All questions
-        go_to_question: Go to question
+        back_to_question_list: 'Zurück zur Fragenliste'
+        comments_button: Antwort veröffentlichen
+        comments_count: "%{count} offene Antworten"
+        comment_votes_count: "%{count} Up- & Downvotes"
+        comments_title: Offene Antworten
+        previous_question: Vorherige Frage
+        next_question: Nächste Frage
+        first_question: Erste Frage
+        answers_count: "%{count} Stimmen"
+        new_question_notification: "Neue Frage: %{question_title}"
+        all_questions: Alle Fragen
+        go_to_question: Zur Frage wechseln
         participation_not_allowed:
-          login_to_answer: Please %{signin} or %{signup} to proceed.
-          organizations: Organizations cannot take part
-          not_verified: 'Only verified account can take part: %{verify_account}.'
-          phase_expired: Particiapation has already ended
-          phase_not_yet_started: Participation has not started yet
-          phase_not_active: Phase is not activated
+          login_to_answer: Sie müssen sich %{signin} oder %{signup}, um an der Kurzumfrage teilzunehmen.
+          organizations: Organisationen dürfen sich nicht an der Diskussion beteiligen
+          not_verified: 'Nur verifizierte Benutzer können teilnehmen: %{verify_account}.'
+          phase_expired: Die Beteiligung ist bereits beendet
+          phase_not_yet_started: Die Beteiligung hat noch nicht begonnen
+          phase_not_active: Die Phase ist nicht aktiviert
       projekt_arguments:
         pro: Pro
         cons: Contra
         fields:
           name: Name
-          party: Party
+          party: Partei
           position: Position
-          note: Note
+          note: Stimme
       projekt_livestreams:
         links_title: Livestreams
-        current_livestream: Actual Livestream
-        no_livestreams: No Livestreams
+        current_livestream: Aktueller Livestream
+        no_livestreams: Keine Livestreams
+        video_platform_not_supported: "Videoplattform wird nicht unterstützt. Unterstützte Plattformen: YouTube, Vimeo"
       selector:
         connected_resources:
-          debate_description: Please assign your discussion to one of the following projects or subprojects. This serves to make the discussions easier to find in the discussion overview.
-          debate_title: Assignment of the discussion to a project
-          proposal_description: Please assign your proposal to one of the following projects or sub-projects. This serves to make the proposals easier to find in the proposal overview.
-          proposal_title: Assignment of the proposal to a project
-        select_placeholder_mandatory_html: Choose project (mandatory)
+          debate_description: Bitte ordnen Sie Ihre Diskussion einem der nachfolgenden Projekte oder Unterprojekte zu. Dies dient dazu, dass die Diskussionen in der Diskussionsübersicht besser auffindbar sind.
+          debate_title: Zuordnung der Diskussion zu einem Projekt
+          proposal_description: Bitte ordnen Sie Ihren Vorschlag einem der nachfolgenden Projekte oder Unterprojekte zu. Dies dient dazu, dass die Vorschläge in der Vorschlagsübersicht besser auffindbar sind.
+          proposal_title: Zuordnung des Vorschlags zu einem Projekt
+        select_placeholder_mandatory_html: Wähle Projekt (verpflichtend)
+      sidebar:
+        sdgs: SDGs
       sidebar_filter:
-        filter_button: Filter by projects
-        title: Projects
-        title_active: Active projects
-        title_archived: Expired projects
+        filter_button: Nach Projekte filtern
+        title: Projekte
+        title_active: Aktive Projekte
+        title_archived: Abgelaufene Projekte
+      list:
+        title: Projektübersicht
+      filter:
+        title: Filtern nach
