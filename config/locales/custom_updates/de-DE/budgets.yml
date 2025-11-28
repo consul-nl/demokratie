@@ -4,12 +4,10 @@ de:
       show:
         amount_available:
           distributed:
-            zero: "Sie können immer noch <span>%{count}</span> Stimmen abgeben."
             one: "Sie können immer noch <span>%{count}</span> Stimme abgeben."
             other: "Sie können immer noch <span>%{count}</span> Stimmen abgeben."
         amount_spent:
           distributed:
-            zero: "Abgegebene Stimmen: <span>%{count}</span>"
             one: "Abgegebene Stimme: <span>%{count}</span>"
             other: "Abgegebene Stimmen: <span>%{count}</span>"
         amount_limit:
@@ -54,19 +52,9 @@ de:
             finished: Statistik über alle Phasen
         form:
           start_new: Vorschlag erstellen
-          page_description: Das Budget lebt von Ihren Beiträgen! Teilen Sie uns mit, was Sie gerne umgesetzt hätten - und tauschen Sie sich im Anschluss mit anderen zu Ihren Ideen aus. Sie können angeben, ob Sie bei der Umsetzung selbst unterstützen möchten oder ob die Stadtverwaltung die Verantwortung übernehmen soll.<br><br>
-            Außerdem können Sie eine erste preisliche Einschätzung zu Ihrem Beitrag vornehmen. Die Stadtverwaltung wird Ihren Beitrag auf seine Durchführbarkeit prüfen und ebenfalls eine preisliche Einschätzung abgeben. Danke, dass Sie sich die Zeit nehmen und sich beteiligen!
+          page_description: Das Budget lebt von Ihren Beiträgen! Teilen Sie uns mit, was Sie gerne umgesetzt hätten - und tauschen Sie sich im Anschluss mit anderen zu Ihren Ideen aus. Sie können angeben, ob Sie bei der Umsetzung selbst unterstützen möchten oder ob die Stadtverwaltung die Verantwortung übernehmen soll.<br><br> Außerdem können Sie eine erste preisliche Einschätzung zu Ihrem Beitrag vornehmen. Die Stadtverwaltung wird Ihren Beitrag auf seine Durchführbarkeit prüfen und ebenfalls eine preisliche Einschätzung abgeben. Danke, dass Sie sich die Zeit nehmen und sich beteiligen!
           title_placeholder: "Titel hinzufügen\n\nGeben Sie Ihrem Beitrag einen aussagekräftigen Titel, zum Beispiel „Trinkbrunnen am XY-Platz“ oder „Mehr Bäume in der XY-Straße“."
-          description_placeholder: "
-            Beschreibung hinzufügen\n\n
-            Beschreiben Sie Ihre Idee möglichst konkret: Erläutern Sie genau, was Ihr\n
-            Vorschlag beinhaltet und wo er umgesetzt werden könnte.\n\n
-            Nennen Sie Vorteile: Welche positiven Auswirkungen hat Ihr Vorschlag auf die\n
-            Stadt und ihre Einwohner*innen?\n\n
-            Geben Sie Beispiele: Gibt es ähnliche Projekte in anderen Städten, die\n
-            erfolgreich waren?\n\n
-            Schreiben Sie klar und verständlich: Vermeiden Sie Fachbegriffe und\n
-            schreiben Sie in kurzen Sätzen, damit Ihr Vorschlag für alle nachvollziehbar ist."
+          description_placeholder: " Beschreibung hinzufügen\n\n Beschreiben Sie Ihre Idee möglichst konkret: Erläutern Sie genau, was Ihr\n Vorschlag beinhaltet und wo er umgesetzt werden könnte.\n\n Nennen Sie Vorteile: Welche positiven Auswirkungen hat Ihr Vorschlag auf die\n Stadt und ihre Einwohner*innen?\n\n Geben Sie Beispiele: Gibt es ähnliche Projekte in anderen Städten, die\n erfolgreich waren?\n\n Schreiben Sie klar und verständlich: Vermeiden Sie Fachbegriffe und\n schreiben Sie in kurzen Sätzen, damit Ihr Vorschlag für alle nachvollziehbar ist."
           map:
             hint: Wo soll Ihr Beitrag umgesetzt werden? Platzieren Sie einen „Pin“, um andere ins Bild zu setzen.
           implementation:
@@ -85,11 +73,9 @@ de:
           required: Ihr Beitrag
         investment:
           supporters:
-            zero: Keine Unterstützung
             one: "1 Unterstützer*in"
             other: "%{count} Unterstützer*innen"
           supports:
-            zero: Keine Stimmen
             one: 1 Stimme
             other: "%{count} Stimmen"
           qualified_supports: "Gesamtstimmen: %{count}"
@@ -107,9 +93,7 @@ de:
               undecided: Dieser Vorschlag befindet sich gerade noch in der Bewertung.
               unfeasible: Dieser Vorschlag wurde als nicht durchführbar klassifiziert.
           price: Preisliche Einschätzung der Verwaltung
-          welcome_default_text_html: "%{author_name} hat einen Beitrag zu diesem Projekt gemacht, der Ihre Aufmerksamkeit benötigt.
-            Sie können den Beitrag an der rechten Seitenleiste unterstützen, indem Sie ihm Ihre Stimme geben. Außerdem können Sie dem Beitrag folgen, um auf dem Laufenden zu bleiben.
-            Die Karte hilft Ihnen dabei, den Beitrag in der Stadt zu verorten, des Weiteren haben Sie die Möglichkeit, den Beitrag zu kommentieren."
+          welcome_default_text_html: "%{author_name} hat einen Beitrag zu diesem Projekt gemacht, der Ihre Aufmerksamkeit benötigt. Sie können den Beitrag an der rechten Seitenleiste unterstützen, indem Sie ihm Ihre Stimme geben. Außerdem können Sie dem Beitrag folgen, um auf dem Laufenden zu bleiben. Die Karte hilft Ihnen dabei, den Beitrag in der Stadt zu verorten, des Weiteren haben Sie die Möglichkeit, den Beitrag zu kommentieren."
           feasibility_explanation: Einschätzung der Verwaltung
           implementation_city_text: "Umsetzung: Soll von Stadtverwaltung umgesetzt werden"
           implementation_user_text: "Umsetzung: %{author} unterstützt bei der Durchführung"
