@@ -1,0 +1,22 @@
+nl:
+  custom:
+    verification:
+      residence:
+        new:
+          verification_with_bund_id_description_html: Sie wohnen nicht in %{city_name}? Nutzen Sie bitte den nachfolgenden BundID-Button, um sich zu verifizieren.<br>Sie wohnen in %{city_name}? Dann verifizieren Sie sich bitte mit Hilfe des nachfolgenden Formulars.
+          bund_id_block_title: Verifizierung mit der BundID
+          form_block_title: Verifizierung für Bürger:innen der Stadt %{city_name}
+          first_name: Vorname
+          last_name: Nachname
+          street_name: Straße
+          street_number: Hausnummer
+          street_number_extension: Hausnummerergänzung
+          plz: Postleitzahl
+          city_name: Stadt
+          gender: Geschlecht
+          date_of_birth: Geburtsdatum
+          document_last_digits: Personalausweis / Passport (4 letzten Ziffern)
+        create:
+          flash:
+            success_manual: Vielen Dank, Ihre Daten wurden gespeichert
+            error: Wir konnten Ihre Daten nicht verifizieren, bitte kontaktieren Sie uns.
