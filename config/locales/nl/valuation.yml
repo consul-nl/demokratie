@@ -1,68 +1,68 @@
 nl:
   valuation:
     header:
-      title: Evaluatie
+      title: Bewertung
     menu:
-      title: Evaluatie
-      budgets: Participatory budgets
+      title: Bewertung
+      budgets: Bürgerhaushalte
     budgets:
       index:
-        title: Participatory budgets
+        title: Bürgerhaushalte
         filters:
-          current: Open
-          finished: Afgelopen
+          current: Offen
+          finished: Abgeschlossen
         table_name: Name
         table_phase: Phase
-        table_assigned_investments_valuation_open: Investment projects assigned with valuation open
-        table_actions: Activiteiten
-        evaluate: Evaluate
-        no_budgets: "Er zijn geen budgetten"
+        table_assigned_investments_valuation_open: Zugeordnete Investmentprojekte mit offener Bewertung
+        table_actions: Aktionen
+        evaluate: Bewerten
+        no_budgets: "Kein Bürgerhaushalte vorhanden"
     budget_investments:
       index:
-        headings_filter_all: Alle koppen
+        headings_filter_all: Alle Rubriken
         filters:
-          valuation_open: Open
-          valuating: Under valuation
-          valuation_finished: Beoordeling voltooid
-        assigned_to: "Assigned to %{valuator}"
-        title: Budget bestemmingen
-        edit: Bewerk dossier
+          valuation_open: Offen
+          valuating: Unter Bewertung
+          valuation_finished: Begutachtung abgeschlossen
+        assigned_to: "%{valuator} zugewiesen"
+        title: Ausgabenvorschläge
+        edit: Bericht bearbeiten
         table_id: ID
-        table_title: Title
-        table_heading_name: Kop naam
-        table_actions: Activiteiten
-        no_investments: "Er zijn geen begrotingsvoorstellen."
+        table_title: Titel
+        table_heading_name: Name der Rubrik
+        table_actions: Aktionen
+        no_investments: "Keine Ausgabenvorschläge vorhanden."
       show:
-        back: Terug
-        title: Investment project
-        info: Author info
-        by: Sent by
-        sent: Sent at
-        heading: Partida
-        dossier: Dossier
-        edit_dossier: Bewerk dossier
-        price: Prijs
-        price_first_year: Cost during the first year
+        back: Zurück
+        title: Investitionsprojekt
+        info: Autor info
+        by: Gesendet von
+        sent: Gesendet um
+        heading: Rubrik
+        dossier: Bericht
+        edit_dossier: Bericht bearbeiten
+        price: Preis
+        price_first_year: Kosten im ersten Jahr
         currency: "€"
-        feasibility: Feasibility
-        feasible: Feasible
-        unfeasible: Unfeasible
-        undefined: Niet gedefinieerd
-        valuation_finished: Beoordeling voltooid
-        duration: Time scope
-        responsibles: Responsibles
-        assigned_admin: Assigned admin
-        assigned_valuators: Toegewezen beoordelaars
-        preview: Investeringsoverzicht
+        feasibility: Kriterienerfüllung
+        feasible: Durchführbar
+        unfeasible: Undurchführbar
+        undefined: Undefiniert
+        valuation_finished: Begutachtung abgeschlossen
+        duration: Zeitrahmen
+        responsibles: Verantwortliche
+        assigned_admin: Zugewiesener Admin
+        assigned_valuators: Zugewiesene Begutachter*innen
+        preview: Investitionsvorschau
       edit:
-        dossier: Dossier
-        price: "Prijs (%{currency})"
-        price_first_year: "Kosten tijdens het eerste jaar (%{currency}) <small>(optioneel, gegevens niet openbaar)</small>"
-        feasibility: Feasibility
-        valuation_finished_alert: "Dit rapport als voltooid markeren? Daarna kan het niet meer worden gewijzigd."
-        not_feasible_alert: "Een email met de beoordeling van de haalbaarheid wordt verstuurd aan de auteur van het project."
-        save: Bewaar wijzigingen
+        dossier: Bericht
+        price: "Preis (%{currency})"
+        price_first_year: "Kosten im ersten Jahr (%{currency}) <small>(optional, nicht öffentliche Daten)</small>"
+        feasibility: Kriterienerfüllung
+        valuation_finished_alert: "Sind Sie sicher, dass Sie diesen Bericht als erledigt markieren möchten? Hiernach können Sie keine Änderungen mehr vornehmen."
+        not_feasible_alert: "Der Autor des Projekts erhält sofort eine E-Mail mit einem Bericht zur Undurchführbarkeit."
+        save: Änderungen speichern
       notice:
-        valuate: "Dossier updated"
-      valuation_comments: Reacties op evaluaties
-      not_in_valuating_phase: Budgetten kunnen alleen worden geëvalueerd wanneer evaluatie is gestart
+        valuate: "Dossier aktualisiert"
+      valuation_comments: Bewertungskommentare
+      not_in_valuating_phase: Investitionen können nur bewertet werden, wenn das Budget in der Bewertungsphase ist
