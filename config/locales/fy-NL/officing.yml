@@ -1,89 +1,89 @@
 fy:
   officing:
     header:
-      title: Polling
+      title: Abstimmung
     dashboard:
       index:
-        title: Poll officing
-        info: Here you can validate user documents and store voting results
-        no_shifts: You don't have officing shifts today.
+        title: Vorsitzende/r der Abstimmung
+        info: Hier können Sie Benutzerdokumente überprüfen und Abstimmungsergebnisse speichern
+        no_shifts: Sie haben heute keinen Amtswechsel.
     menu:
-      voters: Validate document
-      total_recounts: Total recounts and results
+      voters: Dokument bestätigen
+      total_recounts: Komplette Nachzählungen und Ergebnisse
     polls:
       final:
-        title: Polls ready for final recounting
-        no_polls: You are not officing final recounts in any active poll
-        select_poll: Select poll
-        add_results: Add results
+        title: Auflistung über abgeschlossene Abstimmungen
+        no_polls: Sie führen keine Nachzählungen in einer aktiven Umfrage durch
+        select_poll: Umfrage auswählen
+        add_results: Ergebnisse hinzufügen
     poll_budgets:
-      see_ballot_sheets: See ballot sheets list
+      see_ballot_sheets: Siehe Liste Wahlzettel
       index:
-        title: "%{poll_budget} - Ballot sheets list"
-        ballot_sheet: "Ballot sheet %{id}"
+        title: "%{poll_budget} - Wahlzettel Liste"
+        ballot_sheet: "Wahlzettel %{id}"
         ballot_sheet_name: Name
-        ballot_sheet_author: Author
-        ballot_sheet_creation_date: Creation date
-        empty_results: There are no ballot sheets for this poll yet
+        ballot_sheet_author: Autor
+        ballot_sheet_creation_date: Erstellungsdatum
+        empty_results: Bisher keine Wahlzettel für die Abstimmung verfügbar
       new:
-        title: "%{poll_budget} - New ballot sheet"
-        booth: Booth
-        select_booth: Select booth
-        csv_data: CSV data
-        submit: Save
+        title: "%{poll_budget} - Neue Wahlzettel"
+        booth: Wahlkabine
+        select_booth: Wahlkabine auswählen
+        csv_data: CSV Daten
+        submit: Speichern
       show:
-        created_at: Creation date
-        author: Author
-        data: CSV data
+        created_at: Erstellungsdatum
+        author: Autor
+        data: CSV Daten
     booth:
       new:
-        title: "Choose your booth"
+        title: "Wähle deine Wahlkabine"
     results:
       flash:
-        create: "Results saved"
-        error_create: "Results NOT saved. Error in data."
-        error_wrong_booth: "Wrong booth. Results NOT saved."
+        create: "Ergebnisse speichern"
+        error_create: "Ergebnisse wurden nicht gespeichert. Fehler."
+        error_wrong_booth: "Falsche Wahlkabine. Ergebnisse wurden NICHT gespeichert."
       new:
-        title: "%{poll} - Add results"
-        not_allowed: "You are not allowed to add results for this poll"
-        booth: "Booth"
-        date: "Date"
-        select_booth: "Select booth"
-        ballots_white: "Totally blank ballots"
-        ballots_null: "Invalid ballots"
-        ballots_total: "Valid ballots"
-        submit: "Save"
-        results_list: "Your results"
-        see_results: "See results"
+        title: "%{poll} - Ergebnisse hinzufügen"
+        not_allowed: "Sie sind berechtigt, Ergebnisse für diese Umfrage hinzufügen"
+        booth: "Wahlkabine"
+        date: "Datum"
+        select_booth: "Wahlkabine auswählen"
+        ballots_white: "Völlig leere Stimmzettel"
+        ballots_null: "Ungültige Stimmzettel"
+        ballots_total: "Stimmzettel gesamt"
+        submit: "Speichern"
+        results_list: "Ihre Ergebnisse"
+        see_results: "Ergebnisse anzeigen"
       index:
-        no_results: "No results"
-        results: Results
-        table_answer: Answer
-        table_votes: Votes
-        table_whites: "Totally blank ballots"
-        table_nulls: "Invalid ballots"
-        table_total: "Valid ballots"
+        no_results: "Keine Ergebnisse"
+        results: Ergebnisse
+        table_answer: Antwort
+        table_votes: Stimmen
+        table_whites: "Völlig leere Stimmzettel"
+        table_nulls: "Ungültige Stimmzettel"
+        table_total: "Stimmzettel gesamt"
     residence:
       flash:
-        create: "Document verified with Census"
-        not_allowed: "You don't have officing shifts today"
+        create: "Dokument mit Volkszählung überprüft"
+        not_allowed: "Sie haben heute keine Amtswechsel"
       new:
-        title: Validate document
-        submit: Validate document
-        error_verifying_census: "The Census was unable to verify this document."
-        form_errors: prevented the verification of this document
+        title: Dokument überprüfen
+        submit: Dokument überprüfen
+        error_verifying_census: "Die Volkszählung konnte dieses Dokument nicht bestätigen."
+        form_errors: verhinderte die Bestätigung dieses Dokumentes
     voters:
       new:
-        title: Polls
-        table_poll: Poll
-        table_status: Polls status
-        table_actions: Actions
-        not_to_vote: The person has decided not to vote at this time
+        title: Umfragen
+        table_poll: Abstimmung
+        table_status: Status Umfrage
+        table_actions: Aktionen
+        not_to_vote: Die Person hat beschlossen, zu diesem Zeitpunkt nicht zu stimmen
       show:
-        can_vote: Can vote
-        cannot_vote: The person cannot vote because they are not registered in the district(s) where the voting takes place.
-        error_already_voted: Has already participated in this poll
-        submit: Confirm vote
-        success: "Vote introduced!"
+        can_vote: Kann abstimmen
+        cannot_vote: Die Person kann nicht abstimmen, da sie nicht in dem Bezirk registriert ist, in dem die Abstimmung stattfindet.
+        error_already_voted: Hat bereits an dieser Abstimmung teilgenommen
+        submit: Wahl bestätigen
+        success: "Wahl eingeführt!"
       can_vote:
-        submit_disable_with: "Wait, confirming vote..."
+        submit_disable_with: "Warten, Abstimmung bestätigen..."
