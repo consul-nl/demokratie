@@ -1,27 +1,27 @@
 nl:
   moderation:
-    show_only_with_flags: Show only flagged
+    show_only_with_flags: Nur von Nutzer*innen gemeldete anzeigen
     proposals:
       index:
         filters:
-          all: all
-          unseen: unread
-          seen: read
+          all: alle
+          unseen: ungelesen
+          seen: gelesen
     debates:
       index:
         filters:
-          all: all
-          unseen: unread
-          seen: read
+          all: alle
+          unseen: ungelesen
+          seen: gelesen
     comments:
       index:
         filters:
-          all: all
-          unseen: unread
-          seen: read
+          all: alle
+          unseen: ungelesen
+          seen: gelesen
     budget_investments:
       index:
         filters:
-          all: all
-          unseen: unread
-          seen: read
+          all: alle
+          unseen: ungelesen
+          seen: gelesen
