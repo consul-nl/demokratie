@@ -1,0 +1,281 @@
+en:
+  custom:
+    common:
+      information: Information
+      share: Teilen
+      back_to: "Zurück zu %{to}"
+      fixed_tabs:
+        content: Inhalt
+        comments: Kommentare
+        author: Autor
+    account:
+      settings:
+        email_digest: E-Mail-Erinnerung bei ungelesenen Benachrichtigungen
+        email_on_comment: Kommentare zu meinen Aktivitäten
+        email_on_comment_reply: Antworten auf meine Kommentare
+        email_on_direct_message: Private Nachrichten anderer Nutzer*innen
+        show_in_users_overview: Konto in der Nutzerübersicht anzeigen
+        newsletter: Newsletter und System-E-Mails
+        newsletter_on_home_page: Jetzt abonnieren
+        public_activity: Meine Aktivität veröffentlichen
+        public_interests: Gefolgte Beiträge veröffentlichen
+        adm_email_on_new_comment: Neue Kommentare
+        adm_email_on_new_proposal: Neue Vorschläge
+        adm_email_on_new_budget_investment: Neue Vorschläge (Budget)
+        adm_email_on_new_debate: Neue Diskussionsbeiträge
+        adm_email_on_new_deficiency_report: Neue Mangelmeldungen
+        adm_email_on_new_manual_verification: Neue Nutzerverifizierungen
+        adm_email_on_new_topic: Neue Themen
+      show:
+        user_permission_votes: An Abstimmungen teilnehmen
+        admin_notifications: Admin- & Projektmanager Benachrichtigungen
+        user_groups_title: Individuelle Gruppen
+        hard_user_groups_title: Starke Gruppen
+        soft_user_groups_title: Schwache Gruppen
+    boolean:
+      "yes": "ja"
+      "no": "nein"
+    comments:
+      reply_form:
+        leave_comment: Schreiben Sie eine Antwort
+    content_cards:
+      active_projekts:
+        title: Aktive Beteiligung
+        all_projekts_link: Alle Projekte anzeigen
+      latest_user_activity:
+        title: Meine Aktivität
+      current_polls:
+        title: Laufende Abstimmungen
+      latest_resources:
+        title: Neueste Beiträge
+      expired_projekts:
+        title: Abgeschlossene Projekte
+      events:
+        title: Veranstaltungen
+    devise_views:
+      users:
+        registrations:
+          new:
+            privacy_link: Datenschutzbestimmung
+            terms: Mit der Registrierung akzeptieren Sie die %{terms} und %{privacy}
+        gender:
+          male: männlich
+          female: weiblich
+          other_gen: dritte #custom
+        document_type:
+          card: Personalausweis
+          pass: Reisepass
+    helpers:
+      select:
+        prompt: Bitte wählen
+        gender_prompt: Geschlecht (bitte wählen)
+        prompt_city: Wohnort (bitte wählen)
+        prompt_street: Straße (bitte wählen)
+        prompt_address: Hausnummer (bitte wählen)
+        document_prompt: Offizielles Dokument (bitte wählen)
+        not_in_list: Nicht in der Liste enthalten
+        birth_year: Geburtsjahr
+        birth_month: Geburtsmonat
+        birth_day: Geburtsdatum
+    gdpr_notice:
+      accept: Akzeptieren
+      link_text: Mehr Infos
+      message: <p>Die Applikation verwendet Cookies und ähnliche Technologien zur Bereitstellung, Aufrechterhaltung und Verbesserung unserer Dienste.</p><p>Mit der Nutzung dieser Website erklären Sie sich damit einverstanden, dass wir Cookies verwenden. Sie dienen dazu, Ihnen bestmögliche Funktionalität bieten zu können. %{link}</p>
+      title: Verwendung von Cookies
+    geozones:
+      projekt_selector:
+        affiliations:
+          entire_city: Stadtweit
+          no_affiliation: Keine Gebietszuordnung
+          only_geozones: Zuordnung zu Stadtteil
+        restrictions:
+          no_restriction: Alle Nutzer:innen
+          only_citizens: Nur Bürger:innen
+          only_geozones: Nur Bürger:innen des Stadtteils
+      sidebar_filter:
+        affiliations:
+          all_resources: Alle %{resource_name}
+          entire_city: Stadtweite %{resource_name}
+          entire_city_short: Stadtweit
+          filter_button: Nach Gebiete filtern
+          no_affiliation: Keine Gebietszuordnung
+          only_geozones: Zuordnung zu Stadtteil
+          show_more: Mehr anzeigen
+          title: Gebiete
+        restrictions:
+          filter_button: Nach Partizipation filtern
+          no_restriction: Alle Nutzer:innen der Plattform
+          only_citizens: Nur Bürger:innen der Stadt
+          only_geozones: Nur Bürger:innen des Stadtteils
+          only_streets: Nur Bürger:innen aus Straße
+          show_more: Mehr anzeigen
+          title: Gebiet
+    images:
+      form:
+        image_name: Name des Titelbildes
+    layouts:
+      footer:
+        demokratie: demokratie.today
+        demokratie_url: https://demokratie.today/
+        description: Die Plattform basiert auf %{consul}, einer %{open_source} und wurde von %{demokratie} modifiziert.
+        impressum: Impressum
+        netiquette: Netiquette
+        statistic_cookies_settings: Cookie Einstellungen
+        contact_us: Kontaktieren Sie uns
+        sign_in_as_guest: Melden Sie sich als Gast an
+        sign_out_as_guest: Melden Sie sich als Gast ab
+      header:
+        account_link: Konto
+        admin_link: Administration
+        home_link: Start Seite
+        projekt_events_link: Veranstaltungen
+        projekt_management: Projektmanager
+        deficiency_report_management: Mängelmelder
+        notification_item:
+          no_notifications: Keine Benachrichtigungen
+        title_html: Öffentlichkeitsbeteiligung
+    menu:
+      account: Konto
+      archived: Abgelaufene Projekte
+      debates: Diskussionen
+      polls: Abstimmungen
+      proposals: Vorschläge
+    milestones:
+      collapse_title: Meilensteine - von der Verwaltung gesetzt (%{count})
+    pages:
+      impressum:
+        title: Impressum
+      contact_us:
+        title: Kontaktieren Sie uns
+      social_share:
+        share: Teilen
+    sdg:
+      goals:
+        filter:
+          heading: UN-Nachhaltigkeitsziele
+      related_list_selector:
+        goal_list: Sie können ein oder mehrere SDGs wählenoder im nachfolgenden Feld nach bestimmten Zielen und Unterzielen suchen. Für mehr Infos besuchen Sie die %{link}.
+        title: UN-Nachhaltigkeitsziele
+      targets:
+        label: Filter für Unterziele (%{more_link})
+        more_link_text: Mehr Info
+        select: Unterziel auswählen
+    shared:
+      resource_count:
+        one: Beitrag
+        other: Beiträge
+      warnings:
+        only_for_citizens: Die Beteiligung ist auf Bürger*innen der Stadt %{city} beschränkt.
+        only_for_geozones: "Die Beteiligung ist auf Bürger*innen aus folgenden Gebieten beschränkt: %{geozones}"
+      dates:
+        ends_on: Abgeschlossen am %{date}
+        ends_today: Endet heute
+        days_left:
+          one: Noch 1 Tag
+          other: Noch %{count} Tage
+        starts_in_days:
+          one: Startet in 1 Tag
+          other: Startet in %{count} Tagen
+      form:
+        projekt_assignment: Projektzuordnung
+        star_message: Alle mit (*) gekennzeichneten Felder sind Pflichtfelder
+        projekt_labels_label: Labels
+        projekt_labels_hint: Bitte wählen Sie mindestens eine Option aus
+        sentiment_label: Sentiment
+        sentiment_hint: Bitte wählen Sie eine Option aus
+      index:
+        resource:
+          by: von
+      show:
+        admin: Admin
+        back_link: Weitere %{resources} zu diesem Projekt
+        comments: '%{count} Kommentare'
+        follow_text: Folgen Sie diesem Vorschlag, um stets über Neuigkeiten zu diesem Vorschlag informiert zu werden.
+        information: Information
+        related_button: Hinzufügen
+        related_text: Sie können Links von anderen Vorschlägen und Diskussionen hinzufügen.
+        related_title: Verwandte Inhalte
+        report_button: Melden
+        report_text: Melden Sie uns diesen Beitrag bei unangebrachten Inhalt oder bei Urheberrechtsverletzungen.
+        report_title: Melden
+      download: Herunterladen
+      download_pdf: PDF herunterladen
+      sort_by: Sortieren nach
+      filter_by: Filtern nach
+    tag_names:
+      projekt: Weitere %{resources} zu diesem Projekt
+    tags:
+      remaining_count:
+        one: "+%{count} Tag"
+        other: "+%{count} Tags"
+    users:
+      login_to_vote: Sie müssen sich %{signin} oder %{signup}, um teilnehmen zu können
+      verify_account_link_short: verifizieren
+      document_help: "Hinweis:"
+      card_label: Personalausweis Rückseite
+      card_help: "Letzte vier Ziffern auf Personalausweis Rückseite:"
+      pass_label: Reisepass Vorderseite
+      pass_help: "Letzte vier Ziffern auf Reisepass Vorderseite:"
+    welcome:
+      active_projekt_cards:
+        title: Aktive Beteiligung
+      all_debates: Alle Diskussionen
+      all_proposals: Alle Vorschläge
+      expired_projekt_cards:
+        title: Abgeschlossene Projekte
+      current_polls: Laufende Abstimmungen
+      start_debate: Diskussion starten
+      start_entry: + Beitrag erstellen
+      start_proposal: Eigenen Vorschlag erstellen
+      user_entries: Neueste Beiträge
+      latest_activity:
+        title: Meine Aktivität
+        all_activity_link: Meine gesamte Aktivität anzeigen
+        filters:
+          proposals: Vorschläge
+          debates: Diskussionen
+          budget_investments: Investitionsvorschläge
+          comments: Kommentare
+          follows: Folge ich
+      resource_count:
+        projekts: Projekte
+        proposals: Vorschläge
+        comments: Kommentare
+        debates: Diskussionen
+        polls: Abstimmungen
+      sidebar:
+        information:
+          title: Information
+        users:
+          title: Nutzer*innen
+          sign_in: Jetzt anmelden
+        activity:
+          title: Aktivität
+        newsletter:
+          title: Newsletter
+          cta: Nicht registriert? Jetzt abonnieren
+          submit: Anmelden
+    welcome_launch:
+      p1: Hier entsteht die neue Beteiligungsplattform der Stadt %{org_name}
+      p2: Unser Go-Live ist am %{date}!
+    shared_components:
+      collapse_text:
+        show_more: "Zeige mehr"
+        show_less: "Zeige weniger"
+  date:
+    formats:
+      date_only: '%d.%m.%Y'
+      long: '%d. %B %Y'
+  time:
+    formats:
+      date_only: '%d.%m.%Y'
+      date_with_time: '%d.%m.%Y %H:%M'
+      new_date_with_year: "%d. %B %Y"
+  tag_names:
+    general: General
+  formular_answer_images:
+    form:
+      add_new_image: Bild hinzufügen
+    errors:
+      messages:
+        in_between: muss zwischen %{min} und %{max} sein
