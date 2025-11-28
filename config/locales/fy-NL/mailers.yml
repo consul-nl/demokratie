@@ -1,155 +1,130 @@
 fy:
   mailers:
     title: "Open Government"
-    no_reply: "Dizze mail is troch in e-mailadres ferstjoerd dêr’t net op reagearre wurde kin"
-    already_confirmed:
-      info: "We've received a request to send you instructions to confirm your account. However, your account is already confirmed, so there's no need to do so again."
-      new_password: "If you've forgotten your password, you can reset it at the following link:"
-      subject: Your account is already confirmed
+    no_reply: "Diese Nachricht wurde von einer E-Mail-Adresse gesendet, die keine Antworten akzeptiert."
     comment:
-      hi: Bêste
-      new_comment_by: Jo hawwe in nije reaksje fan <strong>%{commenter}</strong>
-      subject: Immen hat op jo idee %{commentable} reagearre
-      title: Immen hat op jo idee reagearre
-    config:
-      notifications_link: Notifications
-      unsubscribe_text: 'To unsubscribe from these emails, visit %{notifications}.'
+      hi: Hallo
+      new_comment_by: Es gibt einen neuen Kommentar von <strong>%{commenter}</strong>
+      subject: Jemand hat Ihre %{commentable} kommentiert.
+      title: Neuer Kommentar
     email_verification:
-      click_here_to_verify: Dizze link
-      instructions_2: This email will verify your account with <b>%{document_type} %{document_number}</b>. If these don't belong to you, please don't click on the previous link and ignore this email.
-      instructions: To complete the verification of your user account you must click %{verification_link}.
-      subject: Befêstigje jo e-mailadres
-      thanks: Betanke!
-      title: "Befêstigje jo akkount troch de neikommende link te brûken"
-      text: "Confirm your account using the following link."
+      click_here_to_verify: diesen Link
+      instructions_2: Diese E-Mail dient dazu Ihr Konto mit <b>%{document_type} %{document_number}</b>zu verifizieren. Wenn es sich hierbei nicht um Ihre Daten handelt, klicken Sie bitte nicht auf den vorherigen Link und ignorieren Sie diese E-Mail.
+      instructions: Um die Überprüfung Ihres Benutzerkontos abzuschließen, müssen Sie auf %{verification_link} klicken.
+      subject: Bestätigen Sie Ihre E-Mail-Adresse
+      thanks: Vielen Dank.
+      title: "Bestätigen Sie Ihr Konto über den folgenden Link"
     reply:
-      hi: Bêste
-      new_reply_by: Der is in nije reaksje fan <strong>%{commenter}</strong> op jo reaksje
-      subject: Der hat immen op jo reaksje reagearre
-      title: Der hat immen op jo reaksje reagearre
+      hi: Hallo
+      new_reply_by: Es gibt eine neue Antwort von <strong>%{commenter}</strong> auf Ihren Kommentar
+      subject: Jemand hat auf Ihren Kommentar geantwortet
+      title: Neue Antwort auf Ihren Kommentar
     proposal_notification_digest:
-      info: "Dit binne nije meldingen fan inisjativen dy’t jo yn %{org_name} stipe hawwe."
-      title: "Meldingen yn %{org_name}"
-      share: Inisjatyf diele
-      comment: Reagearje op it inisjatyf
-      unsubscribe_text: "If you don't want to receive any proposal notifications, visit %{notifications} and uncheck 'Receive a summary of proposal notifications'."
-      unfollow: "Visit this proposal and unfollow it to stop receiving notifications."
+      info: "Hier sind die neuen Benachrichtigungen, die von Autoren, für den Antrag von %{org_name}, den Sie unterstützen, veröffentlicht wurden."
+      title: "Antrags-Benachrichtigungen von %{org_name}"
+      share: Vorschlag teilen
+      comment: Vorschlag kommentieren
+      unfollow: "Rufen Sie diesen Vorschlag auf und entflogen Sie ihn um keine weiteren Benachrichtigungen zu erhalten."
     direct_message_for_receiver:
-      subject: "Jo hawwe in nij priveeberjocht krige"
-      reply: Reagearje op %{sender}
-      unsubscribe_text: "If you don't want to receive direct messages, visit %{notifications} and uncheck 'Receive emails about direct messages'."
+      subject: "Sie haben eine neue persönliche Nachricht erhalten"
+      reply: Auf %{sender} antworten
     direct_message_for_sender:
-      subject: "Jo hawwe in priveeberjocht stjoerd."
-      title: "You have sent a new private message"
-      text: "You have sent a new private message to <strong>%{receiver}</strong> with the content:"
+      subject: "Sie haben eine neue persönliche Nachricht gesendet"
+      title: "Sie haben eine neue persönliche Nachricht gesendet"
+      text: "Sie haben eine neue persönliche Nachricht versendet an <strong>%{receiver}</strong> mit dem Inhalt:"
     user_invite:
-      ignore: "Hawwe jo dizze útnûging sûnder te freegjen krigen? Gjin soargen, dan kinne jo dizze mail negearje."
-      text: "Jo kinne jo ynskriuwe foar Stim fan Fryslân! Klik dêrfoar op de neikommende link:"
-      thanks: "Betanke"
-      title: "Wolkom op de %{org}"
-      button: Skriuw dy yn
-      subject: "Wolkom op de %{org_name}"
+      ignore: "Wenn Sie diese Einladung nicht angefordert haben, können Sie diese E-Mail einfach ignorieren."
+      text: "Danke für Ihre Anmeldung bei %{org}! In wenigen Sekunden können Sie beginnen Ihre Stadt mitzugestalten. Füllen Sie einfach vorher das untenstehende Formular aus:"
+      thanks: "Vielen Dank."
+      title: "Willkommen zu %{org}"
+      button: Registrierung abschließen
+      subject: "Einladung an %{org_name}"
     budget_investment_created:
-      subject: "Betanke foar it dielen fan jo idee!"
-      title: "Betanke foar it dielen fan jo idee!"
-      intro: "Bêste <strong>%{author}</strong>"
-      text: "Betanke foar it dielen fan jo idee <strong>%{investment}</strong> foar <strong>%{budget}</strong>"
-      follow: "Wy hâlde jo op ‘e hichte fan it proses. Dat kinne jo ek folgje op <strong>%{link}</strong>"
-      share: "diel op sosjale media"
-      notifications: "Would you like to receive email notifications when someone comments on your suggestion? Please check the settings in %{account_link}."
-      profile_link_text: "your account"
-      sincerely: "Mei freonlike groetnis,"
+      subject: "Danke, dass Sie einen Budgetvorschlag erstellt haben!"
+      title: "Danke, dass Sie einen Budgetvorschlag erstellt haben!"
+      intro: "Hallo <strong>%{author}</strong>,"
+      text: "Vielen Dank, dass Sie einen Budgetvorschlag <strong>%{investment}</strong> für den Bürgerhaushalt erstellt haben <strong>%{budget}</strong>."
+      follow: "Wir werden Sie über den Fortgang des Prozesses informieren, dem Sie auch über folgenden <strong>%{link}</strong> folgen können."
+      follow_link: "Bürgerhaushalte"
+      sincerely: "Mit freundlichen Grüßen,"
+      share: "Teilen Sie Ihr Projekt"
     budget_investment_unfeasible:
-      title: "Your investment project has been marked as unfeasible"
-      hi: "Bêste dielnimmer,"
-      new: "De provinsje hat nei jo idee sjoen. Spitigernôch docht bliken dat jo idee net mooglik is. Wy lizze ek út wêrom: %{url}"
-      new_href: "Dat kin hjir"
-      sincerely: "Groetnis fan Stim fan Fryslân"
-      sorry: "Hawwe jo noch fragen, mail dan nei stimfan@fryslan.frl"
-      subject: "Spitich, jo idee is net te dwaan"
+      hi: "Liebe*r Benutzer*in,"
+      new: "Hierfür laden wir Sie ein, eine <strong>neue Investition</strong> auszuarbeiten, die an die Konditionen dieses Prozesses angepasst sind. Sie können dies über folgenden Link tun: %{url}."
+      new_href: "neuer Ausgabenvorschlag"
+      sincerely: "Mit freundlichen Grüßen"
+      sorry: "Entschuldigung für die Unannehmlichkeiten und vielen Dank für Ihre wertvolle Beteiligung."
+      subject: "Ihr Ausgabenvorschlag '%{code}' wurde als undurchführbar markiert"
     budget_investment_selected:
-      subject: Lokwinske, idee '%{code}' giet troch nei de stimomloop
-      title: Lokwinske, jo idee giet troch nei de stimomloop!
-      hi: "Bêste dielnimmer,"
-      text: "Promote your proposal %{proposal_link} for the final voting phase now."
-      share_button: "Diel jo idee"
-      thanks: "Betanke foar it meidwaan. Hawwe jo noch fragen, mail dan nei stimfan@fryslan.frl"
-      sincerely: "Groetnis fan Stim fan Fryslân"
+      subject: "Ihr Investitionsprojekt %{code} wurde ausgewählt"
+      hi: "Liebe*r Benutzer*in,"
+      share: "Fangen Sie an Stimmen zu bekommen, indem sie Ihr Investitionsprojekt auf sozialen Netzwerken teilen. Teilen ist wichtig, um Ihr Projekt zu verwirklichen."
+      share_button: "Teilen Sie Ihr Investitionsprojekt"
+      thanks: "Vielen Dank für Ihre Teilnahme."
+      sincerely: "Mit freundlichen Grüßen"
     budget_investment_unselected:
-      subject: "Spitigernôch hat jo idee it net helle"
-      title: "Unfortunately, your proposal didn't make it to the next round."
-      hi: "Bêste dielnimmer,"
-      text: "Unfortunately, your proposal %{proposal_link} didn't receive enough votes. It will therefore not be admitted to the next phase of the %{project_link}."
-      project_link_text: "Project"
-      sincerely: "Groetnis fan Stim fan Fryslân"
+      subject: "Ihr Investitionsprojekt %{code} wurde nicht ausgewählt"
+      hi: "Liebe*r Benutzer*in,"
+      thanks: "Vielen Dank für Ihre Teilnahme."
+      sincerely: "Mit freundlichen Grüßen"
     evaluation_comment:
-      subject: "New evaluation comment"
-      title: New evaluation comment for %{investment}
-      hi: Hi
-      new_comment_by: There is a new evaluation comment from <strong>%{commenter}</strong> to the budget investment %{investment}
+      subject: "Neuer Bewertungs-Kommentar"
+      title: Neuer Bewertungs-Kommentar für %{investment}
+      hi: Hallo
+      new_comment_by: Es gibt einen neuen Bewertungs-Kommentar <strong>%{commenter}</strong> für den Bürgerhaushalt %{investment}
       commenter_info: "%{commenter}, %{time}:"
-    machine_learning_error:
-      link: "Visit Machine Learning panel"
-      subject: "Machine Learning - An error has occurred running the script"
-      text: "An error has occurred running the Machine Learning script."
-      title: "Machine Learning script"
-    machine_learning_success:
-      link: "Visit Machine Learning panel"
-      subject: "Machine Learning - Content has been generated successfully"
-      text: "Content has been generated successfully."
-      title: "Machine Learning script"
     new_actions_notification_rake_created:
-      subject: "More news about your citizen proposal"
-      hi: "Hello %{name},"
-      new_resource: "NEW UNLOCKED RESOURCE"
-      introduction: "As you know, on the %{created_at_day} day of the %{created_at_month} you created the proposal in draft mode %{title}."
-      text_1: "Whenever you want you can publish on this link: %{link_to_published}. If you're still not sure..."
-      text_2: "Seize this moment! Learn, add other people with the same interests and prepare the diffusion that you will need when you publish your proposal definitively."
-      text_3: "And to accompany you in this challenge, here are the news..."
-      text_4: "Take a look at this NEW recommended ACTION:"
-      text_5: "The next action we recommend is:"
-      footer_text: "As always, enter the Proposals Panel and we will tell you in detail how to use these resources and how to get the most out of it."
-      dashboard_button: "Go ahead, discover them!"
+      subject: "Mehr Neuigkeiten zu Ihrem Bürger-Vorschlag"
+      hi: "Hallo %{name},"
+      new_resource: "NEUE FREIGESCHALTETE RESSOURCE"
+      introduction: "Nicht vergessen: Sie haben am Tag %{created_at_day} des %{created_at_month} den Vorschlag im Entwurfsmodus %{title} erstellt."
+      text_1: "Wann immer Sie möchten, können Sie es über folgenden Link veröffentlichen: %{link_to_published}. Wenn Sie noch unsicher sind..."
+      text_2: "Nutzen Sie diesen Moment! Fügen Sie andere Personen mit den gleichen Interessen hinzu und bereiten Sie die Verbreitung vor, die Sie benötigen, wenn Sie Ihren Vorschlag endgültig veröffentlichen."
+      text_3: "Und um Sie bei dieser Herausforderung zu begleiten, hier sind die Neuigkeiten..."
+      text_4: "Werfen Sie einen Blick auf diese NEUE empfohlene AKTION:"
+      text_5: "Die nächste Aktion, die wir empfehlen:"
+      footer_text: "Wie immer, kommen Sie auf das Vorschlagspanel und wir werden Ihnen im Detail erklären, wie Sie diese Ressourcen nutzen und wie Sie das Beste daraus machen können."
+      dashboard_button: "Nur zu, es gibt viel zu entdecken!"
     new_actions_notification_rake_published:
-      subject: "More news about your citizen proposal"
-      hi: "Hello %{name},"
-      new_resource: "NEW UNLOCKED RESOURCE"
-      introduction: "As you know, on the %{published_at_day} day of the %{published_at_month} you published the proposal %{title}."
-      text_1: "Well, you've got %{votes_count} support so far Congratulations!"
-      text_2: "And so, you have a new resource available to help you keep moving forward."
-      text_3: "You are missing %{days_count} days before your proposal gets the %{max_votes_count} supports and goes to referendum. Cheer up and keep spreading. Are you short of ideas?"
-      text_4: "NEW RECOMMENDED DIFFUSION ACTION"
-      text_5: "There's more yet, see the following action:"
-      footer_text: "As always, enter the Proposals Panel and we will tell you in detail how to use these resources and how to get the most out of it."
-      dashboard_button: "Go ahead, discover them!"
+      subject: "Mehr Neuigkeiten zu Ihrem Bürger-Vorschlag"
+      hi: "Hallo %{name},"
+      new_resource: "NEUE FREIGESCHALTETE RESSOURCE"
+      introduction: "Nicht vergessen: Sie haben am %{published_at_day} Tag des %{published_at_month} den Vorschlag %{title} veröffentlicht."
+      text_1: "Sie haben bisher %{votes_count} Unterstützung erhalten: Herzlichen Glückwunsch!"
+      text_2: "Sie haben eine neue Ressource zur Verfügung, die Ihnen hilft, weiter voranzukommen."
+      text_3: "Es sind noch %{days_count} Tage, bis dein Vorschlag die %{max_votes_count} Unterstützung erhalten muss und es zur Abstimmung kommt. Kopf hoch und weitermachen. Fehlen Ihnen die Ideen?"
+      text_4: "NEUE EMPFOHLENE AKTIONEN"
+      text_5: "Es gibt noch mehr, siehe folgende Aktion:"
+      footer_text: "Wie immer, kommen Sie auf das Vorschlagspanel und wir werden Ihnen im Detail erklären, wie Sie diese Ressourcen nutzen und wie Sie das Beste daraus machen können."
+      dashboard_button: "Nur zu, es gibt viel zu entdecken!"
     new_actions_notification_on_create:
-      subject: "Your draft citizen proposal is created"
-      hi: "Hi %{name}!"
-      introduction: "Your %{title} proposal has been successfully created."
-      text_1: "Take advantage that your proposal is not public yet and get ready to contact a lot of people."
-      text_2: "When you are ready publish your citizen proposal from this <a href='%{link}'>link</a>."
-      text_3: "We know that creating a proposal with a hook and getting the necessary support can seem complicated. But don't worry because we are going to help you!"
-      text_4: "You have a tool that will be your new best ally: The Citizen Proposals panel."
-      list_1: "Enter every day in the panel of your proposal to use the tips and resources that we will share with you."
-      list_2: "These tips, actions and resources will give you ideas and also practical solutions to get more support and a wider community. Dont forget them!"
-      list_3: "As you gain more support, you will unlock new and better resources. At the moment, you have an e-mail template to send massively to all your contacts, a poster to print, among other features and rewards that you will discover. Dont stop adding support and we will not stop rewarding and helping you!"
-      list_4: "You have %{max_month} months since you publish the proposal to get %{max_votes} support and your proposal can become a reality. But the first days are the most important. It is a challenge. Get ready!"
-      text_5: "And for you to start with all the motivation,"
-      text_6: "here you have several resources and a whole list of tips that will come to you every day to prepare the broadcast!"
-      dashboard_button: "Go ahead, discover them!"
+      subject: "Ihr Entwurf eines Bürger-Vorschlags ist erstellt"
+      hi: "Hallo %{name}!"
+      introduction: "Ihr %{title} Vorschlag wurde erfolgreich angelegt."
+      text_1: "Nutzen Sie den Vorteil, dass Ihr Vorschlag noch nicht öffentlich ist und kontaktieren Sie viele Leute."
+      text_2: "Wenn Sie bereit sind, veröffentlichen Sie Ihren Bürger-Vorschlag hier <a href='%{link}'>link</a>."
+      text_3: "Wir wissen, dass die Erstellung eines Vorschlags und die notwendige Unterstützung kompliziert erscheinen kann. Aber machen Sie sich keine Sorgen, denn wir werden Ihnen helfen!"
+      text_4: "Du hast ein Werkzeug, das dein neuer bester Verbündeter sein wird: Das Bürger-Vorschlag Panel."
+      list_1: "Tragen Sie sich jeden Tag in das Panel Ihres Vorschlags ein, um die Tipps und Ressourcen zu nutzen, die wir mit Ihnen teilen werden."
+      list_2: "Diese Tipps, Aktionen und Ressourcen geben Ihnen Ideen und auch praktische Lösungen, um mehr Unterstützung und eine größere Gemeinschaft zu erhalten. Vergessen Sie sie nicht!"
+      list_3: "Wenn Sie mehr Unterstützung erhalten, werden Sie neue und bessere Ressourcen freisetzen. Im Moment haben Sie eine E-Mail-Vorlage, die Sie an alle Ihre Kontakte senden können, ein Poster zum Ausdrucken, unter anderem Funktionen und Belohnungen, die Sie entdecken werden. Hören Sie nicht auf, Unterstützung hinzuzufügen, und wir werden nicht aufhören, Sie zu unterstützen und Ihnen zu helfen!"
+      list_4: "Sie haben %{max_month} Monate Zeit, seit Sie den Vorschlag veröffentlicht haben, um %{max_votes} Unterstützung zu erhalten, und Ihr Vorschlag kann Realität werden. Aber die ersten Tage sind die wichtigsten. Es ist eine Herausforderung. Machen Sie sich bereit!"
+      text_5: "Und dass Sie mit der größtmöglichen Motivation beginnen,"
+      text_6: "hier haben Sie mehrere Ressourcen und eine ganze Liste von Tipps, die Ihnen jeden Tag zur Vorbereitung der Sendung helfen werden!"
+      dashboard_button: "Nur zu, es gibt viel zu entdecken!"
     new_actions_notification_on_published:
-      subject: "Your citizen proposal is already published. Don't stop spreading!"
-      hi: "Congratulations %{name}! Your proposal %{title} has been created successfully."
-      text_1: "And now, go for your first 100 supports!"
-      text_2: "Why 100?"
-      text_3: "Our experience tells us that the first day is fundamental. Because in addition to having the energy to launch something new, being a newly published proposal, you will have the important visibility of being among the new proposals highlighted."
-      text_4: "Get 100 supports on the first day, and you will have a first community to back you up."
-      text_5: "That is why we challenge you to get it, but not without a lot of help!"
-      text_6: "Remember that in your Proposal Panel you have new resources available and recommendations for dissemination actions."
-      list_1: "Come in every day to see your progress and use the tips and resources we will share with you. They are ideas and also practical solutions to get the support you need."
-      list_2: "As you get more support, you will unlock new and better resources. Do not stop adding support and we will not stop rewarding and helping you!"
-      text_7: "And for you to start at full speed..."
-      text_8: "Here is a great resource at your disposal!"
-      text_9: "You will also find this new recommended dissemination action..."
-      text_10: "You sure have more resources to use!"
-      dashboard_button: "Go ahead, discover them!"
+      subject: "Ihr Bürger-Vorschlag ist bereits veröffentlicht. Hören Sie nicht auf, es zu verbreiten!"
+      hi: "Glückwunsch %{name}! Ihr Vorschlag %{title} wurde erfolgreich angelegt."
+      text_1: "Und jetzt, auf zu den ersten 100 Unterstützungen!"
+      text_2: "Warum 100?"
+      text_3: "Unsere Erfahrung zeigt uns, dass der erste Tag von grundlegender Bedeutung ist. Denn zu der Energie, etwas Neues auf den Weg zu bringen, kommt die Möglichkeit größerer Sichtbarkeit, da Sie unter den neuen Vorschlägen zu sehen sind."
+      text_4: "Erreichen Sie 100 Unterstützer am ersten Tag und Sie haben eine erste Community, die Sie unterstützen kann."
+      text_5: "Deshalb fordern wir Sie auf, es zu schaffen, aber nicht ohne eine Menge Hilfe!"
+      text_6: "Denken Sie daran, dass Sie in Ihrem Vorschlagspanel über neue Ressourcen und Empfehlungen für Verbreitungsmaßnahmen verfügen."
+      list_1: "Kommen Sie jeden Tag vorbei, um Ihre Fortschritte zu sehen und nutzen Sie die Tipps und Ressourcen, die wir mit Ihnen teilen werden. Es sind Ideen und auch praktische Lösungen, um die Unterstützung zu erhalten, die Sie benötigen."
+      list_2: "Wenn Sie mehr Unterstützung erhalten, werden Sie neue und bessere Ressourcen freisetzen. Hören nicht auf, um Unterstützung zu werben und wir werden nicht aufhören, Sie zu unterstützen und Ihnen zu helfen!"
+      text_7: "Und für einen Start mit vollem Tempo..."
+      text_8: "Hier steht Ihnen eine großartige Ressource zur Verfügung!"
+      text_9: "Sie werden auch diese neue empfohlene Verbreitungsaktion finden..."
+      text_10: "Sie haben mit Sicherheit mehr Ressourcen zur Verfügung!"
+      dashboard_button: "Nur zu, es gibt viel zu entdecken!"
