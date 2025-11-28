@@ -1,6 +1,6 @@
 nl:
   social_share_button:
-    share_to: "Deel via %{name}"
+    share_to: "Teilen auf %{name}"
     weibo: "Sina Weibo"
     twitter: "Twitter"
     facebook: "Facebook"
@@ -11,10 +11,12 @@ nl:
     baidu: "Baidu.com"
     kaixin001: "Kaixin001.com"
     renren: "Renren.com"
-    google_bookmark: "Google Bookmark"
+    google_bookmark: "Google Bookmarks"
     tumblr: "Tumblr"
     plurk: "Plurk"
     pinterest: "Pinterest"
-    email: "E-mail"
+    email: "E-Mail"
     telegram: "Telegram"
     whatsapp_app: "WhatsApp"
+    share_to_whatsup_title: "Teilen auf WhatsApp"
+    copy_link_title: Link kopieren
