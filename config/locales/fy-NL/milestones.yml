@@ -1,8 +1,8 @@
 fy:
   milestones:
     index:
-      no_milestones: Don't have defined milestones
-      progress: Progress
+      no_milestones: Keine definierten Meilensteine vorhanden
+      progress: Fortschritte
     show:
-      publication_date: "Published %{publication_date}"
-      status_changed: Status changed to
+      publication_date: "Veröffentlicht %{publication_date}"
+      status_changed: Investitionsstatus geändert zu
