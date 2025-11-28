@@ -1,8 +1,8 @@
 nl:
   milestones:
     index:
-      no_milestones: Geen mijlpalen gedefiniëerd
-      progress: Voortgang
+      no_milestones: Keine definierten Meilensteine vorhanden
+      progress: Fortschritte
     show:
-      publication_date: "Gepubliceerd %{publication_date}"
-      status_changed: Investeringsstatus gewijzigd in
+      publication_date: "Veröffentlicht %{publication_date}"
+      status_changed: Investitionsstatus geändert zu
