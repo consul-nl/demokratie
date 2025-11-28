@@ -1,17 +1,17 @@
 nl:
   images:
-    remove_image: Verwijder afbeelding
+    remove_image: Bild entfernen
     form:
-      title: Titel afbeelding
-      title_placeholder: Voeg een beschrijving toe voor de afbeelding
-      delete_button: Verwijder afbeelding
-      note: "Je kunt een afbeelding van een van de volgende bestandstypen uploaden: %{accepted_content_types}, tot een maximum van %{max_file_size} MB."
-      add_new_image: Voeg afbeelding toe
+      title: Aussagekräftiges Bild
+      title_placeholder: Fügen Sie einen aussagekräftigen Titel zu diesem Bild hinzu
+      delete_button: Bild entfernen
+      note: "Sie können ein Bild des folgenden Formats hochladen: %{accepted_content_types}, bis zu %{max_file_size} MB."
+      add_new_image: Bild hinzufügen
     actions:
       destroy:
-        notice: Afbeelding is succesvol verwijderd.
-        alert: Kan de afbeelding niet verwijderen.
+        notice: Das Bild wurde erfolgreich gelöscht.
+        alert: Das Bild kann nicht entfernt werden.
     errors:
       messages:
-        in_between: moet tussen %{min} en %{max} zijn
-        wrong_content_type: Type bestand %{content_type} komt niet overeen met een van de toegestane type bestanden %{accepted_content_types}
+        in_between: muss zwischen %{min} und %{max} sein
+        wrong_content_type: Inhaltstyp %{content_type} entspricht keinem der akzeptierten Inhaltstypen %{accepted_content_types}
