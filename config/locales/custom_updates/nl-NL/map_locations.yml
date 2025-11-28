@@ -1,0 +1,6 @@
+nl:
+  custom:
+    map_locations:
+      address:
+        label: Adresse
+        placeholder: Adresse eingeben
