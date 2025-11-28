@@ -1,90 +1,49 @@
 nl:
   seeds:
-    admin_notifications:
-      budget:
-        title: "We are closing the Participatory Budget!"
-        body: "Hurry up and create a proposal before it ends in the next few days!"
-      help:
-        title: "Help us translate consul"
-        body: "If you are proficient in a language, please help us translate consul!"
-      map:
-        title: "You can now geolocate proposals and investments"
-        body: "When you create a proposal or investment you now can specify a point on a map."
-      proposal:
-        title: "Do you have a proposal?"
-        body: "Remember you can create a proposal with your ideas and people will discuss and support it."
     settings:
-      official_level_1_name: Officiele positie 1
-      official_level_2_name: Officiele positie 2
-      official_level_3_name: Officiele positie 3
-      official_level_4_name: Officiele positie 4
-      official_level_5_name: Officiele positie 5
+      official_level_1_name: Offizielle Position 1
+      official_level_2_name: Offizielle Position 2
+      official_level_3_name: Offizielle Position 3
+      official_level_4_name: Offizielle Position 4
+      official_level_5_name: Offizielle Position 5
     geozones:
-      north_district: Noord
-      west_district: West
-      east_district: Oost
-      central_district: Centraal
+      north_district: Bezirk-Nord
+      west_district: Bezirk-West
+      east_district: Bezirk-Ost
+      central_district: Bezirk-Zentrum
     organizations:
-      human_rights: Mensenrechten
-      neighborhood_association: Buurtvereniging
-    cards:
-      budget:
-        title: "How do participatory budgets work?"
-        description: "Participatory budgets allow citizens to propose and decide directly how to spend part of the budget, with monitoring and rigorous evaluation of proposals by the institution. Maximum effectiveness and control with satisfaction for everyone."
-        link_text: "More about Participatory budgets"
-        label: "Participatory budgets"
-      debate:
-        title: "How do debates work?"
-        description: "Anyone can open threads on any subject, creating separate spaces where people can discuss the proposed topic. Debates are valued by everybody, to highlight the most important issues."
-        link_text: "More about debates"
-        label: "Debates"
-      header:
-        title: "CONSUL"
-        description: "Free software for citizen participation."
-        link_text: "More information"
-        label: "Welcome to"
-      proposal:
-        title: "How do citizen proposals work?"
-        description: "A space for everyone to create a citizen's proposal and seek supports. Proposals which reach to enough supports will be voted and so, together we can decide the issues that matter to us."
-        link_text: "More about proposals"
-        label: "Citizen proposals"
+      human_rights: Menschenrechte
+      neighborhood_association: Nachbarschaftsvereinigung
     categories:
-      associations: Verenigingen
-      culture: Cultuur
+      associations: Verbände
+      culture: Kultur
       sports: Sport
-      social_rights: Sociale rechten
-      economy: Economie
-      employment: Werkgelegenheid
-      equity: Gelijkheid
-      sustainability: Duurzaamheid
-      participation: Participatie
-      mobility: Mobiliteit
-      media: Media
-      health: Gezondheid
-      transparency: Transparantie
-      security_emergencies: Veiligheid en noodgevallen
-      environment: Omgeving
+      social_rights: Soziale Rechte
+      economy: Wirtschaft
+      employment: Beschäftigung
+      equity: Eigenkapital
+      sustainability: Nachhaltigkeit
+      participation: Teilnahme
+      mobility: Mobilität
+      media: Medien
+      health: Gesundheit
+      transparency: Transparenz
+      security_emergencies: Sicherheit und Notfälle
+      environment: Umwelt
     budgets:
-      budget: Burgerbegroting
+      budget: Bürgerhaushalt
       currency: '€'
       groups:
-        all_city: Hele gemeente
-        districts: Regio's
-      phases:
-        description: "Description in %{language}"
-        summary: "Summary in %{language}"
+        all_city: Alle Städte
+        districts: Bezirke
       statuses:
-        studying_project: Bestuderen van het project
-        bidding: Biedingen
-        executing_project: Het project uitvoeren
-        executed: Uitgevoerd
-    legislation:
-      draft_versions:
-        title: "Version %{number}"
-        body: "Draft version in %{language}"
+        studying_project: Das Projekt untersuchen
+        bidding: Ausschreibung
+        executing_project: Das Projekt durchführen
+        executed: Ausgeführt
     polls:
-      current_poll: "Huidige peiling"
-      current_poll_geozone_restricted: "Huidige peiling is gebiedsgebonden"
-      recounting_poll: "Hertellen peiling"
-      expired_poll_without_stats: "Verlopen peiling zonder statistieken en resultaten"
-      expired_poll_with_stats: "Verlopen peilingen met statistieken en resultaten"
+      current_poll: "Aktuelle Umfrage"
+      current_poll_geozone_restricted: "Aktuelle Umfrage eingeschränkt auf Geo-Zone"
+      recounting_poll: "Umfrage wiederholen"
+      expired_poll_without_stats: "Abgelaufene Umfrage ohne Statistiken und Ergebnisse"
+      expired_poll_with_stats: "Abgelaufene Umfrage mit Statistiken und Ergebnisse"
