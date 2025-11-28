@@ -72,7 +72,6 @@ de:
       not_verified: "Sie müssen sich %{verify_account}, um teilnehmen zu können"
       geo_restricted: Sie sind aufgrund von Gebiets- beschränkungen nicht berechtigt teilzunehmen.
       phase_expired: Die Phase ist bereits abgeschlossen.
-
     layouts:
       footer:
         impressum: Impressum
@@ -88,7 +87,6 @@ de:
         newsletter: E-Mail-Benachrichtigung erhalten, bei wichtigen System-Infos
         email_digest: Erhalten Sie eine Zusammenfassung der Benachrichtigungen zu Vorschlägen
         email_on_direct_message: Private Nachrichten per Mail zulassen
-
       show:
         user_permission_votes: An Abstimmungen teilnehmen
     menu:
@@ -107,8 +105,6 @@ de:
           category_options:
             active_projekt: Aktiver Beteiligungsprozess
             archived_projekt: Abgeschlossener Beteiligungsprozess
-
-
       settings:
         index:
           extended_settings: Erweiterte Einstellungen
@@ -140,7 +136,6 @@ de:
         settings:
           show_open_answer_with_username: Offene Antworten mit Nutzer:innen-Name anzeigen
           show_open_answer_without_username: Offene Antworten anonym anzeigen
-
       menu:
         projekts: Projekte
       progress_bars:
@@ -227,8 +222,6 @@ de:
           projekt_page: Projektseite
           projekt_phases: Projektphasen
           projekt_phase_limitation: Beschränkung
-
-
     projekts:
       new:
         first_level: 'Erste Projektebene'
@@ -283,7 +276,6 @@ de:
       created:
         dashboard: 'Als Entwurf speichern und später veröffentlichen'
         publish: 'Vorschlag jetzt veröffentlichen'
-
       index:
         no_active_projekt: Aktuell kein Beteiligungsverfahren
         show_larger_map: Mehr anzeigen
@@ -321,7 +313,6 @@ de:
         proposal_phase_expired: Die Vorschlagsphase ist bereits abgelaufen. Neue Kommentare können nicht mehr hinzugefügt werden
         voting_phase_expired: Die Abstimmungsphase ist bereits abgelaufen. Neue Kommentare können nicht mehr hinzugefügt werden
         other: Die Kommentarfunktion ist nicht verfügbar
-
     images:
       form:
         image_name: 'Name des Titelbildes'
