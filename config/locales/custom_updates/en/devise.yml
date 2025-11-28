@@ -9,7 +9,7 @@ en:
             last_name_label: Last name
             street_name_label: Street name
             street_number_label: Street number
-            street_number_label_extension: Street number extension
+            street_number_extension_label: House number addition
             plz_label: PLZ
             gender: Please select
             city_name_label: City

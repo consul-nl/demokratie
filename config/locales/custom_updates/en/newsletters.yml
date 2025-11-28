@@ -12,3 +12,9 @@ en:
         open_phases: Projekt Phases
         url: Projekt
         url_participate: I want to participate!
+      subscription:
+        already_subscribed: "%{email} is already subscribed to the newsletter"
+        please_confirm: "Please confirm the newsletter subscription that we have sent you by email to the following address: %{email}"
+        confirm_subscription_html: "By clicking on this button, you %{link} confirm your subscription to the newsletter."
+        successfully_subscribed: "Successfully subscribed to the newsletter"
+        successfully_unsubscribed: "Successfully unsubscribed from the newsletter"

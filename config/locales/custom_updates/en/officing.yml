@@ -1,0 +1,11 @@
+en:
+  custom:
+    officing:
+      shared:
+        verify_users:
+          title: Add offline voice
+          skip_verification: Skip user verification
+          first_name: First name
+          last_name: Last name
+          plz: Zip Code
+          date_of_birth: Date of birth

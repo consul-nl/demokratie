@@ -25,9 +25,15 @@ en:
       votation_type:
         one: Votation type
         other: Votation types
+      individual_group:
+        one: Individual group
+        other: Individual groups
+      individual_group_value:
+        one: Group Value
+        other: Group Values
       projekt_event:
-        one: Veranstaltung
-        other: Veranstaltungen
+        one: Event
+        other: Events
       projekt_label:
         one: Label
         other: Labels
@@ -35,8 +41,24 @@ en:
         one: Livestream
         other: Livestream
       projekt_notification:
-        one: Projektbenachrichtigung
-        other: Projektbenachrichtigungen
+        one: Project Notification
+        other: Project Notifications
+      projekt_phase: Project phase
+      projekt_phase/comment_phase: Comments
+      projekt_phase/debate_phase: Discussions
+      projekt_phase/proposal_phase: Suggestions
+      projekt_phase/voting_phase: Coordination
+      projekt_phase/budget_phase: Budget
+      projekt_phase/event_phase: Events
+      projekt_phase/argument_phase: Voices
+      projekt_phase/milestone_phase: Milestones
+      projekt_phase/question_phase: Quick Survey
+      projekt_phase/livestream_phase: Livestreams
+      projekt_phase/projekt_notification_phase: Notifications
+      projekt_phase/legislation_phase: Text Editing
+      projekt_phase/newsfeed_phase: News Feed
+      projekt_phase/formular_phase: Form
+      formular_field: Form field
       officing_manager:
         one: Poll manager
         other: Poll managers
@@ -44,11 +66,33 @@ en:
         one: Recipient group
         other: Recipient groups
     errors:
+      messages:
+        file_size_is_in: 'File size must be %{max} between %{min} and'
+        file_size_is_less_than: 'File size must be less %{count} than'
+        file_size_is_less_than_or_equal_to: 'File size must be less than or equal %{count} to'
+        file_size_is_greater_than: 'File size must be greater %{count} than'
+        file_size_is_greater_than_or_equal_to: 'File size must be greater than or equal %{count} to'
+        allowed_file_content_types: 'File must %{types} be one of'
+        excluded_file_content_types: 'File cannot %{types} be'
       models:
         proposal:
           attributes:
             description:
               too_long: 'is too long'
+            projekt_id:
+              blank: Please select a project
+            projekt_labels:
+              blank: Please select at least one label
+            sentiment:
+              blank: Please select a sentiment
+        debate:
+          attributes:
+            projekt_id:
+              blank: Please select a project
+            projekt_labels:
+              blank: Please select at least one label
+            sentiment:
+              blank: Please select a sentiment
         projekt:
           attributes:
             color:
@@ -56,19 +100,35 @@ en:
         user:
           attributes:
             password:
-              low_complexity: "must include minimum three of the following four cretiria: uppercase letter lower, case letter, digit, special symbol (e.g. ! or @)"
+              low_complexity: "must include minimum three of the following four criteria: uppercase letter lower, case letter, digit, special symbol (e.g. ! or @)"
         unregistered_newsletter_subscriber:
           attributes:
             email:
               invalid: Please enter a valid email format
+        budget_investment:
+          attributes:
+            projekt_labels:
+              blank: Please select at least one label
+            sentiment:
+              blank: Please select a sentiment
     attributes:
+      map_location:
+        latitude: Latitude
+        longitude: Longitude
+        zoom: Zoom
       projekt:
+        total_duration_start: Start Date
+        total_duration_end: End Date
         show_start_date_in_frontend: Visible in front end
         show_end_date_in_frontend: Visible in front end
+        description: Project description
       poll/answer:
         open_answer_text: Open Answer
       poll/question:
         answer_mandatory: answer mandatory
+        min_rating_scale_label: Left Label
+        max_rating_scale_label: Right Label
+        show_hint_callout: Show this text box in the frontend
       poll/question/answer:
         more_info_link: Explanation link
         more_info_iframe: iFrame link
@@ -77,19 +137,38 @@ en:
       widget/card:
         card_category: Category
       deficiency_report:
+        author: Author
         deficiency_report_category_id: Category
+        deficiency_report_status_id: Status
         video_url: External video URL
         official_answer: Official answer
         on_behalf_of: Create report on behalf of someone
         category: Category
         status: Status
+        notify_officer_about_new_comments: Notification for case handler
+        official_answer_approved: Release Answer
+        approximated_address: Address
         responsible: Responsible
+      deficiency_report/category:
+        default_deficiency_report_officer: Default Clerk
+      deficiency_report/officer_group:
+        default_email: Default Email
+      deficiency_report/official_answer_template:
+        title: Title
+        text: Text
       debate:
         on_behalf_of: Create debate on behalf of someone
       proposal:
+        official_answer: Official Answer
         on_behalf_of: Create proposal on behalf of someone
       budget:
-        voting_style_distributed: Multiple votes
+        show_results_after_first_vote: Results by Support Phase
+        show_percentage_values_only: Percentage values
+        voting_style_distributed: "Multiple votes"
+        hide_money: Hide money
+        max_number_of_winners: maximum number of winners
+      budget/heading:
+        price: Total budget
       budget/investment:
         implementation_performer: Implementation of investment proposal
         implementation_performers:
@@ -98,6 +177,8 @@ en:
         implementation_contribution: How can you contribute?
         user_cost_estimate: Cost estimate
         on_behalf_of: Create investment proposal on behalf of someone
+      geozone:
+        postal_codes: Postal Codes
       milestone:
         custom_date: Custom date
       map_layer:
@@ -106,12 +187,13 @@ en:
         attribution: Attribution
         base: Base layer
         layer_names: Layer names
+        opacity: Opacity
         show_by_default: show by default
         transparent: this layer is transparent
         protocol: Protocol
         protocols:
           regular: default
-          wms: WMS
+          wms: DMS
       user:
         first_name: First name
         last_name: Last name
@@ -125,8 +207,13 @@ en:
         date_of_birth: Date of birth
         document_type: Document
         document_last_digits: Document (last 4 digits)
+      age_range:
+        min_age: Minimum age
+        max_age: Maximum age
+        order: Order
+        only_for_stats: For Statistics Only
       modal_notification:
-        titel: Titel
+        title: Title
         active_from: From
         active_to: To
         html_content: HTML-Code of the notification
@@ -152,19 +239,25 @@ en:
       individual_group_value:
         name: Name
         email_pattern: E-mail pattern
+      sentiment:
+        color: Sentiment Color
+      sentiment/translation:
+        name: Sentiment name
       projekt_label:
         icon: Icon
-        color: Color
-        name: Name
+      projekt_label/translation:
+        name: Label name
       projekt_question:
         show_answers_count: Show number of votes in front-end
         comments_enabled: Activates open answers
+      projekt_question/translation:
+        title: Question
       projekt_event:
         title: Event title
         location: Event location
         datetime: Date
-        open_ended: Open ended
         end_datetime: Ending
+        open_ended: Open ended
         weblink: Link
       projekt_notification:
         title: Title
@@ -190,9 +283,15 @@ en:
         kind: Type
         email_for_confirmation: Send confirmation email
         drop_down_options: Dropdown options
+      formular_follow_up_letter:
+        subject: Subject
+        body: Email body
+        show_follow_up_button: Integrate Follow-up Form Link
       formular_answer_image:
         title: Title
         attachment: Attachment
       formular_answer_document:
         title: Title
         attachment: Attachment
+      registered_address/district:
+        default_deficiency_report_responsible: Default Clerk

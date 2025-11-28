@@ -2,14 +2,9 @@ en:
   custom:
     deficiency_reports:
       form:
-        page_description: Thank you for reporting a deficiency! You will help us to stop this as quickly as possible. Please describe in as much detail as possible what you noticed.
-          Typical deficiencies include road damage or damaged park benches.
+        page_description: Thank you for reporting a deficiency! You will help us to stop this as quickly as possible. Please describe in as much detail as possible what you noticed. Typical deficiencies include road damage or damaged park benches.
         title_placeholder: Give your report a catchy title, for example “Zebra crossing in front of the XY primary school” or “More diversity at the weekly markets”.
-        description_placeholder: "
-          Describe the deficiency you would like to report here.\n\n
-          Details help the city administration to find the deficiency and eliminate it quickly.\n\n
-          For example, if you know the number of the broken street lamp, then feel free to provide it.\n\n
-          Please do not provide any personal information from third parties such as addresses."
+        description_placeholder: " Describe the deficiency you would like to report here.\n\n Details help the city administration to find the deficiency and eliminate it quickly.\n\n For example, if you know the number of the broken street lamp, then feel free to provide it.\n\n Please do not provide any personal information from third parties such as addresses."
         map:
           hint: Place a pin on the map to precisely locate the deficiency.
         district:
@@ -17,7 +12,7 @@ en:
           description: Quickly navigate to the desired map position
         category:
           title: Category
-          description: Please assign a category to your report
+          description: "Please assign a category to your report"
           placeholder: Please select
         documents:
           title: Add documents
@@ -43,11 +38,11 @@ en:
         edit:
           submit_button: Update deficiency
       index:
-        title: Mängelmelder
-        welcome_default_text_html: In every city there are deficiencies every now and then - it's good if they are reported by attentive citizens so that they can be rectified quickly.
-          On this page you can see which defects have already been reported. The map will help you locate the respective defect.
-          Please contact us if you notice a deficiency - and contribute to a clean cityscape and a functioning city.
-        count: Mangelmeldungen
+        empty_list_text: "No results"
+        title: Defect Notifier
+        welcome_default_text_html: In every city there are deficiencies every now and then - it's good if they are reported by attentive citizens so that they can be rectified quickly. On this page you can see which defects have already been reported. The map will help you locate the respective defect. Please contact us if you notice a deficiency - and contribute to a clean cityscape and a functioning city.
+        sidebar_information_default_text: Have you noticed a shortage in the city? Then we look forward to your message so that we can take care of it as soon as possible.
+        count: Deficiency reports
         deficiency_report:
           by: by
         orders:
@@ -91,19 +86,24 @@ en:
         start_deficiency_report: Report a deficiency
       new:
         more_info: More info
-        recommendation_one: Verwenden Sie bitte nicht ausschließelich Großbuchstaben für die Überschrift oder für komplette Sätze. Im Internet gilt das als Schreien und niemand möchte angeschrien werden.
-        recommendation_three: Genießen Sie diesen Ort und die Stimmen, die ihn füllen. Er gehört auch Ihnen.
-        recommendation_two: Diskussionen oder Kommentare, die illegale Handlungen beinhalten, werden gelöscht sowie diejenigen, die die Diskussionen absichtlich sabotieren. Alles andere ist erlaubt.
+        recommendation_one: Please do not use capital letters exclusively for the headline or for complete sentences. On the Internet, this is considered shouting and no one wants to be shouted at.
+        recommendation_three: Enjoy this place and the voices that fill it. It's yours too.
+        recommendation_two: Discussions or comments that involve illegal actions will be deleted, as well as those that deliberately sabotage the discussions. Anything else is allowed.
         recommendations_title: Tips for reporting a deficiency
         seo:
           title: Report a deficiency
         start_new: Report a deficiency
+      notifications:
+        official_answer_updated: Response has been saved successfully
       show:
         title: "%{author} reported this issue"
-        welcome_text_default: This defeciency has already been reported to us by a user. Here you can view the current status and follow the progress of the deficiency report.
-           You can also express your opinion with your own comment. And after the deficiency has been closed, you can find the city's official statement here.
+        welcome_text_default: This defeciency has already been reported to us by a user. Here you can view the current status and follow the progress of the deficiency report. You can also express your opinion with your own comment. And after the deficiency has been closed, you can find the city's official statement here.
         video:
           title: Video
+        back_link: Back to all messages
+        admin_accepted:
+          "true": Published
+          "false": Unpublished
         official_answer:
           title: Official reply
         sidebar:

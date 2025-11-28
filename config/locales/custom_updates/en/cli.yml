@@ -1,7 +1,10 @@
 en:
   cli:
     general:
-      seo_title_prefix: "Öffentlichkeitsbeteiligung München:"
+      seo_title_prefix: "Public participation in Munich:"
+    mailers:
+      unser_muenchen_html: "unser.muenchen.de - Online platform Public participation of the City of Munich Imprint: <a href='https://unser.muenchen.de/impressum'>https://unser.muenchen.de/impressum</a>"
+      no_reply: "Please do not reply directly to this message. The sender email address is not retrieved. If you have any questions, please contact <a href='mailto:unser@muenchen.de'>unser@muenchen.de</a>."
     devise_views:
       users:
         registrations:

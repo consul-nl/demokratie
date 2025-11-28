@@ -1,0 +1,41 @@
+en:
+  custom:
+    settings:
+      extended_feature:
+        projekts_overview_page_navigation:
+          show_in_navigation: Show project overview page in navigation
+          show_in_navigation_description: Displays the project overview page in the navigation
+          show_index_order_all: All Projects
+          show_index_order_all_description: Displays All Projects tab
+          show_index_order_underway: Active participation
+          show_index_order_underway_description: Displays Active Involvement tab
+          show_index_order_ongoing: Ongoing projects
+          show_index_order_ongoing_descrition: Displays "Ongoing Projects" tab
+          show_index_order_upcoming: Future projects
+          show_index_order_upcoming_description: Displays Future Projects tab
+          show_index_order_expired: Archived projects
+          show_index_order_expired_description: Displays Archived Projects tab
+          show_index_order_individual_list: Individual list
+          show_index_order_individual_list_description: Displays Individual List tab
+          show_index_order_drafts: Drafts
+          show_index_order_drafts_description: Displays Drafts tab
+        projekts_overview_page_footer:
+          show_in_index_order_all: Participation for "All projects"
+          show_in_index_order_all_description: Displays the participation modules for the All Projects tab
+          show_in_index_order_underway: Participation for "active participation"
+          show_in_index_order_underway_description: Displays the participation modules for the All Projects tab
+          show_in_index_order_ongoing: Participation for "Ongoing projects"
+          show_in_index_order_ongoing_descrition: Displays the participation modules for the All Projects tab
+          show_in_index_order_upcoming: Participation for "Future Project Projects"
+          show_in_index_order_upcoming_description: Displays the participation modules for the All Projects tab
+          show_in_index_order_expired: Participation for "Archived project projects"
+          show_in_index_order_expired_description: Displays the participation modules for the Archived Projects tab
+          show_in_index_order_individual_list: Individual list
+          show_in_index_order_individual_list_description: Displays Individual List tab
+        general:
+          enable_old_design: Use old design
+          enable_old_design_description: Use the old theme by changing the settings here
+          use_white_top_navigation_text: Enable white font in top navigation
+          use_white_top_navigation_text_description:
+          users_overview_page: Overview of all users
+          users_overview_page_description: Activates an overview page for all users

@@ -7,11 +7,12 @@ en:
         konto_icon: My account menu link
         admin_icon: Admin menu link
         notification_icon: Notifications
-        all_projekts: All Projekts
+        all_projekts: All Projects
         draft_projekts: Drafts
         projekt_name_label: "Project name: %{projekt_name} "
         archived_projekts_label: Archived projects
         deficiency_reports: Deficiency reports
+        investments_overview: Budget overview
         projekts_overview: Projects
         new_entry_label: Create new post
         new_entry: + Create new post
@@ -30,7 +31,7 @@ en:
         hide_replies: Hide replies
         comment_tree: Comment tree
       projekts_filter:
-        arrow_label: Toggle subprojekts
+        arrow_label: Toggle subprojects
         projekt_name: "Project name: %{projekt_name}"
         resource_count: "Count: %{resource_count}"
       df_category_filter:

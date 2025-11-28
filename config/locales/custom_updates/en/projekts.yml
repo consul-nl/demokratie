@@ -1,12 +1,12 @@
 en:
   custom:
     projekts:
+      empty_list_text: No projects for current filters
       overview_page:
         projekt_name: Overview page
         projekt_name_for_proposal: New projekt proposal
         projekt_name_for_debate: New projekt debate
         projekt_name_for_poll: New projekt poll
-
       backlink: To the project overview
       errors:
         presence: Please select a project
@@ -18,7 +18,7 @@ en:
         to_projekt: To the project
         social_share:
           title: Projekt overview
-          description:  Overview of all projekts
+          description: Overview of all projekts
         information_default_text: Be active and participate in our projects. Your contribution is very important!
         count: Projects
         welcome_default_text_html: In the project overview we list all projects that are currently being discussed. Use the filter to view all projects or display them according to recentness, activity, appointment or individually according to your preferences. The map also helps you locate the projects in the city.
@@ -35,10 +35,12 @@ en:
         index_order_upcoming_title: 'The "Future project plans" tab lists participation projects that will only take place in the future.'
         index_order_individual_list: "Individual list"
         index_order_individual_list_title: "Individual list"
-        index_order_drafts: "Entwürfe"
-        index_order_drafts_title: "Entwürfe"
+        index_order_drafts: "Drafts"
+        index_order_drafts_title: "Drafts"
       search_form:
         placeholder: Search...
+      homepage_search_form:
+        placeholder: Search projects...
       page:
         footer:
           sidebar:
@@ -54,7 +56,7 @@ en:
           event_time: Time
           event_title: Title
           event_weblink: Weblink
-          event_projekt: Projekt
+          event_projekt: Project
           no_events: No events
           title: Events
         sidebar:
@@ -62,8 +64,13 @@ en:
             title: Administration
             copy_code: Copy source code
             edit_projekt: Edit projekt
-            edit_projekt_settings: Project settings
+            edit_map: Edit card
             edit_projekt_page: Edit projekt page
+            edit_projekt_phases: Project Stages
+            edit_projekt_settings: Project settings
+            edit_projekt_managers: ProjectManagers
+            edit_projekt_map: Map Settings
+            edit_projekt_sdg: SDGs & Tags
             create_newsletter_draft: Create newsletter
           projekt_information:
             title: Project information
@@ -86,25 +93,28 @@ en:
           share:
             title: Share
         tabs:
-          budgets: Budgets
+          budget: Budgets
           comments: Comments
           debates: Debates
           milestones: Milestones
           newsfeed: Newsfeed
           polls: Polls
-          project_events: Events
+          projekt_events: Events
           projekt_notifications: Notifications
           projekt_questions: Short survey
           projekt_arguments: Arguments
+          projekt_livestreams: Livestream
           proposals: Proposals
           questions: Questions
           legislation: Text editing
+      link_to_phase_prefix: Go directly to the
       phase_name:
         budget_phase: Budget
         comment_phase: Comments
         debate_phase: Debates
         event_phase: Event phase
         legislation_process_phase: Document drafting
+        legislation_phase: Text Editing
         milestone_phase: Milestones
         newsfeed_phase: Newsfeed
         projekt_notification_phase: Notifications
@@ -112,18 +122,27 @@ en:
         question_phase: Short survey
         voting_phase: Voting
         argument_phase: Arguments
+        livestream_phase: Livestream
       projekt_events:
         index:
           title: Events
-        orders:
+          social_share:
+            title: Events
+            description: "The event overview of %{domain}"
+        filters:
           all: All
-          incoming: Incoming
+          incoming: Upcoming
           past: Past
       projekt_questions:
+        back_to_question_list: 'Back to question list'
         comments_button: Publish answer
         comments_count: "%{count} open answers"
         comment_votes_count: "%{count} up- & downvotes"
         comments_title: Open answers
+        previous_question: Previous question
+        next_question: Next question
+        first_question: First question
+        answers_count: "%{count} Voices"
         new_question_notification: "New question: %{question_title}"
         all_questions: All questions
         go_to_question: Go to question
@@ -136,7 +155,7 @@ en:
           phase_not_active: Phase is not activated
       projekt_arguments:
         pro: Pro
-        cons: Contra
+        cons: Cons
         fields:
           name: Name
           party: Party
@@ -146,7 +165,7 @@ en:
         links_title: Livestreams
         current_livestream: Actual Livestream
         no_livestreams: No Livestreams
-
+        video_platform_not_supported: "Video platform is not supported. Supported platforms: YouTube, Vimeo"
       selector:
         connected_resources:
           debate_description: Please assign your discussion to one of the following projects or subprojects. This serves to make the discussions easier to find in the discussion overview.
@@ -154,8 +173,14 @@ en:
           proposal_description: Please assign your proposal to one of the following projects or sub-projects. This serves to make the proposals easier to find in the proposal overview.
           proposal_title: Assignment of the proposal to a project
         select_placeholder_mandatory_html: Choose project (mandatory)
+      sidebar:
+        sdgs: SDGs
       sidebar_filter:
         filter_button: Filter by projects
         title: Projects
         title_active: Active projects
         title_archived: Expired projects
+      list:
+        title: Project Overview
+      filter:
+        title: Filter by

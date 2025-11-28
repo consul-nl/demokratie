@@ -11,21 +11,23 @@ en:
       text2: "It will therefore not be admitted to the next phase of the %{project_link}."
       reason: "Reason:"
       text3: "If you have any questions, please contact us. You are welcome to submit a new proposal."
-      project_link_text: Project
-      sincerely: "Sincerely"
+      projekt_link_text: Project
+      sincerely: Sincerely
     manual_verification_confirmation:
       subject: Your account has just been verified.
       p1: Your account has just been verified.
       p2: If you have already voted, you can now view your votes in the overview.
-      p3: You can change your vote at any time up to the end of the process.
+    formular_answer_confirmation:
+      subject: Thank you! Your form has been submitted successfully.
+      p1: Thank you for submitting your form. We will now check the data internally and come back to you if necessary.
     formular_follow_up_letter:
       button_text: To the form
     budget_investment_feasible:
       subject: "Congratulations, your proposal meets the criteria."
       title: "Congratulations, your proposal meets the criteria."
       hi: "Hello %{username},"
-      project_link_1_text: criteria
-      project_link_2_text: project
+      projekt_link_1_text: Criteria
+      projekt_link_2_text: Project
       text: "We have reviewed your proposal %{proposal_link}: your proposal meets %{project_link_1}. This means it will be accepted for the next phase of %{project_link_2}."
       sincerely: Best regards
     newsletter_subscription_for_existing_user:

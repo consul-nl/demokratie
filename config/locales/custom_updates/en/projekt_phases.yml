@@ -1,6 +1,12 @@
 en:
   custom:
     projekt_phases:
+      proposal_navigation:
+        back_to_detail_view: Enable Scroll Mode
+        back_to_overview: Go to overview
+        next: "Continue"
+        back: "Back"
+        first: "First Proposal"
       cta:
         title: Participation
         voting_phase: Take part in the poll
@@ -15,6 +21,7 @@ en:
           shared:
             guest_not_logged_in: "To continue you must %{sign_in} or %{sign_up} or %{guest_sign_in}."
             not_logged_in: "To continue, you must %{sign_in} or %{sign_up}."
+            missing_user_data: "To continue, please ask %{enter_missing_user_data}."
             not_verified: "To continue, please %{verify}."
             organization: Organizations are not allowed to create content.
             only_citizens: Participation is limited to citizens of the city.
@@ -25,16 +32,19 @@ en:
             phase_not_active: This project phase is not active
             phase_expired: This project phase has already expired
             phase_not_current: This project phase has not yet started
-            only_admins: Die Beteiligung ist auf Admin-Benutzer beschränkt.
+            only_admins: Participation is limited to admin users.
             no_registered_address: A registered address could not be assigned to your account. Please update your account.
             only_specific_registered_address_groupings: Participation is limited to another area.
           formular_phase:
             past_regular_formular_cutoff_date: The participation phase has already been completed
             submissions_limit_reached: You have reached the maximum number of submissions allowed per user
+          proposal_phase:
+            proposals_limit_exceeded: You have %{proposals_limit} reached the maximum number of suggestions allowed per day
         votes_component:
           shared:
             guest_not_logged_in: "To continue you must %{sign_in} or %{sign_up} or %{guest_sign_in}."
             not_logged_in: "To continue, you must %{sign_in} or %{sign_up}."
+            missing_user_data: "To continue, please ask %{enter_missing_user_data}."
             not_verified: "To continue, please %{verify}."
             organization: Organizations are not allowed to create content.
             only_citizens: Participation is limited to citizens of the city.
@@ -51,6 +61,7 @@ en:
         ballot_component:
           budget_phase:
             not_logged_in: "To continue, you must %{sign_in} or %{sign_up}."
+            missing_user_data: "To continue, please ask %{enter_missing_user_data}."
             not_verified: "To continue, please %{verify}."
             organization: Organizations may participate in this vote.
             only_citizens: Participation is limited to citizens of the city.
@@ -74,6 +85,7 @@ en:
           shared:
             guest_not_logged_in: "To continue you must %{sign_in} or %{sign_up} or %{guest_sign_in}."
             not_logged_in: "To continue, you must %{sign_in} or %{sign_up}."
+            missing_user_data: "To continue, please ask %{enter_missing_user_data}."
             not_verified: "To continue, please %{verify}."
             organization: Organizations are not allowed to create content.
             only_citizens: Participation is limited to citizens of the city.
@@ -88,11 +100,12 @@ en:
             no_registered_address: A registered address could not be assigned to your account. Please update your account.
             only_specific_registered_address_groupings: Participation is limited to another area.
           budget_phase:
-            investment_unfeasible: Für nicht durchführbare Investitionsvorschläge kann nicht kommentiert werden
+            investment_unfeasible: Cannot comment on unfeasible investment proposals
             too_late: No further comments are possible at this time.
         poll_votes:
           guest_not_logged_in: "To continue you must %{sign_in} or %{sign_up} or %{guest_sign_in}."
           not_logged_in: "To continue, you must %{sign_in} or %{sign_up}."
+          missing_user_data: "To continue, please ask %{enter_missing_user_data}."
           not_verified: "To continue, please %{verify}."
           organization: Organizations are not allowed to vote.
           only_citizens: Participation is limited to citizens of the city.
@@ -110,6 +123,7 @@ en:
           only_specific_registered_address_groupings: Participation is limited to another area.
         legislation_annotations:
           not_logged_in: "To continue, you must %{sign_in} or %{sign_up}."
+          missing_user_data: "To continue, please ask %{enter_missing_user_data}."
           not_verified: "To continue, please %{verify}."
           organization: Organizations are not allowed to create content.
           only_citizens: Participation is limited to citizens of the city.
@@ -126,6 +140,7 @@ en:
         projekt_questions:
           guest_not_logged_in: "To continue you must %{sign_in} or %{sign_up} or %{guest_sign_in}."
           not_logged_in: "To continue, you must %{sign_in} or %{sign_up}."
+          missing_user_data: "To continue, please ask %{enter_missing_user_data}."
           not_verified: "To continue, please %{verify}."
           organization: Organizations are not allowed to create content.
           only_citizens: Participation is limited to citizens of the city.
@@ -142,6 +157,7 @@ en:
         projekt_livestreams:
           guest_not_logged_in: "To continue you must %{sign_in} or %{sign_up} or %{guest_sign_in}."
           not_logged_in: "To continue, you must %{sign_in} or %{sign_up}."
+          missing_user_data: "To continue, please ask %{enter_missing_user_data}."
           not_verified: "To continue, please %{verify}."
           organization: Organizations are not allowed to create content.
           only_citizens: Participation is limited to citizens of the city.

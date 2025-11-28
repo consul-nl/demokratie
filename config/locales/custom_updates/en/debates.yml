@@ -6,24 +6,17 @@ en:
         tags_custom: User tags
         required: Your input
         title_placeholder: "Give your contribution a catchy title, for example “The project duration is too long” or “Please expand the planned measures”."
-        description_placeholder: "
-          Describe your contribution here. The following procedure has proven successful:\n\n
-          Start with a general description of your idea and then show what would improve with the implementation of your suggestion.\n\n
-          When writing, keep sentences as short as possible.\n
-          Also use paragraphs to make your text more readable. (Many users read your text on mobile devices.)\n\n
-          If possible, limit your content to a maximum of three paragraphs.\n\n
-          If appropriate, use lists and bullet points for better clarity.
-          "
+        description_placeholder: " Describe your contribution here. The following procedure has proven successful:\n\n Start with a general description of your idea and then show what would improve with the implementation of your suggestion.\n\n When writing, keep sentences as short as possible.\n Also use paragraphs to make your text more readable. (Many users read your text on mobile devices.)\n\n If possible, limit your content to a maximum of three paragraphs.\n\n If appropriate, use lists and bullet points for better clarity. "
       index:
         title: "Overview of all discussions"
         no_active_projekt: Currently no participation procedure
         no_active_phase: Phase expired
         projekts: Projects
-        creation_only_for_citizens: Neue Diskussionen können in diesem Projekt nur von Bürgerinnen und Bürgern der Stadt %{city} erstellt werden.
-        creation_only_for_specific_geozones: Neue Diskussionen können nur von Bürger*innen aus dem Postleitzahlbereich %{geozones} erstellt werden
+        creation_only_for_citizens: New discussions can only be %{city} created by citizens of the city in this project.
+        creation_only_for_specific_geozones: New discussions can only be %{geozones} created by citizens from the zip code area
         empty_list_text: No connected debates
         welcome_default_text: Debates are essential in order to obtain a differentiated opinion on the individual projects. View all discussions or filter for specific projects, areas or keywords on the right-hand side. By clicking on the respective topic you can follow the discussions and take part in them yourself.
-        sidebar_information_default_text: Do you want to stimulate and move things? Then start your own discussion.  
+        sidebar_information_default_text: Do you want to stimulate and move things? Then start your own discussion.
         count: Debates
         participation_information: Participation information
         search_form:
@@ -47,7 +40,7 @@ en:
           alphabet_title: Alphabetical
           random: Random
           random_title: Random
-          votes_up: Highest voted
-          votes_up_title: Highest voted
+          votes_total: Most Chosen
+          votes_total_title: Most Chosen
       show:
         welcome_default_text: "started a discussion about a project. You can support the discussion on the right sidebar by giving it a thumbs up. But you can also express your disapproval by clicking thumbs down. You also have the opportunity to join the discussion yourself using the comment function at the bottom."

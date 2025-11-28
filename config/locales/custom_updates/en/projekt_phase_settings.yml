@@ -1,0 +1,197 @@
+en:
+  custom:
+    projekt_phase_settings:
+      debates:
+        feature:
+          general:
+            only_admins_create_debates: Only admins can create new discussions
+            only_admins_create_debates_description: Creating new discussions is limited to admins
+          form:
+            allow_attached_image: Add Cover Image
+            allow_attached_image_description: Allows citizens to add a cover photo.
+            allow_attached_documents: Additional Documents
+            allow_attached_documents_description: Allows users to attach documents to the discussion
+          resource:
+            allow_voting: Support for discussions
+            allow_voting_description: Enable support for discussions with thumbs up and down
+            allow_downvoting: Enable downvotes
+            allow_downvoting_description: Activate the "thumbs down"button
+            show_report_button_in_sidebar: Report discussion
+            show_report_button_in_sidebar_description: Enable the report feature for discussions
+            show_related_content: Related Content
+            show_related_content_description: Enable “Related Content” feature for discussions
+            show_comments: Comments
+            show_comments_description: Enable "Comments" for the discussion module
+      proposals:
+        feature:
+          general:
+            set_default_sorting_to_newest: Switch default sorting to 'Newest'
+            set_default_sorting_to_newest_description: Displays the latest posts by default instead of the most active posts
+            browse_mode_in_phase_footer: Scroll Mode in Proposal Footer
+            browse_mode_in_phase_footer_description: Allows you to scroll through the suggestions individually
+            browse_mode_in_phase_footer_by_default: Set Scroll Mode as Default
+            browse_mode_in_phase_footer_by_default_description: Users who come to the page start directly in scroll mode
+          form:
+            allow_attached_image: Cover image
+            allow_attached_image_description: Allows citizens to add a cover photo.
+            enable_summary: "View \"Summary\""
+            enable_summary_description: "Displays the \"Summary\" field in the proposals"
+            labels: Labels
+            labels_description: Enable labels to add structure to your project
+            sentiments: Sentiments
+            sentiments_description: Enable sentiments to allow the user to express feelings
+            show_map: Map
+            show_map_description: Displays the map for suggestions in this project
+            enable_geoman_controls_in_maps: Polygons in map
+            enable_geoman_controls_in_maps_description: Allows users to draw rectangles, circles, etc.
+            allow_attached_documents: Documents
+            allow_attached_documents_description: Allows users to attach documents to suggestions
+            enable_external_video: Video
+            enable_external_video_description: Allows users to embed external videos via YouTube and Vimeo
+          resource:
+            users_can_create_proposals: Submit suggestions
+            users_can_create_proposals_description: Users can create suggestions
+            allow_voting: Support
+            allow_voting_description: Enable suggestion support
+            enable_proposal_support_withdrawal: Withdraw proposal support
+            enable_proposal_support_withdrawal_description: Enable Proposal Support Withdrawal
+            quorum_for_proposals: Quorum
+            quorum_for_proposals_description: Enable a Quorum for Suggestions
+            enable_up_and_down_voting: Thumbs Up | Down
+            enable_up_and_down_voting_description: Activate thumbs up | down
+            show_report_button_in_sidebar: Report
+            show_report_button_in_sidebar_description: Enable the reporting feature for suggestions
+            show_follow_button_in_proposal_sidebar: Follow
+            show_follow_button_in_proposal_sidebar_description: Enable “Follow Suggestion” feature
+            show_community_button_in_proposal_sidebar: Working groups
+            show_community_button_in_proposal_sidebar_description: Enable the “Working Groups” feature for suggestions
+            show_related_content: Related Content
+            show_related_content_description: Enable “Related Content” feature for suggestions
+            enable_proposal_notifications_tab: Notifications
+            enable_proposal_notifications_tab_description: Enable author notifications for own suggestions
+            enable_proposal_milestones_tab: Milestones
+            enable_proposal_milestones_tab_description: Enable "milestones" in proposals that need to be created by the administration
+            show_comments: Comments
+            show_comments_description: Enable "Comments" for the suggestion module
+            show_video_as_link: Videos as a link
+            show_video_as_link_description: Displays the added videos as a link rather than a real video
+        option:
+          resource:
+            votes_for_proposal_success: "Number of votes necessary to approve a proposal"
+            votes_for_proposal_success_description: "If an application reaches this number of supports, it can no longer be supported and is considered successful"
+        selectable_setting:
+          general:
+            default_order: Default Sorting
+            default_order_description: Define how the content should be sorted by default
+            default_order_options:
+              hot_score: Most active
+              created_at: Newest first
+              alphabet: Alphabetical
+              votes_up: Most Chosen
+              random: Random
+      polls:
+        feature:
+          resource:
+            wizard_mode: Sequential Reconciliation
+            wizard_mode_description: Reconciliation is displayed in sequential questions mode
+            show_on_home_page: Visibility Homepage
+            show_on_home_page_description: Displays the vote on the homepage
+            show_on_index_page: Overview Page Visibility
+            show_on_index_page_description: Displays the vote on the overview page of all votes
+            results_enabled: Results
+            results_enabled_description: Displays the results of the vote at the end of the vote
+            intermediate_poll_results_for_admins: Interim results (admins / project managers)
+            intermediate_poll_results_for_admins_description: Enable Admin Voting Interim Results View
+            stats_enabled: Statistics
+            stats_enabled_description: Displays the statistics for voting at the end of the vote
+            advanced_stats_enabled: Advanced Statistics
+            advanced_stats_enabled_description: Time extended statistics to vote at the end of the vote
+            show_comments: Comments
+            show_comments_description: Enable "Comments" for the voting module
+            show_open_answer_author_name: Publish name
+            show_open_answer_author_name_description: Displays the username of the open responses
+      budget:
+        feature:
+          general:
+            set_default_sorting_to_newest: Switch default sorting to 'Newest'
+            set_default_sorting_to_newest_description: Displays the latest posts by default instead of the most active posts
+            browse_mode_in_phase_footer: Scroll Mode in Proposal Footer
+            browse_mode_in_phase_footer_description: Allows you to scroll through the suggestions individually
+            browse_mode_in_phase_footer_by_default: Set Scroll Mode as Default
+            browse_mode_in_phase_footer_by_default_description: Users who come to the page start directly in scroll mode
+          form:
+            allow_attached_image: Cover image
+            allow_attached_image_description: Allows citizens to add a cover photo.
+            labels: Labels
+            labels_description: Enable labels to add structure to your project
+            sentiments: Sentiments
+            sentiments_description: Enable sentiments to allow the user to express feelings
+            show_map: Map
+            show_map_description: Displays the map for investment proposals in this project
+            enable_geoman_controls_in_maps: Polygons in map
+            enable_geoman_controls_in_maps_description: Allows users to draw rectangles, circles, etc.
+            allow_attached_documents: Documents
+            allow_attached_documents_description: Allows users to attach documents to suggestions
+            enable_external_video: Video
+            enable_external_video_description: Allows users to embed external videos via YouTube and Vimeo
+            show_implementation_option_fields: Implementation
+            show_implementation_option_fields_description: Adds an “Implementation” selection box when creating a proposal
+            show_user_cost_estimate: Price Estimate
+            show_user_cost_estimate_description: Adds a Price Estimate checkbox when creating a proposal
+          resource:
+            users_can_create_investment_proposals: Submit suggestions
+            users_can_create_investment_proposals_description: Users can create suggestions
+            show_report_button_in_sidebar: Report
+            show_report_button_in_sidebar_description: Activate the reporting function for investments
+            show_follow_button_in_sidebar: Follow
+            show_follow_button_in_sidebar_description: Activate the “Follow investment” function
+            show_community_button_in_sidebar: Working groups
+            show_community_button_in_sidebar_description: Enable the “Working Groups” function for investment proposals
+            show_related_content: Related Content
+            show_related_content_description: Enable “Related Content” feature for investments
+            show_comments: Comments
+            show_comments_description: Enable "Comments" for the suggestion module
+            show_video_as_link: Videos as a link
+            show_video_as_link_description: Displays the added videos as a link rather than a real video
+            conditional_balloting: Simplified voting
+            conditional_balloting_description: Votes are recorded before verification, but counted only after verification
+        selectable_setting:
+          general:
+            default_order: Default Sorting
+            default_order_description: Define how the content should be sorted by default
+            default_order_options:
+              random: Random
+              ballot_line_weight: Current vote distribution
+              total_votes: Current ranking
+              newest: Newest first
+              comments_count: Most commented
+      projekt_questions:
+        feature:
+          general:
+            show_questions_list: Enable an overview of all questions
+      milestones:
+        feature:
+          general:
+            newest_first: Show newest milestones first
+            newest_first_description: Sorts the milestones in descending order with the latest date first
+      projekt_events:
+        feature:
+          general:
+            reverse_order_for_incoming_events: Returned order for incoming events
+            reverse_order_for_incoming_events_description: Sorts events in descending order with the latest date first
+            show_on_home_page: View event on homepage
+            show_on_home_page_description: Displays the event on the homepage
+      newsfeed:
+        option:
+          general:
+            newsfeed_id: Newsfeed ID
+            newsfeed_id_description: Please enter the ID of the news feed here
+            newsfeed_type: Newsfeed Type
+            newsfeed_type_description: Please enter the type of news feed here
+      formular:
+        option:
+          general:
+            primary_formular_cutoff_date: End of Phase 1
+            primary_formular_cutoff_date_description: "Please specify the format as follows: dd.mm.yyyy"
+            submissions_limit: Restriction of allowed submissions per user
+            submissions_limit_description: Limit the number of form submissions allowed per user

@@ -3,6 +3,7 @@ en:
     common:
       information: Information
       share: Share
+      back_to: "Back to %{to}"
       fixed_tabs:
         content: Content
         comments: Comments
@@ -15,6 +16,7 @@ en:
         email_on_direct_message: Receive emails about direct messages
         show_in_users_overview: Show account in the users overview
         newsletter: Receive by email website relevant information
+        newsletter_on_home_page: Subscribe now
         public_activity: Keep my list of activities public
         public_interests: Keep the labels of the elements I follow public
         adm_email_on_new_comment: Email notifications on each new Comment
@@ -27,6 +29,9 @@ en:
       show:
         user_permission_votes: Participate in polls
         admin_notifications: Admin Notifications
+        user_groups_title: Individual groups
+        hard_user_groups_title: Strong Groups
+        soft_user_groups_title: Weak groups
     boolean:
       "yes": "yes"
       "no": "no"
@@ -56,7 +61,7 @@ en:
         gender:
           male: male
           female: female
-          other: third #custom
+          other_gen: third #custom
         document_type:
           card: ID card
           pass: Passport
@@ -110,7 +115,7 @@ en:
         image_name: Title image name
     layouts:
       footer:
-        demokratie: demokratie.today
+        demokratie: democracy.today
         demokratie_url: https://demokratie.today/
         description: The platform is based on %{consul}, a %{open_source} and is modified by %{demokratie}.
         impressum: Imprint
@@ -125,6 +130,7 @@ en:
         home_link: Start page
         projekt_events_link: Events
         projekt_management: Project manager
+        deficiency_report_management: Defect Notifier
         notification_item:
           no_notifications: No notifications
         title_html: Public Participation
@@ -158,6 +164,9 @@ en:
       resource_count:
         one: Input
         other: Inputs
+      warnings:
+        only_for_citizens: Participation is %{city} limited to citizens of the city.
+        only_for_geozones: "Participation is limited to citizens from the following areas: %{geozones}"
       dates:
         ends_on: Ends on %{date}
         ends_today: Ends today
@@ -197,11 +206,16 @@ en:
       projekt: Additional %{resources} for this Project
     tags:
       remaining_count:
-        one: "+%{count} Tag"
-        other: "+%{count} Tags"
+        one: "+%{count} day"
+        other: "+%{count} tags"
     users:
       login_to_vote: You must %{signin} or %{signup} to be able to participate
       verify_account_link_short: verify
+      document_help: "Note:"
+      card_label: ID card reverse
+      card_help: "Last four digits on ID card back:"
+      pass_label: Front of Passport
+      pass_help: "Last four digits on passport front:"
     welcome:
       active_projekt_cards:
         title: Active projekts
@@ -241,7 +255,6 @@ en:
           title: Newsletter
           cta: Not registered? Sign up now!
           submit: Sign up
-
     welcome_launch:
       p1: We're building a new citizen participation platform for the city of %{org_name}
       p2: We'll go live on %{date}!

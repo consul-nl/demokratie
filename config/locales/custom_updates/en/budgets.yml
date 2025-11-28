@@ -1,37 +1,25 @@
 en:
   budgets:
-    show:
-      amount_available:
-        distributed:
-          zero: "Sie können immer noch <span>%{count}</span> Stimmen abgeben."
-          one: "Sie können immer noch <span>%{count}</span> Stimme abgeben."
-          other: "Sie können immer noch <span>%{count}</span> Stimmen abgeben."
-      amount_spent:
-        distributed:
-          zero: "Abgegebene Stimmen: <span>%{count}</span>"
-          one: "Abgegebene Stimme: <span>%{count}</span>"
-          other: "Abgegebene Stimmen: <span>%{count}</span>"
-      amount_limit:
-        distributed:
-          one: "Sie können noch <span>1</span> Stimme abgeben"
-          other: "Sie können bis zu <span>%{count}</span> Stimmen abgeben"
+    ballots:
+      show:
+        amount_available:
+          distributed:
+            one: "You can still <span>%{count}</span> vote."
+            other: "You can still <span>%{count}</span> cast votes."
+        amount_spent:
+          distributed:
+            one: "Vote cast: <span>%{count}</span>"
+            other: "Votes cast: <span>%{count}</span>"
+        amount_limit:
+          distributed:
+            one: "You can still</span> cast <span>1   vote"
+            other: "You can <span>%{count}</span> cast up to  votes"
     investments:
       index:
-        filters:
-          all: all Proposals
-          undecided: undecided
-          feasible: feasible
-          unfeasible: unfeasible
-          preselected: preselected
-          not_preselected: not preselected
-          selected: selected
-          unselected: unselected
-          winners: winners
         orders:
           random: Random
           ballot_line_weight: Most supported
           newest: Newest
-          comments_count: Most comments
         sidebar:
           voted_info:
             distributed: You can change your vote at any time until the end of this phase. There is no need to spend all available budget.
@@ -48,6 +36,7 @@ en:
             ballot_line_weight: Votes
             total_votes: Current ranking
             newest: Newest
+            comments_count: Most commented
           filters:
             budget:
               title: Budgets
@@ -63,17 +52,9 @@ en:
             finished: Final
         form:
           start_new: Create new proposal
-          page_description:
-            The budget lives from your contributions! Tell us what you would like to have implemented - and then share your ideas with others. You can indicate whether you would like to support the implementation yourself or whether the city administration should take responsibility.<br></br>
-            You can also make an initial price assessment for your contribution. The city administration will check your contribution for its feasibility and also provide a price estimate. Thank you for taking the time and getting involved!
-          title_placeholder: Give your contribution a catchy title, for example “Renovate the train station square” or “Build a new children's playground”.
-          description_placeholder: "
-             Describe your contribution here. The following procedure has proven successful:\n\n
-             Start with a general description of your idea and then show what would improve with the implementation of your suggestion.\n\n
-             When writing, keep sentences as short as possible.\n\n
-             Also use paragraphs to make your text more readable. (Many users read your text on mobile devices.)\n\n
-             If possible, limit your content to a maximum of three paragraphs.\n\n
-             If appropriate, use bullet points and bullet points for better clarity."
+          page_description: The budget lives from your contributions! Tell us what you would like to have implemented - and then share your ideas with others. You can indicate whether you would like to support the implementation yourself or whether the city administration should take responsibility.<br></br> You can also make an initial price assessment for your contribution. The city administration will check your contribution for its feasibility and also provide a price estimate. Thank you for taking the time and getting involved!
+          title_placeholder: "Give your contribution a catchy title, for example “Renovate the train station square” or “Build a new children's playground”."
+          description_placeholder: " Describe your contribution here. The following procedure has proven successful:\n\n Start with a general description of your idea and then show what would improve with the implementation of your suggestion.\n\n When writing, keep sentences as short as possible.\n\n Also use paragraphs to make your text more readable. (Many users read your text on mobile devices.)\n\n If possible, limit your content to a maximum of three paragraphs.\n\n If appropriate, use bullet points and bullet points for better clarity."
           map:
             hint: Where should your contribution be implemented? Place a “pin” to bring others into the picture.
           implementation:
@@ -92,11 +73,9 @@ en:
           required: Your input
         investment:
           supporters:
-            zero: No supporters
             one: "1 supporter"
             other: "%{count} supporters"
           supports:
-            zero: No votes
             one: 1 vote
             other: "%{count} votes"
           qualified_supports: "Total votes: %{count}"
@@ -114,6 +93,7 @@ en:
               undecided: This investment proposal was not eveluated yet.
               unfeasible: This investment proposal was marked as unfeasible.
           price: Cost estimation by the administration
+          welcome_default_text_html: "%{author_name} has made a contribution to this project that needs your attention. You can support the post on the right sidebar by giving it your vote. You can also follow the post to stay up to date. The map helps you to locate the post in the city, and you also have the opportunity to comment on the post."
           feasibility_explanation: Assessment of the administration
           implementation_city_text: "Implementation: Should be implemented by the city administration"
           implementation_user_text: "Implementation: %{author} will assist with the implementation"
@@ -124,3 +104,5 @@ en:
             reviewing: The feasibility of the investment proposal is currently evaluated.
             reviewing_ballots: We're currently checking the votes.
             valuating: The costs for this investment proposal are evaluated internally.
+      results:
+        recalculate_winners: Recalculate Winner

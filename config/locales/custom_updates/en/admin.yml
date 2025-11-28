@@ -1,8 +1,11 @@
 en:
   admin:
+    actions:
+      action: Action
+      actions: Actions
     homepage:
       feeds:
-        active_projekts: Aktiv Projects
+        active_projekts: Active Projects
         expired_projekts: Expired Projects
         polls: Polls
         investment_proposals: Investment Proposals
@@ -10,16 +13,83 @@ en:
       destroy: Delete
   custom:
     admin:
+      legislation:
+        processes:
+          index:
+            create: New text editing
+            title: Text Editing
+            status: Text Editing
+            count: text editing
       budgets:
         edit:
+          hide_money: Hide money
+          hide_money_help_text: If this option is enabled, all fields that show the amount of money will be hidden during the entire process.
           info:
             projekt_association: Project association
+      budget_investments:
+        show:
+          not_defined: undefined
+          state_block_title: Proposal Status
+          physical_votes_updated: Physical votes updated!
+          feasibility: Feasibility
+          price: Price assessment of the administration (€)
+          price_first_year: Price estimate of running costs in the first year (€)
+          price_explanation: Explanation of the administration
+          duration: Timeframe
+          valuation_finished_label: Appraisals
+          valuation_finished:
+            "true": completed
+            "false": not yet completed
+          selected_label: Selected for support phase
+          selected:
+            "true": "yes"
+            "false": "no"
+          compatible_label: Admitted to Winners List
+          compatible:
+            "true": "yes"
+            "false": "no"
+          winner_label: Winner
+          winner:
+            "true": "yes"
+            "false": "no"
+          state_block_action_button_title: Edit
+          details_block_title: Learn more
+          author: Author
+          created_at: Date Created
+          frontend: Frontend
+          implementation_performer_label: Implementation
+          implementation_performer:
+            city: Author does not support implementation
+            user: Author supports in the implementation
+          user_cost_estimate: Price assessment of the user (€)
       deficiency_reports:
+        index:
+          entry_name: Deficiency
+          no_deficiency_reports: No deficiency reports
+          id: ID
+          admin_accepted: Visibility
+          created_at: Publication
+          title: Assign deficiencies
+          author: Author
+          status_title: Status
+          approximater_location: Location
+          category_name: Category
+          responsible_name: Clerk
+          actions: Actions
+          official_answer: Official Answer
+          officer_email: Email
+          submit: Filter/Search
+        update:
+          success_notice: The defect report has been updated
+        destroy:
+          success_notice: The defect report has been deleted
         categories:
           category:
             color: Color
             icon: Icon
             name: Name
+            warning_text: Popup
+            default_deficiency_report_officer: Default Clerk
           destroy:
             cannot_be_destroyed: You cannot delete this category because it is assigned to at least one defect.
             destroyed_successfully: The category was successfully deleted.
@@ -27,47 +97,68 @@ en:
             editing: Edit deficiency category
           form:
             color_placeholder: "HEX Code with #"
+            warning_text_placeholder: Popup text
             submit_button: Save
           index:
             create: Create category
             title: Categories
           new:
             creating: Create new defect category
+        official_answer_templates:
+          index:
+            title: Response Templates
+            button_new: Create New Template
+          new:
+            title: Create New Template
+          edit:
+            title: Edit Template
+          form:
+            submit_button: Save
+        officer_groups:
+          officer_group:
+            name: Name
+            officers: Clerk
+          destroy:
+            destroyed_successfully: The clerk group has been deleted successfully.
+          edit:
+            editing: Edit Clerk Group
+          index:
+            create: Create Clerk Group
+            title: Clerk Groups
+          new:
+            creating: Create New Clerk Group
         deficiency_report:
           category: Category
           officer: Responsible person
           status: Status
           title: Reported deficiency
-        index:
-          entry_name: Deficiency
-          no_deficiency_reports: No deficiency reports
-          title: Assign deficiencies
         officers:
           index:
             search:
               email_placeholder: Search user via email
             title: Responsible persons
           officer:
-            email: E-Mail
+            email: Email
             entry_name: Responsible person
             name: Name
         settings:
           index:
             title: Features
         show:
-          author: Author
-          category: Category
+          on_behalf_of: on behalf of
           created_at: Created at
-          description: Description
-          entry_name: Deficiency
-          no_deficiency_reports: No deficiency reports
-          officer_name: Responsible person
-          official_answer: Official answer
-          status: Status
-          summary: Summary
-          title: Assign deficiencies
           updated_at: Updated at
-          video: Video
+          link: Link
+        # category: Kategorie
+        # description: Bezeichnung
+        # entry_name: Mangel
+        # no_deficiency_reports: Keine Mängelmeldungen
+        # officer_name: Sachbearbeiter*in
+        # official_answer: Offizielle Antwort
+        # status: Status
+        # summary: Zusammenfassung
+        # title: Mängel zuweisen
+        # video: Video
         statuses:
           destroy:
             cannot_be_destroyed: You cannot delete this status because it is assigned to at least one defect.
@@ -86,27 +177,138 @@ en:
             color: Color
             icon: Icon
             title: Name
+            archive_reports: Archive
+            notice_text: Email Notification Text
+        districts:
+          index:
+            title: Areas
+      geozones:
+        geozone:
+          postal_codes: Postal Codes
+          postal_codes_help: Comma-separated list of postcodes belonging to this geozone
+      registered_addresses:
+        index:
+          title: Registered Addresses
+          import_button: Import
+        attributes:
+          id: ID
+          city: City
+          plz: Zip code
+          street_name: Street
+          street_number: House number
+          street_number_extension: House number addition
+          district: Area
+          groupings: Groupings
+      registered_address_groupings:
+        index:
+          title: Registered address grouping
+        update:
+          success: Registered address grouping updated successfully
+        destroy:
+          success: Registered address grouping deleted successfully
+        attributes:
+          key: Column Name
+          name: Name
+          options: Options
+      registered_address_districts:
+        index:
+          title: Areas
+        update:
+          success: Territory Successfully Updated
+        attributes:
+          name: Name
+          coordinates: Coordinates
+      registered_address_streets:
+        index:
+          title: Registered Addresses
+        attributes:
+          id: ID
+          name: Name
+          plz: Zip code
+      recipient_groups:
+        index:
+          title: Addressee groups
+          new_recipient_group: New addressee group
+          name: Name
+          empty_recipient_groups: No addressee group available
+        new:
+          base_options_for_kind:
+            projekts: Projects
+            user_roles: User Roles
+          label_for_general: Addressee Group Type
+          label_for_projekt: Project
+          label_for_projekt_phase: Project phase(s)
+          label_for_user_role: User Role
+          name: Name
+          select_options:
+            projekt_related: All project phases
+          access_methods:
+            newsletter_subscriber_ids: All users with consent
+            all_newsletter_subscriber_ids: All users with informed consent plus newsletter subscribers without an account
+            administrators_ids: Administrators
+            authors_of_feasible_ids: Authors whose suggestions meet the criteria
+            authors_of_unfeasible_ids: Authors whose suggestions do not meet the criteria
+            authors_of_selected_ids: Authors whose proposals have been selected for the voting phase
+            authors_of_not_winners_ids: Authors whose proposals did not win in the final vote
+            authors_of_winners_ids: Authors whose proposals won in the final vote
+            any_phase_subscribers_ids: Subscribersof all stages
+        create:
+          notice: Addressee group was successfully created
+        update:
+          notice: Addressee group was successfully updated
+        destroy:
+          notice: Addressee group has been deleted successfully
       menu:
+        site_customization:
+          landing_pages: Landing pages
         deficiency_reports:
-          categories: Kategorien festlegen
+          categories: Set Categories
           list: List of deficiency reports
           officers: Responsible person
           reports: Assign deficiencies
           settings: Features
           statuses: Set categories
+          official_answer_templates: Response Templates
+          areas: Old areas
+          districts: Areas
+          officer_groups: Clerk Groups
+          stats: Statistics
         deficiency_reports_title: Deficiency reports
         projekts: Projects
         projekt_managers: Project managers
+        deficiency_report_managers: Admin Defect Notifier
         officing_managers: Poll managers
         legislation: Text edit
-        age_restrictions: Age restrictions
+        age_ranges: Age Groups
         modal_notification: Modal notifications
+        title_registered_addresses: Registered Addresses
+        registered_addresses:
+          list: Registered Addresses
+        registered_address_groupings:
+          list: Registered Address Groups
+        registered_address_districts:
+          list: Areas
+        registered_address_streets:
+          list: Registered roads
+        individual_groups: Individual groups
+        unregistered_newsletter_subscribers:
+          list: Newsletter subscribers
+        recipient_groups: Addressee groups
+        matomo: Matomo
       polls:
+        show:
+          table:
+            title: Questions
+            type: Type
+          edit_nested_questions: Nested Questions
+          title: Question Type
         poll:
           send_notifications: Send notifications
           notifications_sent: Notifications sent successfully
           send_notifications_confirm: Are you sure?
         questions:
+          show:
+            description: Description
           answers:
             notice:
               delete:
@@ -114,11 +316,13 @@ en:
                 error: Votes have already been cast for this poll. Therefore, you can no longer delete the answer.
                 success: Answer successfully deleted.
               open_answer_saved: Thank you very much! Your answer was successfully saved.
-            open_answer_html: Open answer  <small><em>(Only one allowed)</em></small>
+            open_answer: Open Response
+            open_answer_hint: (Only one allowed per question, additional information such as images or documents will not be displayed in the frontend for this answer type)
           show_images: Answer options should be displayed as images
         settings:
           show_on_home_page: This poll will be visible on the home page.
           show_on_index_page: This poll will be visible on polls index page.
+          wizard_mode: "Mode related questions"
           show_open_answer_with_username: Show open answers with user name
           show_open_answer_without_username: Show open answers anonymously
           show_summary_instead_of_questions: Show summary instead of list of questions
@@ -151,6 +355,7 @@ en:
             duration_block_title: Duration
             geo_affiliation_block_title: Geozones
             individual_groups_block_title: Visibility restriction to strong groups
+            landing_page_assignments: Assignment to topics/area pages
           projekt_page_tab:
             name: Project page
             main_block_title: Project page
@@ -170,7 +375,7 @@ en:
               age: Age
               geo: Geo
               verification: Verification
-            copy_phase_link: Link für Tab abrufen
+            copy_phase_link: Retrieve link for tab
           projekt_settings_tab:
             name: Settings
             general_settings: General
@@ -179,94 +384,22 @@ en:
           projekt_managers_tab:
             name: Projekt managers
             main_block_title: Projekt managers
+            permissions:
+              manage: administer
+              moderate: moderate
+              create_on_behalf_of: create on behalf of someone
+              get_notifications: be notified
+              access_graphql: GraphQL Access
           projekt_map_tab:
             name: Ind. map configuration
-          flash:
-            update_notice: Projekt was successfully updated
-          description: Projekt description
-          design:
-            icon: Icon
-            submit_button: Submit
-          projekt_activated: Project active
-          projekt_active:
-            "no": "No"
-            "yes": "Yes"
-          projekt_events_tab:
-            phases_label: Phases
-            button: Save notification
-            event_created_at: Created at
-            event_datetime: Datetime
-            event_location: Location
-            event_title: Title
-            event_weblink: Weblink
-            name: Events
-            page_title: Create notification
-          projekt_milestones_tab:
-            name: Progress & Milestones
-          projekt_news_tab:
-            name: News-Feed
-          projekt_notifications_tab:
-            phases_label: Phases
-            button: Send message
-            name: Notifications
-            notification_body: Message
-            notification_title: Title
-            page_title: Send message
-            title: Send message
-          projekt_arguments_tab:
-            button: Save argument
-            name: Arguments
-            phases_label: Phases
-            argument_type_label: Argument
-            argument_name: Name
-            argument_pro: Pro
-            argument_cons: Cons
-            argument_party: Party
-            argument_position: Position
-            argument_note: Note
-            argument_image: Image
-            argument_created_at: Created at
-            page_title: Arguments
-            title: Arguments
-          projekt_livestreams_tab:
-            phases_label: Phases
-            submit_button: Save Livestream
-            name: Livestreams
-            page_title: Livestream
-            livestream:
-              url: Livestream link
-              title: Title
-              description: Description
-              starts_at: Starts at
-              platform: Platform
-              add_question: Add question
-              question: Questions
-          projekt_page: Project page
-          projekt_phase_limitation: Restriction
-          projekt_phases: Project phases
-          projekt_questions_tab:
-            phases_label: Phases
-            name: Short survey
-            title: Questions
           projekt_sdg_tab:
             name: SDGs & Tags
             sdgs: SDGs
             tags: Tags
             tags_hint: Please select one or multiple tags in order to suggest them to platform users.
             refresh_page: If you activated these features already but they are not visible here, please reload this page.
-          projekt_labels_tab:
-            name: Labels
-            page_title: Labels
-            create_button: Create label
-            no_labels: This project doesn't have any labels
-          projekt_status: Project status
-          setting_indicator:
-            "no": "No"
-            "yes": "Yes"
-          show_footer: Project footer
-          show_in_navigation: null
-          show_in_navigation_checkbox: Show project in navigation
-          update: Update project settings
+          flash:
+            update_notice: Projekt was successfully updated
         edit_projekt: Edit
         index:
           add_cards: Create/edit tiles
@@ -298,18 +431,20 @@ en:
           edit:
             save: Update question
             title: Edit question
-            title_for_livestream: Create question for livestream
           index:
             create: Create question
-            attached_to: Attached to
+            enable_projekt_list: Activate projekt questions overview
             title: Short survey
             question_options: Question options
             answers_count: Answers count
             comments_count: Comments count
-            enable_projekt_list: Activate projekt questions overview
+            attached_to: Attached to
+            send_notifications_button: Send Notifications
+            notifications_sent_notice: Notifications sent successfully
           new:
             create: Update question
             title: Create question
+            title_for_livestream: Create question for livestream
           show_answers_count: Show number of votes in frontend
         overview_page_tab:
           title: Project overview page
@@ -319,7 +454,6 @@ en:
           geozones: Manage geozones
           map_settings: Standard card configuration
           settings: Functions
-          legislation_process: Text edit
           overview_page: Project overview page
       projekt_managers:
         index:
@@ -327,17 +461,23 @@ en:
           no_projekt_managers: No projekt managers
         search:
           title: "Projekt managers: User search"
+      deficiency_report_managers:
+        index:
+          title: Defect Notifier Admins
+          no_deficiency_report_managers: No defect report admins available.
+        search:
+          title: "DeficiencyReportManager: UserSearch"
       officing_managers:
         index:
           title: Poll managers
-          no_projekt_managers: No poll managers
+          no_officing_managers: No votingassistants available.
         search:
           title: "Poll managers: User search"
       settings:
         index:
           extended_features:
             debates: Discussions
-            gdpr: DSGVO
+            gdpr: GDPR
             general: General & Features
             modulewide: Cross-module functions
             polls: Polls
@@ -345,11 +485,28 @@ en:
           extended_options: Advanced configuration settings
           extended_settings: Advanced settings
           extra_fields: Registration & Verification
+          extra_fields_titles:
+            registration: Registration
+            verification: Verification
           features:
             activate:
               disabled: Project disabled
               enabled: Project activated
       site_customization:
+        landing_pages:
+          new:
+            title: "Topics/Area Page"
+          index:
+            create: "Create New Topics/Territory Page"
+            title: "Topics/Area Pages"
+          edit:
+            header_image_title: Header image
+          edit_content_cards:
+            title: Content cards for %{page_title}
+            link: Content Cards
+          form:
+            landing_site_logo_for_transparent_background: Custom logo for this landing page on transparent background
+            landing_site_logo_for_white_background: Custom logo for this landing page on white background
         pages:
           destroy:
             cannot_notice: This page cannot be deleted. Please delete the associated project beforehand.
@@ -367,11 +524,14 @@ en:
               investments_limit: Number of displayed investment proposals
               deficiency_reports_limit: Number of displayed deficiency reports
       users:
+        reverify_button_text: Update Verification
+        reverify_success_notice: Reverification process in progress
+        erase_success_notice: User deleted successfully
         columns:
           id: ID
           erase_reason: Erase reason
           name: Name
-          email: E-Mail
+          email: Email
           document_number: Document number
           roles: Roles
           verification_level: Verification level
@@ -385,7 +545,7 @@ en:
           date_of_birth: Date of birth
           document_type: Document
           document_last_digits: Document (4 last digits)
-          unique_stamp: Unique Stamp
+          unique_stamp: Unique stamp
           created_at: Created at
           last_sign_in_date: Last login at
           verified_at: Verified at
@@ -405,6 +565,8 @@ en:
         edit:
           title: Edit event
       projekt_phases:
+        voting_phase:
+          description: Reconciliation page description text
         nav_bar:
           duration: Duration
           naming: Naming
@@ -414,14 +576,26 @@ en:
           projekt_labels: Labels
           sentiments: Sentiments
           age_ranges_for_stats: Age ranges for stats
-          projekt_questions: Projekt questions
+          projekt_questions: Project questions
           projekt_livestreams: Livestreams
           projekt_events: Events
           milestones: Milestones
-          projekt_notifications: Projekt notifications
+          progress_bars: Progress Bar
+          projekt_notifications: Project notifications
           projekt_arguments: Arguments
-          formular: Formular
+          formular: Form fields
+          general_settings: Features
           formular_answers: Formular answers
+          form_author: Form Author
+          user_functions: User Functions
+          poll_questions: Questions
+          officing_managers: Voting assistant
+          officing_manager_audits: Logs
+          poll_results: Results
+          budget_edit: Edit
+          budget_investments: Suggestions
+          budget_phases: Phases
+          legislation_process_draft_versions: Draft versions
         notice:
           created: Phase created
           updated: Phase updated
@@ -430,7 +604,8 @@ en:
         shared:
           update_button: Update
         phase_tab_name: Name in Tab
-        cta_button_name: Text in Button
+        cta_button_name: Text in button
+        welcome_text_in_show: Introduction text in the display of proposals
         resource_form_title: Resource form title
         labels_name: Labels
         sentiments_name: Sentiments
@@ -450,7 +625,9 @@ en:
           page_title: Naming
         restrictions:
           page_title: Restrictions
-          guest_participation_allowed: Guest particioation allowed
+          intro:
+            p1_html: The extended participation restrictions, such as geographic or age group restrictions, are only available to registered and verified users. Guest user status does not allow for such restrictions.
+            p2_html: In order to apply these extended restrictions, the relevant data, such as place of residence or date of birth, must be available. This data can either already be collected during registration or only be queried in the course of participation in the respective phase. Users who have not yet provided the necessary data will be asked to provide it before participating. Participation will only be activated if the stored information meets the restriction criteria.
           age:
             title: In order to restrict participation, users must be verified.
             hint: In order to restrict participation, users must be verified.
@@ -468,18 +645,26 @@ en:
             only_streets: Only citizens from street
           individual_group_values:
             title: Restriction to groups
-          verification:
-            title: Verification
-            no_restriction: All users
-            only_verified: Only verified users
+          user_status:
+            title: User Status
+            guest: Guest users
+            registered: Registered users
+            verified: Verified Users
         settings:
+          page_title: What features do you want to make available to users?
           block_title:
             general: Settings
-            form: Formularfelder
-            resource: Individueller Beitrag
+            form: Form Fields
+            resource: Individual Contribution
+            form_author: Form Author
+            user_functions: User Functions
+        form_author:
+          page_title: What features do you want to make available to users?
+        user_functions:
+          page_title: What features do you want to make available to users?
         projekt_labels:
-          name: Labels
-          page_title: Labels
+          new_block_title: Do you want to add a label?
+          list_title: Here is the list of all labels
           create_button: Create Label
           no_labels: No labels have been added for this project yet
           table:
@@ -487,43 +672,57 @@ en:
             color: Color
             name: Name
           form:
+            title: What name and icon should your label have?
             color_placeholder: "HEX Code with #"
         sentiments:
-          page_title: Sentiments
+          new_block_title: Do you want to add a sentiment?
+          list_title: Here is the list of all the sentiments
           create_button: Create Sentiment
           no_sentiments: No sentiments have been stored for this project yet
           table:
             color: Color
             name: Name
           form:
+            title: What name and color should your sentiment be?
             color_placeholder: "HEX Code with #"
           notice:
             destroy: Sentiment successfully destroyed
+        milestones:
+          new_block_title: Do you want to set a milestone?
+          new_button: Add milestone
+          list_title: This is the list of all milestones
+        progress_bars:
+          new_block_title: Do you want to add a progress bar?
+          new_button: Add /manage progress bar
+          list_title: This is your current progress bar
         projekt_questions:
-          page_title: Projekt Questions
+          new_block_title: Do you want to add a question?
           create_button: Create question
           send_notifications_button: Send motifications
+          list_title: This is the list of all questions
           table:
-            title: Projekt Questions
+            title: Project questions
             question_options: Available answers
-            answers_count: Answer count
             comments_count: Comments count
+          form:
+            question_options: Possible answer options
           new:
-            title_livestream: Create question for Livestream
+            title_livestream: What question do you want to ask and what answer options do you want to offer?
             title: Create question
         map:
-          copy_from_projekt: copy from projekts
+          copy_from_projekt: copy from projects
           map_layers:
             title: Map layers
         projekt_notifications:
-          page_title: Projekt notifications
+          page_title: Project notifications
           button: Send notification
         projekt_arguments:
-          page_title: Arguments
+          projekt_phase_default_title: Voices / Opinions
+          page_title: Would you like to add a vote/opinion?
           send_notifications_button: Send notifications
           notifications_sent_notice: Notifications sent successfully
           argument_pro: Pro
-          argument_cons: Contra
+          argument_cons: Cons
           button: Create argument
           argument_image: Image
         projekt_events:
@@ -531,25 +730,31 @@ en:
           event_created_at: Created at
           event_datetime: Date
           event_end_datetime: Ends at
+          open_ended: Open End
           event_location: Location
           event_title: Title
           event_weblink: Weblink
           event_description: Description
           name: Events
-          page_title: Events
+          page_title: Would you like to add an event?
           send_notifications_button: Send notifications
-          notifications_sent_notice: Notifications sent sucessfully
+          notifications_sent_notice: Notifications sent successfully
         projekt_livestreams:
-          page_title: Livestreams
+          new_block_title: Do you want to add a livestream?
+          new_button_title: Add Livestream
           all_livestreams: All Livestreams
           add_question: Add question
           questions: Questions
+          edit_livestream: Edit Quick Survey
+          delete_livestream: Delete Quick Survey
           send_notifications_button: Send notifications
           notifications_sent_notice: Notifications sent successfully
+          new:
+            title: What URL does your livestream have?
         formular:
-          page_title: Formular
-          primary_fields_title: Regular Formular fields
-          follow_up_fields_title:  Follow-up Formular fields
+          page_title: Which form fields should your form contain?
+          primary_fields_title: Regular form fields
+          follow_up_fields_title: Follow-up form fields
           dropdown_hint: Please enter your answer options. They must be separated by a comma.
           kinds:
             string: short Text
@@ -559,21 +764,31 @@ en:
             dropdown: Dropdown
             image: Image
             document: Document
-          update_field_button: Update Formular field
-          add_field_button: Add new Formular field
+            description: Description
+          update_field_button: Update form field
+          add_field_button: Add new form field
         formular_answers:
-          page_title: Posteingang & Follow-up E-Mails
-          emails_title: Follow-up E-Mails
-          subject_placeholder: E-Mail
-          recipients: "%{number} Empfänger"
-          emails_sent: "%{number} E-Mails gesendet"
-          new_email_title: Posteingang
+          page_title: Inbox & Follow Up Emails
+          emails_title: Do you want to send follow-up emails?
+          subject_placeholder: Email
+          recipients: "%{number} Recipient"
+          emails_sent: "%{number} Emails Sent"
+          new_email_title: Inbox
           buttons:
             save_draft: Save draft
             send_email: Send E-Mail
-            create_email_draft: E-Mail-Entwurf an ausgewählte Empfänger*innen erstellen
+            create_email_draft: Create email draft to selected recipients
         age_ranges_for_stats:
           page_title: Age ranges for stats
+        budget_phases:
+          page_title: What should be the duration of the phases?
+        budget_edit:
+          page_title: What basic settings for your budget would you like to make?
+        budget_investments:
+          page_title: Suggestions
+        legislation_process_draft_versions:
+          new_block_title: Do you want to add a version?
+          list_title: This is a list of all text versions.
       modal_notifications:
         index:
           create: Create
@@ -588,3 +803,57 @@ en:
           notice: Modal notification updated
         destroy:
           notice: Modal notification deleted
+      individual_groups:
+        index:
+          title: Individual groups
+          new: New Group
+        show:
+          new_value: New Group Value
+        new:
+          title: New Group
+        edit:
+          title: Edit Individual Group
+        table:
+          name: Name
+          kind: Type
+          visible: Visibility
+          email: Email
+          remove_user: Remove Profile
+      individual_group_values:
+        show:
+          csv_hint_html: 'You can add multiple entries at once using the CSV uploader. The CSV only needs a column with the desired e-mail addresses. The column name must be "Email". You can start by looking at the <a href="/samples/igv_sample.csv">sample file.</a>'
+          related_users: related users
+        edit:
+          title: Edit Group Value
+        table:
+          name: Name
+      age_ranges:
+        index:
+          title: Age Groups
+          new: Create New Age Group
+          filters:
+            for_restrictions: Age restriction
+            for_stats: Age Groups for Statistics
+        table:
+          name: Name
+          range: Age Group
+        min_age: Minimum age
+        max_age: Maximum age
+        order: Order
+        buttons:
+          edit: Edit
+          destroy: Delete
+      unregistered_newsletter_subscribers:
+        index:
+          title: Newsletter subscribers
+      common:
+        download_current_selection: Download Current Selection
+      newsletters:
+        settings:
+          email_logo: Logo in email header
+          brand_color: Email Header & Footer Color
+          footer: Footer Content
+        index:
+          tabs:
+            list: Newsletter
+            settings: Settings
