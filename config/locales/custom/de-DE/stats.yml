@@ -19,6 +19,7 @@ de:
     individual_group_value_name: Gruppenwert
     individual_group_value_count: Gesamt
     no_demographic_data:
+      zero: ""
       one: "* Keine demographischen Daten vorhanden für 1 Teilnehmer*in."
       other: "* Kein demographischen Daten vorhanden für %{count} Teilnehmer*innen."
     budgets:
