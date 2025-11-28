@@ -1,155 +1,173 @@
 nl:
   pages:
     census_terms:
-      title: "Terms and conditions of access of the Census"
-      description: "Information page on the terms and conditions of access of the Census."
+      title: "Allgemeinen Zugangsbedingungen des Melderegisters"
+      description: "Informationsseite zu den Allgemeinen Zugangsbedingungen des Melderegisters."
     conditions:
-      title: Gebruiksvoorwaarden
-      subtitle: JURIDISCHE KENNISGEVING OP DE GEBRUIKSVOORWAARDEN, PRIVACY EN BESCHERMING VAN GEGEVENS VAN DE OPEN OVERHEID PORTAL
-      description: Informatiepagina over de gebruiksvoorwaarden, privacy en bescherming van persoonsgegevens.
+      title: Allgemeine Nutzungsbedingungen
+      subtitle: RECHTLICHE HINWEISE BEZÜGLICH DER NUTZUNG, SCHUTZ DER PRIVATSPHÄRE UND PERSONENBEZOGENER DATEN DES OPEN GOVERNMENT-PORTALS
+      description: Informationsseite über die Nutzungsbedingungen, Privatsphäre und Schutz personenbezogener Daten.
     help:
-      title: "%{org} is een platform voor burgerparticipatie"
-      guide: "Deze handleiding behandelt ieder onderdeel van %{org}. Meer informatie vind je door te klikken op onderstaande links."
+      title: "%{org} ist eine Plattform zur Bürgerbeteiligung"
+      guide: "Diese Anleitung erklärt Ihnen, was die einzelnen %{org}-Abschnitte sind und wie diese funktionieren."
       menu:
-        debates: "Debatten"
-        proposals: "Voorstellen"
-        budgets: "Participatory budgets"
-        polls: "Polls"
-        other: "Verdere informatie"
-        processes: "Proces"
+        debates: "Diskussionen"
+        proposals: "Vorschläge"
+        budgets: "Bürgerhaushalte"
+        polls: "Umfragen"
+        other: "Weitere interessante Informationen"
+        processes: "Beteiligungsverfahren"
       debates:
-        title: "Debatten"
-        description: "Bij dit onderdeel %{link} kun je debatteren om je mening met anderen te delen en te bespreken. Dit is ook een plek waar je voorstellen kunt presenteren, die via andere onderdelen van %{org} tot concrete acties voor de gemeente kunnen leiden."
-        link: "debatten"
-        feature: "Je kunt debatten openen en reageren en je waardering uitdrukken via de <strong>Eens</strong> of <strong>Oneens</strong> knoppen. Daarvoor moet je %{link}."
-        feature_link: "registreren in %{org}"
-        image_alt: "Knoppen om een debat te waarderen"
-        figcaption: '"Eens" en "Oneens" knoppen om debatten te waarderen.'
+        title: "Diskussionen"
+        description: "Im %{link}-Abschnitt können Sie Ihre Meinung zu Anliegen in Ihrer Stadt äußern und mit anderen Menschen teilen. Zudem ist es ein Bereich, in dem Ideen generiert werden können, die durch andere Abschnitte der %{org} zu Handlungen des Stadtrates führen."
+        link: "Bürger-Debatten"
+        feature: "Sie können Diskussionen eröffnen, kommentieren und mit <strong> Ich stimme zu</strong> oder <strong>Ich stimme nicht zu</strong> bewerten. Hierfür müssen Sie %{link}."
+        feature_link: "registrieren für %{org}"
+        image_alt: "Button, um die Diskussionen zu bewerten"
+        figcaption: '"Ich stimme zu" und "Ich stimme nicht zu" Buttons, um die Diskussion zu bewerten.'
       proposals:
-        title: "Voorstellen"
-        description: "In dit %{link} onderdeel kun je voorstellen indienen aan jouw gemeente en reageren op voorstellen van anderen. De voorstellen hebben voldoende steun van anderen nodig om tot een stemming te leiden. Als een voorstel veel stemmen krijgt, wordt deze door de gemeente goedgekeurd en uitgevoerd."
-        link: "Voorstellen"
-        image_alt: "Knop om een voorstel te steunen"
-        figcaption: 'Knop om een voorstel te ''''steunen''''.'
+        title: "Vorschläge"
+        description: "Im %{link}-Abschnitt können Sie Anträge an den Stadtrat stellen. Die Anträge brauchen dann Unterstützung. Wenn Ihr Antrag ausreichend Unterstützung bekommt, wird er zur öffentlichen Wahl freigegeben. Anträge, die durch Bürgerstimmen bestätigt wurden, werden vom Stadtrat angenommen und umgesetzt."
+        link: "Bürgervorschläge"
+        image_alt: "Klicken Sie hier um den Vorschlag zu unterstützen"
+        figcaption: 'Button zur "Unterstützung" eines Vorschlags.'
       budgets:
-        title: "Burgerbegroting"
-        description: "Het %{link} onderdeel helpt bij het geven van direct zeggenschap aan inwoners over de besteding van gebiedsbudgetten van de gemeente."
-        link: "Burgerbegrotingen"
-        image_alt: "Verschillende fasen in de burgerbegroting"
-        figcaption: '"Steun" fase en "Stem" fase in de burgerbegroting.'
+        title: "partizipative Haushaltsmittel"
+        description: "Der %{link}-Abschnitt hilft Personen eine direkte Entscheidung zu treffen, für was das kommunale Budget ausgegeben werden soll."
+        link: "Bürgerhaushalte"
+        image_alt: "Verschiedene Phasen eines partizipativen Haushalts"
+        figcaption: '"Unterstützungs-" und "Abstimmungs-"Phasen des Bürgerhaushalts.'
       polls:
-        title: "Polls"
-        description: "Het %{link} onderdeel wordt geactiveerd elke keer wanneer een voorstel 1% steun krijgt en tot stemming over gaat, of als de gemeente een vraagstuk en besluit aan de inwoners wil voorleggen."
-        link: "peilingen"
-        feature_1: "Om te participeren bij de peilingen moet je %{link} en je account verifiëren."
-        feature_1_link: "registreren in %{org_name}"
+        title: "Umfragen"
+        description: "Der %{link}-Abschnitt wird aktiviert, wann immer ein Antrag 1% an Unterstützung erreicht und zur Abstimmung übergeht, oder wenn der Stadtrat ein Problem zur Abstimmung vorlegt."
+        link: "Umfragen"
+        feature_1: "Um an der Abstimmung teilzunehmen, müssen Sie %{link} und Ihr Konto verifizieren."
+        feature_1_link: "anmelden %{org_name}"
       processes:
-        title: "Proces"
-        description: "In het %{link} onderdeel kun je deelnemen in het opstellen en aanpassen van formele stukken. Je kunt hier ook je mening geven over beleid en plannen ontstaan uit eerdere debatten."
-        link: "plannen"
-        feature: "Om te participeren bij de processen moet je %{link} en je account verifiëren."
-        feature_link: "registreren in %{org_name}"
+        title: "Beteiligungsverfahren"
+        description: "Im %{link}-Abschnitt nehmen Bürger an der Ausarbeitung und Änderung von, die Stadt betreffenden, Bestimmungen teil und können ihre Meinung bezüglich kommunaler Richtlinien in vorausgehenden Debatten äußern."
+        link: "Prozesse"
+        feature: "Um am Prozess teilzunehmen, müssen Sie %{link} und Ihr Konto verifizieren."
+        feature_link: "registrieren für %{org_name}"
       faq:
-        title: "Technische problemen?"
-        description: "Lees de FAQs en kijk of dat helpt."
-        button: "Bekijk de meest gestelde vragen"
+        title: "Technische Probleme?"
+        description: "Lesen Sie die FAQs und finden Sie Antworten auf Ihre Fragen."
+        button: "Lies die Liste der häufig gestellten Fragen"
         page:
-          title: "Veel gestelde vragen"
-          description: "Gebruik deze pagina veelgestelde vragen van de gebruikers van de site te beantwoorden."
+          title: "Häufig gestellte Fragen"
+          description: "Benutzen Sie diese Seite um die gemeinsamen FAQs für die Benutzer der Website zu beheben."
       other:
-        title: "Verdere informatie"
-        how_to_use: "Gebruik %{org_name} in uw gemeente"
-        sdg: "hulp bij Sustainable Development Goals"
+        title: "Weitere interessante Informationen"
+        how_to_use: "Verwenden Sie %{org_name} in Ihrer Stadt"
+        sdg: "Ziele für nachhaltige Entwicklung Hilfe"
       how_to_use:
         text: |-
-          Gebruik het in je gemeente of help ons het te verbeteren, het is open source software.
+          Verwenden Sie diese Anwendung in Ihrer lokalen Regierung, oder helfen Sie uns sie zu verbessern, die Software ist kostenlos.
 
-          Dit platform gebruikt de [CONSUL app](https://github.com/consul/consul 'consul github') wat open source software is [licence AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ), wat betekent dat iedereen vrij is om de code te gebruiken, te kopieren, in detail te bekijken aan te passen en opnieuw de wereld in te sturen met de aanpassingen die men maakt (en daarmee anderen toe te staan dit ook te doen). Omdat wij denken dat cultuur beter en rijker wordt als het wordt opengesteld.
+          Dieses offene Regierungs-Portal benutzt die [CONSUL-App](https://github.com/consul/consul 'consul github'), die eine freie Software, mit der Lizens [licence AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ) ist. Einfach gesagt, bedeutet das, dass jeder diesen Code frei benutzen, kopieren, detailiert betrachten, modifizieren und Versionen, mit gewünschten Modifikationen neu an die Welt verteilen kann (wobei anderen gestattet wird, dasselbe zu tun). Denn wir glauben, dass Kultur besser und ergiebiger ist, wenn sie öffentlich wird.
 
-          Als je programmeur bent kun je de code bekijken en ons helpen deze te verbeteren via [CONSUL app](https://github.com/consul/consul 'consul github').
+          Wenn Sie ein Programmierer sind, können Sie den Code betrachten und uns helfen diesen auf [CONSUL app](https://github.com/consul/consul 'consul github') zu verbessern.
       titles:
-        how_to_use: Gebruik het in uw gemeente
+        how_to_use: Verwenden Sie es in Ihrer Kommunalverwaltung
     privacy:
-      title: Privacy Verklaring
-      subtitle: "INFORMATIE OVER GEGEVENSBESCHERMING"
+      title: Datenschutzbestimmungen
+      subtitle: "INFORMATION ZU DEN DATENSCHUTZBESTIMMUNGEN"
     accessibility:
-      title: Toegankelijkheid
+      title: Zugänglichkeit
       description: |-
-        Toegankelijkheid van het web verwijst naar de mogelijkheid van toegang tot het web en de inhoud ervan door alle mensen, ongeacht de (fysieke, intellectuele of technische) handicaps of zaken die zich door de context in het gebruik voordoen (technologisch of omgeving).
+        Unter Webzugänglichkeit versteht man die Möglichkeit des Zugangs aller Menschen zum Web und seinen Inhalten, unabhängig von den Behinderungen (körperlich, geistig oder technisch), die sich aus dem Kontext der Nutzung (technologisch oder ökologisch) ergeben können.
 
-        Wanneer websites zijn ontworpen met toegankelijkheid in het achterhoofd, kunnen alle gebruikers toegang tot inhoud in gelijke omstandigheden krijgen, bijvoorbeeld:
+        Wenn Websites unter dem Gesichtspunkt der Barrierefreiheit gestaltet werden, können alle Nutzer beispielsweise unter gleichen Bedingungen auf Inhalte zugreifen:
       examples:
-        - Het beschikbaar stellen van alternatieve tekst bij afbeeldingen kan blinde of visueel beperkte deelnemers op die wijze toegang verschaffen tot de informatie.
-        - Wanneer video's ondertitels hebben begrijpen deelnemers met gehoorproblemen deze ook.
-        - Als de inhoud in een eenvoudige en geïllustreerde taal zijn geschreven, zijn deelnemers met leerproblemen beter in staat om hen te begrijpen.
-        - Als de deelnemer beschikt over mobiliteitsproblemen en het is moeilijk om de muis te gebruiken, dan helpen de alternatieven met het toetsenbord bij navigatie.
+        - Proporcionando un texto alternativo a las imágenes, los usuarios invidentes o con problemas de visión pueden utilizar lectores especiales para acceder a la información.Providing alternative text to the images, blind or visually impaired users can use special readers to access the information.
+        - Wenn Videos Untertitel haben, können Nutzer mit Hörproblemen diese voll und ganz verstehen.
+        - Wenn die Inhalte in einer einfachen und anschaulichen Sprache geschrieben sind, können Nutzer mit Lernproblemen diese besser verstehen.
+        - Wenn der Nutzer Mobilitätsprobleme hat und es schwierig ist die Maus zu bedienen, helfen Tastatur-Alternativen mit der Navigation.
       keyboard_shortcuts:
-        title: Sneltoetsen
+        title: Tastaturkürzel
         navigation_table:
-          description: Om te kunnen navigeren via deze website op een toegankelijke manier is een groep van sneltoetsen geprogrammeerd. Deze combinaties van sneltoetsen organiseren de belangrijkste onderdelen van de website op een heldere manier.
-          caption: Sneltoetsen voor het navigatiemenu
-          key_header: Toets
-          page_header: Pagina
+          description: Um auf dieser Website barrierefrei navigieren zu können, wurde eine Gruppe von Schnellzugriffstasten programmiert, die die wichtigsten Bereiche des allgemeinen Interesses, in denen die Website organisiert ist, zusammenfassen.
+          caption: Tastaturkürzel für das Navigationsmenü
+          key_header: Schlüssel
+          page_header: Seite
           rows:
-            - key_column: 0
-              page_column: Homepagina
-            - key_column: 1
-              page_column: Debatten
-            - key_column: 2
-              page_column: Voorstellen
-            - key_column: 3
-              page_column: Votes
-            - key_column: 4
-              page_column: Participatory budgets
-            - key_column: 5
-              page_column: Plannen
+            - 
+              key_column: 0
+              page_column: Start
+            - 
+              key_column: 1
+              page_column: Diskussionen
+            - 
+              key_column: 2
+              page_column: Vorschläge
+            - 
+              key_column: 3
+              page_column: Stimmen
+            - 
+              key_column: 4
+              page_column: Bürgerhaushalte
+            - 
+              key_column: 5
+              page_column: Gesetzgebungsverfahren
         browser_table:
-          description: "Afhankelijk van het besturingssysteem en de browser die je gebruikt, zullen de toetsencombinaties als volgt zijn:"
-          caption: Toetsencombinatie afhankelijk van het besturingssysteem en browser
+          description: "Abhängig vom Betriebssystem und dem verwendeten Browser lautet die Tastenkombination wie folgt:"
+          caption: Tastenkombination je nach Betriebssystem und Browser
           browser_header: Browser
-          key_header: Toetsencombinatie
+          key_header: Tastenkombination
           rows:
-            - browser_column: Explorer
-              key_column: ALT + sneltoets en ENTER
-            - browser_column: Firefox
-              key_column: ALT + CAPS + sneltoets
-            - browser_column: Chrome
-              key_column: ALT + sneltoets (CTRL + ALT + sneltoets voor MAC)
-            - browser_column: Safari
-              key_column: ALT + sneltoets (CMD + sneltoets voor MAC)
-            - browser_column: Opera
-              key_column: CAPS + ESC + sneltoets
+            - 
+              browser_column: Internet Explorer
+              key_column: ALT + Tastenkombination dann ENTER
+            - 
+              browser_column: Firefox
+              key_column: ALT + CAPS + Kürzel
+            - 
+              browser_column: Chrome
+              key_column: ALT + Kürzel (STRG + ALT + Kürzel für MAC)
+            - 
+              browser_column: Safari
+              key_column: ALT + Kürzel (CMD + ALT + Kürzel für MAC)
+            - 
+              browser_column: Opera
+              key_column: CAPS + ESC + Kürzel
       textsize:
-        title: Tekstgrootte
+        title: Textgröße
         browser_settings_table:
-          description: Het toegankelijke ontwerp van de website zorgt ervoor dat de deelnemer de tekstgrootte zelf kan bepalen. Dit kan op verschillende manieren worden aangepast, afhankelijk van de browser die gebruikt wordt.
+          description: Das barrierefreie Design dieser Website ermöglicht es dem Nutzer, die Größe des Textes nach Bedarf zu wählen. Diese Aktion kann je nach verwendetem Browser auf unterschiedliche Weise durchgeführt werden.
           browser_header: Browser
-          action_header: Te ondernemen actie
+          action_header: Aktion die gemacht werden muss
           rows:
-            - browser_column: Explorer
-              action_column: Weergave > tekstgrootte
-            - browser_column: Firefox
-              action_column: Weergave > grootte
-            - browser_column: Chrome
-              action_column: Instellingen (pictogram) > Opties > Geavanceerd > Web Content > tekstgrootte
-            - browser_column: Safari
-              action_column: Weergave > zoom in/zoom uit
-            - browser_column: Opera
-              action_column: Weergave > schaal
+            - 
+              browser_column: Internet Explorer
+              action_column: Anzeige > Textgröße
+            - 
+              browser_column: Firefox
+              action_column: Anzeige > Größe
+            - 
+              browser_column: Chrome
+              action_column: Einstellungen (Symbol) > Optionen > Fortschritt > Web Inhalt > Text Größe
+            - 
+              browser_column: Safari
+              action_column: Anzeige > Vergrößern / Verkleinern
+            - 
+              browser_column: Opera
+              action_column: Anzeige > Skala
         browser_shortcuts_table:
-          description: "Een andere manier om de tekst te wijzigen is om sneltoetsen van je toetsenbord te gebruiken zoals gedefinieerd in browsers, in het bijzonder de toetsencombinatie:"
+          description: "Eine weitere Möglichkeit, die Textgröße zu ändern, besteht darin, die in Browsern definierten Tastenkombinationen zu verwenden, insbesondere die Tastenkombination:"
           rows:
-            - shortcut_column: CTRL en + (CMD en + bij MAC)
-              description_column: Vergroot de tekstgrootte
-            - shortcut_column: CTRL en - (CMD  en - bij MAC)
-              description_column: Vermindert de tekstgrootte
+            - 
+              shortcut_column: CTRL und + (CMD und + on MAC)
+              description_column: Erhöhen sie die Textgröße
+            - 
+              shortcut_column: CTRL und - (CMD und - on MAC)
+              description_column: Verringern sie die Textgröße
       compatibility:
-        title: Compatibiliteit met standaarden en visuele vormgeving
-        description: 'Alle pagina''s van deze website voldoen aan <strong> Toegankelijkheidsrichtlijnen </strong> of generieke principes van toegankelijk ontwerp zoals opgesteld door de werkgroep <abbr title = "Web Accessibility Initiative" lang = "en"> WAI </ abbr> behorend bij W3C.'
+        title: Kompatibilität mit Standards und visueller Gestaltung
+        description: 'Alle Seiten dieser Website entsprechen den <strong>Accessibility Guidelines</strong> oder den General Principles of Accessible Design der Arbeitsgruppe <abbr title="Web Accessibility Initiative" lang="en">WAI</abbr> des W3C.'
     titles:
-      help: "Wat is %{org}? - Burgerparticipatie"
+      help: "Was ist %{org}? -Bürgerbeteiligung"
     verify:
-      info: "Geef hier je contactgegevens op om je account te verifieren:"
-      info_code: "en de code die u heeft ontvangen:"
-      submit: Verifieer mijn account
-      title: Verifieer uw account
+      info: "Um Ihr Konto zu verifizieren, geben Sie bitte Ihre Zugangsdaten ein:"
+      info_code: "Bitte geben Sie nun Ihren Code, den Sie per Post/SMS erhalten haben ein:"
+      submit: Mein Konto verifizieren
+      title: Verifizieren Sie Ihr Benutzerkonto
