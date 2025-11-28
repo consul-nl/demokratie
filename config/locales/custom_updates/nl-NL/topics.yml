@@ -2,13 +2,13 @@ nl:
   custom:
     topics:
       hide:
-        success: The topic has been hidden.
+        success: Das Thema wurde ausgeblendet.
       restore:
-        success: The topic has been restored.
+        success: Das Thema wurde eingeblendet.
       list:
-        empty_list_text: No entries
+        empty_list_text: Keine Beiträge
         orders:
-          most_voted: Most voted
-          newest: Newest
-          oldest: Oldest
-          most_commented: Most commented
+          most_voted: Am besten bewertet
+          newest: Neueste zuerst
+          oldest: Älteste zuerst
+          most_commented: Meist kommentiert
