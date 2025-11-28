@@ -2,121 +2,129 @@ fy:
   custom:
     deficiency_reports:
       form:
-        page_description: Thank you for reporting a deficiency! You will help us to stop this as quickly as possible. Please describe in as much detail as possible what you noticed. Typical deficiencies include road damage or damaged park benches.
-        title_placeholder: Give your report a catchy title, for example “Zebra crossing in front of the XY primary school” or “More diversity at the weekly markets”.
-        description_placeholder: " Describe the deficiency you would like to report here.\n\n Details help the city administration to find the deficiency and eliminate it quickly.\n\n For example, if you know the number of the broken street lamp, then feel free to provide it.\n\n Please do not provide any personal information from third parties such as addresses."
+        page_description: Vielen Dank, dass Sie einen Mangel melden! Sie helfen uns damit, diesen so schnell es geht abzustellen. Bitte beschreiben Sie möglichst genau, was Ihnen aufgefallen ist. Typische Mängel sind zum Beispiel Straßenschäden oder beschädigte Parkbänke.
+        title_placeholder: Geben Sie dem Mangel, den Sie melden möchten, einen plakativen Titel wie zum Beispiel “Schlagloch in XY-Straße vor Hausnummer 123”.
+        description_placeholder: "Beschreiben Sie hier den Mangel, den Sie melden möchten.\n\n Details helfen der Stadtverwaltung, den Mangel aufzufinden und schnell zu beseitigen.\n\n Wenn Sie zum Beispiel die Hausnummer wissen, vor der sich ein Schlagloch befindet, dann geben Sie diese gerne an.\n\n Bitte nennen Sie keine persönlichen Daten von Dritten wie zum Beispiel Adressen."
         map:
-          hint: Place a pin on the map to precisely locate the deficiency.
+          hint: Setzen Sie einen Pin auf der Karte, um den Mangel genau zu verorten.
         district:
-          title: Quick map zoom
-          description: Quickly navigate to the desired map position
+          title: Schnellauswahl Kartenausschnitt
+          description: Navigieren Sie schnell zu der gewünschten Kartenposition
         category:
-          title: Category
-          description: Please assign a category to your report
-          placeholder: Please select
+          title: Kategorie
+          description: "Bitte ordnen Sie Ihr Meldung einer Kategorie zu:"
+          placeholder: Bitte wählen
         documents:
-          title: Add documents
+          title: Dokumente hinzufügen
         languages:
-          title: Language
-          description: "Select which language(s) you would like your discussion to take place in:"
+          title: Sprachen
+          description: "Wählen Sie aus, in welcher Sprache/welchen Sprachen Ihre Diskussion stattfinden soll:"
         video:
-          title: Add video
-          description: Are there videos that support your argument and point of view? Then add a link here.
-          placeholder: Enter YouTube or Vimeo link
+          title: Video hinzufügen
+          description: Gibt es Videos, die Ihre Argumentation und Sichtweise stützen? Dann fügen Sie diese über einen Link hinzu.
+          placeholder: YouTube oder Vimeo-Link eingeben
         on_behalf_of:
-          title: On behalf of
-          description: Only admins can see this field. You can create a post on behalf of someone here.
-          placeholder: Enter name...
+          title: Veröffentlichen für
+          description: Dieses Feld sehen nur Admin. Sie können hier einen Beitrag im Namen von jemandem erstellen.
+          placeholder: Namen eingeben...
         create:
-          submit_button: Submit deficiency
+          submit_button: Mangel melden
         labels:
-          description: Description of the deficiency
-          summary: Summary of the deficiency
-          title: Title of the deficiency
+          description: Text zum Mangel
+          summary: Zusammenfassung des Mangel
+          title: Titel des Mangels
         new:
-          submit_button: Submit deficiency
+          submit_button: Mangel melden
         edit:
-          submit_button: Update deficiency
+          submit_button: Mangel aktualisieren
       index:
+        empty_list_text: "Keine Ergebnisse"
         title: Mängelmelder
-        welcome_default_text_html: In every city there are deficiencies every now and then - it's good if they are reported by attentive citizens so that they can be rectified quickly. On this page you can see which defects have already been reported. The map will help you locate the respective defect. Please contact us if you notice a deficiency - and contribute to a clean cityscape and a functioning city.
+        welcome_default_text_html: In jeder Stadt kommt es dann und wann zu Mängeln – gut, wenn diese von aufmerksamen BürgerInnen gemeldet werden, um sie schnell zu beheben. Sie sehen auf dieser Seite, welche Mängel bereits gemeldet wurden. Die Karte hilft Ihnen dabei, den jeweiligen Mangel zu verorten. Wenden auch Sie sich an uns, wenn Ihnen ein Mangel auffällt – und tragen Sie bei zu einem sauberen Stadtbild und einer funktionierenden Stadt.
+        sidebar_information_default_text: Ihnen ist ein Mangel in der Stadt aufgefallen? Dann freuen wir uns über Ihre Mitteilung, damit wir uns schnellstmöglich darum kümmern können.
         count: Mangelmeldungen
         deficiency_report:
-          by: by
+          by: von
         orders:
-          hot_score: Most active
-          most_commented: Most commented
-          newest: Newest
+          hot_score: Aktivste
+          most_commented: Am meisten kommentiert
+          newest: Neueste zuerst
         search_form:
           button: search
-          placeholder: Search for deficiency reports...
-          title: Search for deficiency reports
+          placeholder: Suchen...
+          title: Suche Mängelmeldungen
         section_footer:
-          description: Deficiencies, subject to user verification settings, can be submitted by any user. They offer an easy opportunity to report deficiencies in a city. Thank you for your support!
-          title: Help with Deficiency reports
+          description: Mängel können, abhängig vom eingestellten Verifizierungsverfahren, von jeder Benutzerin und jedem Benutzer eingebracht werden. Sie bieten eine einfache Möglichkeit auf Mängel in der Stadt hinzuweisen. Wir danken für Ihre Unterstützung!
+          title: Hilfe zu Mängelmeldungen
         section_header:
-          help: Help with Deficiency reports
-          icon_alt: Deficiency reports
-          title: Deficiency reports
+          help: Hilfe zu Mängelmeldungen
+          icon_alt: Mängelmelder
+          title: Mängelmelder
         seo:
-          title: Deficiency Reports
+          title: Mängelmelder
         sidebar:
           approval_status_filter:
-            all_reports: Alle Reports
-            reports_to_approve: Released Reports
+            all_reports: Alle Meldungen
+            reports_to_approve: Freizugebende Meldungen
             title: Admin
           categories:
-            filter_button: Filter categories
-            title: Categories
+            filter_button: Kategorien filtern
+            title: Kategorien
           officer_filter:
-            all_reports: All reports
-            only_current_user: Reports assigned to myself
-            title: Officer
+            all_reports: Alle Meldungen
+            only_current_user: Mir zugewiesene Meldungen
+            title: Sachbearbeiter
           statuses:
-            all_statuses: All Reports
+            all_statuses: Alle Meldungen
             title: Status
           archived_status:
-            title: Archive
-            not_archived: Not archived
-            only_archived: Archived
+            title: Archiv
+            not_archived: Nicht archiviert
+            only_archived: Archiviert
           my_posts:
-            title: My contributions
-        start_deficiency_report: Report a deficiency
+            title: Meine Beiträge
+        start_deficiency_report: Mangel melden
       new:
-        more_info: More info
+        more_info: Mehr Informationen
         recommendation_one: Verwenden Sie bitte nicht ausschließelich Großbuchstaben für die Überschrift oder für komplette Sätze. Im Internet gilt das als Schreien und niemand möchte angeschrien werden.
         recommendation_three: Genießen Sie diesen Ort und die Stimmen, die ihn füllen. Er gehört auch Ihnen.
         recommendation_two: Diskussionen oder Kommentare, die illegale Handlungen beinhalten, werden gelöscht sowie diejenigen, die die Diskussionen absichtlich sabotieren. Alles andere ist erlaubt.
-        recommendations_title: Tips for reporting a deficiency
+        recommendations_title: Empfehlungen zum Erstellen eines Mangels
         seo:
-          title: Report a deficiency
-        start_new: Report a deficiency
+          title: Mangel melden
+        start_new: Mangel melden
+      notifications:
+        official_answer_updated: Antwort wurde erfolgreich gespeichert
       show:
-        title: "%{author} reported this issue"
-        welcome_text_default: This defeciency has already been reported to us by a user. Here you can view the current status and follow the progress of the deficiency report. You can also express your opinion with your own comment. And after the deficiency has been closed, you can find the city's official statement here.
+        title: "%{author} hat diesen Mangel gemeldet"
+        welcome_text_default: Dieser Mangel wurde uns bereits von einer Nutzerin oder eine, Nutzer gemeldet. Hier können Sie den aktuellen Status einsehen sowie den Verlauf der Mangelmeldung verfolgen. Außerdem können Sie mit einem eigenen Kommentar Ihre Meinung äußern. Und nachdem der Mangel geschlossen wurde, finden Sie hier das offizielle Statement der Stadt.
         video:
-          title: Video
+          title: Video hinzufügen
+        back_link: Zurück zu alle Meldungen
+        admin_accepted:
+          "true": Veröffentlicht
+          "false": Nicht veröffentlich
         official_answer:
-          title: Official reply
+          title: Offizielle Antwort
         sidebar:
-          category: Categories
-          delete: Delete report
-          officer: Officer
-          select_officer: Select officer
-          social_share: Share
+          category: Kategorien
+          delete: Mangel löschen
+          officer: Sachbearbeiter*in
+          select_officer: Sachbearbeiter*in auswählen
+          social_share: Teilen
           status: Status
-          vote: Support
+          vote: Unterstützer*innen
         status:
           title: Status
-          description: "You can see the current status of this message here:"
+          description: "Sie können hier den aktuellen Status dieser Meldung nachvollziehen:"
         category:
-          title: Category
+          title: Kategorien
         officer:
-          title: Officer
+          title: Sachbearbeiter*in
         author_actions:
-          title: Author
-          edit_button: Edit
-          delete_button: Delete
+          title: Autor
+          edit_button: Bearbeiten
+          delete_button: Zurückziehen
         admin_actions:
           title: Admin
-        submit_official_answer_button: Save reply
+        submit_official_answer_button: Antwort speichern
