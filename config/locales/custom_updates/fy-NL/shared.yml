@@ -1,17 +1,17 @@
 fy:
   custom:
     shared:
-      search: Suchen
-      address_search: Adresse suchen
-      select: Wählen
-      required: Pflichtfeld
+      search: Search
+      address_search: Address search
+      select: select
+      required: mandatory field
       new_comments_component:
-        comments: Kommentare
-      participate_as_guest: als Gast teilnehmen
-      enter_missing_user_data: zusätzliche Daten zu Ihrem Konto bereit
-      save_form: Speichern
-      destroy_confirmation: Sind Sie sicher?
+        comments: Comments
+      participate_as_guest: participate as a guest
+      enter_missing_user_data: additional data to your account
+      save_form: Save
+      destroy_confirmation: Are you sure?
     resource_page:
       banner_component:
-        comments: Kommentare
-        related_projekt: "Zugehöriges Projekt:"
+        comments: Comments
+        related_projekt: "Related project:"
