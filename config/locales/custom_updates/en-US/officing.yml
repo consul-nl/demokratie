@@ -1,0 +1,11 @@
+en:
+  custom:
+    officing:
+      shared:
+        verify_users:
+          title: Offline Stimme hinzufügen
+          skip_verification: Benutzerüberprüfung überspringen
+          first_name: Vorname
+          last_name: Nachname
+          plz: Postleitzahl
+          date_of_birth: Geburtsdatum
