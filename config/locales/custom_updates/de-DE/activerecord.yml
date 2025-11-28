@@ -74,7 +74,6 @@ de:
         file_size_is_greater_than_or_equal_to: 'Dateigröße muss größer oder gleich %{count} sein'
         allowed_file_content_types: 'Datei muss einer von %{types} sein'
         excluded_file_content_types: 'Datei kann nicht %{types} sein'
-
       models:
         proposal:
           attributes:
@@ -267,7 +266,7 @@ de:
         name: Name
         party: Partei
         position: Position
-        note:  Stimme
+        note: Stimme
       projekt_livestream:
         url: Livestream link
         title: Titel
