@@ -2,5 +2,5 @@ fy:
   custom:
     map_locations:
       address:
-        label: Adresse
-        placeholder: Adresse eingeben
+        label: Address
+        placeholder: Enter address
