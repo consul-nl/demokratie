@@ -2,9 +2,12 @@ fy:
   cli:
     general:
       seo_title_prefix: "Öffentlichkeitsbeteiligung München:"
+    mailers:
+      unser_muenchen_html: "unser.muenchen.de - Online-Plattform Öffentlichkeitsbeteiligung der Landeshauptstadt München Impressum: <a href='https://unser.muenchen.de/impressum'>https://unser.muenchen.de/impressum</a>"
+      no_reply: "Bitte antworten Sie nicht direkt auf diese Nachricht. Die Absender-E-Mail-Adresse wird nicht abgerufen. Bei Rückfragen wenden Sie sich bitte an <a href='mailto:unser@muenchen.de'>unser@muenchen.de</a>."
     devise_views:
       users:
         registrations:
           errors:
-            user_hidden: Accont with this email address has been blocked by a moderator.
-            email_exists: This email address is already in use.
+            user_hidden: Dieses Nutzerkonto existiert bereits, wurde aber von einem Moderator geblockt.
+            email_exists: Die angegebene E-Mail-Adresse wird bereits verwendet.
