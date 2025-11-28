@@ -36,20 +36,16 @@ de:
       moderator: Moderator*in
       projekt_manager: Projektmanager*in
       responses:
-        zero: Keine Antworten
         one: 1 Antwort
         other: "%{count} Antworten"
       responses_show:
-        zero: Keine Antworten
         one: "1 Antwort (Anzeigen)"
         other: "%{count} Antworten (Anzeigen)"
       responses_collapse:
-        zero: Keine Antworten
         one: "1 Antwort (Einklappen)"
         other: "%{count} Antworten (Einklappen)"
       user_deleted: Benutzer gelöscht
       votes:
-        zero: Keine Bewertungen
         one: 1 Stimme
         other: "%{count} Stimmen"
     form:
@@ -76,11 +72,9 @@ de:
         submit_button: Starten Sie eine Diskussion
     debate:
       comments:
-        zero: Keine Kommentare
         one: 1 Kommentar
         other: "%{count} Kommentare"
       votes:
-        zero: Keine Bewertung
         one: 1 Stimme
         other: "%{count} Stimmen"
     edit:
@@ -150,7 +144,6 @@ de:
     show:
       author_deleted: Benutzer*in gelöscht
       comments:
-        zero: Keine Kommentare
         one: 1 Kommentar
         other: "%{count} Kommentare"
       comments_title: Kommentare
@@ -218,7 +211,6 @@ de:
         preview_proposal: Vorschau Vorschlag
         current_goal: Aktuelles Ziel
         supports:
-          zero: Keine Unterstützung
           one: Eine Unterstützung
           other: "Unterstützungen"
     footer:
@@ -255,7 +247,6 @@ de:
         new_notifications:
           one: Sie haben eine neue Benachrichtigung
           other: Sie haben %{count} neue Benachrichtigungen
-          zero: "Sie haben keine neuen Benachrichtigungen"
         notifications: Benachrichtigungen
       sdg: "SDG"
   notifications:
@@ -433,17 +424,14 @@ de:
         view_proposal: Nicht jetzt. Gehe zu meinem Vorschlag
       already_supported: Sie haben diesen Vorschlag bereits unterstützt.
       comments:
-        zero: Keine Kommentare
         one: 1 Kommentar
         other: "%{count} Kommentare"
       support: Unterstützung
       support_title: Vorschlag unterstützen
       supports:
-        zero: Keine Unterstützer*innen
         one: 1 Unterstützer/in
         other: "%{count} Unterstützer/innen"
       votes:
-        zero: Keine Bewertung
         one: 1 Stimme
         other: "%{count} Stimmen"
       supports_necessary: "%{number} Unterstützungen benötigt"
@@ -456,7 +444,6 @@ de:
       author_deleted: Benutzer*in gelöscht
       code: "Antrags-Code:"
       comments:
-        zero: Keine Kommentare
         one: 1 Kommentar
         other: "%{count} Kommentare"
       comments_tab: Kommentare
@@ -805,7 +792,6 @@ de:
       remove_language: Sprache entfernen
       add_language: Sprache hinzufügen
       languages_in_use:
-        zero: "O verwendete Sprachen "
         one: "1 verwendete Sprachen"
         other: "%{count} verwendete Sprachen"
     optional: Zusätzliche informationen
@@ -952,9 +938,7 @@ de:
   related_content:
     title: "Verwandte Inhalte"
     add: "+ Inhalt hinzufügen"
-    description: Existieren bereits Inhalte, die zu diesem Vorschlag passen, etwa
-      eine Diskussion oder ein anderer Vorschlag? Dann können Sie hier
-      darauf verweisen.
+    description: Existieren bereits Inhalte, die zu diesem Vorschlag passen, etwa eine Diskussion oder ein anderer Vorschlag? Dann können Sie hier darauf verweisen.
     label: "Link zu verwandten Inhalten"
     placeholder: "%{url}"
     help: "Sie können Links von %{models} innerhalb des %{org} hinzufügen."
