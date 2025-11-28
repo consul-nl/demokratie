@@ -1,0 +1,110 @@
+en:
+  moderation:
+    actions:
+      confirm_action: "Sind Sie sicher? %{action}"
+    comments:
+      index:
+        block_authors: Autoren blockieren
+        filter: Filter
+        filters:
+          all: Alle
+          pending_flag_review: Ausstehend
+          with_ignored_flag: Als gelesen markieren
+        headers:
+          comment: Kommentar
+          moderate: Moderieren
+        hide_comments: Kommentare ausblenden
+        ignore_flags: Als gelesen markieren
+        orders:
+          flags: Am meisten markiert
+          newest: Neueste
+        title: Kommentare
+    dashboard:
+      index:
+        title: Moderation
+    debates:
+      index:
+        block_authors: Autoren blockieren
+        filter: Filter
+        filters:
+          all: Alle
+          pending_flag_review: Ausstehend
+          with_ignored_flag: Als gelesen markieren
+        headers:
+          debate: Diskussion
+          moderate: Moderieren
+        hide_debates: Diskussionen ausblenden
+        ignore_flags: Als gelesen markieren
+        orders:
+          created_at: Neueste
+          flags: Am meisten markiert
+        title: Diskussionen
+    header:
+      title: Moderation
+    menu:
+      flagged_comments: Kommentare
+      flagged_debates: Diskussionen
+      flagged_investments: Haushaltsinvestitionen
+      proposals: Vorschläge
+      proposal_notifications: Antrags-Benachrichtigungen
+      users: Benutzer blockieren
+    proposals:
+      index:
+        block_authors: Autoren blockieren
+        filter: Filter
+        filters:
+          all: Alle
+          pending_flag_review: Ausstehende Bewertung
+          with_ignored_flag: Als gelesen markieren
+        headers:
+          moderate: Moderieren
+          proposal: Vorschlag
+        hide_proposals: Vorschläge ausblenden
+        ignore_flags: Als gelesen markieren
+        orders:
+          created_at: Neuste
+          flags: Am meisten markiert
+        title: Vorschläge
+    budget_investments:
+      index:
+        block_authors: Autoren blockieren
+        filter: Filter
+        filters:
+          all: Alle
+          pending_flag_review: Ausstehend
+          with_ignored_flag: Als gelesen markieren
+        headers:
+          moderate: Moderieren
+          budget_investment: Haushaltsinvestitionen
+        hide_budget_investments: Investitionsvorschläge verbergen
+        ignore_flags: Als gelesen markieren
+        orders:
+          created_at: neuestes
+          flags: Am meisten markiert
+        title: Haushaltsinvestitionen
+    proposal_notifications:
+      index:
+        block_authors: Autoren blockieren
+        filter: Filter
+        filters:
+          all: Alle
+          pending_review: Ausstehende Bewertung
+          ignored: Als gelesen markieren
+        headers:
+          moderate: Moderieren
+          proposal_notification: Benachrichtigung zu einem Vorschlag
+        hide_proposal_notifications: Vorschläge ausblenden
+        ignore_flags: Als gelesen markieren
+        orders:
+          created_at: neuestes
+          moderated: Moderiert
+        title: Benachrichtigungen zu einem Vorschlag
+    users:
+      index:
+        block: Blockieren
+        confirm_block: "Sind Sie sicher? Dadurch wird der/die Benutzer*in \"%{name}\" und alle seine/ihre Inhalte ausgeblendet."
+        confirm_hide: "Sind Sie sicher? Damit wird der/die Benutzer*in \"%{name}\" ausgeblendet, ohne dass sein/ihr Inhalt verborgen wird."
+        hide: Verstecken
+        search_placeholder: E-Mail oder Benutzername
+        title: Benutzer*in blockieren
+      notice_hide: Der/die Benutzer*in wurde ausgeblendet. Inhalte, die von diesem/dieser Benutzer*in verfasst wurden, sind weiterhin verfügbar.
