@@ -149,16 +149,16 @@ de:
           created_at: Erstellt am
           updated_at: Aktualisiert am
           link: Link
-          # category: Kategorie
-          # description: Bezeichnung
-          # entry_name: Mangel
-          # no_deficiency_reports: Keine Mängelmeldungen
-          # officer_name: Sachbearbeiter*in
-          # official_answer: Offizielle Antwort
-          # status: Status
-          # summary: Zusammenfassung
-          # title: Mängel zuweisen
-          # video: Video
+        # category: Kategorie
+        # description: Bezeichnung
+        # entry_name: Mangel
+        # no_deficiency_reports: Keine Mängelmeldungen
+        # officer_name: Sachbearbeiter*in
+        # official_answer: Offizielle Antwort
+        # status: Status
+        # summary: Zusammenfassung
+        # title: Mängel zuweisen
+        # video: Video
         statuses:
           destroy:
             cannot_be_destroyed: Sie können diesen Status nicht löschen, da er mindestens einem Mangel zugewiesen ist.
@@ -658,13 +658,10 @@ de:
             resource: Individueller Beitrag
             form_author: Formular Autor
             user_functions: Funktionen Nutzer
-
         form_author:
           page_title: Welche Funktionen wollen Sie den Nutzern zur Verfügung stellen?
-
         user_functions:
           page_title: Welche Funktionen wollen Sie den Nutzern zur Verfügung stellen?
-
         projekt_labels:
           new_block_title: Möchten Sie ein Label hinzufügen?
           list_title: Hier ist die Liste aller Labels
@@ -757,7 +754,7 @@ de:
         formular:
           page_title: Welche Formularfelder soll Ihr Formular enthalten?
           primary_fields_title: Reguläre Formularfelder
-          follow_up_fields_title:  Follow-up Formularfelder
+          follow_up_fields_title: Follow-up Formularfelder
           dropdown_hint: Bitte geben Sie Ihre Antwortoptionen ein. Diese müssen durch ein Komma getrennt sein.
           kinds:
             string: kurzer Text
