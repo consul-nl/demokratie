@@ -1,0 +1,60 @@
+nl:
+  custom:
+    polls:
+      index:
+        projekts: Projecten
+        search_form:
+          placeholder: "Zoeken..."
+        count: Stemmen
+        welcome_default_text_html: Op deze pagina vindt u alle stemmingen die door het stadsbestuur zijn geïnitieerd. De afstemmingen kunnen op verschillende criteria worden gesorteerd en specifiek worden doorzocht op projecten, gebieden of trefwoorden. Sommige stemmingen kunnen beperkt zijn tot bepaalde gebieden of leeftijdsgroepen.
+        sidebar_information_default_text: Wil je zelf stemmen? Zoek gewoon naar de gewenste afstemming en klik op "Deelnemen"
+        empty_list_text: Momenteel geen gekoppelde stemmingen
+      poll:
+        date:
+          from: van
+          to: tot
+        days_left:
+          one: Nog 1 dag
+          other: Nog %{count} dagen
+        expired: Stemming verlopen
+        expires_today: Werkt alleen vandaag
+        participate_button: Deelnemen
+        phase_expired_button: Resultaten
+        phase_current_button: Deelnemen
+        phase_not_started_button: Voorbeeld
+      questions:
+        prev_question: "Vorige vraag"
+        next_question: "Volgende vraag"
+        closing_note: Afsluiten
+        go_to_start: "Naar het begin"
+        answers:
+          more_info: Meer informatie
+          save_open_answer: Tekstinvoer opslaan
+          update_open_answer: Tekstinvoer bewerken
+      results:
+        open_answers: Open antwoorden
+        scoped_popup_callout: De volgende evaluatie laat zien hoe de gebruikers die voor deze antwoordoptie hebben gestemd, hebben geantwoord in de volgende vragen.
+        question_street_details_tooltip: Deelnamegegevens
+        question_street_details_csv_link: Download de wegenevaluatie
+        question_answer_details_tooltip: Individuele evaluatie
+        question_answer_details_csv_link: Kruistabel evaluatie downloaden
+        open_answers_csv_link: Download open antwoorden
+      show:
+        confirm_participation_button: Bevestig mijn afstemming
+        confirm_participation_notice: Je hebt met succes deelgenomen aan de stemming.
+        info_menu: Stemming
+        stats_menu: Statistiek
+        results_menu: Resultaat
+        vote_counted: Je stem is geteld!
+        vote_uncounted: Je stem is verwijderd
+        results:
+          download_csv_answers_votes: Download afstemmingsresultaten
+        welcome_default_text: Uw mening wordt gevraagd! Op deze pagina kunt u deelnemen aan de stemming (en) over het project. Klik op de betreffende knop – en uw stem wordt geteld. Bovendien vindt u hier statistische gegevens en de uitslag van de stemming zodra deze is afgerond.
+        closing_note_default_text_html: <p><strong>Gelukt!</strong></p> <p>Bedankt voor uw deelname.</p> <p>Tot het einde van de deelnameperiode heeft u de mogelijkheid om uw antwoorden te bewerken. Daarna worden uw gegevens automatisch en anoniem aan het systeem doorgegeven.</p>
+  polls:
+    index:
+      filters:
+        title: Status
+        all: Alle stemmingen
+        currrent: Actief stemmen
+        expired: Afgehandeld Stemmen

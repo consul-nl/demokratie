@@ -1,0 +1,297 @@
+nl:
+  activerecord:
+    models:
+      deficiency_report:
+        one: Foutmelding
+        other: Meldingen van gebreken
+      deficiency_report_manager:
+        one: Foutmelding admin
+        other: Foutmelding admins
+      deficiency_report/officer_group:
+        one: Werknemersgroep
+        other: Werknemersgroepen
+      map_layer:
+        one: Kaartlaag
+        other: Kaartlagen
+      projekt:
+        one: Project
+        other: Projecten
+      age_range:
+        one: Leeftijdsgroep
+        other: Leeftijdsgroepen
+      modal_notification:
+        one: Pop-up notificatie
+        other: Pop-up notificaties
+      votation_type:
+        one: Stemwijze
+        other: Soorten afstemming
+      individual_group:
+        one: Individuele groep
+        other: Individuele groepen
+      individual_group_value:
+        one: Groepswaarde
+        other: Groepswaarden
+      projekt_event:
+        one: Evenement
+        other: Evenementen
+      projekt_label:
+        one: Label
+        other: Labels
+      projekt_livestream:
+        one: Livestream
+        other: Livestream
+      projekt_notification:
+        one: Projectmelding
+        other: Projectmeldingen
+      projekt_phase: Projectfase
+      projekt_phase/comment_phase: Reacties
+      projekt_phase/debate_phase: Discussies
+      projekt_phase/proposal_phase: Suggesties
+      projekt_phase/voting_phase: Stemming
+      projekt_phase/budget_phase: Budget
+      projekt_phase/event_phase: Evenementen
+      projekt_phase/argument_phase: Stemmen
+      projekt_phase/milestone_phase: Mijlpalen
+      projekt_phase/question_phase: Korte enquête
+      projekt_phase/livestream_phase: Livestreams
+      projekt_phase/projekt_notification_phase: Notificaties
+      projekt_phase/legislation_phase: Tekstverwerking
+      projekt_phase/newsfeed_phase: News Feed
+      projekt_phase/formular_phase: Formulier
+      formular_field: Invoerveld
+      officing_manager:
+        one: Stemmers
+        other: Stemmers
+      recipient_group:
+        one: Ontvangersgroep
+        other: Ontvangersgroepen
+    errors:
+      messages:
+        file_size_is_in: 'Bestandsgrootte moet tussen %{min} en %{max} liggen'
+        file_size_is_less_than: 'Bestandsgrootte moet kleiner %{count} zijn dan'
+        file_size_is_less_than_or_equal_to: 'Bestandsgrootte moet kleiner of gelijk %{count} zijn'
+        file_size_is_greater_than: 'Bestandsgrootte moet groter %{count} zijn dan'
+        file_size_is_greater_than_or_equal_to: 'Bestandsgrootte moet groter of gelijk %{count} zijn'
+        allowed_file_content_types: 'Bestand moet een van %{types} zijn'
+        excluded_file_content_types: 'Bestand kan niet %{types} zijn'
+      models:
+        proposal:
+          attributes:
+            description:
+              too_long: 'is te lang'
+            projekt_id:
+              blank: Selecteer een project
+            projekt_labels:
+              blank: Selecteer minstens één label
+            sentiment:
+              blank: Selecteer een sentiment
+        debate:
+          attributes:
+            projekt_id:
+              blank: Selecteer een project
+            projekt_labels:
+              blank: Selecteer minstens één label
+            sentiment:
+              blank: Selecteer een sentiment
+        projekt:
+          attributes:
+            color:
+              invalid: Voer de kleurwaarde in als HEX-code
+        user:
+          attributes:
+            password:
+              low_complexity: "moet aan tenminste drie van de volgende criteria voldoen: hoofdletters, kleine letters, cijfers, speciale tekens."
+        unregistered_newsletter_subscriber:
+          attributes:
+            email:
+              invalid: Voer een geldig e-mailformaat in
+        budget_investment:
+          attributes:
+            projekt_labels:
+              blank: Selecteer minstens één label
+            sentiment:
+              blank: Selecteer een sentiment
+    attributes:
+      map_location:
+        latitude: Breedtegraad
+        longitude: Lengtegraad
+        zoom: Zoom
+      projekt:
+        total_duration_start: Begindatum
+        total_duration_end: Einddatum
+        show_start_date_in_frontend: Weergegeven in frontend
+        show_end_date_in_frontend: Weergegeven in frontend
+        description: Projectbeschrijving
+      poll/answer:
+        open_answer_text: Open antwoord
+      poll/question:
+        answer_mandatory: Antwoord verplicht
+        min_rating_scale_label: Linker label
+        max_rating_scale_label: Achterlabel
+        show_hint_callout: Toon dit tekstvak op de frontend
+      poll/question/answer:
+        more_info_link: Verklarende link
+        more_info_iframe: Iframe-link
+      poll/translation:
+        closing_note: Tekst van de afsluitpagina
+      widget/card:
+        card_category: Categorie
+      deficiency_report:
+        author: Auteur
+        deficiency_report_category_id: Categorie
+        deficiency_report_status_id: Status
+        video_url: Externe video-URL
+        official_answer: Officieel antwoord
+        on_behalf_of: Melding maken namens iemand
+        category: Categorie
+        status: Status
+        notify_officer_about_new_comments: Notificatie voor administratief medewerker*in
+        official_answer_approved: Antwoord vrijgeven
+        approximated_address: Adres
+        responsible: Administratief medewerker
+      deficiency_report/category:
+        default_deficiency_report_officer: Standaard Administratief Medewerker
+      deficiency_report/officer_group:
+        default_email: Standaard e-mail
+      deficiency_report/official_answer_template:
+        title: Titel
+        text: Tekst
+      debate:
+        on_behalf_of: Opstellen namens
+      proposal:
+        official_answer: Officieel antwoord
+        on_behalf_of: Opstellen namens
+      budget:
+        show_results_after_first_vote: Resultaten na ondersteuningsfase
+        show_percentage_values_only: Procentuele waarden
+        voting_style_distributed: "Meerdere stemmen"
+        hide_money: Geld verbergen
+        max_number_of_winners: maximum aantal winnaars
+      budget/heading:
+        price: Totaal budget
+      budget/investment:
+        implementation_performer: Uitvoering van het voorstel
+        implementation_performers:
+          city: Uitvoering door het stadsbestuur
+          user: Ik kan helpen bij de uitvoering
+        implementation_contribution: Wat draag je bij aan de uitvoering?
+        user_cost_estimate: Prijsbeoordeling
+        on_behalf_of: Stel namens iemand een voorstel op
+      geozone:
+        postal_codes: Postcodes
+      milestone:
+        custom_date: Aangepaste datum
+      map_layer:
+        name: Naam van de kaartlaag
+        provider: Aanbieder
+        attribution: Attributie
+        base: Basislaag van de kaart
+        layer_names: Kaartlaagnaam
+        opacity: Opaciteit
+        show_by_default: standaard tonen
+        transparent: dit kaartniveau is transparant
+        protocol: Kaartprotocol
+        protocols:
+          regular: default
+          wms: WMS
+      user:
+        first_name: Voornaam
+        last_name: Achternaam
+        city_street_id: Straat
+        street_name: Straat
+        street_number: Huisnummer
+        street_number_extension: Huisnummertoevoeging
+        plz: Postcode
+        city_name: Stad
+        gender: Geslacht
+        date_of_birth: Geboortedatum
+        document_type: Document
+        document_last_digits: Identiteitskaart / paspoort (4 laatste cijfers)
+      age_range:
+        min_age: Minimumleeftijd
+        max_age: Maximumleeftijd
+        order: Volgorde
+        only_for_stats: Alleen voor statistieken
+      modal_notification:
+        title: Titel
+        active_from: Van
+        active_to: Tot
+        html_content: Inhoud
+      votation_type:
+        max_votes: Maximaal aantal stemmen
+        max_votes_per_answer: Maximaal aantal stemmen per antwoord
+        vote_type: Antwoordopties
+        show_hint_callout: Informatietekst van de blauwe box op de frontend weergeven
+        min_rating_scale_label: Linker label
+        max_rating_scale_label: Rechterlabel
+      votation_type/vote_type:
+        unique: Enkele stem
+        multiple: Meerdere stemmen
+        multiple_with_weight: Meerdere gewogen stemmen
+        rating_scale: Beoordelingsschaal
+      individual_group:
+        name: Naam
+        visible: zichtbaar
+        kind: Soort
+        kinds:
+          hard: sterke groep
+          soft: zwakke groep
+      individual_group_value:
+        name: Naam
+        email_pattern: E-mailpatroon
+      sentiment:
+        color: Kleur van het sentiment
+      sentiment/translation:
+        name: Naam van het sentiment
+      projekt_label:
+        icon: Icoon van het label
+      projekt_label/translation:
+        name: Naam van het label
+      projekt_question:
+        show_answers_count: Toon aantal stemmen op frontend
+        comments_enabled: Open antwoord geactiveerd
+      projekt_question/translation:
+        title: Vraag
+      projekt_event:
+        title: Evenementtitel
+        location: Locatie
+        datetime: Datum
+        end_datetime: Einddatum
+        open_ended: Open einde
+        weblink: Weblink
+      projekt_notification:
+        title: Titel
+        body: Bericht
+      projekt_argument:
+        name: Naam
+        party: Partij
+        position: Positie
+        note: Stem
+      projekt_livestream:
+        url: Livestream link
+        title: Titel
+        starts_at: Start om
+        platform: Portaal
+        description: Omschrijving
+      projekt_phase:
+        start_date: Begindatum
+        end_date: Einddatum
+      formular_field:
+        name: Naam
+        description: Omschrijving
+        required: Verplicht veld
+        kind: Soort
+        email_for_confirmation: Bevestigingsmail naar gebruiker verzenden
+        drop_down_options: Dropdown opties
+      formular_follow_up_letter:
+        subject: Betreft
+        body: E-mailtekst
+        show_follow_up_button: Link naar follow-upformulier integreren
+      formular_answer_image:
+        title: Titel
+        attachment: Bijlage
+      formular_answer_document:
+        title: Titel
+        attachment: Bijlage
+      registered_address/district:
+        default_deficiency_report_responsible: Standaard Administratief Medewerker

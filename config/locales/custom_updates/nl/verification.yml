@@ -1,0 +1,22 @@
+nl:
+  custom:
+    verification:
+      residence:
+        new:
+          verification_with_bund_id_description_html: Woont u niet in %{city_name}? Gebruik de volgende BundID-knop om jezelf te verifiëren. Woont<br>u in %{city_name}? Controleer dan a.u.b. met behulp van onderstaand formulier.
+          bund_id_block_title: Verificatie met de BundID
+          form_block_title: Verificatie voor burgers in de stad %{city_name}
+          first_name: Voornaam
+          last_name: Achternaam
+          street_name: Straat
+          street_number: Huisnummer
+          street_number_extension: Huisnummeraanvulling
+          plz: Postcode
+          city_name: Stad
+          gender: Geslacht
+          date_of_birth: Geboortedatum
+          document_last_digits: Identiteitskaart / paspoort (4 laatste cijfers)
+        create:
+          flash:
+            success_manual: Bedankt, uw gegevens zijn opgeslagen
+            error: We konden uw gegevens niet verifiëren, neem contact met ons op.

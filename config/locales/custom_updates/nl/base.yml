@@ -1,0 +1,281 @@
+nl:
+  custom:
+    common:
+      information: Informatie
+      share: Delen
+      back_to: "Terug naar %{to}"
+      fixed_tabs:
+        content: Inhoud
+        comments: Reacties
+        author: Auteur
+    account:
+      settings:
+        email_digest: E-mailherinnering bij ongelezen meldingen
+        email_on_comment: Opmerkingen over mijn activiteiten
+        email_on_comment_reply: Antwoorden op mijn opmerkingen
+        email_on_direct_message: Privéberichten van andere gebruikers
+        show_in_users_overview: Account tonen in het gebruikersoverzicht
+        newsletter: Nieuwsbrieven en systeem-e-mails
+        newsletter_on_home_page: Nu abonneren
+        public_activity: Publiceer mijn activiteit
+        public_interests: Gevolgde bijdragen publiceren
+        adm_email_on_new_comment: Nieuwe opmerkingen
+        adm_email_on_new_proposal: Nieuwe voorstellen
+        adm_email_on_new_budget_investment: Nieuwe voorstellen (budget)
+        adm_email_on_new_debate: Nieuwe discussiebijdragen
+        adm_email_on_new_deficiency_report: Nieuwe defectmeldingen
+        adm_email_on_new_manual_verification: Nieuwe gebruikersverificaties
+        adm_email_on_new_topic: Nieuwe thema's
+      show:
+        user_permission_votes: Deelnemen aan stemmingen
+        admin_notifications: Admin & Projectmanager notificaties
+        user_groups_title: Individuele groepen
+        hard_user_groups_title: Sterke groepen
+        soft_user_groups_title: Zwakke groepen
+    boolean:
+      "yes": "ja"
+      "no": "nee"
+    comments:
+      reply_form:
+        leave_comment: Schrijf een reactie
+    content_cards:
+      active_projekts:
+        title: Actieve participatie
+        all_projekts_link: Bekijk alle projecten
+      latest_user_activity:
+        title: Mijn activiteit
+      current_polls:
+        title: Lopende stemmingen
+      latest_resources:
+        title: Laatste berichten
+      expired_projekts:
+        title: Afgeronde projecten
+      events:
+        title: Evenementen
+    devise_views:
+      users:
+        registrations:
+          new:
+            privacy_link: Privacybeleid
+            terms: Door je te registreren accepteer je de %{terms} en %{privacy}
+        gender:
+          male: man
+          female: vrouwelijk
+          other_gen: derde #custom
+        document_type:
+          card: Identiteitskaart
+          pass: Paspoort
+    helpers:
+      select:
+        prompt: Selecteer a.u.b.
+        gender_prompt: Geslacht (selecteer a.u.b.)
+        prompt_city: Woonplaats (kies a.u.b.)
+        prompt_street: Straat (kies a.u.b.)
+        prompt_address: Huisnummer (kies a.u.b.)
+        document_prompt: Officieel document (kies a.u.b.)
+        not_in_list: Niet in de lijst opgenomen
+        birth_year: Geboortejaar
+        birth_month: Geboortemaand
+        birth_day: Geboortedatum
+    gdpr_notice:
+      accept: Accepteren
+      link_text: Meer informatie
+      message: <p>De applicatie maakt gebruik van cookies en soortgelijke technologieën om onze diensten te leveren, te onderhouden en te verbeteren.</p><p>Door gebruik te maken van deze website geeft u toestemming voor het gebruik van cookies. Ze worden gebruikt om u de best mogelijke functionaliteit te bieden. %{link}</p>
+      title: Gebruik van cookies
+    geozones:
+      projekt_selector:
+        affiliations:
+          entire_city: Stadsbreed
+          no_affiliation: Geen gebiedsindeling
+          only_geozones: Toewijzing aan wijk
+        restrictions:
+          no_restriction: Alle gebruikers
+          only_citizens: Alleen burgers
+          only_geozones: Alleen burgers van de wijk
+      sidebar_filter:
+        affiliations:
+          all_resources: Alle %{resource_name}
+          entire_city: Stadsbreedte %{resource_name}
+          entire_city_short: Stadsbreed
+          filter_button: Filter op gebieden
+          no_affiliation: Geen gebiedsindeling
+          only_geozones: Toewijzing aan wijk
+          show_more: Toon meer
+          title: Gebieden
+        restrictions:
+          filter_button: Filter op participatie
+          no_restriction: Alle gebruikers van het platform
+          only_citizens: Alleen burgers in de stad
+          only_geozones: Alleen burgers van de wijk
+          only_streets: Alleen burgers uit straat
+          show_more: Toon meer
+          title: Gebied
+    images:
+      form:
+        image_name: Naam van de omslagfoto
+    layouts:
+      footer:
+        demokratie: demokratie.today
+        demokratie_url: https://demokratie.today/
+        description: Het platform is gebaseerd op %{consul}, één %{open_source} en is %{demokratie} aangepast van.
+        impressum: Impressum
+        netiquette: Netiquette
+        statistic_cookies_settings: Cookie-instellingen
+        contact_us: Contacteer ons
+        sign_in_as_guest: Log in als gast
+        sign_out_as_guest: Log uit als gast
+      header:
+        account_link: Account
+        admin_link: Administratie
+        home_link: Startpagina
+        projekt_events_link: Evenementen
+        projekt_management: Projectmanager
+        deficiency_report_management: Defectmelder
+        notification_item:
+          no_notifications: Geen meldingen
+        title_html: Publieke inspraak
+    menu:
+      account: Account
+      archived: Verlopen projecten
+      debates: Discussies
+      polls: Stemmen
+      proposals: Suggesties
+    milestones:
+      collapse_title: Mijlpalen - ingesteld door de administratie (%{count})
+    pages:
+      impressum:
+        title: Impressum
+      contact_us:
+        title: Contacteer ons
+      social_share:
+        share: Delen
+    sdg:
+      goals:
+        filter:
+          heading: VN-duurzaamheidsdoelstellingen
+      related_list_selector:
+        goal_list: U kunt een of meer SDG's kiezen of zoeken naar specifieke doelen en subdoelen in het onderstaande veld. Voor meer informatie, bezoek de %{link}.
+        title: VN-duurzaamheidsdoelstellingen
+      targets:
+        label: Filter voor subdoelen (%{more_link})
+        more_link_text: Meer info
+        select: Selecteer subdoel
+    shared:
+      resource_count:
+        one: Bijdrage
+        other: Bijdragen
+      warnings:
+        only_for_citizens: Deelname is %{city} beperkt tot burgers van de stad.
+        only_for_geozones: "Deelname is beperkt tot burgers uit de volgende gebieden: %{geozones}"
+      dates:
+        ends_on: Afgerond op %{date}
+        ends_today: Eindigt vandaag
+        days_left:
+          one: Nog 1 dag
+          other: Nog %{count} dagen
+        starts_in_days:
+          one: Start in 1 dag
+          other: Begint in %{count} dagen
+      form:
+        projekt_assignment: Projecttoewijzing
+        star_message: Alle velden gemarkeerd met (*) zijn verplicht
+        projekt_labels_label: Labels
+        projekt_labels_hint: Selecteer a.u.b. ten minste één optie
+        sentiment_label: Sentiment
+        sentiment_hint: Selecteer een optie
+      index:
+        resource:
+          by: van
+      show:
+        admin: Admin
+        back_link: Meer %{resources} over dit project
+        comments: '%{count} Reacties'
+        follow_text: Volg dit voorstel om op de hoogte te blijven van nieuws over dit voorstel.
+        information: Informatie
+        related_button: Toevoegen
+        related_text: U kunt links van andere suggesties en discussies toevoegen.
+        related_title: Gerelateerde inhoud
+        report_button: Melden
+        report_text: Meld dit bericht aan ons in geval van ongepaste inhoud of schending van het auteursrecht.
+        report_title: Melden
+      download: Downloaden
+      download_pdf: Download PDF
+      sort_by: Sorteren op
+      filter_by: Filteren op
+    tag_names:
+      projekt: Meer %{resources} over dit project
+    tags:
+      remaining_count:
+        one: "+%{count} Dag"
+        other: "+%{count} Tags"
+    users:
+      login_to_vote: U moet zich aanmelden %{signin} of %{signup}, om deel te kunnen nemen
+      verify_account_link_short: verifiëren
+      document_help: "Opmerking:"
+      card_label: Identiteitskaart achterzijde
+      card_help: "Laatste vier cijfers op identiteitskaart achterzijde:"
+      pass_label: Paspoort voorzijde
+      pass_help: "Laatste vier cijfers op paspoort voorzijde:"
+    welcome:
+      active_projekt_cards:
+        title: Actieve participatie
+      all_debates: Alle discussies
+      all_proposals: Alle voorstellen
+      expired_projekt_cards:
+        title: Afgeronde projecten
+      current_polls: Lopende stemmingen
+      start_debate: Discussie starten
+      start_entry: + Bijdrage aanmaken
+      start_proposal: Maak je eigen voorstel
+      user_entries: Laatste berichten
+      latest_activity:
+        title: Mijn activiteit
+        all_activity_link: Bekijk al mijn activiteit
+        filters:
+          proposals: Suggesties
+          debates: Discussies
+          budget_investments: Investeringsvoorstellen
+          comments: Reacties
+          follows: Volg ik
+      resource_count:
+        projekts: Projecten
+        proposals: Suggesties
+        comments: Reacties
+        debates: Discussies
+        polls: Stemmen
+      sidebar:
+        information:
+          title: Informatie
+        users:
+          title: Gebruikers
+          sign_in: Nu aanmelden
+        activity:
+          title: Activiteit
+        newsletter:
+          title: Nieuwsbrief
+          cta: Niet geregistreerd? Schrijf je nu in
+          submit: Inloggen
+    welcome_launch:
+      p1: Hier ontstaat het nieuwe participatieplatform van de stad %{org_name}
+      p2: Onze Go-Live is aan %{date}!
+    shared_components:
+      collapse_text:
+        show_more: "Toon meer"
+        show_less: "Toon minder"
+  date:
+    formats:
+      date_only: '%d.%m.%Y'
+      long: '%d. %B %Y'
+  time:
+    formats:
+      date_only: '%d.%m.%Y'
+      date_with_time: '%d.%m.%Y %H:%M'
+      new_date_with_year: "%d. %B %Y"
+  tag_names:
+    general: Algemeen
+  formular_answer_images:
+    form:
+      add_new_image: Afbeelding toevoegen
+    errors:
+      messages:
+        in_between: moet tussen %{min} %{max} en

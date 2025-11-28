@@ -1,0 +1,13 @@
+nl:
+  cli:
+    general:
+      seo_title_prefix: "Publieke inspraak München:"
+    mailers:
+      unser_muenchen_html: "ons.muenchen.de - Online platform voor publieke inspraak van de deelstaathoofdstad München Impressum: <a href='https://unser.muenchen.de/impressum'>https://unser.muenchen.de/impressum</a>"
+      no_reply: "Reageer niet direct op dit bericht. Het e-mailadres van de afzender wordt niet opgehaald. Voor vragen kunt u contact opnemen met <a href='mailto:unser@muenchen.de'>unser@muenchen.de</a>."
+    devise_views:
+      users:
+        registrations:
+          errors:
+            user_hidden: Dit gebruikersaccount bestaat al, maar is geblokkeerd door een moderator.
+            email_exists: Het opgegeven e-mailadres is al in gebruik.

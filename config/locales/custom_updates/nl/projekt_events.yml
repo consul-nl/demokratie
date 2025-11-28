@@ -1,0 +1,11 @@
+nl:
+  custom:
+    projekt_events:
+      index:
+        welcome_default_text_html: "<p>Voor veel projecten zijn er evenementen die dienen om zich te informeren en van gedachten te wisselen. U kunt de lijst met het filter sorteren op verleden, komende of alle evenementen. </p> <p>Wij nodigen u van harte uit om de evenementen te bezoeken – online of ter plaatse – en deel te nemen. Want een levendige stad leeft van de betrokkenheid van haar burgers.</p>"
+      filters:
+        all: Alle
+        incoming: Komende
+        past: Verleden
+      list_item_component:
+        cta_button: Toon meer

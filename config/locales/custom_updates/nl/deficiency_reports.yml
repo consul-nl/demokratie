@@ -1,0 +1,130 @@
+nl:
+  custom:
+    deficiency_reports:
+      form:
+        page_description: Hartelijk dank voor het melden van een defect! Ze helpen ons om deze zo snel mogelijk uit te schakelen. Beschrijf zo nauwkeurig mogelijk wat u is opgevallen. Typische gebreken zijn bijvoorbeeld schade aan de weg of beschadigde parkbanken.
+        title_placeholder: Geef het gebrek dat u wilt melden een opvallende titel zoals “kuil in XY-straat voor huisnummer 123”.
+        description_placeholder: "Beschrijf hier het gebrek dat u wilt melden.\n\n Details helpen het stadsbestuur om het gebrek op te sporen en snel te verhelpen.\n\n Als je bijvoorbeeld het huisnummer weet waar een kuil voor ligt, geef dit dan graag aan.\n\n Vermeld geen persoonlijke gegevens van derden, zoals adressen."
+        map:
+          hint: Plaats een pin op de kaart om het defect nauwkeurig te lokaliseren.
+        district:
+          title: Snelselectie kaartfragment
+          description: Navigeer snel naar de gewenste kaartpositie
+        category:
+          title: Categorie
+          description: "Wijs uw melding toe aan een categorie:"
+          placeholder: Selecteer a.u.b.
+        documents:
+          title: Documenten toevoegen
+        languages:
+          title: Talen
+          description: "Selecteer in welke taal/talen uw discussie moet plaatsvinden:"
+        video:
+          title: Video toevoegen
+          description: Zijn er video's die uw argumentatie en visie ondersteunen? Voeg deze dan toe via een link.
+          placeholder: Voer YouTube of Vimeo-link in
+        on_behalf_of:
+          title: Publiceren voor
+          description: Dit veld wordt alleen door admin weergegeven. Je kunt hier een post maken namens iemand.
+          placeholder: Voer de naam in...
+        create:
+          submit_button: Gebrek melden
+        labels:
+          description: Tekst over het gebrek
+          summary: Samenvatting van het gebrek
+          title: Titel van het gebrek
+        new:
+          submit_button: Gebrek melden
+        edit:
+          submit_button: Defect bijwerken
+      index:
+        empty_list_text: "Geen resultaten"
+        title: Defectmelder
+        welcome_default_text_html: In elke stad zijn er af en toe gebreken – goed als deze door oplettende burgers worden gemeld om ze snel te verhelpen. Op deze pagina zie je welke gebreken al zijn gemeld. De kaart helpt u bij het lokaliseren van het betreffende defect. Neem ook contact met ons op als u een tekortkoming opmerkt – en draag bij aan een schoon stadsbeeld en een functionerende stad.
+        sidebar_information_default_text: Is u een tekortkoming in de stad opgevallen? Dan ontvangen wij graag uw bericht, zodat wij dit zo snel mogelijk kunnen afhandelen.
+        count: Gebrekmeldingen
+        deficiency_report:
+          by: van
+        orders:
+          hot_score: Meest actief
+          most_commented: Meest becommentarieerd
+          newest: Nieuwste eerst
+        search_form:
+          button: search
+          placeholder: Zoeken...
+          title: Zoek meldingen van gebreken
+        section_footer:
+          description: Gebreken kunnen, afhankelijk van de ingestelde verificatieprocedure, door elke gebruiker worden aangebracht. Ze bieden een eenvoudige manier om tekortkomingen in de stad te signaleren. Wij danken u voor uw steun!
+          title: Hulp bij het melden van gebreken
+        section_header:
+          help: Hulp bij het melden van gebreken
+          icon_alt: Defectmelder
+          title: Defectmelder
+        seo:
+          title: Defectmelder
+        sidebar:
+          approval_status_filter:
+            all_reports: Alle meldingen
+            reports_to_approve: Vrij te geven meldingen
+            title: Admin
+          categories:
+            filter_button: Filter categorieën
+            title: Categorieën
+          officer_filter:
+            all_reports: Alle meldingen
+            only_current_user: Aan mij toegewezen meldingen
+            title: Administratief medewerker
+          statuses:
+            all_statuses: Alle meldingen
+            title: Status
+          archived_status:
+            title: Archief
+            not_archived: Niet gearchiveerd
+            only_archived: Gearchiveerd
+          my_posts:
+            title: Mijn bijdragen
+        start_deficiency_report: Gebrek melden
+      new:
+        more_info: Meer informatie
+        recommendation_one: Gebruik a.u.b. niet uitsluitend hoofdletters voor de titel of voor complete zinnen. Op het internet wordt dit beschouwd als schreeuwen en niemand wil geschreeuwd worden.
+        recommendation_three: Geniet van deze plek en de stemmen die het vullen. Hij is ook van jou.
+        recommendation_two: Discussies of opmerkingen die illegale handelingen inhouden, worden verwijderd, evenals die welke de discussies opzettelijk saboteren. Al het andere is toegestaan.
+        recommendations_title: Aanbevelingen voor het maken van een tekort
+        seo:
+          title: Gebrek melden
+        start_new: Gebrek melden
+      notifications:
+        official_answer_updated: Antwoord is succesvol opgeslagen
+      show:
+        title: "%{author} heeft dit gebrek gemeld"
+        welcome_text_default: Dit defect is al bij ons gemeld door een gebruiker. Hier kunt u de huidige status bekijken en de voortgang van de defectmelding volgen. Ook kun je met een eigen opmerking je mening geven. En nadat het gebrek is gedicht, vind je hier het officiële statement van de stad.
+        video:
+          title: Video toevoegen
+        back_link: Terug naar alle meldingen
+        admin_accepted:
+          "true": Gepubliceerd
+          "false": Niet gepubliceerd
+        official_answer:
+          title: Officieel antwoord
+        sidebar:
+          category: Categorieën
+          delete: Gebrek verwijderen
+          officer: Administratief medewerker
+          select_officer: Selecteer medewerker*in
+          social_share: Delen
+          status: Status
+          vote: Ondersteuners
+        status:
+          title: Status
+          description: "U kunt hier de huidige status van deze melding volgen:"
+        category:
+          title: Categorieën
+        officer:
+          title: Administratief medewerker
+        author_actions:
+          title: Auteur
+          edit_button: Bewerken
+          delete_button: Intrekken
+        admin_actions:
+          title: Admin
+        submit_official_answer_button: Bewaar antwoord

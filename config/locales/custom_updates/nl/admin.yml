@@ -1,0 +1,859 @@
+nl:
+  admin:
+    actions:
+      action: Actie
+      actions: Acties
+    homepage:
+      feeds:
+        active_projekts: Actieve participatie
+        expired_projekts: Afgeronde projecten
+        polls: Stemmen
+        investment_proposals: Investeringsvoorstellen
+    tags:
+      destroy: Verwijderen
+  custom:
+    admin:
+      legislation:
+        processes:
+          index:
+            create: Nieuwe tekstbewerking
+            title: Tekstverwerking
+            status: Tekstverwerking
+            count: tekstverwerking
+      budgets:
+        edit:
+          hide_money: Geld verbergen
+          hide_money_help_text: Als deze optie is ingeschakeld, worden alle velden die het geldbedrag weergeven tijdens het hele proces verborgen.
+          info:
+            projekt_association: Projecttoewijzing
+      budget_investments:
+        show:
+          not_defined: ongedefinieerd
+          state_block_title: Status van het voorstel
+          physical_votes_updated: Physical votes updated!
+          feasibility: Haalbaarheid
+          price: Prijsschatting administratie (€)
+          price_first_year: Prijsraming van de lopende kosten in het eerste jaar (€)
+          price_explanation: Toelichting op de administratie
+          duration: Tijdsbestek
+          valuation_finished_label: Advies
+          valuation_finished:
+            "true": afgerond
+            "false": nog niet afgerond
+          selected_label: Geselecteerd voor ondersteuningsfase
+          selected:
+            "true": ja
+            "false": nee
+          compatible_label: Toelating tot de winnaarslijst
+          compatible:
+            "true": ja
+            "false": nee
+          winner_label: Winnaar
+          winner:
+            "true": ja
+            "false": nee
+          state_block_action_button_title: Bewerken
+          details_block_title: Meer informatie
+          author: Auteur
+          created_at: Aanmaakdatum
+          frontend: Frontend
+          implementation_performer_label: Implementatie
+          implementation_performer:
+            city: Auteur ondersteunt de implementatie niet
+            user: Auteur ondersteunt bij de implementatie
+          user_cost_estimate: Prijsschatting van de gebruiker (€)
+      deficiency_reports:
+        index:
+          entry_name: Gebrek
+          no_deficiency_reports: Geen gebrekenmeldingen
+          id: ID
+          admin_accepted: Zichtbaarheid
+          created_at: Publicatie
+          title: Titel
+          author: Auteur
+          status_title: Status
+          approximater_location: Locatie
+          category_name: Categorie
+          responsible_name: Administratief medewerker
+          actions: Acties
+          official_answer: Officieel antwoord
+          officer_email: E-mail
+          submit: Filter/Zoeken
+        update:
+          success_notice: De melding van het defect is bijgewerkt
+        destroy:
+          success_notice: De melding van het defect is verwijderd
+        categories:
+          category:
+            color: Kleur
+            icon: Icoon
+            name: Naam
+            warning_text: Pop-up
+            default_deficiency_report_officer: Standaard Administratief Medewerker
+          destroy:
+            cannot_be_destroyed: U kunt deze categorie niet verwijderen omdat deze aan ten minste één defect is toegewezen.
+            destroyed_successfully: De categorie is succesvol verwijderd.
+          edit:
+            editing: Gebrekcategorie bewerken
+          form:
+            color_placeholder: "HEX code met #"
+            warning_text_placeholder: Popup text
+            submit_button: Opslaan
+          index:
+            create: Categorie aanmaken
+            title: Categorieën
+          new:
+            creating: Nieuwe gebrekkige categorie aanmaken
+        official_answer_templates:
+          index:
+            title: Antwoordensjablonen
+            button_new: Nieuwe template aanmaken
+          new:
+            title: Nieuwe template aanmaken
+          edit:
+            title: Sjabloon bewerken
+          form:
+            submit_button: Opslaan
+        officer_groups:
+          officer_group:
+            name: Naam
+            officers: Medewerkers
+          destroy:
+            destroyed_successfully: De werkgroep is met succes verwijderd.
+          edit:
+            editing: Werknemersgroep bewerken
+          index:
+            create: Aanmaken dossierbehandelingsgroep
+            title: Werknemersgroepen
+          new:
+            creating: Nieuwe dossierbehandelingsgroep aanmaken
+        deficiency_report:
+          category: Categorie
+          officer: Administratief medewerker
+          status: Status
+          title: Gemelde tekortkoming
+        officers:
+          index:
+            search:
+              email_placeholder: Zoek gebruiker*in via e-mail
+            title: Medewerkers
+          officer:
+            email: E-mail
+            entry_name: Administratief medewerker
+            name: Naam
+        settings:
+          index:
+            title: Functies
+        show:
+          on_behalf_of: namens
+          created_at: Aangemaakt op
+          updated_at: Bijgewerkt op
+          link: Link
+        # category: Kategorie
+        # description: Bezeichnung
+        # entry_name: Mangel
+        # no_deficiency_reports: Keine Mängelmeldungen
+        # officer_name: Sachbearbeiter*in
+        # official_answer: Offizielle Antwort
+        # status: Status
+        # summary: Zusammenfassung
+        # title: Mängel zuweisen
+        # video: Video
+        statuses:
+          destroy:
+            cannot_be_destroyed: U kunt deze status niet verwijderen omdat deze aan ten minste één defect is toegewezen.
+            destroyed_successfully: De status is met succes verwijderd.
+          edit:
+            editing: Defectstatus bewerken
+          form:
+            color_placeholder: "HEX code met #"
+            submit_button: Opslaan
+          index:
+            create: Status aanmaken
+            title: Status
+          new:
+            creating: Nieuwe tekortstatus aanmaken
+          status:
+            color: Kleur
+            icon: Icoon
+            title: Naam
+            archive_reports: Archiveren
+            notice_text: E-mailmeldingstekst
+        districts:
+          index:
+            title: Gebieden
+      geozones:
+        geozone:
+          postal_codes: Postcodes
+          postal_codes_help: Door komma's gescheiden lijst van postcodes die tot deze geozone behoren
+      registered_addresses:
+        index:
+          title: Geregistreerde adressen
+          import_button: Import
+        attributes:
+          id: ID
+          city: Stad
+          plz: Postcode
+          street_name: Straat
+          street_number: Huisnummer
+          street_number_extension: Huisnummeraanvulling
+          district: Gebied
+          groupings: Groeperingen
+      registered_address_groupings:
+        index:
+          title: Geregistreerde adresgroep
+        update:
+          success: Geregistreerde adresgroep succesvol bijgewerkt
+        destroy:
+          success: Geregistreerde adresgroep succesvol verwijderd
+        attributes:
+          key: Kolomnaam
+          name: Naam
+          options: Opties
+      registered_address_districts:
+        index:
+          title: Gebieden
+        update:
+          success: Gebied succesvol bijgewerkt
+        attributes:
+          name: Naam
+          coordinates: Coördinaten
+      registered_address_streets:
+        index:
+          title: Geregistreerde adressen
+        attributes:
+          id: ID
+          name: Naam
+          plz: Postcode
+      recipient_groups:
+        index:
+          title: Ontvangersgroep
+          new_recipient_group: Nieuwe ontvangersgroep
+          name: Naam
+          empty_recipient_groups: Geen ontvangersgroep beschikbaar
+        new:
+          base_options_for_kind:
+            projekts: Projecten
+            user_roles: Gebruikersrollen
+          label_for_general: Type ontvangersgroep
+          label_for_projekt: Project
+          label_for_projekt_phase: Projectfase(s)
+          label_for_user_role: Gebruikersrol
+          name: Naam
+          select_options:
+            projekt_related: Alle projectfasen
+          access_methods:
+            newsletter_subscriber_ids: Alle gebruikers met toestemming
+            all_newsletter_subscriber_ids: Alle gebruikers met toestemming plus nieuwsbriefabonnees zonder account
+            administrators_ids: Administrator
+            authors_of_feasible_ids: Auteurs wier voorstellen aan de criteria voldoen
+            authors_of_unfeasible_ids: Auteurs wier voorstellen niet aan de criteria voldoen
+            authors_of_selected_ids: Auteurs wiens voorstellen zijn geselecteerd voor de afstemmingsfase
+            authors_of_not_winners_ids: Auteurs van wie de voorstellen niet hebben gewonnen in de laatste stemming
+            authors_of_winners_ids: Auteurs van wie de voorstellen in de finale stemming hebben gewonnen
+            any_phase_subscribers_ids: Abonnees van alle fasen
+        create:
+          notice: Ontvangersgroep is succesvol aangemaakt
+        update:
+          notice: Ontvangersgroep is succesvol bijgewerkt
+        destroy:
+          notice: Ontvangersgroep is succesvol verwijderd
+      menu:
+        site_customization:
+          landing_pages: Bestemmingspagina '
+        deficiency_reports:
+          categories: Categorieën instellen
+          list: Lijst van tekortmeldingen
+          officers: Administratief medewerker
+          reports: Gebreken toewijzen
+          settings: Functies
+          statuses: Status definiëren
+          official_answer_templates: Antwoordsjablonen
+          areas: Oude gebieden
+          districts: Gebieden
+          officer_groups: Werknemersgroepen
+          stats: Statistieken
+        deficiency_reports_title: Tekorten
+        projekts: Projecten
+        projekt_managers: Projectmanagers
+        deficiency_report_managers: Admin defectmelder
+        officing_managers: Stemmers
+        legislation: Tekstverwerking
+        age_ranges: Leeftijdsgroepen
+        modal_notification: Pop-up notificatie
+        title_registered_addresses: Geregistreerde adressen
+        registered_addresses:
+          list: Geregistreerde adressen
+        registered_address_groupings:
+          list: Geregistreerde adresgroepen
+        registered_address_districts:
+          list: Gebieden
+        registered_address_streets:
+          list: Geregistreerde wegen
+        individual_groups: Individuele groepen
+        unregistered_newsletter_subscribers:
+          list: Nieuwsbriefabonnees
+        recipient_groups: Adressatengroepen
+        matomo: Matomo
+      polls:
+        show:
+          table:
+            title: Vragen
+            type: Type
+          edit_nested_questions: Geneste vragen
+          title: Type vraag
+        poll:
+          send_notifications: Verstuur notificaties
+          notifications_sent: Meldingen zijn succesvol verzonden
+          send_notifications_confirm: Weet je het zeker?
+        questions:
+          show:
+            description: Omschrijving
+          answers:
+            notice:
+              delete:
+                confirmation: Weet je het zeker?
+                error: Voor deze stemming zijn al stemmen uitgebracht. U kunt het antwoord daarom niet meer verwijderen.
+                success: Reactie succesvol verwijderd.
+              open_answer_saved: Hartelijk dank! Uw antwoord is succesvol opgeslagen.
+            open_answer: Open antwoord
+            open_answer_hint: (Slechts één per vraag toegestaan, extra informatie zoals afbeeldingen of documenten worden niet weergegeven in de frontend voor dit type antwoord)
+          show_images: Antwoordopties moeten als afbeeldingen worden weergegeven
+        settings:
+          show_on_home_page: Deze afstemming wordt weergegeven op de startpagina.
+          show_on_index_page: Deze afstemming wordt weergegeven op het stemoverzicht
+          wizard_mode: "Modus gerelateerde vragen"
+          show_open_answer_with_username: Toon open antwoorden met de naam van de gebruiker
+          show_open_answer_without_username: Toon open antwoorden anoniem
+          show_summary_instead_of_questions: Bekijk de samenvatting in plaats van een lijst met alle vragen in het stemoverzicht
+      questions:
+        index:
+          create_normal: Normale vraag aanmaken
+          create_bundle: Vragenbundel aanmaken
+        new:
+          bundle_question_title: Vragenbundels aanmaken voor %{poll}
+        show:
+          bundle_title: Wilt u een subvraag toevoegen?
+          title: Wilt u een antwoord toevoegen?
+          add_nested_question: Nieuwe subvraag toevoegen
+          bundle_list_title: Dit is de lijst van alle subvragen
+          answers:
+            next_question: Volgende vraag
+          table:
+            nested_questions_title: Subvragen
+            nested_questions_vote_type: Type
+      progress_bars:
+        index:
+          progress_bar: Voortgangsbalk
+      projekts:
+        destroy: Verwijderen
+        edit:
+          projekt_configuration_tab:
+            name: Projectinstellingen
+            main_block_title: Status
+            information_block_title: Informatie
+            duration_block_title: Looptijd
+            geo_affiliation_block_title: Gebiedsindeling
+            individual_groups_block_title: Zichtbaarheidsbeperking voor grote groepen
+            landing_page_assignments: Toewijzing aan onderwerpen/gebiedspagina's
+          projekt_page_tab:
+            name: Projectpagina
+            main_block_title: Projectpagina
+          projekt_phases_tab:
+            type: Fase selecteren
+            name: Projectfasen
+            phases_block_title: Projectfasen
+            table_headings:
+              phase_name: Fase
+              start_date: Begindatum
+              end_date: Einddatum
+              limitations: Beperking
+              default_tab: Standaard
+              activated: Geactiveerd
+              edit_link: Bewerken
+            restriction_names:
+              age: Leeftijd
+              geo: Geo
+              verification: Verificatie
+            copy_phase_link: Link voor tab opvragen
+          projekt_settings_tab:
+            name: Projectfuncties
+            general_settings: Algemeen
+            select_an_element: selecteren
+            sidebar_settings: Zijbalk
+          projekt_managers_tab:
+            name: Projectmanagers
+            main_block_title: Projectmanagers
+            permissions:
+              manage: administreren
+              moderate: modereren
+              create_on_behalf_of: aanmaken namens iemand
+              get_notifications: op de hoogte worden gesteld
+              access_graphql: GraphQL-toegang
+          projekt_map_tab:
+            name: Ind. kaartconfiguratie
+          projekt_sdg_tab:
+            name: SDG's & tags
+            sdgs: SDG's
+            tags: Tags
+            tags_hint: Klik op één of meerdere tags om deze voor dit project aan te bieden aan de gebruiker.
+            refresh_page: Als u de functies al hebt geactiveerd, maar ze worden hier niet weergegeven, laad dan deze pagina opnieuw.
+          flash:
+            update_notice: Project is succesvol bijgewerkt.
+        edit_projekt: Bewerken
+        index:
+          add_cards: Tegels aanmaken/bewerken
+          add_projekt: Nieuw project toevoegen
+          choose_parent: Koppel dit project aan een overkoepelend project
+          create: Project aanmaken
+          debate_phase: Discussiefase
+          edit_page: Pagina bewerken
+          enter_name: Geef de naam van het project op
+          info: Info
+          level: Niveau
+          name: Projectnaam
+          name_plural: Projecten
+          name_singular: Project
+          page: Pagina
+          page_link: Pagina openen
+          page_name: Globale projectinstellingen
+          parent: Bovenliggend project
+          position: Positie
+          projekt_affiliation: Gebiedsindeling
+          projekt_duration: Totale duur van het project
+          projekt_information: Projectinformatie
+          projekt_list: Projectlijst
+          projekt_phase_limitation: Beperking van participatie
+          proposal_phase: Suggestiefase
+          voting_phase: Afstemmingsfase
+        projekt_questions:
+          comments_enabled: Open antwoord geactiveerd
+          edit:
+            save: Vraag bijwerken
+            title: Vraag bewerken
+          index:
+            create: Vraag aanmaken
+            enable_projekt_list: Activeer een overzicht van alle vragen
+            title: Korte enquête
+            question_options: Antwoordmogelijkheden
+            answers_count: Aantal antwoorden
+            comments_count: Aantal reacties
+            attached_to: Bijgevoegd
+            send_notifications_button: Verstuur notificaties
+            notifications_sent_notice: Notificaties succesvol verzonden
+          new:
+            create: Vraag bijwerken
+            title: Vraag aanmaken
+            title_for_livestream: Vraag voor livestream aanmaken
+          show_answers_count: Toon aantal stemmen op frontend
+        overview_page_tab:
+          title: Projectoverzichtspagina
+          title_footer: Voettekst
+        tabs:
+          configuration: Configuratie-instellingen
+          geozones: Geozones beheren
+          map_settings: Standaard kaartconfiguratie
+          settings: Functies
+          overview_page: Projectoverzichtspagina
+      projekt_managers:
+        index:
+          title: Projectmanagers
+          no_projekt_managers: Geen projectmanagers beschikbaar.
+        search:
+          title: "Projectmanager(s): Gebruiker(s) zoeken"
+      deficiency_report_managers:
+        index:
+          title: Gebrekenmelder admins
+          no_deficiency_report_managers: Geen defectmeldingen admins beschikbaar.
+        search:
+          title: "Gebrekmeldingsmanager:gebruiker zoeken"
+      officing_managers:
+        index:
+          title: Stemmers
+          no_officing_managers: Geenstemhulpjes beschikbaar.
+        search:
+          title: "Stemmingshulpjes:gebruikers zoeken"
+      settings:
+        index:
+          extended_features:
+            debates: Discussies
+            gdpr: AVG
+            general: Algemeen & features
+            modulewide: Moduleoverkoepelende functies
+            polls: Stemmen
+            proposals: Suggesties
+          extended_options: Geavanceerde configuratie-instellingen
+          extended_settings: Geavanceerde instellingen
+          extra_fields: Registratie & verificatie
+          extra_fields_titles:
+            registration: Registratie
+            verification: Verificatie
+          features:
+            activate:
+              disabled: Project gedeactiveerd
+              enabled: Project geactiveerd
+      site_customization:
+        landing_pages:
+          new:
+            title: "Onderwerpen/Gebiedspagina"
+          index:
+            create: "Nieuwe onderwerpen/gebiedspagina aanmaken"
+            title: "Onderwerpen/gebiedspagina's"
+          edit:
+            header_image_title: Header image
+          edit_content_cards:
+            title: Inhoudskaarten voor %{page_title}
+            link: Inhoudskaarten
+          form:
+            landing_site_logo_for_transparent_background: Individueel logo voor deze landingspagina op een transparante achtergrond
+            landing_site_logo_for_white_background: Individueel logo voor deze landingspagina op een witte achtergrond
+        pages:
+          destroy:
+            cannot_notice: Deze pagina kan niet worden verwijderd. Verwijder het bijbehorende project van tevoren.
+          images:
+            form:
+              add_new_image: Banner toevoegen
+              note: "De banner moet minimaal 200 pixels hoog en 1920 pixels breed zijn. U kunt een afbeelding van het volgende formaat uploaden: %{accepted_content_types}, tot %{max_file_size} MB."
+              title: Zijdelingse banners
+        content_cards:
+          setting:
+            label:
+              limit: Aantal getoonde items
+              debates_limit: Aantal getoonde discussies
+              proposals_limit: Aantal getoonde suggesties
+              investments_limit: Aantal getoonde investeringsvoorstellen
+              deficiency_reports_limit: Aantal weergegeven tekortmeldingen
+      users:
+        reverify_button_text: Verificatie actualiseren
+        reverify_success_notice: Herverificatieproces bezig
+        erase_success_notice: Gebruiker succesvol verwijderd
+        columns:
+          id: ID
+          erase_reason: Reden van verwijderen
+          name: Naam
+          email: E-mail
+          document_number: Documentnummers
+          roles: Rollen
+          verification_level: Verificatiestatus
+          first_name: Voornaam
+          last_name: Achternaam
+          street_address: Adres
+          plz: Postcode
+          geozone: Gebied
+          city_name: Stad
+          gender: Geslacht
+          date_of_birth: Geboortedatum
+          document_type: Document
+          document_last_digits: Document (4 laatste cijfers)
+          unique_stamp: Unique Stamp
+          created_at: Gebruiker aangemaakt op
+          last_sign_in_date: laatste login op
+          verified_at: Geverifieerd op
+          actions: Acties
+          action:
+            verify: Verifiëren
+            unverify: Verificatie intrekken
+            edit_user: Bewerken
+      widget:
+        card:
+          category_options:
+            active_projekt: Actief participatieproces
+            archived_projekt: Afgerond participatieproces
+      flash:
+        deleted: Verwijderd
+      projekt_events:
+        edit:
+          title: Evenement bewerken
+      projekt_phases:
+        voting_phase:
+          description: Beschrijvingstekst op de stempagina
+        nav_bar:
+          duration: Looptijd
+          naming: Benaming
+          restrictions: Beperking
+          settings: Functies
+          map: Kaart
+          projekt_labels: Labels
+          sentiments: Sentimenten
+          age_ranges_for_stats: Leeftijdscohorten
+          projekt_questions: Projectvragen
+          projekt_livestreams: Lijst met livestreams
+          projekt_events: Lijst van evenementen
+          milestones: Lijst met mijlpalen
+          progress_bars: Voortgangsbalk
+          projekt_notifications: Notificaties
+          projekt_arguments: Lijst van stemmen
+          formular: Formuliervelden
+          general_settings: Functies
+          formular_answers: Inbox & follow-up e-mails
+          form_author: Formulier auteur
+          user_functions: Functies gebruiker
+          poll_questions: Vragen
+          officing_managers: Stemmingshulp
+          officing_manager_audits: Logs
+          poll_results: Resultaten
+          budget_edit: Bewerken
+          budget_investments: Suggesties
+          budget_phases: Fasen
+          legislation_process_draft_versions: Ontwerpversies
+        notice:
+          created: Fase is aangemaakt
+          updated: Fase is bijgewerkt
+          destroyed: Fase is verwijderd
+          not_destroyed: Fase kon niet worden verwijderd omdat deze al geassocieerde inhoud heeft
+        shared:
+          update_button: Opslaan
+        phase_tab_name: Naam in tab op de projectpagina
+        cta_button_name: Knoptekst op de projectpagina
+        welcome_text_in_show: Inleidende tekst in de weergave van voorstellen
+        resource_form_title: Titel van het aanmaakformulier
+        labels_name: Alternatieve tekst voor labels
+        sentiments_name: Alternatieve tekst voor sentimenten
+        resource_form_intro: Inleidingstekst in het aanmaakformulier
+        comment_form_title: Titel van het opmerkingenformulier
+        comment_form_button: Opmerkingenformulier button
+        resource_form_title_placeholder: Tekst van de tijdelijke aanduiding voor de titel in het aanmaakformulier
+        resource_form_description_placeholder: Tekst van de tijdelijke aanduiding voor de beschrijving op het aanmaakformulier
+        support_button_text: Tekst van de steunknop
+        edit:
+          title: Instelling voor fase
+        duration:
+          page_title: Wat moet de looptijd van de fase zijn?
+          start_date: Begindatum
+          end_date: Einddatum
+        naming:
+          page_title: Hoe wilt u individuele elementen benoemen?
+        restrictions:
+          page_title: Wilt u de participatie beperken?
+          intro:
+            p1_html: De uitgebreide deelnamebeperkingen, zoals de beperking per geografisch gebied of leeftijdsgroep, zijn uitsluitend beschikbaar voor geregistreerde en geverifieerde gebruikers. De status van gastgebruiker maakt dergelijke beperkingen niet mogelijk.
+            p2_html: Om deze uitgebreide beperkingen toe te passen, moeten de relevante gegevens, zoals woonplaats of geboortedatum, beschikbaar zijn. Deze gegevens kunnen al in het kader van de registratie worden verzameld of pas in het kader van de deelname in de betreffende fase worden opgevraagd. Gebruikers die de benodigde gegevens nog niet hebben ingevuld, worden verzocht deze voor deelname te verstrekken. Alleen als de gedeponeerde informatie voldoet aan de beperkingscriteria, wordt de deelname vrijgegeven.
+          age:
+            title: Leeftijd
+            hint: Om de deelname te kunnen beperken, moeten gebruikers worden geverifieerd.
+            no_restriction: Geen beperking
+          extended_geo_restrictions:
+            title: Individuele gebieden
+            hint: Om de deelname te kunnen beperken, moeten gebruikers worden geverifieerd.
+            no_restriction: Geen beperking
+          geo_restrictions:
+            title: Gebiedsbeperking
+            hint: Om de deelname te kunnen beperken, moeten gebruikers worden geverifieerd.
+            no_restriction: Geen beperking
+            only_citizens: Burgers van de stad
+            only_geozones: Burgers van de wijk
+            only_streets: Burgers uit straat
+          individual_group_values:
+            title: Groepen
+          user_status:
+            title: Gebruikersstatus
+            guest: Gastgebruiker
+            registered: Geregistreerde gebruikers
+            verified: Geverifieerde gebruikers
+        settings:
+          page_title: Welke functies wilt u de gebruikers ter beschikking stellen?
+          block_title:
+            general: Functies
+            form: Formuliervelden
+            resource: Individuele bijdrage
+            form_author: Formulier auteur
+            user_functions: Functies gebruiker
+        form_author:
+          page_title: Welke functies wilt u de gebruikers ter beschikking stellen?
+        user_functions:
+          page_title: Welke functies wilt u de gebruikers ter beschikking stellen?
+        projekt_labels:
+          new_block_title: Wilt u een label toevoegen?
+          list_title: Hier is de lijst van alle labels
+          create_button: Nieuw label aanmaken
+          no_labels: Er zijn nog geen labels gedeponeerd voor dit project
+          table:
+            icon: Icoon
+            color: Kleur
+            name: Naam
+          form:
+            title: Welke naam en icoon moet uw label hebben?
+            color_placeholder: "HEX code met #"
+        sentiments:
+          new_block_title: Wil je een sentiment toevoegen?
+          list_title: Hier is de lijst van alle sentimenten
+          create_button: Nieuw sentiment aanmaken
+          no_sentiments: Er zijn nog geen sentimenten gedeponeerd voor dit project
+          table:
+            color: Kleur
+            name: Naam
+          form:
+            title: Welke naam en kleur moet je sentiment hebben?
+            color_placeholder: "HEX code met #"
+          notice:
+            destroy: Sentiment succesvol verwijderd
+        milestones:
+          new_block_title: Wilt u een mijlpaal zetten?
+          new_button: Mijlpaal toevoegen
+          list_title: Dit is de lijst van alle mijlpalen
+        progress_bars:
+          new_block_title: Wilt u een voortgangsbalk toevoegen?
+          new_button: Voortgangsbalk toevoegen / beheren
+          list_title: Dit is uw huidige voortgangsbalk
+        projekt_questions:
+          new_block_title: Wilt u een vraag toevoegen?
+          create_button: Vraag aanmaken
+          send_notifications_button: Verstuur notificaties
+          list_title: Dit is de lijst met alle vragen
+          table:
+            title: Vragen
+            question_options: Antwoorden
+            comments_count: Reacties
+          form:
+            question_options: Mogelijke antwoordopties
+          new:
+            title_livestream: Welke vraag wil je stellen en welke antwoordmogelijkheden wil je bieden?
+            title: Vraag aanmaken
+        map:
+          copy_from_projekt: van het project overnemen
+          map_layers:
+            title: Kaartlagen
+        projekt_notifications:
+          page_title: Wilt u een notificatie versturen?
+          button: Bericht verzenden
+        projekt_arguments:
+          projekt_phase_default_title: Stemmen / meningen
+          page_title: Wil je een stem / mening toevoegen?
+          send_notifications_button: Verstuur notificaties
+          notifications_sent_notice: Notificaties succesvol verzonden
+          argument_pro: Per
+          argument_cons: Contra
+          button: Stem herstellen
+          argument_image: Afbeelding
+        projekt_events:
+          button: Evenement aanmaken
+          event_created_at: Geproduceerd in
+          event_datetime: Datum
+          event_end_datetime: Einddatum
+          open_ended: Open einde
+          event_location: Locatie
+          event_title: Titel
+          event_weblink: Weblink
+          event_description: Omschrijving
+          name: Evenementen
+          page_title: Wilt u een evenement toevoegen?
+          send_notifications_button: Verstuur notificaties
+          notifications_sent_notice: Notificatie is succesvol verzonden
+        projekt_livestreams:
+          new_block_title: Wil je een livestream toevoegen?
+          new_button_title: Livestream toevoegen
+          all_livestreams: Dit is de lijst van alle livestreams
+          add_question: Vraag toevoegen
+          questions: Korte enquêtes
+          edit_livestream: Korte enquête bewerken
+          delete_livestream: Korte enquête verwijderen
+          send_notifications_button: Verstuur notificaties
+          notifications_sent_notice: Notificaties succesvol verzonden
+          new:
+            title: Welke URL heeft jouw livestream?
+        formular:
+          page_title: Welke formuliervelden moet uw formulier bevatten?
+          primary_fields_title: Normale formuliervelden
+          follow_up_fields_title: Follow-up formuliervelden
+          dropdown_hint: Voer uw antwoordopties in. Deze moeten worden gescheiden door een komma.
+          kinds:
+            string: korte tekst
+            textarea: lange tekst
+            email: E-mail
+            date: Datum
+            dropdown: Dropdown
+            image: Afbeelding
+            document: Document
+            description: Omschrijving
+          update_field_button: Formulierveld bijwerken
+          add_field_button: Nieuw formulierveld toevoegen
+        formular_answers:
+          page_title: Inbox & follow-up e-mails
+          emails_title: Wilt u follow-up e-mails versturen?
+          subject_placeholder: E-mail
+          recipients: "%{number} Ontvanger"
+          emails_sent: "%{number} E-mails verzonden"
+          new_email_title: Inbox
+          buttons:
+            save_draft: Concept opslaan
+            send_email: Verstuur e-mail
+            create_email_draft: Maak een e-mailontwerp aan geselecteerde ontvangers
+        age_ranges_for_stats:
+          page_title: Leeftijdsgroepen voor statistieken
+        budget_phases:
+          page_title: Wat moet de looptijd van de fasen zijn?
+        budget_edit:
+          page_title: Welke basisinstellingen voor uw budget wilt u maken?
+        budget_investments:
+          page_title: Suggesties
+        legislation_process_draft_versions:
+          new_block_title: Wilt u een versie toevoegen?
+          list_title: Dit is een lijst met alle tekstversies.
+      modal_notifications:
+        index:
+          create: Aanmaken
+          title: Pop-up notificaties
+        new:
+          creating: Popup aanmaken
+        create:
+          notice: Pop-up notificatie is succesvol aangemaakt
+        edit:
+          editing: Pop-up melding bewerken
+        update:
+          notice: Pop-up melding is succesvol bijgewerkt
+        destroy:
+          notice: Pop-up notificatie is succesvol verwijderd
+      individual_groups:
+        index:
+          title: Individuele groepen
+          new: Nieuwe groep
+        show:
+          new_value: Nieuwe groepswaarde
+        new:
+          title: Nieuwe groep
+        edit:
+          title: Individuele groep bewerken
+        table:
+          name: Naam
+          kind: Soort
+          visible: Zichtbaarheid
+          email: E-mail
+          remove_user: Profiel verwijderen
+      individual_group_values:
+        show:
+          csv_hint_html: 'U kunt met behulp van de CSV-uploader meerdere vermeldingen in één keer toevoegen. De CSV heeft alleen een kolom nodig met de gewenste e-mailadressen. De kolomnaam moet "E-mail" zijn. U kunt eerst het <a href="/samples/igv_sample.csv">voorbeeldbestand bekijken.</a>'
+          related_users: gerelateerde gebruikers
+        edit:
+          title: Groepswaarde bewerken
+        table:
+          name: Naam
+      age_ranges:
+        index:
+          title: Leeftijdsgroepen
+          new: Nieuwe leeftijdsgroep aanmaken
+          filters:
+            for_restrictions: Leeftijdsbeperking
+            for_stats: Leeftijdsgroepen voor statistieken
+        table:
+          name: Naam
+          range: Leeftijdsgroep
+        min_age: Minimumleeftijd
+        max_age: Maximumleeftijd
+        order: Volgorde
+        buttons:
+          edit: Bewerken
+          destroy: Verwijderen
+      unregistered_newsletter_subscribers:
+        index:
+          title: Nieuwsbriefabonnees
+      common:
+        download_current_selection: Download huidige selectie
+      newsletters:
+        settings:
+          email_logo: Logo in e-mailheader
+          brand_color: Kleur van de e-mailheader & footer
+          footer: Voettekstinhoud
+        index:
+          tabs:
+            list: Nieuwsbrief
+            settings: Instellingen

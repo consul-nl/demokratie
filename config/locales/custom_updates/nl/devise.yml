@@ -1,0 +1,29 @@
+nl:
+  custom:
+    devise_views:
+      users:
+        registrations:
+          new:
+            message: Snel. Eenvoudig. Veilig
+            first_name_label: Voornaam
+            last_name_label: Achternaam
+            street_name_label: Straat
+            street_number_label: Huisnummer
+            street_number_extension_label: Huisnummeraanvulling
+            plz_label: Postcode
+            gender: Selecteer a.u.b.
+            city_name_label: Stad
+            document_last_digits_label: Identiteitskaart / paspoort (4 laatste cijfers)
+            form_registered_address_label: Adres
+            form_registered_address_city_label: Woonplaats
+            form_registered_address_street_label: Straat
+            submit: Maak een nieuw account aan
+            organization_signup_link: Inschrijven als organisatie of collectief
+          sign_in_guest:
+            title: Log in als gast
+            username_placeholder: Gebruikersnaam
+            username_hint: Vul a.u.b. uw voorkeursnaam van de gebruiker in
+            submit: Log in als gast
+            success: U bent succesvol ingelogd als gast
+          sign_out_guest:
+            success: U bent succesvol uitgelogd als gast

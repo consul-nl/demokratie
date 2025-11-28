@@ -1,0 +1,10 @@
+nl:
+  custom:
+    general:
+      resource_names:
+        projekts: Projecten
+        proposals: Suggesties
+        comments: Reacties
+        debates: Discussies
+        polls: Stemmen
+        investments: Investeringsvoorstellen

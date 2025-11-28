@@ -1,0 +1,108 @@
+nl:
+  budgets:
+    ballots:
+      show:
+        amount_available:
+          distributed:
+            one: "U kunt nog steeds <span>%{count}</span> stemmen."
+            other: "U kunt nog steeds <span>%{count}</span> stemmen."
+        amount_spent:
+          distributed:
+            one: "Uitgebrachte stem: <span>%{count}</span>"
+            other: "Uitgebrachte stemmen: <span>%{count}</span>"
+        amount_limit:
+          distributed:
+            one: "U kunt nog <span>1</span> stem uitbrengen"
+            other: "U kunt tot <span>%{count}</span> stemmen uitbrengen"
+    investments:
+      index:
+        orders:
+          random: Willekeurig
+          ballot_line_weight: Actuele stemmenverdeling
+          newest: Nieuwste eerst
+        sidebar:
+          voted_info:
+            distributed: U kunt op elk moment uw stem wijzigen tot het einde van deze fase. Het is niet nodig om het totale beschikbare budget uit te geven.
+  custom:
+    budgets:
+      investments:
+        index:
+          title: Overzicht van alle voorstellen
+          welcome_default_text_html: In participatieprojecten kunnen burgers voorstellen maken en verzamelen op deze pagina. Voorstellen kunnen gefilterd worden op budget en haalbaarheid.
+          search_form:
+            placeholder: Zoeken...
+          orders:
+            random: Willekeurig
+            ballot_line_weight: Actuele stemmenverdeling
+            total_votes: Huidige ranking
+            newest: Nieuwste eerst
+            comments_count: Meest becommentarieerd
+          filters:
+            budget:
+              title: Budgetten
+            status:
+              title: Status
+          sidebar:
+            user_votes: "Uitgebrachte stemmen: %{count}"
+          empty_list_text: Geen resultaten
+          stat_phases:
+            accepting: Suggestiefase
+            selecting: Ondersteuningsfase
+            balloting: Afstemmingsfase
+            finished: Statistieken over alle fasen
+        form:
+          start_new: Voorstel opstellen
+          page_description: Het budget leeft van uw bijdragen! Vertel ons wat u graag had willen implementeren - en wissel vervolgens ideeën uit met anderen. U kunt aangeven of u de uitvoering zelf wilt ondersteunen of dat het stadsbestuur de verantwoordelijkheid op zich moet nemen.<br><br> Daarnaast kunt u een eerste prijsopgave maken van uw bijdrage. Het stadsbestuur zal uw bijdrage beoordelen op haalbaarheid en ook een prijsbeoordeling geven. Bedankt dat je de tijd neemt en meedoet!
+          title_placeholder: "Titel toevoegen\n\nGeef je bericht een betekenisvolle titel, bijvoorbeeld \"Drinkfontein op het XY-plein\" of \"Meer bomen in de XY-straat\"."
+          description_placeholder: " Beschrijving toevoegen\n\n Beschrijf uw idee zo concreet mogelijk: leg precies uit wat uw\n voorstel inhoudt en waar het kan worden geïmplementeerd.\n\n Noem de voordelen: wat zijn de positieve effecten van uw voorstel op de\n stad en haar inwoners?\n\n Geef voorbeelden: Zijn er vergelijkbare projecten in andere steden die\n succesvol zijn geweest?\n\n Schrijf duidelijk en begrijpelijk: Vermijd technische termen en\n schrijf in korte zinnen, zodat uw voorstel voor iedereen begrijpelijk is."
+          map:
+            hint: Waar moet uw bijdrage worden geïmplementeerd? Plaats een "pin" om anderen in beeld te brengen.
+          implementation:
+            title: Implementatie
+            description: Geef hier aan door wie het voorstel moet worden uitgevoerd
+          user_cost_estimate:
+            title: Prijsbeoordeling
+            description: Geef hier een prijsopgave van uw voorstel.
+            placeholder: Vermeld de prijs in euro's
+          documents:
+            title: Documenten toevoegen
+          on_behalf_of:
+            title: Publiceren voor
+            description: Dit veld wordt alleen door admin weergegeven. Je kunt hier een post maken namens iemand.
+            placeholder: Voer de naam in...
+          required: Uw bijdrage
+        investment:
+          supporters:
+            one: "1 supporter"
+            other: "%{count} Ondersteuners"
+          supports:
+            one: 1 stem
+            other: "%{count} Stemmen"
+          qualified_supports: "Totale stemmen: %{count}"
+          line_weight_label: "Jouw aantal stemmen"
+          unverified_note: "Uw gegevens worden handmatig gecontroleerd. Dit kan 1-2 werkdagen duren. Daarna worden uw stemmen vrijgegeven."
+          unverified_note_no_data_html: "Alstublieft %{verify_account}."
+          unfeasible_html: "Dit voorstel voldoet <strong>niet aan</strong> de criteria"
+          feasible_html: "Dit voorstel voldoet aan de criteria"
+        show:
+          callouts:
+            publishing_prices:
+              undecided: Het voorstel wordt niet in stemming gebracht.
+              unfeasible: Dit voorstel is gemarkeerd als onuitvoerbaar
+            selecting:
+              undecided: Dit voorstel staat nog net in de review.
+              unfeasible: Dit voorstel is geclassificeerd als onuitvoerbaar.
+          price: Prijsbeoordeling van de administratie
+          welcome_default_text_html: "%{author_name} heeft een bijdrage geleverd aan dit project dat uw aandacht nodig heeft. U kunt de bijdrage aan de rechterzijbalk ondersteunen door uw stem te geven. Ook kun je het bericht volgen om op de hoogte te blijven. De kaart helpt je om de bijdrage in de stad te lokaliseren, daarnaast heb je de mogelijkheid om commentaar te geven op de bijdrage."
+          feasibility_explanation: Beoordeling van de administratie
+          implementation_city_text: "Implementatie: Moet worden geïmplementeerd door het stadsbestuur"
+          implementation_user_text: "Implementatie: %{author} ondersteunt bij de implementatie"
+          user_cost_estimate_text: "Prijsbeoordeling van de gebruiker: %{user_cost_estimate}"
+        statuses:
+          phases:
+            accepting: Het voorstel is succesvol ingediend.
+            reviewing: Het voorstel wordt in behandeling genomen.
+            reviewing_ballots: Het resultaat van de stemming wordt berekend.
+            valuating: Het voorstel wordt technisch onderzocht.
+      results:
+        recalculate_winners: Winnaars herberekenen

@@ -1,0 +1,26 @@
+nl:
+  custom:
+    account:
+      show:
+        data_complete: Gebruikersgegevens zijn compleet
+        data_missing: Gebruikersgegevens zijn niet compleet
+        change_credentials_link: Inloggegevens wijzigen
+        edit_details_link: Gegevens bijwerken
+        erase_account_link: Account verwijderen
+        settings: Accountinstellingen
+        verification_title_html: Persoonlijke gegevens |<br>Accountverificatie
+        verification_description: Sommige participatieprojecten vereisen een extra gegevensverzoek of gebruikersverificatie. Door op de knop te klikken, kunt u de vereiste gegevens invoeren en/of de gebruikersverificatie starten.
+        personal_settings: Persoonlijke instellingen
+        notifications: Notificaties
+        save_settings: Bijwerken
+        not_verified_account: Account is niet geverifieerd
+      subscriptions:
+        projekts:
+          title: Projectgerelateerde mededelingen
+          description1: "U heeft de projectmelding geactiveerd voor de volgende projecten:"
+          description2: Door op de onderstaande knop te klikken, kunt u zich afmelden voor alle projectmeldingen. Als u zich alleen wilt afmelden voor individuele projectfasen, log dan in en deactiveer de melding in de voettekst van het betreffende project. U kunt hiervoor eenvoudig op bovenstaande projecten klikken.
+          cancel_projekts_subscriptions_button: Afmelden van alle projectmeldingen
+      edit_details:
+        title: Gegevens bijwerken
+        documents_label: Documentcontrole
+        submit: Gegevens bijwerken

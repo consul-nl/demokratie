@@ -1,0 +1,12 @@
+nl:
+  custom:
+    community:
+      show:
+        participate: Betrokkenheid
+        participants: Deelnemers
+      sidebar:
+        particapate: Meedoen
+        be_first: Werkgroep aanmaken
+        topic:
+          hide: Verbergen
+          restore: Tonen

@@ -1,0 +1,46 @@
+nl:
+  custom:
+    debates:
+      form:
+        tagging: Classificatie
+        tags_custom: Gebruikers-tags
+        required: Uw bijdrage
+        title_placeholder: "Geef uw bijdrage een opvallende titel, bijvoorbeeld \"De duur van het project is te lang\" of \"Gelieve de geplande maatregelen uit te breiden\"."
+        description_placeholder: " Beschrijf hier uw bijdrage. De volgende procedure heeft zijn waarde bewezen:\n\n begin met een algemene beschrijving van uw idee en geef vervolgens aan\n wat er zou verbeteren met de uitvoering van uw voorstel.\n\n Let bij het schrijven zoveel mogelijk op korte zinnen.\n Beperk uw inhoud – indien mogelijk – tot maximaal drie alinea's.\n\n Gebruik daarnaast alinea's om je tekst leesbaarder te maken. (Veel gebruikers lezen je tekst op mobiele apparaten.)\n\n Gebruik bovendien – indien van toepassing – opsommingen en trefpunten voor een betere overzichtelijkheid. "
+      index:
+        title: "Overzicht van alle discussies"
+        no_active_projekt: Momenteel geen participatieprocedure
+        no_active_phase: Fase al gesloten
+        projekts: Projecten
+        creation_only_for_citizens: In dit project kunnen alleen burgers van de stad nieuwe discussies %{city} creëren.
+        creation_only_for_specific_geozones: Nieuwe discussies kunnen alleen worden %{geozones} gemaakt door burgers uit het postcodegebied
+        empty_list_text: Momenteel geen gekoppelde bijdragen
+        welcome_default_text: Discussies zijn essentieel om een gedifferentieerd beeld van de afzonderlijke projecten te krijgen. Bekijk alle discussies of filter aan de rechterkant op specifieke projecten, gebieden of trefwoorden. Door op het betreffende onderwerp te klikken, kunt u de discussies volgen en er zelf aan deelnemen.
+        sidebar_information_default_text: Wil je dingen stimuleren en verplaatsen? Start dan je eigen discussie.
+        count: Discussies
+        participation_information: Participatie-informatie
+        search_form:
+          button: Zoeken
+          placeholder: Zoeken...
+          title: Zoeken
+        orders:
+          confidence_score: Meest gewaardeerd
+          confidence_score_title: Meest gewaardeerd
+          created_at: Laatste
+          created_at_title: Laatste
+          hot_score: Meest actief
+          hot_score_title: Meest actief
+          most_commented: Meest becommentarieerd
+          most_commented_title: Meest becommentarieerd
+          relevance: Relevantie
+          relevance_title: Relevantie
+          recommendations: Aanbevelingen
+          recommendations_title: Aanbevelingen
+          alphabet: Alfabetisch
+          alphabet_title: Alfabetisch
+          random: Willekeurig
+          random_title: Willekeurig
+          votes_total: Meest gekozen
+          votes_total_title: Meest gekozen
+      show:
+        welcome_default_text: "is een discussie gestart over een project. U kunt de discussie aan de rechterzijbalk ondersteunen door deze met uw duim hoog te waarderen. Maar u kunt ook uw afwijzing kenbaar maken door op duim naar beneden te klikken. Bovendien heeft u de mogelijkheid om zelf de discussie aan te gaan met de commentaarfunctie aan de onderkant."

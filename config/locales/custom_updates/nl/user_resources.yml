@@ -1,0 +1,14 @@
+nl:
+  custom:
+    user_resources:
+      form:
+        title: "Nieuwe %{label} aanmaken"
+        page_description: "Het platform leeft van uw bijdragen! Laat ons weten wat u beweegt – en wissel vervolgens ideeën uit met anderen. Er is geen goed en geen fout, elke bijdrage telt. Bedankt dat je de tijd neemt en meedoet!"
+        submit_button: Nu publiceren
+        map_location_instructions: "Waar moet uw bijdrage worden geïmplementeerd? Plaats een \"pin\" om anderen in beeld te brengen."
+      image_upload:
+        top_line_default: Kies een passende afbeelding voor je bijdrage. Berichten met een afbeelding krijgen meestal meer ondersteuning.
+        title_default: Afbeelding toevoegen (optioneel)
+        bottom_line_default: "Een afbeelding in het formaat 490 x 290 pixels is het meest geschikt."
+        max_image_size: De maximale beeldgrootte is %{size} MB.
+        credits_field_placeholder: Klik hier om copyright van de afbeelding toe te voegen

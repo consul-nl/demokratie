@@ -1,0 +1,15 @@
+nl:
+  custom:
+    deficiency_reports:
+      mailers:
+        closing: Vriendelijke groeten,
+        signature: Uw zorgenbeheer
+        contact_info: Voor inhoudelijke vragen kunt u contact opnemen met <a href="mailto:%{email}">%{email}</a>
+        notify_author_about_status_change:
+          subject: Statuswijziging van uw gebrek
+          hi: Hallo
+          p1: de status van het door u ingediende gebrek is gewijzigd.
+        notify_officer:
+          subject: Nieuwe defectmelding %{identifier}
+          hi: Geachte ambtenaar,
+          p1: Je hebt een tekortkoming toegewezen gekregen van de admin.

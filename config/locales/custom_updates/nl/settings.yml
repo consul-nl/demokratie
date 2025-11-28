@@ -1,0 +1,41 @@
+nl:
+  custom:
+    settings:
+      extended_feature:
+        projekts_overview_page_navigation:
+          show_in_navigation: Toon projectoverzichtspagina in Navigatie
+          show_in_navigation_description: Geeft de overzichtspagina van het project weer in de navigatie
+          show_index_order_all: Alle projecten
+          show_index_order_all_description: Geeft tab 'Alle projecten' weer
+          show_index_order_underway: Actieve participatie
+          show_index_order_underway_description: Geeft tab 'Actieve participatie' weer
+          show_index_order_ongoing: Lopende projecten
+          show_index_order_ongoing_descrition: Geeft tab 'Lopende projecten' weer
+          show_index_order_upcoming: Toekomstige projecten
+          show_index_order_upcoming_description: Geeft tab 'Toekomstige projecten' weer
+          show_index_order_expired: Gearchiveerde projectprojecten
+          show_index_order_expired_description: Geeft tab 'Gearchiveerde projecten' weer
+          show_index_order_individual_list: Individuele lijst
+          show_index_order_individual_list_description: Geeft tab 'Individuele lijst' weer
+          show_index_order_drafts: Ontwerpen
+          show_index_order_drafts_description: Geeft tab 'Concepten' weer
+        projekts_overview_page_footer:
+          show_in_index_order_all: Deelname voor 'Alle projecten'
+          show_in_index_order_all_description: Toont de participatiemodules voor het tabblad 'Alle projecten weergeven'
+          show_in_index_order_underway: Participatie voor "Actieve participatie"
+          show_in_index_order_underway_description: Toont de participatiemodules voor het tabblad 'Alle projecten weergeven'
+          show_in_index_order_ongoing: Deelname voor 'Lopende projecten'
+          show_in_index_order_ongoing_descrition: Toont de participatiemodules voor het tabblad 'Alle projecten weergeven'
+          show_in_index_order_upcoming: Deelname voor "Toekomstige projectprojecten"
+          show_in_index_order_upcoming_description: Toont de participatiemodules voor het tabblad 'Alle projecten weergeven'
+          show_in_index_order_expired: Deelname voor "Gearchiveerde projectprojecten"
+          show_in_index_order_expired_description: Toont de participatiemodules voor het tabblad "Gearchiveerde projectprojecten"
+          show_in_index_order_individual_list: Individuele lijst
+          show_in_index_order_individual_list_description: Geeft tab 'Individuele lijst' weer
+        general:
+          enable_old_design: Gebruik oud design
+          enable_old_design_description: Gebruik het oude ontwerp door hier de instellingen te wijzigen
+          use_white_top_navigation_text: Wit lettertype in topnavigatie activeren
+          use_white_top_navigation_text_description:
+          users_overview_page: Overzicht van alle gebruikers
+          users_overview_page_description: Activeert een overzichtspagina voor alle gebruikers

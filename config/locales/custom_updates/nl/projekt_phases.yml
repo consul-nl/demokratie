@@ -1,0 +1,184 @@
+nl:
+  custom:
+    projekt_phases:
+      proposal_navigation:
+        back_to_detail_view: Bladermodus activeren
+        back_to_overview: Naar het overzicht
+        next: "Verder"
+        back: "Terug"
+        first: "Eerste voorstel"
+      cta:
+        title: Participatie
+        voting_phase: Deelnemen aan de stemming
+        question_phase: Deelnemen aan korte enquête
+        budget_phase: Doe nu mee
+        formular_phase: Nu deelnemen
+        legislation_phase: Doe nu mee
+        comment_phase: Doe nu mee
+        livestream_phase: Doe nu mee
+      permission_problem:
+        new_button_component:
+          shared:
+            guest_not_logged_in: "Om verder te gaan, moet u %{sign_in} of %{sign_up} of %{guest_sign_in}."
+            not_logged_in: "Om verder te gaan, moet u zich %{sign_in} of %{sign_up}."
+            missing_user_data: "Om verder te gaan, gelieve te vragen %{enter_missing_user_data}."
+            not_verified: "Om verder te gaan, alstublieft %{verify}."
+            organization: Organisaties mogen geen content maken.
+            only_citizens: Deelname is beperkt tot burgers van de stad.
+            only_specific_geozones: "Deelname is beperkt tot burgers uit de volgende gebieden %{geozones}:"
+            only_specific_streets: "Deelname is beperkt tot omwonenden van de volgende straten: %{restricted_streets}."
+            only_specific_ages: "Deelname is beperkt tot burgers in de volgende leeftijdscategorieën: %{age_restriction}."
+            only_specific_individual_group_values: "Deelname is beperkt tot: %{individual_group_values}."
+            phase_not_active: Deze projectfase is niet actief
+            phase_expired: Deze projectfase is al afgelopen
+            phase_not_current: Deze projectfase is nog niet gestart
+            only_admins: Deelname is beperkt tot admin-gebruikers.
+            no_registered_address: Er kon geen geregistreerd adres aan uw account worden toegewezen. Gelieve uw account te actualiseren.
+            only_specific_registered_address_groupings: Deelname is beperkt tot een ander gebied.
+          formular_phase:
+            past_regular_formular_cutoff_date: De participatiefase is al afgerond
+            submissions_limit_reached: U heeft het maximum aantal toegestane inzendingen per gebruiker bereikt.
+          proposal_phase:
+            proposals_limit_exceeded: Je hebt het maximale aantal toegestane voorstellen per dag %{proposals_limit} bereikt
+        votes_component:
+          shared:
+            guest_not_logged_in: "Om verder te gaan, moet u %{sign_in} of %{sign_up} of %{guest_sign_in}."
+            not_logged_in: "Om verder te gaan, moet u zich %{sign_in} of %{sign_up}."
+            missing_user_data: "Om verder te gaan, gelieve te vragen %{enter_missing_user_data}."
+            not_verified: "Om verder te gaan, alstublieft %{verify}."
+            organization: Organisaties mogen geen content maken.
+            only_citizens: Deelname is beperkt tot burgers van de stad.
+            only_specific_geozones: "Deelname is beperkt tot burgers uit de volgende gebieden %{geozones}:"
+            only_specific_streets: "Deelname is beperkt tot omwonenden van de volgende straten: %{restricted_streets}."
+            only_specific_ages: "Deelname is beperkt tot burgers in de volgende leeftijdscategorieën: %{age_restriction}."
+            only_specific_individual_group_values: "Deelname is beperkt tot: %{individual_group_values}."
+            phase_not_active: Deze projectfase is niet actief
+            phase_expired: Deze projectfase is al afgelopen
+            phase_not_current: Deze projectfase is nog niet gestart
+            only_admins: Deelname is beperkt tot admin-gebruikers.
+            no_registered_address: Er kon geen geregistreerd adres aan uw account worden toegewezen. Gelieve uw account te actualiseren.
+            only_specific_registered_address_groupings: Deelname is beperkt tot een ander gebied.
+        ballot_component:
+          budget_phase:
+            not_logged_in: "Om verder te gaan, moet u zich %{sign_in} of %{sign_up}."
+            missing_user_data: "Om verder te gaan, gelieve te vragen %{enter_missing_user_data}."
+            not_verified: "Om verder te gaan, alstublieft %{verify}."
+            organization: Organisaties mogen deelnemen aan deze stemming.
+            only_citizens: Deelname is beperkt tot burgers van de stad.
+            only_specific_geozones: "Deelname is beperkt tot burgers uit de volgende gebieden %{geozones}:"
+            only_specific_streets: "Deelname is beperkt tot omwonenden van de volgende straten: %{restricted_streets}."
+            only_specific_ages: "Deelname is beperkt tot burgers in de volgende leeftijdscategorieën: %{age_restriction}."
+            only_specific_individual_group_values: "Deelname is beperkt tot: %{individual_group_values}."
+            phase_not_active: Deze projectfase is niet actief
+            phase_expired: Deze projectfase is al afgelopen
+            phase_not_current: Deze projectfase is nog niet gestart
+            not_selected: Er kan niet worden gestemd over niet-uitvoerbare investeringsvoorstellen
+            no_ballots_allowed: De selectiefase is voltooid
+            different_heading_assigned: "U heeft al voor een andere rubriek gestemd: %{heading_link}"
+            casted_offline: Je hebt al offline gestemd
+            not_enough_available_votes: Niet genoeg beschikbare stemmen
+            only_admins: Deelname is beperkt tot admin-gebruikers.
+            no_registered_address: Er kon geen geregistreerd adres aan uw account worden toegewezen. Gelieve uw account te actualiseren.
+            only_specific_registered_address_groupings: Deelname is beperkt tot een ander gebied.
+            not_enough_money: "Je hebt al het totale beschikbare budget toegewezen."
+        commenting:
+          shared:
+            guest_not_logged_in: "Om verder te gaan, moet u %{sign_in} of %{sign_up} of %{guest_sign_in}."
+            not_logged_in: "Om verder te gaan, moet u zich %{sign_in} of %{sign_up}."
+            missing_user_data: "Om verder te gaan, gelieve te vragen %{enter_missing_user_data}."
+            not_verified: "Om verder te gaan, alstublieft %{verify}."
+            organization: Organisaties mogen geen content maken.
+            only_citizens: Deelname is beperkt tot burgers van de stad.
+            only_specific_geozones: "Deelname is beperkt tot burgers uit de volgende gebieden %{geozones}:"
+            only_specific_streets: "Deelname is beperkt tot omwonenden van de volgende straten: %{restricted_streets}."
+            only_specific_ages: "Deelname is beperkt tot burgers in de volgende leeftijdscategorieën: %{age_restriction}."
+            only_specific_individual_group_values: "Deelname is beperkt tot: %{individual_group_values}."
+            phase_not_active: Deze projectfase is niet actief
+            phase_expired: Deze projectfase is al afgelopen
+            phase_not_current: Deze projectfase is nog niet gestart
+            only_admins: Deelname is beperkt tot admin-gebruikers.
+            no_registered_address: Er kon geen geregistreerd adres aan uw account worden toegewezen. Gelieve uw account te actualiseren.
+            only_specific_registered_address_groupings: Deelname is beperkt tot een ander gebied.
+          budget_phase:
+            investment_unfeasible: Er kan geen commentaar worden gegeven op niet-uitvoerbare investeringsvoorstellen
+            too_late: Op dit moment zijn er geen verdere opmerkingen meer mogelijk.
+        poll_votes:
+          guest_not_logged_in: "Om verder te gaan, moet u %{sign_in} of %{sign_up} of %{guest_sign_in}."
+          not_logged_in: "Om verder te gaan, moet u zich %{sign_in} of %{sign_up}."
+          missing_user_data: "Om verder te gaan, gelieve te vragen %{enter_missing_user_data}."
+          not_verified: "Om verder te gaan, alstublieft %{verify}."
+          organization: Organisaties mogen niet stemmen.
+          only_citizens: Deelname is beperkt tot burgers van de stad.
+          only_specific_geozones: "Deelname is beperkt tot burgers uit de volgende gebieden %{geozones}:"
+          only_specific_streets: "Deelname is beperkt tot omwonenden van de volgende straten: %{restricted_streets}."
+          only_specific_ages: "Deelname is beperkt tot burgers in de volgende leeftijdscategorieën: %{age_restriction}."
+          only_specific_individual_group_values: "Deelname is beperkt tot: %{individual_group_values}."
+          phase_not_active: Deze projectfase is niet actief
+          phase_expired: Deze projectfase is al afgelopen
+          phase_not_current: Deze projectfase is nog niet gestart
+          poll_expired: Deze afstemming is al verlopen
+          poll_not_current: Deze afstemming is nog niet gestart
+          only_admins: Deelname is beperkt tot admin-gebruikers.
+          no_registered_address: Er kon geen geregistreerd adres aan uw account worden toegewezen. Gelieve uw account te actualiseren.
+          only_specific_registered_address_groupings: Deelname is beperkt tot een ander gebied.
+        legislation_annotations:
+          not_logged_in: "Om verder te gaan, moet u zich %{sign_in} of %{sign_up}."
+          missing_user_data: "Om verder te gaan, gelieve te vragen %{enter_missing_user_data}."
+          not_verified: "Om verder te gaan, alstublieft %{verify}."
+          organization: Organisaties mogen geen content maken.
+          only_citizens: Deelname is beperkt tot burgers van de stad.
+          only_specific_geozones: "Deelname is beperkt tot burgers uit de volgende gebieden %{geozones}:"
+          only_specific_streets: "Deelname is beperkt tot omwonenden van de volgende straten: %{restricted_streets}."
+          only_specific_ages: "Deelname is beperkt tot burgers in de volgende leeftijdscategorieën: %{age_restriction}."
+          only_specific_individual_group_values: "Deelname is beperkt tot: %{individual_group_values}."
+          phase_not_active: Deze projectfase is niet actief
+          phase_expired: Deze projectfase is al afgelopen
+          phase_not_current: Deze projectfase is nog niet gestart
+          only_admins: Deelname is beperkt tot admin-gebruikers.
+          no_registered_address: Er kon geen geregistreerd adres aan uw account worden toegewezen. Gelieve uw account te actualiseren.
+          only_specific_registered_address_groupings: Deelname is beperkt tot een ander gebied.
+        projekt_questions:
+          guest_not_logged_in: "Om verder te gaan, moet u %{sign_in} of %{sign_up} of %{guest_sign_in}."
+          not_logged_in: "Om verder te gaan, moet u zich %{sign_in} of %{sign_up}."
+          missing_user_data: "Om verder te gaan, gelieve te vragen %{enter_missing_user_data}."
+          not_verified: "Om verder te gaan, alstublieft %{verify}."
+          organization: Organisaties mogen geen content maken.
+          only_citizens: Deelname is beperkt tot burgers van de stad.
+          only_specific_geozones: "Deelname is beperkt tot burgers uit de volgende gebieden %{geozones}:"
+          only_specific_streets: "Deelname is beperkt tot omwonenden van de volgende straten: %{restricted_streets}."
+          only_specific_ages: "Deelname is beperkt tot burgers in de volgende leeftijdscategorieën: %{age_restriction}."
+          only_specific_individual_group_values: "Deelname is beperkt tot: %{individual_group_values}."
+          phase_not_active: Deze projectfase is niet actief
+          phase_expired: Deze projectfase is al afgelopen
+          phase_not_current: Deze projectfase is nog niet gestart
+          only_admins: Deelname is beperkt tot admin-gebruikers.
+          no_registered_address: Er kon geen geregistreerd adres aan uw account worden toegewezen. Gelieve uw account te actualiseren.
+          only_specific_registered_address_groupings: Deelname is beperkt tot een ander gebied.
+        projekt_livestreams:
+          guest_not_logged_in: "Om verder te gaan, moet u %{sign_in} of %{sign_up} of %{guest_sign_in}."
+          not_logged_in: "Om verder te gaan, moet u zich %{sign_in} of %{sign_up}."
+          missing_user_data: "Om verder te gaan, gelieve te vragen %{enter_missing_user_data}."
+          not_verified: "Om verder te gaan, alstublieft %{verify}."
+          organization: Organisaties mogen geen content maken.
+          only_citizens: Deelname is beperkt tot burgers van de stad.
+          only_specific_geozones: "Deelname is beperkt tot burgers uit de volgende gebieden %{geozones}:"
+          only_specific_streets: "Deelname is beperkt tot omwonenden van de volgende straten: %{restricted_streets}."
+          only_specific_ages: "Deelname is beperkt tot burgers in de volgende leeftijdscategorieën: %{age_restriction}."
+          only_specific_individual_group_values: "Deelname is beperkt tot: %{individual_group_values}."
+          phase_not_active: Deze projectfase is niet actief
+          phase_expired: Deze projectfase is al afgelopen
+          phase_not_current: Deze projectfase is nog niet gestart
+          only_admins: Deelname is beperkt tot admin-gebruikers.
+          no_registered_address: Er kon geen geregistreerd adres aan uw account worden toegewezen. Gelieve uw account te actualiseren.
+          only_specific_registered_address_groupings: Deelname is beperkt tot een ander gebied.
+      restrictions:
+        hint: Om de deelname te kunnen beperken, moeten gebruikers worden geverifieerd.
+        verification:
+          title: Verificatie
+          no_restriction: Allegebruikers
+          only_verified: Alleen geverifieerde gebruikers
+        age:
+          title: Leeftijd
+          no_restriction: Geen beperking
+        individual_group_values:
+          title: Beperking tot groepen

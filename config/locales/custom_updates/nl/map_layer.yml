@@ -1,0 +1,17 @@
+nl:
+  custom:
+    map_layer:
+      hints:
+        attribution: Tekst, kan HTML-tags bevatten
+        layer_names: WMS kaartniveau naam (s), komma gescheiden, zonder spaties
+        name: zichtbaar voor eindgebruikers
+        provider: Kaart-URL
+        opacity: Transparantie instellen voor de kaartlaag
+      labels:
+        attribution: Attributie
+        layer_names: Kaartlaagnaam
+        protocol: Kaartprotocol
+        provider: Aanbieder
+        transparent: transparant
+      buttons:
+        new_layer: Nieuwe kaartlaag aanmaken

@@ -1,0 +1,14 @@
+nl:
+  custom:
+    topics:
+      hide:
+        success: Het onderwerp is verborgen.
+      restore:
+        success: Het onderwerp werd weergegeven.
+      list:
+        empty_list_text: Geen bijdragen
+        orders:
+          most_voted: Best beoordeeld
+          newest: Nieuwste eerst
+          oldest: Oudste eerst
+          most_commented: Meest becommentarieerd

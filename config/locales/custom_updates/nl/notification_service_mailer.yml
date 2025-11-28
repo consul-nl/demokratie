@@ -1,0 +1,109 @@
+nl:
+  custom:
+    notification_service_mailers:
+      shared:
+        hi: Hallo %{username},
+        unsubscribe_html: Als je geen verdere meldingen over dit bericht wilt ontvangen, klik dan <a href="%{url}" target="_blank">hier</a> en klik op de meldingsbel (je moet ingelogd zijn).
+      overdue_deficiency_reports:
+        subject: Gebrek is nog niet verwerkt
+        hi: Geachte ambtenaar,
+        p1_s: U kreeg twee weken geleden een defect toegewezen voor verwerking, dat nog niet is verwerkt.
+        p1_p: U heeft twee weken geleden meerdere gebreken gekregen voor behandeling die nog niet zijn afgehandeld.
+      new_comments_for_deficiency_report:
+        subject: "Commentaar op defectmelding (%{deficiency_report_title}) is nog niet verwerkt"
+        hi: Beste ambtenaar,
+        p1_initial: "U hebt zojuist de volgende opmerking toegewezen gekregen over een defectmelding voor verwerking:"
+        p1_reminder: Er is u onlangs een opmerking over een defectmelding toegewezen die nog niet is verwerkt.
+      not_assigned_deficiency_reports:
+        subject: Tekortkomingen toewijzen nog in behandeling
+        hi: Beste admin,
+        p1_s: er is sprake van een gebrek dat nog niet is toegewezen.
+        p1_p: er zijn meerdere gebreken die nog niet zijn toegewezen.
+      new_proposal:
+        subject: Nieuw voorstel op consul
+        hi: Hallo %{username},
+        p1: er is een nieuw voorstel op consul binnengekomen of een bestaand voorstel is gewijzigd.
+      new_debate:
+        subject: Nieuwe discussiebijdrage op consul
+        hi: Hallo %{username},
+        p1: er is een nieuwe discussiebijdrage gemaakt op Consul.
+      new_comment:
+        subject: Nieuwe opmerking op het participatieplatform.
+        title: Nieuwe opmerking op het participatieplatform.
+        hi: Hallo %{username},
+        p1: er is een nieuw commentaar geplaatst op het participatieplatform.
+      new_deficiency_report:
+        subject: Nieuwe defectmelding %{identifier}
+        hi: Hallo %{username},
+        p1: er is een nieuw defect gemeld.
+      new_manual_verification_request:
+        subject: Nieuwe gebruikersverificatie
+        hi: "Hallo %{user_to_notify_username},"
+        p1: "%{user_to_verify_username} heeft zich zojuist geverifieerd."
+        link_text: Admin (demokratie.today)
+      new_poll:
+        subject: Nieuwe afstemming op consul
+        hi: Hallo %{username},
+        p1: er is een nieuwe stemming op consul binnengekomen.
+      projekt_questions:
+        subject: Nieuwe korte enquête op consul
+        hi: Hallo %{username},
+        link: Korte enquête
+        p1: er is een nieuwe korte enquête op consul binnengekomen.
+      projekt_arguments:
+        subject: Voors en tegens stemmen op consul
+        hi: Hallo %{username},
+        link: Voors en tegens stemmen
+        p1: er zijn nieuwe voors en tegens op de consul binnengekomen.
+      new_budget_investment:
+        subject: Er is een nieuw voorstel ingediend!
+        title: Er is een nieuw voorstel ingediend!
+        hi: Hallo %{username},
+        p1: "er is een nieuw voorstel %{projekt_link} ingediend. Bekijk hem hier: %{proposal_link}"
+        projekt_link_text: Project
+        sincerely: Met vriendelijke groet,
+      new_projekt_notification:
+        subject: Nieuwe projectmelding op consul
+        hi: Hallo %{username},
+        link: Projectmelding
+        p1: er is een nieuwe projectmelding ontvangen op consul.
+      new_projekt_event:
+        subject: Nieuw evenement op Consul
+        hi: Hallo %{username},
+        link: Evenement
+        p1: er is een nieuw evenement op de consul binnengekomen.
+      new_projekt_milestone:
+        subject: Nieuwe mijlpaal op consul
+        hi: Hallo %{username},
+        link: Mijlpaal
+        p1: er is een nieuwe mijlpaal bereikt voor consul.
+      new_projekt_livestream:
+        subject: Nieuwe livestream op consul
+        hi: Hallo %{username},
+        link: Livestream
+        p1: consul heeft een nieuwe livestream ontvangen.
+      user_reverification_failed:
+        subject: De verificatie van uw account is opgeheven
+        hi: Geachte heer/mevrouw %{last_name},
+        p1_html: de verificatie van uw gebruikersaccount op het deelnameplatform is geannuleerd. Op dit moment kunt u dus niet deelnemen aan participatieprojecten waarvoor een geverifieerd account vereist is (bijvoorbeeld burgerbudget)
+        p2_html: <strong>Woon je in het stedelijk gebied?</strong><br>Onder <a href="%{base_url}/account">%{base_url}/account</a> kunt u uw persoonlijke gegevens controleren en opnieuw verifiëren. Let hierbij op de exact juiste schrijfwijze van uw persoonlijke gegevens.
+        p3_html: <strong>Bent u verhuisd?</strong><br>Ook als buitenlander kunt u nog steeds deelnemen aan vele participatieprojecten op het participatieplatform. Wijzig a.u.b. uw woonplaats onder <a href="%{base_url}/account">%{base_url}/account</a>.
+        p4_html: Als u vragen heeft, aarzel dan niet om contact met ons op te nemen.
+        signature_html: Hartelijk dank voor uw deelname.
+      user_reverification_succeeded:
+        subject: De verificatie van uw account is voltooid
+        hi: Geachte heer/mevrouw %{last_name},
+        p1_html: de verificatie van uw gebruikersaccount op het deelnameplatform is voltooid. U kunt dus deelnemen aan participatieprojecten waarvoor een geverifieerd account vereist is.
+        signature_html: Hartelijk dank voor uw deelname.
+      new_topic:
+        subject: Nieuw onderwerp op consul
+        hi: Hallo %{username},
+        p1: er is een nieuw onderwerp aangemaakt.
+      new_proposal_notification:
+        subject: "Nieuwe notificatie voorstel: %{proposal_title}"
+        hi: Hallo %{username},
+        intro_html: "De auteur van het voorstel %{proposal_link} heeft een nieuwe notificatie aangemaakt:"
+        unsubscribe_html: Als u geen verdere meldingen over dit voorstel wilt ontvangen, gaat u naar <a href="%{url}" target="_blank">de</a> suggestiepagina en klikt u op "Niet meer volgen" (hiervoor moet u ingelogd zijn).
+      memo:
+        subject: Nieuwe memobijdrage
+        intro_html: "Een nieuwe memo-melding in het defect %{root_momoable_link} is voor u gedeponeerd:"

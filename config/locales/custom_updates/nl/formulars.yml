@@ -1,0 +1,14 @@
+nl:
+  custom:
+    formular_answer:
+      form:
+        select_prompt: klik hier voor een selectie
+        submit: Verzenden
+      notifications:
+        success: Hartelijk dank! Uw formulier is met succes ingediend.
+      errors:
+        blank: Mag niet leeg zijn
+        length:
+          minimum: Minstens %{minimum} letters
+          maximum: Niet meer dan %{maximum} letters
+        format: Het formaat is onjuist

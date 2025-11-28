@@ -1,0 +1,28 @@
+nl:
+  custom:
+    users:
+      settings: Accountinstellingen
+      activity: Activiteit
+      my_activity: Mijn activiteit
+      contact: Contact
+      banner:
+        registered_at: "Aangemeld op: %{date}"
+      index:
+        title: Overzicht van alle gebruikers
+        users_count: Gebruikers
+      shared:
+        auth_page:
+          legend: Ontwerp de stad volgens uw ideeën! Eenmaal geregistreerd heeft u altijd toegang tot de onderwerpen die ons allemaal bezighouden – en kunt u actief deelnemen aan de projecten.
+      omniauth:
+        identity_taken: "We konden uw account niet verifiëren. Neem dan contact met ons op via mail."
+        email_taken_html: "Het bij uw BundID gedeponeerde e-mailadres wordt al gebruikt op consul.<br>Wijzig uw BundID-e-mailadres of log in op uw bestaande Consul-account."
+        email_updated: "Het e-mailadres dat bij uw BundID is opgeslagen, verschilt van het e-mailadres van uw consul. We hebben beide accounts samengevoegd en uw consul-e-mailadres gewijzigd. U kunt in de toekomst met dit e-mailadres inloggen op Consul: %{email}"
+        verification_successfull: U bent succesvol geverifieerd met de BundID.
+    user_page:
+      filters:
+        proposals: Suggesties
+        debates: Discussies
+        budget_investments: Budgetinvesteringen
+        deficiency_reports: Gebrekmeldingen
+        comments: Reacties
+        follows: Volg ik

@@ -1,0 +1,27 @@
+nl:
+  moderation:
+    show_only_with_flags: Alleen door gebruikers gerapporteerde advertenties weergeven
+    proposals:
+      index:
+        filters:
+          all: alle
+          unseen: ongelezen
+          seen: gelezen
+    debates:
+      index:
+        filters:
+          all: alle
+          unseen: ongelezen
+          seen: gelezen
+    comments:
+      index:
+        filters:
+          all: alle
+          unseen: ongelezen
+          seen: gelezen
+    budget_investments:
+      index:
+        filters:
+          all: alle
+          unseen: ongelezen
+          seen: gelezen

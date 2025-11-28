@@ -1,0 +1,27 @@
+nl:
+  custom:
+    terms:
+      older_than_14:
+        title: Minimumleeftijd
+        label: Door je te registreren bevestig je dat je minimaal 14 jaar oud bent. Personen onder de 14 jaar kunnen zich volgens de algemene gebruiksvoorwaarden niet zelf registreren.
+      newsletter:
+        title: Nieuwsbrief
+        label: Ik wil de nieuwsbrief ontvangen.
+      data_storage:
+        title: Gegevensverwerking
+        label: Door u te registreren, accepteert u dat wij de hier verzamelde gegevens opslaan voor verwerking.
+      data_protection:
+        title: Gegevensbeschermingsovereenkomst
+        label: Door u te registreren, accepteert u de %{privacy_link}
+      general:
+        title: Algemene gebruiksvoorwaarden
+        label: Door u te registreren, accepteert u de %{terms_link}
+      privacy_link:
+        text: Gegevensbeschermingsovereenkomst
+      terms_link:
+        text: Algemene gebruiksvoorwaarden
+      revoke_consent:
+        text: U kunt uw toestemming voor de opslag van gegevens te allen tijde intrekken zonder opgave van redenen.
+      resource_terms:
+        title: Bijdrageovereenkomst
+        label: Mijn bijdrage komt overeen met %{terms_link} en %{privacy_link}

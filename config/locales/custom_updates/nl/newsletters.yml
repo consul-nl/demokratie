@@ -1,0 +1,20 @@
+nl:
+  admin:
+    segment_recipient:
+      newsletter_subscribers: Nieuwsbriefabonnees (alle gebruikers + nieuwsbriefabonnees)
+  custom:
+    newsletters:
+      new_projekt:
+        subject: "Nieuw project: %{title}"
+        total_duration_start: Start project
+        total_duration_end: Looptijd van het project
+        total_duration_end_till: tot
+        open_phases: Participatiefasen
+        url: Naar het project
+        url_participate: Ik wil meedoen!
+      subscription:
+        already_subscribed: "%{email} is al ingeschreven voor de nieuwsbrief"
+        please_confirm: "Bevestig de aanmelding voor de nieuwsbrief, die wij u per e-mail naar het volgende adres hebben gestuurd: %{email}"
+        confirm_subscription_html: "Door hierop te klikken, %{link} bevestigt u de aanmelding voor de nieuwsbrief."
+        successfully_subscribed: "Succesvol ingeschreven voor de nieuwsbrief"
+        successfully_unsubscribed: "Succesvol afgemeld voor de nieuwsbrief"

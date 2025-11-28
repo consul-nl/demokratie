@@ -1,0 +1,186 @@
+nl:
+  custom:
+    projekts:
+      empty_list_text: Geen projecten voor huidige filters
+      overview_page:
+        projekt_name: Projectoverzichtspagina
+        projekt_name_for_proposal: Nieuw projectvoorstel
+        projekt_name_for_debate: Nieuwe discussie
+        projekt_name_for_poll: Afstemming
+      backlink: Naar het projectoverzicht
+      errors:
+        presence: Selecteer een project
+      index:
+        current_projekts: Projecten met actieve participatiefase
+        expired_projekts: Afgeronde projecten
+        no_projekts: Geen projecten
+        title: Projectoverzicht
+        to_projekt: Naar het project
+        social_share:
+          title: Projectoverzicht
+          description: Het overzicht van alle projecten
+        information_default_text: Kom in actie en neem deel aan de lopende projecten. Jouw bijdrage is belangrijk en telt!
+        count: Projecten
+        welcome_default_text_html: In het projectoverzicht zetten we alle projecten op een rijtje die momenteel besproken worden. Gebruik het filter om alle projecten te bekijken of ze op actualiteit, op activiteit, op datum of individueel op basis van uw voorkeuren te laten weergeven. Daarnaast helpt de kaart je om de projecten in de stad te lokaliseren.
+      filters:
+        index_order_all: 'Alle projecten'
+        index_order_all_title: 'Alle projecten'
+        index_order_expired: Afgerond
+        index_order_expired_title: 'In het tabblad "Voltooid" zijn participatieprojecten vermeld die zijn voltooid. Zowel de participatiefase als het project op zich.'
+        index_order_ongoing: Lopende projecten
+        index_order_ongoing_title: 'In het tabblad ''Lopende projecten'' zijn projecten die nog lopen, maar de deelname al is afgerond.'
+        index_order_underway: Actieve participatie
+        index_order_underway_title: 'In het tabblad ''Actieve participatie'' zijn projecten waar je op dit moment aan mee kunt doen.'
+        index_order_upcoming: Toekomstige projecten
+        index_order_upcoming_title: 'In het tabblad ''Toekomstige projecten'' staan participatieprojecten die pas in de toekomst plaatsvinden.'
+        index_order_individual_list: "Individuele lijst"
+        index_order_individual_list_title: "Individuele lijst"
+        index_order_drafts: "Ontwerpen"
+        index_order_drafts_title: "Ontwerpen"
+      search_form:
+        placeholder: Zoeken...
+      homepage_search_form:
+        placeholder: Projecten doorzoeken...
+      page:
+        footer:
+          sidebar:
+            projekt_labels:
+              title: Labels
+            sentiments:
+              title: Sentiment
+          budget:
+            investments_subtab: Suggesties
+        projekt_events_tab:
+          event_date: Datum
+          event_location: Locatie
+          event_time: Tijd
+          event_title: Evenementtitel
+          event_weblink: Weblink
+          event_projekt: Project
+          no_events: Geen evenementen
+          title: Komende evenementen
+        sidebar:
+          admin_controls:
+            title: Administratie
+            copy_code: Broncode kopiëren
+            edit_projekt: Projectinstellingen
+            edit_map: Kaart bewerken
+            edit_projekt_page: Projectpagina
+            edit_projekt_phases: Projectfasen
+            edit_projekt_settings: Projectfuncties
+            edit_projekt_managers: Projectmanagers
+            edit_projekt_map: Kaartinstellingen
+            edit_projekt_sdg: SDG's & tags
+            create_newsletter_draft: Nieuwsbrief ontwerp
+          projekt_information:
+            title: Projectinformatie
+          map:
+            title: Kaart
+          phases:
+            title: Fasen
+            participate: Open voor participatie!
+          sdgs:
+            title: SDG's
+          tags:
+            title: Tags
+          navigator:
+            title: Opbouw
+          projekt_start: Start project
+          projekt_end: Gepl. oplevering
+          phases_subscription:
+            title: Notificaties
+            description: Wilt u op de hoogte blijven van dit project?
+          share:
+            title: Delen
+        tabs:
+          budget: Budgetten
+          comments: Reacties
+          debates: Discussies
+          milestones: Mijlpalen
+          newsfeed: News Feed
+          polls: Stemmen
+          projekt_events: Evenementen
+          projekt_notifications: Notificaties
+          projekt_questions: Korte enquête
+          projekt_arguments: Stemmen
+          projekt_livestreams: Livestream
+          proposals: Suggesties
+          questions: Vragen
+          legislation: Tekstverwerking
+      link_to_phase_prefix: Direct naar de
+      phase_name:
+        budget_phase: Budget
+        comment_phase: Reacties
+        debate_phase: Discussies
+        event_phase: Evenementen
+        legislation_process_phase: Tekstbewerkingsfase
+        legislation_phase: Tekstverwerking
+        milestone_phase: Mijlpalen
+        newsfeed_phase: Newsfeed
+        projekt_notification_phase: Notificaties
+        proposal_phase: Suggesties
+        question_phase: Korte enquête
+        voting_phase: Stemmen
+        argument_phase: Stemmen
+        livestream_phase: Livestream
+      projekt_events:
+        index:
+          title: Evenementenkalender
+          social_share:
+            title: Evenementen
+            description: "Het evenementenoverzicht van %{domain}"
+        filters:
+          all: Alle
+          incoming: Komende
+          past: Verleden
+      projekt_questions:
+        back_to_question_list: 'Terug naar de vragenlijst'
+        comments_button: Antwoord publiceren
+        comments_count: "%{count} open antwoorden"
+        comment_votes_count: "%{count} Up- & Downvotes"
+        comments_title: Open antwoorden
+        previous_question: Vorige vraag
+        next_question: Volgende vraag
+        first_question: Eerste vraag
+        answers_count: "%{count} Stemmen"
+        new_question_notification: "Nieuwe vraag: %{question_title}"
+        all_questions: Alle vragen
+        go_to_question: Ga naar vraag
+        participation_not_allowed:
+          login_to_answer: U moet uzelf %{signin} of %{signup}om deel te nemen aan de korte enquête.
+          organizations: Organisaties mogen niet deelnemen aan de discussie
+          not_verified: 'Alleen geverifieerde gebruikers kunnen deelnemen: %{verify_account}.'
+          phase_expired: Deelname is al beëindigd
+          phase_not_yet_started: De participatie is nog niet begonnen
+          phase_not_active: De fase is niet geactiveerd
+      projekt_arguments:
+        pro: Per
+        cons: Contra
+        fields:
+          name: Naam
+          party: Partij
+          position: Positie
+          note: Stem
+      projekt_livestreams:
+        links_title: Livestreams
+        current_livestream: Huidige livestream
+        no_livestreams: Geen livestreams
+        video_platform_not_supported: "Videoplatform wordt niet ondersteund. Ondersteunde platformen: YouTube, Vimeo"
+      selector:
+        connected_resources:
+          debate_description: Wijs uw discussie toe aan een van de volgende projecten of subprojecten. Dit om de discussies in het discussieoverzicht beter vindbaar te maken.
+          debate_title: Toewijzing van de discussie aan een project
+          proposal_description: Wijs uw voorstel toe aan een van de volgende projecten of subprojecten. Dit om de voorstellen in het voorsteloverzicht beter vindbaar te maken.
+          proposal_title: Toewijzing van het voorstel aan een project
+        select_placeholder_mandatory_html: Kies project (verplicht)
+      sidebar:
+        sdgs: SDG's
+      sidebar_filter:
+        filter_button: Filter op projecten
+        title: Projecten
+        title_active: Actieve projecten
+        title_archived: Verlopen projecten
+      list:
+        title: Projectoverzicht
+      filter:
+        title: Filteren op

@@ -1,0 +1,88 @@
+nl:
+  mailers:
+    shared:
+      sincerely: Met vriendelijke groet,
+      signature: Uw ons.muenchen-team
+    budget_investment_unfeasible:
+      subject: "Uw voorstel voldoet helaas niet aan de criteria."
+      title: "Uw voorstel voldoet helaas niet aan de criteria."
+      hi: "Hallo %{username},"
+      text1: "we hebben uw voorstel %{proposal_link} bekeken: helaas voldoet het niet aan de criteria."
+      text2: "Hij wordt dus niet %{projekt_link} toegelaten tot de volgende fase van het."
+      reason: "Motivering:"
+      text3: "Mocht u hier vragen over hebben, neem dan gerust contact met ons op. U bent van harte uitgenodigd om een nieuw voorstel in te dienen."
+      projekt_link_text: Project
+      sincerely: Met vriendelijke groet,
+    manual_verification_confirmation:
+      subject: Uw account is zojuist geverifieerd.
+      p1: Uw account is zojuist geverifieerd.
+      p2: Hartelijk dank voor uw deelname.
+    formular_answer_confirmation:
+      subject: Hartelijk dank! Uw formulier is met succes ingediend.
+      p1: Hartelijk dank voor het indienen van uw formulier. Wij zullen de gegevens nu intern controleren en indien nodig weer naar u toe komen.
+    formular_follow_up_letter:
+      button_text: Naar het formulier
+    budget_investment_feasible:
+      subject: "Gefeliciteerd, uw voorstel voldoet aan de criteria."
+      title: "Gefeliciteerd, uw voorstel voldoet aan de criteria."
+      hi: "Hallo %{username},"
+      projekt_link_1_text: Criteria
+      projekt_link_2_text: Project
+      text: "we hebben uw suggestie %{proposal_link} bekeken: uw suggestie komt overeen %{projekt_link_1}. Daarmee wordt hij %{projekt_link_2} toegelaten tot de volgende fase van het."
+      sincerely: Met vriendelijke groet,
+    newsletter_subscription_for_existing_user:
+      subject: Aanmelding voor de nieuwsbrief
+      p1_html: Er is een poging gedaan om u met uw e-mailadres aan te melden voor onze nieuwsbrief. Aangezien u al een Consul-account heeft, willen wij u vragen om in te loggen en de optie om de nieuwsbrief te ontvangen in uw <a href=%{link}>accountinstellingen</a> te activeren.
+    file_ready:
+      subject: Data export
+      p1_html: U heeft een export aangevraagd. De gegevens zijn nu geëxporteerd en zijn als bijlage bijgevoegd.
+    individual_group_value_users_added:
+      subject: Het uploaden van de CSV-gegevens is met succes voltooid.
+      p1_html: "Uw gegevens zijn succesvol toegevoegd: <a href=\"%{url}\">%{url}</a>"
+    resource_hidden:
+      subject: Uw bijdrage is in strijd met de netiquette.
+      title: Uw bijdrage is in strijd met de netiquette.
+      hi: "Hallo %{username},"
+      text1: "we hebben uw bijdrage gecontroleerd: %{text}"
+      text2: "Helaas schendt hij de netiquette van dit platform. We hebben uw bijdrage daarom verwijderd."
+      text3: U kunt de regels van de netiquette %{netiquette_link} nalezen.
+      netiquette_link_text: hier
+      text4: Mocht u hier vragen over hebben, neem dan gerust contact met ons op. U bent van harte uitgenodigd om een nieuwe bijdrage te maken die voldoet aan de netiquette.
+      sincerely: Met vriendelijke groet,
+    comment:
+      subject: Uw suggestie is becommentarieerd.
+      title: Uw suggestie is becommentarieerd.
+      hi: "Hallo %{username},"
+      text: Uw suggestie is becommentarieerd. Bekijk de opmerking %{comment_link} .
+      comment_link_text: hier
+      sincerely: Met vriendelijke groet,
+    reply:
+      subject: Er is gereageerd op uw opmerking.
+      title: Er is gereageerd op uw opmerking.
+      hi: Hallo %{username},
+      text: "Een andere gebruiker heeft op uw opmerking gereageerd. Bekijk hier het antwoord: %{comment_link}"
+      comment_link_text: hier
+      sincerely: Met vriendelijke groet,
+    budget_investment_preselected:
+      subject: Gefeliciteerd, uw voorstel gaat door naar de volgende ronde!
+      title: Gefeliciteerd, uw voorstel gaat door naar de volgende ronde!
+      hi: "Hallo %{username},"
+      text1: Uw voorstel %{proposal_link} heeft voldoende stemmen gekregen en wordt nu technisch onderzocht.
+      text2: Het resultaat van de audit wordt %{projekt_link} gepubliceerd aan het begin van de volgende fase van de.
+      projekt_link_text: Project
+      sincerely: Met vriendelijke groet,
+    budget_investment_not_preselected:
+      subject: Jammer, uw voorstel is helaas niet doorgegaan naar de volgende ronde.
+      title: Jammer, uw voorstel is helaas niet doorgegaan naar de volgende ronde.
+      hi: "Hallo %{username},"
+      text1: Uw voorstel %{proposal_link} heeft helaas niet genoeg stemmen gekregen.
+      text2: Hij wordt daarom niet %{projekt_link} toegelaten tot de volgende fase van het.
+      projekt_link_text: Project
+      sincerely: Met vriendelijke groet,
+    proposal_created:
+      hi: "Hallo %{username},"
+      text1: "Uw voorstel is met succes ontvangen: %{proposal_link}"
+    new_valuator_assignment:
+      subject: Er is een voorstel voor evaluatie aan u toegewezen
+      hi: "Hallo %{username},"
+      text1: "Er is een voorstel voor evaluatie aan u toegewezen: %{valuation_link}"

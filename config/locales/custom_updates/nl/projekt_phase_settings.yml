@@ -1,0 +1,197 @@
+nl:
+  custom:
+    projekt_phase_settings:
+      debates:
+        feature:
+          general:
+            only_admins_create_debates: Alleen admins kunnen nieuwe discussies aanmaken
+            only_admins_create_debates_description: Het aanmaken van nieuwe discussies is beperkt tot admins
+          form:
+            allow_attached_image: Omslagfoto toevoegen
+            allow_attached_image_description: Hiermee kunnen burgers een omslagfoto toevoegen.
+            allow_attached_documents: Aanvullende documenten
+            allow_attached_documents_description: Hiermee kunnen gebruikers documenten toevoegen aan de discussie
+          resource:
+            allow_voting: Ondersteunen van discussies
+            allow_voting_description: Activeer de ondersteuning van discussies met duimen omhoog en omlaag
+            allow_downvoting: Downvotes activeren
+            allow_downvoting_description: Activeer de knop "Duim naar beneden"
+            show_report_button_in_sidebar: Discussie melden
+            show_report_button_in_sidebar_description: Activeer de meldfunctie voor discussies
+            show_related_content: Gerelateerde inhoud
+            show_related_content_description: Activeer de functie "Gerelateerde inhoud" voor discussies
+            show_comments: Reacties
+            show_comments_description: Activeer "Opmerkingen" voor de discussiemodule
+      proposals:
+        feature:
+          general:
+            set_default_sorting_to_newest: Standaard sortering wijzigen naar 'Nieuwste'
+            set_default_sorting_to_newest_description: Geeft standaard de meest recente berichten weer in plaats van de meest actieve berichten
+            browse_mode_in_phase_footer: Bladeren modus in de suggestie footer
+            browse_mode_in_phase_footer_description: Maakt het mogelijk om individueel door de suggesties te bladeren
+            browse_mode_in_phase_footer_by_default: Bladermodus als standaard instellen
+            browse_mode_in_phase_footer_by_default_description: Gebruikers die naar de pagina komen, starten direct in de bladermodus
+          form:
+            allow_attached_image: Omslagfoto
+            allow_attached_image_description: Hiermee kunnen burgers een omslagfoto toevoegen.
+            enable_summary: "\"Samenvatting\" tonen"
+            enable_summary_description: "Toont het veld \"Samenvatting\" in de voorstellen"
+            labels: Labels
+            labels_description: Activeer labels om uw project extra te structureren
+            sentiments: Sentiments
+            sentiments_description: Activeer sentimenten om de gebruiker in staat te stellen gevoelens te uiten
+            show_map: Kaart
+            show_map_description: Toont de kaart voor suggesties in dit project
+            enable_geoman_controls_in_maps: Polygonen in kaart
+            enable_geoman_controls_in_maps_description: Hiermee kunnen gebruikers rechthoeken, cirkels, enz. tekenen.
+            allow_attached_documents: Documenten
+            allow_attached_documents_description: Stelt gebruikers in staat om documenten aan de voorstellen toe te voegen
+            enable_external_video: Video
+            enable_external_video_description: Hiermee kunnen gebruikers externe video's integreren via YouTube en Vimeo
+          resource:
+            users_can_create_proposals: Suggesties indienen
+            users_can_create_proposals_description: Gebruikers kunnen suggesties doen
+            allow_voting: Ondersteuning
+            allow_voting_description: Ondersteuning voor suggesties inschakelen
+            enable_proposal_support_withdrawal: Voorstelondersteuning intrekken
+            enable_proposal_support_withdrawal_description: Activeer de intrekking van de voorstelondersteuning
+            quorum_for_proposals: Quorum
+            quorum_for_proposals_description: Activeer een quorum voor suggesties
+            enable_up_and_down_voting: Duim omhoog | omlaag
+            enable_up_and_down_voting_description: Activeer duim omhoog | omlaag
+            show_report_button_in_sidebar: Melden
+            show_report_button_in_sidebar_description: Activeer de meldfunctie voor suggesties
+            show_follow_button_in_proposal_sidebar: Gevolgen
+            show_follow_button_in_proposal_sidebar_description: Activeer de functie "Voorstel volgen"
+            show_community_button_in_proposal_sidebar: Werkgroepen
+            show_community_button_in_proposal_sidebar_description: Activeer de functie "Werkgroepen" voor suggesties
+            show_related_content: Gerelateerde inhoud
+            show_related_content_description: Activeer de functie "Gerelateerde inhoud" voor suggesties
+            enable_proposal_notifications_tab: Notificaties
+            enable_proposal_notifications_tab_description: Activeer de meldingen van auteurs over eigen suggesties
+            enable_proposal_milestones_tab: Mijlpalen
+            enable_proposal_milestones_tab_description: Activeer 'Mijlpalen' in voorstellen die door de administratie moeten worden aangemaakt
+            show_comments: Reacties
+            show_comments_description: Activeer "Opmerkingen" voor de suggestiemodule
+            show_video_as_link: Video's als link
+            show_video_as_link_description: Toont de toegevoegde video's als een link in plaats van als een echte video
+        option:
+          resource:
+            votes_for_proposal_success: "Aantal stemmen dat nodig is om een voorstel goed te keuren"
+            votes_for_proposal_success_description: "Wanneer een aanvraag dit aantal uitkeringen bereikt, kan deze niet meer worden ondersteund en wordt deze als succesvol beschouwd"
+        selectable_setting:
+          general:
+            default_order: Standaard sortering
+            default_order_description: Definieer hoe de inhoud standaard moet worden gesorteerd
+            default_order_options:
+              hot_score: Meest actief
+              created_at: Nieuwste eerst
+              alphabet: Alfabetisch
+              votes_up: Meest gekozen
+              random: Willekeurig
+      polls:
+        feature:
+          resource:
+            wizard_mode: Sequentiële afstemming
+            wizard_mode_description: De afstemming wordt weergegeven in de modus van sequentiële vragen
+            show_on_home_page: Zichtbaarheid homepage
+            show_on_home_page_description: Toont de stemming op de startpagina
+            show_on_index_page: Zichtbaarheid overzichtspagina
+            show_on_index_page_description: Toont de afstemming op de overzichtspagina van alle afstemmingen
+            results_enabled: Resultaten
+            results_enabled_description: Toont de uitslag van de stemming aan het einde van de stemming
+            intermediate_poll_results_for_admins: Tussentijdse resultaten (admins / projectmanagers)
+            intermediate_poll_results_for_admins_description: Activeer inzage in tussentijdse resultaten over stemmen voor beheerders
+            stats_enabled: Statistieken
+            stats_enabled_description: Toont de afstemmingsstatistieken aan het einde van de stemming
+            advanced_stats_enabled: Uitgebreide statistieken
+            advanced_stats_enabled_description: Tijd verlengde statistieken voor afstemming aan het einde van de afstemming
+            show_comments: Reacties
+            show_comments_description: Activeer 'Opmerkingen' voor de stemmodule
+            show_open_answer_author_name: Naam publiceren
+            show_open_answer_author_name_description: Toont de gebruikersnaam van de open antwoorden
+      budget:
+        feature:
+          general:
+            set_default_sorting_to_newest: Standaard sortering wijzigen naar 'Nieuwste'
+            set_default_sorting_to_newest_description: Toont standaard de meest recente berichten in plaats van de meest actieve berichten
+            browse_mode_in_phase_footer: Bladeren modus in de suggestie footer
+            browse_mode_in_phase_footer_description: Maakt het mogelijk om individueel door de suggesties te bladeren
+            browse_mode_in_phase_footer_by_default: Bladermodus als standaard instellen
+            browse_mode_in_phase_footer_by_default_description: Gebruikers die naar de pagina komen, starten direct in de bladermodus
+          form:
+            allow_attached_image: Omslagfoto
+            allow_attached_image_description: Hiermee kunnen burgers een omslagfoto toevoegen.
+            labels: Labels
+            labels_description: Activeer labels om uw project extra te structureren
+            sentiments: Sentimenten
+            sentiments_description: Activeer sentimenten om de gebruiker in staat te stellen gevoelens te uiten
+            show_map: Kaart
+            show_map_description: Toont de kaart voor investeringsvoorstellen in dit project
+            enable_geoman_controls_in_maps: Polygonen in kaart
+            enable_geoman_controls_in_maps_description: Hiermee kunnen gebruikers rechthoeken, cirkels, enz. tekenen.
+            allow_attached_documents: Documenten
+            allow_attached_documents_description: Stelt gebruikers in staat om documenten aan de voorstellen toe te voegen
+            enable_external_video: Video
+            enable_external_video_description: Hiermee kunnen gebruikers externe video's integreren via YouTube en Vimeo
+            show_implementation_option_fields: Implementatie
+            show_implementation_option_fields_description: Voegt een selectievakje “Implementatie” toe bij het maken van een voorstel
+            show_user_cost_estimate: Prijsschatting
+            show_user_cost_estimate_description: Voegt bij het opstellen van een voorstel een keuzevakje “Prijsbeoordeling” toe
+          resource:
+            users_can_create_investment_proposals: Suggesties indienen
+            users_can_create_investment_proposals_description: Gebruikers kunnen suggesties doen
+            show_report_button_in_sidebar: Melden
+            show_report_button_in_sidebar_description: Activeer de rapportagefunctie voor investeringen
+            show_follow_button_in_sidebar: Gevolgen
+            show_follow_button_in_sidebar_description: Activeer de functie “Investering volgen”
+            show_community_button_in_sidebar: Werkgroepen
+            show_community_button_in_sidebar_description: Activeer de functie “Werkgroepen” voor investeringsvoorstellen
+            show_related_content: Gerelateerde inhoud
+            show_related_content_description: Activeer de functie "Gerelateerde inhoud" voor investeringen
+            show_comments: Reacties
+            show_comments_description: Activeer "Opmerkingen" voor de suggestiemodule
+            show_video_as_link: Video's als link
+            show_video_as_link_description: Toont de toegevoegde video's als een link in plaats van als een echte video
+            conditional_balloting: Vereenvoudigde stem
+            conditional_balloting_description: Stemmen worden voor verificatie opgenomen, maar pas na verificatie geteld
+        selectable_setting:
+          general:
+            default_order: Standaard sortering
+            default_order_description: Definieer hoe de inhoud standaard moet worden gesorteerd
+            default_order_options:
+              random: Willekeurig
+              ballot_line_weight: Actuele stemmenverdeling
+              total_votes: Huidige ranking
+              newest: Nieuwste eerst
+              comments_count: Meest becommentarieerd
+      projekt_questions:
+        feature:
+          general:
+            show_questions_list: Activeer een overzicht van alle vragen
+      milestones:
+        feature:
+          general:
+            newest_first: Toon als eerste de nieuwste mijlpalen
+            newest_first_description: Sorteert de milestones aflopend met de laatste datum eerst
+      projekt_events:
+        feature:
+          general:
+            reverse_order_for_incoming_events: Terugkerende volgorde voor inkomende gebeurtenissen
+            reverse_order_for_incoming_events_description: Sorteert de gebeurtenissen aflopend met als laatste datum eerst
+            show_on_home_page: Evenement tonen op homepage
+            show_on_home_page_description: Toont het evenement op de startpagina
+      newsfeed:
+        option:
+          general:
+            newsfeed_id: Newsfeed ID
+            newsfeed_id_description: Voer hier de ID van de nieuwsfeed in
+            newsfeed_type: Newsfeed Type
+            newsfeed_type_description: Vul hier het type news feed in
+      formular:
+        option:
+          general:
+            primary_formular_cutoff_date: Einde 1e fase
+            primary_formular_cutoff_date_description: "Geef het formaat op als volgt: dd.mm.jjjj"
+            submissions_limit: Beperking van toegestane inzendingen per gebruiker
+            submissions_limit_description: Beperk het aantal toegestane formulierinzendingen per gebruiker

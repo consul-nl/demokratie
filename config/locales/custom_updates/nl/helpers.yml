@@ -1,0 +1,6 @@
+nl:
+  helpers:
+    submit:
+      projekt_livestream:
+        create: "Livestream aanmaken"
+        update: "Livestream updaten"

@@ -1,0 +1,41 @@
+nl:
+  custom:
+    links:
+      menu:
+        home_icon: Startpagina link
+        search_icon: Zoeken
+        konto_icon: Mijn account link
+        admin_icon: Adminmenu link
+        notification_icon: Notificaties
+        all_projekts: Alle projecten
+        draft_projekts: Ontwerpen
+        projekt_name_label: "Projectnaam: %{projekt_name} "
+        archived_projekts_label: Gearchiveerde projecten
+        deficiency_reports:
+        investments_overview: Budgetoverzicht
+        projekts_overview: Projecten
+        new_entry_label: Bijdrage aanmaken
+        new_entry: + Bijdrage aanmaken
+        new_entries:
+          new_budget_investment: Nieuw voorstel aanmaken
+          new_debate: Discussiebijdrage aanmaken
+          new_proposal: Nieuw voorstel aanmaken
+        mobile:
+          arrow_projekts: Submenu omschakelen
+          arrow_account: Accountmenu omschakelen
+          arrow_admin: Adminmenu omschakelen
+          arrow_archived_projekts: Gearchiveerde projecten omschakelen
+          menu_label: Mobiel menu
+      comments:
+        expand_replies: Toon antwoorden
+        hide_replies: Antwoorden inklappen
+        comment_tree: Reacties
+      projekts_filter:
+        arrow_label: Subprojecten uitschakelen
+        projekt_name: "Projectnaam: %{projekt_name}"
+        resource_count: "Aantal bijdragen: %{resource_count}"
+      df_category_filter:
+        category_name: Categorienaam
+      welcome:
+        feeds:
+          title: Gebruikersinhoud

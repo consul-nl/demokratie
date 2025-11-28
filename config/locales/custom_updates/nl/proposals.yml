@@ -1,0 +1,79 @@
+nl:
+  custom:
+    proposals:
+      created:
+        dashboard: Opslaan als concept en later publiceren
+        publish: Nu publiceren
+      form:
+        tagging: Classificatie
+        tags_custom: Gebruikers-tags
+        tags_placeholder: Scheid de tags met een komma (',')
+        required: Uw bijdrage
+        title_placeholder: "Geef uw bijdrage een opvallende titel, bijvoorbeeld \"Zebrapad voor de XY-basisschool\" of \"Meer diversiteit op de weekmarkten\". "
+        description_placeholder: " Beschrijf hier uw bijdrage. De volgende procedure heeft zijn waarde bewezen:\n\n begin met een algemene beschrijving van uw idee en geef vervolgens aan\n wat er zou verbeteren met de uitvoering van uw voorstel.\n\n Let bij het schrijven zoveel mogelijk op korte zinnen.\n Beperk uw inhoud – indien mogelijk – tot maximaal drie alinea's.\n\n Gebruik daarnaast alinea's om je tekst leesbaarder te maken. (Veel gebruikers lezen je tekst op mobiele apparaten.)\n\n Gebruik bovendien – indien van toepassing – opsommingen en trefpunten voor een betere overzichtelijkheid. "
+        buttons:
+          save_draft: Opslaan als concept
+          publish: Nu publiceren
+      index:
+        title: "Overzicht van alle voorstellen"
+        count: Suggesties
+        max_number_reached: Je hebt het maximale aantal (%{max_number}) suggesties per gebruiker bereikt. Voordat je nog een voorstel kunt doen, moet je een actief voorstel intrekken.
+        no_active_projekt: Momenteel geen participatieprocedure
+        no_active_phase: Fase al gesloten
+        projekts: Projecten
+        show_larger_map: Toon meer
+        show_smaller_map: Toon minder
+        creation_only_for_citizens: Nieuwe voorstellen kunnen in dit project alleen worden %{city} ingediend door burgers van de stad.
+        creation_only_for_specific_geozones: Voorstellen kunnen alleen worden %{geozones} ingediend door burgers uit het postcodegebied.
+        welcome_default_text_html: In participatieprojecten kunnen burgers voorstellen maken en verzamelen op deze pagina. Suggesties kunnen worden gefilterd op mate van betrokkenheid, publicatiedatum of goedkeuring. Individuele voorstellen kunnen worden ondersteund, becommentarieerd of zelf worden gemaakt. In de rechterzijbalk maakt het platform een gerichte filtering mogelijk op voorstellen voor projecten, in bepaalde stedelijke gebieden of op trefwoorden.
+        sidebar_information_default_text: Heeft u een eigen voorstel voor een bepaald project? Door op de knop te klikken kunt u deze indienen.
+        empty_list_text: Momenteel geen gekoppelde bijdragen
+        participation_information: Participatie-informatie
+        search_form:
+          button: Zoeken
+          placeholder: Berichten doorzoeken...
+          title: Zoeken
+        orders:
+          confidence_score: Best beoordeeld
+          confidence_score_title: Best beoordeeld
+          created_at: Nieuwste eerst
+          created_at_title: Nieuwste eerst
+          hot_score: Meest actief
+          hot_score_title: Meest actief
+          most_commented: Meest becommentarieerd
+          most_commented_title: Meest becommentarieerd
+          relevance: Relevantie
+          relevance_title: Relevantie
+          archival_date: Gearchiveerd
+          archival_date_title: Gearchiveerd
+          recommendations: Aanbevelingen
+          recommendations_title: Aanbevelingen
+          alphabet: Alfabetisch
+          alphabet_title: Alfabetisch
+          random: Willekeurig
+          random_title: Willekeurig
+          votes_up: Meest gekozen
+          votes_up_title: Meest gekozen
+      show:
+        community_section:
+          title: Doe mee
+          description: Voor dit voorstel bestaat al een werkgroep die zich bezighoudt met de uitvoering van het voorstel.
+          description_create_first: Maak een werkgroep aan die zich bezighoudt met de uitvoering van het voorstel.
+          comments_count: Reacties
+          topics_count: Onderwerpen
+          particapated_users_count: Deelnemers
+        communities:
+          topics:
+            title: Onderwerpen (%{count})
+        welcome_default_text: "%{author} heeft een bijdrage geleverd aan dit project dat uw aandacht nodig heeft. U kunt de bijdrage aan de rechterzijbalk ondersteunen door uw stem te geven. Ook kun je het bericht volgen om op de hoogte te blijven. De kaart helpt je om de bijdrage in de stad te lokaliseren, daarnaast heb je de mogelijkheid om commentaar te geven op de bijdrage."
+      proposal:
+        support: Ondersteunen
+        unsupport: Intrekken
+        supports:
+          one: "%{count} Ondersteuner"
+          other: "%{count} Ondersteuners"
+      dashboard:
+        default_welcome_text_html: Wilt u als auteur van een voorstel een concrete mening over een inhoudelijke vraag krijgen? Gebruik hiervoor de stemfunctie. U kunt één of meerdere stemmingen initiëren.
+        polls:
+          new:
+            title: Stemmen aanmaken

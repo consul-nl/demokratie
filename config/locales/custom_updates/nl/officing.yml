@@ -1,0 +1,11 @@
+nl:
+  custom:
+    officing:
+      shared:
+        verify_users:
+          title: Offline stem toevoegen
+          skip_verification: Gebruikersverificatie overslaan
+          first_name: Voornaam
+          last_name: Achternaam
+          plz: Postcode
+          date_of_birth: Geboortedatum
