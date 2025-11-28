@@ -20,7 +20,7 @@ files:
         sr: sr
         sr-CS: sr-CS
         val-ES: val
-  - source: /config/locales/custom/de-DE/**.yml
+  - source: /config/locales/custom/en/**.yml
     translation: /config/locales/custom/%locale%/%original_file_name%
-  - source: /config/locales/custom_updates/de-DE/**.yml
+  - source: /config/locales/custom_updates/en/**.yml
     translation: /config/locales/custom_updates/%locale%/%original_file_name%
