@@ -7,11 +7,13 @@ de:
         amount_available:
           knapsack: "Sie können noch <span>%{count}</span> investieren"
           approval:
+            zero: "Sie können immer noch <span>%{count}</span> Stimmen abgeben."
             one: "Sie können immer noch <span>%{count}</span> Stimme abgeben."
             other: "Sie können immer noch <span>%{count}</span> Stimmen abgeben."
         amount_spent:
           knapsack: "Ausgegebener Betrag <span>%{count}</span>"
           approval:
+            zero: "Abgegebene Stimmen: <span>%{count}</span>"
             one: "Abgegebene Stimme: <span>%{count}</span>"
             other: "Abgegebene Stimmen: <span>%{count}</span>"
         amount_limit:
@@ -41,6 +43,7 @@ de:
         only_citizens: Die Beteiligung ist auf Bürger*innen der Stadt %{city} beschränkt.
         only_specific_geozones: "Die Beteiligung ist auf Bürger*innen aus folgenden Gebieten beschränkt: %{geozones}."
         only_specific_registered_address_groupings:
+
     groups:
       show:
         title: Wählen Sie eine Option
@@ -157,6 +160,7 @@ de:
         already_added: Sie haben diesen Vorschlag bereits hinzugefügt
         support_title: Unterstützen Sie dieses Projekt
         supports:
+          zero: Keine Unterstützung
           one: 1 Unterstützer*in
           other: "%{count} Unterstützer*innen"
       header:
