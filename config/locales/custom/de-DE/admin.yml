@@ -121,11 +121,9 @@ de:
         active: Aktiv
         blank_dates: Das Datumfeld ist leer
         administrators:
-          zero: "Wähle Adminstratoren"
           one: "1 Administrator ausgewählt"
           other: "%{count} Administrator ausgewählt"
         valuators:
-          zero: "Den Gutachter*innen wählen"
           one: "1 Gutachter*in ausgewählt"
           other: "%{count} Gutachter*in ausgewählt"
         empty_administrators: "Keine Administrator*innen vorhanden"
@@ -1116,7 +1114,7 @@ de:
       votation_type:
         title: Art der Abstimmung
         unique_description: Nutzer*innen können je Frage eine Stimme vergeben.
-        multiple_description:     Nutzer*innen können je Frage ihre Stimmen auf mehrere Antworten gleichmäßig verteilen.
+        multiple_description: Nutzer*innen können je Frage ihre Stimmen auf mehrere Antworten gleichmäßig verteilen.
         multiple_with_weight_description: Nutzer*innen können je Frage ihre Stimmen auf mehrere Antworten gewichtet verteilen.
         rating_scale_description: Nutzer*innen können eine Stimme pro Bewertungsskala abgeben.
     questions:
@@ -1441,7 +1439,6 @@ de:
           other: "Es gibt %{count} ungültige Unterschriften"
         unverified_error: (Nicht durch das Melderegister überprüft)
         voted:
-          zero: "Es gibt keine Wahlstimmen aus den verifizierten Unterschriften."
           one: "Es gibt %{count} Wahlstimmen aus den verifizierten Unterschriften."
           other: "Es gibt %{count} Wahlstimmen aus den verifizierten Unterschriften."
         loading: "Es gibt immer noch Unterschriften, die vom Melderegister überprüft werden. Bitte aktualisieren Sie die Seite in Kürze"
