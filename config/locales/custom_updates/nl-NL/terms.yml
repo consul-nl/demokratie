@@ -2,26 +2,26 @@ nl:
   custom:
     terms:
       older_than_14:
-        title: Older than 14 years
-        label: By registering, you confirm that you are at least 14 years old.
+        title: Mindestalter
+        label: Mit der Registrierung bestätigen Sie, dass Sie mindestens 14 Jahre alt sind. Personen unter 14 Jahren können gemäß der Allgemeinen Nutzungsbedingungen keine eigene Registrierung vornehmen.
       newsletter:
         title: Newsletter
-        label: By registering, you agree to receive our newsletter.
+        label: Ich möchte den Newsletter erhalten.
       data_storage:
-        title: Data processing
-        label: By registering, you accept that we store the data collected here for processing.
+        title: Datenverarbeitung
+        label: Mit der Registrierung akzeptieren Sie, dass wir die hier erhobenen Daten zur Verarbeitung speichern.
       data_protection:
-        title: Privacy Policy
-        label: By registering you accept the %{privacy_link}
+        title: Datenschutzvereinbarung
+        label: Mit der Registrierung akzeptieren Sie die %{privacy_link}
       general:
-        title: General Terms of Use
-        label: By registering you accept the %{terms_link}
+        title: Allgemeinen Nutzungsbedingungen
+        label: Mit der Registrierung akzeptieren Sie die %{terms_link}
       privacy_link:
-        text: Privacy Policy
+        text: Datenschutzvereinbarung
       terms_link:
-        text: General Terms of Use
+        text: Allgemeinen Nutzungsbedingungen
       revoke_consent:
-        text: You can revoke your consent to data storage at any time without giving reasons.
+        text: Sie können Ihre Einwilligung zur Datenspeicherung ohne eine Angabe von Gründen jederzeit widerrufen.
       resource_terms:
-        title: Terms of User
-        label: My contribution complies with the %{terms_link} and %{privacy_link}
+        title: Beitragvereinbarung
+        label: Mein Beitrag entspricht den %{terms_link} und den %{privacy_link}
