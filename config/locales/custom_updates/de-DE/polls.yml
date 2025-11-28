@@ -6,9 +6,7 @@ de:
         search_form:
           placeholder: "Suchen..."
         count: Abstimmungen
-        welcome_default_text_html: Sie finden auf dieser Seite alle Abstimmungen, die von der Stadtverwaltung initiiert wurden.
-          Die Abstimmungen lassen sich nach verschiedenen Kriterien sortieren und gezielt nach Projekten, Gebieten oder Schlagworten durchsuchen.
-          Manche Abstimmungen können auf bestimmte Gebiete oder Altersgruppen beschränkt sein.
+        welcome_default_text_html: Sie finden auf dieser Seite alle Abstimmungen, die von der Stadtverwaltung initiiert wurden. Die Abstimmungen lassen sich nach verschiedenen Kriterien sortieren und gezielt nach Projekten, Gebieten oder Schlagworten durchsuchen. Manche Abstimmungen können auf bestimmte Gebiete oder Altersgruppen beschränkt sein.
         sidebar_information_default_text: Sie möchten über selbst abstimmen? Suchen Sie einfach nach der gewünschten Abstimmung und klicken auf "Teilnehmen"
         empty_list_text: Derzeit keine verknüpften Abstimmungen
       poll:
@@ -52,11 +50,7 @@ de:
         results:
           download_csv_answers_votes: Abstimmungsergebnisse herunterladen
         welcome_default_text: Ihre Meinung ist gefragt! Auf dieser Seite können Sie sich an der oder den Abstimmung/en zum Projekt beteiligen. Klicken Sie auf die jeweilige Schaltfläche – und schon wird Ihre Stimme gezählt. Außerdem finden Sie hier statistische Angaben sowie das Ergebnis der Abstimmung, sobald diese abgeschlossen ist.
-        closing_note_default_text_html:
-          <p><strong>Geschafft!</strong></p>
-          <p>Vielen Dank für Ihre Beteiligung.</p>
-          <p>Bis zum Ablauf der Teilnahmefrist haben Sie die Möglichkeit, Ihre Antworten zu bearbeiten.
-          Danach werden Ihre Angaben automatisch und anonym an das System übermittelt.</p>
+        closing_note_default_text_html: <p><strong>Geschafft!</strong></p> <p>Vielen Dank für Ihre Beteiligung.</p> <p>Bis zum Ablauf der Teilnahmefrist haben Sie die Möglichkeit, Ihre Antworten zu bearbeiten. Danach werden Ihre Angaben automatisch und anonym an das System übermittelt.</p>
   polls:
     index:
       filters:
