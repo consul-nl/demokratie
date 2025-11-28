@@ -1,144 +1,144 @@
 fy:
   date:
     abbr_day_names:
-    - Sun
-    - Mon
-    - Tue
-    - Wed
-    - Thu
-    - Fri
-    - Sat
+      - So
+      - Mo
+      - Di
+      - Mi
+      - Do
+      - Fr
+      - Sa
     abbr_month_names:
-    -
-    - jan
-    - feb
-    - maa
-    - apr
-    - maaie
-    - jun
-    - jul
-    - aug
-    - sep
-    - okt
-    - nov
-    - des
+      -
+      - Jan
+      - Feb
+      - Mär
+      - Apr
+      - Mai
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Okt
+      - Nov
+      - Dez
     day_names:
-    - Sunday
-    - Monday
-    - Tuesday
-    - Wednesday
-    - Thursday
-    - Friday
-    - Saturday
+      - Sonntag
+      - Montag
+      - Dienstag
+      - Mittwoch
+      - Donnerstag
+      - Freitag
+      - Samstag
     formats:
-      default: "%d-%m-%Y"
-      long: "%e %B %Y"
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    -
-    - jannewaris
-    - febrewaris
-    - maart
-    - april
-    - maaie
-    - juny
-    - july
-    - augustus
-    - septimber
-    - oktober
-    - novimber
-    - desimber
+      -
+      - Januar
+      - Februar
+      - März
+      - April
+      - Mai
+      - Juni
+      - Juli
+      - August
+      - September
+      - Oktober
+      - November
+      - Dezember
   datetime:
     distance_in_words:
       about_x_hours:
-        one: about 1 hour
-        other: about %{count} hours
+        one: ungefähr 1 Stunde
+        other: ungefähr %{count} Stunden
       about_x_months:
-        one: about 1 month
-        other: about %{count} months
+        one: ungefähr 1 Monat
+        other: ungefähr %{count} Monate
       about_x_years:
-        one: about 1 year
-        other: about %{count} years
+        one: ungefähr 1 Jahr
+        other: ungefähr %{count} Jahre
       almost_x_years:
-        one: almost 1 year
-        other: almost %{count} years
-      half_a_minute: half a minute
+        one: fast 1 Jahr
+        other: fast %{count} Jahre
+      half_a_minute: eine halbe Minute
       less_than_x_minutes:
-        one: less than a minute
-        other: less than %{count} minutes
+        one: kürzer als eine Minute
+        other: kürzer als %{count} Minuten
       less_than_x_seconds:
-        one: less than 1 second
-        other: less than %{count} seconds
+        one: weniger als 1 Sekunde
+        other: weniger als %{count} Sekunden
       over_x_years:
-        one: over 1 year
-        other: over %{count} years
+        one: über 1 Jahr
+        other: über %{count} Jahre
       x_days:
-        one: 1 dag
-        other: "%{count} dagen"
+        one: 1 Tag
+        other: "%{count} Tage"
       x_minutes:
-        one: 1 minute
-        other: "%{count} minutes"
+        one: 1 Minute
+        other: "%{count} Minuten"
       x_months:
-        one: 1 maand
-        other: "%{count} moannen"
+        one: 1 Monat
+        other: "%{count} Monate"
       x_years:
-        one: '%{count} jier'
-        other: "%{count} jierren"
+        one: 1 Jahr
+        other: "%{count} Jahre"
       x_seconds:
-        one: 1 second
-        other: "%{count} seconds"
+        one: 1 Sekunde
+        other: "%{count} Sekunden"
     prompts:
-      day: Day
-      hour: Hour
+      day: Tag
+      hour: Stunde
       minute: Minute
-      month: Month
-      second: Seconds
-      year: Year
+      month: Monat
+      second: Sekunden
+      year: Jahr
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: must be accepted
-      blank: Dit fjild moat tekst befetsje
-      present: must be blank
-      confirmation: doesn't match %{attribute}
-      empty: Dit fjild moat tekst befetsje
-      equal_to: must be equal to %{count}
-      even: must be even
-      exclusion: is reserved
-      greater_than: must be greater than %{count}
-      greater_than_or_equal_to: must be greater than or equal to %{count}
-      inclusion: is not included in the list
-      invalid: is invalid
-      less_than: must be less than %{count}
-      less_than_or_equal_to: must be less than or equal to %{count}
-      model_invalid: "Validation failed: %{errors}"
-      not_a_number: is not a number
-      not_an_integer: must be an integer
-      odd: must be odd
-      required: must exist
-      taken: has already been taken
+      accepted: muss akzeptiert werden
+      blank: darf nicht leer sein
+      present: muss leer sein
+      confirmation: stimmt nicht mit %{attribute} überein
+      empty: kann nicht leer sein
+      equal_to: muss %{count} entsprechen
+      even: muss gerade sein
+      exclusion: ist reserviert
+      greater_than: muss größer als %{count} sein
+      greater_than_or_equal_to: muss größer als oder gleich %{count} sein
+      inclusion: ist nicht in der Liste enthalten
+      invalid: ist ungültig
+      less_than: muss weniger als %{count} sein
+      less_than_or_equal_to: muss weniger als oder gleich %{count} sein
+      model_invalid: "Validierung fehlgeschlagen: %{errors}"
+      not_a_number: ist keine Zahl
+      not_an_integer: muss eine ganze Zahl sein
+      odd: muss ungerade sein
+      required: muss vorhanden sein
+      taken: ist bereits vergeben
       too_long:
-        one: is too long (maximum is 1 character)
-        other: is too long (maximum is %{count} characters)
+        one: ist zu lang (maximal 1 Zeichen)
+        other: ist zu lang (maximal %{count} Zeichen)
       too_short:
-        one: is too short (minimum is 1 character)
-        other: is too short (minimum is %{count} characters)
+        one: ist zu kurz (minimum 1 Zeichen)
+        other: ist zu kurz (minimum %{count} Zeichen)
       wrong_length:
-        one: is the wrong length (should be 1 character)
-        other: is the wrong length (should be %{count} characters)
-      other_than: must be other than %{count}
+        one: hat die falsche Länge (sollte 1 Zeichen lang sein)
+        other: hat die falsche Länge (sollte %{count} Zeichen lang sein)
+      other_than: darf nicht %{count} sein
     template:
-      body: "There were problems with the following fields:"
+      body: "Es gab Probleme mit den folgenden Bereichen:"
       header:
-        one: 1 error prohibited this %{model} from being saved
-        other: "%{count} errors prohibited this %{model} from being saved"
+        one: 1 Fehler verhinderte, dass dieses %{model} gespeichert wurde
+        other: "%{count} Fehler verhinderten, dass dieses %{model} gespeichert wurde"
   helpers:
     select:
-      prompt: Please select
+      prompt: Bitte wählen Sie
     submit:
-      create: '%{model} yntsjinje'
-      submit: Save %{model}
-      update: Update %{model}
+      create: '%{model} erstellen'
+      submit: '%{model} speichern'
+      update: '%{model} aktualisieren'
   number:
     currency:
       format:
@@ -159,14 +159,12 @@ fy:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Billion
+          billion: Milliarde
           million: Million
-          quadrillion: Quadrillion
-          thousand: Thousand
-          trillion: Trillion
-          unit: ""
+          quadrillion: Billiarde
+          thousand: Tausend
+          trillion: Billion
       format:
-        delimiter: ""
         precision: 3
         significant: true
         strip_insignificant_zeros: true
@@ -182,23 +180,19 @@ fy:
           tb: TB
     percentage:
       format:
-        delimiter: ""
-        format: "%n%"
-    precision:
-      format:
-        delimiter: ""
+        format: "%n %"
   support:
     array:
-      last_word_connector: ", and "
-      two_words_connector: " and "
+      last_word_connector: ", und "
+      two_words_connector: " und "
       words_connector: ", "
   time:
-    am: am
+    am: vormittags
     formats:
       datetime: "%Y-%m-%d %H:%M:%S"
-      default: "%a %d %b %Y %H:%M:%S %Z"
-      long: "%d %B %Y %H:%M"
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
       short: "%d %b %H:%M"
-      short_datetime: "%Y-%m-%d %H:%M"
+      short_datetime: "%d.%m.%Y %H:%M"
       api: "%Y-%m-%d %H"
-    pm: pm
+    pm: nachmittags
