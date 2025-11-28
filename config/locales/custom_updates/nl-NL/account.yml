@@ -2,26 +2,25 @@ nl:
   custom:
     account:
       show:
-        data_complete: User data complete
-        data_missing: User data not complete
-        change_credentials_link: Change login information
-        edit_details_link: Update personal information
-        erase_account_link: Delete account
-        settings: Account settings
-        verification_title_html: Personal data |<br>Account verification
-        verification_description: Some participation projects require user verification. By clicking on the button you can start the user verification.
-        verification_with_bund_id_description: Some participation projects require user verification. You can start the user verification by clicking on the button. You must verify yourself with the BundID using a high level of verification, such as an ID card or Elster. Other login methods such as a user name and password are not sufficient.
-        personal_settings: Personal settings
-        notifications: Notifications
-        save_settings: Update
-        not_verified_account: Account is not verified
+        data_complete: Nutzerdaten sind vollständig
+        data_missing: Nutzerdaten sind nicht vollständig
+        change_credentials_link: Anmeldeinformationen ändern
+        edit_details_link: Daten aktualisieren
+        erase_account_link: Konto löschen
+        settings: Kontoeinstellungen
+        verification_title_html: Persönliche Daten |<br>Konto-Verifizierung
+        verification_description: Einige Beteiligungsprojekte setzen eine zusätzliche Datenabfrage oder eine Nutzer*innen-Verifizierung voraus. Mit Klick auf den Button können Sie die benötigten Daten abgeben und/oder die Nutzer*innen-Verifizierung starten.
+        personal_settings: Persönliche Einstellungen
+        notifications: Benachrichtigungen
+        save_settings: Aktualisieren
+        not_verified_account: Konto ist nicht verifiziert
       subscriptions:
         projekts:
-          title: Project related notifications
-          description1: "You have activated project notification for the following projects:"
-          description2: By clicking on the button below you can unsubscribe from all project notifications. If you only want to unsubscribe from individual project phases, please use the direct link to the projects.
-          cancel_projekts_subscriptions_button: Unsubscribe from all project notifications
+          title: Projektbezogene Benachrichtungen
+          description1: "Sie haben bei folgenden Projekten die Projektbenachrichtigung aktiviert:"
+          description2: Mit Klick auf den nachfolgenden Button können Sie sich von allen Projektbenachrichtigungen abmelden. Sollten Sie sich nur von einzelnen Projektphasen abmelden wollen, dann loggen Sie sich bitte ein und deaktivieren die Benachrichtigung in der Fußzeile des jeweiligen Projektes. Sie können hierfür einfach auf die oben aufgeführten Projekte klicken.
+          cancel_projekts_subscriptions_button: Bei allen Projektbenachrichtigungen abmelden
       edit_details:
-        title: Update personal information
-        documents_label: Document check
-        submit: Update
+        title: Daten aktualisieren
+        documents_label: Dokumentenprüfung
+        submit: Daten aktualisieren
