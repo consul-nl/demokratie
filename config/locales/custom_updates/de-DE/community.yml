@@ -2,11 +2,11 @@ de:
   custom:
     community:
       show:
-        participate: Participate
-        participants: Participants
+        participate: Beteiligen
+        participants: Teilnehmer*innen
       sidebar:
-        particapate: Participate
-        be_first: Create a workgroup
+        particapate: Mitmachen
+        be_first: Arbeitskreis erstellen
         topic:
-          hide: Hide
-          restore: Restore
+          hide: Ausblenden
+          restore: Einblenden
