@@ -2,19 +2,19 @@ fy:
   helpers:
     page_entries_info:
       entry:
-        one: Entry
-        other: Entries
+        one: Eintrag
+        other: Einträge
       more_pages:
-        display_entries: Displaying <strong>%{first}&nbsp;-&nbsp;%{last}</strong> of <strong>%{total} %{entry_name}</strong>
+        display_entries: <strong>%{first}&nbsp;&nbsp;%{last}</strong> von <strong>%{total}%{entry_name}</strong> angezeigen
       one_page:
         display_entries:
-          one: There is <strong>1 %{entry_name}</strong>
-          other: There are <strong>%{count} %{entry_name}</strong>
+          one: Es gibt <strong>1 %{entry_name}</strong>
+          other: Es gibt <strong>%{count}%{entry_name}</strong>
   views:
     pagination:
-      current: You're on page
-      first: First
-      last: Last
-      next: Next
-      previous: Previous
+      current: Sie sind auf der Seite
+      first: Erste
+      last: Letzte
+      next: Nächste
+      previous: Vorherige
       truncate: "&hellip;"
