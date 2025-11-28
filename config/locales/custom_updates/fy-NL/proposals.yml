@@ -2,60 +2,78 @@ fy:
   custom:
     proposals:
       created:
-        dashboard: Save as draft and publish later
-        publish: Publish proposal now
+        dashboard: Als Entwurf speichern und später veröffentlichen
+        publish: Jetzt veröffentlichen
       form:
-        tagging: Tagging
-        tags_custom: User tags
-        tags_placeholder: Separate the tags with a comma (',')
-        required: Your input
-        title_placeholder: "Give your post a catchy title, for example “Zebra crossing in front of the XY primary school” or “More diversity on the Weekly markets”. "
-        description_placeholder: " Describe your contribution here. The following procedure has proven successful:\n\n Start with a general description of your idea and then show what would improve with the implementation of your suggestion.\n\n When writing, keep sentences as short as possible.\n\n Also use paragraphs to make your text more readable. (Many users read your text on mobile devices.)\n\n If possible, limit your content to a maximum of three paragraphs.\n\n If appropriate, use lists and bullet points for better clarity. "
+        tagging: Einordnung
+        tags_custom: Nutzer-Tags
+        tags_placeholder: Trennen Sie die Tags mit einem Komma (',')
+        required: Ihr Beitrag
+        title_placeholder: "Geben Sie Ihrem Beitrag einen plakativen Titel, zum Beispiel „Zebrastreifen vor der XY-Grundschule“ oder „Mehr Vielfalt auf den Wochenmärkten“. "
+        description_placeholder: " Beschreiben Sie hier Ihren Beitrag. Folgendes Vorgehen hat sich bewährt:\n\n Beginnen Sie mit einer allgemeinen Beschreibung Ihrer Idee und stellen Sie im Anschluss dar,\n was sich mit der Umsetzung Ihres Vorschlags verbessern würde.\n\n Achten Sie beim Schreiben möglichst auf kurze Sätze.\n Beschränken Sie Ihren Inhalt – sofern möglich – auf maximal drei Absätze.\n\n Nutzen Sie außerdem Absätze, um Ihren Text lesbarer zu machen. (Viele Nutzer lesen Ihren Text auf mobilen Geräten.)\n\n Verwenden Sie überdies – wenn passend – Aufzählungen und Stichpunkte für eine bessere Übersichtlichkeit. "
         buttons:
-          save_draft: Save draft
-          publish: Publish proposal
+          save_draft: Als Entwurf speichern
+          publish: Jetzt veröffentlichen
       index:
-        max_number_reached: You have reached the maximum number (%{max_number}) of proposals per user. Before you can create another suggestion, you must withdraw an active suggestion.
-        no_active_projekt: Currently no participation procedure
-        no_active_phase: Phase expired
-        projekts: Projects
-        show_larger_map: Show more
-        show_smaller_map: Show less
+        title: "Übersicht aller Vorschläge"
+        count: Vorschläge
+        max_number_reached: Du hast die maximale Anzahl (%{max_number}) an Vorschlägen pro Nutzer erreicht. Bevor du einen weiteren Vorschlag erstellen kannst, musst du einen aktiven Vorschlag zurückziehen.
+        no_active_projekt: Aktuell kein Beteiligungsverfahren
+        no_active_phase: Phase bereits geschlossen
+        projekts: Projekte
+        show_larger_map: Mehr anzeigen
+        show_smaller_map: Weniger anzeigen
         creation_only_for_citizens: Neue Vorschläge können in diesem Projekt nur von Bürgerinnen und Bürgern der Stadt %{city} eingereicht werden.
         creation_only_for_specific_geozones: Vorschläge können nur von Bürger*innen aus dem Postleitzahlbereich %{geozones} eingebracht werden.
-        empty_list_text: No connected proposals
-        welcome_default_text_html: In participation projects, citizens can create suggestions and collect them on this page. Suggestions can be filtered by level of participation, publication date or approval. Individual suggestions can be supported, commented on or created yourself. In the right sidebar, the platform allows targeted filtering for suggestions for projects, in specific urban areas or by keywords.
-        sidebar_information_default_text: Do you have your own suggestion for a specific project? You can submit it by clicking on the button.
+        welcome_default_text_html: In Beteiligungsprojekten können Bürger*innen Vorschläge erstellen und auf dieser Seite sammeln. Vorschläge können nach Beteiligungsgrad, Veröffentlichungsdatum oder Zuspruch gefiltert werden. Einzelne Vorschläge können unterstützt, kommentiert oder selbst erstellt werden. In der rechten Seitenleiste ermöglicht die Plattform eine gezielte Filterung nach Vorschlägen zu Projekten, in bestimmten Stadtgebieten oder nach Schlagworten.
+        sidebar_information_default_text: Sie haben zu einem bestimmten Projekt einen eigenen Vorschlag? Mit einem Klick auf die Schaltfläche können Sie ihn einreichen.
+        empty_list_text: Derzeit keine verknüpften Beiträge
+        participation_information: Beteiligungsinformation
         search_form:
-          button: search
-          placeholder: search proposals...
-          title: search
+          button: Suche
+          placeholder: Beiträge durchsuchen...
+          title: Suche
         orders:
-          confidence_score: Most voted
-          confidence_score_title: Most voted
-          created_at: Newest first
-          created_at_title: Newest first
-          hot_score: Most active
-          hot_score_title: Most active
-          most_commented: Most commented
-          most_commented_title: Most commented
-          relevance: Most relevant
-          relevance_title: Most relevant
-          archival_date: Archived
-          archival_date_title: Archived
-          recommendations: Recommendations
-          recommendations_title: Recommendations
-          alphabet: Alphabetical
-          alphabet_title: Alphabetical
-          random: Random
-          random_title: Random
-          votes_up: Highest voted
-          votes_up_title: Highest voted
-        proposal:
-          by: by
+          confidence_score: Am besten bewertet
+          confidence_score_title: Am besten bewertet
+          created_at: Neueste zuerst
+          created_at_title: Neueste zuerst
+          hot_score: Aktivste
+          hot_score_title: Aktivste
+          most_commented: Am meisten kommentiert
+          most_commented_title: Am meisten kommentiert
+          relevance: Relevanz
+          relevance_title: Relevanz
+          archival_date: Archiviert
+          archival_date_title: Archiviert
+          recommendations: Empfehlungen
+          recommendations_title: Empfehlungen
+          alphabet: Alphabetisch
+          alphabet_title: Alphabetisch
+          random: Zufällig
+          random_title: Zufällig
+          votes_up: Am meisten gewählt
+          votes_up_title: Am meisten gewählt
+      show:
+        community_section:
+          title: Beteiligen Sie sich
+          description: Für diesen Vorschlag gibt es bereits einen Arbeitskreis, der sich mit der Umsetzung des Vorschlags beschäftigt.
+          description_create_first: Erstellen Sie einen Arbeitskreis, der sich mit der Umsetzung des Vorschlags beschäftigt.
+          comments_count: Kommentare
+          topics_count: Themen
+          particapated_users_count: Teilnehmende
+        communities:
+          topics:
+            title: Themen (%{count})
+        welcome_default_text: "%{author} hat einen Beitrag zu diesem Projekt gemacht, der Ihre Aufmerksamkeit benötigt. Sie können den Beitrag an der rechten Seitenleiste unterstützen, indem Sie ihm Ihre Stimme geben. Außerdem können Sie dem Beitrag folgen, um auf dem Laufenden zu bleiben. Die Karte hilft Ihnen dabei, den Beitrag in der Stadt zu verorten, des Weiteren haben Sie die Möglichkeit, den Beitrag zu kommentieren."
       proposal:
-        support: Support
-        unsupport: Withdraw
+        support: Unterstützen
+        unsupport: Zurückziehen
         supports:
-          one: "%{count} supporter"
-          other: "%{count} supporters"
+          one: "%{count} Unterstützer*in"
+          other: "%{count} Unterstützer*innen"
+      dashboard:
+        default_welcome_text_html: Wollen Sie als Autor eines Vorschlages ein konkretes Meinungsbild zu einer Sachfrage einholen? Dann nutzen Sie hierfür die Abstimmungsfunktion. Sie können eine oder mehrere Abstimmungen initiieren.
+        polls:
+          new:
+            title: Abstimmungen erstellen
