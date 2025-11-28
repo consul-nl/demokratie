@@ -1,5 +1,5 @@
 files:
-  - source: /config/locales/en/**.yml
+  - source: /config/locales/de-DE/**.yml
     translation: /config/locales/%locale%/%original_file_name%
     ignore:
       - /config/locales/**/rails_date_order.yml
@@ -20,7 +20,7 @@ files:
         sr: sr
         sr-CS: sr-CS
         val-ES: val
-  - source: /config/locales/custom/en/**.yml
+  - source: /config/locales/custom/de-DE/**.yml
     translation: /config/locales/custom/%locale%/%original_file_name%
-  - source: /config/locales/custom_updates/en/**.yml
+  - source: /config/locales/custom_updates/de-DE/**.yml
     translation: /config/locales/custom_updates/%locale%/%original_file_name%
