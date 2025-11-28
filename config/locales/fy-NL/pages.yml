@@ -1,155 +1,173 @@
 fy:
   pages:
     census_terms:
-      title: "Terms and conditions of access of the Census"
-      description: "Information page on the terms and conditions of access of the Census."
+      title: "Allgemeinen Zugangsbedingungen des Melderegisters"
+      description: "Informationsseite zu den Allgemeinen Zugangsbedingungen des Melderegisters."
     conditions:
-      title: Terms and conditions of use
-      subtitle: LEGAL NOTICE ON THE CONDITIONS OF USE, PRIVACY AND PROTECTION OF PERSONAL DATA OF THE OPEN GOVERNMENT PORTAL
-      description: Information page on the conditions of use, privacy and protection of personal data.
+      title: Allgemeine Nutzungsbedingungen
+      subtitle: RECHTLICHE HINWEISE BEZÜGLICH DER NUTZUNG, SCHUTZ DER PRIVATSPHÄRE UND PERSONENBEZOGENER DATEN DES OPEN GOVERNMENT-PORTALS
+      description: Informationsseite über die Nutzungsbedingungen, Privatsphäre und Schutz personenbezogener Daten.
     help:
-      title: "%{org} is a platform for citizen participation"
-      guide: "This guide explains what each of the %{org} sections are for and how they work."
+      title: "%{org} ist eine Plattform zur Bürgerbeteiligung"
+      guide: "Diese Anleitung erklärt Ihnen, was die einzelnen %{org}-Abschnitte sind und wie diese funktionieren."
       menu:
-        debates: "Debates"
-        proposals: "Proposals"
-        budgets: "Participatory budgets"
-        polls: "Polls"
-        other: "Other information of interest"
-        processes: "Processes"
+        debates: "Diskussionen"
+        proposals: "Vorschläge"
+        budgets: "Bürgerhaushalte"
+        polls: "Umfragen"
+        other: "Weitere interessante Informationen"
+        processes: "Beteiligungsverfahren"
       debates:
-        title: "Debates"
-        description: "In the %{link} section you can present and share your opinion with other people on issues of concern to you related to the city. It is also a place to generate ideas that through the other sections of %{org} lead to concrete actions by the City Council."
-        link: "citizen debates"
-        feature: "You can open debates, comment and evaluate them with the <strong>I agree</strong> or <strong>I don't agree</strong>. For that you have to %{link}."
-        feature_link: "register in %{org}"
-        image_alt: "Buttons to rate the debates"
-        figcaption: '"I agree" and "I disagree" buttons to rate the debates.'
+        title: "Diskussionen"
+        description: "Im %{link}-Abschnitt können Sie Ihre Meinung zu Anliegen in Ihrer Stadt äußern und mit anderen Menschen teilen. Zudem ist es ein Bereich, in dem Ideen generiert werden können, die durch andere Abschnitte der %{org} zu Handlungen des Stadtrates führen."
+        link: "Bürger-Debatten"
+        feature: "Sie können Diskussionen eröffnen, kommentieren und mit <strong> Ich stimme zu</strong> oder <strong>Ich stimme nicht zu</strong> bewerten. Hierfür müssen Sie %{link}."
+        feature_link: "registrieren für %{org}"
+        image_alt: "Button, um die Diskussionen zu bewerten"
+        figcaption: '"Ich stimme zu" und "Ich stimme nicht zu" Buttons, um die Diskussion zu bewerten.'
       proposals:
-        title: "Proposals"
-        description: "In the %{link} section you can make proposals for the City Council to carry them out. The proposals require support, and if they reach sufficient support, they are put to a public vote. The proposals approved in these citizens' votes are accepted by the City Council and carried out."
-        link: "citizen proposals"
-        image_alt: "Button to support a proposal"
-        figcaption: 'Button to "Support" a proposal.'
+        title: "Vorschläge"
+        description: "Im %{link}-Abschnitt können Sie Anträge an den Stadtrat stellen. Die Anträge brauchen dann Unterstützung. Wenn Ihr Antrag ausreichend Unterstützung bekommt, wird er zur öffentlichen Wahl freigegeben. Anträge, die durch Bürgerstimmen bestätigt wurden, werden vom Stadtrat angenommen und umgesetzt."
+        link: "Bürgervorschläge"
+        image_alt: "Klicken Sie hier um den Vorschlag zu unterstützen"
+        figcaption: 'Button zur "Unterstützung" eines Vorschlags.'
       budgets:
-        title: "Participatory Budgeting"
-        description: "The %{link} section helps people make a direct decision on what part of the municipal budget is spent on."
-        link: "participative budgets"
-        image_alt: "Different phases of a participatory budget"
-        figcaption: '"Support" and "Voting" phases of participatory budgets.'
+        title: "partizipative Haushaltsmittel"
+        description: "Der %{link}-Abschnitt hilft Personen eine direkte Entscheidung zu treffen, für was das kommunale Budget ausgegeben werden soll."
+        link: "Bürgerhaushalte"
+        image_alt: "Verschiedene Phasen eines partizipativen Haushalts"
+        figcaption: '"Unterstützungs-" und "Abstimmungs-"Phasen des Bürgerhaushalts.'
       polls:
-        title: "Polls"
-        description: "The %{link} section is activated each time a proposal reaches 1% support and goes to the vote or when the City Council proposes an issue for people to decide on."
-        link: "polls"
-        feature_1: "To participate in the voting you have to %{link} and verify your account."
-        feature_1_link: "register in %{org_name}"
+        title: "Umfragen"
+        description: "Der %{link}-Abschnitt wird aktiviert, wann immer ein Antrag 1% an Unterstützung erreicht und zur Abstimmung übergeht, oder wenn der Stadtrat ein Problem zur Abstimmung vorlegt."
+        link: "Umfragen"
+        feature_1: "Um an der Abstimmung teilzunehmen, müssen Sie %{link} und Ihr Konto verifizieren."
+        feature_1_link: "anmelden %{org_name}"
       processes:
-        title: "Processes"
-        description: "In the %{link} section, citizens participate in the drafting and modification of regulations affecting the city and can give their opinion on municipal policies in previous debates."
-        link: "processes"
-        feature: "To participate in the processes you have to %{link} and verify your account."
-        feature_link: "register in %{org_name}"
+        title: "Beteiligungsverfahren"
+        description: "Im %{link}-Abschnitt nehmen Bürger an der Ausarbeitung und Änderung von, die Stadt betreffenden, Bestimmungen teil und können ihre Meinung bezüglich kommunaler Richtlinien in vorausgehenden Debatten äußern."
+        link: "Prozesse"
+        feature: "Um am Prozess teilzunehmen, müssen Sie %{link} und Ihr Konto verifizieren."
+        feature_link: "registrieren für %{org_name}"
       faq:
-        title: "Technical problems?"
-        description: "Read the FAQs and solve your questions."
-        button: "View frequently asked questions"
+        title: "Technische Probleme?"
+        description: "Lesen Sie die FAQs und finden Sie Antworten auf Ihre Fragen."
+        button: "Lies die Liste der häufig gestellten Fragen"
         page:
-          title: "Frequently Asked Questions"
-          description: "Use this page to resolve the common FAQs to the users of site."
+          title: "Häufig gestellte Fragen"
+          description: "Benutzen Sie diese Seite um die gemeinsamen FAQs für die Benutzer der Website zu beheben."
       other:
-        title: "Other information of interest"
-        how_to_use: "Use %{org_name} in your city"
-        sdg: "Sustainable Development Goals help"
+        title: "Weitere interessante Informationen"
+        how_to_use: "Verwenden Sie %{org_name} in Ihrer Stadt"
+        sdg: "Ziele für nachhaltige Entwicklung Hilfe"
       how_to_use:
         text: |-
-          Use it in your local government or help us to improve it, it is free software.
+          Verwenden Sie diese Anwendung in Ihrer lokalen Regierung, oder helfen Sie uns sie zu verbessern, die Software ist kostenlos.
 
-          This Open Government Portal use the [CONSUL app](https://github.com/consul/consul 'consul github') that is free software, with [licence AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ), that means in simple words that anyone can use the code freely, copy it, see it in detail, modify it and redistribute it to the world with the modifications they want (allowing others to do the same). Because we think culture is better and richer when it is released.
+          Dieses offene Regierungs-Portal benutzt die [CONSUL-App](https://github.com/consul/consul 'consul github'), die eine freie Software, mit der Lizens [licence AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ) ist. Einfach gesagt, bedeutet das, dass jeder diesen Code frei benutzen, kopieren, detailiert betrachten, modifizieren und Versionen, mit gewünschten Modifikationen neu an die Welt verteilen kann (wobei anderen gestattet wird, dasselbe zu tun). Denn wir glauben, dass Kultur besser und ergiebiger ist, wenn sie öffentlich wird.
 
-          If you are a programmer, you can see the code and help us to improve it at [CONSUL app](https://github.com/consul/consul 'consul github').
+          Wenn Sie ein Programmierer sind, können Sie den Code betrachten und uns helfen diesen auf [CONSUL app](https://github.com/consul/consul 'consul github') zu verbessern.
       titles:
-        how_to_use: Use it in your local government
+        how_to_use: Verwenden Sie es in Ihrer Kommunalverwaltung
     privacy:
-      title: Privacy Policy
-      subtitle: "Information page on privacy"
+      title: Datenschutzbestimmungen
+      subtitle: "INFORMATION ZU DEN DATENSCHUTZBESTIMMUNGEN"
     accessibility:
-      title: Accessibility
+      title: Zugänglichkeit
       description: |-
-        Web accessibility refers to the possibility of access to the web and its contents by all people, regardless of the disabilities (physical, intellectual or technical) that may arise or from those that derive from the context of use (technological or environmental) .
+        Unter Webzugänglichkeit versteht man die Möglichkeit des Zugangs aller Menschen zum Web und seinen Inhalten, unabhängig von den Behinderungen (körperlich, geistig oder technisch), die sich aus dem Kontext der Nutzung (technologisch oder ökologisch) ergeben können.
 
-        When websites are designed with accessibility in mind, all users can access content in equal conditions, for example:
+        Wenn Websites unter dem Gesichtspunkt der Barrierefreiheit gestaltet werden, können alle Nutzer beispielsweise unter gleichen Bedingungen auf Inhalte zugreifen:
       examples:
-        - Providing alternative text to the images, blind or visually impaired users can use special readers to access the information.
-        - When videos have subtitles, users with hearing difficulties can fully understand them.
-        - If the contents are written in a simple and illustrated language, users with learning problems are better able to understand them.
-        - If the user has mobility problems and it is difficult to use the mouse, the alternatives with the keyboard help in navigation.
+        - Proporcionando un texto alternativo a las imágenes, los usuarios invidentes o con problemas de visión pueden utilizar lectores especiales para acceder a la información.Providing alternative text to the images, blind or visually impaired users can use special readers to access the information.
+        - Wenn Videos Untertitel haben, können Nutzer mit Hörproblemen diese voll und ganz verstehen.
+        - Wenn die Inhalte in einer einfachen und anschaulichen Sprache geschrieben sind, können Nutzer mit Lernproblemen diese besser verstehen.
+        - Wenn der Nutzer Mobilitätsprobleme hat und es schwierig ist die Maus zu bedienen, helfen Tastatur-Alternativen mit der Navigation.
       keyboard_shortcuts:
-        title: Keyboard shortcuts
+        title: Tastaturkürzel
         navigation_table:
-          description: To be able to navigate through this website in an accessible way, a group of quick access keys has been programmed that gather the main sections of general interest in which the site is organized.
-          caption: Keyboard shortcuts for the navigation menu
-          key_header: Key
-          page_header: Page
+          description: Um auf dieser Website barrierefrei navigieren zu können, wurde eine Gruppe von Schnellzugriffstasten programmiert, die die wichtigsten Bereiche des allgemeinen Interesses, in denen die Website organisiert ist, zusammenfassen.
+          caption: Tastaturkürzel für das Navigationsmenü
+          key_header: Schlüssel
+          page_header: Seite
           rows:
-            - key_column: 0
-              page_column: Home
-            - key_column: 1
-              page_column: Debates
-            - key_column: 2
-              page_column: Proposals
-            - key_column: 3
-              page_column: Votes
-            - key_column: 4
-              page_column: Participatory budgets
-            - key_column: 5
-              page_column: Legislative processes
+            - 
+              key_column: 0
+              page_column: Start
+            - 
+              key_column: 1
+              page_column: Diskussionen
+            - 
+              key_column: 2
+              page_column: Vorschläge
+            - 
+              key_column: 3
+              page_column: Stimmen
+            - 
+              key_column: 4
+              page_column: Bürgerhaushalte
+            - 
+              key_column: 5
+              page_column: Gesetzgebungsverfahren
         browser_table:
-          description: "Depending on the operating system and the browser used, the key combination will be as follows:"
-          caption: Key combination depending on the operating system and browser
+          description: "Abhängig vom Betriebssystem und dem verwendeten Browser lautet die Tastenkombination wie folgt:"
+          caption: Tastenkombination je nach Betriebssystem und Browser
           browser_header: Browser
-          key_header: Key combination
+          key_header: Tastenkombination
           rows:
-            - browser_column: Explorer
-              key_column: ALT + shortcut then ENTER
-            - browser_column: Firefox
-              key_column: ALT + CAPS + shortcut
-            - browser_column: Chrome
-              key_column: ALT + shortcut (CTRL + ALT + shortcuts for MAC)
-            - browser_column: Safari
-              key_column: ALT + shortcut (CMD + shortcut for MAC)
-            - browser_column: Opera
-              key_column: CAPS + ESC + shortcut
+            - 
+              browser_column: Internet Explorer
+              key_column: ALT + Tastenkombination dann ENTER
+            - 
+              browser_column: Firefox
+              key_column: ALT + CAPS + Kürzel
+            - 
+              browser_column: Chrome
+              key_column: ALT + Kürzel (STRG + ALT + Kürzel für MAC)
+            - 
+              browser_column: Safari
+              key_column: ALT + Kürzel (CMD + ALT + Kürzel für MAC)
+            - 
+              browser_column: Opera
+              key_column: CAPS + ESC + Kürzel
       textsize:
-        title: Text size
+        title: Textgröße
         browser_settings_table:
-          description: The accessible design of this website allows the user to choose the size of the text that suits him. This action can be carried out in different ways depending on the browser used.
+          description: Das barrierefreie Design dieser Website ermöglicht es dem Nutzer, die Größe des Textes nach Bedarf zu wählen. Diese Aktion kann je nach verwendetem Browser auf unterschiedliche Weise durchgeführt werden.
           browser_header: Browser
-          action_header: Action to be taken
+          action_header: Aktion die gemacht werden muss
           rows:
-            - browser_column: Explorer
-              action_column: View > Text size
-            - browser_column: Firefox
-              action_column: View > Size
-            - browser_column: Chrome
-              action_column: Settings (icon) > Options > Advanced > Web Content > Text size
-            - browser_column: Safari
-              action_column: View > Zoom In/Zoom out
-            - browser_column: Opera
-              action_column: View > scale
+            - 
+              browser_column: Internet Explorer
+              action_column: Anzeige > Textgröße
+            - 
+              browser_column: Firefox
+              action_column: Anzeige > Größe
+            - 
+              browser_column: Chrome
+              action_column: Einstellungen (Symbol) > Optionen > Fortschritt > Web Inhalt > Text Größe
+            - 
+              browser_column: Safari
+              action_column: Anzeige > Vergrößern / Verkleinern
+            - 
+              browser_column: Opera
+              action_column: Anzeige > Skala
         browser_shortcuts_table:
-          description: "Another way to modify the text size is to use the keyboard shortcuts defined in browsers, in particular the key combination:"
+          description: "Eine weitere Möglichkeit, die Textgröße zu ändern, besteht darin, die in Browsern definierten Tastenkombinationen zu verwenden, insbesondere die Tastenkombination:"
           rows:
-            - shortcut_column: CTRL and + (CMD and + on MAC)
-              description_column: Increases text size
-            - shortcut_column: CTRL and - (CMD and - on MAC)
-              description_column: Decreases text size
+            - 
+              shortcut_column: CTRL und + (CMD und + on MAC)
+              description_column: Erhöhen sie die Textgröße
+            - 
+              shortcut_column: CTRL und - (CMD und - on MAC)
+              description_column: Verringern sie die Textgröße
       compatibility:
-        title: Compatibility with standards and visual design
-        description: 'All pages of this website comply with the <strong>Accessibility Guidelines</strong> or General Principles of Accessible Design established by the Working Group <abbr title="Web Accessibility Initiative" lang="en">WAI</abbr> belonging to W3C.'
+        title: Kompatibilität mit Standards und visueller Gestaltung
+        description: 'Alle Seiten dieser Website entsprechen den <strong>Accessibility Guidelines</strong> oder den General Principles of Accessible Design der Arbeitsgruppe <abbr title="Web Accessibility Initiative" lang="en">WAI</abbr> des W3C.'
     titles:
-      help: "What is %{org}? - Citizen participation"
+      help: "Was ist %{org}? -Bürgerbeteiligung"
     verify:
-      info: "To verify your account introduce your access data:"
-      info_code: "Now introduce the code you received in letter:"
-      submit: Verify my account
-      title: Verify your account
+      info: "Um Ihr Konto zu verifizieren, geben Sie bitte Ihre Zugangsdaten ein:"
+      info_code: "Bitte geben Sie nun Ihren Code, den Sie per Post/SMS erhalten haben ein:"
+      submit: Mein Konto verifizieren
+      title: Verifizieren Sie Ihr Benutzerkonto
