@@ -1,88 +1,86 @@
 fy:
   mailers:
     shared:
-      sincerely: Mit freundlichen Grüßen
-      signature: Ihr unser.muenchen-Team
+      sincerely: Kind regards
+      signature: Your Consul Team
     budget_investment_unfeasible:
-      subject: "Ihr Vorschlag entspricht leider nicht den Kriterien."
-      title: "Ihr Vorschlag entspricht leider nicht den Kriterien."
-      hi: "Hallo %{username},"
-      text1: "wir haben Ihren Vorschlag %{proposal_link} geprüft: Leider entspricht dieser nicht den Kriterien."
-      text2: "Er wird somit nicht zur nächsten Phase des %{projekt_link} zugelassen."
-      reason: "Begründung:"
-      text3: "Sollten Sie dazu Fragen haben, kontaktieren Sie uns gerne. Sie sind herzlich eingeladen, einen neuen Vorschlag einzureichen."
-      projekt_link_text: Projekts
-      sincerely: Mit freundlichen Grüßen
+      subject: "Unfortunately, your proposal does not meet the criteria."
+      title: "Unfortunately, your proposal does not meet the criteria."
+      hi: "Hello %{username},"
+      text1: "We have checked your proposal %{proposal_link}: Unfortunately, it does not meet the criteria."
+      text2: "It will therefore not be admitted to the next phase of the %{project_link}."
+      reason: "Reason:"
+      text3: "If you have any questions, please contact us. You are welcome to submit a new proposal."
+      project_link_text: Project
+      sincerely: "Sincerely"
     manual_verification_confirmation:
-      subject: Ihr Konto wurde soeben verifiziert.
-      p1: Ihr Konto wurde soeben verifiziert.
-      p2: Vielen Dank für Ihre Teilhabe.
-    formular_answer_confirmation:
-      subject: Vielen Dank! Ihr Formular wurde erfolgreich eingereicht.
-      p1: Herzlichen Dank für die Einreichung Ihres Formulars. Wir werden die Daten jetzt intern prüfen und ggf. wieder auf Sie zukommen.
+      subject: Your account has just been verified.
+      p1: Your account has just been verified.
+      p2: If you have already voted, you can now view your votes in the overview.
+      p3: You can change your vote at any time up to the end of the process.
     formular_follow_up_letter:
-      button_text: Zum Formular
+      button_text: To the form
     budget_investment_feasible:
-      subject: "Herzlichen Glückwunsch, Ihr Vorschlag entspricht den Kriterien."
-      title: "Herzlichen Glückwunsch, Ihr Vorschlag entspricht den Kriterien."
-      hi: "Hallo %{username},"
-      projekt_link_1_text: Kriterien
-      projekt_link_2_text: Projekts
-      text: "wir haben Ihren Vorschlag %{proposal_link} geprüft: Ihr Vorschlag entspricht den %{projekt_link_1}. Damit wird er zur nächsten Phase des %{projekt_link_2} zugelassen."
-      sincerely: Mit freundlichen Grüßen
+      subject: "Congratulations, your proposal meets the criteria."
+      title: "Congratulations, your proposal meets the criteria."
+      hi: "Hello %{username},"
+      project_link_1_text: criteria
+      project_link_2_text: project
+      text: "We have reviewed your proposal %{proposal_link}: your proposal meets %{project_link_1}. This means it will be accepted for the next phase of %{project_link_2}."
+      sincerely: Best regards
     newsletter_subscription_for_existing_user:
-      subject: Anmeldung zum Newsletter
-      p1_html: Es gab einen Versuch, sich mit Ihrer E-Mail-Adresse für unseren Newsletter anzumelden. Da Sie bereits über ein Consul-Konto verfügen, möchten wir Sie bitten, sich einzuloggen und die Option zum Empfang des Newsletters in Ihren <a href=%{link}>Konto-Einstellungen</a> zu aktivieren.
+      subject: Subscribe to the newsletter
+      p1_html: There was an attempt to sign up for our newsletter using your email address. Since you already have a Consul account, we would like to ask you to log in and activate the option to receive the newsletter in your <a href=%{link}>Account Settings</a>.
     file_ready:
-      subject: Daten-Export
-      p1_html: Sie haben einen Export beantragt. Die Daten wurden nun exportiert und sind im Anhang anbei.
+      subject: Data-Export
+      p1_html: You have requested an export. The data has now been exported and is attached.
     individual_group_value_users_added:
-      subject: Upload der CSV-Daten erfolgreich abgeschlossen.
-      p1_html: "Ihre Daten wurden erfolgreich hinzugefügt: <a href=\"%{url}\">%{url}</a>"
+      subject: Upload of CSV data completed successfully.
+      p1_html: "Your data was added successfully: <a href=\"%{url}\">%{url}</a>"
     resource_hidden:
-      subject: Ihr Beitrag verstößt gegen die Netiquette.
-      title: Ihr Beitrag verstößt gegen die Netiquette.
-      hi: "Hallo %{username},"
-      text1: "wir haben Ihren Beitrag geprüft: %{text}"
-      text2: "Leider verstößt er gegen die Netiquette dieser Plattform. Wir haben Ihren Beitrag daher entfernt."
-      text3: Sie können die Regeln der Netiquette %{netiquette_link} nachlesen.
-      netiquette_link_text: hier
-      text4: Sollten Sie dazu Fragen haben, kontaktieren Sie uns gerne. Sie sind herzlich eingeladen, einen neuen Beitrag zu erstellen, der die Netiquette einhält.
-      sincerely: Mit freundlichen Grüßen
+      subject: Your post violates the netiquette.
+      title: Your post violates the netiquette.
+      hi: "Hello %{username},"
+      text1: "We have checked your post: %{text}"
+      text2: "Unfortunately, it violates the netiquette of this platform. We have therefore removed your post."
+      text3: You can read the rules of netiquette %{netiquette_link}.
+      netiquette_link_text: here
+      text4: If you have any questions, please contact ustext. You are cordially invited to create a new post that complies with the netiquette.
+      sincerely: Kind regards
     comment:
-      subject: Ihr Vorschlag wurde kommentiert.
-      title: Ihr Vorschlag wurde kommentiert.
-      hi: "Hallo %{username},"
-      text: Ihr Vorschlag wurde kommentiert. Schauen Sie sich den Kommentar %{comment_link} an.
-      comment_link_text: hier
-      sincerely: Mit freundlichen Grüßen
+      subject: Your proposal has been commented on.
+      title: Your proposal has been commented on.
+      hi: "Hello %{username},"
+      text: Your proposal has been commented on. Check out the comment %{comment_link}.
+      comment_link_text: here
+      sincerely: Kind regards
     reply:
-      subject: Es wurde auf Ihren Kommentar geantwortet.
-      title: Es wurde auf Ihren Kommentar geantwortet.
-      hi: Hallo %{username},
-      text: "Ein anderer Nutzer hat auf Ihren Kommentar geantwortet. Sehen Sie sich die Antwort hier an: %{comment_link}"
-      comment_link_text: hier
-      sincerely: Mit freundlichen Grüßen
+      subject: A reply has been made to your comment.
+      title: A reply has been made to your comment.
+      hi: Hello %{username},
+      text: "Another user has replied to your comment. Check out the reply here: %{comment_link}"
+      comment_link_text: here
+      sincerely: Kind regards
     budget_investment_preselected:
-      subject: Herzlichen Glückwunsch, Ihr Vorschlag geht in die nächste Runde!
-      title: Herzlichen Glückwunsch, Ihr Vorschlag geht in die nächste Runde!
-      hi: "Hallo %{username},"
-      text1: Ihr Vorschlag %{proposal_link} hat ausreichend Stimmen erhalten und wird nun fachlich geprüft.
-      text2: Das Ergebnis der Prüfung wird zu Beginn der nächsten Phase des %{projekt_link} veröffentlicht.
-      projekt_link_text: Projekts
-      sincerely: Mit freundlichen Grüßen
+      subject: Congratulations, your proposal is going to the next round!
+      title: Congratulations, your proposal is going to the next round!
+      hi: "Hello %{username},"
+      text1: Your proposal %{proposal_link} has received enough votes and will now be reviewed.
+      text2: The result of the review will be published at the beginning of the next phase of the %{project_link}.
+      projekt_link_text: Project
+      sincerely: Kind regards
     budget_investment_not_preselected:
-      subject: Schade, Ihr Vorschlag hat es leider nicht in die nächste Runde geschafft.
-      title: Schade, Ihr Vorschlag hat es leider nicht in die nächste Runde geschafft.
-      hi: "Hallo %{username},"
-      text1: Ihr Vorschlag %{proposal_link} hat leider nicht genügend Stimmen erhalten.
-      text2: Er wird daher nicht zur nächsten Phase des %{projekt_link} zugelassen.
-      projekt_link_text: Projekts
-      sincerely: Mit freundlichen Grüßen
+      subject: Unfortunately, your proposal did not make it to the next round.
+      title: Unfortunately, your proposal did not make it to the next round.
+      hi: "Hello %{username},"
+      text1: Your proposal %{proposal_link} has unfortunately not received enough votes.
+      text2: It will therefore not be admitted to the next phase of the %{project_link}.
+      projekt_link_text: Project
+      sincerely: Kind regards
     proposal_created:
-      hi: "Hallo %{username},"
-      text1: "Ihr Vorschlag ist erfolgreich eingegangen: %{proposal_link}"
+      hi: "Hello %{username},"
+      text1: "Your proposal has been successfully submitted: %{proposal_link}"
     new_valuator_assignment:
-      subject: Ihnen wurde ein Vorschlag zur Begutachtung zugewiesen
-      hi: "Hallo %{username},"
-      text1: "Ihnen wurde ein Vorschlag zur Begutachtung zugewiesen: %{valuation_link}"
+      subject: New valuation assignment
+      hi: "Hello %{username},"
+      text1: "You have been assigned a proposal for evaluation: %{valuation_link}"
