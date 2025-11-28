@@ -19,7 +19,6 @@ de:
           show_index_order_individual_list_description: Zeigt Tab "Individuelle Liste" an
           show_index_order_drafts: Entwürfe
           show_index_order_drafts_description: Zeigt Tab "Entwürfe" an
-
         projekts_overview_page_footer:
           show_in_index_order_all: Beteiligung für "Alle Projekte"
           show_in_index_order_all_description: Zeigt die Beteiligungsmodule für den Tab "Alle Projekte an"
@@ -33,7 +32,6 @@ de:
           show_in_index_order_expired_description: Zeigt die Beteiligungsmodule für den Tab "Archivierte Projektvorhaben"
           show_in_index_order_individual_list: Individuelle Liste
           show_in_index_order_individual_list_description: Zeigt Tab "Individuelle Liste" an
-
         general:
           enable_old_design: Altes Design verwenden
           enable_old_design_description: Verwenden Sie das alte Design, in dem Sie die Einstellungen hier ändern
