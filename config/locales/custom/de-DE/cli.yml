@@ -8,6 +8,5 @@ de:
     account:
       email_taken: Konto mit dieser E-Mail-Adresse existiert bereits.
     devise:
-      success: Erfolgreich angemeldet.    
-      
+      success: Erfolgreich angemeldet.
 
