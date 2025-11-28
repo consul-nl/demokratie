@@ -1,611 +1,611 @@
 nl:
   attributes:
-    geozone_id: "Betreffende regio"
-    results_enabled: "Toon resultaten"
-    stats_enabled: "Toon statistieken"
-    advanced_stats_enabled: "Toon geavanceerde statistieken"
+    geozone_id: "Rahmen der Operation"
+    results_enabled: "Ergebnisse anzeigen"
+    stats_enabled: "Statistiken anzeigen"
+    advanced_stats_enabled: "Erweiterte Statistiken anzeigen"
     name: Name
-    email: E-mail
-    description: Beschrijving
-    related_sdg_list: Doelen en Doelstellingen
+    email: E-Mail
+    description: Beschreibung
+    related_sdg_list: Ziele und Vorgaben
   activerecord:
     models:
       activity:
-        one: "activiteit"
-        other: "activiteiten"
+        one: "Aktivität"
+        other: "Aktivitäten"
       budget:
-        one: "Budget"
-        other: "Budgetten"
+        one: "Bürgerhaushalt"
+        other: "Bürgerhaushalte"
       budget/investment:
-        one: "Investering"
-        other: "Investeringen"
+        one: "Investitionsvorschlag"
+        other: "Ausgabenvorschläge"
       milestone:
-        one: "mijlpaal"
-        other: "mijlpalen"
+        one: "Meilenstein"
+        other: "Meilensteine"
       milestone/status:
-        one: "Mijlpaalstatus"
-        other: "Mijlpaalstatussen"
+        one: "Status des Vorschlags"
+        other: "Status der Vorschläge"
       progress_bar:
-        one: "Voortgangsbalk"
-        other: "Voortgangsbalken"
+        one: "Fortschrittsbalken"
+        other: "Fortschrittsbalken"
       comment:
-        one: "Reactie"
-        other: "Reacties"
+        one: "Kommentar"
+        other: "Kommentare"
       debate:
-        one: "Discussie"
-        other: "Discussies"
+        one: "Debatte"
+        other: "Debatten"
       tag:
-        one: "Term"
-        other: "Termen"
+        one: "Tag"
+        other: "Tags"
       user:
-        one: "Gebruiker"
-        other: "Gebruikers"
+        one: "Benutzer*in"
+        other: "Benutzer*innen"
       moderator:
-        one: "Moderator"
-        other: "Moderators"
+        one: "Moderator*in"
+        other: "Moderator*innen"
       administrator:
-        one: "Beheerder"
-        other: "Beheerders"
+        one: "Administrator*in"
+        other: "Administrator*innen"
       valuator:
-        one: "Beoordelaar"
-        other: "Beoordelaars"
+        one: "Begutachter*in"
+        other: "Begutachter*innen"
       valuator_group:
-        one: "Beoordelaarsgroep"
-        other: "Beoordelaarsgroepen"
+        one: "Begutachtungsgruppe"
+        other: "Begutachtungsgruppen"
       manager:
-        one: "Manager"
-        other: "Managers"
+        one: "Manager*in"
+        other: "Manager*innen"
       newsletter:
-        one: "Nieuwsbrief"
-        other: "Nieuwsbrieven"
+        one: "Newsletter"
+        other: "Newsletter"
       vote:
-        one: "Stem"
-        other: "Stemmen"
+        one: "Abstimmen"
+        other: "Bewertung"
       organization:
-        one: "Organisatie"
-        other: "Organisaties"
+        one: "Organisation"
+        other: "Organisationen"
       poll/booth:
-        one: "stemlocatie"
-        other: "stemlocaties"
+        one: "Wahlkabine"
+        other: "Wahlkabinen"
       poll/officer:
-        one: "coördinator"
-        other: "coördinatoren"
+        one: "Beamter/in"
+        other: "Beamte/innen"
       poll/ballot_sheet:
-        one: Stembiljet
-        other: Stembiljetten
+        one: Stimmzettel
+        other: Stimmzettel
       proposal:
-        one: "Voorstel"
-        other: "Voorstellen"
+        one: "Bürgervorschlag"
+        other: "Bürgervorschläge"
       sdg/goal:
-        one: "doel"
-        other: "doelen"
+        one: "Ziel"
+        other: "Ziele"
       sdg/local_target:
-        one: "lokale doelstelling"
-        other: "lokale doelstellingen"
+        one: "lokales Ziel"
+        other: "lokale Ziele"
       sdg/manager:
-        one: "SDG manager"
-        other: "SDG managers"
+        one: "SDG Manager"
+        other: "SDG Managers"
       sdg/target:
-        one: "doelstelling"
-        other: "doelstellingen"
+        one: "Ziel"
+        other: "Ziele"
       site_customization/page:
-        one: Aangepaste pagina
-        other: Aangepaste pagina's
+        one: Meine Seite
+        other: Meine Seiten
       site_customization/image:
-        one: Aangepaste afbeelding
-        other: Aangepaste afbeeldingen
+        one: Bild
+        other: Benutzer*definierte Bilder
       site_customization/content_block:
-        one: Aangepaste inhoud
-        other: Aangepaste inhoud
+        one: Benutzerspezifischer Inhaltsdatenblock
+        other: Benutzer*definierte Inhaltsdatenblöcke
       document:
-        one: Document
-        other: Documenten
+        one: Dokument
+        other: Dokumente
       legislation/process:
-        one: "Proces"
-        other: "Processen"
+        one: "Beteiligungsverfahren"
+        other: "Beteiligungsverfahren"
       legislation/proposal:
-        one: "Voorstel"
-        other: "Voorstellen"
+        one: "Vorschlag"
+        other: "Vorschläge"
       legislation/draft_versions:
-        one: "Concept"
-        other: "Conceptem"
+        one: "Entwurfsfassung"
+        other: "Entwurfsversionen"
       legislation/questions:
-        one: "Vraag"
-        other: "Vragen"
+        one: "Frage"
+        other: "Fragen"
       legislation/question_options:
-        one: "Vraag optie"
-        other: "Vraag keuzen"
+        one: "Antwortmöglichkeit"
+        other: "Antwortmöglichkeiten"
       legislation/answers:
-        one: "Antwoord"
-        other: "Antwoorden"
+        one: "Antwort"
+        other: "Antworten"
       documents:
-        one: "Document"
-        other: "Documenten"
+        one: "Dokument"
+        other: "Dokumente"
       images:
-        one: "Afbeelding"
-        other: "Afbeeldingen"
+        one: "Bild"
+        other: "Bilder"
       topic:
-        one: "Onderwerp"
-        other: "Onderwerpen"
+        one: "Thema"
+        other: "Inhalte"
       poll:
-        one: "Peiling"
-        other: "Peilingen"
+        one: "Abstimmung"
+        other: "Umfragen"
       proposal_notification:
-        one: "Notificatie"
-        other: "Voorstelnotificaties"
+        one: "Antrags-Benachrichtigung"
+        other: "Benachrichtigungen zu einem Vorschlag"
       dashboard/action:
-        one: Voorsteldashboard actie
-        other: Voorsteldashboard acties
+        one: Aktion im Vorschlags-Dashboard
+        other: Aktionen im Vorschlags-Dashboard
       dashboard/administrator_task:
-        one: Taak
-        other: Taken
+        one: Aufgabe
+        other: Aufgaben
       link:
         one: Link
         other: Links
       local_census_record:
-        one: Lokaal volkstellingsregister
-        other: Lokale volkstellingsregisters
+        one: Import von Datensatz aus dem Melderegister
+        other: Import von Datensätzen aus dem Melderegister
     attributes:
       budget:
-        name: "Naam"
-        description_accepting: "Omschrijving in de acceptatiefase"
-        description_reviewing: "Omschrijving in de beoordelingsfase"
-        description_selecting: "Omschrijving in de selectiefase"
-        description_valuating: "Omschrijving in de waarderingsfase"
-        description_balloting: "Omschrijving in de stemfase"
-        description_reviewing_ballots: "Omschrijving gedurende de evaluatie van stemmen"
-        description_finished: "Omschrijving wanneer het budget is afgerond"
-        phase: "Fase"
-        currency_symbol: "Valuta"
-        voting_style: "Final voting style"
-        voting_style_knapsack: "Knapsack"
-        voting_style_approval: "Goedkeuring"
-        hide_money: "Hide money amount for this budget"
-        max_preselected: Preselected (optional)
+        name: "Name"
+        description_accepting: "Beschreibung während der Vorschlagsphase"
+        description_reviewing: "Beschreibung während der internen Überprüfungsphase"
+        description_selecting: "Beschreibung während der Auswahlphase"
+        description_valuating: "Beschreibung während der Begutachtungsphase"
+        description_balloting: "Beschreibung während der Abstimmungsphase"
+        description_reviewing_ballots: "Beschreibung während der Überprüfungsphase der Abstimmungen"
+        description_finished: "Beschreibung, wenn der Bürgerhaushalt beschlossen ist"
+        phase: "Phase"
+        currency_symbol: "Währung"
+        voting_style: "Finaler Abstimmungsstil"
+        voting_style_knapsack: "Rucksack"
+        voting_style_approval: "Freigabe"
       budget/translation:
-        main_link_text: "Linktekst"
-        main_link_url: "De link verwijst naar (voeg een link toe)"
+        main_link_text: "Linktext"
+        main_link_url: "Der Link führt zu (Link hinzufügen)"
         name: "Name"
       budget/investment:
-        heading_id: "Kop"
+        heading_id: "Rubrik"
         title: "Titel"
-        description: "Omschrijving"
-        external_url: "Link naar aanvullende informatie"
-        administrator_id: "Beheerder"
-        location: "Locatie (optioneel)"
-        organization_name: "Als je een voorstel doet uit naam van een collectief/organisatie, voer dan hier de naam in"
-        image: "Afbeelding bij het budget"
-        image_title: "Naam van de afbeelding"
-        duration: "Tijdsspanne"
-        feasibility_feasible: "Haalbaar"
-        feasibility_undecided: "Niet gedefinieerd"
-        feasibility_unfeasible: "Unfeasible"
-        incompatible: "Markeer als incompatibel"
-        milestone_tag_list: "Mijlpaaltags"
-        price_explanation: "Price explanation"
-        selected: "Markeer als geselecteerd"
-        selected_true: "Geselecteerd"
-        selected_false: "Niet geselecteerd"
-        unfeasibility_explanation: "Toelichting op de haalbaarheid"
-        valuation_finished: "Beoordeling voltooid"
-        valuator_ids: "Groepen"
+        description: "Beschreibung"
+        external_url: "Link zur weiteren Dokumentation"
+        administrator_id: "Administrator*in"
+        location: "Standort (optional)"
+        organization_name: "Wenn Sie einen Vorschlag im Namen einer Gruppe, Organisation oder mehreren Personen einreichen, nennen Sie bitte dessen/deren Name/n"
+        image: "Beschreibendes Bild zum Ausgabenvorschlag"
+        image_title: "Bildtitel"
+        duration: "Zeitrahmen"
+        feasibility_feasible: Entspricht den Kriterien
+        feasibility_undecided: "Undefiniert"
+        feasibility_unfeasible: "Undurchführbar"
+        incompatible: "Als inkompatibel markieren"
+        milestone_tag_list: "Status des Vorschlags"
+        price_explanation: "Erläuterung der Kosten"
+        selected: "Als ausgewählt markieren"
+        selected_true: "Ausgewählt"
+        selected_false: "Nicht ausgewählt"
+        unfeasibility_explanation: "Erläuterung"
+        valuation_finished: "Begutachtung abgeschlossen"
+        valuator_ids: "Gruppen"
         valuation_tag_list: "Tags"
-        valuator_explanation: Valuator Explanation
       budget/investment/translation:
-        title: "Title"
-        description: "Beschrijving"
+        title: "Titel"
+        description: "Beschreibung"
       geozone:
-        name: Naam
-        external_code: "Externe code (optioneel)"
-        census_code: "Censuscode (optioneel)"
-        html_map_coordinates: "HTML <map> Coördinaten (optioneel)"
+        name: Name
+        external_code: "Externer Code (optional)"
+        census_code: "Register Code (optional)"
+        html_map_coordinates: "HTML <map> Koordinaten (optional)"
       milestone:
-        status_id: "Huidige status (optioneel)"
+        status_id: "Aktueller Status (optional)"
         title: "Titel"
-        description: "Omschrijving"
-        publication_date: "Publicatiedatum"
+        description: "Beschreibung (optional, wenn kein Status zugewiesen ist)"
+        publication_date: "Datum der Veröffentlichung"
       milestone/translation:
-        description: "Beschrijving"
+        description: "Beschreibung"
       milestone/status:
-        name: "Naam"
-        description: "Omschrijving (optioneel)"
+        name: "Name"
+        description: "Beschreibung (optional)"
       progress_bar:
-        kind: "Type"
+        kind: "Typ"
         title: "Titel"
-        percentage: "Huidige voortgang"
+        percentage: "Aktueller Fortschritt"
       progress_bar/kind:
-        primary: "Primair"
-        secondary: "Secundair"
+        primary: "Primär"
+        secondary: "Sekundär"
       budget/group:
-        max_votable_headings: "Maximum number of headings in which a user can select projects"
+        max_votable_headings: "Maximale Anzahl von Rubriken, in der ein*e Benutzer*in abstimmen kann"
       budget/group/translation:
-        name: "Groepsnaam"
+        name: "Name der Gruppe"
       budget/heading:
-        allow_custom_content: "Inhoudsblok toestaan"
-        latitude: "Breedte (optioneel)"
-        longitude: "Lengte (optioneel)"
-        name: "Naam"
-        price: "Kosten"
-        population: "Populatie"
-        max_ballot_lines: "Aantal stemmen"
+        allow_custom_content: "Inhaltsdatenblock zulassen"
+        latitude: "Breitengrad (optional)"
+        longitude: "Längengrad (optional)"
+        name: "Name der Rubrik"
+        price: "Preis"
+        population: "Bevölkerung"
+        max_ballot_lines: "Erlaubte Stimmen"
       budget/heading/translation:
-        name: "Kop naam"
+        name: "Name der Rubrik"
       budget/phase:
-        enabled: "Fase actief"
-        ends_at: "Einddatum"
-        starts_at: "Startdatum"
+        enabled: "Phase aktiviert"
+        ends_at: "Enddatum des Verfahrens"
+        starts_at: "Anfangsdatum"
       budget/phase/translation:
         name: "Name"
-        description: "Beschrijving"
-        summary: "Samenvatting"
-        main_link_text: "Linktekst"
-        main_link_url: "De link verwijst naar (voeg een link toe)"
+        description: "Beschreibung"
+        summary: "Zusammenfassung"
+        main_link_text: "Linktext"
+        main_link_url: "Der Link führt zu (Link hinzufügen)"
       comment:
-        body: "Reactie"
-        user: "Gebruiker"
+        body: "Kommentar"
+        user: "Benutzer*in"
       debate:
-        author: "Auteur"
-        description: "Omschrijving"
-        tag_list: "Termen"
-        terms_of_service: "Gebruiksvoorwaarden"
+        author: "Autor"
+        description: "Beitrag"
+        tag_list: "Inhalte"
+        terms_of_service: "Nutzungsbedingungen"
         title: "Titel"
       debate/translation:
-        title: "Onderwerp"
-        description: "Omschrijving"
+        title: "Titel der Debatte"
+        description: "Initialer Debattenbeitrag"
       proposal:
-        author: "Auteur"
+        author: "Autor"
         title: "Titel"
-        question: "Vraag"
-        description: "Omschrijving"
-        responsible_name: "Volledige naam van persoon die het voorstel doet"
-        retired_reason: "Reden het voorstel terug te trekken"
-        selected: "Markeer als geselecteerd"
-        terms_of_service: "Gebruiksvoorwaarden"
-        video_url: "Externe video"
+        question: "Frage"
+        description: "Beschreibung"
+        responsible_name: "Vollständiger Name der Person, die den Vorschlag einreicht"
+        retired_reason: "Grund für das Zurückziehen des Antrags"
+        selected: "Als ausgewählt markieren"
+        terms_of_service: "Nutzungsbedingungen"
+        video_url: "Externes Video URL"
       proposal/translation:
-        title: "Titel van het voorstel"
-        description: "Beschrijving van het voorstel"
-        summary: "Samenvatting voorstel"
-        retired_explanation: "Toelichting"
+        title: "Titel des Vorschlages"
+        description: "Vorschlagstext"
+        summary: "Zusammenfassung Vorschlag"
+        retired_explanation: "Erläuterung"
       user:
-        login: "Email of gebruikersnaam"
-        email: "Email"
-        username: "Gebruikersnaam"
-        password_confirmation: "Wachtwoord bevestiging"
-        password: "Wachtwoord"
-        current_password: "Huidig wachtwoord"
-        email_digest: "Stuur een samenvatting van notificaties op voorstellen"
-        email_on_comment: "Stuur me een email als iemand op mijn voorstellen of discussies reageert"
-        email_on_comment_reply: "Wanneer iemand reageert op mijn reacties"
-        email_on_direct_message: "Email ontvangen wanneer er privéberichten zijn"
-        newsletter: "Stuur me email met relevante informatie over de website"
-        official_position: "Positie"
-        official_position_badge: "Toon positiebadge"
-        official_level: "Niveau"
-        phone_number: "Telefoonnummer"
-        public_activity: "Anderen mogen mijn activiteit zien"
-        public_interests: "Wat ik volg is zichtbaar voor anderen"
-        recommended_debates: "Aanbevolen debatten weergeven"
-        recommended_proposals: "Laat aanbevolen voorstellen zien"
-        redeemable_code: "Verificatiecode ontvangen via email"
+        login: "E-Mail oder Benutzer*innenname"
+        email: "E-Mail"
+        username: "Benutzer*innenname"
+        password_confirmation: "Bestätigen Sie das Passwort "
+        password: "Passwort"
+        current_password: "Aktuelles Passwort"
+        email_digest: "Benachrichtigungen mit Zusammenfassung über Vorschlag erhalten"
+        email_on_comment: "Benachrichtigen Sie mich per E-Mail, wenn jemand meine Vorschläge oder Diskussionen kommentiert"
+        email_on_comment_reply: "Benachrichtigen Sie mich per E-Mail, wenn jemand auf meine Kommentare antwortet"
+        email_on_direct_message: "E-Mails über direkte Nachrichten empfangen"
+        newsletter: "Per E-Mail Webseite relevante Informationen erhalten"
+        official_position: "Beamte/in"
+        official_position_badge: "Kennzeichen des Benutzertyps anzeigen"
+        official_level: "Amtsebene"
+        phone_number: "Telefonnummer"
+        public_activity: "Meine Liste an Aktivitäten öffentlich zugänglich machen"
+        public_interests: "Die Bezeichnungen der Elemente denen ich folge öffentlich zugänglich halten"
+        recommended_debates: "Debatten-Empfehlungen anzeigen"
+        recommended_proposals: "Antrags-Empfehlungen anzeigen"
+        redeemable_code: "Bestätigungscode per Post (optional)"
       direct_message:
-        title: "Title"
-        body: "Bericht"
+        title: "Titel"
+        body: "Nachricht"
       organization:
-        name: "Organisatienaam"
-        responsible_name: "Verantwoordelijke"
+        name: "Name der Organisation"
+        responsible_name: "Der/die* Gruppenverantwortliche"
       poll:
-        name: "Naam"
+        name: "Name"
         title: "Name"
-        starts_at: "Begindatum"
-        ends_at: "Einddatum"
-        geozone_restricted: "Beperkt tot gebied"
-        summary: "Samenvatting"
-        description: "Omschrijving"
+        starts_at: "Anfangsdatum"
+        ends_at: "Enddatum"
+        geozone_restricted: "Beschränkt auf Gebiete"
+        summary: "Zusammenfassung"
+        description: "Beschreibung"
       active_poll/translation:
-        description: "Beschrijving"
+        description: "Beschreibung"
       poll/booth:
         name: "Name"
-        location: "Location"
+        location: "Lage"
       poll/translation:
-        name: "Naam"
-        summary: "Samenvatting"
-        description: "Omschrijving"
+        name: "Name"
+        summary: "Zusammenfassung"
+        description: "Beschreibung"
       poll/question:
-        poll_id: "Poll"
-        title: "Vraag"
-        multiple: Multiple answers allowed
-        summary: "Samenvatting"
-        description: "Omschrijving"
-        external_url: "Link naar aanvullende informatie"
+        poll_id: "Abstimmung"
+        title: "Frage"
+        multiple: Mehrfachantworten erlauben
+        summary: "Zusammenfassung"
+        description: "Beschreibung"
+        external_url: "Link zu zusätzlicher Dokumentation"
       poll/question/translation:
-        title: "Vraag"
+        title: "Frage"
       poll/ballot_sheet:
-        data: CSV data
-        poll_id: Peiling
-        officer_assignment_id: Toewijzing
+        data: CSV Daten
+        poll_id: Abstimmung
+        officer_assignment_id: Zuordnung Verwaltung
       poll/shift:
-        task: "Taak"
+        task: "Aufgabe"
       proposal_notification:
-        body: "Bericht"
-        title: "Title"
+        body: "Nachricht"
+        title: "Titel"
       signature_sheet:
-        title: "Title"
-        signable_type: "Geschikt voor tekenen"
-        signable_id: "Geschikt voor identificatie"
-        document_numbers: "Documentnummers"
+        title: "Titel"
+        signable_type: "Unterschriftentyp"
+        signable_id: "ID des Bürgervorschlags/Ausgabenvorschlags"
+        document_numbers: "Dokumentennummern"
       sdg/goal:
         code: "Code"
-        title: "Title"
-        description: "Beschrijving"
+        title: "Titel"
+        description: "Beschreibung"
       sdg/local_target:
         code: "Code"
-        target_id: "Doelstelling"
-        title: "Title"
+        target_id: "Ziel"
+        title: "Titel"
       sdg/local_target/translation:
-        title: "Title"
-        description: "Beschrijving"
+        title: "Titel"
+        description: "Beschreibung"
       sdg/phase/kind:
-        sensitization: "Bewustmaking"
-        planning: "Planning"
-        monitoring: "Controle"
+        sensitization: "Sensibilisierung"
+        planning: "Planung"
+        monitoring: "Kontrolle"
       sdg/target:
         code: "Code"
-        title: "Title"
+        title: "Titel"
       site_customization/page:
-        content: Inhoud
-        created_at: Aangemaakt op
-        subtitle: Ondertitel
-        slug: Slug
+        content: Inhalt
+        created_at: Erstellt am
+        subtitle: Untertitel
+        slug: URL
         status: Status
-        status_draft: "Concept"
-        status_published: "Gepubliceerd"
+        status_draft: "Entwurf"
+        status_published: "Veröffentlicht"
         title: Titel
-        updated_at: Bijgewerkt op
-        more_info_flag: In de help-pagina weergeven
-        print_content_flag: Print inhoud
-        locale: Taal
+        updated_at: Letzte Aktualisierung
+        more_info_flag: Auf der Hilfeseite anzeigen
+        print_content_flag: Taste Inhalt drucken
+        locale: Sprache
       site_customization/page/translation:
         title: Titel
-        subtitle: Ondertitel
-        content: Inhoud
+        subtitle: Untertitel
+        content: Inhalt
       site_customization/image:
-        name: Naam
-        image: Afbeelding
+        name: Name
+        image: Bild
       site_customization/content_block:
-        name: Naam
-        locale: taal
-        body: Platte tekst
+        name: Name
+        locale: Sprache
+        body: Inhalt
       tag:
-        name: "Type the naam van het onderwerp"
+        name: "Geben Sie den Namen des Themas ein"
       topic:
-        title: "Title"
-        description: "Tekst"
+        title: "Titel"
+        description: "Anfangstext"
       banner:
-        background_color: Achtergrondkleur
-        font_color: Tekstkleur
-        post_ended_at: "Bijdrage eindigt op"
-        post_started_at: "Bijdrage start op"
+        background_color: Hintergrundfarbe
+        font_color: Schriftfarbe
+        post_ended_at: "Ende der Veröffentlichung"
+        post_started_at: "Beginn der Veröffentlichung"
         target_url: "Link"
       banner/translation:
-        title: "Title"
-        description: "Beschrijving"
+        title: "Titel"
+        description: "Beschreibung"
       legislation/process:
-        title: Titel
-        summary: Samenvatting
-        description: Omschrijving
-        additional_info: Aanvullende informatie
-        start_date: Begindatum
-        end_date: Einddatum
-        debate_start_date: Begindatum
-        debate_end_date: Einddatum
-        draft_start_date: Begindatum
-        draft_end_date: Einddatum
-        draft_publication_date: Publicatiedatum concept
-        allegations_start_date: Begindatum
-        allegations_end_date: Einddatum
-        proposals_phase_start_date: Begindatum
-        proposals_phase_end_date: Einddatum
-        result_publication_date: Publicatiedatum eindresultaat
-        background_color: Achtergrondkleur
-        font_color: Tekstkleur
-        homepage_enabled: "Homepage ingeschakeld"
+        title: Titel des Beteiligungsverfahrens
+        summary: Zusammenfassung
+        description: Beschreibung
+        additional_info: Zusätzliche Information
+        start_date: Anfangsdatum
+        end_date: Enddatum
+        debate_start_date: Anfangsdatum Diskussion
+        debate_end_date: Enddatum Diskussion
+        draft_start_date: Anfangsdatum Entwurfsphase
+        draft_end_date: Enddatum Entwurfsphase
+        draft_publication_date: Veröffentlichungsdatum des Entwurfs
+        allegations_start_date: Anfangsdatum Überprüfung
+        allegations_end_date: Enddatum Überprüfung
+        proposals_phase_start_date: Anfang
+        proposals_phase_end_date: Ende
+        result_publication_date: Veröffentlichungsdatum Endergebnis
+        background_color: Hintergrundfarbe
+        font_color: Schriftfarbe
+        homepage_enabled: "Homepage aktiviert"
       legislation/process/translation:
-        title: Titel
-        summary: Samenvatting
-        description: Omschrijving
-        additional_info: Aanvullende informatie
-        homepage: "Beschrijving"
-        milestones_summary: Samenvatting
+        title: Titel des Beteiligungsverfahrens
+        summary: Zusammenfassung
+        description: Beschreibung
+        additional_info: Zusätzliche Information
+        homepage: "Beschreibung"
+        milestones_summary: Zusammenfassung
       legislation/proposal:
-        description: "Beschrijving van het voorstel"
-        summary: "Samenvatting voorstel"
-        title: "Titel van het voorstel"
-        video_url: "Link naar video"
+        description: "Vorschlagstext"
+        summary: "Zusammenfassung Vorschlag"
+        title: "Titel des Vorschlages"
+        video_url: "Link zu externem Video"
       legislation/draft_version:
-        title: Titel
-        body: Tekst
-        changelog: Wijzigingen
+        title: Titel der Fassung
+        body: Text
+        changelog: Änderungen
         status: Status
-        status_draft: "Concept"
-        status_published: "Gepubliceerd"
-        final_version: Eindversie
+        status_draft: "Entwurf"
+        status_published: "Veröffentlicht"
+        final_version: Endgültige Version
       legislation/draft_version/translation:
-        title: Titel
-        body: Tekst
-        changelog: Wijzigingen
+        title: Titel der Fassung
+        body: Text
+        changelog: Änderungen
       legislation/question:
         title: Titel
-        question_options: Opties
+        question_options: Antwortmöglichkeiten
       legislation/question/translation:
-        title: Question
+        title: Frage
       legislation/question_option:
-        value: Waarde
+        value: Wert
       legislation/annotation:
-        text: Reactie
+        text: Kommentar
       document:
         title: Titel
-        attachment: "Bijlage"
+        attachment: "Anhang"
       image:
         title: Titel
-        attachment: "Bijlage"
+        attachment: "Anhang"
       poll/question/answer:
-        title: Antwoord
-        description: Omschrijving
+        title: Antwort
+        description: Beschreibung
       poll/question/answer/translation:
-        title: Antwoord
-        description: Omschrijving
+        title: Antwort
+        description: Beschreibung
       poll/question/answer/video:
         title: Titel
-        url: Externe video
+        url: Externes Video
       newsletter:
-        segment_recipient: Ontvangers
-        subject: Onderwerp
-        from: "Van"
-        body: Email inhoud
+        segment_recipient: Empfänger*innen
+        subject: Betreff
+        from: "Von"
+        body: Inhalt der E-Mail
+        title: Überschrift / Titel
+        subtitle: Untertitel
+        cover_image: Titelbild
       admin_notification:
-        segment_recipient: Ontvangers
+        segment_recipient: Empfänger*innen
         title: Titel
         link: Link
-        body: Tekst
+        body: Text
       admin_notification/translation:
         title: Titel
-        body: Tekst
+        body: Text
       widget/card:
-        label: Term (optioneel)
+        label: Tag (optional)
         title: Titel
-        description: Omschrijving
-        link_text: Tekst link
-        link_url: URL link
-        columns: Aantal kolommen
+        description: Beschreibung
+        link_text: Linktext
+        link_url: URL des Links
+        columns: Anzahl der Spalten
       widget/card/translation:
-        label: Term (optioneel)
+        label: Tag (optional)
         title: Titel
-        description: Omschrijving
-        link_text: Link tekst
+        description: Beschreibung
+        link_text: Linktext
       widget/feed:
-        limit: Aantal items
+        limit: Anzahl der Elemente
       dashboard/action:
         title: Titel
-        short_description: Korte beschrijving
-        description: Beschrijving
-        link: Externe link
-        request_to_administrators: Include in the resource a button to request the resource from administrators
-        day_offset: How many days after the creation of the proposal do you want it to be activated?
-        required_supports: How much supports does the proposal have to get in order to be activated?
-        order: You can enter the position where this action will be shown to the user in the list of actions
-        active: Actief
-        action_type: Type
-        action_type_proposed_action: "Proposed action"
-        action_type_resource: "Resource"
-        published_proposal: "For published proposals?"
+        short_description: Kurze Beschreibung
+        description: Beschreibung
+        link: Externer Link
+        request_to_administrators: Aufnahme einer Schaltfläche um die Entscheidung von Administratoren anzufordern
+        day_offset: Wie viele Tage nach der Erstellung des Vorschlags möchten Sie, dass er aktiviert wird?
+        required_supports: Wie viel Unterstützung muss der Antrag erhalten, um aktiviert zu werden?
+        order: Sie können die Position eingeben, an der diese Aktion dem Benutzer in der Liste der Aktionen angezeigt wird
+        active: Aktiv
+        action_type: Typ
+        action_type_proposed_action: "Vorgeschlagene Aktion"
+        action_type_resource: "Ressource"
+        published_proposal: "Für veröffentlichte Vorschläge?"
       dashboard/administrator_task:
-        source: Bron
-        user: Executed by
+        source: Quelle
+        user: Ausgeführt von
       link:
         label: Titel
         url: Link
       valuator:
-        description: Beschrijving
-        valuator_group_id: Beoordelaarsgroep
-        can_comment: Can create comments
-        can_edit_dossier: Can edit dossiers
+        description: Beschreibung
+        valuator_group_id: Begutachtungsgruppe
+        can_comment: Kann Kommentare abgeben
+        can_edit_dossier: Kann Dossiers bearbeiten
       valuator_group:
-        name: "Groepsnaam"
+        name: "Name der Gruppe"
       local_census_record:
-        document_type: Documentsoort
-        document_number: Document nummer
-        date_of_birth: Date of birth
-        postal_code: Postal code
+        document_type: Dokumententyp
+        document_number: Dokumentennummer
+        date_of_birth: Geburtsdatum
+        postal_code: Postleitzahl
     errors:
       models:
         user:
           attributes:
             email:
-              password_already_set: "Deze gebruiker heeft al een wachtwoord"
+              password_already_set: "Diese*r Benutzer*in hat bereits ein Passwort"
         debate:
           attributes:
             tag_list:
-              less_than_or_equal_to: "het aantal termen moet kleiner of gelijk aan %{count} zijn"
+              less_than_or_equal_to: "Tags müssen kleiner oder gleich %{count} sein"
         direct_message:
           attributes:
             max_per_day:
-              invalid: "U heeft het maximum aan privéberichten per dag bereikt"
+              invalid: "Sie haben die maximale Anzahl an persönlichen Nachrichten pro Tag erreicht"
         image:
           attributes:
             attachment:
-              min_image_width: "Breedte afbeelding moet minstens %{required_min_width}px zijn"
-              min_image_height: "Hoogte afbeelding moet minstens %{required_min_height}px zijn"
+              min_image_width: "Die Bildbreite muss mindestens %{required_min_width}px betragen"
+              min_image_height: "Die Bildhöhe muss mindestens %{required_min_height}px betragen"
         newsletter:
           attributes:
             segment_recipient:
-              invalid: "Het onderdeel ontvangers is ongeldig"
+              invalid: "Das Empfänger*innensegment ist ungültig"
         admin_notification:
           attributes:
             segment_recipient:
-              invalid: "Het onderdeel ontvangers is ongeldig"
+              invalid: "Das Benutzer*innensegment ist ungültig"
         poll/voter:
           attributes:
             document_number:
-              not_in_census: "Niet geverifieerd"
+              not_in_census: "Dieses Dokument scheint nicht im Melderegister auf"
             user_id:
-              has_voted: "Gebruiker heeft al gestemd"
+              has_voted: "Nutzer hat bereit abgestimmt"
         legislation/process:
           attributes:
             end_date:
-              invalid_date_range: moet op of na de begindatum zijn
+              invalid_date_range: muss an oder nach dem Anfangsdatum sein
             debate_end_date:
-              invalid_date_range: moet op of na de begindatum zijn
+              invalid_date_range: muss an oder nach dem Anfangsdatum der Diskussion sein
             draft_end_date:
-              invalid_date_range: dient later te zijn dan de begindatum
+              invalid_date_range: muss an oder nach dem Anfangsdatum der Entwurfsphase sein
             allegations_end_date:
-              invalid_date_range: moet op of na de begindatum zijn
+              invalid_date_range: muss an oder nach dem Anfangsdatum der Überprüfung sein
         local_census_record:
           attributes:
             document_type:
-              inclusion: is not included in the list, allowed values are 1 for DNI, 2 for passport and 3 for residence card.
+              inclusion: ist nicht in der Liste enthalten, zulässig sind die Werte 1 für Personalausweis, 2 für Reisepass und 3 für Aufenthaltsberechtigung.
         proposal:
           attributes:
             tag_list:
-              less_than_or_equal_to: "termen moeten kleiner of gelijk zijn aan %{count}"
+              less_than_or_equal_to: "Tags müssen kleiner oder gleich %{count} sein"
         budget/investment:
           attributes:
             tag_list:
-              less_than_or_equal_to: "termen moeten kleiner of gelijk zijn aan %{count}"
+              less_than_or_equal_to: "Tags müssen kleiner oder gleich %{count} sein"
         proposal_notification:
           attributes:
             minimum_interval:
-              invalid: "Je moet minstens %{interval} dagen wachten tussen meldingen"
+              invalid: "Sie müssen mindestens %{interval} Tage zwischen Benachrichtigungen warten"
         signature:
           attributes:
             document_number:
-              not_in_census: "Niet geverifieerd"
-              already_voted: "Al gestemd op dit voorstel"
+              not_in_census: "Nicht durch das Melderegister überprüft"
+              already_voted: "Hat bereits für diesen Vorschlag abgestimmt"
         site_customization/page:
           attributes:
             slug:
-              slug_format: "moeten letter, nummers, _ en - zijn"
+              slug_format: "muss Buchstaben, Ziffern, _ und - enthalten"
         site_customization/image:
           attributes:
             image:
-              image_width: "Breedte moet %{required_width}px zijn"
-              image_height: "Hoogte moet %{required_height}px zijn"
+              image_width: "Die Breite muss %{required_width}px betragen"
+              image_height: "Die Höhe muss %{required_height}px betragen"
         comment:
           attributes:
             valuation:
-              cannot_comment_valuation: "Je kunt niet reageren op een beoordeling"
+              cannot_comment_valuation: "Eine Überprüfung kann nicht kommentiert werden"
         remote_translation:
           attributes:
             locale:
-              already_translated: Already translated resource
+              already_translated: Bereits übersetzte Ressource
         sdg/local_target:
           attributes:
             code:
-              invalid: "must start with the same code as its target followed by a dot and end with a number"
+              invalid: "muss mit dem gleichen Code wie sein Ziel beginnen, gefolgt von einem Punkt und mit einer Zahl enden"
       messages:
-        translations_too_short: Is mandatory to provide one translation at least
-        record_invalid: "Validatie mislukt: %{errors}"
-        another_poll_active: There is another poll active for the given period
+        translations_too_short: Ist verpflichtet, mindestens eine Übersetzung zur Verfügung zu stellen
+        record_invalid: "Validierung fehlgeschlagen: %{errors}"
+        another_poll_active: Es gibt eine andere Abstimmung, die für den angegebenen Zeitraum aktiv ist
         restrict_dependent_destroy:
-          has_one: "Kan onderdeel niet verwijderen omdat een afhankelijk %{record} bestaat"
-          has_many: "Kan onderdeel niet verwijderen omdat een afhankelijk %{record} bestaat"
+          has_one: "Der Eintrag kann nicht gelöscht werden, da dieser mit %{record} verbunden ist"
+          has_many: "Der Eintrag kann nicht gelöscht werden, da dieser mit %{record} verbunden ist"
