@@ -2,59 +2,65 @@ de:
   custom:
     polls:
       index:
-        projekts: Projects
+        projekts: Projekte
         search_form:
-          placeholder: Search...
-        count: Polls
-        welcome_default_text_html: On this page you will find all polls initiated by the city administration. The polls can be sorted according to various criteria and searched specifically for projects, areas or keywords. Some polls may be limited to certain areas or age groups.
-        sidebar_information_default_text: Would you like to vote? Just choose the poll and click “Participate”
-        empty_list_text: No connected polls
+          placeholder: "Suchen..."
+        count: Abstimmungen
+        welcome_default_text_html: Sie finden auf dieser Seite alle Abstimmungen, die von der Stadtverwaltung initiiert wurden.
+          Die Abstimmungen lassen sich nach verschiedenen Kriterien sortieren und gezielt nach Projekten, Gebieten oder Schlagworten durchsuchen.
+          Manche Abstimmungen können auf bestimmte Gebiete oder Altersgruppen beschränkt sein.
+        sidebar_information_default_text: Sie möchten über selbst abstimmen? Suchen Sie einfach nach der gewünschten Abstimmung und klicken auf "Teilnehmen"
+        empty_list_text: Derzeit keine verknüpften Abstimmungen
       poll:
         date:
-          from: from
-          to: to
+          from: von
+          to: bis
         days_left:
-          one: 1 more day
-          other: '%{count} more days'
-        expired: Poll expired
-        expires_today: Expires today
-        participate_button: Participate now!
-        phase_expired_button: Results
-        phase_current_button: Participate
-        phase_not_started_button: Preview
+          one: Noch 1 Tag
+          other: Noch %{count} Tage
+        expired: Abstimmung abgelaufen
+        expires_today: Läuft nur noch heute
+        participate_button: Teilnehmen
+        phase_expired_button: Ergebnisse
+        phase_current_button: Teilnehmen
+        phase_not_started_button: Vorschau
       questions:
-        prev_question: "Previous question"
-        next_question: "Next question"
-        closing_note: Complete
-        go_to_start: "To the beginning"
+        prev_question: "Vorherige Frage"
+        next_question: "Nächste Frage"
+        closing_note: Abschließen
+        go_to_start: "Zum Anfang"
         answers:
-          more_info: More info
-          save_open_answer: Save answer
-          update_open_answer: Edit answer
+          more_info: Mehr Infos
+          save_open_answer: Texteingabe speichern
+          update_open_answer: Texteingabe editieren
       results:
-        open_answers: Open answers
-        scoped_popup_callout: The following analysis shows how the users who voted for this answer option answered the following questions.
-        question_street_details_tooltip: Participants data
-        question_street_details_csv_link: Download details about streets
-        question_answer_details_tooltip: Crosssecrional details
-        question_answer_details_csv_link: Download details about crossectional voting
-        open_answers_csv_link: Download open answers
+        open_answers: Offene Antworten
+        scoped_popup_callout: Die nachfolgende Auswertung zeigt, wie die Nutzer*innen, die für diese Antwortoption gestimmt haben, in den nachfolgenden Fragen geantwortet haben.
+        question_street_details_tooltip: Teilnahmedaten
+        question_street_details_csv_link: Straßenauswertung herunterladen
+        question_answer_details_tooltip: Einzelauswertung
+        question_answer_details_csv_link: Kreuztabellen-Auswertung herunterladen
+        open_answers_csv_link: Offene Antworten herunterladen
       show:
-        confirm_participation_button: Confirm my vote
-        confirm_participation_notice: You have successfully participated in the poll.
-        info_menu: Poll
-        stats_menu: Stats
-        results_menu: Results
-        vote_counted: Your vote was counted!
-        vote_uncounted: Your vote was withdrawn
+        confirm_participation_button: Meine Abstimmung bestätigen
+        confirm_participation_notice: Sie haben erfolgreich an der Abstimmung teilgenommen.
+        info_menu: Abstimmung
+        stats_menu: Statistik
+        results_menu: Ergebnis
+        vote_counted: Ihre Stimme wurde gezählt!
+        vote_uncounted: Ihre Stimme wurde entfernt
         results:
-          download_csv_answers_votes: Download poll results
-        welcome_default_text: we need your opinion! On this page you can take part in the poll(s) on the project. Click on the relevant button and your vote will be counted. You will also find statistical information here as well as results of the voting as soon as it is completed.
-        closing_note_default_text_html: <p><strong>Done!</strong></p> <p>Thank you for participation.</p> <p>You have the opportunity to edit your answers until the participation deadline expires. Your information will then be transmitted to the system automatically and anonymously.</p>
+          download_csv_answers_votes: Abstimmungsergebnisse herunterladen
+        welcome_default_text: Ihre Meinung ist gefragt! Auf dieser Seite können Sie sich an der oder den Abstimmung/en zum Projekt beteiligen. Klicken Sie auf die jeweilige Schaltfläche – und schon wird Ihre Stimme gezählt. Außerdem finden Sie hier statistische Angaben sowie das Ergebnis der Abstimmung, sobald diese abgeschlossen ist.
+        closing_note_default_text_html:
+          <p><strong>Geschafft!</strong></p>
+          <p>Vielen Dank für Ihre Beteiligung.</p>
+          <p>Bis zum Ablauf der Teilnahmefrist haben Sie die Möglichkeit, Ihre Antworten zu bearbeiten.
+          Danach werden Ihre Angaben automatisch und anonym an das System übermittelt.</p>
   polls:
     index:
       filters:
         title: Status
-        all: All polls
-        currrent: Active polls
-        expired: Expired polls
+        all: Alle Abstimmungen
+        currrent: Aktiv Abstimmungen
+        expired: Abgeschlossen Abstimmungen
