@@ -6,14 +6,7 @@ de:
         tags_custom: Nutzer-Tags
         required: Ihr Beitrag
         title_placeholder: "Geben Sie Ihrem Beitrag einen plakativen Titel, zum Beispiel „Die Projektlaufzeit ist zu lang“ oder „Bitte die geplanten Maßnahmen erweitern“."
-        description_placeholder: "
-          Beschreiben Sie hier Ihren Beitrag. Folgendes Vorgehen hat sich bewährt:\n\n
-          Beginnen Sie mit einer allgemeinen Beschreibung Ihrer Idee und stellen Sie im Anschluss dar,\n was sich mit der Umsetzung Ihres Vorschlags verbessern würde.\n\n
-          Achten Sie beim Schreiben möglichst auf kurze Sätze.\n
-          Beschränken Sie Ihren Inhalt – sofern möglich – auf maximal drei Absätze.\n\n
-          Nutzen Sie außerdem Absätze, um Ihren Text lesbarer zu machen. (Viele Nutzer lesen Ihren Text auf mobilen Geräten.)\n\n
-          Verwenden Sie überdies – wenn passend – Aufzählungen und Stichpunkte für eine bessere Übersichtlichkeit.
-          "
+        description_placeholder: " Beschreiben Sie hier Ihren Beitrag. Folgendes Vorgehen hat sich bewährt:\n\n Beginnen Sie mit einer allgemeinen Beschreibung Ihrer Idee und stellen Sie im Anschluss dar,\n was sich mit der Umsetzung Ihres Vorschlags verbessern würde.\n\n Achten Sie beim Schreiben möglichst auf kurze Sätze.\n Beschränken Sie Ihren Inhalt – sofern möglich – auf maximal drei Absätze.\n\n Nutzen Sie außerdem Absätze, um Ihren Text lesbarer zu machen. (Viele Nutzer lesen Ihren Text auf mobilen Geräten.)\n\n Verwenden Sie überdies – wenn passend – Aufzählungen und Stichpunkte für eine bessere Übersichtlichkeit. "
       index:
         title: "Übersicht aller Diskussionen"
         no_active_projekt: Aktuell kein Beteiligungsverfahren
