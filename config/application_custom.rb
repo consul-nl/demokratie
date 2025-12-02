@@ -1,6 +1,8 @@
 module Consul
   class Application < Rails::Application
-    config.i18n.default_locale = :de
-    config.i18n.available_locales = [:en, :de]
+    config.time_zone = "Europe/Amsterdam"
+
+    config.i18n.default_locale = :nl
+    config.i18n.available_locales = [:nl, "fy-NL", :en]
   end
 end

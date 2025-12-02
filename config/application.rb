@@ -60,6 +60,7 @@ module Consul
       "eu",
       "fa",
       "fr",
+      "fy-NL",
       "gl",
       "he",
       "hr",
@@ -92,7 +93,8 @@ module Consul
       "it"    => "es",
       "oc"    => "fr",
       "pt-BR" => "es",
-      "val"   => "es"
+      "val"   => "es",
+      "fy-NL" => "nl"
     }
 
     config.i18n.load_path += Dir[Rails.root.join("config", "locales", "**[^custom]*", "*.{rb,yml}")]
