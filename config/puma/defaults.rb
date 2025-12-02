@@ -11,7 +11,11 @@ pidfile "#{rails_root}/tmp/pids/puma.pid"
 state_path "#{rails_root}/tmp/pids/puma.state"
 stdout_redirect "#{rails_root}/log/puma_access.log", "#{rails_root}/log/puma_error.log", true
 
-bind "unix://#{rails_root}/tmp/sockets/puma.sock"
+# Clean up stale socket before binding
+socket_path = "#{rails_root}/tmp/sockets/puma.sock"
+File.delete(socket_path) if File.exist?(socket_path)
+
+bind "unix://#{socket_path}"
 
 preload_app!
 

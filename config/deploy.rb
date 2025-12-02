@@ -2,7 +2,7 @@
 lock "~> 3.17.3"
 
 def deploysecret(key)
-  @deploy_secrets_yml ||= YAML.load_file("config/deploy-secrets/deploy-secrets-cli_muc.yml")[fetch(:stage).to_s]
+  @deploy_secrets_yml ||= YAML.load_file("config/deploy-secrets/deploy-secrets.yml")[fetch(:stage).to_s]
   @deploy_secrets_yml.fetch(key.to_s, "undefined")
 end
 
@@ -13,7 +13,7 @@ set :application, "consul"
 set :deploy_to, deploysecret(:deploy_to)
 set :ssh_options, port: deploysecret(:ssh_port)
 
-set :repo_url, "https://github.com/hanuschka/consul.git"
+set :repo_url, "https://github.com/consul-nl/demokratie.git"
 
 set :revision, `git rev-parse --short #{fetch(:branch)}`.strip
 
@@ -21,8 +21,9 @@ set :log_level, :info
 set :pty, true
 set :use_sudo, false
 
-set :linked_files, %w[config/database.yml config/secrets.yml config/secret_emails.yml]
-set :linked_dirs, %w[.bundle log tmp public/system public/assets public/ckeditor_assets public/machine_learning/data storage]
+set :linked_files, %w[config/database.yml config/secrets.yml]
+set :linked_dirs,
+%w[.bundle log tmp public/system public/assets public/ckeditor_assets public/machine_learning/data storage]
 
 set :keep_releases, 5
 
@@ -163,7 +164,7 @@ task :restart_delayed_jobs do
   on roles(:app) do
     within release_path do
       with rails_env: fetch(:rails_env) do
-        execute "sudo systemctl restart delayed_job2"
+        # execute "sudo systemctl restart delayed_job2"
       end
     end
   end
