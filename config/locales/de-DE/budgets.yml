@@ -7,13 +7,11 @@ de:
         amount_available:
           knapsack: "Sie können noch <span>%{count}</span> ausgeben"
           approval:
-            zero: "Sie können noch <span>%{count}</span> Stimmen abgeben."
             one: "Sie können noch <span>%{count}</span> Stimmen abgeben."
             other: "Sie können noch <span>%{count}</span> Stimmen abgeben."
         amount_spent:
           knapsack: "Ausgegebener Betrag <span>%{count}</span>"
           approval:
-            zero: "Abgegebene Stimmen: <span>%{count}</span>"
             one: "Abgegebene Stimmen: <span>%{count}</span>"
             other: "Abgegebene Stimmen: <span>%{count}</span>"
         amount_limit:
@@ -39,6 +37,8 @@ de:
         not_enough_available_votes: "Sie haben die maximale Anzahl an abgegebenen Stimmen erreicht"
         change_ballot: Ändern Sie Ihre Wahl
         casted_offline: Sie haben schon offline abgestimmt
+        only_citizens: Participation is only allowed for citizes of %{city}.
+        only_specific_geozones: "Participation is only allowed for citizes of the following areas: %{geozones}."
     groups:
       show:
         title: Wählen Sie eine Option
@@ -109,15 +109,16 @@ de:
           change_ballot: "Wenn Sie Ihre Meinung ändern, können Sie Ihre Stimme unter %{check_ballot} entfernen und von vorne beginnen."
           check_ballot_link: "Überprüfung meiner Abstimmung"
           zero: Sie haben für keinen Ausgabenvorschlag in dieser Gruppe abgestimmt.
-          verified_only: "Um ein neuen Ausgabenvorschlag zu erstellen %{verify}."
           create: "Eine Budgetinvestitionen erstellen"
-          not_logged_in: "Um einen neuen Ausgabenvorschlag erstellen zu können, müssen Sie %{sign_in} oder %{sign_up}."
         filter: "Projekte filtern nach"
         filters:
           not_unfeasible: "Entspricht den Kriterien"
-          selected: "Ausgewählt"
-          unfeasible: "Entspricht nicht den Kriterien"
-          unselected: "Nicht ausgewählt"
+          feasible: meets the criteria
+          unfeasible: Entspricht nicht den Kriterien
+          preselected: allowed for review
+          not_preselected: not allowed for review
+          selected: Ausgewählt
+          unselected: Nicht ausgewählt
           winners: "Bestbewertete Vorschläge"
         orders:
           random: zufällig
@@ -152,7 +153,6 @@ de:
         already_added: Sie haben diesen Ausgabenvorschlag bereits hinzugefügt
         support_title: Unterstützen Sie dieses Projekt
         supports:
-          zero: Keine Unterstützung
           one: 1 Unterstützer*in
           other: "%{count} Unterstützer*innen"
       header:

@@ -1,88 +1,89 @@
 nl:
   officing:
     header:
-      title: Polling
+      title: Abstimmung
     dashboard:
       index:
-        title: Poll officing
-        info: Hier kun je documenten van gebruikers valideren en stemresultaten opslaan
-        no_shifts: Je hebt geen beheerdienst vandaag.
+        title: Vorsitzende/r der Abstimmung
+        info: Hier können Sie Benutzerdokumente überprüfen und Abstimmungsergebnisse speichern
+        no_shifts: Sie haben heute keinen Amtswechsel.
     menu:
-      voters: Valideer bestand
-      total_recounts: Totaal aantal hertellingen en resultaten
+      voters: Dokument bestätigen
+      total_recounts: Komplette Nachzählungen und Ergebnisse
     polls:
       final:
-        title: Polls ready for final recounting
-        no_polls: You are not officing final recounts in any active poll
-        select_poll: Select poll
-        add_results: Add results
+        title: Auflistung über abgeschlossene Abstimmungen
+        no_polls: Sie führen keine Nachzählungen in einer aktiven Umfrage durch
+        select_poll: Umfrage auswählen
+        add_results: Ergebnisse hinzufügen
     poll_budgets:
-      see_ballot_sheets: Stembiljettenoverzicht
+      see_ballot_sheets: Siehe Liste Wahlzettel
       index:
-        title: "%{poll_budget} - Stembiljettenoverzicht"
-        ballot_sheet: "Stembiljet %{id}"
-        ballot_sheet_name: Naam
-        ballot_sheet_author: Auteur
-        ballot_sheet_creation_date: Aanmaakdatum
-        empty_results: Er zijn nog geen stembiljetten voor deze peiling
+        title: "%{poll_budget} - Wahlzettel Liste"
+        ballot_sheet: "Wahlzettel %{id}"
+        ballot_sheet_name: Name
+        ballot_sheet_author: Autor
+        ballot_sheet_creation_date: Erstellungsdatum
+        empty_results: Bisher keine Wahlzettel für die Abstimmung verfügbar
       new:
-        title: "%{poll_budget} - Nieuw stembiljet"
-        booth: Stemlocatie
-        select_booth: Selecteer stemlocatie
-        csv_data: CSV data
-        submit: Opslaan
+        title: "%{poll_budget} - Neue Wahlzettel"
+        booth: Wahlkabine
+        select_booth: Wahlkabine auswählen
+        csv_data: CSV Daten
+        submit: Speichern
       show:
-        created_at: Aanmaakdatum
-        author: Auteur
-        data: CSV data
+        created_at: Erstellungsdatum
+        author: Autor
+        data: CSV Daten
     booth:
       new:
-        title: "Kies de stemlocatie"
+        title: "Wähle deine Wahlkabine"
     results:
       flash:
-        create: "Results saved"
-        error_create: "Results NOT saved. Error in data."
-        error_wrong_booth: "Wrong booth. Results NOT saved."
+        create: "Ergebnisse speichern"
+        error_create: "Ergebnisse wurden nicht gespeichert. Fehler."
+        error_wrong_booth: "Falsche Wahlkabine. Ergebnisse wurden NICHT gespeichert."
       new:
-        title: "%{poll} - Add results"
-        not_allowed: "Voor deze peiling kun je resultaten toevoegen"
-        booth: "Stemhokje"
+        title: "%{poll} - Ergebnisse hinzufügen"
+        not_allowed: "Sie sind berechtigt, Ergebnisse für diese Umfrage hinzufügen"
+        booth: "Wahlkabine"
         date: "Datum"
-        select_booth: "Select booth"
-        ballots_white: "Blanco stemmen"
-        ballots_null: "Invalid ballots"
-        ballots_total: "Totaal stemmen"
-        submit: "Save"
-        results_list: "Your results"
-        see_results: "Bekijk resultaten"
+        select_booth: "Wahlkabine auswählen"
+        ballots_white: "Völlig leere Stimmzettel"
+        ballots_null: "Ungültige Stimmzettel"
+        ballots_total: "Stimmzettel gesamt"
+        submit: "Speichern"
+        results_list: "Ihre Ergebnisse"
+        see_results: "Ergebnisse anzeigen"
       index:
-        no_results: "No results"
-        results: Resultaten
-        table_answer: Antwoord
-        table_votes: Votes
-        table_whites: "Blanco stemmen"
-        table_nulls: "Invalid ballots"
-        table_total: "Totaal stemmen"
+        no_results: "Keine Ergebnisse"
+        results: Ergebnisse
+        table_answer: Antwort
+        table_votes: Stimmen
+        table_whites: "Völlig leere Stimmzettel"
+        table_nulls: "Ungültige Stimmzettel"
+        table_total: "Stimmzettel gesamt"
     residence:
       flash:
-        create: "Document geverifieerd door gemeente"
-        not_allowed: "You don't have officing shifts today"
+        create: "Dokument mit Volkszählung überprüft"
+        not_allowed: "Sie haben heute keine Amtswechsel"
       new:
-        title: Valideer bestand
-        submit: Valideer bestand
-        error_verifying_census: "De gemeente was niet in staat dit document te valideren."
-        form_errors: voorkwam de verificatie van dit document
+        title: Dokument überprüfen
+        submit: Dokument überprüfen
+        error_verifying_census: "Die Volkszählung konnte dieses Dokument nicht bestätigen."
+        form_errors: verhinderte die Bestätigung dieses Dokumentes
     voters:
       new:
-        title: Polls
-        table_poll: Poll
-        table_status: Polls status
-        table_actions: Activiteiten
-        not_to_vote: De persoon heeft besloten niet te stemmen op dit moment
+        title: Umfragen
+        table_poll: Abstimmung
+        table_status: Status Umfrage
+        table_actions: Aktionen
+        not_to_vote: Die Person hat beschlossen, zu diesem Zeitpunkt nicht zu stimmen
       show:
-        can_vote: Can vote
-        error_already_voted: Has already participated in this poll
-        submit: Confirm vote
-        success: "Vote introduced!"
+        can_vote: Kann abstimmen
+        cannot_vote: Die Person kann nicht abstimmen, da sie nicht in dem Bezirk registriert ist, in dem die Abstimmung stattfindet.
+        error_already_voted: Hat bereits an dieser Abstimmung teilgenommen
+        submit: Wahl bestätigen
+        success: "Wahl eingeführt!"
       can_vote:
-        submit_disable_with: "Een moment geduld a.u.b., stem wordt bevestigd..."
+        submit_disable_with: "Warten, Abstimmung bestätigen..."

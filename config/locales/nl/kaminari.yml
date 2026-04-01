@@ -2,21 +2,19 @@ nl:
   helpers:
     page_entries_info:
       entry:
-        zero: Bijdragen
-        one: Bijdrage
-        other: Bijdragen
+        one: Eintrag
+        other: Einträge
       more_pages:
-        display_entries: <b>%{first}&nbsp;-&nbsp;%{last}</b> van <b>%{total}</b> %{entry_name} getoond
+        display_entries: <strong>%{first}&nbsp;&nbsp;%{last}</strong> von <strong>%{total}%{entry_name}</strong> angezeigen
       one_page:
         display_entries:
-          zero: "%{entry_name} niet gevonden"
-          one: Er is <b>1</b> %{entry_name}
-          other: Er zijn <b> %{count}</b> %{entry_name}
+          one: Es gibt <strong>1 %{entry_name}</strong>
+          other: Es gibt <strong>%{count}%{entry_name}</strong>
   views:
     pagination:
-      current: U bent op pagina
-      first: Eerste
-      last: Laatste
-      next: Volgende
-      previous: Vorige
+      current: Sie sind auf der Seite
+      first: Erste
+      last: Letzte
+      next: Nächste
+      previous: Vorherige
       truncate: "&hellip;"

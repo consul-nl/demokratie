@@ -160,6 +160,8 @@ de:
         voting_style: "Finaler Abstimmungsstil"
         voting_style_knapsack: "Rucksack"
         voting_style_approval: "Freigabe"
+        hide_money: "Hide money amount for this budget"
+        max_preselected: Preselected (optional)
       budget/translation:
         main_link_text: "Linktext"
         main_link_url: "Der Link führt zu (Link hinzufügen)"
@@ -175,7 +177,7 @@ de:
         image: "Beschreibendes Bild zum Ausgabenvorschlag"
         image_title: "Bildtitel"
         duration: "Zeitrahmen"
-        feasibility_feasible: Entspricht den Kriterien
+        feasibility_feasible: "Entspricht den Kriterien"
         feasibility_undecided: "Undefiniert"
         feasibility_unfeasible: "Undurchführbar"
         incompatible: "Als inkompatibel markieren"
@@ -188,6 +190,7 @@ de:
         valuation_finished: "Begutachtung abgeschlossen"
         valuator_ids: "Gruppen"
         valuation_tag_list: "Tags"
+        valuator_explanation: Valuator Explanation
       budget/investment/translation:
         title: "Titel"
         description: "Beschreibung"
@@ -460,9 +463,6 @@ de:
         subject: Betreff
         from: "Von"
         body: Inhalt der E-Mail
-        title: Überschrift / Titel
-        subtitle: Untertitel
-        cover_image: Titelbild
       admin_notification:
         segment_recipient: Empfänger*innen
         title: Titel

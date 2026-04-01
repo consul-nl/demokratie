@@ -60,6 +60,8 @@ de:
     meta_keywords_description: 'Stichwörter <meta name="keywords">, zur Verbesserung der SEO'
     min_age_to_participate: erforderliches Mindestalter zur Teilnahme
     min_age_to_participate_description: "Nutzer ab diesem Alter können an allen Prozessen teilnehmen"
+    postal_codes: "Postal Codes"
+    postal_codes_description: "A comma-separated list of valid postal codes; you can also introduce ranges separated with a colon. Example: 00001:00010,00024,AB3 45FG,00031:00035 will allow postal codes between 00001 and 00010, the postal code 00024, the postal code AB3 45FG, and postal codes between 00031 and 00035. If you leave it blank, all postal codes will be valid."
     proposals:
       successful_proposal_id: Erfolgreicher Vorschlag
       successful_proposal_id_description: Dieser Vorschlag wird als Referenz für einen erfolgreichen Vorschlag in der Unterstützungs-Anzahl verwendet und im Dashboard-Diagramm angezeigt.
@@ -83,6 +85,10 @@ de:
     direct_message_max_per_day: "Maximale Anzahl direkter Nachrichten per Tag"
     direct_message_max_per_day_description: "Maximale Anzahl direkter Nachrichten, die Benutzer*innen am Tag senden können"
     feature:
+      enable_categories: "Categories"
+      enable_categories_description: "Enable categories for proposals, debates and polls"
+      enable_custom_tags: "Custom tags"
+      enable_custom_tags_description: "Enable custom tags for proposals, debates and polls"
       twitter_login: "Twitter login"
       twitter_login_description: "Anmeldung mit Twitter-Account erlauben"
       facebook_login: "Facebook login"
@@ -106,6 +112,8 @@ de:
         recommendations_on_proposals_description: "Zeigt Nutzern Empfehlungen für Vorschlagsseiten an, basierend auf den Tags und den Objekten, denen sie folgen"
       community: "Community für Anträge und Investitionen"
       community_description: "Schaltet den Community-Bereich in der Rubrik Vorschläge und Investitionsprojekte der Bürgerhaushalte ein"
+      machine_learning: "AI / Machine learning"
+      machine_learning_description: "Enable the AI / Machine Learning section to run python scripts and enrich content automatically."
       map: "Standort des Antrages und der Budgetinvestition"
       map_description: "Ermöglicht die Geolokalisierung der Vorschläge und Investitionsprojekte"
       allow_images: "Upload und Anzeigen von Bildern erlauben"
@@ -127,7 +135,13 @@ de:
       valuation_comment_notification: "Bewertung Kommentar Benachrichtigung"
       valuation_comment_notification_description: "Senden Sie eine E-Mail an alle verbundenen Benutzer*innen, wenn ein neuer Bewertungskommentar erstellt wird - mit Ausnahme des Bewertungskommentars für Budgetinvestitionen"
       graphql_api: "GraphQL API"
+      dashboard:
+        notification_emails: "Dashboard notification emails"
+        notification_emails_description: "Enable sending dashboard notification emails to proposal's authors"
+      remove_investments_supports: "Allow removing supports on budget investments"
+      remove_investments_supports_description: "Allow users to remove supports on participatory budgets investments during the selecting projects phase."
       sdg: SDG
+      sdg_description: Enable Sustainable Development Goals sections in the administration menu and in the Global Settings.
     remote_census:
       general:
         endpoint: "Endpunkt"
@@ -205,3 +219,15 @@ de:
         max_size_description: "Zulässige maximale Größe für upload eines Dokuments (in Megabytes/MB)"
         content_types: "Akzeptierte Inhaltstypen für Dokumente"
         content_types_description: "Wählen Sie alle Inhaltsarten, die zum Upload für Dokumente erlaubt sind"
+    sdg:
+      process:
+        debates: Related SDG in debates
+        debates_description: Allow debates to be linked to Sustainable Development Goals
+        proposals: Related SDG in proposals
+        proposals_description: Allow proposals to be linked to Sustainable Development Goals
+        polls: Related SDG in polls
+        polls_description: Allow polls to be linked to Sustainable Development Goals
+        budgets: Related SDG in partipatory budgets
+        budgets_description: Allow participatory budgets to be linked to Sustainable Development Goals
+        legislation: Related SDG in collaborative legislation
+        legislation_description: Allow collaborative legislation to be linked to Sustainable Development Goals

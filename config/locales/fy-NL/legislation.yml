@@ -1,161 +1,142 @@
-fy-NL:
+fy:
   legislation:
     annotations:
       comments:
-        see_all: "Besjoch alle"
-        see_complete: "Besjoch kompleet"
+        see_all: Alle anzeigen
+        see_complete: Vollständig anzeigen
         comments_count:
-          one: "1 reaksje"
-          other: "%{count} reaksjes"
+          one: "%{count} Kommentar"
+          other: "%{count} Kommentare"
         replies_count:
-          one: "%{count} antwurd"
-          other: "%{count} antwurden"
-        cancel: "Annulearje"
-        publish_comment: "Publisearje reaksje"
+          one: "%{count} Antwort"
+          other: "%{count} Antworten"
+        cancel: Abbrechen
+        publish_comment: Kommentar veröffentlichen
       form:
-        phase_not_open: "Dizze faze is noch net úteinset"
+        phase_not_open: Diese Phase ist noch nicht geöffnet
       index:
-        title: "Reaksjes"
-        comments_about: "Reaksjes oer"
-        see_in_context: "Besjoch yn de kontekst"
+        title: Kommentare
+        comments_about: Kommentare über
+        see_in_context: Im Kontext zeigen
         comments_count:
-          one: "1 reaksje"
-          other: "%{count} reaksjes"
+          one: "%{count} Kommentar"
+          other: "%{count} Kommentare"
       show:
-        title: "Kommentaar"
+        title: Kommentar
       version_chooser:
-        seeing_version: "Reaksjes foar fersy"
-        see_text: "Besjoch konsept tekst"
+        seeing_version: Kommentare für Version
+        see_text: Nächsten Entwurf sehen
     draft_versions:
       changes:
-        title: "Wizigings"
-        seeing_changelog_version: "Gearfetting fan de wizigings"
-        see_text: "Besjoch konsept tekst"
+        title: Änderungen
+        seeing_changelog_version: Änderungszusammenfassung
+        see_text: Siehe Text-Entwurf
       show:
-        loading_comments: "Reaksjes wurde ynladen"
-        seeing_version: "Jo besjogge no"
-        select_draft_version: "Selektearje konsept"
-        select_version_submit: "Besjoch"
-        updated_at: "Bywurke op %{date}"
-        see_changes: "Besjoch de gearfetting fan de wizigings"
-        see_comments: "Besjoch alle reaksjes"
-        text_toc: "Ynhâldsopjefte"
-        text_body: "Tekst"
-        text_comments: "Reaksjes"
+        loading_comments: Kommentare werden geladen
+        seeing_version: Sie sehen den Entwurf
+        select_draft_version: Entwurf auswählen
+        select_version_submit: anzeigen
+        updated_at: aktualisiert am %{date}
+        see_changes: Zusammenfassung der Änderungen anzeigen
+        see_comments: Alle Kommentare anzeigen
+        text_toc: Inhaltsverzeichnis
+        text_body: Text
+        text_comments: Kommentare
     processes:
       header:
-        additional_info: "Oanfoljende ynformaasje"
-        description: "Beskriuwing"
-        more_info: "Mear ynformaasje"
-        active: "Aktyf"
-        locked: "Sletten"
-        coming_soon: "Ynkoarten"
-        published: "Publisearre"
-        less_info: "Minder ynformaasje"
+        additional_info: Weitere Informationen
+        description: Beschreibung
+        more_info: Mehr Informationen und Inhalt
       proposals:
-        empty_proposals: "Der binne gjin inisjativen"
+        empty_proposals: Es gibt keine Vorschläge
         filters:
-          random: "Wichtichste stiet net boppe"
-          winners: "Selektearre"
-        less_info: "Minder ynformaasje"
+          random: Zufällig
+          winners: Ausgewählt
       debate:
-        empty_questions: "Der binne gjin diskusjes"
-        participate: "Aktyf"
-        help: "Help"
-        section_footer:
-          title: "Oer ynspraak"
-          description: "Help mei by it beoardieljen en skriuwen fan plannen foardat feroarderings, belied en útfiering ta stân komme. Jo miening telt en hat ynfloed"
+        empty_questions: Es gibt keine Fragen
       index:
-        filter: "Filter"
+        filter: Filter
         filters:
-          open: "Ynspraak"
-          past: "Ofsletten"
-        no_open_processes: "Der binne gjin aktive plannen"
-        no_past_processes: "Der binne gjin ôfsletten plannen"
+          open: Offene Prozesse
+          past: Vorherige
+        no_open_processes: Es gibt keine offenen Verfahren
+        no_past_processes: Keine vergangenen Beteiligungsverfahren vorhanden
         section_header:
-          title: "Ynspraak"
-          help: "Help by ynspraak"
-          description: "Hjirûnder komme plannen fan provinsje Fryslân, wêr in offisjele ynspraak proseduere foar organisearre wurdt. Ofhinklik fan it soart plan kinsto opmerkingen meitsje by in dokumint, diskusjes starte of in inisjatyf yntsjinje."
+          icon_alt: Gesetzgebungsverfahren Icon
+          title: Gesetzgebungsverfahren
+          help: Hilfe zu Gesetzgebungsverfahren
         section_footer:
-          title: "Help by ynspraak"
-          description: "Doch mei oan debatten en plannen foardat feroarderings, belied en útfiering te stân komme. Jo miening telt."
+          title: Hilfe zu Gesetzgebungsverfahren
+          description: Nehmen Sie an Debatten und Verfahren teil, bevor eine Verordnung oder eine kommunale Handlung genehmigt wird. Ihre Meinung wird vom Stadtrat berücksichtigt.
       phase_not_open:
-        not_open: "Dizze faze is noch net úteinset"
+        not_open: Diese Phase ist noch nicht geöffnet
       phase_empty:
-        empty: "Noch neat publisearre"
+        empty: Keine Veröffentlichung bisher
       process:
-        see_latest_comments: "Besjoch plan"
-        see_latest_comments_title: "Reagearje op dit proses"
+        see_latest_comments: Neueste Kommentare anzeigen
+        see_latest_comments_title: Dieses Beteiligungsverfahren kommentieren
       shared:
-        key_dates: "Aktiviteiten"
-        homepage: "Hiemside"
-        debate_dates: "Diskusjes"
-        draft_publication_date: "Konsept publikaasje"
-        allegations_dates: "Reaksjes"
-        result_publication_date: "Einfersy publikaasje"
-        milestones_date: "folgjend"
-        proposals_dates: "Inisjativen"
+        key_dates: Teilnahmephasen
+        homepage: Homepage
+        debate_dates: Diskussion
+        draft_publication_date: Veröffentlichungsentwurf
+        allegations_dates: Kommentare
+        result_publication_date: Veröffentlichung Endergebnis
+        milestones_date: Folgen
+        proposals_dates: Vorschläge
     questions:
       comments:
-        comment_button: "Publisearje antwurd"
-        comments_title: "Reaksjes"
-        comments_closed: "Sletten faze"
+        comment_button: Antwort veröffentlichen
+        comments_title: Offene Antworten
+        comments_closed: Phase geschlossen
         form:
-          leave_comment: "Lit jo reaksje efter"
-        zero: "Gjin reaksjes"
-        one: "1 reaksje"
-        other: "%{count} reaksjes"
+          leave_comment: Antwort hinterlassen
       question:
-        debate: "Diskusje"
+        comments:
+          one: "%{count} Kommentar"
+          other: "%{count} Kommentare"
+        debate: Diskussion
       show:
-        answer_question: "Reaksje pleatse"
-        next_question: "Folgjende fraach"
-        first_question: "Earste fraach"
-        share: "Diel"
-        title: "Gearwurkje yn plannen"
+        answer_question: Antwort einreichen
+        next_question: Nächste Frage
+        first_question: Erste Frage
+        share: Teilen
+        title: kollaboratives Gesetzgebungsverfahren
       participation:
-        phase_not_open: "Dizze faze is net iepen"
-        organizations: "Organisaasjes meie net oan debatten meidwaan"
-        unauthenticated: "Jo moatte %{signin} of %{signup} om fierder te gean."
-        verified_only: "Allinne ferifiearre brûkers kinne meidwaan,"
-        debate_phase_not_open: "It debat is sletten en reaksjes wurde net mear akseptearre"
+        phase_not_open: Diese Phase ist nicht geöffnet
+        organizations: Organisationen dürfen sich nicht an der Diskussion beteiligen
+        unauthenticated: Sie müssen sich %{signin} oder %{signup}, um fortfahren zu können.
+        verified_only: 'Nur verifizierte Benutzer können teilnehmen: %{verify_account}.'
+        debate_phase_not_open: Diskussionsphase ist beendet. Antworden werden nicht mehr angenommen
     shared:
-      share: "Diel"
-      share_comment: "Jou in reaksje op %{version_name} fan it konsept proses %{process_name}"
+      share: Teilen
+      share_comment: Kommentieren Sie %{version_name} vom Prozessentwurf %{process_name}
     proposals:
       form:
-        tags_label: "Untwerpen/labels"
-      not_verified: "Foar stimfoarstellen %{verify_account}."
-      process_title: "Ynspraakproses"
-      participation:
-        debate_phase_not_open: "De diskusje is sletten en opmerkings wurde net mear akseptearre."
-        organizations: "Organisaasjes mei net oan diskusjes meidwaan"
-        unauthenticated: "Jo moatte %{signin} of %{signup} om mei te dwaan."
+        tags_label: "Kategorien"
+      not_verified: "Für Wahlvorschläge %{verify_account}."
+      process_title: Kollaboratives Gesetzgebungsverfahren
     summary:
-      title: "Gearfetting"
+      title: "Zusammenfassung"
       votes:
-        zero: "%{count} stimmen"
-        one: "1 stim"
-      debate_phase: "Diskusjefaze"
-      proposals_phase: "Inisjatyffaze"
-      allegations_phase: "Reaksjefaze"
+        one: "%{count} Stimme"
+        other: "%{count} Stimmen"
+      debate_phase: "Diskussionsphase"
+      proposals_phase: "Vorschlagsphase"
+      allegations_phase: "Kommentierphase"
       debates:
-        zero: "Gjin diskusjes"
-        one: "%{count} diskusje"
-        other: "%{count} diskusjes"
+        one: "%{count} Debatte"
+        other: "%{count} Debatten"
       proposals:
-        zero: "Gjin inisjativen"
-        one: "%{count} inisjatyf"
-        other: "%{count} inisjativen"
+        one: "%{count} Vorschlag"
+        other: "%{count} Vorschläge"
       comments:
-        zero: "Gjin reaksjes"
-        one: "%{count} reaksje"
-        other: "%{count} reaksjes"
-      download: "Gearfetting dellade"
+        one: "%{count} Kommentar"
+        other: "%{count} Kommentare"
+      download: "Download Zusammenfassung"
       top_comments:
-        zero: "Gjin reaksjes"
-        one: "%{count} reaksje"
-        other: "Top reaksjes"
-      most_voted_comments: "Reaksjes mei measte stimmen"
-      no_allegation: "Gjin reaksjes"
-      process_empty: "Dit proses hat gjin fazen"
+        one: "%{count} Kommentar"
+        other: "Top Kommentare"
+      most_voted_comments: "Best bewertete Kommentare"
+      no_allegation: "Keine Kommentare vorhanden"
+      process_empty: "Dieser Prozess hatte keine Partitzipationsphase"

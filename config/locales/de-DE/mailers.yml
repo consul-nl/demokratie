@@ -2,11 +2,18 @@ de:
   mailers:
     title: "Open Government"
     no_reply: "Diese Nachricht wurde von einer E-Mail-Adresse gesendet, die keine Antworten akzeptiert."
+    already_confirmed:
+      info: "We've received a request to send you instructions to confirm your account. However, your account is already confirmed, so there's no need to do so again."
+      new_password: "If you've forgotten your password, you can reset it at the following link:"
+      subject: Your account is already confirmed
     comment:
       hi: Hallo
       new_comment_by: Es gibt einen neuen Kommentar von <strong>%{commenter}</strong>
       subject: Jemand hat Ihre %{commentable} kommentiert.
       title: Neuer Kommentar
+    config:
+      notifications_link: Notifications
+      unsubscribe_text: 'To unsubscribe from these emails, visit %{notifications}.'
     email_verification:
       click_here_to_verify: diesen Link
       instructions_2: Diese E-Mail dient dazu Ihr Konto mit <b>%{document_type} %{document_number}</b>zu verifizieren. Wenn es sich hierbei nicht um Ihre Daten handelt, klicken Sie bitte nicht auf den vorherigen Link und ignorieren Sie diese E-Mail.
@@ -14,6 +21,7 @@ de:
       subject: Bestätigen Sie Ihre E-Mail-Adresse
       thanks: Vielen Dank.
       title: "Bestätigen Sie Ihr Konto über den folgenden Link"
+      text: "Confirm your account using the following link."
     reply:
       hi: Hallo
       new_reply_by: Es gibt eine neue Antwort von <strong>%{commenter}</strong> auf Ihren Kommentar
@@ -24,10 +32,12 @@ de:
       title: "Antrags-Benachrichtigungen von %{org_name}"
       share: Vorschlag teilen
       comment: Vorschlag kommentieren
+      unsubscribe_text: "If you don't want to receive any proposal notifications, visit %{notifications} and uncheck 'Receive a summary of proposal notifications'."
       unfollow: "Rufen Sie diesen Vorschlag auf und entflogen Sie ihn um keine weiteren Benachrichtigungen zu erhalten."
     direct_message_for_receiver:
       subject: "Sie haben eine neue persönliche Nachricht erhalten"
       reply: Auf %{sender} antworten
+      unsubscribe_text: "If you don't want to receive direct messages, visit %{notifications} and uncheck 'Receive emails about direct messages'."
     direct_message_for_sender:
       subject: "Sie haben eine neue persönliche Nachricht gesendet"
       title: "Sie haben eine neue persönliche Nachricht gesendet"
@@ -45,10 +55,12 @@ de:
       intro: "Hallo <strong>%{author}</strong>,"
       text: "Vielen Dank, dass Sie einen Budgetvorschlag <strong>%{investment}</strong> für den Bürgerhaushalt erstellt haben <strong>%{budget}</strong>."
       follow: "Wir werden Sie über den Fortgang des Prozesses informieren, dem Sie auch über folgenden <strong>%{link}</strong> folgen können."
-      follow_link: "Bürgerhaushalte"
-      sincerely: "Mit freundlichen Grüßen,"
       share: "Teilen Sie Ihr Projekt"
+      notifications: "Would you like to receive email notifications when someone comments on your suggestion? Please check the settings in %{account_link}."
+      profile_link_text: "your account"
+      sincerely: "Mit freundlichen Grüßen,"
     budget_investment_unfeasible:
+      title: "Your investment project has been marked as unfeasible"
       hi: "Liebe*r Benutzer*in,"
       new: "Hierfür laden wir Sie ein, eine <strong>neue Investition</strong> auszuarbeiten, die an die Konditionen dieses Prozesses angepasst sind. Sie können dies über folgenden Link tun: %{url}."
       new_href: "neuer Ausgabenvorschlag"
@@ -56,16 +68,19 @@ de:
       sorry: "Entschuldigung für die Unannehmlichkeiten und vielen Dank für Ihre wertvolle Beteiligung."
       subject: "Ihr Ausgabenvorschlag '%{code}' wurde als undurchführbar markiert"
     budget_investment_selected:
-      subject: "Ihr Investitionsprojekt %{code} wurde ausgewählt"
+      subject: Ihr Investitionsprojekt %{code} wurde ausgewählt
+      title: Promote your proposal for the final vote!
       hi: "Liebe*r Benutzer*in,"
-      share: "Fangen Sie an Stimmen zu bekommen, indem sie Ihr Investitionsprojekt auf sozialen Netzwerken teilen. Teilen ist wichtig, um Ihr Projekt zu verwirklichen."
+      text: "Promote your proposal %{proposal_link} for the final voting phase now."
       share_button: "Teilen Sie Ihr Investitionsprojekt"
       thanks: "Vielen Dank für Ihre Teilnahme."
       sincerely: "Mit freundlichen Grüßen"
     budget_investment_unselected:
       subject: "Ihr Investitionsprojekt %{code} wurde nicht ausgewählt"
+      title: "Unfortunately, your proposal didn't make it to the next round."
       hi: "Liebe*r Benutzer*in,"
-      thanks: "Vielen Dank für Ihre Teilnahme."
+      text: "Unfortunately, your proposal %{proposal_link} didn't receive enough votes. It will therefore not be admitted to the next phase of the %{project_link}."
+      project_link_text: "Project"
       sincerely: "Mit freundlichen Grüßen"
     evaluation_comment:
       subject: "Neuer Bewertungs-Kommentar"
@@ -73,6 +88,16 @@ de:
       hi: Hallo
       new_comment_by: Es gibt einen neuen Bewertungs-Kommentar <strong>%{commenter}</strong> für den Bürgerhaushalt %{investment}
       commenter_info: "%{commenter}, %{time}:"
+    machine_learning_error:
+      link: "Visit Machine Learning panel"
+      subject: "Machine Learning - An error has occurred running the script"
+      text: "An error has occurred running the Machine Learning script."
+      title: "Machine Learning script"
+    machine_learning_success:
+      link: "Visit Machine Learning panel"
+      subject: "Machine Learning - Content has been generated successfully"
+      text: "Content has been generated successfully."
+      title: "Machine Learning script"
     new_actions_notification_rake_created:
       subject: "Mehr Neuigkeiten zu Ihrem Bürger-Vorschlag"
       hi: "Hallo %{name},"

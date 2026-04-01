@@ -1,0 +1,231 @@
+fy:
+  budgets:
+    ballots:
+      show:
+        title: Ihre Abstimmung
+        amount_progress: "%{amount_spent} / %{amount_limit}"
+        amount_available:
+          knapsack: "Sie können noch <span>%{count}</span> investieren"
+          approval:
+            one: "Sie können immer noch <span>%{count}</span> Stimme abgeben."
+            other: "Sie können immer noch <span>%{count}</span> Stimmen abgeben."
+        amount_spent:
+          knapsack: "Ausgegebener Betrag <span>%{count}</span>"
+          approval:
+            one: "Abgegebene Stimme: <span>%{count}</span>"
+            other: "Abgegebene Stimmen: <span>%{count}</span>"
+        amount_limit:
+          knapsack: "%{count}"
+          approval:
+            one: "Sie können über <span>1</span> Projekt abstimmen"
+            other: "Sie können über bis zu <span>%{count}</span> Projekte abstimmen"
+        no_balloted_group_yet: "Sie haben in dieser Gruppe noch nicht abgestimmt. Stimmen Sie jetzt ab!"
+        remove: Stimme entfernen
+        voted:
+          one: "Sie haben für <span>one</span> Investitionsvorschläge gestimmt."
+          other: "Sie haben für <span>%{count}</span> Investitionsvorschläge gestimmt."
+        voted_info: "Ihre Stimme ist bestätigt!"
+        voted_info_2: "Aber Sie können Ihre Stimme jederzeit ändern, bis diese Phase abgeschlossen ist."
+        zero: Sie haben noch über keinen Vorschlag abgestimmt.
+      reasons_for_not_balloting:
+        not_logged_in: Sie müssen sich %{signin} oder %{signup}, um fortfahren zu können.
+        not_verified: Nur verifizierte Benutzer*innen können über einen Vorschlag abstimmen, %{verify_account}.
+        organization: Organisationen ist es nicht erlaubt abzustimmen
+        not_selected: Für nicht durchführbare Ausgabevorschläge kann nicht abgestimmt werden
+        not_enough_money: "Sie haben bereits das gesamte verfügbare Budget zugewiesen.<br><small>Bitte denken Sie daran, dass Sie dies %{change_ballot} jederzeit</small>ändern können"
+        no_ballots_allowed: Die Auswahlphase ist abgeschlossen
+        different_heading_assigned: "Sie haben bereits für eine andere Rubrik gestimmt: %{heading_link}"
+        not_enough_available_votes: "Sie haben die maximal zulässige Anzahl von Stimmen erreicht"
+        change_ballot: Ändern Sie Ihre Wahl
+        casted_offline: Sie haben schon offline abgestimmt
+        only_citizens: Die Beteiligung ist auf Bürger*innen der Stadt %{city} beschränkt.
+        only_specific_geozones: "Die Beteiligung ist auf Bürger*innen aus folgenden Gebieten beschränkt: %{geozones}."
+        only_specific_registered_address_groupings:
+    groups:
+      show:
+        title: Wählen Sie eine Option
+    phase:
+      drafting: Entwurf (nicht für die Öffentlichkeit sichtbar)
+      informing: Information
+      accepting: Investitionsvorschläge einreichen
+      reviewing: Interne Überprüfung der Investitionsvorschläge
+      selecting: Unterstützungsphase
+      valuating: Investitionsvorschläge begutachten
+      publishing_prices: Preise der Investitionsvorschläge veröffentlichen
+      balloting: Abstimmung über Investitionsvorschläge
+      reviewing_ballots: Abstimmung überprüfen
+      finished: Abschluss aktuelles Budget
+    index:
+      title: Budgets
+      empty_budgets: Kein Budgets vorhanden
+      section_header:
+        icon_alt: Symbol für Budgets
+        title: Budgets
+        help: Hilfe zu Budgets
+      all_phases: Phasen des Budgets
+      map: Investitionsvorschläge geografisch geordnet
+      investment_proyects: Liste aller Investitionsvorschläge, die gewonnen haben
+      unfeasible_investment_proyects: Liste aller nicht durchführbaren Investitionsvorschläge
+      not_selected_investment_proyects: Liste aller Investitionsvorschläge, die nicht für die Abstimmung ausgewählt wurden
+      finished_budgets: Abgeschlossene Budgets
+      see_results: Ergebnisse anzeigen
+      section_footer:
+        title: Hilfe zu Budgets
+        description: Durch Budgets können Nutzer*innen entscheiden, an welche Projekte ein bestimmter Teil des Budgets geht.
+      milestones: Meilensteine
+    investments:
+      form:
+        title: "Erstellen Sie ein Investitionsbudget"
+        subtitle: "%{heading} (%{price})"
+        tag_category_label: "Tags"
+        tags_instructions: "Markieren Sie den Vorschlag. Sie können einen Tag auswählen oder selbst erstellen"
+        tags_label: Verschlagwortung
+        tags_placeholder: "Klicken Sie auf einen oder mehrere vorgeschlagene(n) Tag(s) oder geben Sie eigene Tags komma-getrennt ein."
+        map_location: "Kartenposition"
+        map_location_instructions: "Navigieren Sie auf der Karte zum Standort und setzen Sie die Markierung."
+        map_remove_marker: "Entfernen Sie die Kartenmarkierung"
+      index:
+        title: Budgets
+        unfeasible: Entspricht nicht den Kriterien
+        unfeasible_text: "Der Vorschlag muss eine gewisse Anzahl von Anforderungen erfüllen, (Legalität, Durchführbarkeit, innerhalb des Limits des Budgetss) um für durchführbar erklärt werden zu können und das Stadium der finalen Abstimmung zu erreichen. Alle Investitionsvorschläge, die diese Kriterien nicht erfüllen, sind als nicht durchführbar markiert und stehen in der folgenden Liste, zusammen mit einem Bericht zur Undurchführbarkeit."
+        by_heading: "Investitionsvorschläge im Bereich: %{heading}"
+        search_form:
+          button: Suche
+          placeholder: Suche Investitionsvorschläge...
+          title: Suche
+        search_results:
+          one: " enthält den Begriff <strong>'%{search_term}'</strong>"
+          other: " enthält den Begriff <strong>'%{search_term}'</strong>"
+        sidebar:
+          my_ballot: Meine Stimmen
+          voted_info:
+            knapsack:
+              one: "<strong>Sie haben für einen Vorschlag gestimmt mit einem Kostenaufwand von %{amount_spent}</strong>"
+              other: "<strong>Sie haben für %{count} Vorschläge gestimmt mit einem Kostenaufwand von %{amount_spent}</strong>"
+            approval:
+              one: "<strong>Sie haben über einen Vorschlag abgestimmt</strong>"
+              other: "<strong>Sie haben über %{count} Vorschläge abgestimmt.</strong>"
+          change_vote_info:
+            knapsack: "Sie können jederzeit %{link} bis zum Ende dieser Phase. Es besteht keine Notwendigkeit, das gesamte verfügbare Budget auszugeben"
+            approval: "Sie können jederzeit %{link} bis zum Ende dieser Phase."
+          change_vote_link: "Ihre Stimme ändern"
+          different_heading_assigned: "Sie haben bereits in einer anderen Rubrik: %{heading_link} abgestimmt"
+          change_ballot: "Wenn Sie Ihre Meinung ändern, können Sie Ihre Stimme unter %{check_ballot} entfernen und von vorne beginnen."
+          check_ballot_link: "Überprüfung meiner Abstimmung"
+          zero: Sie haben bislang noch für keinen Vorschlag abgestimmt.
+          create: "Vorschlag erstellen"
+        filter: "Projekte filtern nach"
+        filters:
+          all: alle Vorschläge
+          undecided: noch nicht definiert
+          feasible: entspricht den Kriterien
+          unfeasible: entspricht nicht den Kriterien
+          preselected: zur Prüfung zugelassen
+          not_preselected: zur Prüfung nicht zugelassen
+          selected: ausgewählt
+          unselected: nicht für die Endabstimmung ausgewählt
+          winners: Gewinner
+        orders:
+          random: Zufällig
+          confidence_score: Am besten bewertet
+          price: Nach Preis
+      share:
+        message: "Ich habe einen Vorschlag %{title} in %{handle} erstellt. Erstellen Sie auch einen Investitionsvorschlag!"
+      show:
+        author_deleted: Benutzer gelöscht
+        price_explanation: Preiserklärung
+        unfeasibility_explanation: Erläuterung
+        code: "Code des Vorschlags: <strong>%{code}</strong>"
+        location: "Standort: <strong>%{location}</strong>"
+        organization_name: "Vorgeschlagen von: <strong>%{name}</strong>"
+        share: Teilen
+        title: Investitionsprojekt
+        supports: Unterstützung
+        votes: Stimmen
+        price: Preis
+        comments_tab: Kommentare
+        milestones_tab: Meilensteine
+        author: Autor
+        project_unfeasible: "Dieser Vorschlag <strong>wurde als nicht durchführbar markiert</strong> und wird nicht in die Abstimmungsphase übergehen."
+        project_selected: "Dieser Vorschlag wurde für die Abstimmungsphase <strong>ausgewählt</strong>."
+        project_winner: "Best bewerteter Vorschlag"
+        project_not_selected: "Dieser Vorschlag wurde <strong>nicht</strong> für die Abstimmungsphase ausgewählt."
+        see_price_explanation: Erläuterung der Kosten anzeigen
+      wrong_price_format: Nur ganze Zahlen
+      investment:
+        add: Stimme
+        already_added: Sie haben diesen Vorschlag bereits hinzugefügt
+        support_title: Unterstützen Sie dieses Projekt
+        supports:
+          one: 1 Unterstützer*in
+          other: "%{count} Unterstützer*innen"
+      header:
+        check_ballot: Meine Abstimmung überprüfen
+        different_heading_assigned: "Sie haben bereits in einer anderen Rubrik: %{heading_link} abgestimmt"
+        change_ballot: "Wenn Sie Ihre Meinung ändern, können Sie Ihre Stimme in %{check_ballot} zurückziehen und von vorne beginnen."
+        check_ballot_link: "Meine Abstimmungen überprüfen"
+        price: Dieses Projekt verfügt über ein Budget von
+      votes:
+        already_supported: "Sie haben diesen Vorschlag bereits unterstützt."
+        confirm_group:
+          one: "Sie können nur Investitionen im Bezirk %{count} unterstützen. Wenn Sie fortfahren, können Sie die Wahl Ihres Bezirks nicht ändern. Sind Sie sicher?"
+          other: "Sie können nur Investitionen in %{count}-Bezirken unterstützen. Wenn Sie fortfahren, können Sie die Wahl Ihres Bezirks nicht ändern. Sind Sie sicher?"
+        remove_support: "Zurückziehen"
+        remove_support_label: "Streichen Sie Ihre Unterstützung für %{investment}"
+        support: "Unterstützung"
+        support_label: "Unterstützung für %{investment}"
+    investments_list:
+      investment:
+        price: "Preis"
+        read_more: "Mehr lesen"
+        supports: "Unterstützungen"
+      see_all: "Alle Investments anschauen"
+      title: "Investmentliste"
+    show:
+      group: Gruppe
+    supports_info:
+      different: "Sie können an so vielen verschiedenen Projekten mitarbeiten, wie Sie möchten."
+      next: "Unterstützen Sie die Projekte, von denen Sie möchten, dass sie in die nächste Phase übergehen."
+      scrolling: "Scrollen Sie weiter, um alle Ideen zu sehen"
+      share: "Sie können die Projekte, die Sie unterstützt haben, in den sozialen Medien verbreiten und so mehr Aufmerksamkeit und Unterstützung für sie gewinnen!"
+      supported:
+        one: "Bis jetzt haben Sie <strong>1 Projekt</strong> unterstützt."
+        other: "Bislang haben Sie <strong>%{count} Projekte</strong> unterstützt."
+      supported_not_logged_in: "Melden Sie sich an, um mit der <strong>Unterstützung von Projekten</strong> zu beginnen."
+      time: "Bis zum %{phase_end_date} ist noch Zeit, Projekte zu unterstützen."
+      title: "Es ist an der Zeit, Projekte zu <strong>unterstützen</strong>!"
+    results:
+      link: Ergebnisse
+      page_title: "%{budget} - Ergebnisse"
+      heading: "Ergebnisse des Budgets"
+      heading_selection_title: "Nach Gebiet"
+      ballot_lines_count: Stimmen
+      hide_discarded_link: Vorschläge, die nicht gewonnen haben ausblenden
+      show_all_link: Vorschläge, die nicht gewonnen haben einblenden
+      price: Preis
+      amount_available: VerfügbareBudgetmittel
+      accepted: "Genehmigter Vorschlag: "
+      discarded: "Verworfener Vorschlag: "
+      incompatibles: Unvereinbar
+      investment_title: Vorschlag Titel
+      investment_proyects: Liste aller Investitionsvorschläge, die gewonnen haben
+      unfeasible_investment_proyects: Liste aller nicht durchführbaren Investitionsvorschläge
+      not_selected_investment_proyects: Liste aller Investitionsvorschläge, die es nicht in die Abstimmung geschafft haben
+    executions:
+      link: "Meilensteine"
+      page_title: "%{budget} - Meilensteine"
+      heading: "Meilensteine des Budgets"
+      heading_selection_title: "Nach Gebiet"
+      no_winner_investments: "Keine erfolgreichen Investitionsvorschläge in diesem Status"
+      filters:
+        status:
+          label: "Aktueller Stand des Projekts"
+          all: "Alle (%{count})"
+        milestone_tag:
+          label: "Status des Vorschlags"
+          all: "Alle (%{count})"
+    phases:
+      errors:
+        dates_range_invalid: "Das Anfangsdatum kann nicht gleich oder später als das Enddatum sein"
+        prev_phase_dates_invalid: "Das Anfangsdatum muss zu einem späteren Zeitpunkt, als das Startdatum der zuvor freigegebenden Phase (%{phase_name}), liegen"
+        next_phase_dates_invalid: "Das Enddatum muss vor dem Enddatum der nächsten freigegebenen Phase (%{phase_name}) liegen"

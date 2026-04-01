@@ -22,7 +22,7 @@ de:
   comments:
     actions:
       confirm_delete: "Sind Sie sicher? Diese Aktion wird den Kommentar löschen. Das Löschen kann nicht rückgängig gemacht werden."
-      delete: Löschen
+      delete: "Löschen"
     comments_closed: Kommentare sind geschlossen
     verified_only: Zur Teilnahme %{verify_account}
     comment:
@@ -30,21 +30,18 @@ de:
       author: Verfasser*in
       deleted: Dieser Kommentar wurde gelöscht
       moderator: Moderator*in
+      projekt_manager: Projektmanager*in
       responses:
-        zero: Keine Rückmeldungen
         one: 1 Antwort
         other: "%{count} Antworten"
       responses_show:
-        zero: Keine Rückmeldungen
         one: "1 Rückmeldung (Anzeigen)"
         other: "%{count} Rückmeldungen (Anzeigen)"
       responses_collapse:
-        zero: Keine Rückmeldungen
         one: "1 Antwort (Kollaps)"
         other: "%{count} Antworten (Kollaps)"
       user_deleted: Benutzer gelöscht
       votes:
-        zero: Keine Bewertungen
         one: 1 Stimme
         other: "%{count} Stimmen"
     form:
@@ -70,11 +67,9 @@ de:
         submit_button: Starten Sie eine Diskussion
     debate:
       comments:
-        zero: Keine Kommentare
         one: 1 Kommentar
         other: "%{count} Kommentare"
       votes:
-        zero: Keine Bewertung
         one: 1 Stimme
         other: "%{count} Stimmen"
     edit:
@@ -83,6 +78,8 @@ de:
         submit_button: Änderungen speichern
       show_link: Diskussion anzeigen
     form:
+      debate_title: Debate title
+      tags_custom: "Custom user tags"
       tags_instructions: Diskussion markieren.
       tags_placeholder: "Trennen Sie die Tags mit einem Komma (',')"
     index:
@@ -109,7 +106,7 @@ de:
       title: Diskussionen
       section_header:
         icon_alt: Diskussionen-Symbol
-        title: Diskussionen
+        title: "Diskussionen"
         help: Hilfe zu Diskussionen
       section_footer:
         title: Hilfe zu Diskussionen
@@ -129,7 +126,6 @@ de:
     show:
       author_deleted: Benutzer*in gelöscht
       comments:
-        zero: Keine Kommentare
         one: 1 Kommentar
         other: "%{count} Kommentare"
       comments_title: Kommentare
@@ -142,6 +138,7 @@ de:
         submit_button: Änderungen speichern
   errors:
     messages:
+      allowed_file_content_types: "content type must be one of %{types}"
       user_not_found: Benutzer*in wurde nicht gefunden
       invalid_date_range: "Ungültiger Datenbereich"
   form:
@@ -197,7 +194,6 @@ de:
         preview_proposal: Vorschau Vorschlag
         current_goal: Aktuelles Ziel
         supports:
-          zero: Keine Unterstützung
           one: Eine Unterstützung
           other: "Unterstützungen"
     footer:
@@ -231,7 +227,6 @@ de:
       budgets: Bürgerhaushalte
       notification_item:
         new_notifications:
-          zero: "Sie haben keine neuen Benachrichtigungen"
           one: Sie haben eine neue Benachrichtigung
           other: Sie haben %{count} neue Benachrichtigungen
         notifications: Benachrichtigungen
@@ -272,6 +267,7 @@ de:
     finish_signup:
       title: "Weitere Details"
       username_warning: "Aufgrund einer Änderung in der Art und Weise, wie wir mit sozialen Netzwerken umgehen, ist es möglich, dass Ihr Benutzername nun als 'bereits in Verwendung' erscheint. Wenn dies der Fall ist, wählen Sie bitte einen anderen Benutzernamen."
+      submit: "Complete registration"
     google_oauth2:
       sign_in: Anmelden mit Google
       sign_up: Registrierung mit Google
@@ -284,6 +280,10 @@ de:
       sign_in: Anmelden mit Twitter
       sign_up: Registrierung mit Twitter
       name: Twitter
+    openid_connect:
+      sign_in: Sign in with Keycloak
+      sign_up: Sign up with Keycloak
+      name: Keycloak
     info:
       sign_in: "Anmelden mit:"
       sign_up: "Abmelden mit:"
@@ -374,7 +374,7 @@ de:
       top_link_proposals: Die am meisten unterstützten Vorschläge nach Kategorie
       section_header:
         icon_alt: Vorschläge-Symbol
-        title: Vorschläge
+        title: "Vorschläge"
         help: Hilfe zu Vorschlägen
       section_footer:
         title: Hilfe zu Vorschlägen
@@ -399,20 +399,19 @@ de:
         view_proposal: Nicht jetzt. Gehe zu meinem Vorschlag
       already_supported: Sie haben diesen Vorschlag bereits unterstützt.
       comments:
-        zero: Keine Kommentare
         one: 1 Kommentar
         other: "%{count} Kommentare"
       support: Unterstützung
+      support_label: "Support %{proposal}"
       support_title: Vorschlag unterstützen
       supports:
-        zero: Keine Unterstützer*innen
         one: 1 Unterstützer/in
         other: "%{count} Unterstützer/innen"
       votes:
-        zero: Keine Bewertung
         one: 1 Stimme
         other: "%{count} Stimmen"
       supports_necessary: "%{number} Unterstützungen benötigt"
+      reason_for_supports_necessary: ""
       total_percent: 100 %
       archived: "Dieser Vorschlag wurde archiviert und nicht mehr unterstützt werden."
       successful: "Dieser Vorschlag hat die erforderliche Unterstützung erreicht."
@@ -421,7 +420,6 @@ de:
       author_deleted: Benutzer*in gelöscht
       code: "Antrags-Code:"
       comments:
-        zero: Keine Kommentare
         one: 1 Kommentar
         other: "%{count} Kommentare"
       comments_tab: Kommentare
@@ -604,7 +602,7 @@ de:
       cant_answer: "Diese Umfrage ist nicht in ihrem Gebiet verfügbar"
       section_header:
         icon_alt: Wahlsymbol
-        title: Abstimmung
+        title: "Abstimmung"
         help: Hilfe zur Abstimmung
       section_footer:
         title: Hilfe zur Abstimmung
@@ -650,8 +648,11 @@ de:
       vote_unanswer: "Abstimmung für %{answer} zurücknehmen"
       voted: "Sie haben für %{answer} abgestimmt"
       withdraw_answers_hint: "Sie können Ihre Stimme wieder zurücknehmen, indem Sie erneut auf die Antwort klicken."
-      question:
-        multiple: "Mehrfachantworten möglich"
+    description:
+      unique: You can cast one vote for this question.
+      multiple: You may cast %{maximum} votes evenly among the available answers.
+      multiple_with_weight: You may cast %{maximum} votes weighted across multiple answers. Maximum %{cap} per answer.
+      rating_scale: You are allowed one vote per rating scale.
   proposal_notifications:
     new:
       title: "Nachricht senden"
@@ -705,10 +706,10 @@ de:
         destroy:
           notice: "Sie haben aufgehört diesem Investitionsprojekt zu folgen! <br> Sie werden nicht länger Benachrichtigungen zu diesem Projekt erhalten."
       proposal:
-        create:
-          notice: "Jetzt folgen Sie diesem Bürgervorschlag! <br> Wir werden Sie über Änderungen benachrichtigen sobald diese erscheinen, sodass Sie auf dem neusten Stand sind."
-        destroy:
-          notice: "Sie haben aufgehört diesem Bürgervorschlag zu folgen! <br> Sie werden nicht länger Benachrichtigungen zu diesem Vorschlag erhalten."
+          create:
+            notice: "Jetzt folgen Sie diesem Bürgervorschlag! <br> Wir werden Sie über Änderungen benachrichtigen sobald diese erscheinen, sodass Sie auf dem neusten Stand sind."
+          destroy:
+            notice: "Sie haben aufgehört diesem Bürgervorschlag zu folgen! <br> Sie werden nicht länger Benachrichtigungen zu diesem Vorschlag erhalten."
     print:
       print_button: Diese Info drucken
     search: Suche
@@ -737,6 +738,7 @@ de:
       districts: "Bezirke"
       districts_list: "Liste der Bezirke"
       categories: "Kategorien"
+      labels: Labels
     target_blank: " (Link öffnet im neuen Fenster)"
     you_are_in: "Sie befinden sich in"
     unflag: Markierung aufheben
@@ -754,17 +756,18 @@ de:
       cards: Karten
       list: Liste
     recommended_index:
-      title: Empfehlungen
-      see_more: Weitere Empfehlungen anzeigen
-      hide: Empfehlungen ausblenden
+        title: Empfehlungen
+        see_more: Weitere Empfehlungen anzeigen
+        hide: Empfehlungen ausblenden
     translations:
       select_language_prompt: Sprache wählen
       remove_language: Sprache entfernen
       add_language: Sprache hinzufügen
       languages_in_use:
-        zero: "O verwendete Sprachen "
         one: "1 verwendete Sprachen"
         other: "%{count} verwendete Sprachen"
+    optional: "Optional fields"
+    required: "Required fields"
   social:
     facebook: "%{org} Facebook"
     twitter: "%{org} Twitter"
@@ -842,8 +845,10 @@ de:
       retired_help_text: Dashboard nicht verfügbar für zurückgezogene Vorschläge
   votes:
     agree: Ich stimme zu
+    agree_label: "I agree with %{title}"
     anonymous: Zu viele anonyme Stimmen, um die Wahl anzuerkennen %{verify_account}.
     disagree: Ich stimme nicht zu
+    disagree_label: "I don't agree with %{title}"
     organizations: Organisationen ist es nicht erlaubt abzustimmen
     supports: Unterstützer*innen
     verified_only: 'Nur verifizierte Benutzer können Vorschläge bewerten: %{verify_account}.'
@@ -902,6 +907,7 @@ de:
     help: "Sie können Links von %{models} innerhalb des %{org} hinzufügen."
     submit: "Hinzufügen"
     error: "Ungültiger Link. Starten Sie mit %{url}."
+    error_duplicate: "The related content you are adding already exists."
     error_itself: "Ungültiger Link. Sie können einen Inhalt nicht auf sich selbst beziehen."
     success: "Sie haben einen neuen verwandten Inhalt hinzugefügt"
     is_related: "Ist der Inhalt verknüpft?"
@@ -947,3 +953,6 @@ de:
         more:
           one: "Einen Tag mehr"
           other: "%{count} mehr Tags"
+  machine_learning:
+    comments_summary: "Comments summary"
+    info_text: "Content generated by AI / Machine Learning"
